@@ -24,7 +24,7 @@
 
                             <div class="text-center m-auto">
                                 <img src="{{asset('assets/images/mail_sent.svg')}}" alt="mail sent image" height="64" />
-                                <h4 class="text-dark-50 text-center mt-4 fw-bold">Please check your email</h4>
+                                <h4 class="text-dark-50 text-center mt-4 fw-bold">>{{ __('auth.Please check your email') }}</h4>
                                 <p class="text-muted mb-4">
                                     A email has been send to <b>youremail@domain.com</b>.
                                     Please check for an email from company and click on the included link to

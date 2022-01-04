@@ -13,8 +13,9 @@
         <div class="container">
 
             <!-- logo -->
+
             <a href="{{route('any', 'index')}}" class="navbar-brand me-lg-5">
-                <img src="{{asset('assets/images/logo.png')}}" alt="" class="logo-dark" height="18" />
+                <div class="text-white logo-dark"><i class="mdi mdi-weather-windy"></i> WINDFOILFAN</div>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +31,10 @@
                         <a class="nav-link active" href="">Home</a>
                     </li>
                     <li class="nav-item mx-lg-1">
-                        <a class="nav-link" href="">Features</a>
+                        <a class="nav-link" href="">Présentation</a>
                     </li>
                     <li class="nav-item mx-lg-1">
-                        <a class="nav-link" href="">Pricing</a>
-                    </li>
-                    <li class="nav-item mx-lg-1">
-                        <a class="nav-link" href="">FAQs</a>
-                    </li>
-                    <li class="nav-item mx-lg-1">
-                        <a class="nav-link" href="">Clients</a>
+                        <a class="nav-link" href="">Fonctionnalités</a>
                     </li>
                     <li class="nav-item mx-lg-1">
                         <a class="nav-link" href="">Contact</a>
@@ -49,10 +44,10 @@
                 <!-- right menu -->
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item me-2">
-                        <a href="/login" class="btn btn-sm btn-success d-lg-inline-flex">Sign In</a>
+                        <a href="/login" class="btn btn-sm btn-success d-lg-inline-flex">Se connecter</a>
                     </li>
                     <li class="nav-item me-0">
-                        <a href="/register" class="btn btn-sm btn-info d-lg-inline-flex">Sign Up</a>
+                        <a href="/register" class="btn btn-sm btn-info d-lg-inline-flex">Créer un compte</a>
                     </li>
                 </ul>
 
@@ -69,17 +64,19 @@
                     <div class="mt-md-4">
                         <div>
                             <span class="badge bg-danger rounded-pill">New</span>
-                            <span class="text-white-50 ms-1">Welcome to new landing page</span>
+                            <span class="text-white-50 ms-1">Pro access : gérez vos données techniques</span>
                         </div>
                         <h2 class="text-white mb-4 mt-3 hero-title">
-                            Responsive Web UI Kit & Dashboard Template
+                            La base de donnée Windfoil la plus complète au monde
                         </h2>
 
-                        <p class="mb-4 font-16 text-white">Hyper is a fully featured dashboard and admin template
-                            comes with tones of well designed UI elements, components, widgets and pages.</p>
+                        <p class="mb-4 font-16 text-white">Windfoilfan est une base de donnée participative
+                            regroupant
+                            les mesures, les caractéristiques, les compte rendu de test, les performances de
+                            plus de 200 produits dédiés au windfoil.</p>
 
-                        <a href="/login" class="btn btn-success">Sign In <i class="mdi mdi-arrow-right ms-1"></i></a>
-                        <a href="/register" class="btn btn-info">Sign Up <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="/login" class="btn btn-success">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="/register" class="btn btn-info">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-md-5 offset-md-2">

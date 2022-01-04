@@ -23,15 +23,15 @@
 
                             <div class="text-center m-auto">
                                 <img src="{{asset('assets/images/mail_sent.svg')}}" alt="mail sent image" height="64" />
-                                <h4 class="text-dark-50 text-center mt-4 fw-bold">Please check your email</h4>
+                                <h4 class="text-dark-50 text-center mt-4 fw-bold">{{ __('auth.Please check your email') }}</h4>
                                 <p class="text-muted mb-4">
-                                    Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.
+                                    {{ __('auth.verifyEmail') }}
                                 </p>
                             </div>
 
                             @if (session('status') == 'verification-link-sent')
                             <div class="text-center m-auto">
-                                <p class="text-muted mb-4">A new verification link has been sent to the email address you provided during registration.</p>
+                                <p class="text-muted mb-4"> {{ __('auth.newLink') }}.</p>
                             </div>
                             @endif
 
@@ -47,7 +47,7 @@
                                 @csrf
 
                                 <div class="mb-3 text-center">
-                                    <button class="btn btn-primary" type="submit"> Resend Verification Email </button>
+                                    <button class="btn btn-primary" type="submit"> {{ __('auth.Resend Verification Email') }} </button>
                                 </div>
 
                             </form>
@@ -56,7 +56,7 @@
                                 @csrf
 
                                 <div class="mb-3 text-center">
-                                    <button class="btn btn-primary" type="submit"> Log out </button>
+                                    <button class="btn btn-primary" type="submit"> {{ __('auth.Log out') }} </button>
                                 </div>
 
                             </form>
