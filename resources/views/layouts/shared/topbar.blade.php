@@ -13,30 +13,21 @@
         </li>
         <li class="dropdown notification-list topbar-dropdown">
             <a class="nav-link dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                <img src="{{asset('assets/images/flags/us.jpg')}}" alt="user-image" class="me-0 me-sm-1" height="12">
-                <span class="align-middle d-none d-sm-inline-block">English</span> <i class="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
+                <img src="{{asset('assets/images/flags/'.session('locale').'.jpg')}}" alt="user-image" class="me-0 me-sm-1" height="12">
+                <span class="align-middle d-none d-sm-inline-block">{{ config('locale.languages')[session('locale')][3] }}</span> <i class="mdi mdi-chevron-down d-none d-sm-inline-block align-middle"></i>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu">
 
-                <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{asset('assets/images/flags/germany.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">German</span>
-                </a>
+                @foreach(config('app.locales') as $locale)
+                    @if($locale != session('locale'))
 
-                <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{asset('assets/images/flags/italy.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Italian</span>
-                </a>
+                        <!-- item-->
+                            <a  href="{{ route('language', $locale) }}" class="dropdown-item notify-item">
+                                <img src="{{asset('assets/images/flags/'.$locale.'.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">{{ config('locale.languages')[$locale][3] }}</span>
+                            </a>
 
-                <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{asset('assets/images/flags/spain.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Spanish</span>
-                </a>
-
-                <!-- item-->
-                <a href="javascript:void(0);" class="dropdown-item notify-item">
-                    <img src="{{asset('assets/images/flags/russia.jpg')}}" alt="user-image" class="me-1" height="12"> <span class="align-middle">Russian</span>
-                </a>
+                    @endif
+                @endforeach
 
             </div>
         </li>
