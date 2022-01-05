@@ -2,7 +2,7 @@
 <div class="leftside-menu">
 
     <!-- LOGO -->
-    <a href="{{route('any', 'index')}}" class="logo text-center logo-light">
+    <a href="{{ route('home') }}" class="logo text-center logo-light">
         <span class="logo-lg">
             <img src="{{asset('assets/images/logo.png')}}" alt="" height="28">
         </span>
@@ -12,7 +12,7 @@
     </a>
 
     <!-- LOGO -->
-    <a href="{{route('any', 'index')}}" class="logo text-center logo-dark">
+    <a href="{{ route('home') }}" class="logo text-center logo-dark">
         <span class="logo-lg">
             <img src="{{asset('assets/images/logo-dark.png')}}" alt="" height="28">
         </span>
@@ -30,7 +30,7 @@
 
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'calendar', 'calendar'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-home-alt"></i>
                     <span class="badge bg-success float-end">New</span>
                     <span> Tableau de bord </span>
@@ -40,28 +40,28 @@
             <li class="side-nav-title side-nav-item">Produits</li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'calendar', 'calendar'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-calender"></i>
                     <span> Foil </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Flotteur </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Voile </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Marques </span>
                 </a>
@@ -70,14 +70,14 @@
             <li class="side-nav-title side-nav-item">Mesures</li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'calendar', 'calendar'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-calender"></i>
                     <span> Flexion </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Torsion </span>
                 </a>
@@ -86,14 +86,14 @@
             <li class="side-nav-title side-nav-item">Avis</li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'calendar', 'calendar'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-calender"></i>
                     <span> Nos avis </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Avis postés </span>
                 </a>
@@ -101,14 +101,14 @@
             <li class="side-nav-title side-nav-item">Sessions</li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'calendar', 'calendar'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-calender"></i>
                     <span> Toutes les sessions </span>
                 </a>
             </li>
 
             <li class="side-nav-item">
-                <a href="{{route('third', ['apps', 'chat', 'chat'])}}" class="side-nav-link">
+                <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Sessions perso </span>
                 </a>

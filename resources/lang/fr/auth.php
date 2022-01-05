@@ -20,7 +20,7 @@ return [
     "E-Mail Address" => "Adresse email",
     "Enter your email" => "Saisissez votre adresse email",
     "Enter your password" => "Saisissez votre mot de passe",
-    "Enter your name" => "Saisissez votre nom",
+    "Enter your name" => "Saisissez votre nom et prénom",
     "Forgot your password" => "Mot de passe oublié",
     "Remember Me" => "Se souvenir de moi",
     "Log In" => "Se Connecter",

@@ -14,7 +14,7 @@
 
             <!-- logo -->
 
-            <a href="{{route('any', 'index')}}" class="navbar-brand me-lg-5">
+            <a href="{{route('home')}}" class="navbar-brand me-lg-5">
                 <div class="text-white logo-dark"><i class="mdi mdi-weather-windy"></i> WINDFOILFAN</div>
             </a>
 

@@ -16,7 +16,7 @@
                     <div class="card">
                         <!-- Logo -->
                         <div class="card-header pt-4 pb-4 text-center bg-primary">
-                            <a href="{{route('any', 'index')}}">
+                            <a href="{{ route('home') }}}">
                                 <span><img src="{{asset('assets/images/logo.png')}}" alt="" height="18"></span>
                             </a>
                         </div>

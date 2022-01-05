@@ -46,7 +46,7 @@
 
                     <div class="row mt-3">
                         <div class="col-12 text-center">
-                            <p class="text-muted">Not you? return <a href="{{route('second', ['auth', 'login'])}}" class="text-muted ms-1"><b>Sign In</b></a></p>
+                            <p class="text-muted">Not you? return <a href="{{ route('login') }}" class="text-muted ms-1"><b>Sign In</b></a></p>
                         </div> <!-- end col -->
                     </div>
                     <!-- end row -->
