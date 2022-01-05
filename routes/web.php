@@ -22,8 +22,8 @@ require __DIR__ . '/auth.php';
 
 Route::get('/', [MainController::class, 'landing'])->name('landing');
 Route::get('/home', [MainController::class, 'home'])->name('home');
-Route::get('/users', [UserController::class, 'index']);
-Route::get('/users/{user}', [UserController::class, 'show']);
+Route::get('/users', [UserController::class, 'index'])->name('users');
+Route::get('/users/{user}', [UserController::class, 'show'])->name('user.profile');
 
 Route::get('/language/{lang}', [RoutingController::class, 'language'])->name('language');
 /*

@@ -30,7 +30,7 @@
 
 
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
+                <a href="{{ route('home') }}" class="side-nav-link">
                     <i class="uil-home-alt"></i>
                     <span class="badge bg-success float-end">New</span>
                     <span> Tableau de bord </span>
@@ -111,6 +111,15 @@
                 <a href="#" class="side-nav-link">
                     <i class="uil-comments-alt"></i>
                     <span> Sessions perso </span>
+                </a>
+            </li>
+
+            <li class="side-nav-title side-nav-item">Administration</li>
+
+            <li class="side-nav-item">
+                <a href="{{ route('users') }}" class="side-nav-link">
+                    <i class="uil-calender"></i>
+                    <span> Users </span>
                 </a>
             </li>
 

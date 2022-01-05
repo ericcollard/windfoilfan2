@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
+use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Storage;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -116,12 +118,9 @@ class User extends Authenticatable implements MustVerifyEmail
         return $roles;
     }
 
-    public function avatarImgCode()
+    public function avatarUrl()
     {
-/*
-        $imageUrl = $this->avatar_path ? asset('storage/avatars/'.$this->avatar_path) : asset('images/default.png',true);
-        return '<img class="img-profile rounded-circle" alt="'.$this->getFullName().'" src="'.$imageUrl.'" height="30px" width="30px">';
-*/
+        return $this->avatar_path ? Storage::url('avatars/'.$this->avatar_path) : asset('assets/images/users/default.png');
     }
 
     // Only accept a valid password and

@@ -53,7 +53,7 @@
                             <tbody>
                             @foreach ($users as $user)
                                 <tr>
-                                    <td>{{ $user->name }}</td>
+                                    <td><a href="{{ route('user.profile' , ['user' => $user->id]) }}">{{ $user->name }}</a></td>
                                     <td>{{ $user->email }}</td>
                                     <th>cc</th>
                                     <th>{{ $user->avatar_path }}</th>
