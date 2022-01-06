@@ -85,10 +85,10 @@
                 <div class="card">
                     <div class="card-body">
                         <h4 class="header-title mt-0 mb-3">{{ __('User information') }}</h4>
-                        <p class="text-muted font-13">
-                            {{ __('Personal equipment') }} : {!! $user->personal_equipment ?: 'nc' !!}.
-                        </p>
-
+                        <p class="text-muted font-13"><strong>{{ __('Personal equipment') }}</strong> :</p>
+                        <div class="text-muted">
+                            {!! $user->personal_equipment ?: 'nc' !!}
+                        </div>
                         <hr />
 
                         <div class="text-start">

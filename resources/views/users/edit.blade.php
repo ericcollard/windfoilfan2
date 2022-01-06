@@ -84,7 +84,8 @@
 
                         <div class="row">
                             <div class="col-lg-12  mb-3">
-                                <label for="simplemde1">{{ __('Personal equipment') }} :</label>
+                                <label for="personal_equipment">{{ __('Personal equipment') }} :</label>
+                                <input name="personal_equipment" type="hidden">
                                 <div id="snow-editor" style="height: 300px;">
                                     {!!  $user->personal_equipment ? $user->personal_equipment : old('personal_equipment') !!}
                                 </div>
@@ -141,7 +142,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                            <button id="btn_submit" type="submit" class="btn btn-primary">{{ __('Save') }}</button>
                         </div>
 
                         @if (count($errors))
@@ -215,6 +216,13 @@
                     }], ['link', 'image', 'video'], ['clean']]
                 }
             }); // Bubble theme
+
+            $("#btn_submit").click(function(){
+                // Populate hidden form on submit
+                var about = document.querySelector('input[name=personal_equipment]');
+                about.value = quill.root.innerHTML;
+                return true;
+            });
 
 
             /******/ })()
