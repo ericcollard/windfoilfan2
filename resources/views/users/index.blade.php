@@ -5,7 +5,6 @@
     <!-- third party css -->
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
-
 @endsection
 
 
@@ -24,7 +23,7 @@
                             <li class="breadcrumb-item active">List</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">Users list (basic Laravel Bootstrap Pagination)</h4>
+                    <h4 class="page-title">Users list (Ajax Pagination)</h4>
                 </div>
             </div>
         </div>
@@ -32,8 +31,7 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="tab-content">
-                    <div class="tab-pane show active" id="basic-datatable-preview">
+
 
                         <table id="basic-datatable" class="table dt-responsive nowrap w-100">
                             <thead>
@@ -41,7 +39,6 @@
                                 <th>Name</th>
                                 <th>email</th>
                                 <th>roles</th>
-                                <th>avatar_path</th>
                                 <th>discipline_start</th>
                                 <th>postal_code</th>
                                 <th>weight</th>
@@ -50,29 +47,14 @@
                             </thead>
 
 
-                            <tbody>
-                            @foreach ($users as $user)
-                                <tr>
-                                    <td><a href="{{ route('user.profile' , ['user' => $user->id]) }}">{{ $user->name }}</a></td>
-                                    <td>{{ $user->email }}</td>
-                                    <th>cc</th>
-                                    <th>{{ $user->avatar_path }}</th>
-                                    <th>{{ $user->discipline_start }}</th>
-                                    <th>{{ $user->postal_code }}</th>
-                                    <th>{{ $user->weight }}</th>
-                                    <th>{{ $user->email_verified_at }}</th>
-                                </tr>
-                            @endforeach
-                            </tbody>
+
                         </table>
-                    </div> <!-- end preview-->
-                </div><!-- end tab-content-->
+
             </div><!-- end col-12-->
         </div><!-- end row-->
 
     </div>
 
-    {{ $users->links() }}
 @endsection
 
 
@@ -81,7 +63,53 @@
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
     <!-- third party js ends -->
 
-    <!-- demo app -->
-    <script src="{{asset('assets/js/pages/demo.datatable-init.js')}}"></script>
-    <!-- end demo js-->
+
+    <script>
+        /******/ (() => { // webpackBootstrap
+            var __webpack_exports__ = {};
+
+            $(document).ready(function () {
+                /*"use strict";*/
+
+                /*
+                $('#basic-datatable').DataTable({
+                    keys: true,
+                    "language": {
+                        "paginate": {
+                            "previous": "<i class='mdi mdi-chevron-left'>",
+                            "next": "<i class='mdi mdi-chevron-right'>"
+                        }
+                    },
+                    "drawCallback": function drawCallback() {
+                        $('.dataTables_paginate > .pagination').addClass('pagination-rounded');
+                    }
+                });
+*/
+
+                $('#basic-datatable').DataTable( {
+                    processing: true,
+                    serverSide: true,
+                    responsive: true,
+                    iDisplayLength: 10,
+                    order: [[ 0, 'desc' ]],
+                    bFilter: false,
+                    ajax: '{!! route('user.jsonIndex') !!}',
+                    columns: [
+                        { data: 'name', name: 'name' },
+                        { data: 'email', name: 'email' },
+                        { data: 'roles', name: 'roles' },
+                        { data: 'discipline_start', name: 'discipline_start' },
+                        { data: 'postal_code', name: 'postal_code' },
+                        { data: 'weight', name: 'weight' },
+                        { data: 'email_verified_at', name: 'email_verified_at' },
+                    ]
+                } );
+
+            });
+            /******/ })()
+        ;
+    </script>
+
 @endsection
+
+

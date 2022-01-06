@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Yajra\DataTables\Facades\DataTables;
 
 class UserController extends Controller
 {
@@ -19,6 +20,25 @@ class UserController extends Controller
         $users = User::paginate(10);
 
         return view('users.index', compact('users'));
+    }
+
+    /**
+     * Service providing data for jQueryDatatable
+     * @return mixed
+     */
+    public function jsonIndex()
+    {
+
+        $query = User::query();
+
+        return DataTables::of(
+            $query
+        )
+            ->editColumn('name', function($user) {
+                return "<a href='".route('user.profile', $user)."'>".$user->name."</a>";
+            })
+            ->rawColumns(['link','name'])
+            ->toJson();
     }
 
     /**
