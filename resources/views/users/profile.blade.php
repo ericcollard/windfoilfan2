@@ -62,7 +62,10 @@
                             <div class="col-sm-4">
                                 <div class="text-center mt-sm-0 mt-3 text-sm-end">
                                     <button type="button" class="btn btn-light">
-                                        <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit') }}
+                                        <a href="{{ route('user.edit' , ['user' => $user]) }}">
+                                            <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit') }}
+                                        </a>
+
                                     </button>
                                 </div>
                             </div> <!-- end col-->

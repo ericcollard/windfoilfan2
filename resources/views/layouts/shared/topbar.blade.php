@@ -210,31 +210,13 @@
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated topbar-dropdown-menu profile-dropdown">
                     <!-- item-->
                     <div class=" dropdown-header noti-title">
-                        <h6 class="text-overflow m-0">Welcome !</h6>
+                        <h6 class="text-overflow m-0">{{ __("Welcome") }} !</h6>
                     </div>
 
                     <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
+                    <a href="{{ route('user.profile' , ['user' => Auth::user()->id]) }}" class="dropdown-item notify-item">
                         <i class="mdi mdi-account-circle me-1"></i>
-                        <span>My Account</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <i class="mdi mdi-account-edit me-1"></i>
-                        <span>Settings</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <i class="mdi mdi-lifebuoy me-1"></i>
-                        <span>Support</span>
-                    </a>
-
-                    <!-- item-->
-                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                        <i class="mdi mdi-lock-outline me-1"></i>
-                        <span>Lock Screen</span>
+                        <span>{{ __("My Profile") }}</span>
                     </a>
 
                     <!-- item-->
@@ -243,7 +225,7 @@
                         <a href="javascript:void(0);" class="dropdown-item notify-item" onclick="event.preventDefault();
                                                     this.closest('form').submit();">
                             <i class="mdi mdi-logout me-1"></i>
-                            <span>Logout</span>
+                            <span>{{ __("Logout") }}</span>
                         </a>
                     </form>
                 </div>

@@ -24,6 +24,8 @@ Route::get('/', [MainController::class, 'landing'])->name('landing');
 Route::get('/home', [MainController::class, 'home'])->name('home');
 Route::get('/users', [UserController::class, 'index'])->name('users');
 Route::get('/users/{user}', [UserController::class, 'show'])->name('user.profile');
+Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
+Route::patch('/users/{user}',[UserController::class, 'update'])->name('user.update');
 
 Route::get('/language/{lang}', [RoutingController::class, 'language'])->name('language');
 /*

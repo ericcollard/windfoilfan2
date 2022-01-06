@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class UserController extends Controller
 {
@@ -60,7 +61,7 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
-        //
+        return view('users.edit', ['user' => $user]);
     }
 
     /**
@@ -72,7 +73,24 @@ class UserController extends Controller
      */
     public function update(Request $request, User $user)
     {
-        //
+        //$this->authorize('update',$user);
+
+        $this->validate(request(), [
+                'discipline_start' =>  'required|date_format:d/m/Y|',
+                'weight' =>  'required',
+            ]
+        );
+
+        $data = request()->all();
+        $data['discipline_start'] = Carbon::createFromFormat('d/m/Y', $data['discipline_start'])->format('Y-m-d');
+        if (array_key_exists('email_verified_at',$data) )
+        {
+            $data['email_verified_at'] = Carbon::createFromFormat('d/m/Y', $data['email_verified_at'])->format('Y-m-d');
+        };
+        $user->update($data);
+
+        return redirect(route('user.profile',['user' => $user]))->with('flash', 'Your profile has been updated!');
+
     }
 
     /**
