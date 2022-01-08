@@ -61,7 +61,8 @@ class UsersDataTable extends DataTable
                             'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
                     ],])
                     ->buttons(
-                        Button::make('create'),
+                        //Button::make('create'),
+                        //Button::make('create')->action("window.location = '".route('home')."';"),
                         Button::make('export'),
                         Button::make('print'),
                         Button::make('reset'),
