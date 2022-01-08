@@ -3,6 +3,8 @@
 namespace App\DataTables;
 
 use App\Models\User;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Log;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Html\Editor\Editor;
@@ -21,7 +23,13 @@ class UsersDataTable extends DataTable
     {
         return datatables()
             ->eloquent($query)
-            ->addColumn('action', 'users.action',1);
+            ->addColumn('action', 'users.action',1)
+            ->editColumn('created_at', function ($request) {
+                return $request->created_at->formatLocalized('%c'); //'%d %B %Y %H:%M'
+            })
+            ->editColumn('updated_at', function ($request) {
+                return $request->created_at->formatLocalized('%c');
+            });
     }
 
     /**
@@ -48,6 +56,10 @@ class UsersDataTable extends DataTable
                     ->minifiedAjax()
                     ->dom('Bfrtip')
                     ->orderBy(1)
+                    ->parameters([
+                        'language' => [
+                            'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
+                    ],])
                     ->buttons(
                         Button::make('create'),
                         Button::make('export'),
@@ -66,16 +78,17 @@ class UsersDataTable extends DataTable
     {
         return [
             Column::make('id'),
-            Column::make('name'),
-            Column::make('email'),
-            Column::make('created_at'),
-            Column::make('updated_at'),
-            Column::computed('action')
+            Column::make('name')->title(__('Name')),
+            Column::make('email')->title(__('Email')),
+            Column::make('created_at')->title(__('Created at')),
+            Column::make('updated_at')->title(__('Updated at')),
+            Column::computed('action')->title(__('Action'))
                 ->exportable(false)
                 ->printable(false)
                 ->width(60)
                 ->addClass('text-center'),
         ];
+
     }
 
     /**

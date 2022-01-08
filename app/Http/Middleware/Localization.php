@@ -21,7 +21,8 @@ class Localization
         }
         $locale = session ('locale');
         app ()->setLocale ($locale);
-        setlocale (LC_TIME, app()->environment('local') ? $locale : config('locale.languages')[$locale][1]);
+        //setlocale (LC_TIME, app()->environment('local') ? $locale : config('locale.languages')[$locale][1]);
+        setlocale(LC_TIME, config('locale.languages')[$locale][1]); //session ('locale')
         return $next ($request);
     }
 }
