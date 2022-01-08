@@ -117,7 +117,7 @@
             <li class="side-nav-title side-nav-item">Administration</li>
 
             <li class="side-nav-item">
-                <a href="{{ route('users') }}" class="side-nav-link">
+                <a href="{{ route('user.list') }}" class="side-nav-link">
                     <i class="uil-calender"></i>
                     <span> Users </span>
                 </a>

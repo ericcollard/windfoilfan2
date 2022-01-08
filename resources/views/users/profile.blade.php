@@ -10,8 +10,8 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="{{ route('users') }}">{{ __('Users') }}</a></li>
-                            <li class="breadcrumb-item"><a href="javascript: void(0);">{{ $user->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('user.list') }}">{{ __('Users') }}</a></li>
+                            <li class="breadcrumb-item"><a href="#">{{ $user->name }}</a></li>
                             <li class="breadcrumb-item active">{{ __('User profile') }}</li>
                         </ol>
                     </div>

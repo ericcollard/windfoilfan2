@@ -2,43 +2,21 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\UsersDataTable;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
-use Yajra\DataTables\Facades\DataTables;
 
 class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
-    public function index()
+
+    public function index(UsersDataTable $dataTable)
     {
-
-        $users = User::paginate(10);
-
-        return view('users.index', compact('users'));
-    }
-
-    /**
-     * Service providing data for jQueryDatatable
-     * @return mixed
-     */
-    public function jsonIndex()
-    {
-
-        $query = User::query();
-
-        return DataTables::of(
-            $query
-        )
-            ->editColumn('name', function($user) {
-                return "<a href='".route('user.profile', $user)."'>".$user->name."</a>";
-            })
-            ->rawColumns(['link','name'])
-            ->toJson();
+        return $dataTable->render('users.index');
     }
 
     /**
@@ -121,6 +99,7 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return redirect(route('user.list'));
     }
 }
