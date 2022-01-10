@@ -15,6 +15,10 @@
                 "emoticons template paste textpattern"
             ],
             toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media",
+            image_class_list: [
+                {title: 'Fluid', value: 'cms-img-fluid'},
+                {title: 'Fixed', value: ''},
+            ],
             file_picker_callback : function(callback, value, meta) {
                 var x = window.innerWidth || document.documentElement.clientWidth || document.getElementsByTagName('body')[0].clientWidth;
                 var y = window.innerHeight|| document.documentElement.clientHeight|| document.getElementsByTagName('body')[0].clientHeight;

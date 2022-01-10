@@ -13161,6 +13161,11 @@ body[data-layout=topnav] .container-fluid, body[data-layout=topnav] .container-s
   font-weight: 700;
   font-style: normal;
 }
+.cms-img-fluid {
+  width: 100%;
+  height: auto;
+}
+
 .custom-accordion .card {
   box-shadow: none;
 }
