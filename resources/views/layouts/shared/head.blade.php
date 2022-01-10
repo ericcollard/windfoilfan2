@@ -24,3 +24,6 @@
 <link href="{{asset('assets/css/app-dark.min.css')}}" rel="stylesheet" type="text/css" id="dark-style" />
 @endif
 @endif
+
+
+@yield('script-head')

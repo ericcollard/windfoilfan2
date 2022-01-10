@@ -1,12 +1,26 @@
 @extends('layouts.vertical', ["page_title"=> "Form Elements"])
 
-@section('css')
-    <!-- third party css -->
-    <link rel="stylesheet" href="{{asset('assets/libs/quill/quill.min.css')}}">
-    <!-- third party css end -->
+@section('script-head')
+    <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
+    <script>
+        var editor_config = {
+            path_absolute : "/",
+            selector: 'textarea#personal_equipment',
+            relative_urls: false,
+            plugins: [
+                "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+                "searchreplace wordcount visualblocks visualchars code fullscreen",
+                "insertdatetime media nonbreaking save table directionality",
+                "emoticons template paste textpattern"
+            ],
+            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media",
+            height: 400,
+        };
 
+        tinymce.init(editor_config);
+
+    </script>
 @endsection
-
 
 @section('content')
 <!-- Start Content-->
@@ -44,19 +58,22 @@
                         <div class="row">
                             <div class="col-lg-6  mb-3">
                                 <label for="name" class="form-label">{{ __('Full name') }}* :</label>
-                                <input type="text" class="form-control" id="name" name="name" value="{{ $user->name ? $user->name : old('name') }}" required></input>
+                                <input type="text" class="form-control" id="name" name="name"
+                                       value="{{ $user->name ? $user->name : old('name') }}" required/>
                             </div>
 
                             <div class="col-lg-6  mb-3">
                                 <label for="email" class="form-label">{{ __('Email') }} :</label>
-                                <input type="email" class="form-control" id="email" disabled="" name="email" value="{{ $user->email ? $user->email : old('email') }}" ></input>
+                                <input type="email" class="form-control" id="email" disabled="" name="email"
+                                       value="{{ $user->email ? $user->email : old('email') }}"/>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-6  mb-3">
                                 <label for="prefered_spots">{{ __('Prefered spot') }} :</label>
-                                <input type="text" class="form-control" id="prefered_spots" name="prefered_spots" value="{{ $user->prefered_spots ? $user->prefered_spots : old('prefered_spots') }}"></input>
+                                <input type="text" class="form-control" id="prefered_spots" name="prefered_spots"
+                                       value="{{ $user->prefered_spots ? $user->prefered_spots : old('prefered_spots') }}"/>
                             </div>
 
                             <div class="col-lg-6 mb-3 position-relative" id="datepicker2">
@@ -79,17 +96,15 @@
                             </div>
                             <div class="col-lg-6  mb-3">
                                 <label for="postal_code">{{ __('Postal code') }} :</label>
-                                <input type="text" class="form-control" id="postal_code" name="postal_code" value="{{ $user->postal_code ? $user->postal_code : old('postal_code') }}"></input>
+                                <input type="text" class="form-control" id="postal_code" name="postal_code"
+                                       value="{{ $user->postal_code ? $user->postal_code : old('postal_code') }}"/>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-lg-12  mb-3">
                                 <label for="personal_equipment">{{ __('Personal equipment') }} :</label>
-                                <input name="personal_equipment" type="hidden">
-                                <div id="snow-editor" style="height: 300px;">
-                                    {!!  $user->personal_equipment ? $user->personal_equipment : old('personal_equipment') !!}
-                                </div>
+                                <textarea id="personal_equipment" name="personal_equipment" >{!!  $user->personal_equipment ? $user->personal_equipment : old('personal_equipment') !!}</textarea>
                             </div>
                         </div>
 
@@ -168,67 +183,5 @@
 
 @section('script-bottom')
 
-    <!-- third party js -->
-    <script src="{{asset('assets/libs/quill/quill.min.js')}}"></script>
-    <!-- third party js ends -->
-
-    <script>
-
-        /******/ (() => { // webpackBootstrap
-            var __webpack_exports__ = {};
-            /*!********************************************!*\
-              !*** ./resources/js/pages/demo.quilljs.js ***!
-              \********************************************/
-            /*
-            Template Name: Ubold - Responsive Bootstrap 5 Admin Dashboard
-            Author: CoderThemes
-            Website: https://coderthemes.com/
-            Contact: support@coderthemes.com
-            File: Quilljs init js
-            */
-// Snow theme
-            var quill = new Quill('#snow-editor', {
-                theme: 'snow',
-                modules: {
-                    'toolbar': [[{
-                        'font': []
-                    }, {
-                        'size': []
-                    }], ['bold', 'italic', 'underline', 'strike'], [{
-                        'color': []
-                    }, {
-                        'background': []
-                    }], [{
-                        'script': 'super'
-                    }, {
-                        'script': 'sub'
-                    }], [{
-                        'header': [false, 1, 2, 3, 4, 5, 6]
-                    }, 'blockquote', 'code-block'], [{
-                        'list': 'ordered'
-                    }, {
-                        'list': 'bullet'
-                    }, {
-                        'indent': '-1'
-                    }, {
-                        'indent': '+1'
-                    }], ['direction', {
-                        'align': []
-                    }], ['link', 'image', 'video'], ['clean']]
-                }
-            }); // Bubble theme
-
-            $("#btn_submit").click(function(){
-                // Populate hidden form on submit
-                var about = document.querySelector('input[name=personal_equipment]');
-                about.value = quill.root.innerHTML;
-                return true;
-            });
-
-
-            /******/ })()
-        ;
-
-    </script>
 
 @endsection

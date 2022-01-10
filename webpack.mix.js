@@ -274,6 +274,8 @@ lodash(third_party_assets).forEach(function (assets, type) {
     }
 });
 
+mix.copyDirectory('vendor/tinymce/tinymce', folder.dist_assets + 'js/tinymce');
+
 // copy all fonts -
 var out = folder.dist_assets + "fonts";
 mix.copyDirectory(folder.src + "fonts/", out);
