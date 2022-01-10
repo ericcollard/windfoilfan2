@@ -3,12 +3,10 @@
 namespace App\DataTables;
 
 use App\Models\User;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\Log;
+use Illuminate\Database\Eloquent\Builder;
+use Yajra\DataTables\DataTableAbstract;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
-use Yajra\DataTables\Html\Editor\Editor;
-use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
 class UsersDataTable extends DataTable
@@ -17,9 +15,9 @@ class UsersDataTable extends DataTable
      * Build DataTable class.
      *
      * @param mixed $query Results from query() method.
-     * @return \Yajra\DataTables\DataTableAbstract
+     * @return DataTableAbstract
      */
-    public function dataTable($query)
+    public function dataTable($query): DataTableAbstract
     {
         return datatables()
             ->eloquent($query)
@@ -35,10 +33,10 @@ class UsersDataTable extends DataTable
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\User $model
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @param User $model
+     * @return Builder
      */
-    public function query(User $model)
+    public function query(User $model): Builder
     {
         return $model->newQuery();
     }
@@ -48,7 +46,7 @@ class UsersDataTable extends DataTable
      *
      * @return \Yajra\DataTables\Html\Builder
      */
-    public function html()
+    public function html(): \Yajra\DataTables\Html\Builder
     {
         return $this->builder()
                     ->setTableId('users-table')
@@ -75,7 +73,7 @@ class UsersDataTable extends DataTable
      *
      * @return array
      */
-    protected function getColumns()
+    protected function getColumns(): array
     {
         return [
             Column::make('id'),
@@ -97,7 +95,7 @@ class UsersDataTable extends DataTable
      *
      * @return string
      */
-    protected function filename()
+    protected function filename(): string
     {
         return 'Users_' . date('YmdHis');
     }
