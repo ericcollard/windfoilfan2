@@ -3,7 +3,6 @@
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RoutingController;
 
 
 /*
@@ -31,7 +30,7 @@ Route::delete('/users/{user}',[UserController::class, 'destroy'])->name('user.de
 Route::post('/users/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
 
 
-Route::get('/language/{lang}', [RoutingController::class, 'language'])->name('language');
+Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 /*
 
 
