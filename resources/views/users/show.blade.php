@@ -28,7 +28,7 @@
                 <div class="card bg-primary">
                     <div class="card-body profile-user-box">
                         <div class="row">
-                            <div class="col-sm-8">
+                            <div class="col-sm-6">
                                 <div class="row align-items-center">
                                     <div class="col-auto">
                                         <div class="avatar-lg">
@@ -51,7 +51,7 @@
                                                 </li>
                                                 <li class="list-inline-item">
                                                     <h5 class="mb-1">{{ $user->prefered_spots ?: 'nc'  }}</h5>
-                                                    <p class="mb-0 font-13 text-white-50">{{ __('Prefered spot') }}</p>
+                                                    <p class="mb-0 font-13 text-white-50">{{ __('Preferred spot') }}</p>
                                                 </li>
                                             </ul>
                                         </div>
@@ -59,14 +59,44 @@
                                 </div>
                             </div> <!-- end col-->
 
-                            <div class="col-sm-4">
+                            <div class="col-sm-6">
                                 <div class="text-center mt-sm-0 mt-3 text-sm-end">
                                     <button type="button" class="btn btn-light">
-                                        <a href="{{ route('user.edit' , ['user' => $user]) }}">
-                                            <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit') }}
+                                        <a href="{{ route('user.edit' , ['user' => $user]) }}" style="color: inherit">
+                                            <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit profile') }}
                                         </a>
-
                                     </button>
+                                </div>
+                                <div class="text-center mt-sm-3 mt-3 text-sm-end">
+
+                                    <form method="POST"
+                                           action="{{  route('user.avatar.store',['user' => $user]) }}"
+                                           enctype="multipart/form-data">
+                                        {{ csrf_field() }}
+
+                                        <div class="mb-3 row-cols-lg-auto g-3 align-items-center">
+                                            <input type="file" id="avatar" name="avatar" class="form-control" style="display: inline; width: auto">
+                                            <input type="hidden" id="user_id" name="user_id" value={{ $user->id }}>
+                                            <button class="btn btn-light" type="submit"><i class="mdi mdi-upload me-1"></i>
+                                                @if ($user->avatar_path)
+                                                    {{ __('Modify avatar') }}
+                                                @else
+                                                    {{ __('Add avatar') }}
+                                                @endif
+                                            </button>
+                                        </div>
+
+
+                                        @if (count($errors))
+                                            <ul class="alert alert-danger">
+                                                @foreach($errors->all() as $error)
+                                                    <li><i class="fas fa-exclamation-triangle"></i> {{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+                                    </form>
+
+
                                 </div>
                             </div> <!-- end col-->
                         </div> <!-- end row -->
@@ -169,10 +199,8 @@
                     <div class="card-body">
                         <h4 class="header-title mb-3">My Products</h4>
 
-
-                        </div> <!-- end table responsive-->
-                    </div> <!-- end col-->
-                </div> <!-- end row-->
+                    </div> <!-- end card-body-->
+                </div> <!-- end card-->
 
             </div>
             <!-- end col -->

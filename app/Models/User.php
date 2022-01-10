@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -59,7 +58,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @param string $role
      * @return User
      */
-    public function addRole(string $role)
+    public function addRole(string $role): User
     {
         $roles = $this->getRoles();
         $roles[] = $role;
@@ -74,7 +73,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @param array $roles
      * @return $this
      */
-    public function setRoles(array $roles)
+    public function setRoles(array $roles): User
     {
         $this->setAttribute('roles', $roles);
         return $this;
@@ -82,18 +81,19 @@ class User extends Authenticatable implements MustVerifyEmail
 
     /***
      * @param $role
-     * @return mixed
+     * @return bool
      */
-    public function hasRole($role)
+    public function hasRole($role): bool
     {
         return in_array($role, $this->getRoles());
     }
 
     /***
      * @param $roles
-     * @return mixed
+     * @return bool
      */
-    public function hasRoles($roles)
+
+    public function hasRoles($roles): bool
     {
 
         $currentRoles = $this->getRoles();
@@ -108,7 +108,7 @@ class User extends Authenticatable implements MustVerifyEmail
     /**
      * @return array
      */
-    public function getRoles()
+    public function getRoles(): array
     {
         $roles = $this->getAttribute('roles');
         if (is_null($roles)) {
@@ -118,9 +118,9 @@ class User extends Authenticatable implements MustVerifyEmail
         return $roles;
     }
 
-    public function avatarUrl()
+    public function avatarUrl(): string
     {
-        return $this->avatar_path ? Storage::url('avatars/'.$this->avatar_path) : asset('assets/images/users/default.png');
+        return $this->avatar_path ? Storage::disk('avatars')->url($this->avatar_path) : asset('assets/images/users/default.png');
     }
 
     // Only accept a valid password and
