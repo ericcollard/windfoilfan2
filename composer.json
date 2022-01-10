@@ -12,6 +12,7 @@
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "tinymce/tinymce": "^5.10",
+        "unisharp/laravel-filemanager": "^2.3",
         "yajra/laravel-datatables": "^1.5"
     },
     "require-dev": {
