@@ -3,7 +3,10 @@
 
 <head>
     @include('layouts.shared/head', ["page_title"=> "Register"] )
+    {!! htmlScriptTagJsApi() !!}
 </head>
+
+
 
 <body class="loading authentication-bg" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
 
@@ -79,6 +82,10 @@
                                     </div>
                                 </div>
 
+                                <div class="mb-3">
+                                    {!! htmlFormSnippet() !!}
+                                 </div>
+
                                 <div class="mb-3 text-center">
                                     <button class="btn btn-primary" type="submit">{{ __('auth.Register') }}</button>
                                 </div>
@@ -103,10 +110,16 @@
     </div>
     <!-- end page -->
 
+
+
     @include('layouts.shared/footer-3')
 
     @include('layouts.shared/footer-script')
 
+
+
 </body>
 
 </html>
+
+
