@@ -150,42 +150,45 @@
                                     </div>
                                 </div>
                              </div>
-
-                            <div class="col-lg-6 mb-3 position-relative" id="datepicker3">
-                                <label for="email_verified_at">{{ __('email_verified_at') }} :</label>
-                                <input type="text" class="form-control" name="email_verified_at" id="email_verified_at" data-provide="datepicker" data-date-format="dd/mm/yyyy" data-date-langage="fr"  data-date-autoclose="true" data-date-container="#datepicker3" value="{{ $user->email_verified_at ? $user->email_verified_at->format('d/m/Y') : old('email_verified_at') }}" >
-                            </div>
+                            @can('edit-userprofile-hidden-data',$user)
+                                <div class="col-lg-6 mb-3 position-relative" id="datepicker3">
+                                    <label for="email_verified_at">{{ __('email_verified_at') }} :</label>
+                                    <input type="text" class="form-control" name="email_verified_at" id="email_verified_at" data-provide="datepicker" data-date-format="dd/mm/yyyy" data-date-langage="fr"  data-date-autoclose="true" data-date-container="#datepicker3" value="{{ $user->email_verified_at ? $user->email_verified_at->format('d/m/Y') : old('email_verified_at') }}" >
+                                </div>
+                            @endcan
                         </div>
 
-                        <div class="row">
-                            <div class="col-lg-6  mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="ROLE_ADMIN" id="roleCheck1" name="roles[]" {{ in_array("ROLE_ADMIN", $user->roles) ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="roleCheck1">
-                                        ROLE_ADMIN
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="ROLE_EDITOR" id="roleCheck2" name="roles[]" {{ in_array("ROLE_EDITOR", $user->roles) ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="roleCheck2">
-                                        ROLE_EDITOR
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="ROLE_CONTRIBUTOR" id="roleCheck3" name="roles[]" {{ in_array("ROLE_CONTRIBUTOR", $user->roles) ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="roleCheck3">
-                                        ROLE_CONTRIBUTOR
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="ROLE_VISITOR" id="roleCheck4" name="roles[]" {{ in_array("ROLE_VISITOR", $user->roles) ? 'checked' : '' }}>
-                                    <label class="form-check-label" for="roleCheck4">
-                                        ROLE_VISITOR
-                                    </label>
-                                </div>
+                        @can('edit-userprofile-hidden-data',$user)
+                            <div class="row">
+                                <div class="col-lg-6  mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ROLE_ADMIN" id="roleCheck1" name="roles[]" {{ in_array("ROLE_ADMIN", $user->roles) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="roleCheck1">
+                                            ROLE_ADMIN
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ROLE_EDITOR" id="roleCheck2" name="roles[]" {{ in_array("ROLE_EDITOR", $user->roles) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="roleCheck2">
+                                            ROLE_EDITOR
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ROLE_CONTRIBUTOR" id="roleCheck3" name="roles[]" {{ in_array("ROLE_CONTRIBUTOR", $user->roles) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="roleCheck3">
+                                            ROLE_CONTRIBUTOR
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ROLE_VISITOR" id="roleCheck4" name="roles[]" {{ in_array("ROLE_VISITOR", $user->roles) ? 'checked' : '' }}>
+                                        <label class="form-check-label" for="roleCheck4">
+                                            ROLE_VISITOR
+                                        </label>
+                                    </div>
 
+                                </div>
                             </div>
-                        </div>
+                        @endcan
 
                         <div class="form-group">
                             <button id="btn_submit" type="submit" class="btn btn-primary">{{ __('Save') }}</button>

@@ -38,11 +38,13 @@
                                     <div class="col">
                                         <div>
                                             <h4 class="mt-1 mb-1 text-white">{{ $user->name }}</h4>
-                                            <p class="font-13 text-white-50">
+                                            @can('see-admin-only-data')
+                                            <p class="font-13 text-white-50">Rôles :
                                                 @foreach  ($user->roles as $role)
                                                     {{ $role }}
                                                 @endforeach
                                             </p>
+                                            @endcan
 
                                             <ul class="mb-0 list-inline text-light">
                                                 <li class="list-inline-item me-3">
@@ -60,13 +62,29 @@
                             </div> <!-- end col-->
 
                             <div class="col-sm-6">
+
+
                                 <div class="text-center mt-sm-0 mt-3 text-sm-end">
+
+                                    @can ('delete', $user)
+                                        <form class="d-sm-inline-block" method="POST" action="{{ route('user.destroy',['user' => $user]) }}">
+                                            {{ csrf_field() }}
+                                            {{ method_field('DELETE') }}
+                                            <button type="submit" class="btn btn-danger"> {{ __('Delete') }}</button>
+                                        </form>
+                                    @endcan
+
+                                    @can ('update', $user)
                                     <button type="button" class="btn btn-light">
                                         <a href="{{ route('user.edit' , ['user' => $user]) }}" style="color: inherit">
                                             <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit profile') }}
                                         </a>
                                     </button>
+                                    @endcan
+
                                 </div>
+
+                                @can ('update', $user)
                                 <div class="text-center mt-sm-3 mt-3 text-sm-end">
 
                                     <form method="POST"
@@ -98,6 +116,8 @@
 
 
                                 </div>
+                                @endcan
+
                             </div> <!-- end col-->
                         </div> <!-- end row -->
 
@@ -133,15 +153,17 @@
                 </div>
                 <!-- Personal-Information -->
 
-                <!-- Toll free number box-->
-                <div class="card text-white bg-info overflow-hidden">
-                    <div class="card-body">
-                        <div class="toll-free-box text-center">
-                            <h4> <i class="mdi mdi-deskphone"></i> Email : {{ $user->email  ?: 'nc' }}</h4>
-                        </div>
-                    </div> <!-- end card-body-->
-                </div> <!-- end card-->
-                <!-- End Toll free number box-->
+                <!-- Email-->
+                @can('see-userprofile-private-data',$user)
+                    <div class="card text-white bg-info overflow-hidden">
+                        <div class="card-body">
+                            <div class="toll-free-box text-center">
+                                <h4> <i class="mdi mdi-deskphone"></i> Email : {{ $user->email  ?: 'nc' }}</h4>
+                            </div>
+                        </div> <!-- end card-body-->
+                    </div> <!-- end card-->
+                @endcan
+                <!-- End Email-->
 
                 <!-- Messages-->
                 <div class="card">

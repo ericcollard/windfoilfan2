@@ -21,10 +21,10 @@ require __DIR__ . '/auth.php';
 
 Route::get('/', [MainController::class, 'landing'])->name('landing');
 Route::get('/home', [MainController::class, 'home'])->name('home');
-Route::get('/users', [UserController::class, 'index'])->name('user.list');
-Route::get('/users/jsonIndex', [UserController::class, 'jsonIndex'])->name('user.jsonIndex');
-Route::get('/users/{user}', [UserController::class, 'show'])->name('user.show');
-Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('user.edit');
+Route::get('/users', [UserController::class, 'index'])->name('user.list')->middleware('auth');
+Route::get('/users/jsonIndex', [UserController::class, 'jsonIndex'])->name('user.jsonIndex')->middleware('auth');
+Route::get('/users/{user}', [UserController::class, 'show'])->name('user.show')->middleware('auth');
+Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('user.edit')->middleware('auth');
 Route::patch('/users/{user}',[UserController::class, 'update'])->name('user.update');
 Route::delete('/users/{user}',[UserController::class, 'destroy'])->name('user.destroy');
 Route::post('/users/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');

@@ -16,6 +16,16 @@ use Illuminate\Validation\ValidationException;
 class UserController extends Controller
 {
     /**
+     * Create the controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->authorizeResource(User::class, 'user');
+    }
+
+    /**
      * Display a listing of the resource.
      *
      */
@@ -78,8 +88,6 @@ class UserController extends Controller
      */
     public function update(User $user): RedirectResponse
     {
-        //$this->authorize('update',$user);
-
         $this->validate(request(), [
                 'discipline_start' =>  'required|date_format:d/m/Y|',
                 'weight' =>  'required',
@@ -87,7 +95,9 @@ class UserController extends Controller
         );
 
         $data = request()->all();
+
         $data['discipline_start'] = Carbon::createFromFormat('d/m/Y', $data['discipline_start'])->format('Y-m-d');
+
         if (array_key_exists('email_verified_at',$data) )
         {
             $data['email_verified_at'] = Carbon::createFromFormat('d/m/Y', $data['email_verified_at'])->format('Y-m-d');

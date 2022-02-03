@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('layouts.shared/head', ["page_title" => "Landing Page"])
+    @include('layouts.shared/head', ["page_title" => "Accueil"])
 </head>
 
 
@@ -13,10 +13,16 @@
         <div class="container">
 
             <!-- logo -->
-
-            <a href="{{route('home')}}" class="navbar-brand me-lg-5">
-                <div class="text-white logo-dark"><i class="mdi mdi-weather-windy"></i> WINDFOILFAN</div>
+            <div  class="navbar-brand me-lg-5">
+            <a href="{{ route('home') }}" class="logo logo-light" style="position: relative">
+        <span class="logo-lg">
+            <img src="{{asset('assets/images/logo.png')}}" alt="" height="28">
+        </span>
+                <span class="logo-sm">
+            <img src="{{asset('assets/images/logo_sm.png')}}" alt="" height="28">
+        </span>
             </a>
+            </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="mdi mdi-menu"></i>
@@ -81,7 +87,7 @@
                 </div>
                 <div class="col-md-5 offset-md-2">
                     <div class="text-md-end mt-3 mt-md-0">
-                        <img src="{{asset('assets/images/startup.svg')}}" alt="" class="img-fluid" />
+                        <img src="{{asset('assets/images/startup.jpg')}}" alt="" class="img-fluid" />
                     </div>
                 </div>
             </div>
