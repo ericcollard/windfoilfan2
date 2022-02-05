@@ -50,10 +50,10 @@
                 <!-- right menu -->
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item me-2">
-                        <a href="/login" class="btn btn-sm btn-success d-lg-inline-flex">Se connecter</a>
+                        <a href="{{ route('login') }}" class="btn btn-sm btn-success d-lg-inline-flex">Se connecter</a>
                     </li>
                     <li class="nav-item me-0">
-                        <a href="/register" class="btn btn-sm btn-info d-lg-inline-flex">Créer un compte</a>
+                        <a href="{{ route('register') }}" class="btn btn-sm btn-info d-lg-inline-flex">Créer un compte</a>
                     </li>
                 </ul>
 
@@ -81,8 +81,8 @@
                             les mesures, les caractéristiques, les compte rendu de test, les performances de
                             plus de 200 produits dédiés au windfoil.</p>
 
-                        <a href="/login" class="btn btn-success">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
-                        <a href="/register" class="btn btn-info">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('login') }}" class="btn btn-success">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('register') }}" class="btn btn-info">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
                     </div>
                 </div>
                 <div class="col-md-5 offset-md-2">
@@ -102,10 +102,9 @@
                 <div class="col-lg-12">
                     <div class="text-center">
                         <h1 class="mt-0"><i class="mdi mdi-infinity"></i></h1>
-                        <h3>The admin is fully <span class="text-primary">responsive</span> and easy to <span class="text-primary">customize</span></h3>
-                        <p class="text-muted mt-2">The clean and well commented code allows easy customization of the
-                            theme.It's designed for
-                            <br>describing your app, agency or business.
+                        <h3>Pourquoi <span class="text-primary">WindfoilFan</span> est il <span class="text-primary">unique</span> ?</h3>
+                        <p class="text-muted mt-2">Le net regorge d'informations et d'avis de tout poil.</br>
+                            Alors pourqoi une application en plus des blogs, des magazines, des shops et des réseaux sociaux ?
                         </p>
                     </div>
                 </div>
@@ -116,12 +115,13 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-desktop text-primary font-24"></i>
+                                <i class="uil  uil-database-alt text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Responsive Layouts</h4>
-                        <p class="text-muted mt-2 mb-0">Et harum quidem rerum as expedita distinctio nam libero tempore
-                            cum soluta nobis est cumque quo.
+                        <h4 class="mt-3">Classement</h4>
+                        <p class="text-muted mt-2 mb-0">Le matériel est classé par catégorie, par marque et par millésime. Vous pouvez accéder à la liste des
+                            produits, mais aussi à des tableaux de synthèse, et des classements par critères.
+                            Tous les avis sont attachés au matériel qu'ils décrivent. La recherche est donc particulièremnt aisée..
                         </p>
                     </div>
                 </div>
@@ -130,12 +130,13 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-vector-square text-primary font-24"></i>
+                                <i class="uil uil-link-broken text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Based on Bootstrap UI</h4>
-                        <p class="text-muted mt-2 mb-0">Temporibus autem quibusdam et aut officiis necessitatibus saepe
-                            eveniet ut sit et recusandae.
+                        <h4 class="mt-3">Indépendant</h4>
+                        <p class="text-muted mt-2 mb-0">WindfoilFan n'est pas financé par les marques. Les avis sont libres et indépendants.
+                            Chaque pratiqaunt peut contribuer et publier ses propres avis, à condition de respecter une charte de 'bonne conduite'.
+                            Nous vous invitons d'ailleurs chaleureusement à le faire.
                         </p>
                     </div>
                 </div>
@@ -144,12 +145,13 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-presentation text-primary font-24"></i>
+                                <i class="uil uil-users-alt text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Creative Design</h4>
-                        <p class="text-muted mt-2 mb-0">Nam libero tempore, cum soluta a est eligendi minus id quod
-                            maxime placeate facere assumenda est.
+                        <h4 class="mt-3">Confiance et pertinence</h4>
+                        <p class="text-muted mt-2 mb-0">Pour chaque avis publiés, on vous donne tous les outils pour pouvoir juger le
+                            niveau de confiance et de pertinence que vous pouvez apporter à cet avis. En particulier, vous devriez
+                            pouvoir établir si le testeur est dans un contexte équivallent au vôtre.
                         </p>
                     </div>
                 </div>
@@ -160,12 +162,14 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-apps text-primary font-24"></i>
+                                <i class="uil uil-sync text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Multiple Applications</h4>
-                        <p class="text-muted mt-2 mb-0">Et harum quidem rerum as expedita distinctio nam libero tempore
-                            cum soluta nobis est cumque quo.
+                        <h4 class="mt-3">Comparatif</h4>
+                        <p class="text-muted mt-2 mb-0">Tous nos classements sont basés sur une comparaison des modèles entre eux.
+                            Il nous parait impossible, voir pas très honnète, de juger un produit dans l'absolu.
+                            Cette méthode permet de donner des classements assez fiables, et d'aller plus loin
+                            qu'un avis peu utile du type "c'est bien" ou "c'est pas bien"..
                         </p>
                     </div>
                 </div>
@@ -174,12 +178,14 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-shopping-cart-alt text-primary font-24"></i>
+                                <i class="uil uil-chart-growth text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Ecommerce Pages</h4>
-                        <p class="text-muted mt-2 mb-0">Temporibus autem quibusdam et aut officiis necessitatibus saepe
-                            eveniet ut sit et recusandae.
+                        <h4 class="mt-3">Mesures objectives</h4>
+                        <p class="text-muted mt-2 mb-0">En plus des tests basés sur des sensations par nature subjectives, nous avons mis au point
+                            un protocole de mesure
+                            qui nous permet d'avoir des données physiques et objectives. Ces données permettent de coroborer une bonne partie
+                            des conclusions que nous pouvons tirer en navigation.
                         </p>
                     </div>
                 </div>
@@ -188,12 +194,12 @@
                     <div class="text-center p-3">
                         <div class="avatar-sm m-auto">
                             <span class="avatar-title bg-primary-lighten rounded-circle">
-                                <i class="uil uil-grids text-primary font-24"></i>
+                                <i class="uil uil-graduation-hat text-primary font-24"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3">Multiple Layouts</h4>
-                        <p class="text-muted mt-2 mb-0">Nam libero tempore, cum soluta a est eligendi minus id quod
-                            maxime placeate facere assumenda est.
+                        <h4 class="mt-3">Pédagogique</h4>
+                        <p class="text-muted mt-2 mb-0">En plus des données propres aux produits, nous avons regroupé une série d'articles didactiques
+                            sur la pratique du windfoil.
                         </p>
                     </div>
                 </div>
@@ -203,95 +209,32 @@
     </section>
     <!-- END SERVICES -->
 
-    <!-- START FEATURES 1 -->
+
+    <!-- START FEATURES 2 -->
     <section class="py-5 bg-light-lighten border-top border-bottom border-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <h3>Flexible <span class="text-primary">Layouts</span></h3>
-                        <p class="text-muted mt-2">There are three different layout options available to cater need for
-                            any <br /> modern web
-                            application.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <div class="demo-box text-center">
-                        <img src="{{asset('assets/images/layouts/layout-1.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Vertical Layout</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="demo-box text-center mt-3 mt-lg-0">
-                        <img src="{{asset('assets/images/layouts/layout-2.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Horizontal Layout</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="demo-box text-center mt-3 mt-lg-0">
-                        <img src="{{asset('assets/images/layouts/layout-3.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Detached Layout</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-
-                <div class="col-lg-4">
-                    <div class="demo-box text-center">
-                        <img src="{{asset('assets/images/layouts/layout-5.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Light Sidenav Layout</h5>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="demo-box text-center mt-3 mt-lg-0">
-                        <img src="{{asset('assets/images/layouts/layout-6.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Boxed Layout</h5>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="demo-box text-center mt-3 mt-lg-0">
-                        <img src="{{asset('assets/images/layouts/layout-4.png')}}" alt="demo-img" class="img-fluid shadow-sm rounded">
-                        <h5 class="mt-3 f-17">Semi Dark Layout</h5>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- END FEATURES 1 -->
-
-    <!-- START FEATURES 2 -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
                         <h1 class="mt-0"><i class="mdi mdi-heart-multiple-outline"></i></h1>
-                        <h3>Features you'll <span class="text-danger">love</span></h3>
-                        <p class="text-muted mt-2">Hyper comes with next generation ui design and have multiple benefits
-                        </p>
+                        <h3>Fonctionalités que vous allez <span class="text-danger">aimer</span></h3>
+                        <p class="text-muted mt-2">Woindfoilfan propose de nombreuses données, en voici une liste non exhaustive</p>
                     </div>
                 </div>
             </div>
             <div class="row mt-2 py-5 align-items-center">
-                <div class="col-lg-5">
-                    <img src="{{asset('assets/images/features-1.svg')}}" class="img-fluid" alt="">
+                <div class="col-lg-6">
+                    <img src="{{asset('assets/images/features.png')}}" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-6 offset-lg-1">
-                    <h3 class="fw-normal">Inbuilt applications and pages</h3>
-                    <p class="text-muted mt-3">Hyper comes with a variety of ready-to-use applications and pages that help to speed up the development</p>
-
+                <div class="col-lg-5 offset-lg-1">
                     <div class="mt-4">
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Projects & Tasks</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Ecommerce Application Pages</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Profile, pricing, invoice</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Login, signup, forget password</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Présentations produits</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Compte-rendus de test</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Classements par critères</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Mesures techniques</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Calculs de vos performances</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Historique de vos navigations</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Articles didactiques</p>
                     </div>
 
                     <a href="" class="btn btn-primary btn-rounded mt-3">Read More <i class="mdi mdi-arrow-right ms-1"></i></a>
@@ -299,192 +242,20 @@
                 </div>
             </div>
 
-            <div class="row pb-3 pt-5 align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="fw-normal">Simply beautiful design</h3>
-                    <p class="text-muted mt-3">The simplest and fastest way to build dashboard or admin panel. Hyper is built using the latest tech and tools and provide an easy way to customize anything, including an overall color schemes, layout, etc.</p>
-
-                    <div class="mt-4">
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> Built with latest Bootstrap</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> Extensive use of SCSS variables</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> Well documented and structured code</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-success"></i> Detailed Documentation</p>
-                    </div>
-
-                    <a href="" class="btn btn-success btn-rounded mt-3">Read More <i class="mdi mdi-arrow-right ms-1"></i></a>
-
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <img src="{{asset('assets/images/features-2.svg')}}" class="img-fluid" alt="">
-                </div>
-            </div>
-
         </div>
     </section>
     <!-- END FEATURES 2 -->
 
-    <!-- START PRICING -->
-    <section class="py-5 bg-light-lighten border-top border-bottom border-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h1 class="mt-0"><i class="mdi mdi-tag-multiple"></i></h1>
-                        <h3>Choose Simple <span class="text-primary">Pricing</span></h3>
-                        <p class="text-muted mt-2">The clean and well commented code allows easy customization of the
-                            theme.It's designed for
-                            <br>describing your app, agency or business.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row mt-5 pt-3">
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Standard License </p>
-                            <i class="card-pricing-icon dripicons-user text-primary"></i>
-                            <h2 class="card-pricing-price">$49 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>10 GB Storage</li>
-                                <li>500 GB Bandwidth</li>
-                                <li>No Domain</li>
-                                <li>1 User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 btn-rounded">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-md-4">
-                    <div class="card card-pricing card-pricing-recommended">
-                        <div class="card-body text-center">
-                            <div class="card-pricing-plan-tag">Recommended</div>
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Multiple License</p>
-                            <i class="card-pricing-icon dripicons-briefcase text-primary"></i>
-                            <h2 class="card-pricing-price">$99 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>50 GB Storage</li>
-                                <li>900 GB Bandwidth</li>
-                                <li>2 Domain</li>
-                                <li>10 User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 btn-rounded">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Extended License</p>
-                            <i class="card-pricing-icon dripicons-store text-primary"></i>
-                            <h2 class="card-pricing-price">$599 <span>/ License</span></h2>
-                            <ul class="card-pricing-features">
-                                <li>100 GB Storege</li>
-                                <li>Unlimited Bandwidth</li>
-                                <li>10 Domain</li>
-                                <li>Unlimited User</li>
-                                <li>Email Support</li>
-                                <li>24x7 Support</li>
-                            </ul>
-                            <button class="btn btn-primary mt-4 mb-2 btn-rounded">Choose Plan</button>
-                        </div>
-                    </div>
-                    <!-- end Pricing_card -->
-                </div>
-                <!-- end col -->
-
-            </div>
-
-        </div>
-    </section>
-    <!-- END PRICING -->
-
-    <!-- START FAQ -->
+    <!-- START CONTACT -->
     <section class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <h1 class="mt-0"><i class="mdi mdi-frequently-asked-questions"></i></h1>
-                        <h3>Frequently Asked <span class="text-primary">Questions</span></h3>
-                        <p class="text-muted mt-2">Here are some of the basic types of questions for our customers. For more
-                            <br>information please contact us.
-                        </p>
-
-                        <button type="button" class="btn btn-success btn-sm mt-2"><i class="mdi mdi-email-outline me-1"></i> Email us your question</button>
-                        <button type="button" class="btn btn-info btn-sm mt-2 ms-1"><i class="mdi mdi-twitter me-1"></i> Send us a tweet</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-lg-5 offset-lg-1">
-                    <!-- Question/Answer -->
-                    <div>
-                        <div class="faq-question-q-box">Q.</div>
-                        <h4 class="faq-question text-body">Can I use this template for my client?</h4>
-                        <p class="faq-answer mb-4 pb-1 text-muted">Yup, the marketplace license allows you to use this theme
-                            in any end products.
-                            For more information on licenses, please refere <a href="https://themes.getbootstrap.com/licenses/" target="_blank">here</a>.</p>
-                    </div>
-
-                    <!-- Question/Answer -->
-                    <div>
-                        <div class="faq-question-q-box">Q.</div>
-                        <h4 class="faq-question text-body">How do I get help with the theme?</h4>
-                        <p class="faq-answer mb-4 pb-1 text-muted">Use our dedicated support email (support@coderthemes.com) to send your issues or feedback. We are here to help anytime.</p>
-                    </div>
-
-                </div>
-                <!--/col-lg-5 -->
-
-                <div class="col-lg-5">
-                    <!-- Question/Answer -->
-                    <div>
-                        <div class="faq-question-q-box">Q.</div>
-                        <h4 class="faq-question text-body">Can this theme work with Wordpress?</h4>
-                        <p class="faq-answer mb-4 pb-1 text-muted">No. This is a HTML template. It won't directly with
-                            wordpress, though you can convert this into wordpress compatible theme.</p>
-                    </div>
-
-                    <!-- Question/Answer -->
-                    <div>
-                        <div class="faq-question-q-box">Q.</div>
-                        <h4 class="faq-question text-body">Will you regularly give updates of Hyper?</h4>
-                        <p class="faq-answer mb-4 pb-1 text-muted">Yes, We will update the Hyper regularly. All the
-                            future updates would be available without any cost.</p>
-                    </div>
-
-                </div>
-                <!--/col-lg-5-->
-            </div>
-            <!-- end row -->
-
-        </div> <!-- end container-->
-    </section>
-    <!-- END FAQ -->
-
-
-    <!-- START CONTACT -->
-    <section class="py-5 bg-light-lighten border-top border-bottom border-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center">
-                        <h3>Get In <span class="text-primary">Touch</span></h3>
-                        <p class="text-muted mt-2">Please fill out the following form and we will get back to you shortly. For more
-                            <br>information please contact us.
+                        <h3>Contactez <span class="text-primary">nous</span></h3>
+                        <p class="text-muted mt-2">Veuillez remplir le formulaire ci-joint et nous reviendrons vers vous très vite. Pour plus
+                            <br>d'information, contactez nous.
                         </p>
                     </div>
                 </div>
@@ -492,10 +263,10 @@
 
             <div class="row align-items-center mt-3">
                 <div class="col-md-4">
-                    <p class="text-muted"><span class="fw-bold">Customer Support:</span><br> <span class="d-block mt-1">+1 234 56 7894</span></p>
-                    <p class="text-muted mt-4"><span class="fw-bold">Email Address:</span><br> <span class="d-block mt-1">info@gmail.com</span></p>
-                    <p class="text-muted mt-4"><span class="fw-bold">Office Address:</span><br> <span class="d-block mt-1">4461 Cedar Street Moro, AR 72368</span></p>
-                    <p class="text-muted mt-4"><span class="fw-bold">Office Time:</span><br> <span class="d-block mt-1">9:00AM To 6:00PM</span></p>
+                    <p class="text-muted"><span class="fw-bold">Service support :</span><br> <span class="d-block mt-1">04 91 45 27 71</span></p>
+                    <p class="text-muted mt-4"><span class="fw-bold">Addresse email:</span><br> <span class="d-block mt-1">info(at)glissattitude.com</span></p>
+                    <p class="text-muted mt-4"><span class="fw-bold">Adresse postale:</span><br> <span class="d-block mt-1">17 Montée du Cdt Robien, 13011 MARSEILLE</span></p>
+                    <p class="text-muted mt-4"><span class="fw-bold">Horaires:</span><br> <span class="d-block mt-1">10h-12h30 et 14h30-19h</span></p>
                 </div>
 
                 <div class="col-md-8">
@@ -503,14 +274,14 @@
                         <div class="row mt-4">
                             <div class="col-lg-6">
                                 <div class="mb-2">
-                                    <label for="fullname" class="form-label">Your Name</label>
-                                    <input class="form-control form-control-light" type="text" id="fullname" placeholder="Name...">
+                                    <label for="fullname" class="form-label">Votre Nom</label>
+                                    <input class="form-control form-control-light" type="text" id="fullname" placeholder="Nom...">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-2">
-                                    <label for="emailaddress" class="form-label">Your Email</label>
-                                    <input class="form-control form-control-light" type="email" required="" id="emailaddress" placeholder="Enter you email...">
+                                    <label for="emailaddress" class="form-label">Votre Email</label>
+                                    <input class="form-control form-control-light" type="email" required="" id="emailaddress" placeholder="Entrez votre Email...">
                                 </div>
                             </div>
                         </div>
@@ -518,8 +289,8 @@
                         <div class="row mt-1">
                             <div class="col-lg-12">
                                 <div class="mb-2">
-                                    <label for="subject" class="form-label">Your Subject</label>
-                                    <input class="form-control form-control-light" type="text" id="subject" placeholder="Enter subject...">
+                                    <label for="subject" class="form-label">Sujet</label>
+                                    <input class="form-control form-control-light" type="text" id="subject" placeholder="Entrez le sujet...">
                                 </div>
                             </div>
                         </div>
@@ -528,14 +299,14 @@
                             <div class="col-lg-12">
                                 <div class="mb-2">
                                     <label for="comments" class="form-label">Message</label>
-                                    <textarea id="comments" rows="4" class="form-control form-control-light" placeholder="Type your message here..."></textarea>
+                                    <textarea id="comments" rows="4" class="form-control form-control-light" placeholder="Ecrivez votre message ici..."></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mt-2">
                             <div class="col-12 text-end">
-                                <button class="btn btn-primary">Send a Message <i class="mdi mdi-telegram ms-1"></i> </button>
+                                <button class="btn btn-primary">Envoyez un message <i class="mdi mdi-telegram ms-1"></i> </button>
                             </div>
                         </div>
                     </form>
@@ -545,15 +316,31 @@
     </section>
     <!-- END CONTACT -->
 
+    <!-- START SUMMARY -->
+    <section class="py-5 bg-light-lighten border-top border-bottom border-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <h1 class="mt-0"><i class="mdi mdi-frequently-asked-questions"></i></h1>
+                        <h3>Un petit <span class="text-primary">Aperçu</span> ?</h3>
+                        <p class="text-muted mt-2">Woindfoilfan propose de nombreuses données, en voici une liste non exhaustive</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SUMMARY -->
+
     <!-- START FOOTER -->
     <footer class="bg-dark py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <img src="{{asset('assets/images/logo.png')}}" alt="" class="logo-dark" height="18" />
-                    <p class="text-muted mt-4">Hyper makes it easier to build better websites with
-                        <br> great speed. Save hundreds of hours of design
-                        <br> and development by using it.
+                    <p class="text-muted mt-4">Windfoilfan est une base de donnée participative <br>
+                                            regroupant les mesures, les caractéristiques, les compte-rendu <br>
+                                            de test, les performances de plus de 200 produits dédiés au windfoil.
                     </p>
 
                     <ul class="social-list list-inline mt-3">
@@ -611,8 +398,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="mt-5">
-                        <p class="text-muted mt-4 text-center mb-0">© 2018 - 2021 Hyper. Design and coded by
-                            Coderthemes</p>
+                        <p class="text-muted mt-4 text-center mb-0">© 2022 Windfoilfan. Powered by Glissattitude</p>
                     </div>
                 </div>
             </div>

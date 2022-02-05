@@ -34,6 +34,7 @@ class AuthServiceProvider extends ServiceProvider
         {
             if (RoleChecker::check($user, UserRole::ROLE_ADMIN))
                 return true;
+            return null;
         });
 
         //-- used in GearFilter to display / hide some gear in index
@@ -42,6 +43,7 @@ class AuthServiceProvider extends ServiceProvider
             {
                 return true;
             }
+            return null;
         });
 
         Gate::define('see-userprofile-private-data', function (User $user, User $profile) {
@@ -60,6 +62,7 @@ class AuthServiceProvider extends ServiceProvider
             {
                 return true;
             }
+            return null;
         });
 
     }

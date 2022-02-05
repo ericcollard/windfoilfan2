@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,8 @@ Route::get('/users/{user}/edit', [UserController::class, 'edit'])->name('user.ed
 Route::patch('/users/{user}',[UserController::class, 'update'])->name('user.update');
 Route::delete('/users/{user}',[UserController::class, 'destroy'])->name('user.destroy');
 Route::post('/users/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
+
+Route::get('/posts', [PostController::class, 'index'])->name('post.list');
 
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');

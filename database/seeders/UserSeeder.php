@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     public function run()
     {
@@ -21,7 +21,7 @@ class UsersTableSeeder extends Seeder
                     'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
                     'remember_token' => 'lCbi4dCTIr5bJM2Jd3FEO1oFIdZrDgs6f5OOFIPx9CfvoP5GNG7GZQ4m00Ok',
                     'roles' => '["ROLE_ADMIN"]',
-                    'avatar_path' => 'JkG1ZzUdXlkvOs77HIGUtfUjOpReEy6ksccYtJuC.jpeg',
+                    'avatar_path' => '7upGjIJxMgWtJD68IiA5OIITQUBKvdPBF0XTW9qM.jpg',
                     'prefered_spots' => 'La Ciotat',
                     'discipline_start' => '2015-05-10 00:00:00',
                     'personal_equipment' => '<p>Flotteurs : Horue Airtime 125, Starboard Foil 144, Tabou Airide 145, Zeeko Airwave, Exocet RF 81</p>
