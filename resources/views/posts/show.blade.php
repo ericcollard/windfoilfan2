@@ -15,12 +15,58 @@
     {{ $post->owner->name }}
 @endsection
 
+@section('css')
+    <style>
+
+        #post-body table  {
+            border-spacing: 10px;
+            border-collapse: separate;
+        }
+        #post-body table td {
+            padding: 5px;
+        }
+
+        #post-body h2 {
+            margin-top: 2em;
+            font-size: 1.5em;
+            color: #e9aa0b;
+            border-bottom: 2px solid #e9aa0b;
+        }
+
+        #post-body .container {
+            margin: 0;
+            padding: 0;
+        }
+
+        #post-body.flou {
+            filter: blur(5px);
+            transition-property: -webkit-filter;
+            transition-duration: 10s;
+        }
+
+        #post-overlay {
+            position: absolute;
+            left: 0;
+            top: 100px;
+            z-index: 1000;
+            text-align: center;
+            width: 100%;
+            font-size: 2.0em;
+        }
+
+        #post-overlay .badge {
+            line-height: 1.5em;
+            padding : 0.5em 0.8em
+        }
+
+
+    </style>
+@endsection
+
+
+
 
 @section('content')
-
-
-
-
     <!-- Start Content-->
     <div class="container-fluid">
 
@@ -67,18 +113,33 @@
                             </div>
                         </div>
                         <!-- project title-->
-                        <h3 class="mt-0">{{ $post->title }}</h3>
+                        <h1 class="mt-0">{{ $post->title }}</h1>
                         <p><small class="text-muted">{{ $post->description }}</small></p>
-                        <div class="badge bg-secondary text-light mb-3">{{ $post->category->name }}</div>
-                        <h5>Contenu:</h5>
+                        <div class="badge bg-secondary text-light">{{ $post->category->name }}</div>
 
-                        <div class="row">
-                            <div class="col-12" id="post-body">
+                    </div>
+                </div>
+
+                <div class="card d-block">
+                    <div class="card-body ">
+
+                        @if ( auth()->guest() )
+                            <div id="post-overlay"><span class="badge badge-outline-dark">Pour lire cet article, <br><a href="{{ route('login') }}">connectez vous</a> !</span></div>
+                            <div id="post-body" class="flou">
                                 {!! $post->body !!}
                             </div>
-                        </div>
+                        @else
+                            <div id="post-body">
+                                {!! $post->body !!}
+                            </div>
+                        @endif
 
-                        <div class="row mt-4">
+                    </div>
+                </div>
+
+                <div class="card d-block">
+                    <div class="card-body">
+                        <div class="row">
                             <div class="col-md-4">
                                 <div class="mb-3">
                                     <h5>{{ __('Creation date') }}</h5>

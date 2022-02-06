@@ -28,8 +28,6 @@ class PostController extends Controller
     {
         $categories = PostCategory::with('posts')->orderBy('order')->get();
 
-        /*$posts = Post::latest();
-        $posts = $posts->paginate(5);*/
         return view('posts.index', compact('categories'));
     }
 
