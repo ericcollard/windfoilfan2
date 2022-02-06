@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ["page_title"=> "Form Elements"])
+@extends('layouts.vertical', ["page_title"=> __('Edit user pofile')])
 
 @section('script-head')
     <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>

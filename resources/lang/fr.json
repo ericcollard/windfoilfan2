@@ -333,5 +333,8 @@
     "Post detail": "Détail de l'article",
     "Creation date" : "Date de création",
     "Update date" : "Date de mise à jour",
-    "Author" : "Auteur"
+    "Author" : "Auteur",
+    "Edit user pofile": "Mise à jour du profil utilisateur",
+    "Edit post": "Mise à jour de l'article",
+    "Post category" : "Catégorie d'article"
 }

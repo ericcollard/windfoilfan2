@@ -18,7 +18,7 @@ class Post extends Model
         'views' => '0',
     ];
 
-    protected $fillable = ['user_id','title','body','created_at'];
+    protected $fillable = ['user_id','title','body','created_at','post_categories_id'];
 
     protected $with = ['owner','category']; // à chaque fois qu'on fera une Query sur Report, le owner sera récupéré en même temps.
 

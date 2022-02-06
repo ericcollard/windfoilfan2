@@ -38,7 +38,13 @@
                                 <!-- item-->
                                 <a href="{{ route('post.edit',$post) }}" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a>
                                 <!-- item-->
-                                <a href="{{ route('post.destroy',$post) }}" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block action-icon dropdown-item">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <a href="javascript:{}" onclick="document.getElementById('deletePost').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                </form>
+
+
                             </div>
                         </div>
                         <!-- project title-->
@@ -48,7 +54,7 @@
                         <h5>Contenu:</h5>
 
                         <div class="row">
-                            <div class="col-12">
+                            <div class="col-12" id="post-body">
                                 {!! $post->body !!}
                             </div>
                         </div>
