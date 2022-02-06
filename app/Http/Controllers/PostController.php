@@ -43,7 +43,10 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.show', ['post' => $post]);
+        $images = $post->images();
+        $imagePath = "";
+        if (count($images) > 0)  $imagePath = url('/').$images[0];
+        return view('posts.show', ['post' => $post,'imagePath'  => $imagePath]);
     }
 
     /**

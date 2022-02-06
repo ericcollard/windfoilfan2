@@ -1,4 +1,18 @@
-@extends('layouts.vertical', ["page_title"=> "Profile"])
+@extends('layouts.vertical')
+
+
+@section('page_title')
+    {{ __('User profile')  }}
+@endsection
+@section('page_description')
+    Profil utilisateur de {{ $user->name }}
+@endsection
+@section('page_image')
+    {{ $user->avatarUrl() }}
+@endsection
+@section('page_author')
+    Glissattitude
+@endsection
 
 @section('content')
     <!-- Start Content-->

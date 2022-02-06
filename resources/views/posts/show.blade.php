@@ -1,9 +1,26 @@
-@extends('layouts.vertical', ["page_title"=> __('Post detail')])
+@extends('layouts.vertical')
 
-<!-- todo : META facebook et google-->
+@section('page_title')
+    {{ $post->title }}
+@endsection
+@section('page_description')
+    Article : {{ $post->description }}
+@endsection
+@section('page_image')
+    @if (strlen($imagePath) > 0 )
+        {{ $imagePath }}
+    @endif
+@endsection
+@section('page_author')
+    {{ $post->owner->name }}
+@endsection
 
 
 @section('content')
+
+
+
+
     <!-- Start Content-->
     <div class="container-fluid">
 
@@ -51,8 +68,8 @@
                         </div>
                         <!-- project title-->
                         <h3 class="mt-0">{{ $post->title }}</h3>
+                        <p><small class="text-muted">{{ $post->description }}</small></p>
                         <div class="badge bg-secondary text-light mb-3">{{ $post->category->name }}</div>
-
                         <h5>Contenu:</h5>
 
                         <div class="row">

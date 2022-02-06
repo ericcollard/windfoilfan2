@@ -18,7 +18,7 @@ class Post extends Model
         'views' => '0',
     ];
 
-    protected $fillable = ['user_id','title','body','created_at','post_categories_id'];
+    protected $fillable = ['user_id','title','body','description','created_at','post_categories_id'];
 
     protected $with = ['owner','category']; // à chaque fois qu'on fera une Query sur Report, le owner sera récupéré en même temps.
 
@@ -33,5 +33,24 @@ class Post extends Model
     {
         return $this->belongsTo(PostCategory::class, 'post_categories_id');
     }
+
+    /**
+     * search all images in body
+     */
+    public function images()
+    {
+        preg_match_all('/(<img[^>]+>)/i', $this->body, $image_matches, PREG_SET_ORDER);
+        $imagesPath = [];
+        foreach ($image_matches as $image_match)
+        {
+            $imagetag = $image_match[0];
+            if(preg_match('@src="([^"]+)"@',$imagetag,$match))
+            {
+                $imagesPath[] = $match[1];
+            }
+        }
+        return $imagesPath;
+    }
+
 
 }

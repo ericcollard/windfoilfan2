@@ -1,5 +1,17 @@
 @extends('layouts.vertical', ["page_title"=> __('Edit post')])
 
+@section('page_title')
+    {{  __('Edit list') }}
+@endsection
+@section('page_description')
+    {{  __('Edit list') }}
+@endsection
+@section('page_image')
+@endsection
+@section('page_author')
+    Glissattitude
+@endsection
+
 @section('script-head')
     <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
     <script>
@@ -114,6 +126,13 @@
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="col-lg-12  mb-3">
+                                <label for="description">{{ __('Description') }}*</label>
+                                <input type="text" class="form-control" id="description" name="description"
+                                       value="{{ $post->description ? $post->description : old('description') }}" required/>
+                            </div>
+                        </div>
 
                         <div class="row">
                             <div class="col-lg-12  mb-3">

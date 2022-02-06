@@ -27,6 +27,7 @@ class PostFactory extends Factory
             'post_categories_id' => $this->faker->numberBetween($min = 1, $max = 6),
             'body' => $this->faker->paragraph,
             'title' => $this->faker->word,
+            'description' => $this->faker->realText($maxNbChars = 100, $indexSize = 2),
             'views' => $this->faker->numberBetween($min = 1, $max = 100),
         ];
     }

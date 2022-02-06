@@ -1,4 +1,16 @@
-@extends('layouts.vertical', ["page_title"=> __('Posts list')])
+@extends('layouts.vertical')
+
+@section('page_title')
+   {{  __('Posts list') }}
+@endsection
+@section('page_description')
+    {{  __('Posts list') }}
+@endsection
+@section('page_image')
+@endsection
+@section('page_author')
+    Glissattitude
+@endsection
 
 
 @section('content')

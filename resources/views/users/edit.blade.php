@@ -1,4 +1,16 @@
-@extends('layouts.vertical', ["page_title"=> __('Edit user pofile')])
+@extends('layouts.vertical')
+
+@section('page_title')
+    {{ __('Edit user pofile')  }}
+@endsection
+@section('page_description')
+    {{ __('Edit user pofile')  }}
+@endsection
+@section('page_image')
+@endsection
+@section('page_author')
+    Glissattitude
+@endsection
 
 @section('script-head')
     <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>

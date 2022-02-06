@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('layouts.shared/head', ["page_title"=> $page_title] )
+    @include('layouts.shared/head')
 </head>
 
 <body class="loading" data-layout-config='{"leftSideBarTheme":"default","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": false}'>
