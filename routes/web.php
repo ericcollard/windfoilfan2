@@ -31,7 +31,10 @@ Route::delete('/users/{user}',[UserController::class, 'destroy'])->name('user.de
 Route::post('/users/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
 
 Route::get('/posts', [PostController::class, 'index'])->name('post.list');
-
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('post.show');
+Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');
+Route::patch('/posts/{post}',[PostController::class, 'update'])->name('post.update');
+Route::delete('/posts/{post}',[PostController::class, 'destroy'])->name('post.destroy');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 

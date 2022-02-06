@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\PostCategory;
-use App\Models\Post;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class PostCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $categories = PostCategory::with('posts')->get();
-
-        /*$posts = Post::latest();
-        $posts = $posts->paginate(5);*/
-        return view('posts.index', compact('categories'));
+        //
     }
 
     /**
@@ -46,21 +41,21 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+     * @param  \App\Models\PostCategory  $postCategory
+     * @return \Illuminate\Http\Response
      */
-    public function show(Post $post)
+    public function show(PostCategory $postCategory)
     {
-        return view('posts.show', ['post' => $post]);
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function edit(Post $post)
+    public function edit(PostCategory $postCategory)
     {
         //
     }
@@ -69,10 +64,10 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, PostCategory $postCategory)
     {
         //
     }
@@ -80,10 +75,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Post  $post
+     * @param  \App\Models\PostCategory  $postCategory
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Post $post)
+    public function destroy(PostCategory $postCategory)
     {
         //
     }

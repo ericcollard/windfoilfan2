@@ -154,7 +154,7 @@
   "cams": "Cambers",
   "area": "Surface",
   "boom": "Wishbone",
-  "Views": "vues",
+  "Views": "Vues",
   "This product was displayed :count times": "{0}Ce produit n'a pas encore été vu.|{1,*}Ce produit a déjà été vu :count fois",
   "Our test": "Notre test",
   "Our presentation": "Présentation détaillée sur glissattitude.com",
@@ -327,5 +327,11 @@
   "Device Data Chart" : "Classement sur ce critère",
   "Characteristics and numbers" : "Caractéristiques technique, présentation et mesures",
   "No reviews at that time" : "Pas d'avis pour l'instant",
-    "Welcome" : "Bienvenue"
+  "Welcome" : "Bienvenue",
+    "Posts": "Articles",
+    "Posts list": "Liste des articles",
+    "Post detail": "Détail de l'article",
+    "Creation date" : "Date de création",
+    "Update date" : "Date de mise à jour",
+    "Author" : "Auteur"
 }

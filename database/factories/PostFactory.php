@@ -24,6 +24,7 @@ class PostFactory extends Factory
     {
         return [
             'user_id' => User::factory(),
+            'post_categories_id' => $this->faker->numberBetween($min = 1, $max = 6),
             'body' => $this->faker->paragraph,
             'title' => $this->faker->word,
             'views' => $this->faker->numberBetween($min = 1, $max = 100),

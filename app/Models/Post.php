@@ -20,12 +20,18 @@ class Post extends Model
 
     protected $fillable = ['user_id','title','body','created_at'];
 
-    protected $with = ['owner']; // à chaque fois qu'on fera une Query sur Report, le owner sera récupéré en même temps.
+    protected $with = ['owner','category']; // à chaque fois qu'on fera une Query sur Report, le owner sera récupéré en même temps.
 
     /** Database Models Relations */
     public function owner()
     {
         return $this->belongsTo(User::class, 'user_id');
+    }
+
+    /** Database Models Relations */
+    public function category()
+    {
+        return $this->belongsTo(PostCategory::class, 'post_categories_id');
     }
 
 }
