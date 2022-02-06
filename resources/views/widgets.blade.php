@@ -359,7 +359,6 @@
         </div> <!-- end col-->
 
         <div class="col-xl-4">
-            <!-- Todo-->
             <div class="card">
                 <div class="card-body">
                     <div class="dropdown float-end">
@@ -818,7 +817,6 @@
 <!-- Chat js -->
 <script src="{{asset('assets/js/ui/component.chat.js')}}"></script>
 
-<!-- Todo js -->
 <script src="{{asset('assets/js/ui/component.todo.js')}}"></script>
 
 <!-- demo app -->

@@ -64,11 +64,21 @@
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                         <li class="breadcrumb-item"><a href="{{ route('post.list') }}">{{ __('Posts') }}</a></li>
-                        <li class="breadcrumb-item"><a href="#">{{ $post->title }}</a></li>
-                        <li class="breadcrumb-item active">{{ __('Edit') }}</li>
+                        @if ($method === 'POST')
+                            <li class="breadcrumb-item active">{{ __('Create') }}</li>
+                        @else
+                            <li class="breadcrumb-item"><a href="#">{{ $post->title }}</a></li>
+                            <li class="breadcrumb-item active">{{ __('Edit') }}</li>
+                        @endif
+
                     </ol>
                 </div>
-                <h4 class="page-title">{{ __('Edit post') }} : <b>{{ $post->title }}</h4>
+                @if ($method === 'POST')
+                    <h4 class="page-title">{{ __('Create post') }}</h4>
+                @else
+                    <h4 class="page-title">{{ __('Edit post') }} : <b>{{ $post->title }}</h4>
+                @endif
+
             </div>
         </div>
     </div>

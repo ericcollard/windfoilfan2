@@ -18,7 +18,7 @@
                 <div class="page-title-box">
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilapp</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item"><a href="#">{{ __('Users') }}</a></li>
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>

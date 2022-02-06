@@ -1,9 +1,7 @@
 @extends('layouts.vertical', ["page_title"=> "Preloader"])
 
 @section('css')
-<!-- third party css -->
-<link href="{{asset('assets/libs/admin-resources/admin-resources.min.js')}}" rel="stylesheet" type="text/css" /><!-- third party css end -->
-
+<link href="{{asset('assets/libs/admin-resources/admin-resources.min.js')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section('preloader')
@@ -427,7 +425,6 @@
             </div>
             <!-- end card-->
 
-            <!-- Todo-->
             <div class="card">
                 <div class="card-body">
                     <div class="dropdown float-end">
@@ -465,9 +462,9 @@
 <script src="{{asset('assets/libs/apexcharts/apexcharts.min.js')}}"></script>
 <!-- third party js ends -->
 
-<!-- Todo js -->
+
 <script src="{{asset('assets/js/ui/component.todo.js')}}"></script>
-<!-- end Todo js -->
+
 
 <!-- demo app -->
 <script src="{{asset('assets/js/pages/demo.dashboard-crm.js')}}"></script>

@@ -18,20 +18,20 @@ class PostCategorySeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => 'Classements',
+                    'name' => 'Sélection',
                     'order' => '1',
                 ),
             1 =>
                 array (
                     'id' => 2,
-                    'name' => 'Visites',
-                    'order' => '1',
+                    'name' => 'Tutos navigation',
+                    'order' => '2',
                 ),
             2 =>
                 array (
                     'id' => 3,
-                    'name' => 'Pratique',
-                    'order' => '2',
+                    'name' => 'Visites fabriquants',
+                    'order' => '7',
                 ),
             3 =>
                 array (
@@ -54,7 +54,7 @@ class PostCategorySeeder extends Seeder
             6 =>
                 array (
                     'id' => 7,
-                    'name' => 'Events',
+                    'name' => 'Evènements',
                     'order' => '6',
                 ),
         ));

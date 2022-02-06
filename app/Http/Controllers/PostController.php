@@ -26,33 +26,14 @@ class PostController extends Controller
      */
     public function index()
     {
-        $categories = PostCategory::with('posts')->get();
+        $categories = PostCategory::with('posts')->orderBy('order')->get();
 
         /*$posts = Post::latest();
         $posts = $posts->paginate(5);*/
         return view('posts.index', compact('categories'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
+    // todo : index pour une catégorie
 
     /**
      * Display the specified resource.
@@ -79,6 +60,24 @@ class PostController extends Controller
 
         return view('posts.edit', compact('action', 'method','post','categories'));
     }
+
+
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function create()
+    {
+        $action = URL::route('post.store');
+        $method = 'POST';
+        $categories = PostCategory::all();
+        $post = new Post;
+        $post->user_id = auth()->user()->id;
+        return view('posts.edit', compact('action', 'method','post','categories'));
+    }
+
 
     /**
      * Update the specified resource in storage.
@@ -107,6 +106,34 @@ class PostController extends Controller
         }
 
         return redirect(route('post.show',['post' => $post]));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     */
+    public function store(Request $request)
+    {
+
+        try {
+            $this->validate($request, [
+                'title'        => 'required',
+                'body'        => 'required',
+                'post_categories_id' => 'required|exists:post_categories,id',
+            ]);
+
+            // add the slug to the data
+            $data = $request->all();
+
+            $post = Post::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "I'm sorry, impossible to store you item at the moment");
+        }
+        return redirect(route('post.show',['post' => $post]))->with('flash', 'Your device has been created!');
     }
 
     /**

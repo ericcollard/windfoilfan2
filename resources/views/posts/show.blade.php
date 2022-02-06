@@ -1,5 +1,7 @@
 @extends('layouts.vertical', ["page_title"=> __('Post detail')])
 
+<!-- todo : META facebook et google-->
+
 
 @section('content')
     <!-- Start Content-->
