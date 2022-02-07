@@ -6,6 +6,7 @@ use App\Models\PostCategory;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
+use Jorenvh\Share\Share;
 
 class PostController extends Controller
 {
@@ -44,7 +45,19 @@ class PostController extends Controller
         $images = $post->images();
         $imagePath = "";
         if (count($images) > 0)  $imagePath = url('/').$images[0];
-        return view('posts.show', ['post' => $post,'imagePath'  => $imagePath]);
+
+        $shareComponent = (new \Jorenvh\Share\Share)->page(
+            URL::full(),
+            $post->description,
+            ['class' => 'social-list-item border-primary text-primary', 'title' => $post->title],
+            ' ', ' '
+        )
+            ->facebook()
+            ->twitter()
+            ->whatsapp();
+
+
+        return view('posts.show', compact('post', 'imagePath', 'shareComponent'));
     }
 
     /**

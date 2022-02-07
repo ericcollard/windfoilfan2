@@ -70,7 +70,34 @@
             background-color: #f8f9fc; !important;
         }
 
+        div#social-links {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        div#social-links ul li {
+            display: inline-block;
+        }
+        div#social-links ul li a {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 1px;
+            font-size: 30px;
+            color: #222;
+            background-color: #ccc;
+        }
+
+
+        .list-inline li:not(:last-child){
+            margin-right: 6px;
+        }
+
+        .list-inline li {
+            display: inline-block;
+            text-align: center !important;
+        }
     </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 @endsection
 
 
@@ -113,16 +140,10 @@
                         <!-- project title-->
                         <h1 class="mt-0">{{ $post->title }}</h1> <div class="badge bg-secondary text-light">{{ $post->category->name }}</div>
                         <p><small class="text-muted">{{ $post->description }}</small></p>
+
+
                         <ul class="social-list list-inline mt-3">
-                            <li class="list-inline-item text-center">
-                                <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item text-center">
-                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
-                            </li>
-                            <li class="list-inline-item text-center">
-                                <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
-                            </li>
+                            {!! $shareComponent !!}
                             <li class="list-inline-item text-center">
                                 <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',$post) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
                             </li>
@@ -136,25 +157,10 @@
                                 </form>
                             </li>
                         </ul>
+
                     </div>
 
-                    <div class="likeShareBtnmt-3">
 
-                        <!-- Load Facebook SDK for JavaScript -->
-                        <div id="fb-root"></div>
-                        <script>(function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));</script>
-
-                        <div class="fb-share-button"
-                             data-href="https://www.your-domain.com/your-page.html"
-                             data-layout="button_count">
-                        </div>
-                    </div>
 
 
                     <div class="card-body ">
