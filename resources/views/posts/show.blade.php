@@ -26,11 +26,19 @@
             padding: 5px;
         }
 
+        #post-body table td.colored {
+            background-color: #D8DEE9;
+        }
+
         #post-body h2 {
             margin-top: 2em;
             font-size: 1.5em;
             color: #e9aa0b;
-            border-bottom: 2px solid #e9aa0b;
+
+            color: #00AAAA;
+            color: #6f42c1;
+            color: #6b5eae;
+            border-bottom: 2px solid #6b5eae;
         }
 
         #post-body .container {
@@ -58,7 +66,9 @@
             line-height: 1.5em;
             padding : 0.5em 0.8em
         }
-
+        .card-header {
+            background-color: #f8f9fc; !important;
+        }
 
     </style>
 @endsection
@@ -94,33 +104,59 @@
 
                 <!-- post card -->
                 <div class="card d-block">
-                    <div class="card-body">
-                        <div class="dropdown float-end">
-                            <a href="#" class="dropdown-toggle arrow-none card-drop" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="dripicons-dots-3"></i>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <!-- item-->
-                                <a href="{{ route('post.edit',$post) }}" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a>
-                                <!-- item-->
-                                <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block action-icon dropdown-item">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <a href="javascript:{}" onclick="document.getElementById('deletePost').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
-                                </form>
-
-
-                            </div>
+                    <div class="card-header">
+                        <div class=" float-end">
+                            @if (strlen($imagePath) > 0 )
+                                <img height="105px" src="{{ $imagePath }}" alt="{{ $post->title }}">
+                            @endif
                         </div>
                         <!-- project title-->
-                        <h1 class="mt-0">{{ $post->title }}</h1>
+                        <h1 class="mt-0">{{ $post->title }}</h1> <div class="badge bg-secondary text-light">{{ $post->category->name }}</div>
                         <p><small class="text-muted">{{ $post->description }}</small></p>
-                        <div class="badge bg-secondary text-light">{{ $post->category->name }}</div>
-
+                        <ul class="social-list list-inline mt-3">
+                            <li class="list-inline-item text-center">
+                                <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',$post) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
+                            </li>
+                            <li class="list-inline-item text-center">
+                                <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block">
+                                    {{ csrf_field() }}
+                                    {{ method_field('DELETE') }}
+                                    <button type="button" class="btn btn-sm btn-outline-danger text-danger rounded-pill">
+                                        <a href="javascript:{}" onclick="document.getElementById('deletePost').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
                     </div>
-                </div>
 
-                <div class="card d-block">
+                    <div class="likeShareBtnmt-3">
+
+                        <!-- Load Facebook SDK for JavaScript -->
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+
+                        <div class="fb-share-button"
+                             data-href="https://www.your-domain.com/your-page.html"
+                             data-layout="button_count">
+                        </div>
+                    </div>
+
+
                     <div class="card-body ">
 
                         @if ( auth()->guest() )
