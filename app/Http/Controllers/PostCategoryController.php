@@ -42,11 +42,12 @@ class PostCategoryController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\PostCategory  $postCategory
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show(PostCategory $postCategory)
     {
-        //
+        //$posts = $postCategory->Posts();
+        return view('postcategories.show', compact('postCategory'));
     }
 
     /**

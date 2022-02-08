@@ -9,8 +9,11 @@ class PostCategory extends Model
 {
     use HasFactory;
 
+    protected $table = 'post_categories';
+
     public function posts() {
-        return $this->hasMany(Post::class,'post_categories_id');
+        return $this->hasMany(Post::class,'post_categories_id')
+            ->orderBy('updated_at', 'DESC');
     }
 
 }

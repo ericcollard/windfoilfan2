@@ -29,6 +29,7 @@ class PostFactory extends Factory
             'title' => $this->faker->word,
             'description' => $this->faker->realText($maxNbChars = 100, $indexSize = 2),
             'views' => $this->faker->numberBetween($min = 1, $max = 100),
+            'status' => $this->faker->randomElement(['Published', 'Hidden', 'Archived']),
         ];
     }
 }

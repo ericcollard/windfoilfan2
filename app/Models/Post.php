@@ -52,5 +52,23 @@ class Post extends Model
         return $imagesPath;
     }
 
+    public function statusClass()
+    {
+        $class = "";
+        switch ($this->status) {
+            case 'Published':
+                $class = "bg-success";
+                break;
+            case 'Hidden':
+                $class = "bg-warning";
+                break;
+            case 'Archived':
+                $class = "bg-danger";
+                break;
+            default:
+                $class = "bg-dark";
+        }
+        return $class;
+    }
 
 }

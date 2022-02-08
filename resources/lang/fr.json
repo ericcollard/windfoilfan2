@@ -337,5 +337,9 @@
     "Edit user pofile": "Mise à jour du profil utilisateur",
     "Edit post": "Mise à jour de l'article",
     "Post category" : "Catégorie d'article",
-    "Users list" : "Liste des utilisateurs"
+    "Users list" : "Liste des utilisateurs",
+    "Category posts for" : "Articles de la catégorie",
+    "Published" : "Publié",
+    "Hidden" : "Caché",
+    "Archived" : "Archivé"
 }

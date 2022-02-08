@@ -30,7 +30,25 @@ class PostPolicy
      */
     public function view(?User $user, Post $post)
     {
-        return true;
+        if ($post->status == 'Published' or $post->status == 'Hidden')
+            return true;
+        else
+            return false;
+    }
+
+    /**
+     * Determine whether the user can view the model.
+     *
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Post  $post
+     * @return mixed
+     */
+    public function list(?User $user, Post $post)
+    {
+        if ($post->status == 'Published')
+            return true;
+        else
+            return false;
     }
 
     /**

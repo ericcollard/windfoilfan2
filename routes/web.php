@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Models\PostCategory;
 use Illuminate\Support\Facades\Route;
 
 
@@ -37,6 +39,10 @@ Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.ed
 Route::patch('/posts/{post}',[PostController::class, 'update'])->name('post.update');
 Route::delete('/posts/{post}',[PostController::class, 'destroy'])->name('post.destroy');
 Route::post('/posts',[PostController::class, 'store'])->name('post.store');
+
+Route::get('/postcategory/{post_category}', [PostCategoryController::class, 'show'])->name('postcategory.show');
+
+
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 

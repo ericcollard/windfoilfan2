@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->text('body');
+            $table->string('status')->default('Published'); // (1) Published : (2) hidden : (0) archived
             $table->integer('views');
             $table->timestamps();
         });

@@ -37,100 +37,138 @@
                 </a>
             </li>
 
-            <li class="side-nav-title side-nav-item">Produits</li>
-
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Foil </span>
+                <a data-bs-toggle="collapse" href="#sidebarProducts" aria-expanded="false" aria-controls="sidebarProducts" class="side-nav-link collapsed">
+                    <i class="mdi mdi-airplane"></i>
+                    <span> PRODUITS </span>
+                    <span class="menu-arrow"></span>
                 </a>
+                <div class="collapse" id="sidebarProducts" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="#">Foils</a>
+                        </li>
+                        <li>
+                            <a href="#">Flotteurs</a>
+                        </li>
+                        <li>
+                            <a href="#">Voiles</a>
+                        </li>
+                        <li>
+                            <a href="#">Marques</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Flotteur </span>
+                <a data-bs-toggle="collapse" href="#sidebarMesures" aria-expanded="false" aria-controls="sidebarMesures" class="side-nav-link collapsed">
+                    <i class="uil uil-chart-bar-alt"></i>
+                    <span> MESURES </span>
+                    <span class="menu-arrow"></span>
                 </a>
-            </li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Voile </span>
-                </a>
-            </li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Marques </span>
-                </a>
-            </li>
-
-            <li class="side-nav-title side-nav-item">Mesures</li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Flexion </span>
-                </a>
-            </li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Torsion </span>
-                </a>
-            </li>
-
-            <li class="side-nav-title side-nav-item">Avis</li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Nos avis </span>
-                </a>
-            </li>
-
-            <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Avis postés </span>
-                </a>
-            </li>
-
-            <li class="side-nav-title side-nav-item">Posts</li>
-            <li class="side-nav-item">
-                <a href="{{ route('post.list') }}" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Liste </span>
-                </a>
+                <div class="collapse" id="sidebarMesures" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="#">Torsion</a>
+                        </li>
+                        <li>
+                            <a href="#">Flexion</a>
+                        </li>
+                        <li>
+                            <a href="#">Module</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
 
-            <li class="side-nav-title side-nav-item">Sessions</li>
+            <li class="side-nav-item">
+                <a data-bs-toggle="collapse" href="#sidebarReviews" aria-expanded="false" aria-controls="sidebarReviews" class="side-nav-link collapsed">
+                    <i class="uil uil-feedback"></i>
+                    <span> AVIS </span>
+                    <span class="menu-arrow"></span>
+                </a>
+                <div class="collapse" id="sidebarReviews" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="#">Nos Avis</a>
+                        </li>
+                        <li>
+                            <a href="#">Tous les avis</a>
+                        </li>
+                        <li>
+                            <a href="#">Module</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
 
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Toutes les sessions </span>
+                <a data-bs-toggle="collapse" href="#sidebarPosts" aria-expanded="false" aria-controls="sidebarPosts" class="side-nav-link collapsed">
+                    <i class="mdi mdi-note-text-outline"></i>
+                    <span> ARTICLES </span>
+                    <span class="menu-arrow"></span>
                 </a>
+                <div class="collapse" id="sidebarPosts" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{ route('postcategory.show',1) }}">Nos sélections</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',2) }}">Tutos navigation</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',4) }}">Mise en oeuvre</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',5) }}">Technologie</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',6) }}">Réglages</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',7) }}">Evènements</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('postcategory.show',3) }}">Visites fabriquants</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
             <li class="side-nav-item">
-                <a href="#" class="side-nav-link">
-                    <i class="uil-comments-alt"></i>
-                    <span> Sessions perso </span>
+                <a data-bs-toggle="collapse" href="#sidebarSessions" aria-expanded="false" aria-controls="sidebarSessions" class="side-nav-link collapsed">
+                    <i class="mdi mdi-speedometer"></i>
+                    <span> NAVIGATIONS </span>
+                    <span class="menu-arrow"></span>
                 </a>
+                <div class="collapse" id="sidebarSessions" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="#">Toutes les sessions</a>
+                        </li>
+                        <li>
+                            <a href="#">Session perso</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
-            <li class="side-nav-title side-nav-item">Administration</li>
-
             <li class="side-nav-item">
-                <a href="{{ route('user.list') }}" class="side-nav-link">
-                    <i class="uil-calender"></i>
-                    <span> Users </span>
+                <a data-bs-toggle="collapse" href="#sidebarAdmin" aria-expanded="false" aria-controls="sidebarAdmin" class="side-nav-link collapsed">
+                    <i class="uil uil-cog"></i>
+                    <span> ADMINISTRATION </span>
+                    <span class="menu-arrow"></span>
                 </a>
+                <div class="collapse" id="sidebarAdmin" style="">
+                    <ul class="side-nav-second-level">
+                        <li>
+                            <a href="{{ route('user.list') }}">Users</a>
+                        </li>
+                    </ul>
+                </div>
             </li>
 
         </ul>

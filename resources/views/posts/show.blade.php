@@ -55,7 +55,7 @@
         #post-overlay {
             position: absolute;
             left: 0;
-            top: 100px;
+            top: 200px;
             z-index: 1000;
             text-align: center;
             width: 100%;
@@ -66,26 +66,6 @@
             line-height: 1.5em;
             padding : 0.5em 0.8em
         }
-        .card-header {
-            background-color: #f8f9fc; !important;
-        }
-
-        div#social-links {
-            margin: 0 auto;
-            max-width: 500px;
-        }
-        div#social-links ul li {
-            display: inline-block;
-        }
-        div#social-links ul li a {
-            padding: 20px;
-            border: 1px solid #ccc;
-            margin: 1px;
-            font-size: 30px;
-            color: #222;
-            background-color: #ccc;
-        }
-
 
         .list-inline li:not(:last-child){
             margin-right: 6px;
@@ -115,7 +95,7 @@
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('post.list') }}">{{ __('Posts') }}</a></li>
-                            <li class="breadcrumb-item"><a href="">{{ $post->category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('postcategory.show',$post->category) }}">{{ $post->category->name }}</a></li>
                             <li class="breadcrumb-item active">{{ $post->title }}</li>
                         </ol>
                     </div>
@@ -138,24 +118,31 @@
                             @endif
                         </div>
                         <!-- project title-->
-                        <h1 class="mt-0">{{ $post->title }}</h1> <div class="badge bg-secondary text-light">{{ $post->category->name }}</div>
+                        <h1 class="mt-0">{{ $post->title }}</h1>
+                        <div class="badge badge-outline-dark">{{ $post->category->name }}</div>
+                        <div class="badge {{ $post->statusClass() }}">{{ __($post->status) }}</div>
+
                         <p><small class="text-muted">{{ $post->description }}</small></p>
 
 
                         <ul class="social-list list-inline mt-3">
                             {!! $shareComponent !!}
-                            <li class="list-inline-item text-center">
-                                <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',$post) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
-                            </li>
-                            <li class="list-inline-item text-center">
-                                <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block">
-                                    {{ csrf_field() }}
-                                    {{ method_field('DELETE') }}
-                                    <button type="button" class="btn btn-sm btn-outline-danger text-danger rounded-pill">
-                                        <a href="javascript:{}" onclick="document.getElementById('deletePost').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
-                                    </button>
-                                </form>
-                            </li>
+                            @can ('update', $post)
+                                <li class="list-inline-item text-center">
+                                    <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',$post) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
+                                </li>
+                            @endcan
+                            @can ('delete', $post)
+                                <li class="list-inline-item text-center">
+                                    <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block">
+                                        {{ csrf_field() }}
+                                        {{ method_field('DELETE') }}
+                                        <button type="button" class="btn btn-sm btn-outline-danger text-danger rounded-pill">
+                                            <a href="javascript:{}" onclick="document.getElementById('deletePost').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                        </button>
+                                    </form>
+                                </li>
+                            @endcan
                         </ul>
 
                     </div>
