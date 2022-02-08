@@ -49,24 +49,12 @@
                     <div class="card d-block">
 
                         <div class="card-body">
-                            <div class="dropdown card-widgets">
-                                <a href="#" class="dropdown-toggle arrow-none" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="dripicons-dots-3"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-pencil me-1"></i>Edit</a>
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-delete me-1"></i>Delete</a>
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-email-outline me-1"></i>Invite</a>
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item"><i class="mdi mdi-exit-to-app me-1"></i>Leave</a>
-                                </div>
+                            <div class=" card-widgets">
+                                <img height="50px" class="rounded" src="{{ $post->imagePath() }}" alt="{{ $post->title }}">
                             </div>
                             <!-- project title-->
                             <h4 class="mt-0">
-                                <a href="" class="text-title">{{ $post->title }}</a>
+                                <a href="{{ route('post.show',$post) }}" class="text-title">{{ $post->title }}</a>
                             </h4>
                             <div class="badge {{ $post->statusClass() }} mb-2">{{ __($post->status) }}</div>
 

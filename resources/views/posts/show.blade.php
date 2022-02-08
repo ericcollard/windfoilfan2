@@ -7,8 +7,8 @@
     Article : {{ $post->description }}
 @endsection
 @section('page_image')
-    @if (strlen($imagePath) > 0 )
-        {{ $imagePath }}
+    @if (strlen($post->imagePath()) > 0 )
+        {{ $post->imagePath() }}
     @endif
 @endsection
 @section('page_author')
@@ -113,9 +113,7 @@
                 <div class="card d-block">
                     <div class="card-header">
                         <div class=" float-end">
-                            @if (strlen($imagePath) > 0 )
-                                <img height="105px" src="{{ $imagePath }}" alt="{{ $post->title }}">
-                            @endif
+                                <img height="105px" src="{{ $post->imagePath() }}" alt="{{ $post->title }}">
                         </div>
                         <!-- project title-->
                         <h1 class="mt-0">{{ $post->title }}</h1>

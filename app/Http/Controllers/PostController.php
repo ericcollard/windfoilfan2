@@ -42,10 +42,6 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        $images = $post->images();
-        $imagePath = "";
-        if (count($images) > 0)  $imagePath = url('/').$images[0];
-
         $shareComponent = (new \Jorenvh\Share\Share)->page(
             URL::full(),
             $post->description,
@@ -57,7 +53,7 @@ class PostController extends Controller
             ->whatsapp();
 
 
-        return view('posts.show', compact('post', 'imagePath', 'shareComponent'));
+        return view('posts.show', compact('post',  'shareComponent'));
     }
 
     /**

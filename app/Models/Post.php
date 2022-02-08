@@ -52,6 +52,22 @@ class Post extends Model
         return $imagesPath;
     }
 
+    /**
+     * search first image path
+     */
+    public function imagePath()
+    {
+        $images = $this->images();
+        $imagePath = "";
+        if (count($images) > 0)
+            $imagePath = url('/').$images[0];
+        else
+            $imagePath = asset('assets/images/post.png');
+        return $imagePath;
+    }
+
+
+
     public function statusClass()
     {
         $class = "";

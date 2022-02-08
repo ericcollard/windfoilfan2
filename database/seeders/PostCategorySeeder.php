@@ -18,7 +18,7 @@ class PostCategorySeeder extends Seeder
             0 =>
                 array (
                     'id' => 1,
-                    'name' => 'Sélection',
+                    'name' => 'Nos sélections',
                     'order' => '1',
                 ),
             1 =>
