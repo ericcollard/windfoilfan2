@@ -33,6 +33,7 @@ Route::delete('/users/{user}',[UserController::class, 'destroy'])->name('user.de
 Route::post('/users/{user}/avatar',[UserController::class, 'storeAvatar'])->name('user.avatar.store');
 
 Route::get('/posts', [PostController::class, 'index'])->name('post.list');
+Route::get('/posts/extract', [PostController::class, 'extract'])->name('post.extract');
 Route::get('/posts/create', [PostController::class, 'create'])->name('post.create');
 Route::get('/posts/{post}', [PostController::class, 'show'])->name('post.show');
 Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('post.edit');

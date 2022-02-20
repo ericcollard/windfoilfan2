@@ -6,7 +6,7 @@ use App\Models\PostCategory;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
-use Jorenvh\Share\Share;
+use SplFileObject;
 
 class PostController extends Controller
 {
@@ -162,4 +162,96 @@ class PostController extends Controller
         }
         return redirect(route('post.list'))->with('flash', 'Your gear has been deleted!');
     }
+
+    public function extract()
+    {
+        echo "Test";
+
+        $file = new SplFileObject('./../database/seeders/PostsTableSeeder.php');
+        $file2 = fopen('./../database/seeders/PostsTableSeeder3.php', 'w+b');
+
+
+// Loop until we reach the end of the file.
+        while (!$file->eof()) {
+            // Echo one line from the file.
+            $line =  $file->fgets();
+            if( strpos( $line, '<img' ) === false )
+            {
+                //echo '</br>pas trouvé, ligne '.$j;
+            }
+            else
+            {
+                echo '</br>trouvé : </br>';
+                $regexp = '<img[^>]+src=(?:\"|\')\K(.[^">]+?)(?=\"|\')';
+
+                if(preg_match_all("/$regexp/", $line, $matches, PREG_SET_ORDER))
+                {
+                    if( !empty($matches) )
+                    {
+                        for ($i=0; $i < count($matches); $i++)
+                        {
+                            $img_src = $matches[$i][0];
+
+                            if (strpos( $img_src, 'ZZZZZZ' ) !== false)
+                            {
+                                //$img_src = str_replace('ZZZZZZ',  '', $img_src);
+                                $path_parts = pathinfo(str_replace('ZZZZZZ',  '', $img_src));
+
+                                if (file_exists('./storage/photos/1/legacy/'.$path_parts['basename']))
+                                {
+                                    echo 'Exist -> '.$img_src.' to storage/photos/1/legacy/'.$path_parts['basename'].' </br>';
+                                    //.' : copie de '.'./test/upload/'.$img_src.' vers '.'./test/dst/'.$path_parts['basename'].' </br>';
+                                    //copy('./test/upload/'.$img_src, './test/dst/'.$path_parts['basename']);
+
+                                    $line = str_replace($img_src,'storage/photos/1/legacy/'.$path_parts['basename'],$line);
+                                }
+                                else
+                                {
+                                    echo 'Not found -> '.$img_src.'</br>';
+                                }
+                            }
+                            elseif (strpos( $img_src, 'XXXXXX' ) !== false)
+                            {
+                                //$img_src = ;
+                                $path_parts = pathinfo(str_replace('XXXXXX',  '', $img_src));
+
+                                if (file_exists('./storage/photos/1/legacy/'.$path_parts['basename']))
+                                {
+                                    //$path_parts = pathinfo($img_src);
+                                    echo 'Exist -> '.$img_src.' to storage/photos/1/legacy/'.$path_parts['basename'].' </br>';
+                                    // .' : copie de '.'./test/windfoil/'.$img_src.' vers '.'./test/dst/'.$path_parts['basename']
+                                    //copy('./test/windfoil/'.$img_src, './test/dst/'.$path_parts['basename']);
+                                    $line = str_replace($img_src,'storage/photos/1/legacy/'.$path_parts['basename'],$line);
+
+                                }
+                                else
+                                {
+                                    echo 'Not found -> '.$img_src.'</br>';
+                                }
+                            }
+                            else
+                            {
+                                echo 'brut -> '.$img_src.'</br>';
+                            }
+
+
+                        }
+                    }
+                }
+
+            }
+
+            fwrite($file2, $line);
+
+        }
+
+        fclose($file2);
+
+// Unset the file to call __destruct(), closing the file handle.
+        $file = null;
+
+
+    }
+
+
 }

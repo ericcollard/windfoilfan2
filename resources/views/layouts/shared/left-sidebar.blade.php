@@ -110,27 +110,13 @@
                 </a>
                 <div class="collapse" id="sidebarPosts" style="">
                     <ul class="side-nav-second-level">
-                        <li>
-                            <a href="{{ route('postcategory.show',1) }}">Nos sélections</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',2) }}">Tutos navigation</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',4) }}">Mise en oeuvre</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',5) }}">Technologie</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',6) }}">Réglages</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',7) }}">Evènements</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('postcategory.show',3) }}">Visites fabriquants</a>
-                        </li>
+
+
+                        @foreach($postcategories as $category)
+                            <li >
+                                <a href="{{ route('postcategory.show',$category->id) }}">{{ __($category->name) }}</a>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
             </li>

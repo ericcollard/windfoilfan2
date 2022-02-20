@@ -59,10 +59,7 @@
                                             <div class="badge {{ $post->statusClass() }} mb-2">{{ __($post->status) }}</div>
                                         </li>
                                         <li class="list-inline-item">
-                                            <i class='uil uil-schedule font-16 me-1'></i> {{ $post->updated_at->formatLocalized('%A %d %B %Y ') }}
-                                        </li>
-                                        <li class="list-inline-item ms-1">
-                                            <i class='uil uil-eye font-16 me-1'></i> {{ $post->views }}
+                                            <i class='uil uil-schedule font-16 me-1'></i> {{ $post->updated_at->formatLocalized('%d %B %Y ') }}
                                         </li>
                                     </ul>
                                     @endcan
