@@ -75,7 +75,7 @@
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                        <li class="breadcrumb-item"><a href="{{ route('post.list') }}">{{ __('Posts') }}</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('post.categories') }}">{{ __('Posts') }}</a></li>
                         @if ($method === 'POST')
                             <li class="breadcrumb-item active">{{ __('Create') }}</li>
                         @else

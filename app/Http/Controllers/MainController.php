@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Review;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -16,7 +17,7 @@ class MainController extends Controller
      */
     public function landing()
     {
-        return view('landing');
+        return view('main.landing');
     }
 
 
@@ -25,9 +26,13 @@ class MainController extends Controller
      *
      * @return Application|Factory|\Illuminate\View\View|View
      */
-    public function home()
+    public function dashboard()
     {
-        return view('index');
+
+        // number of review
+        $dashboard['reviewCnt'] = Review::count();
+
+        return view('main.dashboard',compact('dashboard'));
     }
 
 

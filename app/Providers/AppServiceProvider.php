@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Category;
 use App\Models\PostCategory;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\View;
@@ -31,12 +32,16 @@ class AppServiceProvider extends ServiceProvider
         //
         Paginator::useBootstrap();
 
-        View::composer('*', function ($view) {
+        View::composer('layouts.shared.left-sidebar', function ($view) {
 
-            $categories = Cache::rememberForever('postcategories', function() {
+            $postcategories = Cache::rememberForever('postcategories', function() {
                 return PostCategory::all();
             });
-            $view->with('postcategories', $categories);
+            $devicecategories = Cache::rememberForever('devicecategories', function() {
+                return Category::all();
+            });
+            $view->with('postcategories', $postcategories)
+                ->with('devicecategories', $devicecategories);
         });
     }
 }

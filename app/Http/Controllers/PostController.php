@@ -21,26 +21,39 @@ class PostController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Display a listing of post categories
      *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function index()
+    public function categories()
     {
         $categories = PostCategory::with('posts')->orderBy('order')->get();
 
-        return view('posts.index', compact('categories'));
+        return view('posts.categories', compact('categories'));
     }
 
-    // todo : index pour une catégorie
+
+    /**
+     * Display a listing of post for a specified categories
+     *
+     * @param  \App\Models\PostCategory  $postCategory
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function postCategory(PostCategory $postCategory)
+    {
+        return view('posts.category', compact('postCategory'));
+    }
+
 
     /**
      * Display the specified resource.
      *
+     * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
+     *
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
      */
-    public function show(Post $post)
+    public function show(PostCategory $postCategory, Post $post)
     {
         $shareComponent = (new \Jorenvh\Share\Share)->page(
             URL::full(),
@@ -59,12 +72,13 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
+     * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
-    public function edit(Post $post)
+    public function edit(PostCategory $postCategory, Post $post)
     {
-        $action = URL::route('post.update',['post' => $post]);
+        $action = URL::route('post.update',['postCategory' => $postCategory, 'post' => $post]);
         $method = 'PATCH';
         $categories = PostCategory::all();
 
@@ -93,10 +107,11 @@ class PostController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, Post $post)
+    public function update(Request $request, PostCategory $postCategory, Post $post)
     {
         try {
 
@@ -115,7 +130,7 @@ class PostController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect(route('post.show',['post' => $post]));
+        return redirect($post->path());
     }
 
     /**
@@ -148,11 +163,11 @@ class PostController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function destroy(Post $post)
+    public function destroy(PostCategory $postCategory, Post $post)
     {
         $post->delete();
 
@@ -160,7 +175,7 @@ class PostController extends Controller
         {
             return response(['status' => 'Your post has been deleted'],200);
         }
-        return redirect(route('post.list'))->with('flash', 'Your gear has been deleted!');
+        return redirect(route('post.postCategory', $postCategory))->with('flash', 'Your gear has been deleted!');
     }
 
     public function extract()

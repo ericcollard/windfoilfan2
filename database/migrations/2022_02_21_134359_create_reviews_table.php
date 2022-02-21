@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePostsTable extends Migration
+class CreateReviewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,19 @@ class CreatePostsTable extends Migration
      */
     public function up()
     {
-        Schema::create('posts', function (Blueprint $table) {
-            $table->id();
+        Schema::create('reviews', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->integer('device_id');
             $table->integer('user_id');
-            $table->integer('post_categories_id');
             $table->string('title');
-            $table->string('description');
             $table->text('body');
-            $table->string('status')->default('Published'); // Published : Hidden : Archived
-            $table->integer('views');
+            $table->text('test_equipment');
+            $table->integer('test_duration');
+            $table->string('test_conditions');
+            $table->string('test_place');
             $table->timestamps();
         });
     }
-
 
     /**
      * Reverse the migrations.
@@ -34,6 +34,6 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posts');
+        Schema::dropIfExists('reviews');
     }
 }

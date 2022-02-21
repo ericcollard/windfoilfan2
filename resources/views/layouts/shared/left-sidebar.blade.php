@@ -42,15 +42,11 @@
                 </a>
                 <div class="collapse" id="sidebarProducts" style="">
                     <ul class="side-nav-second-level">
-                        <li>
-                            <a href="#">Foils</a>
-                        </li>
-                        <li>
-                            <a href="#">Flotteurs</a>
-                        </li>
-                        <li>
-                            <a href="#">Voiles</a>
-                        </li>
+                        @foreach($devicecategories as $category)
+                            <li >
+                                <a href="{{ route('device.category',$category) }}">{{ __($category->name) }}</a>
+                            </li>
+                        @endforeach
                         <li>
                             <a href="#">Marques</a>
                         </li>
@@ -114,7 +110,7 @@
 
                         @foreach($postcategories as $category)
                             <li >
-                                <a href="{{ route('postcategory.show',$category->id) }}">{{ __($category->name) }}</a>
+                                <a href="{{ route('post.postCategory',$category->id) }}">{{ __($category->name) }}</a>
                             </li>
                         @endforeach
                     </ul>

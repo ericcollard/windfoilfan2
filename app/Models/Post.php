@@ -34,6 +34,12 @@ class Post extends Model
         return $this->belongsTo(PostCategory::class, 'post_categories_id');
     }
 
+    /** Post path  */
+    public function path()
+    {
+        return route('post.show',['postCategory' => $this->category, 'post' => $this]);
+    }
+
     /**
      * search all images in body
      */

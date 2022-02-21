@@ -94,8 +94,8 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('post.list') }}">{{ __('Posts') }}</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('postcategory.show',$post->category) }}">{{ $post->category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('post.categories') }}">{{ __('Posts') }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('post.postCategory',$post->category) }}">{{ $post->category->name }}</a></li>
                             <li class="breadcrumb-item active">{{ $post->title }}</li>
                         </ol>
                     </div>
@@ -127,12 +127,12 @@
                             {!! $shareComponent !!}
                             @can ('update', $post)
                                 <li class="list-inline-item text-center">
-                                    <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',$post) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
+                                    <button type="button" class="btn btn-sm btn-outline-primary text-primary rounded-pill"><a href="{{ route('post.edit',['postCategory' => $post->category, 'post' => $post]) }}"><i class="mdi mdi-pencil me-1"></i>{{ __('Edit') }}</a></button>
                                 </li>
                             @endcan
                             @can ('delete', $post)
                                 <li class="list-inline-item text-center">
-                                    <form id="deletePost" method="POST" action="{{ route('post.destroy',$post) }}" class="d-sm-inline-block">
+                                    <form id="deletePost" method="POST" action="{{ route('post.destroy',['postCategory' => $post->category, 'post' => $post]) }}" class="d-sm-inline-block">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
                                         <button type="button" class="btn btn-sm btn-outline-danger text-danger rounded-pill">
