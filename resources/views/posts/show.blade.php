@@ -64,7 +64,7 @@
 
         #post-overlay .badge {
             line-height: 1.5em;
-            padding : 0.5em 0.8em
+            padding : 0.5em 0.8em;
         }
 
         .list-inline li:not(:last-child){
@@ -75,6 +75,8 @@
             display: inline-block;
             text-align: center !important;
         }
+
+
     </style>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>

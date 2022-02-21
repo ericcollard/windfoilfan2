@@ -5,7 +5,6 @@ namespace App\DataTables;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Yajra\DataTables\DataTableAbstract;
-use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
@@ -57,15 +56,27 @@ class UsersDataTable extends DataTable
                     ->parameters([
                         'language' => [
                             'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
-                    ],])
-                    ->buttons(
-                        //Button::make('create'),
-                        //Button::make('create')->action("window.location = '".route('home')."';"),
-                        Button::make('export'),
-                        Button::make('print'),
-                        Button::make('reset'),
-                        Button::make('reload')
-                    );
+                        ],
+                        'buttons' => [
+                            [
+                                'extend' => 'reload',
+                                'text' => 'Rafraichir',
+                                'className' => 'btn btn-success mb-2 me-2',
+                            ],
+                            [
+                                'extend' => 'print',
+                                'text' => 'Imprimer',
+                                'className' => 'btn btn-warning mb-2 me-2',
+                            ],
+                            [
+                                'extend' => 'export',
+                                'text' => 'Exporter',
+                                'className' => 'btn btn-warning mb-2 me-2',
+                            ],
+                        ],
+
+                        ])
+        ;
     }
 
     /**

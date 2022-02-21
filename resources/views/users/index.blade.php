@@ -14,9 +14,21 @@
 @endsection
 
 @section('css')
+
+
     <!-- third party css -->
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- third party css end -->
+
+    <style>
+
+        div.dataTables_wrapper div.dataTables_filter
+        {
+            float: right;
+        }
+
+   </style>
+
 @endsection
 
 
@@ -43,9 +55,13 @@
 
         <div class="row">
             <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
 
-                {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
+                        {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
 
+                    </div>
+                </div>
             </div><!-- end col-12-->
         </div><!-- end row-->
 

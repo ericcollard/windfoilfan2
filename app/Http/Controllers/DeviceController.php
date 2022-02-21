@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\DataTables\DevicesDataTable;
 use App\Http\Requests\StoreDeviceRequest;
 use App\Http\Requests\UpdateDeviceRequest;
 use App\Models\Category;
@@ -12,7 +13,7 @@ class DeviceController extends Controller
     /**
      * Display a listing categories of devices.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function categories()
     {
@@ -25,17 +26,18 @@ class DeviceController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function category(Category $category)
+    public function category(DevicesDataTable $dataTable,Category $category)
     {
         $devices = [];
-        return view('devices.category', compact('category'));
+        //return view('devices.category', compact('category'));
+        return $dataTable->with('category_id', $category->id)->render('devices.category');
     }
 
     /**
      * Display the specified resource.
      *
      * @param  \App\Models\Device  $device
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show(Category $category, Device $device)
     {

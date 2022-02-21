@@ -1,10 +1,10 @@
 @extends('layouts.vertical')
 
 @section('page_title')
-    Produits :  {{ $category->name }}
+    Produits :
 @endsection
 @section('page_description')
-    Produits :  {{ $category->name }}
+    Produits :
 @endsection
 @section('page_image')
 
@@ -15,8 +15,21 @@
 
 @section('css')
 
-@endsection
 
+    <!-- third party css -->
+    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- third party css end -->
+
+    <style>
+
+        div.dataTables_wrapper div.dataTables_filter
+        {
+            float: right;
+        }
+
+    </style>
+
+@endsection
 
 
 @section('content')
@@ -31,11 +44,11 @@
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item">Produits</li>
-                            <li class="breadcrumb-item"><a href="">{{ $category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="">AAA</a></li>
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">{{ __('Devices') }} "{{ $category->name }}"</h4>
+                    <h4 class="page-title">{{ __('Devices') }} AAA</h4>
                 </div>
             </div>
         </div>
@@ -43,31 +56,31 @@
 
 
         <div class="row">
-            @foreach($category->devices as $device)
-                @can('list',$device)
-                    <div class="col-lg-6 col-xxl-3">
-                        <!-- project card -->
-                        <div class="card d-block">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
 
-                            <div class="card-body">
-
-                                <!-- project title-->
-                                <h4 class="mt-0">
-                                    <a href="{{ $device->path() }}" class="text-title">{{ $device->name }}</a>
-                                </h4>
-                                <div class="badge {{ $device->statusClass() }} mb-2">{{ __($device->status) }}</div>
-
-                            </div> <!-- end card-body-->
-
-                        </div>
+                        {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
 
                     </div>
-                @endcan
-            @endforeach
-        </div>
+                </div>
+            </div><!-- end col-12-->
+        </div><!-- end row-->
+
 
     </div>
 
 @endsection
 
+
+@section('script-bottom')
+
+    <!-- third party js -->
+
+    <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
+    <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
+    <!-- third party js ends -->
+    {{$dataTable->scripts()}}
+
+@endsection
 
