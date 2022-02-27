@@ -28,7 +28,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'personal_equipment',
         'postal_code',
         'weight',
-        'email_verified_at'
+        'email_verified_at',
+        'brand_id'
     ];
 
     /**
@@ -51,6 +52,13 @@ class User extends Authenticatable implements MustVerifyEmail
         'discipline_start' => 'datetime',
         'roles' => 'array',
     ];
+
+    /* -- Relations -- */
+
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
 
     /* -- Roles function -- */
 

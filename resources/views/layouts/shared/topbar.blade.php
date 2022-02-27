@@ -60,7 +60,11 @@
                         <img src="{{ Auth::user()->avatarUrl() }}" alt="user-image" class="rounded-circle" />
                     </span>
                     <span>
+                        @if (Auth::user()->brand)
+                            <span class="badge bg-danger  float-end">Pro</span>
+                        @endif
                         <span class="account-user-name">{{ Auth::user()->name }}</span>
+
                         <span class="account-position">{{ Auth::user()->email }}</span>
                     </span>
                 </a>

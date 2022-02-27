@@ -21,5 +21,9 @@ class Brand extends Model
         return $this->hasMany(Device::class);
     }
 
+    public function users()
+    {
+        return $this->hasMany(User::class);
+    }
 
 }

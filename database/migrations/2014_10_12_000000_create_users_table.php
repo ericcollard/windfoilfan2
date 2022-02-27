@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('discipline_start')->nullable();
             $table->text('personal_equipment')->nullable();
             $table->string('postal_code')->nullable();
+            $table->unsignedInteger('brand_id')->nullable();
             $table->unsignedInteger('weight')->nullable();
             $table->rememberToken();
             $table->timestamps();

@@ -35,8 +35,9 @@ class UsersTableSeeder extends Seeder
 <p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 5.8</p>
 <p>Wisbone : AL360 RTE</p>',
                 'postal_code' => '13011',
+                'brand_id' => NULL,
                 'weight' => 78,
-                'remember_token' => 'RTJN0XqvNuV38OfbqEctoqgweutlH749lhoo2EdkkCrSSQqOnNnjBzQfmGPj',
+                'remember_token' => '9CZ2SYS227EG2QVeyoyp5ghojl2kYMPutRZpCEvpujdBTeDSTy97bl8WjPgA',
                 'created_at' => '2020-01-01 00:00:00',
                 'updated_at' => '2020-03-18 12:31:19',
             ),
@@ -56,10 +57,11 @@ class UsersTableSeeder extends Seeder
 <p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 5.8</p>
 <p>Wisbone : AL360 RTE</p>',
                 'postal_code' => '13011',
+                'brand_id' => 78,
                 'weight' => 78,
-                'remember_token' => '6HePqNAzZPbjXEDcZ6vqzcgOd2SthPLkZfuNKiBRzlp90pzek8Elz670K8eP',
+                'remember_token' => '2joqrpFfeAAKFh2rPv0OnwR6qhgzIC5mJrx7lqglLfxJL5g2o0F6FyZsBhhl',
                 'created_at' => '2020-01-01 00:00:00',
-                'updated_at' => '2020-03-18 12:31:19',
+                'updated_at' => '2022-02-27 20:54:18',
             ),
             2 => 
             array (
@@ -77,6 +79,7 @@ class UsersTableSeeder extends Seeder
 <p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 5.8</p>
 <p>Wisbone : AL360 RTE</p>',
                 'postal_code' => '13011',
+                'brand_id' => NULL,
                 'weight' => 78,
                 'remember_token' => 'EMLQKnrkcfQUYuB5QddXSHe8HGh2I0dfvF7juRcoimYEtGSc6L5EZCQqKrB3',
                 'created_at' => '2020-01-01 00:00:00',

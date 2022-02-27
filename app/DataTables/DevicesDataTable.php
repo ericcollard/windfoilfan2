@@ -49,6 +49,28 @@ class DevicesDataTable extends DataTable
         $builder = $model->newQuery()->where('category_id',$this->category->id);
         if ($this->brand)
             $builder->where('brand_id',$this->brand->id);
+        if (auth()->guest()) $builder->where('status','Published');
+        if (auth()->check())
+        {
+            if (!auth()->user()->hasRole('ROLE_ADMIN'))
+            {
+                if (auth()->user()->brand)
+                {
+                    // professionel > accès aux données publiées + toutes celle de sa marque
+                    // statut publié ou marque = la seinne
+                    $builder->where(function($q) {
+                        $q->where('status','Published')
+                            ->orwhere('brand_id',auth()->user()->brand->id);
+                    });
+                }
+                else
+                {
+                    // non professionel > accès aux données publiées
+                    $builder->where('status','Published');
+                }
+            }
+
+        }
         return $builder;
     }
 

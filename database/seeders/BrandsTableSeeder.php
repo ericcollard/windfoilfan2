@@ -751,6 +751,12 @@ class BrandsTableSeeder extends Seeder
                 'name' => 'MAKO',
                 'slug' => 'mako',
             ),
+            122 => 
+            array (
+                'id' => 123,
+                'name' => 'TAKUMA',
+                'slug' => 'takuma',
+            ),
         ));
         
         

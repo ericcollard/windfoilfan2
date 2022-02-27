@@ -199,6 +199,16 @@
                                     </div>
 
                                 </div>
+                                <div class="col-lg-6  mb-3">
+                                    <label for="brand_id" class="form-label">{{ __('Marque') }}</label>
+                                    <select name="brand_id" id="brand_id" class="form-control">
+                                        <option value="">{{ __('Choose a brand') }} ...</option>
+                                        @foreach($brands as $brand)
+                                            <option value='{{ $brand->id }}' {{ $user->brand ? ($user->brand->id == $brand->id ? 'selected' : '') : ( old('brand_id') == $brand->id ? 'selected' : '') }}>{{ $brand->name }}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
                             </div>
                         @endcan
 

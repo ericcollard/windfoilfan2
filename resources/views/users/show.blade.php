@@ -163,6 +163,11 @@
 
                             <p class="text-muted"><strong>{{ __('Weight (kg)') }} :</strong> <span class="ms-2">{{ $user->weight ? $user->weight.' Kg' : 'nc'  }}</span> </p>
 
+                            @if ($user->brand)
+                                <p class="text-muted"><strong>{{ __('Belongs to brand') }} :</strong> <span class="ms-2">{{ $user->brand->name  }}</span> <span class="badge bg-danger m-lg-1">Pro</span></p>
+
+                            @endif
+
                         </div>
                     </div>
                 </div>
