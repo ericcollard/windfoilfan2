@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\DataTables\DevicesDataTable;
 use App\Http\Requests\StoreDeviceRequest;
 use App\Http\Requests\UpdateDeviceRequest;
+use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Device;
 
@@ -28,9 +29,22 @@ class DeviceController extends Controller
      */
     public function category(DevicesDataTable $dataTable,Category $category)
     {
-        $devices = [];
-        //return view('devices.category', compact('category'));
-        return $dataTable->with('category_id', $category->id)->render('devices.category');
+
+        $brand = "";
+        if(array_key_exists('from', request()->all()))
+        {
+            $brand_slug = request()->from;
+            $brand = Brand::where('slug', $brand_slug)->firstOrFail();
+            $dataTable->with('brand', $brand);
+        }
+
+        $dataTable->with('category', $category);
+
+        $brands = Brand::has('devices')->get();
+        $dataTable->with('brands', $brands);
+
+        return $dataTable
+            ->render('devices.category');
     }
 
     /**

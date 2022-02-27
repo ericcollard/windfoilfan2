@@ -3,6 +3,7 @@
 namespace App\DataTables;
 
 use App\Models\Device;
+use Illuminate\Support\Facades\Route;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
@@ -24,8 +25,17 @@ class DevicesDataTable extends DataTable
             })
             ->editColumn('updated_at', function ($request) {
                 return $request->created_at->formatLocalized('%c');
-            });
+            })
+            ->editColumn('status', function ($request) {
+                return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
+            })
+
+            ->rawColumns(['status','action']);
+
+
     }
+
+
 
     /**
      * Get query source of dataTable.
@@ -35,7 +45,10 @@ class DevicesDataTable extends DataTable
      */
     public function query(Device $model)
     {
-        return $model->newQuery()->where('category_id',$this->category_id);
+        $builder = $model->newQuery()->where('category_id',$this->category->id);
+        if ($this->brand)
+            $builder->where('brand_id',$this->brand->id);
+        return $builder;
     }
 
     /**
@@ -45,6 +58,31 @@ class DevicesDataTable extends DataTable
      */
     public function html()
     {
+        $localRoute = route('device.category',$this->category);
+        $brandsButtons = [
+            [
+                'text' =>'TOUTES',
+                'action' => "function (e, dt, button, config) {
+                                        window.location = '".$localRoute."';
+                                    }"
+
+            ],
+        ];
+        foreach ($this->brands as $brand)
+        {
+            $brandsButtons[] =  [
+                [
+                    'text' =>'<i class="fa fa-eye"></i> ' . $brand->name,
+                    'action' => "function (e, dt, button, config) {
+                                        window.location = '".$localRoute."' + '?from=".$brand->slug."';
+                                    }"
+
+                ],
+            ];
+        }
+
+
+
         return $this->builder()
                     ->setTableId('devices-table')
                     ->columns($this->getColumns())
@@ -71,6 +109,18 @@ class DevicesDataTable extends DataTable
                         'text' => 'Exporter',
                         'className' => 'btn btn-warning mb-2 me-2',
                     ],
+                    [
+                        "extend"=> 'collection',
+                        "text"=> 'Marque',
+                        'className' => 'btn btn-warning mb-2 me-2',
+                        "buttons" =>
+                            [
+                                $brandsButtons
+                            ]
+                    ],
+                ],
+                'custom_paramaters' => [
+                    'category_name' => $this->category->name
                 ],
 
             ]);
@@ -96,7 +146,6 @@ class DevicesDataTable extends DataTable
                 ->printable(false)
                 ->width(60)
                 ->addClass('text-center'),
-            Column::make('category', 'category')->hidden()
         ];
     }
 

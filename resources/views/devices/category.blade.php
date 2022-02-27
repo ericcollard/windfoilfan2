@@ -1,10 +1,10 @@
 @extends('layouts.vertical')
 
 @section('page_title')
-    Produits :
+    Produits : {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
 @endsection
 @section('page_description')
-    Produits :
+    Produits : {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
 @endsection
 @section('page_image')
 
@@ -18,6 +18,7 @@
 
     <!-- third party css -->
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+
     <!-- third party css end -->
 
     <style>
@@ -33,6 +34,8 @@
 
 
 @section('content')
+
+
     <!-- Start Content-->
     <div class="container-fluid">
 
@@ -43,12 +46,12 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                            <li class="breadcrumb-item">Produits</li>
-                            <li class="breadcrumb-item"><a href="">AAA</a></li>
+                            <li class="breadcrumb-item">{{ __('Devices') }}</li>
+                            <li class="breadcrumb-item"><a href="">{{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</a></li>
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">{{ __('Devices') }} AAA</h4>
+                    <h4 class="page-title">{{ __('Devices') }} {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</h4>
                 </div>
             </div>
         </div>
@@ -79,6 +82,7 @@
 
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
     <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
+
     <!-- third party js ends -->
     {{$dataTable->scripts()}}
 
