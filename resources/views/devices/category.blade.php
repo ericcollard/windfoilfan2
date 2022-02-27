@@ -47,11 +47,19 @@
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item">{{ __('Devices') }}</li>
-                            <li class="breadcrumb-item"><a href="">{{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ $dataTable->getOptions()['custom_paramaters']['basis_route'] }}">{{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</a></li>
+                            @if( $dataTable->getOptions()['custom_paramaters']['brand_name'] <> "" )
+                                <li class="breadcrumb-item">Marque : {{ $dataTable->getOptions()['custom_paramaters']['brand_name'] }}</li>
+                            @endif
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">{{ __('Devices') }} {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</h4>
+                    <h4 class="page-title">
+                        {{ __('Devices list') }} - {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
+                        @if( $dataTable->getOptions()['custom_paramaters']['brand_name'] <> "" )
+                            - Marque : {{ $dataTable->getOptions()['custom_paramaters']['brand_name'] }}
+                        @endif
+                    </h4>
                 </div>
             </div>
         </div>

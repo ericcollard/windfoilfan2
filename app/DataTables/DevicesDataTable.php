@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Models\Device;
 use Illuminate\Support\Facades\Route;
+use phpGPX\Models\Extensions\AbstractExtension;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
@@ -58,16 +59,25 @@ class DevicesDataTable extends DataTable
      */
     public function html()
     {
-        $localRoute = route('device.category',$this->category);
-        $brandsButtons = [
-            [
-                'text' =>'TOUTES',
-                'action' => "function (e, dt, button, config) {
+
+        // préparation des paramètres à transmettre au Builder
+
+        // Menu déroulant des marques
+        $localRoute = route('device.category',$this->category); //route sans marque
+        $brandsButtons = [];
+        if ($this->brand)
+        {
+            $brandsButtons[] = [
+                [
+                    'text' =>'TOUTES',
+                    'action' => "function (e, dt, button, config) {
                                         window.location = '".$localRoute."';
                                     }"
 
-            ],
-        ];
+                ],
+            ];
+        }
+
         foreach ($this->brands as $brand)
         {
             $brandsButtons[] =  [
@@ -81,7 +91,57 @@ class DevicesDataTable extends DataTable
             ];
         }
 
+        // Boutons
+        $buttons = [];
+        $buttons[] = [
+            'extend' => 'reload',
+            'text' => 'Rafraichir',
+            'className' => 'btn btn-success mb-2 me-2',
+        ];
+        $buttons[] = [
+            'extend' => 'print',
+            'text' => 'Imprimer',
+            'className' => 'btn btn-warning mb-2 me-2',
+        ];
+        $buttons[] = [
+            'extend' => 'export',
+            'text' => 'Exporter',
+            'className' => 'btn btn-warning mb-2 me-2',
+        ];
 
+        if ($this->brand)
+        {
+            $buttons[] = [
+                'text' =>'Supprimer le filtre de marque',
+                'action' => "function (e, dt, button, config) {
+                                        window.location = '".$localRoute."';
+                                    }",
+                'className' => 'btn btn-info mb-2 me-2',
+            ];
+        }
+        else
+        {
+            $buttons[] = [
+                "extend"=> 'collection',
+                "text"=> 'Filtrer par Marque',
+                'className' => 'btn btn-info mb-2 me-2',
+                "buttons" =>
+                    [
+                        $brandsButtons
+                    ]
+            ];
+        }
+
+
+
+        // Paramètres optionnels à transmettre à la view
+        $custom_paramaters = [];
+        $custom_paramaters['basis_route'] = $localRoute;
+        $custom_paramaters['category_name'] = $this->category->name;
+        if ($this->brand)
+            $custom_paramaters['brand_name'] = $this->brand->name;
+        else
+            $custom_paramaters['brand_name'] = "";
 
         return $this->builder()
                     ->setTableId('devices-table')
@@ -93,35 +153,8 @@ class DevicesDataTable extends DataTable
                 'language' => [
                     'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
                 ],
-                'buttons' => [
-                    [
-                        'extend' => 'reload',
-                        'text' => 'Rafraichir',
-                        'className' => 'btn btn-success mb-2 me-2',
-                    ],
-                    [
-                        'extend' => 'print',
-                        'text' => 'Imprimer',
-                        'className' => 'btn btn-warning mb-2 me-2',
-                    ],
-                    [
-                        'extend' => 'export',
-                        'text' => 'Exporter',
-                        'className' => 'btn btn-warning mb-2 me-2',
-                    ],
-                    [
-                        "extend"=> 'collection',
-                        "text"=> 'Filtrer par Marque',
-                        'className' => 'btn btn-info mb-2 me-2',
-                        "buttons" =>
-                            [
-                                $brandsButtons
-                            ]
-                    ],
-                ],
-                'custom_paramaters' => [
-                    'category_name' => $this->category->name
-                ],
+                'buttons' => $buttons,
+                'custom_paramaters' => $custom_paramaters
 
             ]);
     }
