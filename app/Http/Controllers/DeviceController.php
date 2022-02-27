@@ -34,13 +34,17 @@ class DeviceController extends Controller
         if(array_key_exists('from', request()->all()))
         {
             $brand_slug = request()->from;
-            $brand = Brand::where('slug', $brand_slug)->firstOrFail();
+            $brand = Brand::where('slug', $brand_slug)
+                ->firstOrFail();
             $dataTable->with('brand', $brand);
         }
 
         $dataTable->with('category', $category);
 
-        $brands = Brand::has('devices')->get();
+        $brands = Brand::whereHas('devices', function($query) use($category) {
+            $query->where('category_id', $category->id);
+        })->get();
+
         $dataTable->with('brands', $brands);
 
         return $dataTable

@@ -111,8 +111,8 @@ class DevicesDataTable extends DataTable
                     ],
                     [
                         "extend"=> 'collection',
-                        "text"=> 'Marque',
-                        'className' => 'btn btn-warning mb-2 me-2',
+                        "text"=> 'Filtrer par Marque',
+                        'className' => 'btn btn-info mb-2 me-2',
                         "buttons" =>
                             [
                                 $brandsButtons
