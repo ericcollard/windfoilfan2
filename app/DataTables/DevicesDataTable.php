@@ -22,7 +22,7 @@ class DevicesDataTable extends DataTable
             ->eloquent($query)
             ->addColumn('action', 'devices.action',1)
             ->editColumn('created_at', function ($request) {
-                return $request->created_at->formatLocalized('%c'); //'%d %B %Y %H:%M'
+                return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
             })
             ->editColumn('status', function ($request) {
                 return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
@@ -167,7 +167,7 @@ class DevicesDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->dom('Bfrtip')
-                    ->orderBy(4)
+                    ->orderBy(6)
                     ->parameters([
                 'language' => [
                     'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
@@ -189,6 +189,8 @@ class DevicesDataTable extends DataTable
             Column::make('brand.name')->title(__('Brand')),
             Column::make('name')->title(__('Name')),
             Column::make('year')->title(__('Year')),
+            Column::make('statistics_count')->title(__('Views')),
+            Column::make('reviews_count')->title(__('Reviews')),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
             Column::computed('action')->title(__('Action'))

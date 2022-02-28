@@ -10,7 +10,7 @@ class Device extends Model
     use HasFactory;
 
     protected $fillable = ['name','slug','user_id','category_id','brand_id','status_id','body','year',
-        'price','view_count', 'link_test', 'link_presentation', 'link_product','created_at',
+        'price', 'link_test', 'link_presentation', 'link_product','created_at','serial',
         'attr1','attr2','attr3','attr4','attr5','attr6','attr7','attr8','attr9','attr10',
         'attr11','attr12','attr13','attr14','attr15','attr16','attr17','attr18','attr19','attr20',
         'attr21','attr22','attr23','attr24','attr25'];

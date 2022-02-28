@@ -14,12 +14,12 @@ class DevicesTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('devices')->delete();
-
+        
         \DB::table('devices')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'name' => 'Wh Comp 95',
@@ -34,6 +34,7 @@ class DevicesTableSeeder extends Seeder
 <p>Ce mod&egrave;le est &eacute;quip&eacute; d\'une platine int&eacute;gr&eacute;e de tr&egrave;s belle qualit&eacute;.</p>
 <p><img src="/storage/photos/1/2019-11/rrd-wh-comp-95-2019-mkHmVXrlWt.jpg" alt="RRD WH COMP 95" /></p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1999.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -66,7 +67,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-11-05 19:57:16',
                 'updated_at' => '2021-06-14 14:18:41',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'name' => 'Flow 900',
@@ -80,6 +81,7 @@ class DevicesTableSeeder extends Seeder
 <p>Disponible en version 900 et 1200cm2, nous avons mis un moment &agrave; pouvoir tester ce mod&egrave;le car il n\'&eacute;tait au d&eacute;part disponible qu\'en version platine ... donc compatible avec peu de flotteurs, &agrave; l\'exception des Fanatic SingRay. Comble de malchance, notre flotteur de test avait un probl&egrave;me de positionnement des rails US et il nous a donc fallu attendre l\'arriv&eacute;e du talon DTT pour faire les tests.&nbsp;</p>
 <p>Comme pour le H9 Fanatic a soign&eacute; le packaging, et le foil est livr&eacute; dans une housse qui prot&egrave;ge parfaitement chaque &eacute;l&eacute;ment. Le montage ne pose aucun probl&egrave;me et l\'ensemble respire la robustesse allemande.&nbsp;</p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1299.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -112,7 +114,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-09-15 18:57:16',
                 'updated_at' => '2020-04-09 06:51:28',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'name' => 'LK Race',
@@ -129,6 +131,7 @@ class DevicesTableSeeder extends Seeder
 <p>Le Lk Race &eacute;tant homologu&eacute; PWA, son design est stabilis&eacute; depuis Mars 2019. Seuls quelques d&eacute;tails de construction ont &eacute;volu&eacute; depuis ce moment, dans l&rsquo;objectif de le rendre plus fiable (en particulier autour de la jonction Aile / fuselage). Les moules d&eacute;finitif sont en cours de r&eacute;alisation, mais&nbsp; la commercialisation a d&eacute;j&agrave; d&eacute;but&eacute; au tarif de 2700&euro;&nbsp;(1 aile).</p>
 </div>',
                 'year' => 2020,
+                'serial' => NULL,
                 'price' => '2700.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -161,7 +164,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-08-27 18:57:17',
                 'updated_at' => '2021-05-13 17:29:28',
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'name' => 'Supercruiser',
@@ -174,6 +177,7 @@ class DevicesTableSeeder extends Seeder
 <p>Par contre, ces sp&eacute;cificit&eacute;s permettent d\'&eacute;quiper le foil d\'une aile in&eacute;dite et&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">gigantesque de 1700cm2, relativement fine.&nbsp;</span>Il est disponible au tarif de 999&euro; (aluminium) et 1999&euro; (mat carbone).</p>
 <p><img src="/storage/photos/1/2019-08/starboard-supercruiser-2019-M4Z0gkbUrP.jpg" alt="Supercruiser Starboard" /></p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '999.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -206,7 +210,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-08-24 18:57:17',
                 'updated_at' => '2021-08-01 08:37:18',
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'name' => 'Profoil F1 HM 1080',
@@ -217,6 +221,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Hidden',
                 'body' => 'Description',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1770.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -249,7 +254,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-08-15 18:57:17',
                 'updated_at' => '2021-06-14 14:20:46',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'name' => 'Mach 1',
@@ -266,6 +271,7 @@ class DevicesTableSeeder extends Seeder
 </div>
 </div>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1499.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -298,7 +304,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-07-03 18:57:17',
                 'updated_at' => '2021-08-01 08:38:21',
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 7,
                 'name' => 'Iris R',
@@ -318,6 +324,7 @@ class DevicesTableSeeder extends Seeder
 </div>
 <p><img class="img-fluid" src="/storage/photos/1/2019-07/phantom-iris-r-2019-zaAjNKQqt8.png" alt="IRIS R Phantom" /></p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '3428.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -350,7 +357,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-07-10 18:57:17',
                 'updated_at' => '2021-01-22 20:56:03',
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 8,
                 'name' => 'IRIS X Serial',
@@ -373,6 +380,7 @@ class DevicesTableSeeder extends Seeder
 </div>
 <p><img class="img-fluid" src="/storage/photos/1/2020-06/phantom-iris-x.png" alt="IRIS X sets" width="1663" height="786" /></p>',
                 'year' => 2020,
+                'serial' => NULL,
                 'price' => '2309.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -405,7 +413,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2020-06-05 18:57:17',
                 'updated_at' => '2021-02-11 07:59:40',
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 9,
                 'name' => 'Iris X proto 1',
@@ -416,6 +424,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Hidden',
                 'body' => 'Description',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '2308.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -448,7 +457,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-10-04 18:57:17',
                 'updated_at' => '2020-08-03 16:08:32',
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 10,
                 'name' => 'Iris F V2',
@@ -459,6 +468,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Hidden',
                 'body' => 'Description',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1799.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-iris-f-foil.html',
@@ -491,7 +501,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-08-15 18:57:17',
                 'updated_at' => '2020-03-22 18:01:27',
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 11,
                 'name' => 'Iris F V1',
@@ -502,6 +512,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Published',
                 'body' => '<p>Description</p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1799.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-iris-f-foil.html',
@@ -534,7 +545,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-04-15 18:57:17',
                 'updated_at' => '2020-04-27 07:21:40',
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 12,
                 'name' => 'Iris F Proto',
@@ -545,6 +556,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Hidden',
                 'body' => 'Description',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1799.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-iris-f-foil.html',
@@ -577,7 +589,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-03-15 19:57:17',
                 'updated_at' => '2020-08-03 16:08:39',
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 13,
                 'name' => 'WH Flight Alu 85 v2',
@@ -595,6 +607,7 @@ class DevicesTableSeeder extends Seeder
 </div>
 </div>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1199.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -627,7 +640,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-05-27 18:57:17',
                 'updated_at' => '2020-03-26 22:45:23',
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 14,
                 'name' => 'Amplifier V3',
@@ -638,6 +651,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Published',
                 'body' => 'Description',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '929.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -670,7 +684,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-05-02 18:57:17',
                 'updated_at' => '2020-03-30 19:46:00',
             ),
-            14 =>
+            14 => 
             array (
                 'id' => 15,
                 'name' => 'A1 Carbone ULW',
@@ -695,6 +709,7 @@ class DevicesTableSeeder extends Seeder
 </div>
 </div>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '1879.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-foil-a1-2019.html',
@@ -727,7 +742,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-03-04 19:57:17',
                 'updated_at' => '2021-06-14 14:20:43',
             ),
-            15 =>
+            15 => 
             array (
                 'id' => 16,
                 'name' => 'Race foil',
@@ -759,6 +774,7 @@ class DevicesTableSeeder extends Seeder
 <p>En torsion, il prend la 2e place des mats carbone mesur&eacute;s.</p>
 <p>Bien s&ucirc;r, tout ceci n\'est que tr&egrave;s th&eacute;orique, mais cela montre le soin que F4 a apport&eacute; &agrave; la construction de son foil.</p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '2400.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-presentation-test-f-4-2019.html',
@@ -791,7 +807,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-12-03 19:57:17',
                 'updated_at' => '2021-08-01 08:39:26',
             ),
-            16 =>
+            16 => 
             array (
                 'id' => 17,
                 'name' => 'Race foil Proto',
@@ -802,6 +818,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Hidden',
                 'body' => 'Description',
                 'year' => 2018,
+                'serial' => NULL,
                 'price' => '2400.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -834,7 +851,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-08-01 18:57:17',
                 'updated_at' => '2021-03-07 18:07:48',
             ),
-            17 =>
+            17 => 
             array (
                 'id' => 18,
                 'name' => 'Sword RS',
@@ -845,6 +862,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Archived',
                 'body' => '<p>Description</p>',
                 'year' => 2018,
+                'serial' => NULL,
                 'price' => '2399.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
@@ -877,7 +895,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-10-01 18:57:17',
                 'updated_at' => '2021-01-29 09:54:20',
             ),
-            18 =>
+            18 => 
             array (
                 'id' => 19,
                 'name' => 'Sword M80',
@@ -888,6 +906,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Archived',
                 'body' => '<p>Description</p>',
                 'year' => 2018,
+                'serial' => NULL,
                 'price' => '2399.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
@@ -920,7 +939,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:21',
             ),
-            19 =>
+            19 => 
             array (
                 'id' => 20,
                 'name' => 'Noe 97 Freerace UHM',
@@ -956,6 +975,7 @@ class DevicesTableSeeder extends Seeder
 <div><img src="/storage/photos/1/2020-01/taaroa-noe-97-freerace-uhm-2020-HErf8RD45q.jpg" /></div>
 </div>',
                 'year' => 2020,
+                'serial' => NULL,
                 'price' => '2199.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -988,7 +1008,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2020-01-05 19:57:17',
                 'updated_at' => '2021-06-14 14:21:01',
             ),
-            20 =>
+            20 => 
             array (
                 'id' => 21,
                 'name' => 'Noe 97 Freerace UHM',
@@ -1001,6 +1021,7 @@ class DevicesTableSeeder extends Seeder
 <p>Il est d&eacute;sormais aussi possible en option de l\'&eacute;quiper d\'une aile petit temps de 1050, et d\'une aile de speed de 750. Ces 2 &eacute;l&eacute;ments &eacute;largissent de fa&ccedil;on consid&eacute;rable sa plage d\'utilisation.</p>
 <p>Depuis fin 2019, le fuselage fourni en standard sur ce mod&egrave;le est le 85+</p>',
                 'year' => 2019,
+                'serial' => NULL,
                 'price' => '2399.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -1033,7 +1054,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-06-15 18:57:17',
                 'updated_at' => '2021-06-14 14:21:22',
             ),
-            21 =>
+            21 => 
             array (
                 'id' => 22,
                 'name' => 'Noe 97 Freerace',
@@ -1044,6 +1065,7 @@ class DevicesTableSeeder extends Seeder
                 'status' => 'Archived',
                 'body' => '<p>Description</p>',
                 'year' => 2018,
+                'serial' => NULL,
                 'price' => '1789.00',
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
@@ -1076,7 +1098,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:37',
             ),
-            22 =>
+            22 => 
             array (
                 'id' => 23,
                 'name' => 'Noe 97 Freeride',
@@ -1109,6 +1131,7 @@ class DevicesTableSeeder extends Seeder
 <p>Et si on devait encore vous prouver que la Noe vole tr&egrave;s facilement avec peu de puissance de voile, Thibaut enfonce le clou avec un gr&eacute;ement gonflable qui pour le coup n\'est pas puissant du tout ;)</p>
 </div>',
             'year' => 2018,
+            'serial' => NULL,
             'price' => '1689.00',
             'link_test' => NULL,
             'link_presentation' => NULL,
@@ -1141,7 +1164,7 @@ class DevicesTableSeeder extends Seeder
             'created_at' => '2018-11-01 19:57:17',
             'updated_at' => '2020-03-26 22:45:23',
         ),
-        23 =>
+        23 => 
         array (
             'id' => 24,
             'name' => 'Noe 80 Freeride',
@@ -1173,6 +1196,7 @@ class DevicesTableSeeder extends Seeder
 <p>Et si on devait encore vous prouver que la Noe vole tr&egrave;s facilement avec peu de puissance de voile, Thibaut enfonce le clou avec un gr&eacute;ement gonflable qui pour le coup n\'est pas puissant du tout ;)</p>
 </div>',
         'year' => 2018,
+        'serial' => NULL,
         'price' => '1299.00',
         'link_test' => NULL,
         'link_presentation' => NULL,
@@ -1205,7 +1229,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-01 18:57:17',
         'updated_at' => '2020-06-25 10:17:39',
     ),
-    24 =>
+    24 => 
     array (
         'id' => 25,
         'name' => 'Glide Wind',
@@ -1227,6 +1251,7 @@ class DevicesTableSeeder extends Seeder
 <p>Enfin, et c\'est aussi un gros progr&egrave;s, vous pouvez constater que le talon deep-tuttle n\'est d&eacute;sormais plus soud&eacute; sur le mat en aluminum. D&eacute;sormais, il est emboit&eacute; et viss&eacute; sur ce dernier. En plus de la solidit&eacute; accrue (il y a eut quelques cas de SAV sur la soudure qui pouvait s\'oxyder), il est d&eacute;sormais possible de l\'&eacute;quiper au choix d\'un talon deep-tuttle ou powerbox (en option pour le Flight, et en s&eacute;rie sur le Glide).</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-03/neilpryde-2019-glide-6.jpg" alt="NeilPyde Glide 2020 wind powerbox" /></p>',
         'year' => 2018,
+        'serial' => NULL,
         'price' => '849.00',
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-np-rsflight-et-glide.html',
@@ -1259,7 +1284,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-24 18:57:17',
         'updated_at' => '2021-01-22 21:04:37',
     ),
-    25 =>
+    25 => 
     array (
         'id' => 26,
         'name' => 'Flight Evo',
@@ -1279,6 +1304,7 @@ class DevicesTableSeeder extends Seeder
 <p><img class="img-fluid" src="/storage/photos/1/2020-03/neilpryde-2019-flight-evo-4.jpg" alt="NeilPryde Flight Evo 2019" /></p>
 <p>Finissons cette petite pr&eacute;sentation par une remarque importante : la compatibilit&eacute; entre le Flight AL 2019 et le RS:Flight AL 2018. cela signifie qu\'il est possible d\'utiliser les ailes et stab 2019 sur le mod&egrave;le 2018 (et donc de profiter des nouvelles capacit&eacute;s Light Wind). C\'est aussi le cas du mat avec on option powerbox.</p>',
         'year' => 2018,
+        'serial' => NULL,
         'price' => '899.00',
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-np-rsflight-et-glide.html',
@@ -1311,7 +1337,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-12-24 19:57:17',
         'updated_at' => '2021-01-29 09:51:02',
     ),
-    26 =>
+    26 => 
     array (
         'id' => 27,
         'name' => 'Ghost Wsiper 111',
@@ -1322,6 +1348,7 @@ class DevicesTableSeeder extends Seeder
         'status' => 'Published',
         'body' => '<p>Description</p>',
         'year' => 2018,
+        'serial' => NULL,
         'price' => '2490.00',
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sling-ghost-whisper.html',
@@ -1354,7 +1381,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-01 18:57:17',
         'updated_at' => '2021-03-07 18:07:06',
     ),
-    27 =>
+    27 => 
     array (
         'id' => 28,
         'name' => 'Wind 105',
@@ -1373,6 +1400,7 @@ class DevicesTableSeeder extends Seeder
 <p>En comparaison avec l&rsquo;AFS2, la nouvelle gamme repart sur le principe d&rsquo;un ensemble Mat / Fuselage monobloc, mais le profil de mat a &eacute;t&eacute; enti&egrave;rement revu pour plus de performance. Les 3 mod&egrave;les partagent le m&ecirc;me profil de mat, mais la construction est diff&eacute;rente sur chacun des 3 mod&egrave;les.</p>
 <p>Housse T Bar en standard.&nbsp;</p>',
         'year' => 2018,
+        'serial' => NULL,
         'price' => '2199.00',
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
@@ -1405,7 +1433,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-06-02 18:57:17',
         'updated_at' => '2021-08-01 08:31:53',
     ),
-    28 =>
+    28 => 
     array (
         'id' => 29,
         'name' => 'A1 ALU 2018 ULW',
@@ -1449,6 +1477,7 @@ class DevicesTableSeeder extends Seeder
 <p>Le stab, quant &agrave; lui, est un mod&egrave;le ultra fin, qui va certainement occasionner bine peu de train&eacute;e. Il faudra cependant en prendre soin vu sa finesse, mais c\'est aussi une tr&egrave;s jolie pi&egrave;ce.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-12.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1299.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-presentation-a1-2018-alu-et-carbone.html',
@@ -1481,7 +1510,7 @@ class DevicesTableSeeder extends Seeder
     'created_at' => '2018-05-30 18:57:17',
     'updated_at' => '2020-04-09 07:13:55',
 ),
-29 =>
+29 => 
 array (
     'id' => 30,
     'name' => 'LK1 850',
@@ -1501,6 +1530,7 @@ array (
 </div>
 </div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '1850.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-presentation-du-loke-lk1.html',
@@ -1533,7 +1563,7 @@ array (
     'created_at' => '2018-04-25 18:57:17',
     'updated_at' => '2021-06-14 14:20:36',
 ),
-30 =>
+30 => 
 array (
     'id' => 31,
     'name' => 'Wind 85',
@@ -1544,6 +1574,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1349.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
@@ -1576,7 +1607,7 @@ array (
     'created_at' => '2018-04-28 18:57:17',
     'updated_at' => '2021-06-14 14:16:52',
 ),
-31 =>
+31 => 
 array (
     'id' => 32,
     'name' => 'Wind 85',
@@ -1596,6 +1627,7 @@ array (
 <p>Le mod&egrave;le AFS 85 est le seul foil AFS dont l\'ensemble Mat / Fuselage est d&eacute;montable. Housse malette en standard.&nbsp;</p>
 <p>&nbsp;</p>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1349.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
@@ -1628,7 +1660,7 @@ array (
     'created_at' => '2019-09-15 18:57:17',
     'updated_at' => '2021-08-01 08:31:21',
 ),
-32 =>
+32 => 
 array (
     'id' => 33,
     'name' => 'Wind 95 F700',
@@ -1639,6 +1671,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1349.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1671,7 +1704,7 @@ array (
     'created_at' => '2018-06-10 18:57:17',
     'updated_at' => '2021-08-01 08:31:48',
 ),
-33 =>
+33 => 
 array (
     'id' => 34,
     'name' => 'Wind 95',
@@ -1695,6 +1728,7 @@ array (
 </div>
 </div>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1899.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
@@ -1727,7 +1761,7 @@ array (
     'created_at' => '2019-12-15 19:57:17',
     'updated_at' => '2021-06-14 14:16:11',
 ),
-34 =>
+34 => 
 array (
     'id' => 35,
     'name' => 'GT Alu v4',
@@ -1738,6 +1772,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1770,7 +1805,7 @@ array (
     'created_at' => '2018-02-12 19:57:17',
     'updated_at' => '2021-06-14 14:17:45',
 ),
-35 =>
+35 => 
 array (
     'id' => 36,
     'name' => 'GT Alu Mat 95 V6',
@@ -1781,6 +1816,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1813,7 +1849,7 @@ array (
     'created_at' => '2019-07-10 18:57:17',
     'updated_at' => '2020-03-13 20:30:42',
 ),
-36 =>
+36 => 
 array (
     'id' => 37,
     'name' => 'Flow H9',
@@ -1831,6 +1867,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2018-06/fanatic-flow-h9-4.jpg" alt="Fanatic Flow H9" width="1000" height="750" /></p>
 <p><img class="img-fluid" src="/storage/photos/1/2018-06/fanatic-flow-h9-5.jpg" alt="Fanatic Flow H9" width="1000" height="750" /></p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '850.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-presentation-flow-h9.html',
@@ -1863,7 +1900,7 @@ array (
     'created_at' => '2018-02-12 19:57:17',
     'updated_at' => '2020-03-30 20:55:31',
 ),
-37 =>
+37 => 
 array (
     'id' => 38,
     'name' => 'Vini pro',
@@ -1874,6 +1911,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1715.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1906,7 +1944,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2021-06-14 14:10:05',
 ),
-38 =>
+38 => 
 array (
     'id' => 39,
     'name' => 'Vini Air',
@@ -1917,6 +1955,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1900.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1949,7 +1988,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2020-03-13 20:26:32',
 ),
-39 =>
+39 => 
 array (
     'id' => 40,
     'name' => 'Vini ride',
@@ -1960,6 +1999,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '849.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -1992,7 +2032,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2020-03-13 20:26:35',
 ),
-40 =>
+40 => 
 array (
     'id' => 41,
     'name' => 'Tae Proto',
@@ -2003,6 +2043,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2035,7 +2076,7 @@ array (
     'created_at' => '2018-11-15 19:57:17',
     'updated_at' => '2020-03-13 20:25:35',
 ),
-41 =>
+41 => 
 array (
     'id' => 42,
     'name' => 'H10 Evo',
@@ -2046,6 +2087,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '799.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-h10-evo-presentation.html',
@@ -2078,7 +2120,7 @@ array (
     'created_at' => '2017-11-06 19:57:17',
     'updated_at' => '2020-03-13 20:28:28',
 ),
-42 =>
+42 => 
 array (
     'id' => 43,
     'name' => 'WH Flight Alu 85',
@@ -2089,6 +2131,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2121,7 +2164,7 @@ array (
     'created_at' => '2018-04-21 18:57:17',
     'updated_at' => '2021-06-14 14:16:43',
 ),
-43 =>
+43 => 
 array (
     'id' => 44,
     'name' => 'Envol',
@@ -2132,6 +2175,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1799.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/deballage-windfoil-envol-de-loke.html',
@@ -2164,7 +2208,7 @@ array (
     'created_at' => '2017-10-18 18:57:17',
     'updated_at' => '2020-03-13 20:30:23',
 ),
-44 =>
+44 => 
 array (
     'id' => 45,
     'name' => 'Perf',
@@ -2175,6 +2219,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1799.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/deballage-windfoil-envol-de-loke.html',
@@ -2207,7 +2252,7 @@ array (
     'created_at' => '2017-10-18 18:57:17',
     'updated_at' => '2020-03-13 20:30:20',
 ),
-45 =>
+45 => 
 array (
     'id' => 46,
     'name' => 'Easy LW HD 2017',
@@ -2218,6 +2263,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1690.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2250,7 +2296,7 @@ array (
     'created_at' => '2017-08-22 18:57:17',
     'updated_at' => '2021-01-22 21:03:23',
 ),
-46 =>
+46 => 
 array (
     'id' => 47,
     'name' => '85 Carbon',
@@ -2261,6 +2307,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2293,7 +2340,7 @@ array (
     'created_at' => '2017-07-26 18:57:17',
     'updated_at' => '2020-03-22 17:56:39',
 ),
-47 =>
+47 => 
 array (
     'id' => 48,
     'name' => 'GT Carbon 85 light',
@@ -2304,6 +2351,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2336,7 +2384,7 @@ array (
     'created_at' => '2019-07-10 18:57:17',
     'updated_at' => '2020-03-22 17:56:44',
 ),
-48 =>
+48 => 
 array (
     'id' => 49,
     'name' => 'Race Carbon P2',
@@ -2347,6 +2395,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2379,7 +2428,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:54:07',
 ),
-49 =>
+49 => 
 array (
     'id' => 50,
     'name' => 'Race Carbon P3',
@@ -2390,6 +2439,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2422,7 +2472,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:06',
 ),
-50 =>
+50 => 
 array (
     'id' => 51,
     'name' => 'Race Carbon P4',
@@ -2433,6 +2483,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2465,7 +2516,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:12',
 ),
-51 =>
+51 => 
 array (
     'id' => 52,
     'name' => 'Race Carbon P5',
@@ -2476,6 +2527,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2508,7 +2560,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:00',
 ),
-52 =>
+52 => 
 array (
     'id' => 53,
     'name' => 'Profoil F1',
@@ -2519,6 +2571,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2290.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-profoil-f1.html',
@@ -2551,7 +2604,7 @@ array (
     'created_at' => '2017-07-31 18:57:17',
     'updated_at' => '2021-06-14 14:20:56',
 ),
-53 =>
+53 => 
 array (
     'id' => 54,
     'name' => '95 Carbon',
@@ -2562,6 +2615,7 @@ array (
     'status' => 'Published',
 'body' => '<p>Autour du mat carbone de 95cm, Starboard propose tout un &eacute;cosyst&egrave;me de composants qui font du Carbon Foil 95 l\'un des plus adaptables du march&eacute;. D\'une utilisaiton dans les vagues (avec le fusleage de 75), &agrave; la race avec le fuselage de 115 et les ailes de 900 et 1000, il sait tout faire, et s\'adapter &agrave; tout type de riders.</p>',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2594,7 +2648,7 @@ array (
     'created_at' => '2017-07-26 18:57:17',
     'updated_at' => '2021-01-22 20:54:09',
 ),
-54 =>
+54 => 
 array (
     'id' => 55,
     'name' => 'Slalom Carbon',
@@ -2605,6 +2659,7 @@ array (
     'status' => 'Hidden',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
@@ -2637,7 +2692,7 @@ array (
     'created_at' => '2017-06-09 18:57:17',
     'updated_at' => '2020-03-17 23:04:14',
 ),
-55 =>
+55 => 
 array (
     'id' => 56,
     'name' => 'Windfoil',
@@ -2648,6 +2703,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2680,7 +2736,7 @@ array (
     'created_at' => '2017-05-03 18:57:17',
     'updated_at' => '2020-03-13 20:27:31',
 ),
-56 =>
+56 => 
 array (
     'id' => 57,
     'name' => 'RS:Flight AL',
@@ -2691,6 +2747,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '799.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-bp-rsflight-al.html',
@@ -2723,7 +2780,7 @@ array (
     'created_at' => '2017-05-03 18:57:17',
     'updated_at' => '2020-03-13 20:28:56',
 ),
-57 =>
+57 => 
 array (
     'id' => 58,
     'name' => 'RSX',
@@ -2734,6 +2791,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2400.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2766,7 +2824,7 @@ array (
     'created_at' => '2017-05-10 18:57:17',
     'updated_at' => '2020-03-13 20:26:14',
 ),
-58 =>
+58 => 
 array (
     'id' => 59,
     'name' => 'AFS2',
@@ -2777,6 +2835,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1899.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2809,7 +2868,7 @@ array (
     'created_at' => '2017-04-24 18:57:17',
     'updated_at' => '2021-06-14 14:16:03',
 ),
-59 =>
+59 => 
 array (
     'id' => 60,
     'name' => 'RS:Flight F4',
@@ -2820,6 +2879,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2399.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-rsflight-f4-infographie.html',
@@ -2852,7 +2912,7 @@ array (
     'created_at' => '2017-04-10 18:57:17',
     'updated_at' => '2020-06-25 10:14:29',
 ),
-60 =>
+60 => 
 array (
     'id' => 61,
     'name' => 'Windfoil 2017',
@@ -2863,6 +2923,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1950.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -2895,7 +2956,7 @@ array (
     'created_at' => '2017-04-04 18:57:17',
     'updated_at' => '2020-03-13 20:30:45',
 ),
-61 =>
+61 => 
 array (
     'id' => 62,
     'name' => 'Alu LW 2017',
@@ -2906,6 +2967,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '929.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/zko-windfoil-alu-deballage-et-montage.html',
@@ -2938,7 +3000,7 @@ array (
     'created_at' => '2017-03-17 19:57:17',
     'updated_at' => '2020-03-30 19:46:07',
 ),
-62 =>
+62 => 
 array (
     'id' => 63,
     'name' => 'Windfoil',
@@ -2949,6 +3011,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '2400.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/deballage-windfoil-f-4.html',
@@ -2981,7 +3044,7 @@ array (
     'created_at' => '2016-11-02 19:57:17',
     'updated_at' => '2021-03-07 18:06:40',
 ),
-63 =>
+63 => 
 array (
     'id' => 64,
     'name' => 'Windfoil',
@@ -2992,6 +3055,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '1950.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3024,7 +3088,7 @@ array (
     'created_at' => '2016-10-01 18:57:17',
     'updated_at' => '2020-03-13 20:31:10',
 ),
-64 =>
+64 => 
 array (
     'id' => 65,
     'name' => 'Windfoil',
@@ -3035,6 +3099,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '2100.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3067,7 +3132,7 @@ array (
     'created_at' => '2016-10-01 18:57:17',
     'updated_at' => '2020-03-13 20:31:08',
 ),
-65 =>
+65 => 
 array (
     'id' => 66,
     'name' => 'Hybrid 900',
@@ -3078,6 +3143,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '1349.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3110,7 +3176,7 @@ array (
     'created_at' => '2016-08-22 18:57:17',
     'updated_at' => '2020-03-13 20:31:03',
 ),
-66 =>
+66 => 
 array (
     'id' => 68,
     'name' => 'Vini CR LW XLW',
@@ -3121,6 +3187,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '1700.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-vini-2017.html',
@@ -3153,7 +3220,7 @@ array (
     'created_at' => '2016-05-15 18:57:17',
     'updated_at' => '2020-03-13 20:26:39',
 ),
-67 =>
+67 => 
 array (
     'id' => 70,
     'name' => 'Windfoil',
@@ -3164,6 +3231,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1249.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3196,7 +3264,7 @@ array (
     'created_at' => '2017-05-02 18:57:17',
     'updated_at' => '2020-03-22 17:52:48',
 ),
-68 =>
+68 => 
 array (
     'id' => 71,
     'name' => 'Windfoil',
@@ -3207,6 +3275,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2015,
+    'serial' => NULL,
     'price' => '1500.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3239,7 +3308,7 @@ array (
     'created_at' => '2015-06-15 18:57:17',
     'updated_at' => '2020-03-13 20:31:06',
 ),
-69 =>
+69 => 
 array (
     'id' => 72,
     'name' => 'AFS1',
@@ -3250,6 +3319,7 @@ array (
     'status' => 'Archived',
     'body' => 'Description',
     'year' => 2015,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3282,7 +3352,7 @@ array (
     'created_at' => '2015-08-25 18:57:17',
     'updated_at' => '2020-03-13 20:31:02',
 ),
-70 =>
+70 => 
 array (
     'id' => 73,
     'name' => 'Airwave 6\'2',
@@ -3297,6 +3367,7 @@ array (
 <p><img src="/storage/photos/2019-04/57649371_10213326704391900_9163233329250566144_o.jpg" alt="Gliss Test Session Pocket Rocket" />Photos by Christian Souchet</p>
 <p>Ces 2 produits sont clairement destin&eacute;s &agrave; des pratiquants exp&eacute;riment&eacute; en foil, et leur c&ocirc;t&eacute; ultra ludique nous a permis de passer des tr&egrave;s bons moments sur l\'eau. Dans des conditions de vent tr&egrave;s irr&eacute;guli&egrave;res, nous avons pu r&eacute;ellement prendre du plaisir, probablement plus qu\'avec un &eacute;quipment de race. Je rajouterai que ce type de combi n&eacute;cessite un minimum de vent. Ce n\'est donc pas la solution pour celui qui veut naviguer &agrave; 8knt !</p>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1589.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3329,7 +3400,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-02-06 22:02:47',
 ),
-71 =>
+71 => 
 array (
     'id' => 74,
     'name' => 'Wizzard 103',
@@ -3340,6 +3411,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1795.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3372,7 +3444,7 @@ array (
     'created_at' => '2018-07-07 18:57:17',
     'updated_at' => '2021-02-06 22:02:51',
 ),
-72 =>
+72 => 
 array (
     'id' => 75,
     'name' => 'Pocket Rocket E Tech',
@@ -3387,6 +3459,7 @@ array (
 <p><img src="/storage/photos/2019-04/57649371_10213326704391900_9163233329250566144_o.jpg" alt="Gliss Test Session Pocket Rocket" />Photos by Christian Souchet</p>
 <p>Ces 2 produits sont clairement destinés à des pratiquants expérimenté en foil, et leur côté ultra ludique nous a permis de passer des très bons moments sur l\'eau. Dans des conditions de vent très irrégulières, nous avons pu réellement prendre du plaisir, probablement plus qu\'avec un équipment de race. Je rajouterai que ce type de combi nécessite un minimum de vent. Ce n\'est donc pas la solution pour celui qui veut naviguer à 8knt !</p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1499.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3419,7 +3492,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:58:56',
 ),
-73 =>
+73 => 
 array (
     'id' => 76,
     'name' => 'Tiny 110 Carbone',
@@ -3430,6 +3503,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '2150.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3462,7 +3536,7 @@ array (
     'created_at' => '2016-05-15 18:57:17',
     'updated_at' => '2021-02-06 21:47:19',
 ),
-74 =>
+74 => 
 array (
     'id' => 77,
     'name' => 'Freefoil 112 AST',
@@ -3473,6 +3547,7 @@ array (
     'status' => 'Published',
     'body' => '<p>Description</p>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1229.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3505,7 +3580,7 @@ array (
     'created_at' => '2019-06-21 18:57:17',
     'updated_at' => '2021-02-06 21:47:37',
 ),
-75 =>
+75 => 
 array (
     'id' => 78,
     'name' => 'AIRIDE 81 LTD',
@@ -3516,6 +3591,7 @@ array (
     'status' => 'Published',
     'body' => '<p>Nouvelle construction LTD 2020</p>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '1999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3548,7 +3624,7 @@ array (
     'created_at' => '2019-04-23 18:57:17',
     'updated_at' => '2021-02-06 22:01:31',
 ),
-76 =>
+76 => 
 array (
     'id' => 79,
     'name' => 'Eco 121',
@@ -3559,6 +3635,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1499.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3591,7 +3668,7 @@ array (
     'created_at' => '2017-08-21 18:57:17',
     'updated_at' => '2021-02-06 21:47:26',
 ),
-77 =>
+77 => 
 array (
     'id' => 80,
     'name' => 'FreeFoil 132 Carbone',
@@ -3602,6 +3679,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1990.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3634,7 +3712,7 @@ array (
     'created_at' => '2019-05-06 18:57:17',
     'updated_at' => '2021-02-06 21:48:17',
 ),
-78 =>
+78 => 
 array (
     'id' => 81,
     'name' => 'Hydrofoil 120 Fws',
@@ -3645,6 +3723,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1949.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3677,7 +3756,7 @@ array (
     'created_at' => '2018-08-14 18:57:17',
     'updated_at' => '2021-02-06 22:02:00',
 ),
-79 =>
+79 => 
 array (
     'id' => 82,
     'name' => 'Foil 122 Flex Balsa',
@@ -3688,6 +3767,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3720,7 +3800,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 21:45:39',
 ),
-80 =>
+80 => 
 array (
     'id' => 83,
     'name' => 'Airtime 125 Verre',
@@ -3731,6 +3811,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3763,7 +3844,7 @@ array (
     'created_at' => '2018-08-17 18:57:17',
     'updated_at' => '2021-02-06 21:48:31',
 ),
-81 =>
+81 => 
 array (
     'id' => 84,
     'name' => 'Hydrofoil 135 Pro',
@@ -3774,6 +3855,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2299.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3806,7 +3888,7 @@ array (
     'created_at' => '2017-04-11 18:57:17',
     'updated_at' => '2021-02-06 22:01:46',
 ),
-82 =>
+82 => 
 array (
     'id' => 85,
     'name' => 'Slant 133',
@@ -3817,6 +3899,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2016,
+    'serial' => NULL,
     'price' => '1875.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3849,7 +3932,7 @@ array (
     'created_at' => '2016-12-12 19:57:17',
     'updated_at' => '2021-02-06 22:02:15',
 ),
-83 =>
+83 => 
 array (
     'id' => 86,
     'name' => 'RF 81 CARBONE',
@@ -3860,6 +3943,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '2150.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3892,7 +3976,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 22:00:49',
 ),
-84 =>
+84 => 
 array (
     'id' => 87,
     'name' => 'F1X M V1',
@@ -3903,6 +3987,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2290.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3935,7 +4020,7 @@ array (
     'created_at' => '2017-06-26 18:57:17',
     'updated_at' => '2021-02-06 22:02:56',
 ),
-85 =>
+85 => 
 array (
     'id' => 88,
     'name' => 'Foil 144',
@@ -3946,6 +4031,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -3978,7 +4064,7 @@ array (
     'created_at' => '2018-07-28 18:57:17',
     'updated_at' => '2021-02-06 22:02:35',
 ),
-86 =>
+86 => 
 array (
     'id' => 89,
     'name' => 'Hydrofoil 150 FWS',
@@ -3989,6 +4075,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2049.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4021,7 +4108,7 @@ array (
     'created_at' => '2019-03-02 19:57:17',
     'updated_at' => '2021-02-06 21:51:01',
 ),
-87 =>
+87 => 
 array (
     'id' => 90,
     'name' => 'AWF2',
@@ -4032,6 +4119,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1999.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4064,7 +4152,7 @@ array (
     'created_at' => '2018-07-15 18:57:17',
     'updated_at' => '2021-02-06 21:54:52',
 ),
-88 =>
+88 => 
 array (
     'id' => 91,
     'name' => 'F1X L V1',
@@ -4075,6 +4163,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '2790.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4107,7 +4196,7 @@ array (
     'created_at' => '2018-11-02 19:57:17',
     'updated_at' => '2021-02-06 22:03:07',
 ),
-89 =>
+89 => 
 array (
     'id' => 92,
     'name' => 'Thunderbold 75',
@@ -4118,6 +4207,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4150,7 +4240,7 @@ array (
     'created_at' => '2019-04-01 18:57:17',
     'updated_at' => '2021-02-06 21:55:41',
 ),
-90 =>
+90 => 
 array (
     'id' => 93,
     'name' => 'Thunderbold 85',
@@ -4161,6 +4251,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4193,7 +4284,7 @@ array (
     'created_at' => '2019-05-01 18:57:17',
     'updated_at' => '2021-02-06 22:01:21',
 ),
-91 =>
+91 => 
 array (
     'id' => 94,
     'name' => 'Foil 177',
@@ -4204,6 +4295,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '3179.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4236,7 +4328,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-02-06 22:03:17',
 ),
-92 =>
+92 => 
 array (
     'id' => 95,
     'name' => 'H Fire Pro 91 Ltd',
@@ -4247,6 +4339,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '2699.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4279,7 +4372,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:51:21',
 ),
-93 =>
+93 => 
 array (
     'id' => 96,
     'name' => 'RF 91 CARBONE',
@@ -4290,6 +4383,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '2450.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4322,7 +4416,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 22:00:33',
 ),
-94 =>
+94 => 
 array (
     'id' => 97,
     'name' => 'FireRace 120',
@@ -4333,6 +4427,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1290.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4365,7 +4460,7 @@ array (
     'created_at' => '2017-04-21 18:57:17',
     'updated_at' => '2021-02-06 21:49:53',
 ),
-95 =>
+95 => 
 array (
     'id' => 98,
     'name' => 'RS:One Convertible',
@@ -4376,6 +4471,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '1690.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4408,7 +4504,7 @@ array (
     'created_at' => '2017-04-19 18:57:17',
     'updated_at' => '2021-02-06 21:50:26',
 ),
-96 =>
+96 => 
 array (
     'id' => 99,
     'name' => 'RS:X Convertible',
@@ -4419,6 +4515,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2200.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4451,7 +4548,7 @@ array (
     'created_at' => '2017-04-19 18:57:17',
     'updated_at' => '2021-02-06 21:50:30',
 ),
-97 =>
+97 => 
 array (
     'id' => 100,
     'name' => 'Rocket plus CED 123',
@@ -4462,6 +4559,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1990.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4494,7 +4592,7 @@ array (
     'created_at' => '2018-09-18 18:57:17',
     'updated_at' => '2021-02-06 21:54:43',
 ),
-98 =>
+98 => 
 array (
     'id' => 101,
     'name' => 'Foil 147 Tecnora',
@@ -4505,6 +4603,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2017,
+    'serial' => NULL,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4537,7 +4636,7 @@ array (
     'created_at' => '2017-04-23 18:57:17',
     'updated_at' => '2021-02-06 22:03:05',
 ),
-99 =>
+99 => 
 array (
     'id' => 102,
     'name' => 'H Fire 91',
@@ -4548,6 +4647,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4580,7 +4680,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:58:05',
 ),
-100 =>
+100 => 
 array (
     'id' => 103,
     'name' => 'Hi Flight',
@@ -4591,6 +4691,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1990.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4623,7 +4724,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:55:04',
 ),
-101 =>
+101 => 
 array (
     'id' => 104,
     'name' => 'Techno Windfoil',
@@ -4634,6 +4735,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1299.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4666,7 +4768,7 @@ array (
     'created_at' => '2019-06-08 18:57:17',
     'updated_at' => '2021-02-06 21:50:22',
 ),
-102 =>
+102 => 
 array (
     'id' => 105,
     'name' => 'Gecko Foil 120',
@@ -4677,6 +4779,7 @@ array (
     'status' => 'Published',
     'body' => 'Description',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '1990.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4709,7 +4812,7 @@ array (
     'created_at' => '2018-04-18 18:57:17',
     'updated_at' => '2021-02-06 21:50:20',
 ),
-103 =>
+103 => 
 array (
     'id' => 106,
     'name' => 'FOIL X 145 STARLITE',
@@ -4730,6 +4833,7 @@ array (
 </ul>
 <div>La FoilX est disponible dans 2 constructions (Starlight ...1599&euro; comme dans notre test et Flax Balsa ... 2149&euro;)</div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '1599.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4762,7 +4866,7 @@ array (
     'created_at' => '2020-03-22 22:53:39',
     'updated_at' => '2021-02-06 21:55:32',
 ),
-104 =>
+104 => 
 array (
     'id' => 107,
     'name' => 'Bullet V1',
@@ -4784,6 +4888,7 @@ array (
 <p>Pour finir, j\'ajouterai que le Bullet est homologu&eacute; PWA 2020 ... au cas o&ugrave; certains d\'entre voudraient aller se confronter aux cadors de la discipline.&nbsp;</p>
 <p>Comme pour l\'aluminium, le mod&egrave;le carbone sera disponible sous la marque <strong>Exocet</strong>, avec toutefois quelques&nbsp;variantes : le fuselage r&eacute;glage ne sera pas disponible, mais &agrave; la place un fuselage de 95 ou un de 115. Le mat sera un peu plus court (98cm) et plus fin ... plus orient&eacute; slalom avec moins d\'appui au pr&egrave;s.</p>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '1890.00',
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-bullet-1.html',
@@ -4816,7 +4921,7 @@ array (
     'created_at' => '2020-03-30 16:14:00',
     'updated_at' => '2021-06-14 14:20:39',
 ),
-105 =>
+105 => 
 array (
     'id' => 112,
     'name' => 'Swart',
@@ -4829,6 +4934,7 @@ array (
 <p>La voile est con&ccedil;ue autour des mats RDM python de la marque reptile. En dehors de leur l&eacute;g&egrave;ret&eacute;, ces mats offrent une grosse dynamique tr&egrave;s coh&eacute;rente avec les objectifs de la voile.</p>
 <p>Les SWART sont fabriqu&eacute;es en France, et ceci constitue une vraie exception dans notre petit monde.</p>',
     'year' => 2017,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4861,7 +4967,7 @@ array (
     'created_at' => '2017-04-06 12:06:44',
     'updated_at' => '2021-11-06 16:56:49',
 ),
-106 =>
+106 => 
 array (
     'id' => 113,
     'name' => 'Skyscape',
@@ -4874,6 +4980,7 @@ array (
 <p>En r&eacute;alit&eacute;, la voile est bien plus diff&eacute;rente que ce qu&rsquo;il n&rsquo;y paraissait. L&rsquo;outline est beaucoup plus ramass&eacute;, la bordure en bas de voile est assez imposante et adapt&eacute;e &agrave; une utilisation foil ou on couche moins la voile sur le pont (un peu comme sur la Swart RS).</p>
 <p>Le Wish para&icirc;t tr&egrave;s court. Un fois gr&eacute;&eacute;e, la Skyscape offre un creux assez prononc&eacute;, et une chute beaucoup plus tendue que sur une switchblade.</p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4906,7 +5013,7 @@ array (
     'created_at' => '2017-08-06 12:12:13',
     'updated_at' => '2021-11-06 16:58:11',
 ),
-107 =>
+107 => 
 array (
     'id' => 114,
     'name' => 'Fly',
@@ -4930,6 +5037,7 @@ array (
 <p>Sur la Xo Fly, Patrice a dessin&eacute; la voile de fa&ccedil;on &agrave; ce qu&rsquo;elle plaque le foil dans l&rsquo;eau en cas de rafale, au contraire de faire lifter la planche &hellip; elle fonctionne donc &agrave; l&rsquo;envers d&rsquo;une voile classique : c&rsquo;est toute l&rsquo;astuce du concept. Pour avoir pass&eacute; un peu de temps autour de cette voile, je peux vous dire que parvenir &agrave; ce r&eacute;sultat est un petit tour de force car la conception est loin d&rsquo;entre simple. Cela passe par un fonctionnement tr&egrave;s diff&eacute;rent du haut de la voile. Le haut de la chute est relativement tendue, et vient s&rsquo;appuyer sur le vent. Par contre, la voile peut ouvrir en milieu de chute pour r&eacute;guler la puissance. Malgr&eacute; tout, il faut garder une voile capable de g&eacute;n&eacute;rer de l&rsquo;acc&eacute;l&eacute;ration &agrave; basse vitesse pour d&eacute;coller t&ocirc;t, sans avoir un creux qui recule dans les rafales, et avec une a&eacute;rodynamique efficace pour acc&eacute;l&eacute;rer quand on va beaucoup plus vite que le vent &hellip; ne nous le cachons pas : c&rsquo;est un casse t&ecirc;te pour un designer de voile, mais le challenge est ultra int&eacute;ressant.</p>
 <p><img src="/storage/photos/1/2020-02/c1e2a709b141aef5776994c4a91266f0.jpg" /></p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => '825.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -4962,7 +5070,7 @@ array (
     'created_at' => '2017-08-06 12:17:42',
     'updated_at' => '2021-11-06 17:08:22',
 ),
-108 =>
+108 => 
 array (
     'id' => 115,
     'name' => 'Vega',
@@ -4979,6 +5087,7 @@ array (
 </div>
 </div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '619.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5011,7 +5120,7 @@ array (
     'created_at' => '2019-11-06 13:41:14',
     'updated_at' => '2021-11-06 17:08:05',
 ),
-109 =>
+109 => 
 array (
     'id' => 116,
     'name' => 'Hyperglide',
@@ -5022,6 +5131,7 @@ array (
     'status' => 'Published',
     'body' => '<p>La Severn Hyperglide est la premi&egrave;re voile d&eacute;velopp&eacute;e par la marque Australienne exclusivement pour le foil ... et plus particuli&egrave;rement pour la course. Nous faisons le point sur les apports de ce type de solution en foil, suite au test de la plus petite taille de la gamme : la 8m2.</p>',
     'year' => 2018,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5054,7 +5164,7 @@ array (
     'created_at' => '2018-06-12 12:49:45',
     'updated_at' => '2021-11-06 18:00:57',
 ),
-110 =>
+110 => 
 array (
     'id' => 117,
     'name' => 'IRIS F',
@@ -5067,6 +5177,7 @@ array (
 <p>On voit ceci sur les renforts de certaines voiles (comme le forceline NeilPryde). Ici, toute la voile utilise ce principe.</p>
 <p>En terme de conception, cette IRIS 7m est une voile de freerace &agrave; 2 cambers, et fourreau &eacute;troit en dacron. Elle est con&ccedil;ue pour &ecirc;tre gr&eacute;&eacute; sur un mat constant flex (nous avons utilis&eacute; un North pour nos tests).</p>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-rig.html',
@@ -5099,7 +5210,7 @@ array (
     'created_at' => '2018-06-21 12:54:14',
     'updated_at' => '2021-11-06 17:08:32',
 ),
-111 =>
+111 => 
 array (
     'id' => 118,
     'name' => 'Flight',
@@ -5120,6 +5231,7 @@ array (
 </div>
 </div>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5152,7 +5264,7 @@ array (
     'created_at' => '2018-07-27 13:12:56',
     'updated_at' => '2021-11-06 16:56:23',
 ),
-112 =>
+112 => 
 array (
     'id' => 119,
     'name' => 'Hydra',
@@ -5170,6 +5282,7 @@ array (
 </div>
 </div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '780.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5202,7 +5315,7 @@ array (
     'created_at' => '2018-09-04 13:18:33',
     'updated_at' => '2021-11-06 17:59:49',
 ),
-113 =>
+113 => 
 array (
     'id' => 120,
     'name' => 'IRIS X',
@@ -5218,6 +5331,7 @@ array (
 </div>
 </div>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5250,7 +5364,7 @@ array (
     'created_at' => '2019-04-02 16:13:15',
     'updated_at' => '2021-11-06 18:00:45',
 ),
-114 =>
+114 => 
 array (
     'id' => 121,
     'name' => 'Hyperglide 2',
@@ -5269,6 +5383,7 @@ array (
 </div>
 </div>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '1049.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5301,7 +5416,7 @@ array (
     'created_at' => '2019-05-31 22:00:00',
     'updated_at' => '2021-11-06 18:00:53',
 ),
-115 =>
+115 => 
 array (
     'id' => 122,
     'name' => 'F-Type',
@@ -5319,6 +5434,7 @@ array (
 </div>
 </div>',
     'year' => 2019,
+    'serial' => NULL,
     'price' => '809.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5351,7 +5467,7 @@ array (
     'created_at' => '2018-09-21 22:00:00',
     'updated_at' => '2021-11-06 16:59:28',
 ),
-116 =>
+116 => 
 array (
     'id' => 123,
     'name' => 'Air Ride',
@@ -5370,6 +5486,7 @@ array (
 </div>
 </div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '699.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5402,7 +5519,7 @@ array (
     'created_at' => '2019-09-30 22:00:00',
     'updated_at' => '2021-11-06 16:58:14',
 ),
-117 =>
+117 => 
 array (
     'id' => 124,
     'name' => 'Skyblade',
@@ -5421,6 +5538,7 @@ array (
 </div>
 </div>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '1099.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5453,7 +5571,7 @@ array (
     'created_at' => '2019-08-23 22:00:00',
     'updated_at' => '2021-11-06 18:00:47',
 ),
-118 =>
+118 => 
 array (
     'id' => 125,
     'name' => 'IRIS X',
@@ -5510,6 +5628,7 @@ array (
 </ul>
 <p>Bref, pour ceux qui suivent le d&eacute;veloppement de la discipline, vous retrouverez ici l\'ensembles des ingr&eacute;dients qui constituent aujourd\'hui les solutions connues pour faire un flotteur d&eacute;di&eacute; performant et agr&eacute;able. Reste &agrave; valider ceci sur l\'eau pour v&eacute;rifier si tous ces &eacute;l&eacute;ments s\'associent de fa&ccedil;on homog&egrave;ne.&nbsp;</p>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5542,7 +5661,7 @@ array (
     'created_at' => '2020-06-03 17:24:58',
     'updated_at' => '2021-10-13 09:44:20',
 ),
-119 =>
+119 => 
 array (
     'id' => 126,
     'name' => 'FoilGlide',
@@ -5608,6 +5727,7 @@ array (
 </table>
 <p>&nbsp;</p>',
     'year' => 2020,
+    'serial' => NULL,
     'price' => '649.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
@@ -5640,7 +5760,7 @@ array (
     'created_at' => '2020-04-06 17:32:01',
     'updated_at' => '2021-11-06 17:06:10',
 ),
-120 =>
+120 => 
 array (
     'id' => 127,
     'name' => 'Hydrofoil 135 ES',
@@ -5671,6 +5791,7 @@ array (
 <p><img src="/storage/photos/1/2020-02/IMG_1981.jpg" alt="JP Hydrofoil 135 ES 2020 " /></p>
 <p><img src="/storage/photos/1/2020-02/IMG_1982.jpg" alt="JP Hydrofoil 135 ES 2020 " /></p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '1549.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5703,7 +5824,7 @@ array (
 'created_at' => '2020-04-06 18:40:30',
 'updated_at' => '2021-02-06 22:01:48',
 ),
-121 =>
+121 => 
 array (
 'id' => 128,
 'name' => 'IRIS Z',
@@ -5722,6 +5843,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '749.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5754,7 +5876,7 @@ array (
 'created_at' => '2020-04-06 18:46:04',
 'updated_at' => '2021-11-06 17:06:05',
 ),
-122 =>
+122 => 
 array (
 'id' => 129,
 'name' => 'IRIS RF',
@@ -5776,6 +5898,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '948.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5808,7 +5931,7 @@ array (
 'created_at' => '2020-04-06 20:10:55',
 'updated_at' => '2021-11-06 18:00:19',
 ),
-123 =>
+123 => 
 array (
 'id' => 130,
 'name' => 'IRIS Z',
@@ -5819,6 +5942,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>Le freeride</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5851,7 +5975,7 @@ array (
 'created_at' => '2020-04-06 20:15:55',
 'updated_at' => '2021-06-14 14:19:46',
 ),
-124 =>
+124 => 
 array (
 'id' => 131,
 'name' => 'RF 71 Carbon',
@@ -5887,6 +6011,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2290.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5919,7 +6044,7 @@ array (
 'created_at' => '2020-04-08 14:16:00',
 'updated_at' => '2021-02-06 21:56:11',
 ),
-125 =>
+125 => 
 array (
 'id' => 132,
 'name' => 'VINI PRO V2',
@@ -5944,6 +6069,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '1715.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -5976,7 +6102,7 @@ array (
 'created_at' => '2020-04-09 07:20:17',
 'updated_at' => '2020-04-17 06:56:32',
 ),
-126 =>
+126 => 
 array (
 'id' => 133,
 'name' => 'FOIL FREERIDE 150',
@@ -5987,6 +6113,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2149.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6019,7 +6146,7 @@ array (
 'created_at' => '2020-04-09 07:41:53',
 'updated_at' => '2021-02-06 22:01:28',
 ),
-127 =>
+127 => 
 array (
 'id' => 134,
 'name' => 'FOIL FREERIDE 125',
@@ -6030,6 +6157,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>c</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2099.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6062,7 +6190,7 @@ array (
 'created_at' => '2020-04-09 07:43:47',
 'updated_at' => '2021-02-06 22:01:18',
 ),
-128 =>
+128 => 
 array (
 'id' => 135,
 'name' => 'AIRIDE 81 MTE',
@@ -6073,6 +6201,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>nouvelle constuction 2020, ex CED</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '1499.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6105,7 +6234,7 @@ array (
 'created_at' => '2020-04-09 08:02:34',
 'updated_at' => '2020-04-09 08:02:34',
 ),
-129 =>
+129 => 
 array (
 'id' => 136,
 'name' => 'Tiny',
@@ -6138,6 +6267,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2150.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6170,7 +6300,7 @@ array (
 'created_at' => '2020-04-17 06:49:25',
 'updated_at' => '2020-04-17 06:53:39',
 ),
-130 =>
+130 => 
 array (
 'id' => 137,
 'name' => 'Iris X proto 2 ( Serial FM95 001 191209)',
@@ -6181,6 +6311,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>Dernier proto avant s&eacute;rie</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6213,7 +6344,7 @@ array (
 'created_at' => '2019-12-22 11:48:11',
 'updated_at' => '2020-04-25 06:17:34',
 ),
-131 =>
+131 => 
 array (
 'id' => 138,
 'name' => 'A1 SPORT',
@@ -6241,6 +6372,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870" /></p>
 <p>Je ne pourrai pas terminer cette pr&eacute;sentation sans mettre en lumi&egrave;re l\'exceptionelle finition du A1 Sport ... dans la pure tradition AlpineFoil, et bien s&ucirc;r un point important &agrave; nos yeux : il est con&ccedil;u ET fabriqu&eacute; en France. A l\'instar des produits Lokefoil et AHD, choisir un foil AlpineFoil, c\'est &eacute;videmment soutenir nos artisans et industriels fran&ccedil;ais, qui font d\'&eacute;normes efforts pour propoer des produits ultra qualitatifs &agrave; des prix identiques aux productions asiatiques !</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2289.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6273,7 +6405,7 @@ array (
 'created_at' => '2020-04-25 06:19:35',
 'updated_at' => '2021-06-14 14:20:53',
 ),
-132 =>
+132 => 
 array (
 'id' => 139,
 'name' => 'WARP FOIL',
@@ -6354,6 +6486,7 @@ array (
 </table>
 <p>&nbsp;</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '1449.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6386,7 +6519,7 @@ array (
 'created_at' => '2020-05-01 11:33:58',
 'updated_at' => '2020-05-01 14:18:02',
 ),
-133 =>
+133 => 
 array (
 'id' => 140,
 'name' => 'FALCON FOIL',
@@ -6411,6 +6544,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2899.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6443,7 +6577,7 @@ array (
 'created_at' => '2020-05-01 12:17:47',
 'updated_at' => '2020-05-01 12:25:19',
 ),
-134 =>
+134 => 
 array (
 'id' => 141,
 'name' => 'RF 81 CARBONE V2',
@@ -6499,6 +6633,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/exocet-rf81-2020-foilboard-12.jpg" alt="Exocet RF 81 carbone 2020" /></p>
 <p>Encore une fois, Exocet montre que Patrice et Damien ne sont pas l&agrave; pour copier des recettes existantes. Avec la Phantom IRIS X, cette nouvelle RF sera probalement un des flotteurs les plus innovants de la saison 2020. Vive le test !!!</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2290.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6531,7 +6666,7 @@ array (
 'created_at' => '2020-05-03 11:09:02',
 'updated_at' => '2021-10-13 09:47:01',
 ),
-135 =>
+135 => 
 array (
 'id' => 142,
 'name' => 'IQFOIL 95',
@@ -6567,6 +6702,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/iqfoil-iq95-reflex-9.jpg" alt="Starboard IQFOIL 95 Reflex carbone" /></p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/iqfoil-iq95-reflex-10.jpg" alt="Starboard IQFOIL 95 Reflex carbone" /></p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2898.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6599,7 +6735,7 @@ array (
 'created_at' => '2020-05-03 11:43:24',
 'updated_at' => '2020-05-03 12:02:42',
 ),
-136 =>
+136 => 
 array (
 'id' => 143,
 'name' => 'IQFOIL 8M',
@@ -6633,6 +6769,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/severne-hyperglide-olympic-vs-hg2-6.jpg" alt="Severne IQFOIL Olympic Sail" /></p>
 <p>A partir de ce premier jet que nous avons en main (et qui est encore un prototype proche de la s&eacute;rie finale), il est fort &agrave; parier que, comme &ccedil;a a &eacute;t&eacute; le cas avec la voile RSX &agrave; l\'&eacute;poque, on voit rapidement arriver des versions plus renforc&eacute;es, compte tenu de l\'utilisation ultra-intensive qui va entre &ecirc;tre faite par les athl&egrave;tes olympiques. Je pr&eacute;cise que le prototype dont vous voyez ici les photos poss&egrave;de les m&ecirc;mes grammages et renforts que l\'Hyperglide 2. On est donc sur un mod&egrave;le assez l&eacute;ger (l\'un des gros points forts de l\'HG2).</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '930.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6665,7 +6802,7 @@ array (
 'created_at' => '2020-05-03 12:45:33',
 'updated_at' => '2020-05-03 16:08:44',
 ),
-137 =>
+137 => 
 array (
 'id' => 144,
 'name' => 'IQ FOIL - Tristant Algret',
@@ -6676,6 +6813,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6708,7 +6846,7 @@ array (
 'created_at' => '2020-06-05 05:46:42',
 'updated_at' => '2020-09-15 14:35:38',
 ),
-138 =>
+138 => 
 array (
 'id' => 145,
 'name' => 'Iris X Serial FM95 015 200113 - rejeté',
@@ -6719,6 +6857,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6751,7 +6890,7 @@ array (
 'created_at' => '2020-04-10 06:33:32',
 'updated_at' => '2020-06-11 15:40:20',
 ),
-139 =>
+139 => 
 array (
 'id' => 146,
 'name' => 'Magic Carpet',
@@ -6789,6 +6928,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '1499.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6821,7 +6961,7 @@ array (
 'created_at' => '2020-06-23 20:14:49',
 'updated_at' => '2020-09-05 07:58:55',
 ),
-140 =>
+140 => 
 array (
 'id' => 147,
 'name' => 'A1 RACE',
@@ -6848,6 +6988,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2499.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6880,7 +7021,7 @@ array (
 'created_at' => '2020-06-25 09:57:32',
 'updated_at' => '2021-08-01 08:39:30',
 ),
-141 =>
+141 => 
 array (
 'id' => 148,
 'name' => 'Freefoil 115 Pro Edition',
@@ -6891,6 +7032,7 @@ array (
 'status' => 'Published',
 'body' => '<p>Apr&egrave;s le coup de ma&icirc;tre d\'Exocet avec ses Freefoil 112 et 135, c\'est au tour de JP de propsoer 2 flotteurs de foil freeride. Pour leur donner un nom, JP a fait dans l\'originalit&eacute; &nbsp;: Freefoil !!&nbsp;</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '2199.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6923,7 +7065,7 @@ array (
 'created_at' => '2020-07-16 20:03:06',
 'updated_at' => '2021-02-08 17:27:13',
 ),
-142 =>
+142 => 
 array (
 'id' => 149,
 'name' => 'FOIL COMP 91 AI',
@@ -6942,6 +7084,7 @@ array (
 </div>
 </div>',
 'year' => 2020,
+'serial' => NULL,
 'price' => '3399.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -6974,7 +7117,7 @@ array (
 'created_at' => '2020-08-01 08:25:08',
 'updated_at' => '2020-08-07 06:54:38',
 ),
-143 =>
+143 => 
 array (
 'id' => 150,
 'name' => 'FOIL RIDE 145',
@@ -7002,6 +7145,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6485.jpg" alt="Patrick Foil Ride 145" /></p>
 <p>Je finirai cette pr&eacute;sentation en pr&eacute;cisant que le poids reste contenu pour ce type de volume (8.6kg nu sur notre planche de test), et le prix &eacute;galement pour une construction Cobra Full Carbone pont et car&egrave;ne ... on se languis maintenant d\'aller &agrave; l\'eau avec la b&ecirc;te pour la confronter &agrave; nos r&eacute;f&eacute;rences free-race du moment (Starboard F150, Tiaki Compact Race Light, Phantom Iris x Pro, Exocet RF V2).</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2099.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7034,7 +7178,7 @@ array (
 'created_at' => '2020-08-14 12:24:48',
 'updated_at' => '2021-02-06 22:01:35',
 ),
-144 =>
+144 => 
 array (
 'id' => 151,
 'name' => 'IQ FOIL - Cédric Bordes',
@@ -7045,6 +7189,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7077,7 +7222,7 @@ array (
 'created_at' => '2020-09-15 14:38:51',
 'updated_at' => '2020-09-15 15:27:02',
 ),
-145 =>
+145 => 
 array (
 'id' => 152,
 'name' => 'Phantom Proto 2',
@@ -7088,6 +7233,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7120,7 +7266,7 @@ array (
 'created_at' => '2020-09-15 15:28:33',
 'updated_at' => '2020-09-15 15:32:38',
 ),
-146 =>
+146 => 
 array (
 'id' => 153,
 'name' => 'Phantom Présérie',
@@ -7131,6 +7277,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>j</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7163,7 +7310,7 @@ array (
 'created_at' => '2020-09-15 15:30:33',
 'updated_at' => '2020-09-15 15:30:33',
 ),
-147 =>
+147 => 
 array (
 'id' => 154,
 'name' => 'Phantom Proto 1 (marek)',
@@ -7174,6 +7321,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>j</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7206,7 +7354,7 @@ array (
 'created_at' => '2020-09-15 15:32:25',
 'updated_at' => '2020-09-15 15:33:18',
 ),
-148 =>
+148 => 
 array (
 'id' => 155,
 'name' => 'Race Carbone Cédric',
@@ -7217,6 +7365,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2019,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7249,7 +7398,7 @@ array (
 'created_at' => '2020-09-15 15:37:05',
 'updated_at' => '2020-09-15 15:37:33',
 ),
-149 =>
+149 => 
 array (
 'id' => 156,
 'name' => 'Carbone 95 mast standard',
@@ -7260,6 +7409,7 @@ array (
 'status' => 'Published',
 'body' => '<p>Mat standard derni&egrave;re g&eacute;n&eacute;ration &nbsp;(pr&ecirc;t Nico)</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7292,7 +7442,7 @@ array (
 'created_at' => '2020-09-15 15:39:10',
 'updated_at' => '2021-02-08 13:08:24',
 ),
-150 =>
+150 => 
 array (
 'id' => 157,
 'name' => 'SLALOM FOIL 91 CARBON REFLEX',
@@ -7312,6 +7462,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2899.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7344,7 +7495,7 @@ array (
 'created_at' => '2020-09-24 12:27:12',
 'updated_at' => '2021-02-07 22:36:04',
 ),
-151 =>
+151 => 
 array (
 'id' => 158,
 'name' => 'IQ FOIL - Pascal Toselli',
@@ -7355,6 +7506,7 @@ array (
 'status' => 'Archived',
 'body' => '<p>q</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7387,7 +7539,7 @@ array (
 'created_at' => '2020-09-30 07:27:23',
 'updated_at' => '2020-09-30 07:27:23',
 ),
-152 =>
+152 => 
 array (
 'id' => 159,
 'name' => 'FOILRIDE 105 & 125',
@@ -7399,6 +7551,7 @@ array (
 'body' => '<p>Dans la s&eacute;rie mini-race, voici les FoilRide 105 et 125 ... des mod&egrave;les r&eacute;duits de la FoilRide 145 &agrave; tous les niveau. De spetits bijoux pour amateurs de foil en petite voile.&nbsp;</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-09/811D3FF5-EF9B-40D5-B870-E82E1E2AB22E.jpg" alt="FoilRide 125" /></p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2099.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7431,7 +7584,7 @@ array (
 'created_at' => '2020-10-15 11:35:08',
 'updated_at' => '2021-02-06 22:01:06',
 ),
-153 =>
+153 => 
 array (
 'id' => 160,
 'name' => 'E-FOIL CRUISING',
@@ -7456,6 +7609,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '6799.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7488,7 +7642,7 @@ array (
 'created_at' => '2020-11-11 19:26:42',
 'updated_at' => '2020-11-11 19:30:53',
 ),
-154 =>
+154 => 
 array (
 'id' => 161,
 'name' => 'COMPACT FOIL 83',
@@ -7519,6 +7673,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0344.jpg" alt="AHD Combat foil 83" /></p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0345.jpg" alt="AHD Combat foil 83" /></p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '1490.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7551,7 +7706,7 @@ array (
 'created_at' => '2020-11-21 20:24:50',
 'updated_at' => '2021-02-06 21:59:31',
 ),
-155 =>
+155 => 
 array (
 'id' => 162,
 'name' => 'IRIS X MKII',
@@ -7573,6 +7728,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7605,7 +7761,7 @@ array (
 'created_at' => '2020-12-13 11:23:37',
 'updated_at' => '2021-11-06 17:05:53',
 ),
-156 =>
+156 => 
 array (
 'id' => 163,
 'name' => 'IQ 95 MAST, Ailes Slalom, Fuselage 105',
@@ -7617,6 +7773,7 @@ array (
 'body' => '<p>Fid&egrave;le &agrave; son sch&eacute;ma, pas de nouveau foil &agrave; part enti&egrave;re chez Starboard pour 2021, mais des nouvelles pi&egrave;ces qui permettent de faire &eacute;voluer les foils existants. On applaudit des 2 mains car cette solution permet d&rsquo;&eacute;viter une obsolescence de votre investissement.</p>
 <p>Pour 2021, Starboard propose 3 nouveaux stabilisateurs, 2 ailes, 1 fuselage et 1 mat. Les mesures donn&eacute;es ci apr&egrave;s concerne le nouveau mat IQ 95 disponible en option &agrave; partir de Fevrier 2021.</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7649,7 +7806,7 @@ array (
 'created_at' => '2020-12-17 20:17:52',
 'updated_at' => '2021-02-08 12:58:34',
 ),
-157 =>
+157 => 
 array (
 'id' => 164,
 'name' => 'WIND 95 V2',
@@ -7684,6 +7841,7 @@ array (
 <p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0622.jpg" alt="AFS wind 95 v2" /></p>
 <p>Le nouveau mat &agrave; corde &eacute;volutive</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '1990.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7716,7 +7874,7 @@ array (
 'created_at' => '2020-12-18 17:43:00',
 'updated_at' => '2021-06-14 14:16:14',
 ),
-158 =>
+158 => 
 array (
 'id' => 165,
 'name' => 'IRIS R PROTO 2021 n°1',
@@ -7727,6 +7885,7 @@ array (
 'status' => 'Archived',
 'body' => '<p>d</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7759,7 +7918,7 @@ array (
 'created_at' => '2020-12-22 10:53:50',
 'updated_at' => '2020-12-22 10:53:50',
 ),
-159 =>
+159 => 
 array (
 'id' => 166,
 'name' => 'IRIS X Proto 1',
@@ -7770,6 +7929,7 @@ array (
 'status' => 'Archived',
 'body' => '<p>jj</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7802,7 +7962,7 @@ array (
 'created_at' => '2020-12-22 11:07:36',
 'updated_at' => '2020-12-22 11:08:25',
 ),
-160 =>
+160 => 
 array (
 'id' => 167,
 'name' => 'IRIS Z PROTO 1',
@@ -7813,6 +7973,7 @@ array (
 'status' => 'Archived',
 'body' => '<p>s</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7845,7 +8006,7 @@ array (
 'created_at' => '2020-12-22 11:23:44',
 'updated_at' => '2020-12-22 11:23:44',
 ),
-161 =>
+161 => 
 array (
 'id' => 168,
 'name' => 'SLALOM RACE',
@@ -7915,6 +8076,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2500.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7947,7 +8109,7 @@ array (
 'created_at' => '2021-01-10 15:05:27',
 'updated_at' => '2021-08-01 08:32:27',
 ),
-162 =>
+162 => 
 array (
 'id' => 169,
 'name' => 'IRIS R PROTO 2021 n°2',
@@ -7958,6 +8120,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -7990,7 +8153,7 @@ array (
 'created_at' => '2021-02-03 17:03:42',
 'updated_at' => '2021-02-03 17:09:45',
 ),
-163 =>
+163 => 
 array (
 'id' => 170,
 'name' => 'IRIS X Proto 2',
@@ -8001,6 +8164,7 @@ array (
 'status' => 'Archived',
 'body' => '<h3>d</h3>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8033,7 +8197,7 @@ array (
 'created_at' => '2021-02-03 17:27:43',
 'updated_at' => '2021-02-11 07:57:17',
 ),
-164 =>
+164 => 
 array (
 'id' => 171,
 'name' => 'IRIS Z proto 2',
@@ -8044,6 +8208,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>x</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8076,7 +8241,7 @@ array (
 'created_at' => '2021-02-03 17:42:06',
 'updated_at' => '2021-02-03 17:42:06',
 ),
-165 =>
+165 => 
 array (
 'id' => 172,
 'name' => 'SLALOM FOIL 81 CARBON REFLEX',
@@ -8095,6 +8260,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2899.00',
 'link_test' => 'https://marseille.glissattitude.com/windfoil/u38908s1-starboard-foil-slalom-carbon-reflex-starboard-2021.html',
 'link_presentation' => NULL,
@@ -8127,7 +8293,7 @@ array (
 'created_at' => '2021-02-07 22:14:37',
 'updated_at' => '2021-02-08 17:26:39',
 ),
-166 =>
+166 => 
 array (
 'id' => 173,
 'name' => 'A1 RACE MESURES',
@@ -8138,6 +8304,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8170,7 +8337,7 @@ array (
 'created_at' => '2021-02-11 10:35:44',
 'updated_at' => '2021-02-11 10:37:30',
 ),
-167 =>
+167 => 
 array (
 'id' => 174,
 'name' => 'A1 SPORT MESURES',
@@ -8181,6 +8348,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>f</p>',
 'year' => 2020,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8213,7 +8381,7 @@ array (
 'created_at' => '2021-02-11 10:38:38',
 'updated_at' => '2021-02-11 10:40:07',
 ),
-168 =>
+168 => 
 array (
 'id' => 175,
 'name' => 'RACE 12032012M950181 PROTO',
@@ -8224,6 +8392,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8256,7 +8425,7 @@ array (
 'created_at' => '2021-02-11 10:41:56',
 'updated_at' => '2021-09-30 07:14:16',
 ),
-169 =>
+169 => 
 array (
 'id' => 177,
 'name' => 'LK1 PERFORMANCE',
@@ -8270,6 +8439,7 @@ array (
 <p>Le jeu d&rsquo;ailes complet s&rsquo;adapte &agrave; toutes les conditions, tous les programmes (freeride, up-wind/down-wind, slalom&hellip;) et tous les gabarits.</p>
 <p>Le mod&egrave;le pr&eacute;sent&eacute; ici comporte un mat UHM, et une aile performance.&nbsp;</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2200.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8302,7 +8472,7 @@ array (
 'created_at' => '2021-03-07 20:09:52',
 'updated_at' => '2021-03-08 19:20:05',
 ),
-170 =>
+170 => 
 array (
 'id' => 178,
 'name' => 'HRDROFOIL SLALOM PRO',
@@ -8337,6 +8507,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2899.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8369,7 +8540,7 @@ array (
 'created_at' => '2021-03-11 12:44:25',
 'updated_at' => '2021-03-11 12:53:18',
 ),
-171 =>
+171 => 
 array (
 'id' => 179,
 'name' => 'IRIS X MAST PRESERIE UD 0001',
@@ -8380,6 +8551,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>d</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8412,7 +8584,7 @@ array (
 'created_at' => '2021-04-20 10:44:01',
 'updated_at' => '2021-04-20 10:44:01',
 ),
-172 =>
+172 => 
 array (
 'id' => 180,
 'name' => 'FLIGHT FR',
@@ -8429,6 +8601,7 @@ array (
 <p>&gt; envergure 80cm - 815cm2</p>
 <p>&gt; envergure 90cm = 1000cm2</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '1199.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8461,7 +8634,7 @@ array (
 'created_at' => '2021-05-15 12:38:14',
 'updated_at' => '2021-05-15 12:38:43',
 ),
-173 =>
+173 => 
 array (
 'id' => 181,
 'name' => 'Hyperglide 4',
@@ -8488,6 +8661,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '1100.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8520,7 +8694,7 @@ array (
 'created_at' => '2021-06-10 13:23:12',
 'updated_at' => '2021-11-06 17:58:04',
 ),
-174 =>
+174 => 
 array (
 'id' => 182,
 'name' => 'A1 RACE SL',
@@ -8531,6 +8705,7 @@ array (
 'status' => 'Published',
 'body' => '<p>L\'alpine Race SL est un foil compos&eacute; du mat Alpine A1 Race, avec une nouveau fuselage de 105, et les ailes de la s&eacute;rie regatta</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2499.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8563,7 +8738,7 @@ array (
 'created_at' => '2021-06-14 14:07:32',
 'updated_at' => '2021-06-17 13:26:33',
 ),
-175 =>
+175 => 
 array (
 'id' => 183,
 'name' => 'BULLET M40J',
@@ -8582,6 +8757,7 @@ array (
 </div>
 </div>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2499.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8614,7 +8790,7 @@ array (
 'created_at' => '2021-06-15 10:13:12',
 'updated_at' => '2021-06-17 13:17:24',
 ),
-176 =>
+176 => 
 array (
 'id' => 184,
 'name' => 'FOIL+',
@@ -8625,6 +8801,7 @@ array (
 'status' => 'Published',
 'body' => '<p>Description</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8657,7 +8834,7 @@ array (
 'created_at' => '2021-06-15 10:15:19',
 'updated_at' => '2021-11-06 18:00:58',
 ),
-177 =>
+177 => 
 array (
 'id' => 185,
 'name' => 'FREERIDE CARBONE',
@@ -8671,6 +8848,7 @@ array (
 <p>&laquo; C\'est l\'&eacute;quilibre parfait pour un d&eacute;collage facile et une grande stabilit&eacute;. Le meilleur combo pour le foiling d&eacute;contract&eacute;.&ldquo;</p>
 <p>&ndash; Fernando Martinez</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => '2115.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8703,7 +8881,7 @@ array (
 'created_at' => '2021-08-01 08:30:21',
 'updated_at' => '2021-08-05 10:56:32',
 ),
-178 =>
+178 => 
 array (
 'id' => 186,
 'name' => 'IRIS X E26 TE 0005',
@@ -8714,6 +8892,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2022,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8746,7 +8925,7 @@ array (
 'created_at' => '2021-09-28 16:09:38',
 'updated_at' => '2021-09-28 16:09:38',
 ),
-179 =>
+179 => 
 array (
 'id' => 187,
 'name' => 'SLALOM UHM',
@@ -8757,6 +8936,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>s</p>',
 'year' => 2022,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8789,7 +8969,7 @@ array (
 'created_at' => '2021-09-28 16:11:32',
 'updated_at' => '2021-09-28 16:14:11',
 ),
-180 =>
+180 => 
 array (
 'id' => 188,
 'name' => 'IRIS X GA 003',
@@ -8800,6 +8980,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>ddf</p>',
 'year' => 2022,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8832,7 +9013,7 @@ array (
 'created_at' => '2021-10-01 06:09:16',
 'updated_at' => '2021-10-01 06:09:16',
 ),
-181 =>
+181 => 
 array (
 'id' => 189,
 'name' => 'FLY',
@@ -8852,6 +9033,7 @@ array (
 </div>
 </div>',
 'year' => 2022,
+'serial' => NULL,
 'price' => '705.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8884,7 +9066,7 @@ array (
 'created_at' => '2021-10-14 11:10:48',
 'updated_at' => '2021-11-06 17:57:48',
 ),
-182 =>
+182 => 
 array (
 'id' => 190,
 'name' => 'IRIS R MKII 85',
@@ -8905,6 +9087,7 @@ array (
 </div>
 </div>',
 'year' => 2022,
+'serial' => NULL,
 'price' => '3049.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8937,7 +9120,7 @@ array (
 'created_at' => '2021-11-05 15:30:12',
 'updated_at' => '2021-11-05 16:50:06',
 ),
-183 =>
+183 => 
 array (
 'id' => 191,
 'name' => 'GOLD FOIL',
@@ -8948,6 +9131,7 @@ array (
 'status' => 'Published',
 'body' => '<p>La voile de course foil !</p>',
 'year' => 2022,
+'serial' => NULL,
 'price' => '815.00',
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -8980,7 +9164,7 @@ array (
 'created_at' => '2021-11-06 17:57:20',
 'updated_at' => '2021-11-06 18:52:00',
 ),
-184 =>
+184 => 
 array (
 'id' => 192,
 'name' => 'STINGRAY LTD 130',
@@ -8997,6 +9181,7 @@ array (
 </div>
 </div>',
 'year' => 2022,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9029,7 +9214,7 @@ array (
 'created_at' => '2021-11-09 20:58:14',
 'updated_at' => '2021-11-11 13:30:10',
 ),
-185 =>
+185 => 
 array (
 'id' => 193,
 'name' => 'IRIS R PITCH TEST',
@@ -9040,6 +9225,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>Mast only&nbsp;</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9072,7 +9258,7 @@ array (
 'created_at' => '2021-11-13 16:36:47',
 'updated_at' => '2021-11-13 16:38:25',
 ),
-186 =>
+186 => 
 array (
 'id' => 195,
 'name' => 'IRIS X GEN 2 SERIAL',
@@ -9083,6 +9269,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>Mat de s&eacute;rie X gen 2 Nov 2021</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9115,7 +9302,7 @@ array (
 'created_at' => '2021-11-16 19:26:37',
 'updated_at' => '2021-11-16 19:26:37',
 ),
-187 =>
+187 => 
 array (
 'id' => 196,
 'name' => 'CARBONE 95 C600 97',
@@ -9126,6 +9313,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>Mat Type 2 matteo yachino</p>',
 'year' => 2022,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9158,7 +9346,7 @@ array (
 'created_at' => '2021-11-16 19:30:06',
 'updated_at' => '2021-11-16 19:30:06',
 ),
-188 =>
+188 => 
 array (
 'id' => 197,
 'name' => 'CARBON 95 STD JC',
@@ -9169,6 +9357,7 @@ array (
 'status' => 'Archived',
 'body' => '<p>s</p>',
 'year' => 2018,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9201,7 +9390,7 @@ array (
 'created_at' => '2021-11-19 15:33:56',
 'updated_at' => '2021-11-19 15:33:56',
 ),
-189 =>
+189 => 
 array (
 'id' => 198,
 'name' => 'RACE THIN JC',
@@ -9212,6 +9401,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>JC MAES (from chinook)</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9244,7 +9434,7 @@ array (
 'created_at' => '2021-11-19 15:35:48',
 'updated_at' => '2021-11-19 15:35:48',
 ),
-190 =>
+190 => 
 array (
 'id' => 199,
 'name' => 'IRIS R MAST GEN 2 COBRA',
@@ -9255,6 +9445,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>d</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9287,7 +9478,7 @@ array (
 'created_at' => '2021-12-07 14:24:12',
 'updated_at' => '2021-12-07 14:24:12',
 ),
-191 =>
+191 => 
 array (
 'id' => 200,
 'name' => 'IRIS Z GEN 2 COBRA SEPT',
@@ -9298,6 +9489,7 @@ array (
 'status' => 'Hidden',
 'body' => '<p>d</p>',
 'year' => 2021,
+'serial' => NULL,
 'price' => NULL,
 'link_test' => NULL,
 'link_presentation' => NULL,
@@ -9331,7 +9523,7 @@ array (
 'updated_at' => '2021-12-07 14:27:43',
 ),
 ));
-
-
+        
+        
     }
 }
