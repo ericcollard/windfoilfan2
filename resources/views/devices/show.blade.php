@@ -16,27 +16,27 @@
 @section('css')
     <style>
         .floue{
-            height: 300px;
+            height: 200px;
             background: linear-gradient(-180deg, rgba(255,255,255,0), rgba(255,255,255,1));
             position: relative;
-            margin-top: -300px;
+            margin-top: -200px;
         }
 
-        #module .collapse.show + .floue {
+        .module .collapse.show + .floue {
             display: none;
         }
 
-        #module .collapse:not(.show) {
+        .module .collapse:not(.show) {
              display: block;
-             height: 300px !important;
+             height: 200px !important;
              overflow: hidden;
          }
 
-        #module a.collapsed:after  {
+        .module  a.switch.collapsed:after  {
             content: '+ {{ __('Show more') }}';
         }
 
-        #module a:not(.collapsed):after {
+        .module a.switch:not(.collapsed):after {
             content: '- {{ __('Show less') }}';
         }
 
@@ -48,6 +48,22 @@
             padding: 0;
             margin: 0;
         }
+
+        #post-overlay {
+            position: absolute;
+            left: 0;
+            top: 200px;
+            z-index: 1000;
+            text-align: center;
+            width: 100%;
+            font-size: 2.0em;
+        }
+
+        #post-overlay .badge {
+            line-height: 1.5em;
+            padding : 0.5em 0.8em;
+        }
+
     </style>
 @endsection
 
@@ -94,10 +110,10 @@
                             <div class="col-3">
                                 <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5> {{ $device->statistics_count }} {{ __('Unique IP') }}
                             </div>
-                            <div class="col-3">
-                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }} ( {{ __('Last') }} {{ $device->reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $device->reviews->last()->owner->name }})
+                            <div class="col-5 col-md-4">
+                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }} ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
                             </div>
-                            <div class="col-3">
+                            <div class="col-1 col-md-2">
                                 <div class="badge bg-dark" style="margin : 0 0.4rem; float: right">{{ $device->category->name }}</div>
                                 <div class="badge {{ $device->statusClass() }}" style="float: right">{{ __($device->status) }}</div>
                             </div>
@@ -111,9 +127,11 @@
                     </div>
                 </div>
 
-
+                <div class="d-flex">
+                    {!! $reviews->links() !!}
+                </div>
                 @if ($device->reviews_count > 0)
-                    @foreach($device->reviews as $review)
+                    @foreach($reviews as $review)
                         <div class="card d-block ">
                             <div class="card-header">
                                 <div class="row">
@@ -142,13 +160,18 @@
                                     </div>
                                     <div class="col-10">
 
-                                        <div id="module">
-                                            <div class="collapse" id="collapseExample" >
+                                        <div class="module">
+                                            <div class="collapse" id="collapseReview{{ $review->id }}" >
                                                 {!! $review->body !!}
                                             </div>
                                             <div class="floue"></div>
-                                            <a role="button" class="collapsed" data-bs-toggle="collapse" href="#collapseExample"  aria-controls="collapseExample">
-                                            </a>
+
+                                            @auth
+                                                <a role="button" class="switch collapsed" data-bs-toggle="collapse" href="#collapseReview{{ $review->id }}"  aria-controls="collapseReview{{ $review->id }}"></a>
+                                            @else
+                                                <div id="post-overlay"><span class="badge badge-outline-dark">Pour lire cet article, <br><a href="{{ route('login') }}">connectez vous</a> c'est gratuit !</span></div>
+                                            @endif
+
                                         </div>
 
                                         <div class="userEquipment mt-4">
@@ -164,7 +187,9 @@
                 @else
                     <p class="ml-4" >{{ __("No reviews at that time") }}</p>
                 @endif
-
+                <div class="d-flex">
+                    {!! $reviews->links() !!}
+                </div>
 
 
 
