@@ -59,6 +59,7 @@ class DeviceController extends Controller
      */
     public function show(Category $category, Device $device)
     {
+        //dd($device->reviews->last());
         return view('devices.show', compact('device'));
     }
 

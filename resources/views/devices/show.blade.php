@@ -14,7 +14,41 @@
 @endsection
 
 @section('css')
+    <style>
+        .floue{
+            height: 300px;
+            background: linear-gradient(-180deg, rgba(255,255,255,0), rgba(255,255,255,1));
+            position: relative;
+            margin-top: -300px;
+        }
 
+        #module .collapse.show + .floue {
+            display: none;
+        }
+
+        #module .collapse:not(.show) {
+             display: block;
+             height: 300px !important;
+             overflow: hidden;
+         }
+
+        #module a.collapsed:after  {
+            content: '+ {{ __('Show more') }}';
+        }
+
+        #module a:not(.collapsed):after {
+            content: '- {{ __('Show less') }}';
+        }
+
+        .userEquipment {
+            border-top: 1px solid #D8DEE9;
+            padding-top: 1rem;
+        }
+        .userEquipment p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
 @endsection
 
 
@@ -36,7 +70,11 @@
                             <li class="breadcrumb-item active">{{ $device->name }}</li>
                         </ol>
                     </div>
-                    <h4 class="page-title">{{ __('Post detail') }} : {{ $device->name }}</h4>
+                    <h1 class="page-title">
+                        <span style="font-size: 1.8rem">{{ $device->brand->name }} {{ $device->name }} {{ $device->year }}</span>
+                    </h1>
+
+
                 </div>
             </div>
         </div>
@@ -49,62 +87,88 @@
                 <!-- post card -->
                 <div class="card d-block">
                     <div class="card-header">
-
-                        <!-- project title-->
-                        <h1 class="mt-0">{{ $device->name }}</h1>
-                        <div class="badge badge-outline-dark">{{ $device->category->name }}</div>
-                        <div class="badge {{ $device->statusClass() }}">{{ __($device->status) }}</div>
-
-
+                        <div class="row">
+                            <div class="col-3">
+                                <h5>{{ __('Creation date') }}</h5> {{ $device->created_at->formatLocalized('%A %d %B %Y ') }}
+                            </div>
+                            <div class="col-3">
+                                <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5> {{ $device->statistics_count }} {{ __('Unique IP') }}
+                            </div>
+                            <div class="col-3">
+                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }} ( {{ __('Last') }} {{ $device->reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $device->reviews->last()->owner->name }})
+                            </div>
+                            <div class="col-3">
+                                <div class="badge bg-dark" style="margin : 0 0.4rem; float: right">{{ $device->category->name }}</div>
+                                <div class="badge {{ $device->statusClass() }}" style="float: right">{{ __($device->status) }}</div>
+                            </div>
+                        </div>
                     </div>
 
-
-
-
                     <div class="card-body ">
-
-                            <div id="post-body">
-                                {!! $device->body !!}
-                            </div>
-
+                        <div id="post-body">
+                            {!! $device->body !!}
+                        </div>
                     </div>
                 </div>
 
-                <div class="card d-block">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="mb-3">
-                                    <h5>{{ __('Creation date') }}</h5>
-                                    <p>{{ $device->created_at->formatLocalized('%A %d %B %Y ') }}</p>
+
+                @if ($device->reviews_count > 0)
+                    @foreach($device->reviews as $review)
+                        <div class="card d-block ">
+                            <div class="card-header">
+                                <div class="row">
+                                    <div class="col-6 col-md-2">
+                                        <b>{{ $review->owner->name }}</b>
+                                    </div>
+                                    <div class="col-6 col-md-10">
+                                        <i class="mdi mdi-message-text"></i><b> Posté le</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="mb-3">
-                                    <h5>{{ __('Update date') }}</h5>
-                                    <p>{{ $device->updated_at->formatLocalized('%A %d %B %Y ') }}</p>
+
+
+
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-2 d-none d-sm-none d-md-block">
+                                        <div id="tooltip-container">
+                                            <a href="{{ route('user.show' , ['user' => $review->owner->id]) }}" class="d-inline-block">
+                                                <img src="{{$review->owner->avatarUrl() }}" class="rounded-circle img-thumbnail avatar-sm" alt="friend">
+                                            </a>
+                                        </div>
+                                        <h5>{{ __('Inscription') }}</h5> {{ $review->owner->created_at->formatLocalized('%d %B %Y') }}
+                                        <h5>{{ __('Messages') }}</h5> {{ $review->owner->reviews->count() }}
+                                        <h5>{{ __('Localisation') }}</h5> {{ $review->owner->postal_code }}
+                                    </div>
+                                    <div class="col-10">
+
+                                        <div id="module">
+                                            <div class="collapse" id="collapseExample" >
+                                                {!! $review->body !!}
+                                            </div>
+                                            <div class="floue"></div>
+                                            <a role="button" class="collapsed" data-bs-toggle="collapse" href="#collapseExample"  aria-controls="collapseExample">
+                                            </a>
+                                        </div>
+
+                                        <div class="userEquipment mt-4">
+                                            {!! $review->owner->personal_equipment !!}
+                                        </div>
+
+
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="mb-3">
-                                    <h5>{{ __('Views') }}</h5>
-                                    <p>nc.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div id="tooltip-container">
-                            <h5>{{ __('Author') }}</h5>
-                            <a href="{{ route('user.show' , ['user' => $device->creator->id]) }}" data-bs-container="#tooltip-container" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ $device->creator->name }}" class="d-inline-block">
-                                <img src="{{$device->creator->avatarUrl() }}" class="rounded-circle img-thumbnail avatar-sm" alt="friend">
-                            </a>
+                            </div> <!-- end card-body-->
+                        </div> <!-- end card-->
+                    @endforeach
+                @else
+                    <p class="ml-4" >{{ __("No reviews at that time") }}</p>
+                @endif
 
 
-                        </div>
 
-                    </div> <!-- end card-body-->
 
-                </div> <!-- end card-->
+
 
 
             </div><!-- end col-12-->
@@ -114,4 +178,9 @@
 
 @endsection
 
+
+@section('script-bottom')
+
+
+@endsection
 

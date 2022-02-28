@@ -346,5 +346,8 @@
     "Categories list" : "Liste des catégories",
     "Devices" : "Produits",
     "Devices list" : "Liste de produits",
-    "Belongs to brand" : "Appartient à la marque"
+    "Belongs to brand" : "Appartient à la marque",
+    "Show more" : "En voir plus",
+    "Show less" : "En voir moins",
+    "Last" : "Dernier"
 }
