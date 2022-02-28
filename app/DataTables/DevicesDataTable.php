@@ -24,9 +24,6 @@ class DevicesDataTable extends DataTable
             ->editColumn('created_at', function ($request) {
                 return $request->created_at->formatLocalized('%c'); //'%d %B %Y %H:%M'
             })
-            ->editColumn('updated_at', function ($request) {
-                return $request->created_at->formatLocalized('%c');
-            })
             ->editColumn('status', function ($request) {
                 return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
             })
@@ -194,7 +191,6 @@ class DevicesDataTable extends DataTable
             Column::make('year')->title(__('Year')),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
-            Column::make('updated_at')->title(__('Updated at')),
             Column::computed('action')->title(__('Action'))
                 ->addClass('text-center')
                 ->exportable(false)
