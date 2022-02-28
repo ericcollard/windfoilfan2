@@ -127,9 +127,18 @@
                     </div>
                 </div>
 
-                <div class="d-flex">
-                    {!! $reviews->links() !!}
+                <div class="row">
+                    <div class="col-8">
+                        <a class="btn btn-primary" href="#" role="button">Répondre</a>
+                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
+                    </div>
+                    <div class="col-4">
+                        <div style="float: right">
+                            {!! $reviews->links() !!}
+                        </div>
+                    </div>
                 </div>
+
                 @if ($device->reviews_count > 0)
                     @foreach($reviews as $review)
                         <div class="card d-block ">
@@ -187,8 +196,17 @@
                 @else
                     <p class="ml-4" >{{ __("No reviews at that time") }}</p>
                 @endif
-                <div class="d-flex">
-                    {!! $reviews->links() !!}
+
+                <div class="row">
+                    <div class="col-8">
+                        <a class="btn btn-primary" href="#" role="button">Répondre</a>
+                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
+                    </div>
+                    <div class="col-4">
+                        <div style="float: right">
+                            {!! $reviews->links() !!}
+                        </div>
+                    </div>
                 </div>
 
 
