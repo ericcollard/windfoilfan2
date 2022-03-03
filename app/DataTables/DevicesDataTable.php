@@ -27,13 +27,14 @@ class DevicesDataTable extends DataTable
             ->editColumn('status', function ($request) {
                 return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
             })
+            ->editColumn('name', function ($request) {
+                return '<a href="'.route('device.show',['category'=>$request->category->slug , 'device'=>$request->id]).'">'.$request->name.'</a>';
+            })
 
-            ->rawColumns(['status','action']);
+            ->rawColumns(['status','action','name']);
 
 
     }
-
-
 
     /**
      * Get query source of dataTable.
