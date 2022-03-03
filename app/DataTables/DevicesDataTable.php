@@ -113,21 +113,6 @@ class DevicesDataTable extends DataTable
 
         // Boutons
         $buttons = [];
-        $buttons[] = [
-            'extend' => 'reload',
-            'text' => 'Rafraichir',
-            'className' => 'btn btn-success mb-2 me-2',
-        ];
-        $buttons[] = [
-            'extend' => 'print',
-            'text' => 'Imprimer',
-            'className' => 'btn btn-warning mb-2 me-2',
-        ];
-        $buttons[] = [
-            'extend' => 'export',
-            'text' => 'Exporter',
-            'className' => 'btn btn-warning mb-2 me-2',
-        ];
 
         if ($this->brand)
         {
@@ -151,6 +136,34 @@ class DevicesDataTable extends DataTable
                     ]
             ];
         }
+
+        $buttons[] = [
+            'text' =>'Nouveau',
+            'action' => "function (e, dt, button, config) {
+                                        window.location = '".route('device.create')."';
+                                    }",
+            'className' => 'btn btn-success mb-2 me-2',
+        ];
+
+
+        $buttons[] = [
+            'extend' => 'reload',
+            'text' => 'Rafraichir',
+            'className' => 'btn btn-warning mb-2 me-2',
+        ];
+        $buttons[] = [
+            'extend' => 'print',
+            'text' => 'Imprimer',
+            'className' => 'btn btn-warning mb-2 me-2',
+        ];
+        $buttons[] = [
+            'extend' => 'export',
+            'text' => 'Exporter',
+            'className' => 'btn btn-warning mb-2 me-2',
+        ];
+
+
+
 
 
 

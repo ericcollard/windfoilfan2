@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateDeviceRequest;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Device;
+use Illuminate\Support\Facades\URL;
 
 class DeviceController extends Controller
 {
@@ -65,7 +66,21 @@ class DeviceController extends Controller
 
 
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\Device  $device
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function edit(Category $category, Device $device)
+    {
+        $action = URL::route('device.update',['category' => $category, 'device' => $device]);
+        $method = 'PATCH';
+        $categories = Category::all();
+        $brands = Brand::all();
 
+        return view('devices.edit', compact('action', 'method','device','categories','brands'));
+    }
 
 
 
@@ -73,56 +88,83 @@ class DeviceController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
-        //
+        $action = URL::route('device.store');
+        $method = 'POST';
+
+        $categories = Category::all();
+        $brands = Brand::all();
+
+        $device = new Device();
+        $device->user_id = auth()->user()->id;
+        return view('devices.edit', compact('action', 'method','device','categories','brands'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\StoreDeviceRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function store(StoreDeviceRequest $request)
     {
-        //
+        try {
+
+            $data = $request->all();
+            $data['slug'] = Device::buildSlug($data['name'],$data['brand_id'],$data['year']);
+
+            $device = Device::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "I'm sorry, impossible to store you item at the moment");
+        }
+
+        return redirect($device->path());
     }
 
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Device  $device
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Device $device)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
-     *
+     * @param  \App\Models\Category  $category
      * @param  \App\Http\Requests\UpdateDeviceRequest  $request
      * @param  \App\Models\Device  $device
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function update(UpdateDeviceRequest $request, Device $device)
+    public function update(UpdateDeviceRequest $request, Category $category, Device $device)
     {
-        //
+        try {
+            $data = $request->all();
+
+            $device->update($data);   // grace au fillable, on ne touche qu'aux champs correspondant à l'object
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "I'm sorry, impossible to store you item at the moment");
+        }
+
+        return redirect($device->path());
     }
+
+
 
     /**
      * Remove the specified resource from storage.
-     *
+     * @param  \App\Models\Category  $category
      * @param  \App\Models\Device  $device
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Device $device)
+    public function destroy(Category $category, Device $device)
     {
-        //
+        $device->delete();
+
+        if (request()->wantsJson())
+        {
+            return response(['status' => 'Your post has been deleted'],200);
+        }
+        return redirect(route('device.category', $category));
     }
 }

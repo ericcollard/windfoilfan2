@@ -23,14 +23,10 @@ class CreateDevicesTable extends Migration
             $table->string('status')->default('Published'); // Published : Hidden : Archived
             $table->text('body');
             $table->year('year')->nullable();
-            $table->string('serial')->nullable();
             $table->unsignedDecimal('price', 8, 2)->nullable();
             $table->string('link_test')->nullable();
             $table->string('link_presentation')->nullable();
             $table->string('link_product')->nullable();
-            for ($i = 1; $i <= 25; $i++) {
-                $table->Double('attr'.$i)->nullable();
-            }
             $table->timestamps();
         });
     }

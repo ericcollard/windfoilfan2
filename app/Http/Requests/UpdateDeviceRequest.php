@@ -13,7 +13,7 @@ class UpdateDeviceRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class UpdateDeviceRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name'        => 'required',
+            'status'        => 'required',
+            'body'        => 'required',
+            'brand_id' => 'required|exists:brands,id',
+            'category_id' => 'required|exists:categories,id',
         ];
     }
 }

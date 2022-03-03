@@ -23,7 +23,7 @@ class ReviewsTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'device_id' => 1,
-                'user_id' => 5,
+                'user_id' => 1,
                 'title' => 'Encore du travail ...',
                 'body' => '<p>Ce test intervient &agrave; la suite de l&rsquo;essai des 2 versions 2018 et 2019 en aluminium. Nous avions constat&eacute; un manque global de rigidit&eacute; sur ces derniers, et cela limitait le contr&ocirc;le dans le vent de ces mod&egrave;les. En testant le mod&egrave;le carbone, nous nous int&eacute;resserons donc &agrave; la fois au contr&ocirc;le, et la stabilit&eacute; du foil.</p>
 <p>Cette fois, nous avons &agrave; notre disposition un WH COMP 95 de s&eacute;rie. Il est &eacute;quip&eacute; d\'un fuselage de 110cm, et d\'une aile de 768cm2.&nbsp;</p>
@@ -67,7 +67,7 @@ class ReviewsTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'device_id' => 2,
-                'user_id' => 5,
+                'user_id' => 1,
                 'title' => 'Gros contrôle, et balade tranquille ... mais pas dans la finesse',
                 'body' => '<p><img src="/storage/photos/1/2019-07/fanatic-flow-900-2019-ZAalD78Wwd.jpg" alt="Fanatic Flow 900 2019" /></p>
 <h3>Sur l\'eau</h3>
@@ -94,7 +94,7 @@ class ReviewsTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'device_id' => 3,
-                'user_id' => 5,
+                'user_id' => 1,
                 'title' => 'Machine de light wind',
                 'body' => '<div class="multi-col-2">
 <p><img style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;" src="/storage/photos/1/2019-08/lokefoil-lk-race-2019-ZBHE9qAPxx.jpg" alt="Loke Race" /></p>
@@ -133,7 +133,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 4,
             'device_id' => 4,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Le freeride Plug and play',
             'body' => '<p><img src="/storage/photos/1/2019-08/starboard-supercruiser-2019-D6iyguL581.jpg" alt="Starboard Foil X et Supercruiser" /></p>
 <h3>D&eacute;collage</h3>
@@ -173,7 +173,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 5,
             'device_id' => 6,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Ludique !',
             'body' => '<p><img src="/storage/photos/1/2019-07/ga-mach-1-2019-4IYdikqxEd.jpg" alt="GA SAILS Mach 1 Foil carbone" /></p>
 <h3>D&eacute;collage&nbsp;</h3>
@@ -209,7 +209,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 6,
             'device_id' => 7,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Une arme de guerre !',
             'body' => '<h3>Test en mode Race Light Wind : comparatif F4 race, Phantom IRIS R, NP F4 racing</h3>
 <p>Si j\'avais fait un compte rendu de test traditionnel sur un tel produit, &nbsp;&ccedil;a aurait &eacute;t&eacute; une redite en comparaison avec les autres foils de course actuels (ultra cal&eacute;, super glissant, tr&egrave;s puissant etc...), donc sans int&eacute;r&ecirc;t. La comparaison de sensation avec ses concurrents directs est donc la meilleure solution. Je pr&eacute;cise qu\'il manque dans cette comparaison le Loke race et le Starboard Race +, &nbsp;car je ne les avait pas encore re&ccedil;us &agrave; l\'&eacute;poque ou nous avons r&eacute;alis&eacute; ce test</p>
@@ -261,7 +261,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 7,
             'device_id' => 8,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Ouah ... Quelle glisse !!!',
             'body' => '<p><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_4884.jpg" alt="IRIS X Phantom" /></p>
 <h3>Montage</h3>
@@ -307,7 +307,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 8,
             'device_id' => 11,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Windfoil - Test du Phantom IRIS F',
             'body' => '<h4>Conditions des tests</h4>
 <p><img src="/storage/photos/1/2019-02/phantom-iris-f-v1-2019-kcAQWIz5ah.jpg" alt="test phantom iris f" /></p>
@@ -402,7 +402,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 9,
             'device_id' => 12,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Windfoil - Test du Phantom IRIS F',
             'body' => '<h4>Conditions des tests</h4>
 <p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-FPxEEd0vnw.jpg" alt="test phantom iris f" /></p>
@@ -497,7 +497,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 10,
             'device_id' => 13,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Rock\'n Roll',
             'body' => '<p>Ce test intervient &agrave; la suite de l&rsquo;essai de la version 2018. Nous voulions donc essentiellement quantifier l&rsquo;&eacute;volution du mod&egrave;le.</p>
 <p><img src="/storage/photos/1/2019-05/rrd-wh-flight-alu-85-v2-2019-DGGrvhJJJh.jpg" alt="WH Flight" /></p>
@@ -537,7 +537,7 @@ class ReviewsTableSeeder extends Seeder
         array (
             'id' => 11,
             'device_id' => 15,
-            'user_id' => 5,
+            'user_id' => 1,
             'title' => 'Bel objet',
             'body' => '<p>Tout fraichement r&eacute;cup&eacute;r&eacute; lors de notre visite de l\'usine Alpine en d&eacute;but de semaine, voici une pr&eacute;sentation du A1, version 2019.</p>
 <h3>En image</h3>
@@ -615,7 +615,7 @@ class ReviewsTableSeeder extends Seeder
 array (
     'id' => 12,
     'device_id' => 16,
-    'user_id' => 5,
+    'user_id' => 1,
     'title' => 'Ultra complet',
 'body' => '<p>Le montage dans la planche a &eacute;t&eacute; un jeu d\'enfant. Le talon Deep Tuttle est rentr&eacute; sans forcer, et s\'est parfaitement cal&eacute; dans le boitier Horue. A la prochaine nav, je ferai peut &ecirc;tre quelques ajustement du rake car j\'&eacute;tais un poil piqueur. Notons juste que les per&ccedil;ages des ailes mat (derni&egrave;res version &agrave; priori) sont l&eacute;g&egrave;rement d&eacute;sax&eacute;s, ce qui fait forcer l\'insertion des vis. Ce sera un point &agrave; r&eacute;gler avant une production en s&eacute;rie.</p>
 <p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-vVHd6APHyA.jpg" alt="" /></p>
@@ -684,7 +684,7 @@ array (
 array (
 'id' => 13,
 'device_id' => 20,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Tout en contrôle !',
 'body' => '<p><img src="/storage/photos/1/2018-10/taaroa-noe-97-freerace-uhm-2020-VlppE9w7QY.jpg" /></p>
 <p>Pour faire des comparaisons, nous avions &eacute;galement &agrave; disposition un Starboard GTS avec fuselage de 95, et un Noe 80</p>
@@ -734,7 +734,7 @@ array (
 array (
 'id' => 14,
 'device_id' => 23,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Plus long ... plus bon :)',
 'body' => '<p>Suis au test publi&eacute; sur le Noe 80, je ne reviendrai pas sur tous les &eacute;l&eacute;ments, mais sur ce qui les diff&eacute;rencie.&nbsp;</p>
 <h3>Feeling sur l\'eau</h3>
@@ -761,7 +761,7 @@ array (
 array (
 'id' => 15,
 'device_id' => 24,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Sécurisant mais efficace',
 'body' => '<h4>&nbsp;</h4>
 <h4>Pr&eacute;sentation</h4>
@@ -817,7 +817,7 @@ array (
 array (
 'id' => 16,
 'device_id' => 25,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une autre façon de voler économique',
 'body' => '<h3>Le RS Glide AL 2019 sur l\'eau</h3>
 <p>Avec son boitier powerbox en standard, le Glide annonce imm&eacute;diatement un programme diff&eacute;rent. Pour ce test, nous l\'avons donc mont&eacute; sur une planche freeride, et sur une freewave.</p>
@@ -844,7 +844,7 @@ array (
 array (
 'id' => 17,
 'device_id' => 26,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test NeilPryde RS:Flight et Glide : 2 visions du foil',
 'body' => '<p><img src="/storage/photos/1/2018-08/neilpryde-flight-evo-2018-wrEv8KOy2m.jpg" /></p>
 <h3>Le Flight AL 2019 sur l\'eau</h3>
@@ -880,7 +880,7 @@ array (
 array (
 'id' => 18,
 'device_id' => 27,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Serrez les fesses',
 'body' => '<p>L\'an pass&eacute;, Slingshot proposait son premier foil aluminium avec un concept essentiellement bas&eacute; sur l\'accessibilit&eacute;. Le r&eacute;sultat &eacute;tait un foil tr&egrave;s porteur, mais destin&eacute; &agrave; une pratique freeride et manquant de stabilit&eacute; au regard de la concurrence.</p>
 <p>Cette fois, Slinghot propose un foil carbone ax&eacute; perf. Le d&eacute;veloppement et la fabrication n\'ont visiblement pas &eacute;t&eacute; r&eacute;alis&eacute; en interne, ce qui est assez pertinent compte tenu des comp&eacute;tence disponibles ailleurs . La marque distribue ainsi sous son nom le windfoil de la marque italienne MOSES, sp&eacute;cialis&eacute;e dans les foils de kitesurf. On retrouve fort logiquement des &eacute;l&eacute;ments repris du kite et notamment le mat de 101 qui nous a &eacute;t&eacute; fourni pour le test.</p>
@@ -925,7 +925,7 @@ array (
 array (
 'id' => 19,
 'device_id' => 28,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'La machine',
 'body' => '<h4>Montage</h4>
 <p>Comme avec les autres AFS (W85 et W95), le W105 a n&eacute;cessit&eacute; un pon&ccedil;age assez important pour pouvoir &ecirc;tre ins&eacute;r&eacute; dans le boitier. Cela fait partie des foils o&ugrave; il ne faudra pas n&eacute;gliger cette &eacute;tape de pr&eacute;paration car vous n\'avez aucune chance de naviguer si vous n\'avez pas anticip&eacute; cette op&eacute;ration avant d\'arriver &agrave; la plage. Dans notre cas, il a fallu enlever pas mal de mati&egrave;re sur les 2 faces lat&eacute;rales, mais aussi sur les cong&eacute;s dont le rayon &eacute;tait bien trop petit au regard de ceux du boitier. En plus de cela, sur nos 2 flotteurs de test, il a fallu ovaliser les trous des vis d\'aileron car aucune ne tombait en face des inserts du talon deep tuttle ... bref : une pr&eacute;paration &agrave; anticiper tranquillement &agrave; la maison, ou &agrave; confier &agrave; votre dealer pr&eacute;f&eacute;r&eacute; si vous voulez &eacute;viter de gal&eacute;rer.</p>
@@ -951,7 +951,7 @@ array (
 array (
 'id' => 20,
 'device_id' => 29,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Le plus beau foil alu',
 'body' => '<p>Apr&egrave;s avoir d&eacute;ball&eacute; un si bel objet, nous &eacute;tions impatient de tester le dernier petit nouveau de chez AlpineFoil.</p>
 <h3>Montage et association</h3>
@@ -1015,7 +1015,7 @@ array (
 array (
 'id' => 21,
 'device_id' => 30,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Nerveux !',
 'body' => '<h3>D&eacute;collage</h3>
 <p>Le transport foil board est assez facile car le foil est tr&egrave;s l&eacute;ger &hellip; si ce n&rsquo;est l&rsquo;un des plus l&eacute;ger &agrave; ce jour (2.7 kg !)</p>
@@ -1070,7 +1070,7 @@ array (
 array (
 'id' => 22,
 'device_id' => 32,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une valeur sûre pour débuter',
 'body' => '<h4>Montage</h4>
 <p><img src="/storage/photos/1/2018-04/afs-wind-85-2019-M0FqIgkazz.jpg" /></p>
@@ -1104,7 +1104,7 @@ array (
 array (
 'id' => 23,
 'device_id' => 34,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Les perf facile ... en toute stabilité',
 'body' => '<p><img src="/storage/photos/1/2018-04/afs-wind-95-2019-yocQbqfokw.jpg" /></p>
 <p>Nous avons test&eacute; ces W85 et W95 dans de nombreuses conditions : du light plat au vent soutenu dans la houle. A chaque fois, il se sont r&eacute;v&eacute;l&eacute;s agr&eacute;ables et efficaces dans notre optique de navigation freeride ou freerace. Avec les Loke LK1 et Starboard GTS, il font partie des foils carbone les plus aboutis du moment que nous avions eu l&rsquo;occasion de tester.</p>
@@ -1141,7 +1141,7 @@ array (
 array (
 'id' => 24,
 'device_id' => 35,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Efficace et évolutif',
 'body' => '<p>Sorti en plein milieu de l\'hivers, le Starboard GT Alu &eacute;tait attendu plus t&ocirc;t dans la saison, mais a malheureusement subit un retard de production. Avec des retards enregistr&eacute;s pour pratiquement toutes les marques, on voit bien que rendre disponible un produit industriel bien fini prend du temps. Comme souvent, c\'est d\'ailleurs souvent l\'industrialisation qui prend plus de temps que le d&eacute;veloppement ... mais c\'est la cl&eacute; pour fournir un produit p&eacute;renne et de qualit&eacute;.</p>
 <p><img src="/storage/photos/1/2018-02/starboard-gt-alu-v4-2018-7IsWGQgdKZ.jpg" /></p>
@@ -1193,7 +1193,7 @@ array (
 array (
 'id' => 25,
 'device_id' => 37,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Concert pour instrument en ré',
 'body' => '<p>Sorti en plein milieu de l\'hivers, le Fanatic Flow H9 a pu pass&eacute; un peu inaper&ccedil;u pour la plupart des pratiquants. Pourtant, c\'est un mod&egrave;le que nous attendions car on ne pouvait continuer voir le windfoil pousser sans que l\'un des plus gros acteur du march&eacute; Windsurf n\'y mette le pied !</p>
 <p>C\'est d&eacute;sormais fait avec le Flow H9, qui se destine clairement au loisir avec 2 points cl&eacute;s annonc&eacute;s, qui devraient &agrave; tous de go&ucirc;ter au futur du Windsurf :</p>
@@ -1243,7 +1243,7 @@ array (
 array (
 'id' => 26,
 'device_id' => 42,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Excellent rapport perf / prix',
 'body' => '<p>Apr&egrave;s des longs mois d\'attente (pr&eacute;vu initialement en Mars !) et de nombreuses &eacute;volution du concept, le H10 Evo de s&eacute;rie est enfin pr&ecirc;t. Evidemment, il arrive &agrave; un moment tr&egrave;s pratique en terme de m&eacute;t&eacute;o avec au choix des conditions &agrave; 4knt ou &agrave; 35knt. Faites votre choix :)</p>
 <p>Ceci dit, l\'envie &eacute;tait trop forte, et j\'ai craqu&eacute; aujourd\'hui, m&ecirc;me si les conditions n\'&eacute;taient vraiment pas g&eacute;niales. Ca ne sera donc pas un test complet mais quelques premi&egrave;res bribes de sensations.</p>
@@ -1294,7 +1294,7 @@ array (
 array (
 'id' => 27,
 'device_id' => 44,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test Lokefoil Envol de série',
 'body' => '<h4>Conditions du test</h4><p>Les conditions de test : La Ciotat, vent de N - N/O ... les connaisseurs apprécieront : vent ultra irrégulier entre 2 et 20knt. Plan d\'eau super plat par contre. Flotteur proto windfoil Tiaki et Voile E-Type North 5.8 avec mat platinium aero 430.<br></p><h4>Sur l\'eau</h4><p>Après réception des foils LOKO COMPOSITE ce matin, nous avons résisté au moins ... 2h (c\'est beaucoup) avant de nous jeter à l\'eau pour tester la bête. Suite aux excellentes impressions que nous avions eu cet été en testant le prototype, nous étions très impatient d\'en savoir plus sur le modèle de série.</p><p><img src="/storage/photos/1/2016-10/lokefoil-envol-2017-FKKSRqkJGg.jpg"><br></p><p>Malgré le vent très irrégulier, ce premier test rapide confirme nos premières impressions de l\'été : le LokeFoil est sans contest le foil le plus stable et le plus facile du marché à ce jour. On pourrait presque faire une belote en naviguant ! Je n\'avais pas foilé depuis 3 semaines, et j\'ai réussi à passer mon 2e jibe en l\'air (très fier ...)</p><p>Les minis restent moins bons qu\'avec le Horue car il nécessite un peu plus de vitesse pour déjauger. Il reste quand même sans le peloton de tête sur ce critère. Il est aussi et surtout numéro un, et sans contestation, sur la stabilité à la gite. Aucun départ à la gite ou contre gite à noter ... même pas une petite tendance. Cela dénote une conception très aboutie car c\'est le défaut de nombreux foils.</p><p><img src="/storage/photos/1/2016-10/lokefoil-envol-2017-YFBgWM1iAw.jpg"></p><p>Lorsque le vent monte, le loke sort de l\'eau assez vite car l\'aile est très porteuse. Il faut régler le flotteur en conséquence pour pouvoir continuer à rester en contrôle, ou rapidement baisser en toile. Sur notre flotteur de test, tout est prévu, et on peut facilement déplacer les straps vers l\'avant de 4 ou 5 cm pour retrouver un équilibre parfait.  </p><p>Voilà pour un premier test de l\'un de nos 2 foils préférés. On attend avec impatience nos F4 (qui partent aujourd\'hui des USA) pour les confronter à nos 2 références (Horue et Loke)... à très vite donc.</p><h4>Bilan</h4><p>Le loke foil est un foil de 3e génération conçu pour être utilisé sur un boitier deep tuttle positionné arrière (donc en restant sur le standard d\'une planche de slalom). En comparaison avec les autres fois de 3e génération, c\'est clairement le plus stable sur groupe (que ce soit longitudinalement ou latéralement) ... il permet de garder très facilement la même hauteur sur l\'eau et pardonne plus les petites erreurs de positionnement. De même, on se fait moins peur quand la vitesse augmente grâce à cette stabilité.</p><p>En contre partie, il est beaucoup moins maniable que le Viny et un peu moins performant en départ dans le très light (là ou la souplesse du Viny permet de pomper et partir très tôt). Il devient aussi un peu plus délicat quand le vent monte car il n\'est fourni qu\'avec une très grande aile (pour l\'instant) et il n\'est donc pas possible pour l\'instant de diminuer a portance dans le vent soutenu.</p><p>Au final le foil le plus facile que nous ayions eu l\'occasion de tester, mais avec une plage d\'utilisation un peu moins large que celle du Horue.</p><p><strong>Edit</strong> : suite aux journées test et découverte, le Loke est Le foil plébiscité pour son accessibilité par tous les débutants. Avec une aile plus performante qui risque d\'arriver, il peut devenir un choix absolument incontournable !</p><p><br></p>',
 'test_equipment' => 'nc.',
@@ -1308,7 +1308,7 @@ array (
 array (
 'id' => 28,
 'device_id' => 45,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'windfoil - présentation de l\'aile Loke Perf',
 'body' => '<p>Et hop, reçu en fin de semaine la nouvelle aile perf Loke. Test ce WE si Eole est avec nous :)</p><p>De visu, c\'est très différent de l\'aile envol ! Beaucoup plus rigide (on va échapper aux vibrations qui font de la musique), corde plus étroite, grand allongement et surtout un profil très différent. Cette fois, on n\'a presque plus de concavité sur l\'intrados de l\'aile ... la portance va être plus faible mais la trainée sera aussi certainement très réduite ! </p><p>William annonce une plage d\'utilisation à partir de 13-14 knt</p><p>Evidemment, et c\'est là le gros intérêt, cette aile perf est compatible avec le mat et stab de l\'envol ... une jolie évolution pour booster les perf de l\'envol quand le vent monte.</p><p><img src="/storage/photos/1/2017-06/lokefoil-perf-2017-m1XP9GcciH.jpg"></p><p><img src="/storage/photos/1/2017-06/lokefoil-perf-2017-LXL1DGsvNU.jpg"></p><p><img src="/storage/photos/1/2017-06/lokefoil-perf-2017-R47ZBoF4Q9.jpg"></p>',
 'test_equipment' => 'nc.',
@@ -1322,7 +1322,7 @@ array (
 array (
 'id' => 29,
 'device_id' => 46,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Aeromod Foil - Le test ',
 'body' => '<p>Après des mois à entendre parler de ce foil aeromod sur les forums (dynamiques en com\' les gars !), j\'étais assez impatient de pouvoir le mettre sous une planche pour en savoir plus. A l\'occasion de notre conviviale à Serre Ponçon, Alexis Maréchal a donc eu la gentillesse de nous envoyer le sien pour le faire essayer autour de nous.
 </p><p>Je précise qu\'il s\'agit du modèle avec mat "Haut module", proposé ici avec une aile Easy LW, et une Race. Dans cette configuration, il est vendu 1690eur avec l\'aile LW (aile easyrace en option : ajouter 270€).</p><h4>Présentation
@@ -1359,7 +1359,7 @@ array (
 array (
 'id' => 30,
 'device_id' => 47,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test starboard GT et flotteur Foil 147',
 'body' => '<p>Conditions de vent : 10-18 knt</p><p>Spot : Martigues</p><p>Voile 6.0m2 gator (no cam)<br>
 </p><p>Flotteur : Starboard Foil 147 technora</p><h4>Présentation</h4><p>Nous testons le foil dans une configuration fuselage court, aile et stab de grande taille. Dans cette configuration, nommée GT, il cible le débutant et le freerideur pour une approche intuitive de la pratique du foil.</p><p>Le tout est installé sur un flotteur spécial foil, renforcé, et conçu avec beaucoup de scoop pour limiter l’effet des touchettes ou amerrissages forcés. De nombreuses positions d\'inserts de straps permettent une grosse capacité d\'adaptation, voir même une utilisation avec aileron.</p><p><img src="/storage/photos/1/2017-04/starboard-85-carbon-2017-XtvrFscnMf.jpg"></p><h4>Sur l\'eau</h4><p>Avec cet ensemble, et malgré une voile Gator bien puissante, le départ planning est laborieux. Par rapport à toutes les planches de foil ou de slalom que nous avons utilisé, on a cette fois beaucoup de mal à prendre de la vitesse pour utiliser la portance du foil dans le light wind. On sent que la combinaison forte largeur, scoop important, poids moyen demanderai au moins un ou 2m2 de plus côté voile.</p><p>Une fois en l\'air, la portance est plutôt très bonne et le passage dans les molles de bon niveau, sans être exceptionnel. Le foil réagit au pumping mais on a vu bien mieux de ce côté. Là aussi, la planche ne doit pas aider par son inertie, et on a toujours constaté que les mats très raides n\'aidaient pas de ce côté. A contrario, ce type de design offre en général un comportement beaucoup plus sein dans le vent.</p><p>On a clairement <strong>le foil le plus rassurant que nous avions eu l’occasion d’essayer à ce jour</strong> ! La stabilité latérale est parfaite, au même titre qu’un F4, Zeeko ou NP. La stabilité longitudinale est parfaitement dosée : c’est presque aussi stable qu’un Loke, mais bien plus réactif que le AHD testé le même jour. </p><p>La combinaison entre l’équilibre du foil, la largeur de la planche, et sa stabilité permet de naviguer avec une facilité déconcertante même dans les rafales … à tel point que j’en étais à souhaiter sereinement des bonnes poussées là ou habituellement, on anticipe l’ouverture de la voile pour laisser passer la crise. La navigation au près et à la contre gîte est un jeu d’enfant grâce au grand mat ultra raide, et à la forte largeur du flotteur.</p><p>Côté glisse, on est dans la moyenne haute pour cette configuration GT, mais le starboard va vite … aucun doute la dessus, en particulier bien toilé et avec les ailes slalom : on a vu Antoine Questel à l’oeuvre  !</p><p><img src="/storage/photos/1/2017-04/starboard-85-carbon-2017-2U38SasBMh.jpg"></p><h4>Bilan</h4><p>Au final, l\'ensemble GT + Foil 147 nécessite un peu plus de vent et / ou de toile que la moyenne, avec une navigation en mode free-race. On sent qu’il est parfaitement exploitable avec la même voile que l’on utiliserait habituellement en freeride ou en slalom (là ou on sous-toile nettement avec un foil plus commun). Au même titre que le loke, c\'est un foil qui va beaucoup plaire aux débutants par son accessibilité, et aux slalomeurs, grâce à sa capacité à rester prévisible et rassurant dans des conditions de vent soutenu.</p><p>Avec ce premier contact <strong>très prometteur</strong> sur certains points, on est un peu frustré de ne pas avoir pu exploiter tout le potentiel du concept. On se languis de le re-tester avec un flotteur plus compétitif, les ailes et slalom le fuselage race … cela laisse présager des perfs de très haut niveau (je n\'ai pas de doute là dessus) et probablement de bien meilleurs minis, car c\'est bien là le challenge du foil ! </p><p>La suite très bientôt j\'espère car je n\'en resterai pas là, promis ;)</p><p><img src="/storage/photos/1/2017-04/starboard-85-carbon-2017-Yjw7rjx5QT.jpg"></p>',
@@ -1374,7 +1374,7 @@ array (
 array (
 'id' => 31,
 'device_id' => 53,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test du Select Profoil F1',
 'body' => '<h4>Conditions du test</h4>
 <p></p>
@@ -1421,7 +1421,7 @@ array (
 array (
 'id' => 32,
 'device_id' => 54,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'En configuration aile de 800 Race (115) et GTS (75)',
 'body' => '<p><img src="/storage/photos/1/2017-07/starboard-95-carbon-2017-BJQtUOIuO0.jpg" /></p>
 <h4>Carbone Foil GTS</h4>
@@ -1465,7 +1465,7 @@ array (
 array (
 'id' => 33,
 'device_id' => 54,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'En mode Slalom : Aile de 550 et fusleage 75',
 'body' => '<p>&nbsp;</p>
 <p><img src="/storage/photos/1/2017-06/starboard-95-carbon-2017-aZb8GxnxJY.jpg" /></p>
@@ -1510,7 +1510,7 @@ array (
 array (
 'id' => 34,
 'device_id' => 56,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Printemps du foil 2017 - Compte rendu',
 'body' => '<p>À l\'occasion du printemps du Foil , nous avons eu l\'occasion de peaufiner pas mal de tests matériels. Ce type de journée est juste parfaite pour faire des essais croisés Foil + Board, et de confronter plusieurs modèle dans les mêmes conditions, avec l’avis de plusieurs riders.</p><p>Lieu : Port St Louis</p><p>Conditions du test : </p><ul>
 <li>1er jour light entre 8 et 15 knt, navigation en 7m2</li>
@@ -1531,7 +1531,7 @@ array (
 array (
 'id' => 35,
 'device_id' => 57,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Printemps du foil 2017 - Compte rendu',
 'body' => '<p>À l\'occasion du printemps du Foil , nous avons eu l\'occasion de peaufiner pas mal de tests matériels. Ce type de journée est juste parfaite pour faire des essais croisés Foil + Board, et de confronter plusieurs modèle dans les mêmes conditions, avec l’avis de plusieurs riders.</p><p>Lieu : Port St Louis</p><p>Conditions du test : </p><ul>
 <li>1er jour light entre 8 et 15 knt, navigation en 7m2</li>
@@ -1552,7 +1552,7 @@ array (
 array (
 'id' => 36,
 'device_id' => 58,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test Foil RSX:Convertible',
 'body' => '<p>Tester le foil RSX a été un peu plus compliqué qu’à l’accoutumée. Ce modèle, non encore vendu, n’est pas encore tout à fait finalisé, et sera distribué directement par le groupe Satet à Brest. Il est dévolu au programme RSX convertible dans sa version Elite (au dessus du RS-One convertible).</p><p>Sa conception et sa fabrication sont 100% françaises. </p><p>Le foil RSX est un foil 100% carbone prepreg. Il est entièrement démontable et particulièrement rigide. La construction est quasi parfaite. Il reste encore quelques imperfections sur l\'état de surface (au regard des références comme le Select, le Starboard et l\'AFS.. car on est déjà au delà de tous les autres), mais l\'équipe de conception est en passe de régler ces derniers détails avant commercialisation.</p><p><img src="/storage/photos/1/2017-09/neilpryde-rsx-2017-SmnaDkOakc.jpg"></p><p>Il est fourni avec une seule aile, offrant un grand allongement (corde petite et grande envergure de 81cm). Cette aile principale peut se monter à 3 positions différentes sur le fuselage (plus ou moins reculée). Le stab, lui, n’offre pas de réglage.</p><p>Le mat fait 85cm, pour un poids total de 3kg960 sur la balance</p><p><img src="/storage/photos/1/2017-09/neilpryde-rsx-2017-AXgOWML5hu.jpg"></p><h4>Conditions du test</h4><p>Flotteur : RS:One convertible</p><p>Gréement : RS:One en 7m2</p><p>Plan d\'eau : Marseille par vent d\'ouest (1m de houle, 20 knt ... chaud), La Ciotat 8 - 25 knt</p><p><img src="/storage/photos/1/2017-09/neilpryde-rsx-2017-vVLIXdvmCP.jpg"></p><h4>Sur l\'eau</h4><h4>Décollage et light wind</h4><p>Comme avec le foil NeilPryde aluminium, le RSX fait partie des foils qui demandent un peu de vitesse pour décoller. Même avec peu de vent, on atteint très vite cette vitesse grâce à un flotteur RSX:Convertible qui traine très peu d’eau, et un foil qui a beaucoup de glisse. Comme les RS:Flight F4, RS:Flight AL, Starboard GT, le RSX n’est pas un foil qui décolle dans 6 knt, mais un petit 8 knt suffira sans problème en 7.8 si le plan d’eau est plat. Le décollage est progressif et facile à contrôler : c’est largement plus nerveux qu’avec le RS:Flight AL ou l’AFS2, mais moins qu’avec le Sélect Profoil ou un Vini.</p><p>Ces très bonnes performances dans le light se retrouvent dans l’allonge dans les molles. On est ,sur ce critère, un peu en retrait du Profoil F1 (la référence) , mais devant la plupart des autres foils.</p><h4>Equilibre et stabilité</h4><p>Coté équilibre, sur le flotteur RSX:Convertible, on est plutôt équilibré au centre, légèrement plus pied avant qu’avec le RS:Flight AL</p><p>La stabilité longitudinale est un peu plus faible qu’avec le NeilPryde aluminum, le Starboard GT, l\'envol ou l’AFS2 (la référence), mais plus qu’avec un vini, un profoil F1 ou autre F4. Dans des conditions clapoteuses, on aimerai juste avoir un mat un peu plus long pour pouvoir avoir plus de marge de manoeuvre. C’est d’ailleurs probablement la seule critique que l’on puisse faire à ce foil.</p><p>Côté stabilité latérale, le RSX fait partie des meilleurs. Malgré l’utilisation d’un flotteur convertible, moins large sous le pied arrière que nos flotteurs référence, on a vraiment un foil bloqué sur cet axe, ce qui permet d’être serein quelque soit l’état du plan d’eau. On aborde là le gros point fort du RSX : le foil ne bouge absolument pas quelque soit le clapot (voir la houle) rencontré. On sent que l’énorme rigidité des pièces et des assemblages joue un rôle prépondérant. A aucun moment les cisaillements hydrodynamiques sous la surface ne provoquent d’instabilité ou de mouvement imprévu : tout est posé, sain, facile. C\'est simple : il fait jeu égal au niveau rigidité avec le Starboard Carbon qui est notre référence actuelle sur ce critère.</p><h4>Glisse et vitesse</h4><p>Côté glisse, le RSX là aussi fait partie des meilleurs. On est un cran en dessous de notre référence sur ce critère (le profoil F1), mais le RSX fait jeu égal avec le F4 … c’est tout dire. Bien sûr, aucun bruit ni aucune vibration perceptible. </p><p>Avec une telle glisse, la vitesse est évidemment au rendez vous, surtout dans le light et le médium. Je suis mal placé pour donner une vitesse absolue, mais les développeurs ont poussé ce foil à plus de 27knt ! Le potentiel est évident. A notre niveau, atteindre 23 ou 24 knt se fait sans aucun problème.</p><h4>Dans le vent</h4><p>Dans le vent soutenu (20knt en 7m2), l’aile fini par pousser beaucoup et il devient plus compliqué de rester dans l’eau. Bien sûr, des grands techniciens comme Julien Bontemps et Damien Le Guen arrivent à bloquer l’ensemble à la contre gîte pour le pousser plus loin (j’ai vu Julien dans 30knt en 7m2 !), mais le commun des mortels n’y parviendra pas aussi aisément. Dans la configuration standard et pour un niveau moyen comme le mien, la limite haute de vent en 7m2 doit se situer autour de 18 knt environ si on veut rester \'facile\'. Au delà, il faut soit passer à une taille de voile plus petite, soit reculer l’aile. Et oui, pour rester dans le principe de la monotypie (1 flotteur, une voile), les développeurs du concept RSX ont choisi d’offrir la possibilité de modifier la position de l’aile avant sur le fuselage. En reculant l’aile, on ne diminue pas la portance de l’aile, mais on limite le côté ardent du foil qui nécessiterai de pousser fortement sur le pied avant. Cela produit le même effet que si on avançait les straps … et on peut dire que c’est très efficace (et rapide) ! </p><p><img src="/storage/photos/1/2017-09/neilpryde-rsx-2017-pefdNOnVXl.jpg"></p><p>Pour les besoins de notre test, j’ai reculé l’aile d’un cran, soit environ 4cm (sur les 2 possibles). L’effet est très marqué. Le décollage nécessite dès lors d’appuyer nettement plus sur le pied arrière. Une fois en l’air, il faut aussi avoir une attitude avec plus d’appui sur le pied arrière (un peu comment en slalom) pour rester en l’air. N’ayant pas l’habitude de cette position, j’avais du mal à contrôler les appuis et mes mouvements étaient plus brusques qu’en position standard. Par contre, cette option permet réellement d’être plus serein dans les rafales même en grande voile. </p><p>Compte tenu du comportement du foil au cran numéro 2, je n’imagine pas utiliser la 3e position sous peine d’être réellement collé à l’eau. Par contre, je verrai bien une position intermédiaire entre la position 1 et 2 pour pouvoir exploiter efficacement ce réglage ! En tout cas, l’idée est excellente si on veut garder la même taille d’aile et de voile.</p><h4>Cap et allures serrées</h4><p>Côté remontée au vent, le RSX se défend très bien … quoi qu’un peu moins facile que le F4 et le Starboard. La très belle glisse y est pour beaucoup ! Bizarrement, et malgré l’énorme rigidité, j’ai eu du mal à le mettre franchement à la contre gîte … probablement par manque de largeur sous le pied arrière sur la planche RSX. A cette allure, le plan de pont typé slalom (pied arrière à cheval sur le rail) rend le contrôle au près moins évident qu’avec les boards dédiées. C’est le prix à payer pour une polyvalence surprenante.</p><h4>Conclusion</h4><p>Au final, le foil RSX dédié au concept RSX:Convertible n\'est pas loin d’être parfait. Comme le NeilPryde RS:Flight AL, le foil a une très grosse plage d’utilisation … en particulier si on considère que l’on n\'utilise qu’une seule aile. Rigidité, stabilité latérale, allonge dans les molles, glisse, … le RSX frise la perfection. il ne lui manque qu’un mat plus long et un réglage de position d’aile intermédiaire pour faire un strike !</p><p><img src="/storage/photos/1/2017-09/neilpryde-rsx-2017-wIHSwRMKY9.jpg"></p>',
 'test_equipment' => 'nc.',
@@ -1566,7 +1566,7 @@ array (
 array (
 'id' => 37,
 'device_id' => 59,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test AHD AFS2',
 'body' => '<p>Nous avons testé le foil AFS2 à plusieurs reprises et dans plusieurs configuration</p><h4>Premier test AFS2 / Aile 800 + AHS SL 122</h4><h4>Conditions du test</h4><ul><li>Flotteur : AHD SL 122</li><li>Conditions de vent : 10-18 knt</li><li>Spot : martigues</li><li>Voile 7m2 Gun vector</li></ul><h4>Sur l\'eau</h4><p>Le décollage est relativement rapide, mais en retrait avec ce que peuvent offrir un Loke Envol ou un Horue XLW ... essentiellement par manque de dynamisme. Je m’attendais à plus considérant l’énorme surface de l’aile, mais elle est au final assez fine en épaisseur relative. Il faut dire que nous n\'étions vraiment pas aidé par la voile de 7m Gun Vector utilisée pour ce test et qui manquait particulièrement de jus, de dynamisme et d\'agréement général.</p><p><img src="/storage/photos/1/2017-04/afs-afs2-2017-37hlLFEaTt.jpg"></p><p>Dès les premiers mètres, c’est la stabilité longitudinale incroyable qui surprend : <strong>le foil est littéralement bloqué sur cet axe</strong> ! Je n\'avais jamais ressenti ceci, mais on s\'en approchait de près avec l\'Xtrem Foil qui partage un peu les mêmes sensations.
 </p><p>Jusqu’à présent, j’avais du mal à comprendre pourquoi les designers n\'allongeaient pas les fuselages pour mieux stabiliser leurs foils, persuadé que plus c’était stable, mieux on se porterait. Je ne pensais pas pour autant tester un jour un foil « trop stable » . Vous allez me prendre pour un dingue mais je vais m’expliquer : avec un F4, les réactions longitudinales sont ultra vives, et il faut donc le stabiliser en permanence avec les pieds, mais il répond à la micro-seconde et à la moindre pression d’un orteil. C\'est sportif et demande un très bon niveau de maîtrise. Avec l\'AFS2, on est dans l’extrême inverse : l’altitude du foil est presque figée, … on se sent presque un peu prisonnier, et on est presque obligé d’anticiper les corrections ! … surprenant et atypique.
@@ -1588,7 +1588,7 @@ array (
 array (
 'id' => 38,
 'device_id' => 60,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test Neilpryde RS:Flight F4',
 'body' => '<p>Conditions du test
 </p><p>Day 1 : Printemps du foil, entre 10 et 20 knt, voile RS:Flight 7m2, flotteur JP Hydrofoil 135
@@ -1615,7 +1615,7 @@ array (
 array (
 'id' => 39,
 'device_id' => 61,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test ketos 2017',
 'body' => '<h4>Ketos 2017 + JP Hydrofoil 135 dans le vent léger<br></h4><p><strong></strong>Conditions de vent : 8 à 12 knt</p><p>Voile : V8 Neil Pryde 7.2 m²</p><p>Foil Ketos sur flotteur JP Hydrofoil 135 pro édition</p><p><img src="/storage/photos/1/2017-05/ketos-windfoil-2017-2017-1JFEicJyAZ.jpg"></p><p>Le décollage est correct mais demande un peu d’appui dans les risées. Il est progressif et mais le pumping avec les pieds a peu d’influence. Heureusement, on est ben aidé par la forte portance du flotteur JP car faut une certaine vitesse pour lancer l’ensemble cet avoir une portance suffisante. La forte largeur arrière de ce flotteur aide à décoller avec les pieds dans les straps, notamment grâce à un plan de pont agréable et des positions de straps bien placés.</p><p>Une fois en l\'air, le foil le Ketos offre une glisse très correcte, et une très bonne stabilité longitudinale. Il reste un léger déséquilibre nécessitant plus de pression sur le pied arrière, mais cette sensation est beaucoup moins marquée que sur le modèle 2016. Côté stabilité latérale, cela reste moyen même si là aussi, les progrès sont très importants par rapport à la version précédente. Je n\'ai pas réussi à mettre la planche à la contre-gîte : en permanence, le foil a tendance à pousser la planche à la gîte. Mais encore une fois, la largeur de la JP aide à gommer les points encore perfectibles du foil.</p><p>Dans les molles, l’allonge est moyenne et comme pour le décollage, l’ensemble répond peu au dumping des pieds, à contrario des Horue, Loke ou Zeeko dont nous allons parler après.</p><p>Au final, une très forte progression du foil ketos dans l’agrément d’utilisation, même si il reste des points a améliorer.</p><p>La planche, elle, nous a fait très bonne impression (bonne répétition de volume, bon équilibre des poids, plan de pond agréable, position des straps pertinente), à l’exception d’une glisse perfectible lors des touchettes.</p><h4>Test dans plus de vent</h4><p>Cf. notre compte rendu sur le <a href="/blog/printemps-du-foil-2017-compte-rendu.html">printemps du foil</a></p>',
 'test_equipment' => 'nc.',
@@ -1629,7 +1629,7 @@ array (
 array (
 'id' => 40,
 'device_id' => 62,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test Zeeko Alu',
 'body' => '<h4>Zeeko Alu sur flotteur Sun7 spécial windfoil<br></h4><p><img src="/storage/photos/1/2017-05/zeeko-alu-lw-2017-2017-ZLOOQjUpV1.jpg"></p><p>Sur ce combo, le foil n’est pas installé dans un boitier tuttle, mais sur une platine vissée sur 2 rails US Box.</p><p>L’ensemble est extrêmement lourd à terre … limite enclume (complexe même à apporter vers le bord de l’eau), mais heureusement loin d’être inintéressant sur l’eau.</p><p>A l’arrêt, la planche de 120L semble bizarrement petite. Vraisemblablement, la répartition de volume ne favorise pas la stabilité, notamment à cause d’un arrière assez pintail et d’un faible volume derrière le maître beau.</p><p>L\'antidérapant est grossier, mais pas très accrocheur. Par contre, straps et pads sont confortables</p><p>Dans le vent léger rencontré lors de notre test, décoller s’est avéré très compliqué malgré un pumping à se démettre les épaules. Heureusement, le vent a été de notre côté et à la faveur de plus fortes risées (12 - 15 Knt), il a été possible de s’extraire de l’eau.</p><p>Une fois en l’air, le Zeeko change de visage et son côté lourdeau fait place à une superbe stabilité dans les deux axes. On n’est pas loin de ce qu’offre le LokeFoil de ce côté. Par contre, gros point positif, ce foil a très peu tendance à sortir de l’eau, même quand on accélère. On est très serein dessus.</p><p>La très bonne stabilité latérale permet de mettre facilement le foil à la contre gîte pour aller chercher du cap/vitesse.</p><p>Sur ce modèle, on a une position de navigation plus reculée que la moyenne, un peu à la mode slalom. A basse vitesse, l’assiette est cabreuse, mais elle re-devient neutre quand la vitesse augmente.</p><p>Au final, même si ce foil semble hyper lourd et encombrant à l\'arrêt, il devient intéressant et plaisant pour tirer des longs avec du vent en mode slalom. Dans les molles, l’allonge est très bonne et le foil réagit bien aux pumping. On rêve d\'une version montée en Deep Tuttle pour pouvoir l\'utiliser sur une planche plus performante et plus agréable car on sent qu’il est desservi par le flotteur dédié.</p><p><strong>Edit</strong> : l\'ensemble que nous avons testé étant un prototype de développement, le fuselage et le flotteur vont être remplacé par des éléments mieux finis et plus léger. Compte tenu du potentiel, on se langis de tester les versions définitives. A priori au printemps du foil ...</p><h4>Test de la configuration de série avec une planche Sun7 légère</h4><p>A l\'occasion du printemps du foil, nous avons comparé plusieurs foils aluminium. Voici notre <a href="/blog/printemps-du-foil-2017-compte-rendu.html">compte - rendu</a>.</p><p>Au bilan, un foil qui fait partie des 2 foils alu réellement sans défauts grâce à une base mat + fuselage particulièrement rigide. Le NeilPryde propose une plage d\'utilisation un peu plus large que la Zeeko avec l\'aile XLW, mais ce dernier peut être équipé d\'une aile race plus adéquate et plus rapide à partir de 12-15knt de vent, et il reprend alors l\'avantage. Le Zeeko a aussi pour lui une glisse un peu plus développée. </p><p>Les 2 foils sont assez proche en ce qui concerne les stabilités latérlaes et longitudfinales.</p>',
 'test_equipment' => 'nc.',
@@ -1643,7 +1643,7 @@ array (
 array (
 'id' => 41,
 'device_id' => 63,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'F4 windfoil - Le test',
 'body' => '<p>Après 4 jours d\'attente insoutenable sans vent, on a enfin pu mettre à l\'eau le F4 ... l\'attente a été terrible ! Va t on être récompensé ??</p><h4>Montage</h4><p><img src="/storage/photos/1/2016-11/f4-windfoil-2016-emdMUBommC.jpg"></p><p>Le montage du F4 sur notre planche de windfoil de référence s\'est fait sans problème particulier. Signalons juste que le boitier deep tuttle du F4 est très ajusté. Là ou les loke, horue, mako ou autre kotos rentaient facilement, ça ressemble cette fois plus à ce que nous avons l\'habitude avec les ailerons de slalom qui rentrent au chausse-pied.</p><p>Comme d\'habitude, on ne lésine pas sur le vissage. Avec les foils, d\'une part on ne fait pas semblant de serrer, et d\'autre part on ne fait pas dans l\'économie sur les rondelles côté pont. Cela évite d\'avoir un foil qui passe à travers le boitier (n\'est ce pas John ?!?) et qui fini à 4m sous l\'eau. Au prix du bébé, mieux vaux assurer côté montage.</p><p>Avec le F4, ça respire le costaud côté talon ... c\'est même celui où l\'intégration du talon paraît la mieux réalisée et finie.</p><h4>Conditions de test</h4><p>Comme d\'habitude, le test s\'est fait sur notre custom windfoil Tiaki 115L v3 de 77cm de large. Le vent était très irrégulier autant en force qu\'en direction, allant de 4 à 17 knt environ. Le plan d\'eau était plutôt plat avec un peu de clapot. Côté voile, j\'ai opté pour ma 7m de référence (Maui Sail 7m légère 2 cam).</p><p>Le F4 a été testé en configuration standard avec son aile medium (celle vendue actuellement avec le foil)</p><p><img src="/storage/photos/1/2016-11/f4-windfoil-2016-CHvCbmWYHN.jpg"></p><h4>Premier vol</h4><p>C\'est parti dans un vent plutôt faible (une petite 10aine de knt). On pompe énergiquement et la planche prend de la vitesse. Elle a un peu de mal à s\'arracher de l\'eau. Il faut franchement appuyer sur le pied arrière pour sortir le flotteur de l\'eau, mais à chaque fois, ça retombe. </p><p>En allant un peu plus loin au large, le vent est plus soutenu. Ca commence à voler plus facilement et on perçoit immédiatement l\'un des gros points forts de ce foil : la glisse ! Problème : on est très centré sous le pied arrière et on replaque un peu trop souvent ... difficile de rester en l\'air car il faut un peu forcer et maintenir une assiège cabrée, un peu comme on avait ressenti sur le Ketos, mais en moins marqué. Par contre, ça accélère très fort dans le vent. </p><p>Retour au bord pour régler l\'équilibre de la bête</p><h4>Réglage et deuxième essai</h4><p>Une fois rentré au bord, je me rends compte que la planche est restée réglée pour le Lokefoil qui nécessite des straps très avancés (ou un boitier très reculé, ce qui revient au même). J\'ai l\'explication de ce problème d\'assiette longitudinale ... enfin on va tout de suite vérifier. Je recule donc les straps d\'au moins 5cm chacun et c\'est reparti.</p><p>Cette fois, plus besoin de forcer à cabrer : il suffit de prendre de la vitesse et ça monte tout seul. Par contre, il faut doser les appuis avant-arrière avec doigté car le F4 est très sensible sur le plan longitudinal. Vous me direz, quand on voit la taille du stab, c\'est pas étonnant. Clairement, ce foil n\'est pas du tout destiné à un débutant ! Côté transversal (départ à la gite), on est très stable et c\'est assez même assez surprenant avec une aile de si petite envergure. Jusqu\'à présent, nous n\'avions eu cette stabilité qu\'avec des ailes de grande envergure (Loke , Horue, Fone avec petite voile) et nous en avions clairement manqué sur tous les autres (Xtrem, Mako v1, 2 et 3, Kerfoil, Kotos). Bref, on a une base très saine ... ça se présente très bien</p><p>Allez, on pousse l\'essai pour savoir que qu\'il a dans le ventre ce F4.</p><h4>Light wind</h4><p>Pour l\'instant, on a un peu triché en allant chercher les risées. Maintenant que le réglage de l\'assiège longitudinale est bon, voyons un peu comment notre nouveau bébé se comporte dans le light. </p><p>Je profite donc de zones peu ventées (moins de 10 knt) pour pomper énergiquement à la fois avec la voile et les pieds. Contrairement à ce que le Horue Vini  nous a habitué, il faut cette fois insister plus longtemps et aller chercher plus de vitesse pour faire décoller la bête, mais ça fonctionne. On sent nettement que l\'aile est plus petite et le mat plus rigide. Pour aller chercher de la vitesse, on est aussi obligé d\'abattre un peu plus et il est difficile de faire partir le foil au près comme on arrive à faire avec le Horue. L\'accélération est franche mais la portance se met en place tranquillement. </p><p>Autre test : le passage dans les molles. Cette fois, on accélère dans une risée, on se cale et on voit ce qui se passe quand la risée s\'arrête. Ca tombe bien, on a le Lokefoil juste à côté et on va pouvoir comparer. Et bien clairement, le F4 redescend plus vite. On a beau pomper, rien n\'y fait, les Horue et Loke ont des meilleurs minis. On ne pourra donc pas faire jeu égal, mais avec un peu de technique, on est pas si loin. Compte  tenu de la différence importante de surface portante de l\'aile, c\'est pas si mal. Vous verrez dans la conclusion que ls choses vont évoluer sur ce point.</p><h4>Vitesse et cap</h4><p>Passons au gros point fort du F4 : la glisse. Comme on l\'a déjà évoqué, la sensation de glisse est la première chose que l\'on ressent sur le F4. A ce jour, c\'est clairement le foil qui nous a donné le plus de sensation sur ce point. Au travers et au largue, l\'impression de vitesse est évidente ... mais heureusement que l\'on profite des 1m de mat pour ne pas sortir de l\'eau car la faible stabilité longitudinale rendrait le pilotage très délicat avec un mat de 80 comme on a sur les autres foils. Au près, c\'est tout simplement impressionnant ! L\'accélération est aussi franche car c\'est le foil que l\'on a le mieux réussi à mettre à la contre gite, sans aucun décrochage (lui !). Aujourd\'hui, on étaient 2 sur l\'eau et visuellement, j\'avais réellement l\'impression de revenir fort sur le Loke quand il était devant.</p><p>Je veux en savoir plus, mais j\'ai enlevé ma montre en enfilant la combi :( Aller, aller-retour express au bord pour prendre mon ambit3 ... je veux mesurer tout ça ! C\'est donc reparti avec le GPS en marche. Je me fais donc un aller-retour dans la baie de La Ciotat. Sur le bord aller, je décide de caper en le calant sur le vent à la contre gite. Ca a l\'air d\'aller pas mal. Au jibe, je fais un stop pour regarder le résultat sur la montre : verdict 20.8 knt (10s) ! Record battu : je n\'avais jamais dépassé les 20.5 (10s) avec les autres foils même au travers car je ne suis pas du genre à me mettre dans le rouge ... là, je n\'ai pas senti la moindre sensation d\'insécurité.</p><p>Il reste à rentrer au club avec un bord un peu plus abattu. Moins facile de se caler d\'autant plus que le vent est bien monté : je suis cette fois vraiment limite avec la 7m, alors je gère en essayant de ne pas trop border pour ne pas me mettre dans le rouge. J\'arrive tout de même à laisser le foil dans l\'eau, ce qui aurait été difficile ainsi sur-toilé avec d\'autres modèles (merci le mat de 1m). Arrivé au club, un petit check sur la montre : 22.17 knt (10s) ! Cette fois, c\'est certain : le F4 est une arme. </p><p>Je suis sûr qu\'en apprenant à maîtriser la bête, on va pulvériser nos vmax habituelles en foil même si ce n\'est pas l\'essentiel pour moi. Encore une fois, et je le répète à tous ceux qui sont obnubilés par cette question : le windfoil ne vas pas vite, mais à 20 knt, on a les sensations de vitesse d\'une planche de slalom à plus de 30knt ... et pour le reste des sensations, c\'est juste indescriptible !!! Pour moi, il y a le même écart entre la planche à dérive et le fun qu\'entre le fun et le foil ... et je pèse mes mots. Toujours est il que le F4 repousse encore les limites en apportant une sensation intense de pureté dans la glisse. C\'est difficile de mettre des mots sur les sensations, mais quel kiff !</p><p><img src="/storage/photos/1/2016-11/f4-windfoil-2016-iNZJ3Nb6hd.jpg"></p><h4>Petit résumé des courses</h4><h4>Facilité d\'accès</h4><p>Le windfoil F4 est manifestement taillé pour la performance, et la facilité d\'accès n\'est pas son point fort. La stabilité est précaire avec son petit stab, et son fuselage très court. Tout est fait pour diminuer la trainée. Nous le déconseillons totalement aux débutants en foil ... même si certians compétiteurs dans l\'âme ne pourront pas faire autrement (les mêmes qui commencent le fun avec une voile de course et un flotteur de slalom).</p><h4>Décollage</h4><p>Nos tests se sont fait avec la petite aile de 56cm. La portance étant assez faible par rapport à nos foils références, il faut un peu plus de vitesse que la moyenne pour \'monter\' sur le foil. Par contre, la trainée étant faible, cette vitesse est vite atteinte sur le vent est là. Avec cette configuration, il paraît difficile de naviguer dans moins de 10knt de vent ... tout au moins avec notre configuration en 7m2.</p><p>Au pumping dans le light, on sent nettement l\'appui sur le mat très large en corde, mais sa rigidité n\'offre pas le petit plus qui permet de sortir un horue à 7knt. Nous attendons de tester avec l\'aile de 80 pour vérifier.</p><h4>Comportement à basse vitesse</h4><p>A basse vitesse, le F4 se pose plus vite que la moyenne avec la petite aile ... par contre, aucune instabilité à noter dans cette situation grâce à l\'extrême rigidité de l\'ensemble.</p><h4>Cap</h4><p>Au cap, le F4 montre tout l\'intérêt de la rigidité : il accélère plus que les autres, et permet réellement de naviguer à la contre gite. A ce jour, c\'est le foil qui nous a donnée le plus de sensations aux allures serrées.</p><h4>Vibrations</h4><p>Aucune vibration sur ce modèle. Un léger sifflement du profil, mais rien de gênant.</p><h4>Glisse<br></h4><p>Passons au gros point fort du F4 : la glisse. Comme on l\'a déjà évoqué, la sensation de glisse est la première chose que l\'on ressent sur le F4. A ce jour, c\'est clairement le foil qui nous a donné le plus de sensation sur ce point. Au travers et au largue, l\'impression de vitesse est évidente ... mais heureusement que l\'on profite des 1m de mat pour ne pas sortir de l\'eau car la faible stabilité longitudinale rendrait le pilotage très délicat avec un mat de 80 comme on a sur les autres foils. Au près, c\'est tout simplement impressionnant ! L\'accélération est aussi franche car c\'est le foil que l\'on a le mieux réussi à mettre à la contre gite, sans aucun décrochage (lui !). <br></p><p>Après quelques sorties avec le F4, on confirme le potentiel de la bête. On a tous battu nos vitesses max avec le F4, et on sait que certains l\'on poussé à plus de 30 knt.</p><h4>Taille de voile<br></h4><p>Le F4 est clairement un foil conçu pour les grandes voiles. Il est capable de supporter de la toile et donc des efforts latéraux sans fléchir et sans partir à la gite. En mode sous - toilé, aucun soucis non plus</p><h4>Aile F4 LW2</h4><p><a href="/blog/windfoil-test-aile-f4-lw2.html">Test de l\'aile light wind de F4</a></p><h4>Bilan</h4><div><div>Au final, le F4 offre encore un autre visage du foil. Au côté de nos deux autres références (Horue Vini et Lokefoil Envol), le F4 apporte la touche performance et vitesse, sans pour autant perdre en maniabilité. Attention : réservé aux pratiquants de bon niveau en foil !</div><div>P... que c\'est bon !! Philippe (Horue), il va falloir que tu te dépêches de nous sortir ton TAE car il a déjà un sérieux concurrent.</div><div>En tout cas, très grosse impression pour ce F4, confirmée par mon sparing partner lors de nos tests foils. Son résumé est simple: "une tuerie".</div></div><p><br></p><p>Merci pour ce test à : MauiSail, AL360, Tiaki, Fanatic, Club Neptune</p>',
 'test_equipment' => 'nc.',
@@ -1657,7 +1657,7 @@ array (
 array (
 'id' => 42,
 'device_id' => 64,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test windfoil Horue / Mako / Ketos 2016',
 'body' => '<p>Encore une bonne occasion hier de confronter 3 acteurs du marché du windfoil. En l\'occurrence, il s\'agissait du Vini (Horue), du DP82 (Mako) et du Ketos Windfoil (Aile Easy et Freeride2)
 </p><p>Conditions du test : Port St Louis, vent entre 10 et 18 knt, beaucoup d\'algues
@@ -1686,7 +1686,7 @@ array (
 array (
 'id' => 43,
 'device_id' => 65,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test windfoil Horue / Mako / Ketos 2016',
 'body' => '<p>Encore une bonne occasion hier de confronter 3 acteurs du marché du windfoil. En l\'occurrence, il s\'agissait du Vini (Horue), du DP82 (Mako) et du Ketos Windfoil (Aile Easy et Freeride2)
 </p><p>Conditions du test : Port St Louis, vent entre 10 et 18 knt, beaucoup d\'algues
@@ -1715,7 +1715,7 @@ array (
 array (
 'id' => 44,
 'device_id' => 66,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Premier test Windfoil Fone et Papenoo',
 'body' => '<p><img src="/storage/photos/1/2016-08/fone-hybrid-900-2016-M4qZH0sCBw.jpg"></p><h4>Compte rendu de test
 </h4><p>Préambule : je précise que les commentaires qui suivent sont des appréciations personnelles, et doivent être comprises comme étant relatives à ce que nous connaissons déjà par rapport aux tests précédents
@@ -1748,7 +1748,7 @@ array (
 array (
 'id' => 45,
 'device_id' => 68,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test Horue Vini & Tini',
 'body' => '<h4>Horue Viny Foil + Custom Windfoil Tiaki V3</h4><p><img src="/storage/photos/1/2017-05/horue-vini-cr-lw-xlw-2016-qbsAdmeZXC.jpg" alt="4 août 2016 13:30:32"> </p><p>On a également testé le Horue avec le custom windfoil V3 Tiaki. Par rapport à la planche horue Tiny, on a choisi un volume de l\'ordre de 115L avec une planche plus courte et plus large, en particulier derrière. Le maître beau est également plus reculé, et les jeux d\'inserts permettent d\'utiliser à la fois un foil type Horue ou un foil type Mako. Avec ce combo, on gagne en facilité dans le light avec des minis exceptionnels et la possibilité d\'utiliser des grandes voiles dans le très light (testé jusqu\'à 7.8) et de pomper de façon très efficace. La largeur permet d\'avoir un positionnement des pieds très naturels et confortable.</p><p>Avec l\'aile XLW, ce combo est pour l\'instant notre meilleur choix pour le light, notamment grâce à la souplesse très dosée du mat Viny. Le pumping est ultra-efficace !</p><h4>Horue Viny Foil + flotteur Tiny</h4><p><img src="/storage/photos/1/2017-05/horue-vini-cr-lw-xlw-2016-NV8BHsHRl0.jpg"></p><p>Nous avons testé à la fois l\'aile super light wind avec la 120L (en 5.3m2) et l\'aile light Wind avec la 85L (en 4.7m2). Bien évidemment, la 85L nécessite un peu de technique et pas mal de tonicité au pumping pour décoller dans les petits airs (surtout avec lmes 80kg !! .. mais on y arrive).. mais quelle aisance et quelle maniabilité sur l\'eau ! Avec la 120L, le décollage est facile et la stabilité excellente dans les vents light à modérés (max 15 knt). Au delà, une aile plus petite est nécessaire pour ne pas s\'accrocher aux nuages. Au final, le combo Foil + planche dédiée nous est apparu très équilibré et le plus complet même dans des conditions de vent très changeantes. On a adopté et on proposera ce combo en vente au magasin.</p>',
 'test_equipment' => 'nc.',
@@ -1762,7 +1762,7 @@ array (
 array (
 'id' => 46,
 'device_id' => 76,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test Horue Vini & Tini',
 'body' => '<h4>Horue Viny Foil + Custom Windfoil Tiaki V3</h4><p><img src="/storage/photos/1/2017-05/horue-tiny-110-carbone-2016-B4S8IMcMeb.jpg" alt="4 août 2016 13:30:32"> </p><p>On a également testé le Horue avec le custom windfoil V3 Tiaki. Par rapport à la planche horue Tiny, on a choisi un volume de l\'ordre de 115L avec une planche plus courte et plus large, en particulier derrière. Le maître beau est également plus reculé, et les jeux d\'inserts permettent d\'utiliser à la fois un foil type Horue ou un foil type Mako. Avec ce combo, on gagne en facilité dans le light avec des minis exceptionnels et la possibilité d\'utiliser des grandes voiles dans le très light (testé jusqu\'à 7.8) et de pomper de façon très efficace. La largeur permet d\'avoir un positionnement des pieds très naturels et confortable.</p><p>Avec l\'aile XLW, ce combo est pour l\'instant notre meilleur choix pour le light, notamment grâce à la souplesse très dosée du mat Viny. Le pumping est ultra-efficace !</p><h4>Horue Viny Foil + flotteur Tiny</h4><p><img src="/storage/photos/1/2017-05/horue-tiny-110-carbone-2016-Ww4Ss88QBm.jpg"></p><p>Nous avons testé à la fois l\'aile super light wind avec la 120L (en 5.3m2) et l\'aile light Wind avec la 85L (en 4.7m2). Bien évidemment, la 85L nécessite un peu de technique et pas mal de tonicité au pumping pour décoller dans les petits airs (surtout avec lmes 80kg !! .. mais on y arrive).. mais quelle aisance et quelle maniabilité sur l\'eau ! Avec la 120L, le décollage est facile et la stabilité excellente dans les vents light à modérés (max 15 knt). Au delà, une aile plus petite est nécessaire pour ne pas s\'accrocher aux nuages. Au final, le combo Foil + planche dédiée nous est apparu très équilibré et le plus complet même dans des conditions de vent très changeantes. On a adopté et on proposera ce combo en vente au magasin.</p>',
 'test_equipment' => 'nc.',
@@ -1776,7 +1776,7 @@ array (
 array (
 'id' => 47,
 'device_id' => 77,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Gros potentiel de plaisir',
 'body' => '<h4>Pr&eacute;sentation</h4>
 <p>La Freefoil 112 fait 76cm de large pour 210 de longueur, et un OFO &agrave; 59cm. Elle est donc assez pinc&eacute;e, mais moins qu\'une Tiny 110 par exemple.</p>
@@ -1821,7 +1821,7 @@ array (
 array (
 'id' => 48,
 'device_id' => 78,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Pile dans la cible',
 'body' => '<p><img src="/storage/photos/1/2019-04/tabou-airide-81-ltd-2019-PglV8dLC6E.jpg" alt="Tabou AirRide" /></p>
 <h3>Association</h3>
@@ -1851,7 +1851,7 @@ array (
 array (
 'id' => 49,
 'device_id' => 79,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Horue Eco 121 - Le test ',
 'body' => '<p>A l’occasion de notre WE conviviale Windfoil à Serre-Ponçon, Philippe Caneri avait mis à disposition la Eco 121 première de série. Cette board a pour vocation de compléter le foil H10Evo (sortie prévue en Sept) dans un pack Board + Foil qui sera proposé autour de 2000€. Cela en fera le pack le plus accessible du marché.<br>
 </p><h4>Conditions du test</h4><p>Lac de Serre Ponçon
@@ -1888,7 +1888,7 @@ array (
 array (
 'id' => 50,
 'device_id' => 80,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un nouvelle référence accessibilité',
 'body' => '<h3>Montage</h3>
 <p>Aucun soucis particulier. Pour une fois, les vis de boitier sont tomb&eacute;es direct en face de celles du foil, donc pas besoin d\'ovaliser les trous ... &ccedil;a progresse chez Cobra ;)</p>
@@ -1930,7 +1930,7 @@ array (
 array (
 'id' => 51,
 'device_id' => 81,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Evolution réussie',
 'body' => '<p>A l&rsquo;occasion de notre WE convivial Windfoil &agrave; Serre-Pon&ccedil;on le 12 Aout, NeilPryde France nous avait mis &agrave; disposition une Hydrofoil 120 Pro Edition (d&eacute;j&agrave; pr&eacute;sent&eacute; sur ce blog). Cette fois, c&rsquo;&eacute;tait sur l&rsquo;eau que &ccedil;a s&rsquo;est pass&eacute;</p>
 <h3>Pr&eacute;sentation</h3>
@@ -1960,7 +1960,7 @@ array (
 array (
 'id' => 52,
 'device_id' => 82,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Etonnante machine à glisse',
 'body' => '<p>Nous ne reviendrons pas sur la pr&eacute;sentation de ce nouveau flotteur freeride foil, mais vous pouvrer la retrouver dans notre blog. Apr&egrave;s avoir inspect&eacute; le flotteur sous tous les angles, nous avions &agrave; la fois beaucoup d&rsquo;espoirs car de nombreuses caract&eacute;ristiques s&rsquo;av&eacute;raient prometteuses. D&rsquo;autres, par contre, nous faisait plut&ocirc;t peur .. avec en t&ecirc;te la forme des rails qui nous faisaient craindre des touchettes assaisonn&eacute;es &agrave; la colle.</p>
 <p>Malgr&eacute; une temp&eacute;rature frisquette, les conditions &eacute;taient parfaites pour tester enfin ce nouveau flotteur, avec un plan d&rsquo;eau plat et un vent irr&eacute;gulier de 10 &agrave; presque 20 knt.</p>
@@ -2005,7 +2005,7 @@ array (
 array (
 'id' => 53,
 'device_id' => 83,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Notre référence freerace',
 'body' => '<p>La Airtime a une place un peu sp&eacute;ciale parmi nos tests puisque c\'est, depuis 2 saisons, notre flotteur r&eacute;f&eacute;rence. C\'est avec ce mod&egrave;le que nous testons pratiquement tous les foils, et cela nous permet d\'effectuer des comparaisons pertinentes. Nous l\'avons choisi pour plusieurs qualit&eacute;s</p>
 <ul>
@@ -2035,7 +2035,7 @@ array (
 array (
 'id' => 54,
 'device_id' => 84,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test flotteur JP Hydrofoil 135',
 'body' => '<p>Cela fait un bon moment que nous voulions essayer un flotteur 100% winfoil issu d\'une production grande série. Jusqu\'alors, nous avons toujours navigué avec des prototypes ou des Horue Tiny qui sont des semi-custom. C\'était aussi et surtout l\'occasion de tester le flotteur JP avec le foil qui a servi de master au RS:FLIGHT F4 ... on est donc dans la configuration NeilPryde complète.
 </p><p>Conditions du test : La ciotat / 11 &gt; 18 knt Sud Ouest / Foil F4
@@ -2077,7 +2077,7 @@ array (
 array (
 'id' => 55,
 'device_id' => 85,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test Horue Slant Windfoil Board',
 'body' => '<p>Par cette journée ensoleillée mais frisquette, notre (dure ?) mission est de tester la nouvelle board de Windfoil Horue nommée SLANT. </p><p>Conditions du test : Plage de Sausset les pins, vent de Nord 10-18 knt, température extérieure 8° à la mise à l\'eau (tu m\'étonnes qu\'on s\'est pelé), foil Viny avec Aile LW</p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-IhcydV0dvR.jpg"></p><p>La SLANT est une board designée pour le speed et les grandes voiles. Elle recevra naturellement le foil TAE lorsqu\'il va sortir au premier semestre 2017. Elle tranche avec le reste de la gamme HORUE avec une largeur très généreuse de plus de 88cm pour 130L, un arrière très large et une très faible épaisseur. Le plan de pont est très différent également avec des plans obliques sous les pieds et les straps. La carène propose un V très marqué à l\'avant pour éviter de coller lors des touchettes. Le shape est très esthétique et la construction très légère, soulignons le ! Le niveau de finition des productions Flika est de plus en plus plaisant.</p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-103xtUUQia.jpg"></p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-ifd4lJ92nV.jpg"></p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-jLeb2l5r5W.jpg"></p><p>Compte tenu des conditions de vent très irrégulières et du spot assez court, nous avons opté pour une voile de 5.8 légère sans cam (North E type). La prise en main a été assez technique sur les premiers bords car une petite voile a du mal à caler la planche, mais après quelques bords, les choses sont rentrées dans l\'ordre.</p><p>Le premier élément qui peut perturber par rapport aux autres flotteurs spéciaux windfoil que nous avons utilisés est la position très excentrée des straps. On n\'est pas très loin de ce que l\'on retrouve sur les boards de slalom traditionnelles. Dans la mesure ou le décollage en foil se fait avec une position relativement debout, on cherche les straps pendant quelques bords avant de s\'y faire, en particulier pour le strap arrière. Il faut quoi qu\'il en soit un peu plus de temps qu\'avec notre planche référence ou qu\'avec une Tiny pour trouver sa position après le décollage. </p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-xGG97r30RC.jpg"></p><p>Le décollage  est aussi un peu plus compliqué qu\'avec nos flotteurs habituels. Là ou le foil horue permet de s\'extraire quasi instantanément de l\'eau à la moindre risée, on se prend cette fois à devoir faire accélérer la planche avant de pouvoir s\'extraire de l\'eau .. et dans cette phase, il faut bien garder le flotteur à plat.</p><p>Une fois bien calé dans les straps, on peut progressivement se \'pendre à la voile\' grâce au gros couple de rappel offert par ce flotteur large. Contrairement aux autres boards de foil où on navigue très debout, on sent que la SLANT a un vrai potentiel pour transmettre de la puissance au foil que l\'on a sous les pieds. Le plan de pont est particulièrement agréable une fois bien calé sur le bord grâce à sa forme oblique. Avec notre petite voile, le flotteur reste assez instable longitudinalement et il faut être vigilent dans le vent très irrégulier. On sent qu\'un gréement plus gros aidera à  stabiliser tout ça.</p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-vz0jQXoxPl.jpg">Dans les risées, les accélérations sont très franches car la planche transmet immédiatement de la puissance au foil grâce à sa largeur. Par contre, en étant calé dans la voile (donc moins debout), la gestion de la répartition d\'appui entre les 2 pieds est plus délicate ... et je me suis fait quelques sortie de l\'eau avec le foil avant de comprendre qu\'il fallait être plus mesuré qu\'avec les autres flotteurs dans les risées.</p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-nNcOdO08E4.jpg"><br></p><p>C\'est au cap que la slant dévoile son vrai potentiel avec notre petite voile. A cette allure, la planche devient d\'un coup plus stable et accélérère fortement. Elle permet de de gérer très facilement la conte gîte si le foil est bien fait. </p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-spmhuILVSe.jpg"></p><p>Compte tenu des conditions irrégulières et froides, notre test s\'est arrêté là avec les doigts bien congelés, et les bras qui n\'avaient plus la force de pomper. On a bien senti le gros potentiel de ce flotteur et on est très impatient de la tester avec un foil à mat long (plus de 1m), des voiles plus grandes et plus d\'espace pour naviguer. Ce qui est sûr c\'est que pour la première fois, on avait sous les pieds un flotteur bien différent, technique mais qui devrait permettre d\'exploiter le potentiel des foils comme le F4 ou le TAE, avec des voiles à camber.</p><p>Suite au prochain épisode ...</p><p><img src="/storage/photos/1/2016-12/horue-slant-133-2016-jih9vHJX9e.jpg"><img src="/storage/photos/1/2016-12/horue-slant-133-2016-RV2OGMCx8F.jpg"></p>',
 'test_equipment' => 'nc.',
@@ -2091,7 +2091,7 @@ array (
 array (
 'id' => 56,
 'device_id' => 86,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un shape novateur',
 'body' => '<h3>Pr&eacute;sentation</h3>
 <p>A l\'invitation de Patrice Belbeoch, que je remercie en tout premier lieu, j&rsquo;ai eu la chance de venir &agrave; Brest pour d&eacute;couvrir les 2 nouveaux flotteurs de la gamme Exocet, d&eacute;di&eacute;s au windfoil et nomm&eacute;s RF81 et RF91.</p>
@@ -2160,7 +2160,7 @@ array (
 array (
 'id' => 57,
 'device_id' => 87,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Elix F1X - Le test ',
 'body' => '<h4>Condition du test</h4><p>Lac de Serre-Ponçon - Savine, puis La Ciotat</p><p>Vent : entre 10 et 18 knt, puis de 7 à 25 knt</p><p>Etat du plan d\'eau : plat avec clapot
 </p><p>Voile : V8 6,7   TPX100 et Atlas 5,4, puis 7.8</p><p>Foil : Starboard SLALOM et GT, puis RACE</p><p>Flotteur : Elix F1X M - pesée à 9,03kg avec straps</p><p style="text-align: center;"><img src="/storage/photos/1/2017-06/elix-f1x-m-v1-2017-aJwEOZBFBW.jpg">
@@ -2212,7 +2212,7 @@ array (
 array (
 'id' => 58,
 'device_id' => 88,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Best seller',
 'body' => '<h4>Comparatif flotteurs free-race</h4>
 <p>Cette cat&eacute;gorie offre un choix plus vaste, et commence &agrave; attirer de plus en plus de pratiquants. Elle int&eacute;resse ceux qui ont fini leur p&eacute;riode d\'apprentissage et recherchent plus de vitesse, mais aussi certains d&eacute;butants rompus &agrave; l\'utilisation des voiles &agrave; camber, et adeptes du tirage de bourre entre potes.</p>
@@ -2234,7 +2234,7 @@ array (
 array (
 'id' => 59,
 'device_id' => 96,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Novatrice mais encombrante',
 'body' => '<h4>Conditions du test</h4>
 <p>Rade de brest, cale de mise &agrave; l&rsquo;eau du p&ocirc;le france</p>
@@ -2308,7 +2308,7 @@ array (
 array (
 'id' => 60,
 'device_id' => 98,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test RS:X convertible, RS:One convertible et Foil NeilPryde Alu',
 'body' => '<p>Spot : la Ciotat</p><p>Condition du test : vent de Sud-Ouest assez irrégulier entre 15 et 25 Knt</p><p>Matériel testé:</p><ul><li>RS:X Convertible avec gréement en 7.8 m2</li><li>RS:One Convertible avec gréement en 7.0 m2</li><li>Foil NeilPryde RS:FLIGHT AL</li></ul><p>A l’occasion de la présentation du programme RS:Convertible aux responsables du Club Neptune par Damien LEGUEN, nous avons eu l’occasion de tester ces produits destinés à proposer 2 formules monotype : une à destination des clubs (RS:One) et l’autre d’une élite (RS:X) .. et candidate au remplacement à terme de la RS:X actuelle en tant que support olympique.</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:one-convertible-2017-bMfPx8HwVe.jpg"></p><h4>Le convertible en mode slalom</h4><h4>Contexte</h4><p>Compte tenu des conditions inattendues aujourd’hui, et malgré ce que nous avions prévu initialement, nous avons décidé de profiter du vent soutenu pour tester le concept convertible en mode Slalom. Pendant ce temps là, Damien faisait tester la RS:One en mode foil à l’équipe de Wind Magazine qui était en campagne de test pour leur prochain article sur le foil.</p><p>C’est donc parti avec la RSX:Convertible armé d’un aileron de 40 et de la voile RSX en 7,8. Je dois dire qu’après pratiquement un an sans naviguer en slalom, le retour à une voile à fourreau large en 7,8 dans 20-25knt a été assez déstabilisant pour mes petits bras. Passé le moment de ré-adaptation à une navigation un peu plus bourrin, on peut enfin parler de sensations. </p><h4>Flotteur</h4><p>Malgré le plan d’eau assez mouvementé, le flotteur est assez facile à gérer … même surprenant au final quand on sait qu’il fait 80cm de large pour 130L. Aucun cabrage, aucun mouvement parasite : la planche est légère sous les pieds mais ni collée à l’eau ni volage. Le confort et l’accessibilité me rappellent beaucoup mon ex RS4. Les shapes de Jean Marie Guirec (Exocet) ont décidément un ADN commun. Pour un flotteur conçu pour être utilisé dans toutes les conditions (principe de monotypie), le choix est très pertinent : imaginez si on avait un flotteur de slalom pointu en 80cm de marge, il aurait été ingérable par le commun des mortels dans les conditions musclées.</p><p>Côté aileron, le modèle fourni en série semble plutôt efficace. Subjectivement on manque un peu de portance et de replacement par rapport à nos ailerons habituels (ERD, Rhino), mais on la glisse est bien là. A priori, le flex en tête va être retravaillé pour apporter un peu plus de gaz. </p><h4>Gréement</h4><p>Passons à la voile : la voile RS:X convertible est identique à la future RS:Flight. Elle est issue d’un développement spécifique provenant de la RS:Racing LT1. Le rond de guidant a été diminué pour permettre de loger plus de creux et pour pouvoir plus facilement retendre la chute dans le light en limitant la tension à l’amure. Ce concept devrait permettre d’intégrer un palan de guidant afin d’offrir un réglage sur l’eau. Pour notre test, elle était gréée sur un FLX100, alors qu’elle sera proposé au final avec le SPX95. Avec notre mat de test, le gréement était plutôt très rigide et pêchu : c’est le moins que l’on puisse dire ! Il faudrait que je mesure mais mes bras ont dû s’allonger de 10cm avant que je n’arrête un peu épuisé. Cette combinaison qui convient parfaitement à Damien Leguen (un petit bébé de 100kg) sera moins au goût des petits gabarits peu entrainés (mais soyons francs, ce n\'est pas la cible de ce matériel élite). La combinaison standard avec le SPX95, qui donne un gréement trop souple au gout de Damien devrait nous convenir parfaitement !</p><p>En terme de comportement, on a une voile avec peu de main arrière mais beaucoup de traction vers l’avant et du couple à revendre. On imagine la puissance qu’elle peut générer avec une chute un peu plus tendue. Ce test sera à refaire en saison quand la condition physique sera revenue, mais dors et déjà, on peut dire qu’il sera inutile de sur-tailler la RS:Flight dans une optique foil. Pour mes 78kg, une 7m devrait être parfaite comme voile unique 10-20 knt. Je suis très curieux de la tester avec le SPX95 ou le TPX100 pour voir ce qu’elle peut donner avec un peu plus de souplesse. Ça risque d’être très très intéressant</p><h4>Le concept RS:One convertible en mode foil</h4><p>Après s’être bien allongé les bras avec la RSX:Convertible en 7.8, on passe à la RS:One en mode foil. </p><p>J’avoue que j’étais un peu inquiet à l’idée de partir sur l’eau en foil avec 20 knt et une voile à camber de 7m2. L’expérience a prouvé que d’une part j’avais tort, mais surtout que nous avions dans les mains un concentré de plaisir en boite.</p><h4>Présentation</h4><p>Avant de dévoiler mes sensations, faisons le tour du matériel avec lequel nous partons sur l’eau : le flotteur RS:One est strictement identique à la RS:X Convertible en ce qui concerne le shape (même moule, même positions d’inserts et boitiers) mais avec une construction plus simple. On est ici sur un sandwich verre / PVC avec renforts carbone, alors que la RS:X Convertible utilise un sandwich full carbone/PVC et un matériaux exclusif sur les rails. La planche fait 80cm de large pour 130L, avec un shape intelligemment conçu pour offrir à la fois un comportement idéal en foil, et des performances de haut niveau en slalom. Malgré sa largeur de 80cm, Damien a déjà dépassé les 35knt, ce qui démontre le potentiel du flotteur … même si nous ne serons pas nombreux à égaler ce type de perf. Les straps disposent de 2 rangées d’inserts respectivement à 16 et 18 de l’axe, ce qui va permettre de l’adapter à l’option de navigation (foil ou slalom), au type de foil monté dessus (RSX ou RS:one) et au niveau du pilote. Cela permet aussi de modifier l’angle des straps avant, sachant qu’une position plus proche de l’axe longi. de la planche est assez pratique en foil.</p><p>Pour revenir à nos moutons, nous avons cette fois équipé la planche du foil RS:One, qui je rappelle, est identique au foil <strong>RS:Flight AL</strong> (mis à part l’aile principale en G10 qui est un poil plus large pour la version RS:One). <strong>Ce test revêt donc une importance capitale compte tenu du potentiel commercial de ce produit, et de l’attente du marché autour de ce produit à 800€</strong>. </p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:one-convertible-2017-Y39QRrUjtP.jpg"></p><p>Le fameux foil NeilPryde en aluminium me surprend par la largeur de corde du mat. Le talon deep-tuttle est magnifiquement soudé sur la lame du foil, qui va donc jusqu’au fond du boitier. On sent que la recherche de rigidité a dicté toute la conception, et on sait à quel point c\'est capital dans le résultat. Les ailes en G10 ont fait l’objet d’un usinage soigné. Le profil assez épais promet une portance importante, et l’envergure modérée devrait limiter les risques de départ à la gîte, qui sont l’un des défauts récurrents sur les fois aluminium lorsqu’ils ne sont pas assez rigides. Le plan stabilisateur utilise comme souvent un profil symétrique pour limiter la trainée, mais une surface assez importante, promettant une bonne stabilité longitudinale. Enfin, en terme d’équilibre, le positionnement de l’aile vs les straps paraît tout à fait cohérente. Enfin, l\'assemblage de l\'ensemble avec des grosses vis titane respire la solidité.</p><p>Le gréement RS:One convertible est composé d’une voile en 7m, développée sur la base de la V8, donc avec 2 cambers et un fourreau étroit. Dans le concept de régate monotype, cette voile sera proposée en 5.6, 6.3, 7, 7.8 pour matcher avec les différentes catégories d’âges et sexe. Le mat est le nouveau SPX65 désormais fabriqué en Italie. L’ensemble est assez léger dans les bras et présage évidemment à la fois une puissance inférieure à la RSX, et une accessibilité bien meilleure.</p><p>Assez parlé, passons à l’eau … je le rappelle dans un vent oscillant entre 15 et 25 knt.</p><h4>Le test</h4><p>Je suis parti avec beaucoup de précaution, et l’appréhension de sorties de l’eau rapides dans le vent soutenu. Dans ces conditions, je pars au près et le décollage est immédiat. Je gère avec précaution le montée sur le foil en même temps qu’il accélère. Je ne fais pas beaucoup d’effort pour maintenir le foil dans l’eau ce qui est bon signe. Un peu rassuré, je repasse travers et laisse la planche accélérer franchement. Là, je commence à être surpris car le foil reste gérable et ne tente toujours pas de sortir de l’eau. A ce moment là, j’abats franchement et alors que la vitesse devient soutenue (en gros, ça file sévère), je me rends compte que le foil offre une bonne finesse. J’ai bien un foil premier prix sous les pieds ?!!!</p><p>Pour ne pas jouer les casse-coups, le premier virement sera un virement de bord …on essayera le jibe plus tard ;)</p><p>C’est reparti avec encore une fois, un décollage immédiat et une gestion aisée de la monté. C’est à ce moment là que je me rends compte : depuis le début, je ne fait quasiment aucun effort pour stabiliser le foil. Il est si facile que ça ? On continue le test et je fais le point sur le comportement de ma monture. Le foil NP aluminium est très très stable longitudinalement (moins que le loke, mais équivalent au xtrem foil et zeeko, et devant tous les autres), parfaitement stable en latéral (et là, les candidats sont déjà bien moins nombreux, le seul foil aluminium avec le zeeko que j’ai réussi à mettre en contre gîte), plutôt fin en terme de glisse (moins que le F4, mais plus que les xtrem, fone, loke, etc.) et tellement facile d\'accès (pardonne les erreurs de positionnement et les appuis hazardeux).</p><p>Le poids est plutôt élevé, et en tout cas bien loin des modèles carbone … mais il faut bien qu’il y ai une différence entre un produit à 800€ et un autre à 2000 ! Evidemment, ce n’est pas la seule différence, mais cet éléments jouera sur la maniabilité pour des pratiquants plus aguéris.</p><p>En terme de portance, on a dû attendre la fin d’après midi et moins de vent pour se rendre compte du potentiel dans le light. Là, on est a priori dans la moyenne : il n’ira pas chercher un loke ou un horue dans le très light, mais on est dans une bonne moyenne. En tout cas, un peu au même titre que le Loke, le foil alu NeilPryde m’a permis dès quelques minutes de pratiquement passer un jibe en l’air, preuve encore une fois de l’accessibilité de la bête.</p><p>Un dernier petit mot au sujet du gréement RS:One : j’ai été conquis par la légèreté et l’excellente tenue dans le vent. Naviguant régulièrement en foil avec la V8, je n\'étais pas surpris. J’avoue que si je ne m’étais pas épuisé au départ avec la 7.8, j’aurai bien navigué jusqu’à la nuit avec l’ensemble RS:One tant l’ensemble est réellement axé plaisir à tous les niveaux !</p><p><br></p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:one-convertible-2017-Ui5kDjL3ZG.jpg"></p><h4>A tout seigneur ! Test du foil RS:X</h4><p>Mais c’est pas tout, je ne pouvais pas finir la journée sans mettre les pieds sur la Rolls de nos amis bretons : le foil RS:X</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:one-convertible-2017-SDheUwyEq6.png"></p><p>Cette fois, on a à faire à un vrai produit élite full carbone, avec une finition à la F4, un mat ultra rigide, une aile principale à grand allongement version lame de rasoir, et à mon avis un prix qui sera lui aussi élitiste compte tenu des matériaux utilisés (gamme et quantité) et de la fabrication Française (eh oui, ça a un cout, mais qui se plaindra de faire travailler nos compatriotes au détriment des chinois ?).</p><p>C’est donc reparti sur l’eau avec notre petit gréement 7m RS:One mais une formule 1 sous les pieds. Sans faire un grand discours, on a là clairement l’un des foils les plus intéressants que j’ai eu l’occasion de tester. En gros un F4 avec plus de stabilité longitudinal, et un peu moins de stabilité latérale. Quelle glisse !!!! Il va vite … très vite ! Pas sous mes pieds, certes, mais Damien m’a bien tourné autour, le bougre.</p><p>Comme pour le F4 avec l’aile LW2, le foil RS:X demande un peu de vitesse pour décoller. A ce titre, il faut un peu plus de technique que la moyenne mais une fois parti, la glisse est impressionnante, et l’allonge du même niveau. Côté stabilité, c\'est un foil nerveux, et il ne faut pas s\'endormir dessus. Il n\'a bien entendu rien à voir avec la version aluminium.</p><p>Bon, je vous vois venir .. non, il n’est pas du tout fait pour débuter. Mais pour celui qui sait foiler, il y a un vrai client !</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:one-convertible-2017-UfSKIIT1WZ.jpg"></p><h4>Conclusion</h4><p>Bilan de cette après midi de test : on a bien fait de venir ! Un grand merci à Damien</p><p>On a découvert</p><ul>
 <li>Un concept de monotypie basée sur un support convertible intelligemment conçu avec beaucoup de complémentarité entre éléments</li>
@@ -2325,7 +2325,7 @@ array (
 array (
 'id' => 61,
 'device_id' => 99,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Test RS:X convertible, RS:One convertible et Foil NeilPryde Alu',
 'body' => '<p>Spot : la Ciotat</p><p>Condition du test : vent de Sud-Ouest assez irrégulier entre 15 et 25 Knt</p><p>Matériel testé:</p><ul><li>RS:X Convertible avec gréement en 7.8 m2</li><li>RS:One Convertible avec gréement en 7.0 m2</li><li>Foil NeilPryde RS:FLIGHT AL</li></ul><p>A l’occasion de la présentation du programme RS:Convertible aux responsables du Club Neptune par Damien LEGUEN, nous avons eu l’occasion de tester ces produits destinés à proposer 2 formules monotype : une à destination des clubs (RS:One) et l’autre d’une élite (RS:X) .. et candidate au remplacement à terme de la RS:X actuelle en tant que support olympique.</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:x-convertible-2017-4yas4AqpfQ.jpg"></p><h4>Le convertible en mode slalom</h4><h4>Contexte</h4><p>Compte tenu des conditions inattendues aujourd’hui, et malgré ce que nous avions prévu initialement, nous avons décidé de profiter du vent soutenu pour tester le concept convertible en mode Slalom. Pendant ce temps là, Damien faisait tester la RS:One en mode foil à l’équipe de Wind Magazine qui était en campagne de test pour leur prochain article sur le foil.</p><p>C’est donc parti avec la RSX:Convertible armé d’un aileron de 40 et de la voile RSX en 7,8. Je dois dire qu’après pratiquement un an sans naviguer en slalom, le retour à une voile à fourreau large en 7,8 dans 20-25knt a été assez déstabilisant pour mes petits bras. Passé le moment de ré-adaptation à une navigation un peu plus bourrin, on peut enfin parler de sensations. </p><h4>Flotteur</h4><p>Malgré le plan d’eau assez mouvementé, le flotteur est assez facile à gérer … même surprenant au final quand on sait qu’il fait 80cm de large pour 130L. Aucun cabrage, aucun mouvement parasite : la planche est légère sous les pieds mais ni collée à l’eau ni volage. Le confort et l’accessibilité me rappellent beaucoup mon ex RS4. Les shapes de Jean Marie Guirec (Exocet) ont décidément un ADN commun. Pour un flotteur conçu pour être utilisé dans toutes les conditions (principe de monotypie), le choix est très pertinent : imaginez si on avait un flotteur de slalom pointu en 80cm de marge, il aurait été ingérable par le commun des mortels dans les conditions musclées.</p><p>Côté aileron, le modèle fourni en série semble plutôt efficace. Subjectivement on manque un peu de portance et de replacement par rapport à nos ailerons habituels (ERD, Rhino), mais on la glisse est bien là. A priori, le flex en tête va être retravaillé pour apporter un peu plus de gaz. </p><h4>Gréement</h4><p>Passons à la voile : la voile RS:X convertible est identique à la future RS:Flight. Elle est issue d’un développement spécifique provenant de la RS:Racing LT1. Le rond de guidant a été diminué pour permettre de loger plus de creux et pour pouvoir plus facilement retendre la chute dans le light en limitant la tension à l’amure. Ce concept devrait permettre d’intégrer un palan de guidant afin d’offrir un réglage sur l’eau. Pour notre test, elle était gréée sur un FLX100, alors qu’elle sera proposé au final avec le SPX95. Avec notre mat de test, le gréement était plutôt très rigide et pêchu : c’est le moins que l’on puisse dire ! Il faudrait que je mesure mais mes bras ont dû s’allonger de 10cm avant que je n’arrête un peu épuisé. Cette combinaison qui convient parfaitement à Damien Leguen (un petit bébé de 100kg) sera moins au goût des petits gabarits peu entrainés (mais soyons francs, ce n\'est pas la cible de ce matériel élite). La combinaison standard avec le SPX95, qui donne un gréement trop souple au gout de Damien devrait nous convenir parfaitement !</p><p>En terme de comportement, on a une voile avec peu de main arrière mais beaucoup de traction vers l’avant et du couple à revendre. On imagine la puissance qu’elle peut générer avec une chute un peu plus tendue. Ce test sera à refaire en saison quand la condition physique sera revenue, mais dors et déjà, on peut dire qu’il sera inutile de sur-tailler la RS:Flight dans une optique foil. Pour mes 78kg, une 7m devrait être parfaite comme voile unique 10-20 knt. Je suis très curieux de la tester avec le SPX95 ou le TPX100 pour voir ce qu’elle peut donner avec un peu plus de souplesse. Ça risque d’être très très intéressant</p><h4>Le concept RS:One convertible en mode foil</h4><p>Après s’être bien allongé les bras avec la RSX:Convertible en 7.8, on passe à la RS:One en mode foil. </p><p>J’avoue que j’étais un peu inquiet à l’idée de partir sur l’eau en foil avec 20 knt et une voile à camber de 7m2. L’expérience a prouvé que d’une part j’avais tort, mais surtout que nous avions dans les mains un concentré de plaisir en boite.</p><h4>Présentation</h4><p>Avant de dévoiler mes sensations, faisons le tour du matériel avec lequel nous partons sur l’eau : le flotteur RS:One est strictement identique à la RS:X Convertible en ce qui concerne le shape (même moule, même positions d’inserts et boitiers) mais avec une construction plus simple. On est ici sur un sandwich verre / PVC avec renforts carbone, alors que la RS:X Convertible utilise un sandwich full carbone/PVC et un matériaux exclusif sur les rails. La planche fait 80cm de large pour 130L, avec un shape intelligemment conçu pour offrir à la fois un comportement idéal en foil, et des performances de haut niveau en slalom. Malgré sa largeur de 80cm, Damien a déjà dépassé les 35knt, ce qui démontre le potentiel du flotteur … même si nous ne serons pas nombreux à égaler ce type de perf. Les straps disposent de 2 rangées d’inserts respectivement à 16 et 18 de l’axe, ce qui va permettre de l’adapter à l’option de navigation (foil ou slalom), au type de foil monté dessus (RSX ou RS:one) et au niveau du pilote. Cela permet aussi de modifier l’angle des straps avant, sachant qu’une position plus proche de l’axe longi. de la planche est assez pratique en foil.</p><p>Pour revenir à nos moutons, nous avons cette fois équipé la planche du foil RS:One, qui je rappelle, est identique au foil <strong>RS:Flight AL</strong> (mis à part l’aile principale en G10 qui est un poil plus large pour la version RS:One). <strong>Ce test revêt donc une importance capitale compte tenu du potentiel commercial de ce produit, et de l’attente du marché autour de ce produit à 800€</strong>. </p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:x-convertible-2017-PJhUeiMC0S.jpg"></p><p>Le fameux foil NeilPryde en aluminium me surprend par la largeur de corde du mat. Le talon deep-tuttle est magnifiquement soudé sur la lame du foil, qui va donc jusqu’au fond du boitier. On sent que la recherche de rigidité a dicté toute la conception, et on sait à quel point c\'est capital dans le résultat. Les ailes en G10 ont fait l’objet d’un usinage soigné. Le profil assez épais promet une portance importante, et l’envergure modérée devrait limiter les risques de départ à la gîte, qui sont l’un des défauts récurrents sur les fois aluminium lorsqu’ils ne sont pas assez rigides. Le plan stabilisateur utilise comme souvent un profil symétrique pour limiter la trainée, mais une surface assez importante, promettant une bonne stabilité longitudinale. Enfin, en terme d’équilibre, le positionnement de l’aile vs les straps paraît tout à fait cohérente. Enfin, l\'assemblage de l\'ensemble avec des grosses vis titane respire la solidité.</p><p>Le gréement RS:One convertible est composé d’une voile en 7m, développée sur la base de la V8, donc avec 2 cambers et un fourreau étroit. Dans le concept de régate monotype, cette voile sera proposée en 5.6, 6.3, 7, 7.8 pour matcher avec les différentes catégories d’âges et sexe. Le mat est le nouveau SPX65 désormais fabriqué en Italie. L’ensemble est assez léger dans les bras et présage évidemment à la fois une puissance inférieure à la RSX, et une accessibilité bien meilleure.</p><p>Assez parlé, passons à l’eau … je le rappelle dans un vent oscillant entre 15 et 25 knt.</p><h4>Le test</h4><p>Je suis parti avec beaucoup de précaution, et l’appréhension de sorties de l’eau rapides dans le vent soutenu. Dans ces conditions, je pars au près et le décollage est immédiat. Je gère avec précaution le montée sur le foil en même temps qu’il accélère. Je ne fais pas beaucoup d’effort pour maintenir le foil dans l’eau ce qui est bon signe. Un peu rassuré, je repasse travers et laisse la planche accélérer franchement. Là, je commence à être surpris car le foil reste gérable et ne tente toujours pas de sortir de l’eau. A ce moment là, j’abats franchement et alors que la vitesse devient soutenue (en gros, ça file sévère), je me rends compte que le foil offre une bonne finesse. J’ai bien un foil premier prix sous les pieds ?!!!</p><p>Pour ne pas jouer les casse-coups, le premier virement sera un virement de bord …on essayera le jibe plus tard ;)</p><p>C’est reparti avec encore une fois, un décollage immédiat et une gestion aisée de la monté. C’est à ce moment là que je me rends compte : depuis le début, je ne fait quasiment aucun effort pour stabiliser le foil. Il est si facile que ça ? On continue le test et je fais le point sur le comportement de ma monture. Le foil NP aluminium est très très stable longitudinalement (moins que le loke, mais équivalent au xtrem foil et zeeko, et devant tous les autres), parfaitement stable en latéral (et là, les candidats sont déjà bien moins nombreux, le seul foil aluminium avec le zeeko que j’ai réussi à mettre en contre gîte), plutôt fin en terme de glisse (moins que le F4, mais plus que les xtrem, fone, loke, etc.) et tellement facile d\'accès (pardonne les erreurs de positionnement et les appuis hazardeux).</p><p>Le poids est plutôt élevé, et en tout cas bien loin des modèles carbone … mais il faut bien qu’il y ai une différence entre un produit à 800€ et un autre à 2000 ! Evidemment, ce n’est pas la seule différence, mais cet éléments jouera sur la maniabilité pour des pratiquants plus aguéris.</p><p>En terme de portance, on a dû attendre la fin d’après midi et moins de vent pour se rendre compte du potentiel dans le light. Là, on est a priori dans la moyenne : il n’ira pas chercher un loke ou un horue dans le très light, mais on est dans une bonne moyenne. En tout cas, un peu au même titre que le Loke, le foil alu NeilPryde m’a permis dès quelques minutes de pratiquement passer un jibe en l’air, preuve encore une fois de l’accessibilité de la bête.</p><p>Un dernier petit mot au sujet du gréement RS:One : j’ai été conquis par la légèreté et l’excellente tenue dans le vent. Naviguant régulièrement en foil avec la V8, je n\'étais pas surpris. J’avoue que si je ne m’étais pas épuisé au départ avec la 7.8, j’aurai bien navigué jusqu’à la nuit avec l’ensemble RS:One tant l’ensemble est réellement axé plaisir à tous les niveaux !</p><p><br></p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:x-convertible-2017-AajnlKosGq.jpg"></p><h4>A tout seigneur ! Test du foil RS:X</h4><p>Mais c’est pas tout, je ne pouvais pas finir la journée sans mettre les pieds sur la Rolls de nos amis bretons : le foil RS:X</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:x-convertible-2017-Dyr6pi3OYE.png"></p><p>Cette fois, on a à faire à un vrai produit élite full carbone, avec une finition à la F4, un mat ultra rigide, une aile principale à grand allongement version lame de rasoir, et à mon avis un prix qui sera lui aussi élitiste compte tenu des matériaux utilisés (gamme et quantité) et de la fabrication Française (eh oui, ça a un cout, mais qui se plaindra de faire travailler nos compatriotes au détriment des chinois ?).</p><p>C’est donc reparti sur l’eau avec notre petit gréement 7m RS:One mais une formule 1 sous les pieds. Sans faire un grand discours, on a là clairement l’un des foils les plus intéressants que j’ai eu l’occasion de tester. En gros un F4 avec plus de stabilité longitudinal, et un peu moins de stabilité latérale. Quelle glisse !!!! Il va vite … très vite ! Pas sous mes pieds, certes, mais Damien m’a bien tourné autour, le bougre.</p><p>Comme pour le F4 avec l’aile LW2, le foil RS:X demande un peu de vitesse pour décoller. A ce titre, il faut un peu plus de technique que la moyenne mais une fois parti, la glisse est impressionnante, et l’allonge du même niveau. Côté stabilité, c\'est un foil nerveux, et il ne faut pas s\'endormir dessus. Il n\'a bien entendu rien à voir avec la version aluminium.</p><p>Bon, je vous vois venir .. non, il n’est pas du tout fait pour débuter. Mais pour celui qui sait foiler, il y a un vrai client !</p><p><img src="/storage/photos/1/2017-04/neilpryde-rs:x-convertible-2017-5LFXy30Fgw.jpg"></p><h4>Conclusion</h4><p>Bilan de cette après midi de test : on a bien fait de venir ! Un grand merci à Damien</p><p>On a découvert</p><ul>
 <li>Un concept de monotypie basée sur un support convertible intelligemment conçu avec beaucoup de complémentarité entre éléments</li>
@@ -2342,7 +2342,7 @@ array (
 array (
 'id' => 62,
 'device_id' => 101,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Windfoil - Test starboard GT et flotteur Foil 147',
 'body' => '<p>Conditions de vent : 10-18 knt</p><p>Spot : Martigues</p><p>Voile 6.0m2 gator (no cam)<br>
 </p><p>Flotteur : Starboard Foil 147 technora</p><h4>Présentation</h4><p>Nous testons le foil dans une configuration fuselage court, aile et stab de grande taille. Dans cette configuration, nommée GT, il cible le débutant et le freerideur pour une approche intuitive de la pratique du foil.</p><p>Le tout est installé sur un flotteur spécial foil, renforcé, et conçu avec beaucoup de scoop pour limiter l’effet des touchettes ou amerrissages forcés. De nombreuses positions d\'inserts de straps permettent une grosse capacité d\'adaptation, voir même une utilisation avec aileron.</p><p><img src="/storage/photos/1/2017-04/starboard-foil-147-tecnora-2017-fpVwhQlDYY.jpg"></p><h4>Sur l\'eau</h4><p>Avec cet ensemble, et malgré une voile Gator bien puissante, le départ planning est laborieux. Par rapport à toutes les planches de foil ou de slalom que nous avons utilisé, on a cette fois beaucoup de mal à prendre de la vitesse pour utiliser la portance du foil dans le light wind. On sent que la combinaison forte largeur, scoop important, poids moyen demanderai au moins un ou 2m2 de plus côté voile.</p><p>Une fois en l\'air, la portance est plutôt très bonne et le passage dans les molles de bon niveau, sans être exceptionnel. Le foil réagit au pumping mais on a vu bien mieux de ce côté. Là aussi, la planche ne doit pas aider par son inertie, et on a toujours constaté que les mats très raides n\'aidaient pas de ce côté. A contrario, ce type de design offre en général un comportement beaucoup plus sein dans le vent.</p><p>On a clairement <strong>le foil le plus rassurant que nous avions eu l’occasion d’essayer à ce jour</strong> ! La stabilité latérale est parfaite, au même titre qu’un F4, Zeeko ou NP. La stabilité longitudinale est parfaitement dosée : c’est presque aussi stable qu’un Loke, mais bien plus réactif que le AHD testé le même jour. </p><p>La combinaison entre l’équilibre du foil, la largeur de la planche, et sa stabilité permet de naviguer avec une facilité déconcertante même dans les rafales … à tel point que j’en étais à souhaiter sereinement des bonnes poussées là ou habituellement, on anticipe l’ouverture de la voile pour laisser passer la crise. La navigation au près et à la contre gîte est un jeu d’enfant grâce au grand mat ultra raide, et à la forte largeur du flotteur.</p><p>Côté glisse, on est dans la moyenne haute pour cette configuration GT, mais le starboard va vite … aucun doute la dessus, en particulier bien toilé et avec les ailes slalom : on a vu Antoine Questel à l’oeuvre  !</p><p><img src="/storage/photos/1/2017-04/starboard-foil-147-tecnora-2017-YXMtXAb0a9.jpg"></p><h4>Bilan</h4><p>Au final, l\'ensemble GT + Foil 147 nécessite un peu plus de vent et / ou de toile que la moyenne, avec une navigation en mode free-race. On sent qu’il est parfaitement exploitable avec la même voile que l’on utiliserait habituellement en freeride ou en slalom (là ou on sous-toile nettement avec un foil plus commun). Au même titre que le loke, c\'est un foil qui va beaucoup plaire aux débutants par son accessibilité, et aux slalomeurs, grâce à sa capacité à rester prévisible et rassurant dans des conditions de vent soutenu.</p><p>Avec ce premier contact <strong>très prometteur</strong> sur certains points, on est un peu frustré de ne pas avoir pu exploiter tout le potentiel du concept. On se languis de le re-tester avec un flotteur plus compétitif, les ailes et slalom le fuselage race … cela laisse présager des perfs de très haut niveau (je n\'ai pas de doute là dessus) et probablement de bien meilleurs minis, car c\'est bien là le challenge du foil ! </p><p>La suite très bientôt j\'espère car je n\'en resterai pas là, promis ;)</p><p><img src="/storage/photos/1/2017-04/starboard-foil-147-tecnora-2017-VSCrIDQ1nB.jpg"></p>',
@@ -2357,7 +2357,7 @@ array (
 array (
 'id' => 63,
 'device_id' => 104,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'La solution des écoles',
 'body' => '<p>Pour r&eacute;aliser le test de l\'ensemble Windfoil bic techno, nous avons d&eacute;cid&eacute; de le mettre en situation en consid&eacute;rant sa destination finale. C\'est donc sur une journ&eacute;e d\'initiation que nous avons &eacute;valu&eacute; ce produit</p>
 <p>Compte tenu de sa conception, de son tarif, et de sa robustesse, l\'ensemble de techno Windfoil est un produit id&eacute;al pour l\'initiation et les clubs ou tous ceux qui veulent garder une utilisation mixte Foil / Aileron avec un maximum d\'accessibilit&eacute;.</p>
@@ -2406,7 +2406,7 @@ array (
 array (
 'id' => 64,
 'device_id' => 20,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Aile 1050 - Coup de boost dans le light',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2020-03/taaroa-noe-97-freerace-uhm-2020-GdTH3vJoBt.jpg" alt="" /></p>
 <p>En comparaison avec l\'aile de 800 Freeride et surtout la 800 freerace, la 1000 d&eacute;colle sans contest plus t&ocirc;t. Elle permet surtout de supporter beaucoup plus de toile.</p>
@@ -2444,7 +2444,7 @@ array (
 array (
 'id' => 65,
 'device_id' => 106,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Ludique en strapless',
 'body' => '<h3>Mise &agrave; l\'eau</h3>
 <p>D&egrave;s la prise en main, la Foil X sort de l\'ordinaire : ultra compacte, on a du mal &agrave; imaginer qu\'il a &eacute;t&eacute; possible de loger 145L dans un flotteur qui mesure 1m90 par 71cm. Pourtant, il suffit de monter dessus pour s\'en convaincre : on ne se mouille m&ecirc;me pas un orteil .. et m&ecirc;me les beaux gabarits seront au sec. C\'est super rassurant, et permet d\'envisager des retours au bord m&ecirc;me avec un vent qui est tomb&eacute;.</p>
@@ -2484,7 +2484,7 @@ array (
 array (
 'id' => 67,
 'device_id' => 107,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Etonnant et attachant',
 'body' => '<p>Apr&egrave;s la <a href="https://marseille.glissattitude.com/blog/windfoil-deballage-bullet-1.html">pr&eacute;sentation</a> de ce nouveau foil Zeeko, et premier mod&egrave;le carbone de la marque, nous &eacute;tions impatient de le mettre &agrave; l\'eau et v&eacute;rifier les sensations que nous avions eu l\'&eacute;t&eacute; dernier lors des premiers tests de prototypes.</p>
 <p>Pour cette d&eacute;couverte du Zeeko, nous avons eu droit &agrave; 2 sessions avec des conditions pas id&eacute;ales, mais un certain virus ne nous a pas donn&eacute; l\'occasion de retourner &agrave; l\'eau depuis pour en savoir plus. Lors de ces 2 sessions, nous avons eu droit pour commencer &agrave; du vent ultra irr&eacute;gulier (fort dans les rafales et rien dans les molles), puis lors de la 2e session &agrave; un vent soutenu en permanence (entre 18 et 22 knt).</p>
@@ -2537,7 +2537,7 @@ array (
 array (
 'id' => 68,
 'device_id' => 112,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un jouet',
 'body' => '<p>Apr&egrave;s avoir test&eacute; les premi&egrave;res voiles d&eacute;di&eacute;es au windfoil, dont les prototypes Horue Swart tr&egrave;s prometteurs, nous &eacute;tions impatients d\'avoir en main une version d&eacute;finitives.</p>
 <h3>Pr&eacute;sentation</h3>
@@ -2568,7 +2568,7 @@ array (
 array (
 'id' => 69,
 'device_id' => 113,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Innovant',
 'body' => '<p>A l&rsquo;occasion de notre WE conviviale Windfoil &agrave; Serre-Pon&ccedil;on, nous avons eu la chance d&rsquo;avoir &agrave; nos c&ocirc;t&eacute; notre cher Arnaud Deschamps qui est venu &eacute;quip&eacute; de la nouvelle Loft Skyscape et de la RSX convertible. Ca a &eacute;t&eacute; l&rsquo;occasion de faire 4 ou 5 bords avec cette nouvelle voile d&eacute;velopp&eacute;e pour le foil</p>
 <p><img src="/storage/photos/1/2020-02/530f5e573914c73e940ca9112a289e71.jpg" /></p>
@@ -2600,7 +2600,7 @@ array (
 array (
 'id' => 70,
 'device_id' => 115,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Efficace et légère',
 'body' => '<h3>Contexte</h3>
 <p>Dans notre petit monde du Windsurf s&eacute;vit un conservatisme assez &eacute;tonnant. Cela fait perdurer des situations assez grotesques qui sautent aux yeux de temps en temps.&nbsp;Le cas du march&eacute; du mat&eacute;riel de vent fort est symptomatique de cet &eacute;tat de fait.</p>
@@ -2634,7 +2634,7 @@ array (
 array (
 'id' => 71,
 'device_id' => 116,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Machine de course .. pas si lourde',
 'body' => '<p>L\'hyperglide a bien l\'ADN d\'une voile de course : elle est volumineuse et puissante. Le creux est tr&egrave;s marqu&eacute;, et donne une voile tr&egrave;s rigide. Au pumping, il faut un geste puissant pour arriver &agrave; utiliser l\'effet reflex du haut de la voile ... bien plus qu\'avec le NeilPryde RS:Flight par exemple.</p>
 <p>Le passage des cambers est aussi assez difficile, en particulier lorsque la voile est neuve. Apr&egrave;s rodage, c\'est mieux mais cela reste au moins aussi compliqu&eacute; qu\'avec une voile de course.</p>
@@ -2651,7 +2651,7 @@ array (
 array (
 'id' => 72,
 'device_id' => 117,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Pullman',
 'body' => '<p>Les premiers tests de la Phantom IRIS ont &eacute;t&eacute; fait &agrave; la fois en navigation libre &agrave; St Laurent du Var, La Ciotat , et en r&eacute;gate &agrave; Toulon.</p>
 <p>D&egrave;s la prise en main, la l&eacute;g&egrave;ret&eacute; du gr&eacute;ement saute aux yeux (ou plut&ocirc;t aux bras pour &ecirc;tre pr&eacute;cis) ! Malgr&eacute; tout, la pr&eacute;sence de cambers bloque le profil, et tant mieux. Par contre, cette 7m semble assur&eacute;ment plus l&eacute;g&egrave;re que d&rsquo;autres voiles qui auraient 0.5 voir 1m2 de moins. A ce titre, elle peut faire penser &agrave; ce nous avons ressenti avec la LoftSkyscape, mais ici avec une latte et plus et un contr&ocirc;le du profil meilleur dans les rafales.</p>
@@ -2674,7 +2674,7 @@ array (
 array (
 'id' => 73,
 'device_id' => 118,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Freeride Plug & Play',
 'body' => '<p>En statique, rien de bien particulier, en dehors d\'une voile l&eacute;g&egrave;re, et assez creuse. La chute est assez tendue sans exc&egrave;s.</p>
 <p><img src="/storage/photos/1/2020-02/f2e17e36d3f1b5b762e6c5abacec3f65.jpg" /></p>
@@ -2694,7 +2694,7 @@ array (
 array (
 'id' => 74,
 'device_id' => 119,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Etonnant',
 'body' => '<h3>Montage</h3>
 <p>Nous avons gr&eacute;&eacute; la Ezzy Hydra 5.5 sur le mat RDM 100% ezzy fourni par la marque. Le montage s\'effectue sans aucun soucis ni commentaire particulier. Seul le r&eacute;glage nous a laiss&eacute; perplexe car nous avions du mal &agrave; imaginer quelles tensions mettre au guindant et &agrave; l\'&eacute;coute. Les indications propos&eacute;es pr&eacute;sentant une fourchette tr&egrave;s larges, nous avons test&eacute; plusieurs combinaisons, mais au final, c\'est en mettant une tension assez faible &agrave; l\'&eacute;coute que le voile a &eacute;t&eacute; la plus int&eacute;ressante. Il ne faut pas s\'arr&ecirc;ter aux gros plis du Mast-pannel eu repos car la voile se tend parfaitement en navigation.</p>
@@ -2721,7 +2721,7 @@ array (
 array (
 'id' => 75,
 'device_id' => 120,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Pile dans la cible',
 'body' => '<h3>Test IRIS X 5.8</h3>
 <h4>1er test &nbsp;:&nbsp;&nbsp;Almanarre S/O&nbsp;dans un vent oscillant entre 10 et 13 knt</h4>
@@ -2764,7 +2764,7 @@ array (
 array (
 'id' => 76,
 'device_id' => 121,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un efficacité redoutable',
 'body' => '<p>Apr&egrave;s une saison d\'utilisation de cette voile en 9m2, voici ses principales caract&eacute;ristiques :</p>
 <ul>
@@ -2789,7 +2789,7 @@ array (
 array (
 'id' => 77,
 'device_id' => 122,
-'user_id' => 5,
+'user_id' => 1,
 'title' => '100% plaisir',
 'body' => '<h3>Gr&eacute;age</h3>
 <p>J\'ai tout bien fait comme ils disent : on d&eacute;tend les 2 lattes de cam pour enfiler le mat et mettre le Wish, avec une l&eacute;g&egrave;re tension en bas. On met en place les petits cam sur sangle (&ccedil;a se fait tout seul). Ensuite un bon &eacute;tarquage en bas aux c&ocirc;tes donn&eacute;es par la marque, puis on &eacute;tarque les lattes de cam pour retrouver une jolie voile avec un creux tr&egrave;s progressif. D&eacute;j&agrave; comme &ccedil;a c\'est tr&egrave;s joli. Il reste 1 pli sur chaque gousset de latte au niveau des cam, mais je n\'ai pas r&eacute;ussi &agrave; les faire dispara&icirc;tre .. l\'id&eacute;e n\'&eacute;tait pas de bouriner sur les &eacute;tarqueurs de latte, et surtout ces plis disparaissent d&egrave;s que le vent tend la voile.</p>
@@ -2826,7 +2826,7 @@ array (
 array (
 'id' => 78,
 'device_id' => 123,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un développement intelligent',
 'body' => '<p>Lorsque l\'on teste un mod&egrave;le de voile dans plusieurs tailles, on a l\'habitude d\'avoir des sensations tr&egrave;s diff&eacute;rentes suivant les surfaces, de par l\'encombrement mais surtout le comportement. C\'est assez logique : on se doute bien que 5 lattes pour tenir le profil d\'une voile de 8m2, ce n\'est pas pareil que 5 lattes r&eacute;parties sur la longueur de guindant d\'une 5m2 ! La plupart du temps, on a des petites surfaces l&eacute;g&egrave;res et rigides, et des grandes surfaces plus lourdes et molles. A l\'exception des voiles de slalom, comme le d&eacute;veloppement est fait sur une surface interm&eacute;diaire, c\'est en g&eacute;n&eacute;ral cette derni&egrave;re qui est la plus r&eacute;ussie.</p>
 <p>Avec la AirRide \'20, GA Sail propose une nouvelle approche assez intelligente qui fonctionne : en proposant une 7.7 avec 2 cam, et une 6.7 sans cam, on retrouve pour une fois des sensations analogues sur les 2 surfaces. Pour rentrer dans le d&eacute;tail, on n\'a pas les inconv&eacute;nients habituels des grandes voiles sans cam (molesse et instabilit&eacute;), ni la lourdeur des voiles avec cam. Au contraire, on a une homog&eacute;n&eacute;it&eacute; de comportement assez bluffante sur l\'ensemble de la gamme.</p>
@@ -2871,7 +2871,7 @@ array (
 array (
 'id' => 79,
 'device_id' => 124,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une excellente freerace en 8m',
 'body' => '<p>Je pr&eacute;cise que la taille test&eacute;e est la 8m2. Ce n&rsquo;est pas une remarque anodine car la Skyblade &eacute;tant le mod&egrave;le course foil de Loft, il eut &eacute;t&eacute; opportun de la tester en 9m2 pour la comparer &agrave; ses petites copines que sont les hyperglide 2 et RS Flight Evo. En effet, dans une optique racing, la 9m2 est un peu la voile pivot &hellip; la plus utilis&eacute;e. La 8m correspond &agrave; la surface de vent fort pour les coureurs (qui utilisent 8,9 et 10m2)</p>
 <p>En testant une 8m2 dans des vents l&eacute;gers, je me place donc dans l&rsquo;optique d&rsquo;un pratiquant non comp&eacute;titeur, qui souhaite utiliser la Skyblade en mode freerace.</p>
@@ -2920,7 +2920,7 @@ array (
 array (
 'id' => 80,
 'device_id' => 125,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Essai transformé !',
 'body' => '<p>Apr&egrave;s une prise de contact avec le prototype il y a 3 mois, nous &eacute;tions impatients de tester le mod&egrave;le d&eacute;finitif de cette board phantom freerace. Le premier contact avait &eacute;t&eacute; plut&ocirc;t int&eacute;ressant, et la gen&egrave;se de la b&ecirc;te fait r&ecirc;ver : dessin&eacute;e par Nicolas Goyard, on a affaire &agrave; un connaisseur.&nbsp;</p>
 <h3>D&eacute;ballage</h3>
@@ -2961,7 +2961,7 @@ array (
 array (
 'id' => 82,
 'device_id' => 126,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une plume !',
 'body' => '<h3>Montage</h3>
 <p>Le gr&eacute;age de la voile est extr&ecirc;mement simple.</p>
@@ -3050,7 +3050,7 @@ array (
 array (
 'id' => 83,
 'device_id' => 128,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Le bon compromis ?',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_4956.jpg" alt="Test Voile Phantom IRIS Z" /></p>
 <p>Mon super combo de test du jour : JP Freefoil 115 / Fanatic Flow 900 / Phantom Iris Z 5.8 ... un &eacute;quilibre parfait et 100% plaisir dans le 10-20 knt du jour 😍</p>
@@ -3138,7 +3138,7 @@ array (
 array (
 'id' => 84,
 'device_id' => 129,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Pur-sang',
 'body' => '<p>L\'iris RF 6m est le mod&egrave;le foil Slalom de Phantom. Avec une chute plus ouverte, 1 latte de moins, et un aspect ratio moins &eacute;lanc&eacute; que les mod&egrave;le de course racing, la RF reste une voile 100% ax&eacute;e performance au travers.</p>
 <p><img src="/storage/photos/1/2020-02/IMG_2567.jpg" alt="IRIS SF Speed Phantom" /></p>
@@ -3165,7 +3165,7 @@ array (
 array (
 'id' => 85,
 'device_id' => 130,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Trop de glisse',
 'body' => '<p>Le foil IRIS Z est le mod&egrave;le freeride. Son cahier des charges est assez simple : voler facilement avec peu de vent et peu de vitesse, &ecirc;tre tr&egrave;s stable en l\'air, &ecirc;tre rassurant avec une vitesse lin&eacute;aire.</p>
 <p>Le prototytpe test&eacute; est consitu&eacute; d\'un mat de X, d\'un fuselage de 90, et d\'une aile de race &agrave; corde large.</p>
@@ -3184,7 +3184,7 @@ array (
 array (
 'id' => 86,
 'device_id' => 131,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'La perf avec un jouet !',
 'body' => '<p>Cela fait des mois que nous attendions de tester les nouvelles RF Exocet. M&ecirc;me si elle n\'a pas pl&ucirc;t &agrave; tout le monde, la premi&egrave;re version a &eacute;t&eacute; une petite r&eacute;volution en 2018 dans le monde du foil avec pour la premi&egrave;re fois un shape d&eacute;di&eacute; qui tranchait avec les planches polyvalentes. On avait en particuilier d&eacute;couvert un contr&ocirc;le en vol hors du commun, et des rails tr&egrave;s efficaces. Finalement, seule la technicit&eacute; du d&eacute;collage pouvait rebuter. Entre temps, Exocet a propos&eacute; un flotteur beaucoup plus accessible et tr&egrave;s r&eacute;ussi avec la <a href="/devices/board/exocet-freefoil-132-carbone-2019">Freefoil (112 et 132)</a>.</p>
 <p>Cette ann&eacute;e, Exocet propose donc une version compl&egrave;tement revue des RF. Le ptogramme est le m&ecirc;me : freerace an 71 et 83 et race en 90 et 100. Par contre, les ingr&eacute;dients et concepts ont beaucoup &eacute;volu&eacute;s. Le shape est caract&eacute;ris&eacute; par</p>
@@ -3246,7 +3246,7 @@ array (
 array (
 'id' => 87,
 'device_id' => 132,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Cure de jeunesse',
 'body' => '<p>Une fois n\'est pas cout&ucirc;me, pas de test ici mais juste une pr&eacute;sentation statique. Le virus confineur ne nous a pas laiss&eacute; encore l\'occasion d\'aller sur l\'eau tester le nouveau Vini V2.</p>
 <p>Le mod&egrave;le a &eacute;volu&eacute; au niveau de l\'ensemble mat / fusleage, qui pr&eacute;sente une nouvelle go&eacute;m&eacute;trie&nbsp;</p>
@@ -3276,7 +3276,7 @@ array (
 array (
 'id' => 88,
 'device_id' => 136,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'L\'originale ré-inventée',
 'body' => '<p>Quelques photos, en attandant le test</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-04/IMG_3714.jpg" alt="Horue Tini 2020" /></p>
@@ -3397,7 +3397,7 @@ array (
 array (
 'id' => 92,
 'device_id' => 141,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'En plein dans le mille',
 'body' => '<p>En montant sur cette RF81, le moins que l\'on puisse dire, c\'est que l\'on est en droit de se poser pas mal de question compte tenu du non conformisme du shape. Je suis toutefois parti sans appriori, car avec Exocet, on est habitu&eacute; &agrave; des solutions innovantes, et ils nous ont rarement d&eacute;&ccedil;us.</p>
 <p>Comme avec la RF71, le premier contact sur l\'eau est visuellement &eacute;tonnant pour ne pas dire d&eacute;rangeant. Avec une dimension de 2m environ, c\'est court devant le pied de mat, au regard de la flottaison \'facile\'. On a bien les 160L et elle porte m&ecirc;me ma 9m sans aucun probl&egrave;me.</p>
@@ -3453,7 +3453,7 @@ array (
 array (
 'id' => 94,
 'device_id' => 146,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Easy',
 'body' => '<p>Apr&egrave;s un rapide test en windfoil sans surprise avec le GA Mach 1, nous avons test&eacute; la b&ecirc;te en Wing .. quelle facilit&eacute; ! Pari r&eacute;ussi ... haut la main 😀</p>
 <p>On retrouve un concept proche de la Zeeko Ariwave, en encore plus accessible.</p>
@@ -3471,7 +3471,7 @@ array (
 array (
 'id' => 95,
 'device_id' => 147,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Des vraies perf Up&Down faciles !',
 'body' => '<h3>Montage</h3>
 <p><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_5063.jpg" alt="Alpine A1 Race" /></p>
@@ -3514,7 +3514,7 @@ array (
 array (
 'id' => 96,
 'device_id' => 148,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Un jouet',
 'body' => '<p>Avec l\'exp&eacute;rience des nombreux tests de l\'Exocet Freefoil 112, et compte tenu des similitudes des 2 flotteurs, nous avons tr&egrave;s rapidement trouv&eacute; les bonnes associations avec le JP Freefoil. Les tests ont donc &eacute;t&eacute; men&eacute;s avec 4 foils</p>
 <ul>
@@ -3594,7 +3594,7 @@ array (
 array (
 'id' => 100,
 'device_id' => 149,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Redoutable',
 'body' => '<p>Une fois n\'est pas coutume, je poste un CR qui n\'a pas &eacute;t&eacute; r&eacute;dig&eacute; par mes soins ... mais il est int&eacute;ressant et rare d\'avoir des retours de client aussi pr&eacute;cis. Je me fais donc un plaisir de partager, en attendant d\'avoir la chance de mettre les pieds sur cette planche.</p>
 <p>"</p>
@@ -3626,7 +3626,7 @@ array (
 array (
 'id' => 101,
 'device_id' => 150,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Belle et puissante',
 'body' => '<p>Apr&egrave;s notre pr&eacute;sentation statique, nous n&rsquo;avons pas r&eacute;sist&eacute; longtemps avant d&rsquo;aller tester la b&ecirc;te sur l&rsquo;eau, pour v&eacute;rifier si son ramage correspondait &agrave; son plumage</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-09/IMG_6503.jpg" alt="patrick foil ride 145" /></p>
@@ -3673,7 +3673,7 @@ array (
 array (
 'id' => 102,
 'device_id' => 157,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Impressionnant mais Sportif',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2020-09/IMG_7338.jpg" alt="Starboard Slalom Foil 91 Reflex carbone 2021" /></p>
 <h3>Pr&eacute;sentation</h3>
@@ -3727,7 +3727,7 @@ array (
 array (
 'id' => 103,
 'device_id' => 159,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Surprenant & attachant',
 'body' => '<p>Quand Nicolas Warambourg m&rsquo;a propos&eacute; de tester les Foil Ride 125 et 105, j&rsquo;avoue que j&rsquo;avais quelques aprioris bas&eacute;s sur mes tests pr&eacute;c&eacute;dents. Pour &ecirc;tre franc, apr&egrave;s avoir vu les mensurations, je savais que j&rsquo;allais trouver une 125 vive et peu puissante, et une 105 ultra libre et tr&egrave;s orient&eacute;e freeride. C&rsquo;&eacute;tait donc logiquement avec des produits freeride (foil et voile) que je devais aborder ce test.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-09/IMG_7280.jpg" alt="Patrick Board Foil Ride 105 125 145" /></p>
@@ -3769,7 +3769,7 @@ array (
 array (
 'id' => 104,
 'device_id' => 160,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Jesus marchant sur l\'eau',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0191.jpg" alt="Takuma E Foil Cruising" /></p>
 <div class="container" style="max-width: 100%;">
@@ -3869,7 +3869,7 @@ array (
 array (
 'id' => 105,
 'device_id' => 162,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Encore mieux !',
 'body' => '<p>Pour ce test, je vais surtout d&eacute;crire les &eacute;volutions entre la IRIS X V1 et la IRIS X MKII, mais &eacute;galement revenir sur le positionnement de ce mod&egrave;le sur le march&eacute;.&nbsp;</p>
 <h3>Positionnement</h3>
@@ -3933,7 +3933,7 @@ array (
 array (
 'id' => 106,
 'device_id' => 163,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Options',
 'body' => '<p>Fid&egrave;le &agrave; son sch&eacute;ma, pas de nouveau foil &agrave; part enti&egrave;re chez Starboard pour 2021, mais des nouvelles pi&egrave;ces qui permettent de faire &eacute;voluer les foils existants. On applaudit des 2 mains car cette solution permet d&rsquo;&eacute;viter une obsolescence de votre investissement.</p>
 <p>Pour 2021, Starboard propose 3 nouveaux stabilisateurs, 2 ailes, 1 fuselage et 1 mat.</p>
@@ -3999,7 +3999,7 @@ array (
 array (
 'id' => 107,
 'device_id' => 168,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une configuration race solide !',
 'body' => '<p>A ce jour, les tests r&eacute;alis&eacute;s ont eu lieu des des conditions l&eacute;g&egrave;res et tr&egrave;s irr&eacute;guli&egrave;res. C\'est donc juste un premier ressenti qui sera affin&eacute; et compl&eacute;t&eacute;</p>
 <p>En terme de sensation g&eacute;n&eacute;rale, on est &eacute;videmment dans quelque chose de coh&eacute;rent avec le F4 race 2020. Pour re-situer les choses en ce qui concerne le mod&egrave;le 2020, on est sur ce qui se fait de mieux dans le domaine Race et Freerace avec</p>
@@ -4056,7 +4056,7 @@ array (
 array (
 'id' => 108,
 'device_id' => 164,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Le même ADN, mais des progrès partout',
 'body' => '<p>Ce test rapide dans des conditions difficiles avait surtout pour objectif d\'avoir un premier ressenti en comparaison avec le mod&egrave;le 95 2020. Il fait suite &agrave; un premier essai rapide effectu&eacute; &agrave; l\'occasion des s&eacute;lection de mat&eacute;riel Windfoil jeune en Sept &agrave; Martigues.&nbsp;</p>
 <p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1066.jpeg" alt="Test AFS 95 V2 2021" /></p>
@@ -4091,7 +4091,7 @@ array (
 array (
 'id' => 109,
 'device_id' => 161,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Moderne sur toute la ligne !',
 'body' => '<p>Nous avions eu un premier aper&ccedil;u rapide des capacit&eacute;s de ce flotteur lors des tests de labellisation FFV de Martigues. A l\'&eacute;poque, c\'&eacute;tait encore un prototype, &nbsp;qui manquait de volume sur la partie avant.&nbsp;Le mod&egrave;le de s&eacute;rie &agrave; corrig&eacute; ce d&eacute;tail, et le flotteur gagne &agrave; la fois en capacit&eacute; &agrave; porter des surfaces de voile plus importantes (jusqu\'&agrave; 8m), et en r&eacute;action sur les touchettes.</p>
 <p>Avec cette compact 83 de s&eacute;rie, AHD propose un flotteur de foil parfaitement dans le vent, et qui marque une &eacute;norme &eacute;volution par rapport &agrave; la s&eacute;rie Thunderbold. Si ces derniers offraient aux d&eacute;butants l\'avantage d\'un d&eacute;collage tr&egrave;s progressif, et d\'une certaine inertie qui tent &agrave; gommer les erreurs de conduite, la compact s\'adresse aux foileurs plus exp&eacute;riment&eacute;s. Exit le c&ocirc;t&eacute; poussif, lourd et encombrant, et place &agrave; un flottteur r&eacute;actif, l&eacute;ger sous les pieds avec lequel on fait corps.</p>
@@ -4134,7 +4134,7 @@ array (
 array (
 'id' => 110,
 'device_id' => 172,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Engin de course',
 'body' => '<p>La pr&eacute;paration du flotteur n\'appelle pas de commentaire particulier. Le seul point un peu g&eacute;nant concerne les puits de vis d\'ailerons. Ils sont tellement profonds qu\'il va bient&ocirc;t falloir une lampe de sp&eacute;l&eacute;o et des doigts de pianiste pour mettre en place les vis 🤣. Heureusement, la visserie 100% torx et la cl&eacute; fournie simplfient bien cette t&acirc;che. Dans les points tr&egrave;s positifs qui n\'ont rien &agrave; voir avec la navigation mais qui sont &agrave; signaler : le poids de la planche est assez bluffant et bien agr&eacute;able lors des manipulations. Les mauvaises langues diront que c\'est plus fragile, mais on n\'a rien sans rien ... et vous &ecirc;tes pr&eacute;venus : c\'est un flotteur de course et non un chart d\'assault !&nbsp;</p>
 <p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1273.jpeg" alt="test starboard foil slalom 81 2021" /></p>
@@ -4230,7 +4230,7 @@ array (
 array (
 'id' => 114,
 'device_id' => 168,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une config slalom ultra polyvalente',
 'body' => '<p>Comme c&rsquo;est le cas dans plusieurs marques d&eacute;sormais, on ne parle pas ici d&rsquo;un foil mais d&rsquo;un ensemble de pi&egrave;ces qui constituent un &eacute;cosyst&egrave;me foil.&nbsp;J&rsquo;ai d&eacute;j&agrave; &eacute;voqu&eacute; le F4 race, qui n&rsquo;est en r&eacute;alit&eacute; qu&rsquo;un sous-ensemble de cet &eacute;cosyst&egrave;me F4 &hellip; avec des pi&egrave;ces orient&eacute;es vers une navigation performance up &amp; down ou light wind</p>
 <p>De la m&ecirc;me fa&ccedil;on, le F4 Slalom, que nous &eacute;voquons aujourd&rsquo;hui, est un sous-ensemble de pi&egrave;ces orient&eacute; vers une navigation performance travers ou vent soutenu.&nbsp;Nous &eacute;voquerons plus tard un sous-ensemble de pi&egrave;ces orient&eacute; vers une navigation loisir.</p>
@@ -4380,7 +4380,7 @@ array (
 array (
 'id' => 115,
 'device_id' => 177,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Energique !',
 'body' => '<p>Lors de ce test, nous avons essentiellement test&eacute; 2 configurations autour de ce LK1 : abec le stab de 300 et avec le stab "perf"</p>
 <p>Test avec le stab LK300</p>
@@ -4411,7 +4411,7 @@ array (
 array (
 'id' => 116,
 'device_id' => 178,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Unboxing',
 'body' => '<p>Un outline compact avec de la largeur, mais une forme plus pinc&eacute;e que les foil racing. Le pont est agr&eacute;ement&eacute; d\'un pads central pour caler le pied aux allures tr&egrave;s abbatues, ou pour donner des rep&egrave;res au jibe.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2021-03/IMG_1933.jpeg" alt="JP Hydrofoil Slalom pro" /></p>
@@ -4473,7 +4473,7 @@ array (
 array (
 'id' => 118,
 'device_id' => 180,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Unboxing',
 'body' => '<p>En attendant le test sur l\'eau, j\'ai le plaisir de vous faire d&eacute;couvrir en image le nouveau foil aluminium free-race NeiLPryde. Ce mod&egrave;le remplace les RS:FLIGHT&nbsp;AL puis RS:FLIGHT AL EVO, dont la conception commen&ccedil;ait franchement &agrave; dater. Pour m&eacute;moire, nos premiers tests desdit foils remontaient &agrave; 2017 ... soit en gros la pr&eacute;histoire du foil. On regrette juste que NeilPryde ait tant attendu avant de les faire &eacute;voluer. C\'est d&eacute;sormais le cas avec un mod&egrave;le qui semble parfaitement dans l\'air du temps.</p>
 <p>Pour 2021, les foils NeilPryde sont d&eacute;sormais livr&eacute;s dans une vrai malette de protection souple, plut&ocirc;t compacte et facile &agrave; loger dans la voiture. C\'est parfaitement coh&eacute;rent avec le tarif actuel du FLIGHT FR, et la mont&eacute;e en gamme globale du produit.&nbsp;</p>
@@ -4511,7 +4511,7 @@ array (
 array (
 'id' => 119,
 'device_id' => 180,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Dans le game',
 'body' => '<h3>Montage</h3>
 <p>Le montage du foil n&rsquo;appelle pas &agrave; des commentaires particuliers, mais je souligne quand m&ecirc;me la qualit&eacute; de finition des &eacute;l&eacute;ments, et de la visserie. En terme d&rsquo;installation sur la planche, comme souvent avec les talon alu (NP, Zeeko, Fanatic), il est primordial d&rsquo;ovaliser les trous du flotteur car les filetages longs ne supportent pas de d&eacute;saxement, et il n&rsquo;y a pas d&rsquo;insert que l&rsquo;on puisse tourner.&nbsp;</p>
@@ -4551,7 +4551,7 @@ array (
 array (
 'id' => 120,
 'device_id' => 181,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Bolide',
 'body' => '<h3>Intro</h3>
 <p>Surface test&eacute;e : 8m2</p>
@@ -4581,7 +4581,7 @@ array (
 array (
 'id' => 121,
 'device_id' => 182,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'La maturité !',
 'body' => '<p>A l&rsquo;occasion de la manifestion LA FOILIE DU LAC &agrave; Monteynard, nous avons eu l&rsquo;occasion de tester l&rsquo;un des tous premiers foils Alpine Race SL 2021. M&ecirc;me si la mode est clairement au Wingfoil, nous ne l&acirc;chons rien sur le windfoil et les discussions que nous avons eu avec Damien sont &agrave; l&rsquo;origine de l&rsquo;apparition de ce nouveau mod&egrave;le, qui n&rsquo;est pas encore sur le site Alpine &agrave; l&rsquo;heure ou j&rsquo;&eacute;crits ces signes, mais qui ne devrait pas tarder &hellip; au tarif de 2499eur (m&ecirc;me tarif que le A1 Race). Dans le m&ecirc;me temps, le mod&egrave;le A1 Sport &eacute;volue en A1Sport SL en adpotant le nouveau fuselage 2021 dont je vais parler plus bas.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2021-06/IMG_3270.jpeg" alt="Alpinefoil A1 race SL" /></p>
@@ -4625,7 +4625,7 @@ array (
 array (
 'id' => 122,
 'device_id' => 183,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Streight',
 'body' => '<p>On ne trahira pas un grand secret en disant que ce foil sigl&eacute; Patrik Diethelm est un assemblage de pi&egrave;ces issues du catalogue Zeeko, avec quelques am&eacute;nagements de cahier des charges (pas de mini platine sur le mat par exemple). Ainsi, &agrave; l&rsquo;instar de nombreuses marques (dont Exocet, Tahe Outddor, Loft Sail &hellip;), Patrick a pr&eacute;f&eacute;r&eacute; sous-traiter la fabrication de son foil plut&ocirc;t que de cr&eacute;er un nouveau mod&egrave;le. Quand on n&rsquo;est pas un sp&eacute;cialiste du foil, c&rsquo;est une attitude tr&egrave;s pertinente, et probablement celle qui permet le mieux de proposer un produit bien con&ccedil;u sans risque. En d&rsquo;adressant &agrave; Zeeko, on a l&rsquo;assurance d&rsquo;avoir un foil facile d&rsquo;acc&egrave;s et tr&egrave;s tol&eacute;rant.&nbsp;</p>
 <p>En l&rsquo;occurence, le mod&egrave;le test&eacute; est un assemblage des pi&egrave;ces suivantes :</p>
@@ -4668,7 +4668,7 @@ array (
 array (
 'id' => 123,
 'device_id' => 184,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Elitiste',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2021-06/IMG_3328.JPG" alt="Patrik Foil+" /></p>
 <h3>Prise en main</h3>
@@ -4694,7 +4694,7 @@ array (
 array (
 'id' => 124,
 'device_id' => 185,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'En mode décontracté',
 'body' => '<p><img class="img-fluid" src="/storage/photos/1/2021-07/IMG_3490.jpg" alt="F4 Freeride " /></p>
 <h3>D&eacute;collage&nbsp;</h3>
@@ -4735,7 +4735,7 @@ array (
 array (
 'id' => 125,
 'device_id' => 189,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Grosse pêche',
 'body' => '<h3>En statique</h3>
 <p>Cette nouvelle Fly en 5.5 se monte sur un mat RDM 400, avec 30cm de rallonge. Gr&eacute;er est un jeu d\'enfant, et la mise en place des cambers sp&eacute;cifiques RDM est vraiment ais&eacute;e. En respectant les c&ocirc;tes, on a un creux g&eacute;n&eacute;reux plac&eacute; tr&egrave;s en avant, et une ouverture de chute mod&eacute;r&eacute;e.</p>
@@ -4782,7 +4782,7 @@ array (
 array (
 'id' => 126,
 'device_id' => 190,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'PWA Weapon',
 'body' => '<p>J\'ai eu la chance de pouvoir tester bri&egrave;vement les IRIS R MKII 85 et 78 sur le Spot de l\'Almanarre, pas longtemps apr&egrave;s leur sortie du carton.&nbsp;C&rsquo;est toujours avec beaucoup d&rsquo;excitation que l&rsquo;on teste des planches enti&egrave;rement nouvelles. Etant donn&eacute; les performances et l\'agr&eacute;ment des mod&egrave;les 2021, la barre &eacute;tait plac&eacute;e assez haut.</p>
 <h3>Contexte</h3>
@@ -4835,7 +4835,7 @@ array (
 array (
 'id' => 127,
 'device_id' => 191,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Une roquette aux fesses',
 'body' => '<p>Comme souvent avec les produits course, je n&rsquo;&eacute;crirai pas 2 pages pour d&eacute;crire les sensations de la navigation en matos racing, mais je ferai &nbsp;une comparaison une comparaison avec notre r&eacute;f&eacute;rence actuelle dans cette surface, qui est la Phantom RF 6 m.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2021-10/IMG_6142.jpeg" alt="Xo Sails Gold Foil 2022 6.0m" /></p>
@@ -4859,7 +4859,7 @@ array (
 array (
 'id' => 128,
 'device_id' => 192,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Convertible',
 'body' => '<h3>En statique</h3>
 <p>En d&eacute;ballant cette nouvelle Stingray, nous &eacute;tions impatient de savoir quelle direction avait choisi Fanatic pour sa ligne foil.&nbsp;</p>

@@ -44,8 +44,13 @@ Route::delete('/posts/{postCategory}/{post}',[PostController::class, 'destroy'])
 Route::post('/posts',[PostController::class, 'store'])->name('post.store');
 
 Route::get('/devices',[DeviceController::class, 'categories'])->name('device.categories');
+Route::get('/devices/create', [DeviceController::class, 'create'])->name('device.create');
 Route::get('/devices/{category}',[DeviceController::class, 'category'])->name('device.category');
 Route::get('/devices/{category}/{device}',[DeviceController::class, 'show'])->name('device.show');
+Route::get('/devices/{category}/{device}/edit', [DeviceController::class, 'edit'])->name('device.edit');
+Route::patch('/devices/{category}/{device}',[DeviceController::class, 'update'])->name('device.update');
+Route::post('/devices',[DeviceController::class, 'store'])->name('device.store');
+Route::delete('/devices/{category}/{device}',[DeviceController::class, 'destroy'])->name('device.destroy');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 
