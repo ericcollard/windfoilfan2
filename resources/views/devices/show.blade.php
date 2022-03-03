@@ -170,7 +170,7 @@
                                         <h5>{{ __('Messages') }}</h5> {{ $review->owner->reviews->count() }}
                                         <h5>{{ __('Localisation') }}</h5> {{ $review->owner->postal_code }}
                                     </div>
-                                    <div class="col-10">
+                                    <div class="col-md-10 col-sm-12">
 
                                         <div class="module">
                                             <div class="collapse" id="collapseReview{{ $review->id }}" >
