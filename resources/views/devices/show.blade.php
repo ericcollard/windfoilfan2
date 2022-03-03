@@ -111,7 +111,10 @@
                                 <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5> {{ $device->statistics_count }} {{ __('Unique IP') }}
                             </div>
                             <div class="col-5 col-md-4">
-                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }} ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
+                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }}
+                                @if ($device->reviews_count > 0)
+                                    ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
+                                    @endif
                             </div>
                             <div class="col-1 col-md-2">
                                 <div class="badge bg-dark" style="margin : 0 0.4rem; float: right">{{ $device->category->name }}</div>
@@ -128,7 +131,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-8 mb-2">
                         <a class="btn btn-primary" href="#" role="button">Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
