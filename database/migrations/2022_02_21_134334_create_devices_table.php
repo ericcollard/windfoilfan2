@@ -27,6 +27,8 @@ class CreateDevicesTable extends Migration
             $table->string('link_test')->nullable();
             $table->string('link_presentation')->nullable();
             $table->string('link_product')->nullable();
+            $table->Double('programme_start')->nullable();
+            $table->Double('programme_end')->nullable();
             $table->timestamps();
         });
     }

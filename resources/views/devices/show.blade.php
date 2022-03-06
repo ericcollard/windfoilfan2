@@ -44,6 +44,7 @@
             border-top: 1px solid #D8DEE9;
             padding-top: 1rem;
         }
+
         .userEquipment p {
             padding: 0;
             margin: 0;
@@ -61,10 +62,77 @@
 
         #post-overlay .badge {
             line-height: 1.5em;
-            padding : 0.5em 0.8em;
+            padding: 0.5em 0.8em;
+        }
+
+        .card.device {
+            background-color: #dce3f9;
+        }
+
+        .card.device .card-header {
+            background-color: #d5dbef;
+        }
+
+        .card.device .card-footer {
+            background-color: #d5dbef;
+        }
+
+
+        .barcontent {
+            height:100%;
+            display: inline-block;
+            margin:0px;
+            padding:0px;
+            height:22px;
+        }
+        .left {
+            background-color:dimgrey;
+        }
+        .center {
+            background-color:greenyellow;
+        }
+        .right {
+            background-color:dimgrey;
+        }
+        .bar {
+            min-width:100px;
+            position:relative;
+
+        }
+
+        .bar:before {
+            font-size: 0.7em;
+            color: white;
+            content : 'FREESTYLE';
+            position: absolute;
+            left:5px;
+            top: 1px;
+        }
+
+        .bar:after {
+            font-size: 0.7em;
+            color: white;
+            content : 'RACE';
+            position: absolute;
+            right:5px;
+            top: 1px;
         }
 
     </style>
+
+
+
+    <!-- third party css -->
+    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+
+    <!-- third party css end -->
+
+    <style>
+
+
+
+    </style>
+
 @endsection
 
 
@@ -101,26 +169,63 @@
 
 
                 <!-- post card -->
-                <div class="card d-block">
+                <div class="card device">
+
                     <div class="card-header">
                         <div class="row">
                             <div class="col-3">
-                                <h5>{{ __('Creation date') }}</h5> {{ $device->created_at->formatLocalized('%A %d %B %Y ') }}
+                                <h5>{{ __('Creation date') }}</h5>
                             </div>
                             <div class="col-3">
-                                <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5> {{ $device->statistics_count }} {{ __('Unique IP') }}
+                                <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5>
                             </div>
                             <div class="col-5 col-md-4">
-                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5> {{ $device->reviews_count }}
-                                @if ($device->reviews_count > 0)
-                                    ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
-                                    @endif
+                                <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5>
                             </div>
                             <div class="col-1 col-md-2">
-                                <div class="badge bg-dark" style="margin : 0 0.4rem; float: right">{{ $device->category->name }}</div>
-                                <div class="badge {{ $device->statusClass() }}" style="float: right">{{ __($device->status) }}</div>
+                                <div style="float: right">
+                                    <div class="badge bg-dark" style="margin : 0 0.4rem">{{ $device->category->name }}</div>
+                                    <div class="badge {{ $device->statusClass() }}">{{ __($device->status) }}</div>
+                                </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-3">
+                                {{ $device->created_at->formatLocalized('%A %d %B %Y ') }}
+                            </div>
+                            <div class="col-3">
+                                {{ $device->statistics_count }} {{ __('Unique IP') }}
+                            </div>
+                            <div class="col-5 col-md-4">
+                                {{ $device->reviews_count }}
+                                @if ($device->reviews_count > 0)
+                                    ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
+                                @endif
+                            </div>
+                            <div class="col-1 col-md-2">
+                                <div style="float: right">
+                                    <p>{{ __('Price') }} : {{ $device->price }} €</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <p>Progarmme : La zone verte situe le programme d'utilisation dans la fourchette FREESTYLE / FREERIDE / FREERACE / RACE</p>
+                            </div>
+                            <div class="col-6">
+                                    <?php
+                                    $fs = $device->programme_start;
+                                    $rs = $device->programme_end;
+                                    $lpc = $fs*10;
+                                    $cpc = ($rs-$fs)*10;
+                                    $rpc = 100-$rs*10;
+
+                                    echo "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
+                                    ?>
+                                </div>
+                        </div>
+
                     </div>
 
                     <div class="card-body ">
@@ -128,7 +233,60 @@
                             {!! $device->body !!}
                         </div>
                     </div>
+
+                    <div class="card-footer ">
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="mdi mdi-chart-bar"></i>
+                                <a class="" data-bs-toggle="collapse" href="#collapseTechnicaldata" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    {{ $device->technicaldatas->count() }} jeu(x) de données techniques disponibles
+                                </a>
+
+                            </div>
+                            <div class="col-6">
+                                @if ($device->link_product)<i class="mdi mdi-auto-fix"></i> <a href="{{ $device->link_product }}">{{ __('Product link') }} {{ $device->name }}</a>@endif
+
+                            </div>
+                        </div>
+
+                        <div class="row collapse "  id="collapseTechnicaldata">
+
+                            <div class="table-responsive">
+                            <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
+                                <thead>
+                                <tr>
+                                    <th>Action</th>
+                                    <th>Id</th>
+                                    <th>Device</th>
+                                    <th>Mast</th>
+                                    <th>Created</th>
+                                    <th>Created</th>
+                                    <th>Created</th>
+                                    <th>Created</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            </div>
+
+                            <div>
+                                <h3>Données techniques moyennes</h3>
+                                {{ (float)$device->{'attr3'} }}
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
                 </div>
+
+
+
+
+
+
 
                 <div class="row">
                     <div class="col-8 mb-2">
@@ -212,11 +370,6 @@
                     </div>
                 </div>
 
-
-
-
-
-
             </div><!-- end col-12-->
         </div><!-- end row-->
 
@@ -227,6 +380,36 @@
 
 @section('script-bottom')
 
+    <!-- third party js -->
+
+    <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
+    <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var table = $('#yajra-datatable').DataTable({
+                processing: true,
+                serverSide: true,
+                responsive: true,
+                iDisplayLength: 50,
+                bFilter: false,
+                dom: 'rtip',
+                ajax: "{{ route('technicaldatas.devicedata',$device ) }}",
+                columns: [
+                    {data: 'action', name: 'action'},
+                    {data: 'id', name: 'id'},
+                    {data: 'device_id', name: 'device_id'},
+                    {data: 'attr4', name: 'attr4'},
+                    {data: 'attr5', name: 'attr5'},
+                    {data: 'attr6', name: 'attr6'},
+                    {data: 'attr7', name: 'attr7'},
+                    {data: 'created_at', name: 'created_at'},
+                ]
+            });
+
+        });
+    </script>
 
 @endsection
 

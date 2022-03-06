@@ -3,6 +3,7 @@
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\TechnicaldataController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DeviceController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,11 @@ Route::get('/devices/{category}/{device}/edit', [DeviceController::class, 'edit'
 Route::patch('/devices/{category}/{device}',[DeviceController::class, 'update'])->name('device.update');
 Route::post('/devices',[DeviceController::class, 'store'])->name('device.store');
 Route::delete('/devices/{category}/{device}',[DeviceController::class, 'destroy'])->name('device.destroy');
+
+Route::get('/technicaldatas',[TechnicaldataController::class, 'index'])->name('technicaldata.index');
+Route::get('technicaldatas/devicedata/{device}', [TechnicaldataController::class, 'devicedata'])->name('technicaldatas.devicedata');
+Route::get('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'show'])->name('technicaldata.show');
+
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 

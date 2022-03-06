@@ -18,7 +18,7 @@ class CreateTechnicaldatasTable extends Migration
             $table->unsignedInteger('device_id');
             $table->text('body')->nullable();
             $table->string('serial')->nullable();
-            for ($i = 1; $i <= 25; $i++) {
+            for ($i = 3; $i <= 25; $i++) {
                 $table->Double('attr'.$i)->nullable();
             }
             $table->timestamps();

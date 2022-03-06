@@ -12,7 +12,7 @@ class Device extends Model
     use HasFactory;
 
     protected $fillable = ['name','slug','user_id','category_id','brand_id','status','body','year',
-        'price', 'link_test', 'link_presentation', 'link_product','created_at'];
+        'price', 'link_test', 'link_presentation', 'link_product','programme_start','programme_end','created_at'];
 
     protected $with = ['creator', 'category','brand'];
 

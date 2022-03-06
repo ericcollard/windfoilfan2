@@ -166,7 +166,7 @@
                     <h4 class="header-title mb-3">Messages</h4>
 
                     <div dir="ltr">
-                        <div id="high-performing-product" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                        <div id="messages-chart" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
                     </div>
 
                 </div> <!-- end card-body-->
@@ -227,7 +227,7 @@
 <script>
 
     var colors = ["#727cf5", "#e3eaef"];
-    var dataColors = $("#high-performing-product").data('colors');
+    var dataColors = $("#messages-chart").data('colors');
 
     if (dataColors) {
         colors = dataColors.split(",");
@@ -288,7 +288,7 @@
         }
     };
 
-    var chart = new ApexCharts(document.querySelector("#high-performing-product"), options);
+    var chart = new ApexCharts(document.querySelector("#messages-chart"), options);
 
     chart.render();
 

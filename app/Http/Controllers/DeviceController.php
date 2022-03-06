@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\DataTables\DevicesDataTable;
+use App\DataTables\TechnicaldatasDataTable;
 use App\Http\Requests\StoreDeviceRequest;
 use App\Http\Requests\UpdateDeviceRequest;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Device;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
 
 class DeviceController extends Controller
@@ -60,8 +62,34 @@ class DeviceController extends Controller
      */
     public function show(Category $category, Device $device)
     {
+
         $reviews = $device->reviews()->paginate(2);
-        return view('devices.show', compact('device','reviews'));
+
+        // calcul des données techniques moyennes
+
+        $technicaldatas = DB::table('technicaldatas')
+            ->select(
+                DB::raw('AVG(attr3) as attr3'),
+                DB::raw('AVG(attr4) as attr4'),
+                DB::raw('AVG(attr5) as attr5'),
+                DB::raw('AVG(attr6) as attr6'),
+                DB::raw('AVG(attr7) as attr7'),
+                DB::raw('AVG(attr8) as attr8'),
+                DB::raw('AVG(attr9) as attr9'),
+                DB::raw('AVG(attr10) as attr10'),
+                DB::raw('AVG(attr11) as attr11'),
+                DB::raw('AVG(attr12) as attr12'),
+                DB::raw('AVG(attr13) as attr13'),
+                DB::raw('AVG(attr14) as attr14'),
+                DB::raw('AVG(attr15) as attr15'),
+                DB::raw('AVG(attr16) as attr16'),
+                DB::raw('AVG(attr17) as attr17'),
+                DB::raw('AVG(attr18) as attr18'),
+            )
+            ->where('device_id',$device->id)
+            ->get();
+
+        return view('devices.show', compact('device','reviews','technicaldatas'));
     }
 
 

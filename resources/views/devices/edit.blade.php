@@ -157,11 +157,19 @@
 
 
                         <div class="row">
-                            <div class="col-lg-4  mb-3">
+                            <div class="col-lg-3  mb-3">
                                 <label for="price">{{ __('Price') }}</label>
                                 <input type="text" class="form-control" id="price" name="price" value="{{ $device->price ? $device->price : old('price') }}" ></input>
                             </div>
-                            <div class="col-lg-4  mb-3">
+                            <div class="col-lg-2  mb-3">
+                                <label for="programme_start">{{ __('programme_start') }}</label>
+                                <input type="text" class="form-control" id="programme_start" name="programme_start" value="{{ $device->programme_start ? $device->programme_start : old('programme_start') }}" ></input>
+                            </div>
+                            <div class="col-lg-2  mb-3">
+                                <label for="programme_end">{{ __('programme_end') }}</label>
+                                <input type="text" class="form-control" id="programme_end" name="programme_end" value="{{ $device->programme_end ? $device->programme_end : old('programme_end') }}" ></input>
+                            </div>
+                            <div class="col-lg-2  mb-3">
                                 <label for="device_status">{{ __('Status') }}*</label>
                                 <select name="status" id="device_status" class="form-control" required>
                                     <option value="">{{ __('Choose a status') }} ...</option>
@@ -170,7 +178,7 @@
                                     <option value='Hidden' {{ $device->status ? ($device->status == 'Hidden' ? 'selected' : '') : ( old('status') == 'Hidden' ? 'selected' : '') }}>{{ __('Hidden') }}</option>
                                 </select>
                             </div>
-                            <div class="col-lg-4  mb-3">
+                            <div class="col-lg-3  mb-3">
                                 @if ($method != 'POST')
                                     <label for="created_at">{{ __('Created at') }}</label>
                                     <input class="form-control" name="created_at" id="created_at" type="text" value="{{ $device->created_at ? $device->created_at->format('d-m-Y H:i:s') : old('created_at') }}"></input>
