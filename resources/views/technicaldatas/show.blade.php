@@ -31,6 +31,7 @@
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.categories') }}">{{ __('Posts') }}</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.category',$technicaldata->device->category) }}">{{ $technicaldata->device->category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('device.category',$technicaldata->device->category) }}?from={{ $technicaldata->device->brand->slug }}">{{ $technicaldata->device->brand->name }}</a></li>
                             <li class="breadcrumb-item active"><a href="{{ $technicaldata->device->path() }}">{{ $technicaldata->device->name }}</a></li>
                             <li class="breadcrumb-item active">{{ __('Technical data') }}</li>
                             <li class="breadcrumb-item active">{{ $technicaldata->id }}</li>

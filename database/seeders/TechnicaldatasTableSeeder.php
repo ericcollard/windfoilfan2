@@ -216,7 +216,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 7,
                 'device_id' => 7,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série Sonic',
                 'attr3' => NULL,
                 'attr4' => 100.0,
                 'attr5' => NULL,
@@ -241,14 +241,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2021-01-22 20:56:03',
+                'updated_at' => '2022-03-10 18:02:52',
             ),
             7 => 
             array (
                 'id' => 8,
                 'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série 2020',
                 'attr3' => NULL,
                 'attr4' => 94.5,
                 'attr5' => 2.54,
@@ -273,15 +273,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2021-02-11 07:59:40',
+                'updated_at' => '2022-03-10 17:45:34',
             ),
             8 => 
             array (
                 'id' => 9,
-                'device_id' => 9,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Proto 1 2019',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
                 'attr6' => 17.9,
@@ -305,15 +305,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-10-04 18:57:17',
-                'updated_at' => '2020-08-03 16:08:32',
+                'updated_at' => '2022-03-10 17:44:51',
             ),
             9 => 
             array (
                 'id' => 10,
-                'device_id' => 10,
+                'device_id' => 11,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'V2 Série',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.13,
                 'attr6' => 18.0,
@@ -337,14 +337,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-08-15 18:57:17',
-                'updated_at' => '2020-03-22 18:01:27',
+                'updated_at' => '2022-03-10 17:43:40',
             ),
             10 => 
             array (
                 'id' => 11,
                 'device_id' => 11,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'V1 Série',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.13,
@@ -369,15 +369,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-04-15 18:57:17',
-                'updated_at' => '2020-04-27 07:21:40',
+                'updated_at' => '2022-03-10 17:38:43',
             ),
             11 => 
             array (
                 'id' => 12,
-                'device_id' => 12,
+                'device_id' => 11,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Présérie 2019',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 4.96,
                 'attr6' => 18.0,
@@ -401,7 +401,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-03-15 19:57:17',
-                'updated_at' => '2020-08-03 16:08:39',
+                'updated_at' => '2022-03-10 17:42:18',
             ),
             12 => 
             array (
@@ -3960,7 +3960,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 124,
                 'device_id' => 130,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série Avril 2020 Sonic',
                 'attr3' => NULL,
                 'attr4' => NULL,
                 'attr5' => NULL,
@@ -3985,7 +3985,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-04-06 20:15:55',
-                'updated_at' => '2021-06-14 14:19:46',
+                'updated_at' => '2022-03-10 17:55:35',
             ),
             124 => 
             array (
@@ -4182,9 +4182,9 @@ class TechnicaldatasTableSeeder extends Seeder
             130 => 
             array (
                 'id' => 131,
-                'device_id' => 137,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+            'serial' => 'proto 2 (Serial FM95 001 191209) Dec 2019',
                 'attr3' => NULL,
                 'attr4' => 96.0,
                 'attr5' => 4.96,
@@ -4209,7 +4209,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-12-22 11:48:11',
-                'updated_at' => '2020-04-25 06:17:34',
+                'updated_at' => '2022-03-10 17:46:48',
             ),
             131 => 
             array (
@@ -4438,9 +4438,9 @@ class TechnicaldatasTableSeeder extends Seeder
             138 => 
             array (
                 'id' => 139,
-                'device_id' => 145,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série FM95 015 200113 Avril 2020 Rejeté',
                 'attr3' => NULL,
                 'attr4' => 94.5,
                 'attr5' => NULL,
@@ -4465,7 +4465,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-04-10 06:33:32',
-                'updated_at' => '2020-06-11 15:40:20',
+                'updated_at' => '2022-03-10 17:48:10',
             ),
             139 => 
             array (
@@ -5078,9 +5078,9 @@ class TechnicaldatasTableSeeder extends Seeder
             158 => 
             array (
                 'id' => 159,
-                'device_id' => 165,
+                'device_id' => 7,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto Cobra 1 Dec 2020',
                 'attr3' => NULL,
                 'attr4' => 99.4,
                 'attr5' => NULL,
@@ -5105,14 +5105,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-12-22 10:53:50',
-                'updated_at' => '2020-12-22 10:53:50',
+                'updated_at' => '2022-03-10 17:53:21',
             ),
             159 => 
             array (
                 'id' => 160,
-                'device_id' => 166,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto 1 Cobra Déc 2020',
                 'attr3' => NULL,
                 'attr4' => 94.2,
                 'attr5' => NULL,
@@ -5137,14 +5137,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-12-22 11:07:36',
-                'updated_at' => '2020-12-22 11:08:25',
+                'updated_at' => '2022-03-10 17:49:30',
             ),
             160 => 
             array (
                 'id' => 161,
-                'device_id' => 167,
+                'device_id' => 130,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto Cobra 1 Dec 2020',
                 'attr3' => NULL,
                 'attr4' => 90.4,
                 'attr5' => NULL,
@@ -5169,7 +5169,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-12-22 11:23:44',
-                'updated_at' => '2020-12-22 11:23:44',
+                'updated_at' => '2022-03-10 17:56:12',
             ),
             161 => 
             array (
@@ -5206,9 +5206,9 @@ class TechnicaldatasTableSeeder extends Seeder
             162 => 
             array (
                 'id' => 163,
-                'device_id' => 169,
+                'device_id' => 7,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto Cobra 2 février 2021',
                 'attr3' => NULL,
                 'attr4' => 99.4,
                 'attr5' => 2.56,
@@ -5233,14 +5233,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-03 17:03:42',
-                'updated_at' => '2021-02-03 17:09:45',
+                'updated_at' => '2022-03-10 17:54:14',
             ),
             163 => 
             array (
                 'id' => 164,
-                'device_id' => 170,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto 2 Cobra Fev 2021',
                 'attr3' => NULL,
                 'attr4' => 94.0,
                 'attr5' => 2.41,
@@ -5265,14 +5265,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-03 17:27:43',
-                'updated_at' => '2021-02-11 07:57:17',
+                'updated_at' => '2022-03-10 17:50:47',
             ),
             164 => 
             array (
                 'id' => 165,
-                'device_id' => 171,
+                'device_id' => 130,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto Cobra 2 février 2021',
                 'attr3' => NULL,
                 'attr4' => 90.5,
                 'attr5' => NULL,
@@ -5297,7 +5297,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-03 17:42:06',
-                'updated_at' => '2021-02-03 17:42:06',
+                'updated_at' => '2022-03-10 17:56:59',
             ),
             165 => 
             array (
@@ -5494,9 +5494,9 @@ class TechnicaldatasTableSeeder extends Seeder
             171 => 
             array (
                 'id' => 172,
-                'device_id' => 179,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+            'serial' => 'Présérie Cobra (UD 0001) Avril 2021',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -5521,7 +5521,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-04-20 10:44:01',
-                'updated_at' => '2021-04-20 10:44:01',
+                'updated_at' => '2022-03-10 17:58:15',
             ),
             172 => 
             array (
@@ -5624,12 +5624,12 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 176,
                 'device_id' => 183,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => NULL,
-                'attr4' => NULL,
+                'serial' => 'Mesures Sept 2021',
+                'attr3' => 1.0,
+                'attr4' => 93.0,
                 'attr5' => NULL,
-                'attr6' => NULL,
-                'attr7' => NULL,
+                'attr6' => 17.8,
+                'attr7' => 13.65,
                 'attr8' => 8.0,
                 'attr9' => 5.0,
                 'attr10' => 8.0,
@@ -5638,18 +5638,18 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr13' => 8.0,
                 'attr14' => 6.0,
                 'attr15' => 8.0,
-                'attr16' => NULL,
+                'attr16' => 4.87,
                 'attr17' => NULL,
-                'attr18' => NULL,
-                'attr19' => NULL,
-                'attr20' => NULL,
-                'attr21' => NULL,
+                'attr18' => 3.11,
+                'attr19' => 2302.3141334702,
+                'attr20' => 1603.8129260288,
+                'attr21' => 68.235460399561,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-06-15 10:13:12',
-                'updated_at' => '2021-06-17 13:17:24',
+                'updated_at' => '2022-03-10 18:48:26',
             ),
             176 => 
             array (
@@ -5718,9 +5718,9 @@ class TechnicaldatasTableSeeder extends Seeder
             178 => 
             array (
                 'id' => 179,
-                'device_id' => 186,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'E26 TE 0005 Sept 2021',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -5745,46 +5745,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-09-28 16:09:38',
-                'updated_at' => '2021-09-28 16:09:38',
+                'updated_at' => '2022-03-10 17:59:13',
             ),
             179 => 
             array (
-                'id' => 180,
-                'device_id' => 187,
-                'body' => NULL,
-                'serial' => NULL,
-                'attr3' => NULL,
-                'attr4' => 93.0,
-                'attr5' => NULL,
-                'attr6' => 17.8,
-                'attr7' => 13.65,
-                'attr8' => NULL,
-                'attr9' => NULL,
-                'attr10' => NULL,
-                'attr11' => NULL,
-                'attr12' => NULL,
-                'attr13' => NULL,
-                'attr14' => NULL,
-                'attr15' => NULL,
-                'attr16' => 4.87,
-                'attr17' => NULL,
-                'attr18' => 3.11,
-                'attr19' => 2302.3141334702,
-                'attr20' => 1603.8129260288,
-                'attr21' => 68.235460399561,
-                'attr22' => NULL,
-                'attr23' => NULL,
-                'attr24' => NULL,
-                'attr25' => NULL,
-                'created_at' => '2021-09-28 16:11:32',
-                'updated_at' => '2021-09-28 16:14:11',
-            ),
-            180 => 
-            array (
                 'id' => 181,
-                'device_id' => 188,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'TE GA 003 Oct 2021',
                 'attr3' => NULL,
                 'attr4' => 95.5,
                 'attr5' => NULL,
@@ -5809,9 +5777,9 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-10-01 06:09:16',
-                'updated_at' => '2021-10-01 06:09:16',
+                'updated_at' => '2022-03-10 18:00:30',
             ),
-            181 => 
+            180 => 
             array (
                 'id' => 182,
                 'device_id' => 189,
@@ -5843,7 +5811,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-10-14 11:10:48',
                 'updated_at' => '2021-11-06 17:57:48',
             ),
-            182 => 
+            181 => 
             array (
                 'id' => 183,
                 'device_id' => 190,
@@ -5875,7 +5843,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-05 15:30:12',
                 'updated_at' => '2021-11-05 16:50:06',
             ),
-            183 => 
+            182 => 
             array (
                 'id' => 184,
                 'device_id' => 191,
@@ -5907,7 +5875,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-06 17:57:20',
                 'updated_at' => '2021-11-06 18:52:00',
             ),
-            184 => 
+            183 => 
             array (
                 'id' => 185,
                 'device_id' => 192,
@@ -5939,12 +5907,12 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-09 20:58:14',
                 'updated_at' => '2021-11-11 13:30:10',
             ),
-            185 => 
+            184 => 
             array (
                 'id' => 186,
-                'device_id' => 193,
+                'device_id' => 7,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Proto PITCH TEST Nov 2021',
                 'attr3' => NULL,
                 'attr4' => 97.5,
                 'attr5' => NULL,
@@ -5969,14 +5937,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-11-13 16:36:47',
-                'updated_at' => '2021-11-13 16:38:25',
+                'updated_at' => '2022-03-10 18:02:19',
             ),
-            186 => 
+            185 => 
             array (
                 'id' => 187,
-                'device_id' => 195,
+                'device_id' => 8,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'GEN 2 Série Nov 2021',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -6001,9 +5969,9 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-11-16 19:26:37',
-                'updated_at' => '2021-11-16 19:26:37',
+                'updated_at' => '2022-03-10 18:01:14',
             ),
-            187 => 
+            186 => 
             array (
                 'id' => 188,
                 'device_id' => 196,
@@ -6035,7 +6003,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-16 19:30:06',
                 'updated_at' => '2022-03-10 17:30:28',
             ),
-            188 => 
+            187 => 
             array (
                 'id' => 189,
                 'device_id' => 54,
@@ -6067,7 +6035,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-19 15:33:56',
                 'updated_at' => '2022-03-10 17:28:31',
             ),
-            189 => 
+            188 => 
             array (
                 'id' => 190,
                 'device_id' => 168,
@@ -6099,12 +6067,12 @@ class TechnicaldatasTableSeeder extends Seeder
                 'created_at' => '2021-11-19 15:35:48',
                 'updated_at' => '2022-03-10 17:00:18',
             ),
-            190 => 
+            189 => 
             array (
                 'id' => 191,
-                'device_id' => 199,
+                'device_id' => 7,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'GEN 2 Série COBRA Dec 2021',
                 'attr3' => NULL,
                 'attr4' => 100.0,
                 'attr5' => NULL,
@@ -6129,14 +6097,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-12-07 14:24:12',
-                'updated_at' => '2021-12-07 14:24:12',
+                'updated_at' => '2022-03-10 18:03:35',
             ),
-            191 => 
+            190 => 
             array (
                 'id' => 192,
-                'device_id' => 200,
+                'device_id' => 130,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série Cobra GEN 2 déc 2021',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -6161,7 +6129,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-12-07 14:27:43',
-                'updated_at' => '2021-12-07 14:27:43',
+                'updated_at' => '2022-03-10 18:05:16',
             ),
         ));
         

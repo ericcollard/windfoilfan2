@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Models\Category;
 use App\Models\PostCategory;
+use App\Models\Technicaldata;
+use App\Observers\TechnicaldataObserver;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -43,5 +45,8 @@ class AppServiceProvider extends ServiceProvider
             $view->with('postcategories', $postcategories)
                 ->with('devicecategories', $devicecategories);
         });
+
+        Technicaldata::observe(TechnicaldataObserver::class);
+
     }
 }

@@ -400,101 +400,6 @@ class ReviewsTableSeeder extends Seeder
         ),
         8 => 
         array (
-            'id' => 9,
-            'device_id' => 12,
-            'user_id' => 1,
-            'title' => 'Windfoil - Test du Phantom IRIS F',
-            'body' => '<h4>Conditions des tests</h4>
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-FPxEEd0vnw.jpg" alt="test phantom iris f" /></p>
-<p>Les lecques - 6 à 8 knt - Horue Airtime - Voile Hyperglide 8m, cale de 0.6+0.8 sous le stab</p>
-<p>La ciotat - 9 à 18 knt - Horue Airtime - Voile Xo Fly 6.6, cale de 0.6 sous le stab</p>
-<p>La ciotat - 12 à 15 knt Sud - Tabou Airide  - Voile Phantom Iris X 7.4, cale de 0.8 sous le stab</p>
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-53dkkG6FlR.jpg" alt="test phantom iris f" /></p>
-<h4>Montage</h4>
-<p>Le montage se fait sans aucun problème. Les ajustement sont assez précis, même si notre modèle avait du jeu sur la jonction mat / fuselage. Un morceau de monofilm comme au bon vieux temps des boitiers tuttle en slalom et c\'est parti ! Je précise que le même jeu a été détecté sur le modèle de pré-série et le modèle de série. Avec un assemblage cylindrique, il est difficile de ne pas avoir de jeu ... c\'est d\'ailleurs pour cela que des marques comme Starboard et Alpine ont ajouté des vis latérales pour serrer le boitier.</p>
-<img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-716sB8VAjw.jpg" alt="Iris F Phantom" />
-<img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-xxJG54Mt0V.jpg" alt="Iris F Phantom" />
-<p>Le foil nous a été fourni avec des cales de stab qui permettent de régler l\'incidence de ce dernier. Je disposais de 4 cales entre 0,4 et 0,8mm. En fonction des conditions, j\'ai calé entre 0,6 et 1,5mm en superposant les cales. Comme le stab est situé sous le fuselage et que le foil est en standard un peu trop pied arrière, il a fallu caler sous la vis avant du stab pour donner plus d\'incidence à l\'aile.</p>
-<p>Sur la photo suivante, on voit nettement le petit décrochage dû à la cale sous la vis avant</p>
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-tbN7UEfMvg.jpg" alt="Test Phantom IRIS F Foil" /></p>
-<p>En terme de qualité d\'assemblage, notons aussi que les zones d\'accostage des ailes mériteraient une finition plus soignée, ne serait ce que pour avoir un parfait respect des angles d\'incidence. </p>
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-FYd7B4lZ5T.jpg" alt="Iris F Phantom" /> <img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-uWBKVH5Bef.jpg" alt="Iris F Phantom" /></p>
-<h4>Caractéristiques géométriques</h4>
-<ul>
-<li>Longueur du mat : 96cm</li>
-<li>Longueur du fuselage : 90cm</li>
-<li>Poids total : 4.96 kg</li>
-<li>Envergure de l\'aile : 93cm</li>
-</ul>
-<h4>Les tests sur l\'eau</h4>
-<p>Avant d\'aller plus avant, je précise que ces tests ont été réalisés avec un prototype, puis un modèle de série. Suite au test du prototype, nous avions émis des doutes sur la rigidité en torsion du mat. Cet élément très important devait être modifié sur la série. Le test du modèle de série n\'a pas révélé d\'évolution significative sur ce point. Les mesures au banc ont d\'ailleurs confirmé une évolution minime des caractéristiques mécaniques. </p>
-<h4>Décollage</h4>
-<p>L\'IRIS F fait partie des foils qui décollent très tôt, d\'abord parce que l\'aile est plutôt imposante, mais aussi et surtout parce que qu\'il a peu de trainée, et qu\'il offre un appui conséquent sur le stab (fuselage long).<br />Attention toutefois, comme tous les foils qui utilisent des ailes à grand allongement (Sb pro race, loke 1000, AFS 105, Sword RS etc.), décoller dans le très light demande un peu de bagage technique car il faut générer de la vitesse, et continuer à accélérer même après de décollage pour atteindre une vitesse critique et ne plus retomber. Ce sont donc des foils avec lesquels on ne conseille pas de débuter la discipline.</p>
-<h4>Portance et réglage du stab</h4>
-<p>Dès que l\'on a atteint la vitesse critique de vol, l\'IRIS génère une portance assez franche, avec pas mal d\'appui sous le pied arrière. C’est plutôt assez rassurant et confortable dans le vent très léger. Ca permet aussi aux pratiquants un peu \'bourrins\' sur le pied arrière de se sentir à l\'aise dans le light. Pour que cela fonctionne dans ces conditions, il m\'a quand même fallu caler le stab autour de 1.5mm, et garder toujours de l\'appui sous le pied arrière pour ne pas replaquer. Il va sans dire qu\'il reviendrait au même de reculer les straps, mais avec cette cale amovible, il est plus rapide d\'adapter le foil aux différentes conditions de vent. Dans des conditions un peu plus soutenues, je suis revenu à 0,6mm de cale pour avoir un Foil moins fougueux donc plus contrôlable.</p>
-<h4>Caractères principaux</h4>
-<p>Dès les premiers mètres en l’air, deux caractères principaux apparaissent immédiatement :<br />Le premier, c’est une sensation de glisse assez fine et  plaisante … on rejoint un petit peu les sensations que l’on avait sur le Select, le sword et le F4 avec très peu de trainée dans le vent léger. <br />Deuxième perception immédiate : une certaine souplesse de l’ensemble, qui se traduit par un comportement un peu élastique sous les pieds. Cette sensation est plus marquée lorsqu\'on l\'utilise en grande voile (8m). C\'est moins sensible en petite toile (5.8m2). </p>
-<h4>Allures</h4>
-<p>Le foil accélère facilement, et atteint rapidement une vitesse moyenne très honorable sans forcer. Sur des<strong> allures travers</strong>, lorsque la vitesse augmente, la souplesse se traduit par un foil qui dandine un peu. Ca devient de plus en plus marqué avec la vitesse, et ce d’autant plus que le clapot se forme. C’est une sensation assez proche de qu’on avait déjà eu sur le foil alpine 2018, ou le Select avec le fuselage alu. Cette similitude de sensation n\'est pas un hazard puisque les options de conception sont proches : mat fin en tête &gt; moment inertie faible &gt; manque de rigidité en torsion. La conséquence directe est un foil qui devient délicat à piloter quand le vent monte ... en comparaison avec nos références (Starboard, Taaroa, AFS)</p>
-<p>Toujours à cette allure travers, le foil devient rapidement puissant, et on sent bien qu\'avec cette grande aile, il va falloir être très attentif si on compte faire monter le compteur. Il est prévu une aile plus petite, et je pense que ce ne sera pas un luxe.</p>
-<p>Lorsqu’on serre <strong>au près</strong>, le foil se cale un peu plus, et, avec la vitesse qui baisse, les choses deviennent beaucoup plus facile à contrôler. Là aussi, on ressent toujours l’élasticité mais elle est moins gênante. À cette allure, l’appui général est très bon, il est très facile de remonter au vent tout en poussant sur les jambes. C’est clairement l’allure la plus agréable avec ce modèle. L\'aptitude à remonter au vent est d\'ailleurs très bonne, et on s\'approche assez près de ce que l\'on observe sur les modèles de course.</p>
-<p>Lorsque l’on veut lâcher les chevaux, et abattre <strong>au largue</strong>, cela re-devient plus technique, notamment à cause de l’élasticité dont j’ai parlé précédemment. J’avoue qu’à cette allure, je n’ai pas poussé très loin car je n’aime pas me mettre dans le rouge : entre la puissance de l’aile et le manque de contrôle, je ne me sentais pas d\'emmener la machine au delà de 23-24 knt. On sent toutefois que le potentiel est bien plus élevé avec cette géométrie, mais il faut soit aimer se faire peur, soit passer sur le modèle en M40J.</p>
-<p>Dans les <strong>trous d’air</strong>, l\'Iris allonge assez loin, et surtout fait montre d’une sensation de glisse assez fine qui permet de les franchir avec facilité. Cette fois, la dynamique du mat est un atout et permet de pomper avec les pieds de façon efficace, même si l\'aile présente un peu moins de portance que les modèles plus extrêmes comme la Starboard 1000, ou la Loke 1000.</p>
-<h4>Stabilité</h4>
-<p>La stabilité longitudinale est plutôt très bonne, comme souvent avec les longs fuselages. Dit autrement, c’est un foil qui est facile à stabiliser et avec lequel n\'importe quel pratiquant gérera facilement l’assiette.</p>
-<p>En ce qui concerne la stabilité latérale, c\'est un net cran en dessous de nos références. Le manque de rigidité du mat influe de façon substentielle sur ce paramètre. Comme avec le select, le foil est très libre sur le plan transversal (mise à la contre-gîte facile), mais il est difficile de se caler dans une position. Dans la houle, on a même eu quelques départ à la gîte involontaires. </p>
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-SLlLdXQRQz.jpg" alt="Test Phantom IRIS F Foil" /></p>
-<h4>Etude technique</h4>
-<p>Compte tenu du comportement lors du test, nous voulions savoir d\'où venait cette sensation d\'élasticité qui nous génait dans le contrôle du foil. Après avoir mesuré le Phantom sous toutes les coutures, nous concluons que cela provient d\'un net manque de rigidité en torsion du mat, au regard de la taille du fuselage.</p>
-<p>En comparaison avec les nos autres foils référence, le Phantom est plutôt au dessus de la moyenne en ce qui concerne la <strong>rigidité en flexion</strong> du mat. Ce n\'est pas le plus rigide (en gros 20% plus souple que le plus rigide), mais il est dans le peloton de tête sur ce critère.</p>
-<p>En ce qui concerne la <strong>rigidité en torsion</strong>, par contre, il est clairement dans le peloton de queue avec entre 30% et 40% de rigidité en moins par rapport aux autres foils du marché. Ceci, combiné avec un fuselage putôt long, explique parfaitement les sensations que nous avons eu. </p>
-<h4>Bilan</h4>
-<p>La sensation générale est celle d\'un foil plutôt puissant, avec une très bonne glisse, plutôt optimisé pour les allures pointues (près), mais manquant de rigidité générale en comparaison avec nos modèles de référence (AFS, Taaroa, Starboard, F4 2019). Sur un programme Free-race, c\'est un point très génant. </p>
-<p>Pour le développement de son foil, Phantom a fait le choix de la même géométrie que le foil de course, mais avec des matériaux moins onéreux (T700 au lieu du M40J), et un fuselage moins long. Ce choix permet d\'offrir un foil avec une bonne sensation de glisse et une bonne puissance, mais on le paye inévitablement sur le contrôle vu la finesse des profils.</p>
-<p>Dans des conditions de mer et de vent faible, cela reste du niveau de la sensation, et ne pénalise pas les performances. Dans des conditions plus musclées, il faudra faire preuve de plus de cœur pour se lancer aux allures travers et abattu. C\'est là que la rigidité et le contrôle supérieur de la version en M40J fera certainement la différence. Le comparatif va être très intéressant !</p>
-<p>Les PLUS</p>
-<ul>
-<li>Glisse</li>
-<li>Allonge dans les moles</li>
-<li>Perf dans le light</li>
-</ul>
-<div>Les MOINS</div>
-<div>
-<ul>
-<li>Contrôle délicat</li>
-<li>Interfaces mécaniques (liaison mat/fuselage et accostage des ailes)</li>
-</ul>
-<h4>Et après</h4>
-</div>
-<p>Voici les éléments qui nous paraissent nécessaire de re-travailler sur ce modème</p>
-<ul>
-<ul>
-<ul>
-<li>ajustement de la connexion entre le mat et le fuselage (jeu)
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-xKIP4vFmey.jpg" alt="test phantom iris f" /></p>
-</li>
-<li>fragilité du nez de fuselage (trop fin)</li>
-<li>anodisation qui marque autour des vis de jonction fuselage mat dès les premiers bords
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-CL5zWQvxnp.jpg" alt="test phantom iris f" /></p>
-</li>
-<li>système de cale au niveau du stab à industrialiser
-<p><img src="/storage/photos/1/2019-02/phantom-iris-f-proto-2019-tq9U2yKx01.jpg" alt="test phantom iris f" /></p>
-</li>
-<li>mise en place d\'hélicoil dans les filetages du fuselage</li>
-<li>Raidissement de la rigidité en torsion du mat</li>
-<li>Meilleur finition des accostages d\'ailes</li>
-</ul>
-</ul>
-</ul>',
-            'test_equipment' => 'nc.',
-            'test_duration' => 3,
-            'test_conditions' => 'nc.',
-            'test_place' => 'nc.',
-            'created_at' => '2019-02-16 18:48:35',
-            'updated_at' => '2020-03-26 22:41:56',
-        ),
-        9 => 
-        array (
             'id' => 10,
             'device_id' => 13,
             'user_id' => 1,
@@ -533,7 +438,7 @@ class ReviewsTableSeeder extends Seeder
             'created_at' => '2019-05-27 09:00:02',
             'updated_at' => '2020-03-26 22:41:56',
         ),
-        10 => 
+        9 => 
         array (
             'id' => 11,
             'device_id' => 15,
@@ -611,7 +516,7 @@ class ReviewsTableSeeder extends Seeder
     'created_at' => '2019-03-28 17:07:23',
     'updated_at' => '2020-04-03 16:44:10',
 ),
-11 => 
+10 => 
 array (
     'id' => 12,
     'device_id' => 16,
@@ -680,7 +585,7 @@ array (
 'created_at' => '2018-12-03 17:28:57',
 'updated_at' => '2020-04-21 13:45:24',
 ),
-12 => 
+11 => 
 array (
 'id' => 13,
 'device_id' => 20,
@@ -730,7 +635,7 @@ array (
 'created_at' => '2018-10-01 22:38:10',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-13 => 
+12 => 
 array (
 'id' => 14,
 'device_id' => 23,
@@ -757,7 +662,7 @@ array (
 'created_at' => '2018-07-05 21:04:31',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-14 => 
+13 => 
 array (
 'id' => 15,
 'device_id' => 24,
@@ -813,7 +718,7 @@ array (
 'created_at' => '2018-07-05 21:04:31',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-15 => 
+14 => 
 array (
 'id' => 16,
 'device_id' => 25,
@@ -840,7 +745,7 @@ array (
 'created_at' => '2018-08-24 12:33:16',
 'updated_at' => '2020-10-22 15:36:18',
 ),
-16 => 
+15 => 
 array (
 'id' => 17,
 'device_id' => 26,
@@ -876,7 +781,7 @@ array (
 'created_at' => '2018-08-24 12:33:16',
 'updated_at' => '2020-03-30 20:11:06',
 ),
-17 => 
+16 => 
 array (
 'id' => 18,
 'device_id' => 27,
@@ -921,7 +826,7 @@ array (
 'created_at' => '2018-07-08 07:56:37',
 'updated_at' => '2020-04-03 17:00:59',
 ),
-18 => 
+17 => 
 array (
 'id' => 19,
 'device_id' => 28,
@@ -947,7 +852,7 @@ array (
 'created_at' => '2018-06-02 06:35:28',
 'updated_at' => '2020-04-03 17:01:39',
 ),
-19 => 
+18 => 
 array (
 'id' => 20,
 'device_id' => 29,
@@ -1011,7 +916,7 @@ array (
 'created_at' => '2018-05-28 19:42:01',
 'updated_at' => '2020-04-03 17:02:08',
 ),
-20 => 
+19 => 
 array (
 'id' => 21,
 'device_id' => 30,
@@ -1066,7 +971,7 @@ array (
 'created_at' => '2018-04-25 05:31:41',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-21 => 
+20 => 
 array (
 'id' => 22,
 'device_id' => 32,
@@ -1100,7 +1005,7 @@ array (
 'created_at' => '2018-04-28 09:20:55',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-22 => 
+21 => 
 array (
 'id' => 23,
 'device_id' => 34,
@@ -1137,7 +1042,7 @@ array (
 'created_at' => '2018-04-28 09:20:55',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-23 => 
+22 => 
 array (
 'id' => 24,
 'device_id' => 35,
@@ -1189,7 +1094,7 @@ array (
 'created_at' => '2018-02-12 14:50:06',
 'updated_at' => '2020-04-03 17:04:58',
 ),
-24 => 
+23 => 
 array (
 'id' => 25,
 'device_id' => 37,
@@ -1239,7 +1144,7 @@ array (
 'created_at' => '2018-02-12 14:33:20',
 'updated_at' => '2020-09-24 16:49:15',
 ),
-25 => 
+24 => 
 array (
 'id' => 26,
 'device_id' => 42,
@@ -1290,7 +1195,7 @@ array (
 'created_at' => '2017-11-06 16:08:50',
 'updated_at' => '2020-04-03 17:06:29',
 ),
-26 => 
+25 => 
 array (
 'id' => 27,
 'device_id' => 44,
@@ -1304,7 +1209,7 @@ array (
 'created_at' => '2016-10-18 14:37:48',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-27 => 
+26 => 
 array (
 'id' => 28,
 'device_id' => 45,
@@ -1318,7 +1223,7 @@ array (
 'created_at' => '2017-06-26 21:14:26',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-28 => 
+27 => 
 array (
 'id' => 29,
 'device_id' => 46,
@@ -1355,7 +1260,7 @@ array (
 'created_at' => '2017-08-22 11:47:21',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-29 => 
+28 => 
 array (
 'id' => 30,
 'device_id' => 47,
@@ -1370,7 +1275,7 @@ array (
 'created_at' => '2017-04-24 00:34:25',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-30 => 
+29 => 
 array (
 'id' => 31,
 'device_id' => 53,
@@ -1417,7 +1322,7 @@ array (
 'created_at' => '2017-07-30 23:30:27',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-31 => 
+30 => 
 array (
 'id' => 32,
 'device_id' => 54,
@@ -1461,7 +1366,7 @@ array (
 'created_at' => '2017-07-26 13:35:13',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-32 => 
+31 => 
 array (
 'id' => 33,
 'device_id' => 54,
@@ -1506,7 +1411,7 @@ array (
 'created_at' => '2017-06-08 23:34:16',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-33 => 
+32 => 
 array (
 'id' => 34,
 'device_id' => 56,
@@ -1527,7 +1432,7 @@ array (
 'created_at' => '2017-05-03 00:10:29',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-34 => 
+33 => 
 array (
 'id' => 35,
 'device_id' => 57,
@@ -1548,7 +1453,7 @@ array (
 'created_at' => '2017-05-03 00:10:29',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-35 => 
+34 => 
 array (
 'id' => 36,
 'device_id' => 58,
@@ -1562,7 +1467,7 @@ array (
 'created_at' => '2017-09-18 22:29:46',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-36 => 
+35 => 
 array (
 'id' => 37,
 'device_id' => 59,
@@ -1584,7 +1489,7 @@ array (
 'created_at' => '2017-04-24 00:24:38',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-37 => 
+36 => 
 array (
 'id' => 38,
 'device_id' => 60,
@@ -1611,7 +1516,7 @@ array (
 'created_at' => '2017-05-17 20:41:19',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-38 => 
+37 => 
 array (
 'id' => 39,
 'device_id' => 61,
@@ -1625,7 +1530,7 @@ array (
 'created_at' => '2017-05-16 14:48:05',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-39 => 
+38 => 
 array (
 'id' => 40,
 'device_id' => 62,
@@ -1639,7 +1544,7 @@ array (
 'created_at' => '2017-05-16 14:41:00',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-40 => 
+39 => 
 array (
 'id' => 41,
 'device_id' => 63,
@@ -1653,7 +1558,7 @@ array (
 'created_at' => '2016-11-02 21:32:20',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-41 => 
+40 => 
 array (
 'id' => 42,
 'device_id' => 64,
@@ -1682,7 +1587,7 @@ array (
 'created_at' => '2016-10-01 21:20:39',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-42 => 
+41 => 
 array (
 'id' => 43,
 'device_id' => 65,
@@ -1711,7 +1616,7 @@ array (
 'created_at' => '2016-10-01 21:20:39',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-43 => 
+42 => 
 array (
 'id' => 44,
 'device_id' => 66,
@@ -1744,7 +1649,7 @@ array (
 'created_at' => '2016-08-22 06:30:50',
 'updated_at' => '2020-03-26 22:41:57',
 ),
-44 => 
+43 => 
 array (
 'id' => 45,
 'device_id' => 68,
@@ -1758,7 +1663,7 @@ array (
 'created_at' => '2017-05-16 12:19:31',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-45 => 
+44 => 
 array (
 'id' => 46,
 'device_id' => 76,
@@ -1772,7 +1677,7 @@ array (
 'created_at' => '2017-05-16 12:19:31',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-46 => 
+45 => 
 array (
 'id' => 47,
 'device_id' => 77,
@@ -1817,7 +1722,7 @@ array (
 'created_at' => '2019-06-07 09:39:47',
 'updated_at' => '2020-04-03 16:37:58',
 ),
-47 => 
+46 => 
 array (
 'id' => 48,
 'device_id' => 78,
@@ -1847,7 +1752,7 @@ array (
 'created_at' => '2019-04-23 15:27:55',
 'updated_at' => '2020-04-03 16:42:35',
 ),
-48 => 
+47 => 
 array (
 'id' => 49,
 'device_id' => 79,
@@ -1884,7 +1789,7 @@ array (
 'created_at' => '2017-08-21 21:40:00',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-49 => 
+48 => 
 array (
 'id' => 50,
 'device_id' => 80,
@@ -1926,7 +1831,7 @@ array (
 'created_at' => '2019-05-06 21:15:19',
 'updated_at' => '2020-04-03 16:40:49',
 ),
-50 => 
+49 => 
 array (
 'id' => 51,
 'device_id' => 81,
@@ -1956,7 +1861,7 @@ array (
 'created_at' => '2018-08-13 23:18:56',
 'updated_at' => '2020-04-03 17:00:24',
 ),
-51 => 
+50 => 
 array (
 'id' => 52,
 'device_id' => 82,
@@ -2001,7 +1906,7 @@ array (
 'created_at' => '2018-03-28 06:40:53',
 'updated_at' => '2020-04-03 17:04:26',
 ),
-52 => 
+51 => 
 array (
 'id' => 53,
 'device_id' => 83,
@@ -2031,7 +1936,7 @@ array (
 'created_at' => '2018-10-01 22:14:00',
 'updated_at' => '2020-04-03 16:56:43',
 ),
-53 => 
+52 => 
 array (
 'id' => 54,
 'device_id' => 84,
@@ -2073,7 +1978,7 @@ array (
 'created_at' => '2017-04-11 17:09:57',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-54 => 
+53 => 
 array (
 'id' => 55,
 'device_id' => 85,
@@ -2087,7 +1992,7 @@ array (
 'created_at' => '2016-12-12 20:38:07',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-55 => 
+54 => 
 array (
 'id' => 56,
 'device_id' => 86,
@@ -2156,7 +2061,7 @@ array (
 'created_at' => '2017-10-02 12:38:26',
 'updated_at' => '2020-04-03 17:09:22',
 ),
-56 => 
+55 => 
 array (
 'id' => 57,
 'device_id' => 87,
@@ -2208,7 +2113,7 @@ array (
 'created_at' => '2017-06-26 08:19:35',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-57 => 
+56 => 
 array (
 'id' => 58,
 'device_id' => 88,
@@ -2230,7 +2135,7 @@ array (
 'created_at' => '2018-10-01 22:14:00',
 'updated_at' => '2020-04-03 16:58:18',
 ),
-58 => 
+57 => 
 array (
 'id' => 59,
 'device_id' => 96,
@@ -2304,7 +2209,7 @@ array (
 'created_at' => '2017-10-02 12:38:26',
 'updated_at' => '2020-04-03 17:10:04',
 ),
-59 => 
+58 => 
 array (
 'id' => 60,
 'device_id' => 98,
@@ -2321,7 +2226,7 @@ array (
 'created_at' => '2017-04-19 22:58:24',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-60 => 
+59 => 
 array (
 'id' => 61,
 'device_id' => 99,
@@ -2338,7 +2243,7 @@ array (
 'created_at' => '2017-04-19 22:58:24',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-61 => 
+60 => 
 array (
 'id' => 62,
 'device_id' => 101,
@@ -2353,7 +2258,7 @@ array (
 'created_at' => '2017-04-24 00:34:25',
 'updated_at' => '2020-03-26 22:41:58',
 ),
-62 => 
+61 => 
 array (
 'id' => 63,
 'device_id' => 104,
@@ -2402,7 +2307,7 @@ array (
 'created_at' => '2019-06-13 14:35:18',
 'updated_at' => '2020-11-05 06:57:20',
 ),
-63 => 
+62 => 
 array (
 'id' => 64,
 'device_id' => 20,
@@ -2440,7 +2345,7 @@ array (
 'created_at' => '2020-02-16 22:42:13',
 'updated_at' => '2020-04-07 14:04:39',
 ),
-64 => 
+63 => 
 array (
 'id' => 65,
 'device_id' => 106,
@@ -2480,7 +2385,7 @@ array (
 'created_at' => '2019-08-17 08:27:18',
 'updated_at' => '2020-04-07 14:06:45',
 ),
-65 => 
+64 => 
 array (
 'id' => 67,
 'device_id' => 107,
@@ -2533,7 +2438,7 @@ array (
 'created_at' => '2020-04-06 11:11:00',
 'updated_at' => '2020-04-08 12:19:32',
 ),
-66 => 
+65 => 
 array (
 'id' => 68,
 'device_id' => 112,
@@ -2564,7 +2469,7 @@ array (
 'created_at' => '2017-09-06 12:08:24',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-67 => 
+66 => 
 array (
 'id' => 69,
 'device_id' => 113,
@@ -2596,7 +2501,7 @@ array (
 'created_at' => '2017-09-21 12:14:06',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-68 => 
+67 => 
 array (
 'id' => 70,
 'device_id' => 115,
@@ -2630,7 +2535,7 @@ array (
 'created_at' => '2018-06-06 12:44:22',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-69 => 
+68 => 
 array (
 'id' => 71,
 'device_id' => 116,
@@ -2647,7 +2552,7 @@ array (
 'created_at' => '2018-06-15 12:51:39',
 'updated_at' => '2020-04-06 12:51:39',
 ),
-70 => 
+69 => 
 array (
 'id' => 72,
 'device_id' => 117,
@@ -2670,7 +2575,7 @@ array (
 'created_at' => '2018-06-21 13:03:54',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-71 => 
+70 => 
 array (
 'id' => 73,
 'device_id' => 118,
@@ -2690,7 +2595,7 @@ array (
 'created_at' => '2018-07-27 13:14:58',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-72 => 
+71 => 
 array (
 'id' => 74,
 'device_id' => 119,
@@ -2717,7 +2622,7 @@ array (
 'created_at' => '2018-09-04 13:20:38',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-73 => 
+72 => 
 array (
 'id' => 75,
 'device_id' => 120,
@@ -2760,7 +2665,7 @@ array (
 'created_at' => '2019-04-02 16:13:15',
 'updated_at' => '2020-04-07 12:04:01',
 ),
-74 => 
+73 => 
 array (
 'id' => 76,
 'device_id' => 121,
@@ -2785,7 +2690,7 @@ array (
 'created_at' => '2019-05-31 22:00:00',
 'updated_at' => '2020-04-07 12:02:59',
 ),
-75 => 
+74 => 
 array (
 'id' => 77,
 'device_id' => 122,
@@ -2822,7 +2727,7 @@ array (
 'created_at' => '2018-09-21 22:00:00',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-76 => 
+75 => 
 array (
 'id' => 78,
 'device_id' => 123,
@@ -2867,7 +2772,7 @@ array (
 'created_at' => '2019-09-30 22:00:00',
 'updated_at' => '2020-04-06 19:33:22',
 ),
-77 => 
+76 => 
 array (
 'id' => 79,
 'device_id' => 124,
@@ -2916,7 +2821,7 @@ array (
 'created_at' => '2019-08-23 22:00:00',
 'updated_at' => '2020-04-06 19:37:43',
 ),
-78 => 
+77 => 
 array (
 'id' => 80,
 'device_id' => 125,
@@ -2957,7 +2862,7 @@ array (
 'created_at' => '2020-06-04 17:27:15',
 'updated_at' => '2020-06-04 21:54:11',
 ),
-79 => 
+78 => 
 array (
 'id' => 82,
 'device_id' => 126,
@@ -3046,7 +2951,7 @@ array (
 'created_at' => '2020-01-06 18:40:39',
 'updated_at' => '2020-07-11 05:50:48',
 ),
-80 => 
+79 => 
 array (
 'id' => 83,
 'device_id' => 128,
@@ -3134,7 +3039,7 @@ array (
 'created_at' => '2020-04-06 18:49:19',
 'updated_at' => '2020-06-11 19:59:15',
 ),
-81 => 
+80 => 
 array (
 'id' => 84,
 'device_id' => 129,
@@ -3161,7 +3066,7 @@ array (
 'created_at' => '2020-04-06 20:13:43',
 'updated_at' => '2021-02-08 17:18:36',
 ),
-82 => 
+81 => 
 array (
 'id' => 85,
 'device_id' => 130,
@@ -3180,7 +3085,7 @@ array (
 'created_at' => '2020-04-06 20:16:50',
 'updated_at' => '2020-04-06 20:16:50',
 ),
-83 => 
+82 => 
 array (
 'id' => 86,
 'device_id' => 131,
@@ -3242,7 +3147,7 @@ array (
 'created_at' => '2020-04-08 14:42:12',
 'updated_at' => '2020-04-10 11:56:13',
 ),
-84 => 
+83 => 
 array (
 'id' => 87,
 'device_id' => 132,
@@ -3272,7 +3177,7 @@ array (
 'created_at' => '2020-04-10 13:57:22',
 'updated_at' => '2020-04-17 06:36:58',
 ),
-85 => 
+84 => 
 array (
 'id' => 88,
 'device_id' => 136,
@@ -3292,7 +3197,7 @@ array (
 'created_at' => '2020-04-17 06:55:35',
 'updated_at' => '2020-04-17 06:55:35',
 ),
-86 => 
+85 => 
 array (
 'id' => 89,
 'device_id' => 81,
@@ -3343,7 +3248,7 @@ array (
 'created_at' => '2020-04-20 17:44:31',
 'updated_at' => '2020-04-20 18:30:41',
 ),
-87 => 
+86 => 
 array (
 'id' => 90,
 'device_id' => 16,
@@ -3368,7 +3273,7 @@ array (
 'created_at' => '2020-04-21 18:04:30',
 'updated_at' => '2020-04-22 06:21:50',
 ),
-88 => 
+87 => 
 array (
 'id' => 91,
 'device_id' => 82,
@@ -3393,7 +3298,7 @@ array (
 'created_at' => '2020-05-10 09:20:55',
 'updated_at' => '2020-05-23 12:24:26',
 ),
-89 => 
+88 => 
 array (
 'id' => 92,
 'device_id' => 141,
@@ -3429,7 +3334,7 @@ array (
 'created_at' => '2020-05-23 06:08:01',
 'updated_at' => '2020-05-25 09:47:59',
 ),
-90 => 
+89 => 
 array (
 'id' => 93,
 'device_id' => 11,
@@ -3449,7 +3354,7 @@ array (
 'created_at' => '2020-05-27 08:30:14',
 'updated_at' => '2020-05-27 08:30:14',
 ),
-91 => 
+90 => 
 array (
 'id' => 94,
 'device_id' => 146,
@@ -3467,7 +3372,7 @@ array (
 'created_at' => '2020-06-23 20:29:33',
 'updated_at' => '2020-06-23 20:38:31',
 ),
-92 => 
+91 => 
 array (
 'id' => 95,
 'device_id' => 147,
@@ -3510,7 +3415,7 @@ array (
 'created_at' => '2020-06-26 19:56:50',
 'updated_at' => '2020-07-16 06:01:15',
 ),
-93 => 
+92 => 
 array (
 'id' => 96,
 'device_id' => 148,
@@ -3563,7 +3468,7 @@ array (
 'created_at' => '2020-07-16 20:08:40',
 'updated_at' => '2020-10-22 15:30:59',
 ),
-94 => 
+93 => 
 array (
 'id' => 99,
 'device_id' => 14,
@@ -3590,7 +3495,7 @@ array (
 'created_at' => '2020-08-03 05:59:14',
 'updated_at' => '2020-08-03 05:59:14',
 ),
-95 => 
+94 => 
 array (
 'id' => 100,
 'device_id' => 149,
@@ -3622,7 +3527,7 @@ array (
 'created_at' => '2020-08-07 06:41:23',
 'updated_at' => '2020-08-07 07:00:49',
 ),
-96 => 
+95 => 
 array (
 'id' => 101,
 'device_id' => 150,
@@ -3669,7 +3574,7 @@ array (
 'created_at' => '2020-09-24 11:52:53',
 'updated_at' => '2020-10-04 17:25:04',
 ),
-97 => 
+96 => 
 array (
 'id' => 102,
 'device_id' => 157,
@@ -3723,7 +3628,7 @@ array (
 'created_at' => '2020-09-24 12:42:26',
 'updated_at' => '2020-11-21 10:34:12',
 ),
-98 => 
+97 => 
 array (
 'id' => 103,
 'device_id' => 159,
@@ -3765,7 +3670,7 @@ array (
 'created_at' => '2020-10-15 11:50:14',
 'updated_at' => '2020-10-17 21:56:01',
 ),
-99 => 
+98 => 
 array (
 'id' => 104,
 'device_id' => 160,
@@ -3865,7 +3770,7 @@ array (
 'created_at' => '2020-11-11 19:32:05',
 'updated_at' => '2020-11-13 16:55:26',
 ),
-100 => 
+99 => 
 array (
 'id' => 105,
 'device_id' => 162,
@@ -3929,7 +3834,7 @@ array (
 'created_at' => '2020-12-13 11:24:38',
 'updated_at' => '2021-02-08 17:16:21',
 ),
-101 => 
+100 => 
 array (
 'id' => 106,
 'device_id' => 163,
@@ -3995,7 +3900,7 @@ array (
 'created_at' => '2020-12-17 20:27:08',
 'updated_at' => '2021-03-08 19:08:19',
 ),
-102 => 
+101 => 
 array (
 'id' => 107,
 'device_id' => 168,
@@ -4052,7 +3957,7 @@ array (
 'created_at' => '2021-01-21 16:56:48',
 'updated_at' => '2021-03-07 18:29:12',
 ),
-103 => 
+102 => 
 array (
 'id' => 108,
 'device_id' => 164,
@@ -4087,7 +3992,7 @@ array (
 'created_at' => '2021-01-29 09:59:07',
 'updated_at' => '2021-02-08 15:04:28',
 ),
-104 => 
+103 => 
 array (
 'id' => 109,
 'device_id' => 161,
@@ -4130,7 +4035,7 @@ array (
 'created_at' => '2021-02-06 20:02:50',
 'updated_at' => '2021-02-08 14:40:53',
 ),
-105 => 
+104 => 
 array (
 'id' => 110,
 'device_id' => 172,
@@ -4179,7 +4084,7 @@ array (
 'created_at' => '2021-02-07 22:18:13',
 'updated_at' => '2021-02-08 14:36:45',
 ),
-106 => 
+105 => 
 array (
 'id' => 113,
 'device_id' => 3,
@@ -4226,7 +4131,7 @@ array (
 'created_at' => '2021-03-05 07:59:05',
 'updated_at' => '2021-03-05 08:06:57',
 ),
-107 => 
+106 => 
 array (
 'id' => 114,
 'device_id' => 168,
@@ -4376,7 +4281,7 @@ array (
 'created_at' => '2021-03-07 18:32:14',
 'updated_at' => '2021-03-09 22:47:14',
 ),
-108 => 
+107 => 
 array (
 'id' => 115,
 'device_id' => 177,
@@ -4407,7 +4312,7 @@ array (
 'created_at' => '2021-03-07 20:13:23',
 'updated_at' => '2021-03-08 19:19:41',
 ),
-109 => 
+108 => 
 array (
 'id' => 116,
 'device_id' => 178,
@@ -4433,7 +4338,7 @@ array (
 'created_at' => '2021-03-11 12:56:42',
 'updated_at' => '2021-03-11 13:07:18',
 ),
-110 => 
+109 => 
 array (
 'id' => 117,
 'device_id' => 168,
@@ -4469,7 +4374,7 @@ array (
 'created_at' => '2021-05-09 15:56:48',
 'updated_at' => '2021-06-01 06:04:28',
 ),
-111 => 
+110 => 
 array (
 'id' => 118,
 'device_id' => 180,
@@ -4507,7 +4412,7 @@ array (
 'created_at' => '2021-05-15 13:40:48',
 'updated_at' => '2021-05-21 06:07:49',
 ),
-112 => 
+111 => 
 array (
 'id' => 119,
 'device_id' => 180,
@@ -4547,7 +4452,7 @@ array (
 'created_at' => '2021-05-15 13:40:48',
 'updated_at' => '2021-06-03 08:26:01',
 ),
-113 => 
+112 => 
 array (
 'id' => 120,
 'device_id' => 181,
@@ -4577,7 +4482,7 @@ array (
 'created_at' => '2021-06-10 13:24:41',
 'updated_at' => '2021-06-10 14:39:11',
 ),
-114 => 
+113 => 
 array (
 'id' => 121,
 'device_id' => 182,
@@ -4621,7 +4526,7 @@ array (
 'created_at' => '2021-06-14 14:25:42',
 'updated_at' => '2021-07-01 14:47:58',
 ),
-115 => 
+114 => 
 array (
 'id' => 122,
 'device_id' => 183,
@@ -4664,7 +4569,7 @@ array (
 'created_at' => '2021-06-15 10:14:34',
 'updated_at' => '2021-06-23 19:50:04',
 ),
-116 => 
+115 => 
 array (
 'id' => 123,
 'device_id' => 184,
@@ -4690,7 +4595,7 @@ array (
 'created_at' => '2021-06-15 10:16:06',
 'updated_at' => '2021-06-21 08:00:32',
 ),
-117 => 
+116 => 
 array (
 'id' => 124,
 'device_id' => 185,
@@ -4731,7 +4636,7 @@ array (
 'created_at' => '2021-08-01 08:42:29',
 'updated_at' => '2021-08-05 11:14:43',
 ),
-118 => 
+117 => 
 array (
 'id' => 125,
 'device_id' => 189,
@@ -4778,7 +4683,7 @@ array (
 'created_at' => '2021-10-14 11:42:34',
 'updated_at' => '2021-11-06 16:49:10',
 ),
-119 => 
+118 => 
 array (
 'id' => 126,
 'device_id' => 190,
@@ -4831,7 +4736,7 @@ array (
 'created_at' => '2021-11-05 15:43:32',
 'updated_at' => '2021-11-09 20:48:10',
 ),
-120 => 
+119 => 
 array (
 'id' => 127,
 'device_id' => 191,
@@ -4855,7 +4760,7 @@ array (
 'created_at' => '2021-11-06 18:31:35',
 'updated_at' => '2021-11-06 18:50:17',
 ),
-121 => 
+120 => 
 array (
 'id' => 128,
 'device_id' => 192,
