@@ -63,7 +63,7 @@ class DeviceController extends Controller
     public function show(Category $category, Device $device)
     {
 
-        $reviews = $device->reviews()->paginate(2);
+        $reviews = $device->reviews()->paginate(5);
 
         // calcul des données techniques moyennes
 
@@ -183,7 +183,7 @@ class DeviceController extends Controller
      * Remove the specified resource from storage.
      * @param  \App\Models\Category  $category
      * @param  \App\Models\Device  $device
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function destroy(Category $category, Device $device)
     {

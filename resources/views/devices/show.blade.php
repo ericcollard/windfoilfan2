@@ -300,7 +300,7 @@
 
                 <div class="row">
                     <div class="col-8 mb-2">
-                        <a class="btn btn-warning rounded-pill" href="#" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
+                        <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4">
@@ -354,9 +354,37 @@
 
                                         </div>
 
-                                        <div class="userEquipment mt-4">
-                                            {!! $review->owner->personal_equipment !!}
+
+                                        <div class="row userEquipment mt-4">
+                                            <div class="col-8">
+                                                {!! $review->owner->personal_equipment !!}
+                                            </div>
+                                            <div class="col-4  text-end">
+
+
+                                                @can ('update', $review)
+                                                    <li class="list-inline-item text-center">
+                                                        <a class="btn btn-warning rounded-pill" href="{{ route('review.edit',$review) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Edit') }}</a>
+                                                    </li>
+                                                @endcan
+                                                @can ('delete', $review)
+                                                    <li class="list-inline-item text-center">
+                                                        <form id="deleteReview{{ $review->id }}" method="POST" action="{{ route('review.destroy',['review'=>$review]) }}" >
+                                                            {{ csrf_field() }}
+                                                            {{ method_field('DELETE') }}
+                                                            <button type="button" class="btn btn-danger rounded-pill">
+                                                                <a href="javascript:{}" onclick="document.getElementById('deleteReview{{ $review->id }}').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                                            </button>
+                                                        </form>
+                                                    </li>
+                                                @endcan
+
+
+
+
+                                            </div>
                                         </div>
+
 
 
                                     </div>
@@ -370,7 +398,7 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <a class="btn btn-warning rounded-pill" href="#" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
+                        <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4">

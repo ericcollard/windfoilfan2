@@ -3,6 +3,7 @@
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\TechnicaldataController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DeviceController;
@@ -59,6 +60,12 @@ Route::get('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 's
 Route::get('/technicaldatas/{technicaldata}/edit', [TechnicaldataController::class, 'edit'])->name('technicaldata.edit');
 Route::patch('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'update'])->name('technicaldata.update');
 Route::delete('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'destroy'])->name('technicaldata.destroy');
+
+Route::get('/reviews/create/{device}', [ReviewController::class, 'create'])->name('review.create');
+Route::get('/reviews/{review}/edit', [ReviewController::class, 'edit'])->name('review.edit');
+Route::patch('/reviews/{review}',[ReviewController::class, 'update'])->name('review.update');
+Route::post('/reviews',[ReviewController::class, 'store'])->name('review.store');
+Route::delete('/reviews/{review}',[ReviewController::class, 'destroy'])->name('review.destroy');
 
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');

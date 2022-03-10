@@ -13,7 +13,7 @@ class StoreReviewRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,10 @@ class StoreReviewRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'device_id' => 'required|exists:devices,id',
+            'user_id' => 'required|exists:users,id',
+            'body'        => 'required',
+            'title'        => 'required',
         ];
     }
 }
