@@ -56,6 +56,8 @@ Route::delete('/devices/{category}/{device}',[DeviceController::class, 'destroy'
 Route::get('/technicaldatas',[TechnicaldataController::class, 'index'])->name('technicaldata.index');
 Route::get('technicaldatas/devicedata/{device}', [TechnicaldataController::class, 'devicedata'])->name('technicaldatas.devicedata');
 Route::get('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'show'])->name('technicaldata.show');
+Route::get('/technicaldatas/{technicaldata}/edit', [TechnicaldataController::class, 'edit'])->name('technicaldata.edit');
+Route::patch('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'update'])->name('technicaldata.update');
 
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');

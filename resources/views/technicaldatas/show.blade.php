@@ -13,9 +13,7 @@
 
 @endsection
 
-@section('css')
 
-@endsection
 
 
 
@@ -62,30 +60,89 @@
                                 {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }}
                             </div>
                         </div>
-                    </div>
-                    <div class="card-body">
                         <div class="row">
-                            <div class="col-12">
-                                <h2>Commentaire :</h2>
+                            <div class="col-10">
+                                Commentaire :
                                 {!! $technicaldata->body !!}
                             </div>
+                            <div class="col-2">
+                                <a href="{{ route('technicaldata.edit',[ 'technicaldata'=>$technicaldata]) }}" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i> Update</a>
+                            </div>
                         </div>
+                    </div>
+                    <div class="card-body">
 
                         @foreach ($attributes as $group => $attributeGroup)
 
                             <h2 class="mb-2">{{ __($group) }}</h2>
 
+
                             @if ($group == 'usage_group')
-                                <?php
-                                    foreach ($attributeGroup as $attribute)
-                                    {
-                                        $chartData['labels'][] = __($attribute->name);
-                                        $chartData['values'][] = (float)$technicaldata->{$attribute->field};
-                                    }
-                                ?>
-                                    <figure class="highcharts-figure">
-                                        <div id="container-radar"></div>
-                                    </figure>
+
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        @foreach($attributeGroup as $attribute)
+                                            <?php
+                                                $chartData['labels'][] = __($attribute->name);
+                                                $chartData['values'][] = (float)$technicaldata->{$attribute->field};
+                                            ?>
+                                            <p>
+                                                {{ __($attribute->slug) }} :
+                                                {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
+                                                (
+                                                <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
+                                                -
+                                                <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
+                                                )
+
+                                            </p>
+                                        @endforeach
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <figure class="highcharts-figure">
+                                            <div id="container-radar"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                                @elseif ($group == 'structural_result_group')
+
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            @foreach($attributeGroup as $key => $attribute)
+                                                <p>
+                                                    {{ __($attribute->slug) }} :
+                                                    {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
+                                                    (
+                                                    <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
+                                                    -
+                                                    <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
+                                                    )
+
+                                                </p>
+                                            @endforeach
+                                        </div>
+                                    </div>
+
+                                <div class="row">
+                                    <div class="col-12 col-md-4">
+                                        <figure class="highcharts-figure">
+                                            <div id="container-flex" class="chart-container"></div>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <figure class="highcharts-figure">
+                                            <div id="container-torsion" class="chart-container"></div>
+                                        </figure>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <figure class="highcharts-figure">
+                                            <div id="container-module" class="chart-container"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+
+
                             @else
 
                                 <div class="d-flex flex-row justify-content-between mb-5 flex-wrap text-dark">
@@ -101,6 +158,11 @@
                                                 @endif
                                             @else
                                                 {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
+                                                (
+                                                <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
+                                                -
+                                                <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
+                                                )
                                             @endif
                                         </div>
                                     @endforeach
@@ -109,16 +171,6 @@
                             @endif
 
                         @endforeach
-
-                        <h2>Test</h2>
-                        <div id="chart1">
-                        </div>
-
-
-
-                        <div dir="ltr">
-                            <div id="basic-radialbar" class="apex-charts" data-colors="#39afd1"></div>
-                        </div>
 
 
 
@@ -151,78 +203,6 @@
     <script>
 
 
-        var options1 = {
-            chart: {
-                height: 280,
-                type: "radialBar",
-            },
-
-            series: [60],
-            colors: ["#87D4F9"],
-            plotOptions: {
-                radialBar: {
-                    hollow: {
-                        margin: 0,
-                        size: "65%",
-                        background: "#293450"
-                    },
-                    track: {
-                        dropShadow: {
-                            enabled: true,
-                            top: 2,
-                            left: 0,
-                            blur: 4,
-                            opacity: 0.15
-                        }
-                    },
-                    dataLabels: {
-                        name: {
-                            offsetY: -10,
-                            color: "#fff",
-                            fontSize: "13px"
-                        },
-                        value: {
-                            color: "#fff",
-                            fontSize: "30px",
-                            show: true
-                        }
-                    }
-                }
-            },
-            fill: {
-                type: "gradient",
-                gradient: {
-                    shade: "dark",
-                    type: "vertical",
-                    gradientToColors: ["#20E647"],
-                    stops: [0, 100]
-                }
-            },
-            stroke: {
-                lineCap: "round"
-            },
-            labels: ["Progress"],
-
-            animations: {
-                enabled: true,
-                easing: 'easeinout',
-                speed: 800,
-                animateGradually: {
-                    enabled: true,
-                    delay: 150
-                },
-                dynamicAnimation: {
-                    enabled: true,
-                    speed: 350
-                }
-            }
-        };
-
-        new ApexCharts(document.querySelector("#chart1"), options1).render();
-
-
-
-
 
         Highcharts.chart('container-radar', {
             chart: {
@@ -232,6 +212,9 @@
             title:  false,
             pane: {
                 size: '90%'
+            },
+            credits: {
+                enabled: false
             },
             xAxis: {
                 categories: <?php echo json_encode($chartData['labels']) ?>,
@@ -257,7 +240,7 @@
             responsive: {
                 rules: [{
                     condition: {
-                        maxWidth: 600
+                        maxWidth: 500
                     }
                 }]
             }
@@ -265,7 +248,144 @@
         });
 
 
+        var gaugeOptions = {
+            chart: {
+                type: 'solidgauge'
+            },
+            title: {
+                verticalAlign: "bottom"
+            },
+            pane: {
+                center: ['50%', '80%'],
+                size: '100%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor:
+                        Highcharts.defaultOptions.legend.backgroundColor || '#EEE',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            tooltip: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.2, '#DF5353'], // red
+                    [0.5, '#DDDF0D'], // yellow
+                    [0.8, '#55BF3B'] // green
+                ],
+                lineWidth: 0,
+                tickWidth: 0,
+                minorTickInterval: null,
+                labels: {
+                    y: 20
+                }
+            },
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: -30,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+        };
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-flex', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($technicaldatas_minmax->{'min_attr19'}) }},
+                max: {{ round($technicaldatas_minmax->{'max_attr19'}) }},
+                tickPositions : [{{ round($technicaldatas_minmax->{'min_attr19'}) }},{{ round($technicaldatas_minmax->{'max_attr19'}) }}]
+            },
+            title: {
+                text: 'Coefficient de rigidité en flexion (EIx)',
+            },
+            series: [{
+                name: 'Flexion',
+                data: [{{ $technicaldata->attr19 }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">N.m2</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-torsion', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($technicaldatas_minmax->{'min_attr20'}) }},
+                max: {{ round($technicaldatas_minmax->{'max_attr20'}) }},
+                tickPositions : [{{ round($technicaldatas_minmax->{'min_attr20'}) }},{{ round($technicaldatas_minmax->{'max_attr20'}) }}]
+            },
+            title: {
+                text: 'Coefficient de rigidité en torsion (GIg)',
+            },
+
+            series: [{
+                name: 'Flexion',
+                data: [{{ $technicaldata->attr20 }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">N.m2/Rad</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-module', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($technicaldatas_minmax->{'min_attr21'}) }},
+                max: {{ round($technicaldatas_minmax->{'max_attr21'}) }},
+                tickPositions : [{{ round($technicaldatas_minmax->{'min_attr21'}) }},{{ round($technicaldatas_minmax->{'max_attr21'}) }}]
+            },
+            title: {
+                text: "Module d'Young (E)",
+            },
+            series: [{
+                name: 'Flexion',
+                data: [{{ $technicaldata->attr21 }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">GPa</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+
 
     </script>
     <!-- end demo js-->
+@endsection
+
+@section('css')
+
+    <style>
+
+    </style>
+
+
 @endsection

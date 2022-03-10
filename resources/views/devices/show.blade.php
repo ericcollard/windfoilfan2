@@ -256,12 +256,7 @@
                                 <thead>
                                 <tr>
                                     <th>Action</th>
-                                    <th>Id</th>
-                                    <th>Device</th>
-                                    <th>Mast</th>
-                                    <th>Created</th>
-                                    <th>Created</th>
-                                    <th>Created</th>
+                                    <th>Numéro de série</th>
                                     <th>Created</th>
                                 </tr>
                                 </thead>
@@ -398,12 +393,7 @@
                 ajax: "{{ route('technicaldatas.devicedata',$device ) }}",
                 columns: [
                     {data: 'action', name: 'action'},
-                    {data: 'id', name: 'id'},
-                    {data: 'device_id', name: 'device_id'},
-                    {data: 'attr4', name: 'attr4'},
-                    {data: 'attr5', name: 'attr5'},
-                    {data: 'attr6', name: 'attr6'},
-                    {data: 'attr7', name: 'attr7'},
+                    {data: 'serial', name: 'serial'},
                     {data: 'created_at', name: 'created_at'},
                 ]
             });

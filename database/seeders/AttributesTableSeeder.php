@@ -21,30 +21,6 @@ class AttributesTableSeeder extends Seeder
         \DB::table('attributes')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'name' => 'Programme',
-                'slug' => 'freestyle',
-            'body' => '<p>Cette colonne repr&eacute;sente la classification du foil. Plus il est vers FS, plus il a une typologie Freeride (voir freestyle) ... c\'est alors un foil maniable, plut&ocirc;t adapt&eacute; &agrave; une navigation assez droite avec des voiles de petites tailles. Plus il est vers RS, plus il a une typologie Slalom (voir Race) ... c\'est alors un foil cal&eacute;, plut&ocirc;t adapt&eacute; &agrave; une navigation avec des grandes voiles &agrave; camber, voir un comportement favorisant essentiellement les allures pr&egrave;s / largue (pour les 100% RS).</p>',
-                'unit' => NULL,
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr1',
-                'category_id' => 1,
-            ),
-            1 => 
-            array (
-                'id' => 2,
-                'name' => 'Programme',
-                'slug' => 'race',
-            'body' => 'Cette colonne représente la classification du foil. Plus il est vers FS, plus il a une typologie Freeride (voir freestyle) ... c\'est alors un foil maniable, plutôt adapté à une navigation assez droite avec des voiles de petites tailles. Plus il est vers RS, plus il a une typologie Slalom (voir Race) ... c\'est alors un foil calé, plutôt adapté à une navigation avec des grandes voiles à camber, voir un comportement favorisant essentiellement les allures près / largue (pour les 100% RS)',
-                'unit' => '',
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr2',
-                'category_id' => 1,
-            ),
-            2 => 
-            array (
                 'id' => 3,
                 'name' => 'Housse',
                 'slug' => 'cover',
@@ -60,7 +36,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr3',
                 'category_id' => 1,
             ),
-            3 => 
+            1 => 
             array (
                 'id' => 4,
                 'name' => 'Mat',
@@ -74,7 +50,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr4',
                 'category_id' => 1,
             ),
-            4 => 
+            2 => 
             array (
                 'id' => 5,
                 'name' => 'Poids',
@@ -86,7 +62,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr5',
                 'category_id' => 1,
             ),
-            5 => 
+            3 => 
             array (
                 'id' => 6,
                 'name' => 'Epaisseur base',
@@ -98,7 +74,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr6',
                 'category_id' => 1,
             ),
-            6 => 
+            4 => 
             array (
                 'id' => 7,
                 'name' => 'Epaisseur queue',
@@ -110,7 +86,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr7',
                 'category_id' => 1,
             ),
-            7 => 
+            5 => 
             array (
                 'id' => 8,
                 'name' => 'Glisse',
@@ -126,7 +102,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr8',
                 'category_id' => 1,
             ),
-            8 => 
+            6 => 
             array (
                 'id' => 9,
                 'name' => 'Décollage',
@@ -150,7 +126,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr9',
                 'category_id' => 1,
             ),
-            9 => 
+            7 => 
             array (
                 'id' => 10,
                 'name' => 'Grandes voiles',
@@ -164,7 +140,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr10',
                 'category_id' => 1,
             ),
-            10 => 
+            8 => 
             array (
                 'id' => 11,
                 'name' => 'Stabilité latérale',
@@ -187,7 +163,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr11',
                 'category_id' => 1,
             ),
-            11 => 
+            9 => 
             array (
                 'id' => 12,
                 'name' => 'Stabilité longitudinale',
@@ -204,7 +180,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr12',
                 'category_id' => 1,
             ),
-            12 => 
+            10 => 
             array (
                 'id' => 13,
                 'name' => 'Contrôle',
@@ -220,7 +196,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr13',
                 'category_id' => 1,
             ),
-            13 => 
+            11 => 
             array (
                 'id' => 14,
                 'name' => 'Facilité dans le vent faible',
@@ -232,7 +208,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr14',
                 'category_id' => 1,
             ),
-            14 => 
+            12 => 
             array (
                 'id' => 15,
                 'name' => 'Facilité dans le vent fort',
@@ -244,7 +220,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr15',
                 'category_id' => 1,
             ),
-            15 => 
+            13 => 
             array (
                 'id' => 16,
                 'name' => 'Déflexion latérale à 70',
@@ -256,7 +232,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr16',
                 'category_id' => 1,
             ),
-            16 => 
+            14 => 
             array (
                 'id' => 17,
                 'name' => 'Déflexion latérale en bout',
@@ -268,7 +244,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr17',
                 'category_id' => 1,
             ),
-            17 => 
+            15 => 
             array (
                 'id' => 18,
                 'name' => 'Déflexion en torsion',
@@ -280,7 +256,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr18',
                 'category_id' => 1,
             ),
-            18 => 
+            16 => 
             array (
                 'id' => 19,
             'name' => 'Coefficient de rigidité en flexion (EIx)',
@@ -294,7 +270,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr19',
                 'category_id' => 1,
             ),
-            19 => 
+            17 => 
             array (
                 'id' => 20,
             'name' => 'Coefficient de rigidité en torsion (GIg)',
@@ -308,7 +284,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr20',
                 'category_id' => 1,
             ),
-            20 => 
+            18 => 
             array (
                 'id' => 21,
             'name' => 'Module d\'Young (E)',
@@ -323,35 +299,7 @@ class AttributesTableSeeder extends Seeder
                 'field' => 'attr21',
                 'category_id' => 1,
             ),
-            21 => 
-            array (
-                'id' => 22,
-                'name' => 'Programme',
-                'slug' => 'freestyle-f',
-            'body' => 'Cette colonne représente la classification du flotteur. Plus il est vers FS, plus il a une typologie Freeride (voir freestyle) ...
-c\'est alors un flotteur maniable, plutôt adapté à une navigation assez droite avec des voiles de petites tailles. Plus il est vers RS, plus il a une typologie Slalom (voir Race) ...
-c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grandes voiles à camber, voir un comportement favorisant essentiellement les allures près / largue (pour les 100% RS)',
-                'unit' => '',
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr1',
-                'category_id' => 2,
-            ),
-            22 => 
-            array (
-                'id' => 23,
-                'name' => 'Programme',
-                'slug' => 'race-f',
-            'body' => 'Cette colonne représente la classification du flotteur. Plus il est vers FS, plus il a une typologie Freeride (voir freestyle) ...
-c\'est alors un flotteur maniable, plutôt adapté à une navigation assez droite avec des voiles de petites tailles. Plus il est vers RS, plus il a une typologie Slalom (voir Race) ...
-c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grandes voiles à camber, voir un comportement favorisant essentiellement les allures près / largue (pour les 100% RS)',
-                'unit' => '',
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr2',
-                'category_id' => 2,
-            ),
-            23 => 
+            19 => 
             array (
                 'id' => 24,
                 'name' => 'Largeur',
@@ -363,7 +311,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr3',
                 'category_id' => 2,
             ),
-            24 => 
+            20 => 
             array (
                 'id' => 25,
                 'name' => 'Longueur',
@@ -375,7 +323,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr4',
                 'category_id' => 2,
             ),
-            25 => 
+            21 => 
             array (
                 'id' => 26,
                 'name' => 'Volume',
@@ -387,7 +335,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr5',
                 'category_id' => 2,
             ),
-            26 => 
+            22 => 
             array (
                 'id' => 27,
                 'name' => 'OFO',
@@ -399,7 +347,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr6',
                 'category_id' => 2,
             ),
-            27 => 
+            23 => 
             array (
                 'id' => 28,
                 'name' => 'Poids',
@@ -411,7 +359,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr7',
                 'category_id' => 2,
             ),
-            28 => 
+            24 => 
             array (
                 'id' => 29,
                 'name' => 'Touchettes rail',
@@ -423,7 +371,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr8',
                 'category_id' => 2,
             ),
-            29 => 
+            25 => 
             array (
                 'id' => 30,
                 'name' => 'Touchettes tail',
@@ -435,7 +383,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr9',
                 'category_id' => 2,
             ),
-            30 => 
+            26 => 
             array (
                 'id' => 31,
                 'name' => 'Touchettes avant',
@@ -447,7 +395,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr10',
                 'category_id' => 2,
             ),
-            31 => 
+            27 => 
             array (
                 'id' => 32,
                 'name' => 'Glisse',
@@ -462,7 +410,7 @@ c\'est alors un flotteur calé, plutôt adapté à une navigation avec des grand
                 'field' => 'attr11',
                 'category_id' => 2,
             ),
-            32 => 
+            28 => 
             array (
                 'id' => 33,
                 'name' => 'Puissance',
@@ -475,7 +423,7 @@ Plus il est faible, plus le flotteur sera adapté aux foils de petite taille (de
                 'field' => 'attr12',
                 'category_id' => 2,
             ),
-            33 => 
+            29 => 
             array (
                 'id' => 34,
                 'name' => 'Inertie',
@@ -490,7 +438,7 @@ Plus il est faible, plus le flotteur sera adapté aux foils de petite taille (de
                 'field' => 'attr13',
                 'category_id' => 2,
             ),
-            34 => 
+            30 => 
             array (
                 'id' => 35,
                 'name' => 'Contrôle',
@@ -502,35 +450,7 @@ Plus il est faible, plus le flotteur sera adapté aux foils de petite taille (de
                 'field' => 'attr14',
                 'category_id' => 2,
             ),
-            35 => 
-            array (
-                'id' => 36,
-                'name' => 'Programme',
-                'slug' => 'freestyle-s',
-            'body' => 'Cette colonne représente la classification de la voile. Plus elle est vers FS, plus elle a une typologie Freeride (voir freestyle) ...
-c\'est alors une voile maniable, plutôt adaptée à une navigation assez droite avec des flotteurs étroits. Plus elle est vers RS, plus il a une typologie Slalom (voir Race) ...
-c\'est alors une voile calée, plutôt adapté à une navigation avec des foils et des planches puissantes, voir un comportement favorisant essentiellement les allures près / largue (pour les 100% RS)',
-                'unit' => '',
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr1',
-                'category_id' => 3,
-            ),
-            36 => 
-            array (
-                'id' => 37,
-                'name' => 'Programme',
-                'slug' => 'race-s',
-            'body' => 'Cette colonne représente la classification de la voile. Plus elle est vers FS, plus elle a une typologie Freeride (voir freestyle) ...
-c\'est alors une voile maniable, plutôt adaptée à une navigation assez droite avec des flotteurs étroits. Plus elle est vers RS, plus il a une typologie Slalom (voir Race) ...
-c\'est alors une voile calée, plutôt adapté à une navigation avec des foils et des planches puissantes, voir un comportement favorisant essentiellement les allures près / largue (pour les 100% RS)',
-                'unit' => '',
-                'decimals' => 1,
-                'group' => 'program_group',
-                'field' => 'attr2',
-                'category_id' => 3,
-            ),
-            37 => 
+            31 => 
             array (
                 'id' => 38,
                 'name' => 'Surface',
@@ -542,7 +462,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr3',
                 'category_id' => 3,
             ),
-            38 => 
+            32 => 
             array (
                 'id' => 39,
                 'name' => 'Guindant',
@@ -554,7 +474,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr4',
                 'category_id' => 3,
             ),
-            39 => 
+            33 => 
             array (
                 'id' => 40,
                 'name' => 'Whisbone',
@@ -566,7 +486,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr5',
                 'category_id' => 3,
             ),
-            40 => 
+            34 => 
             array (
                 'id' => 41,
                 'name' => 'Poids',
@@ -578,7 +498,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr6',
                 'category_id' => 3,
             ),
-            41 => 
+            35 => 
             array (
                 'id' => 42,
                 'name' => 'Main arrière',
@@ -591,7 +511,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr7',
                 'category_id' => 3,
             ),
-            42 => 
+            36 => 
             array (
                 'id' => 43,
                 'name' => 'Stabilisation foil',
@@ -603,7 +523,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr8',
                 'category_id' => 3,
             ),
-            43 => 
+            37 => 
             array (
                 'id' => 44,
                 'name' => 'Près',
@@ -615,7 +535,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr9',
                 'category_id' => 3,
             ),
-            44 => 
+            38 => 
             array (
                 'id' => 45,
                 'name' => 'Facilité dans le vent faible',
@@ -627,7 +547,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr10',
                 'category_id' => 3,
             ),
-            45 => 
+            39 => 
             array (
                 'id' => 46,
                 'name' => 'Facilité dans le vent fort',
@@ -639,7 +559,7 @@ c\'est alors une voile calée, plutôt adapté à une navigation avec des foils 
                 'field' => 'attr11',
                 'category_id' => 3,
             ),
-            46 => 
+            40 => 
             array (
                 'id' => 47,
                 'name' => 'Légèreté ressentie',
