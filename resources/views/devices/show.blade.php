@@ -183,11 +183,9 @@
                             <div class="col-5 col-md-4">
                                 <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5>
                             </div>
-                            <div class="col-1 col-md-2">
-                                <div style="float: right">
+                            <div class="col-1 col-md-2 text-end">
                                     <div class="badge bg-dark" style="margin : 0 0.4rem">{{ $device->category->name }}</div>
                                     <div class="badge {{ $device->statusClass() }}">{{ __($device->status) }}</div>
-                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -203,10 +201,8 @@
                                     ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
                                 @endif
                             </div>
-                            <div class="col-1 col-md-2">
-                                <div style="float: right">
+                            <div class="col-1 col-md-2 text-end">
                                     <p>{{ __('Price') }} : {{ $device->price }} €</p>
-                                </div>
                             </div>
                         </div>
 
@@ -262,7 +258,7 @@
                                 </a>
 
                             </div>
-                            <div class="col-6">
+                            <div class="col-6 text-end">
                                 @if ($device->link_product)<i class="mdi mdi-auto-fix"></i> <a href="{{ $device->link_product }}">{{ __('Product link') }} {{ $device->name }}</a>@endif
 
                             </div>

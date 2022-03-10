@@ -1112,7 +1112,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 35,
                 'device_id' => 35,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Alu V4 2018',
                 'attr3' => -1.0,
                 'attr4' => 76.0,
                 'attr5' => 5.16,
@@ -1137,7 +1137,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-02-12 19:57:17',
-                'updated_at' => '2021-06-14 14:17:45',
+                'updated_at' => '2022-03-10 17:21:34',
             ),
             35 => 
             array (
@@ -1496,8 +1496,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 47,
                 'device_id' => 47,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Slalom 2017 Série',
+                'attr3' => NULL,
                 'attr4' => 85.0,
                 'attr5' => 4.75,
                 'attr6' => NULL,
@@ -1521,15 +1521,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-07-26 18:57:17',
-                'updated_at' => '2020-03-22 17:56:39',
+                'updated_at' => '2022-03-10 17:18:59',
             ),
             47 => 
             array (
                 'id' => 48,
-                'device_id' => 48,
-                'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'device_id' => 47,
+                'body' => '<p>Mesur&eacute; avec Tiesda</p>',
+                'serial' => 'Slalom 2019 Proto light',
+                'attr3' => NULL,
                 'attr4' => 85.0,
                 'attr5' => 4.75,
                 'attr6' => 16.8,
@@ -1553,15 +1553,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2020-03-22 17:56:44',
+                'updated_at' => '2022-03-10 17:19:56',
             ),
             48 => 
             array (
                 'id' => 49,
-                'device_id' => 49,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Race 2019 Série P2',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.42,
                 'attr6' => 17.57,
@@ -1585,15 +1585,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2021-01-22 20:54:07',
+                'updated_at' => '2022-03-10 17:16:48',
             ),
             49 => 
             array (
                 'id' => 50,
-                'device_id' => 50,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Race 2019 Série P3',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.42,
                 'attr6' => 17.57,
@@ -1617,15 +1617,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2021-01-22 20:53:06',
+                'updated_at' => '2022-03-10 17:16:16',
             ),
             50 => 
             array (
                 'id' => 51,
-                'device_id' => 51,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Race 2019 Série P4',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.42,
                 'attr6' => 17.57,
@@ -1649,15 +1649,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2021-01-22 20:53:12',
+                'updated_at' => '2022-03-10 17:15:47',
             ),
             51 => 
             array (
                 'id' => 52,
-                'device_id' => 52,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Race 2019 Série P5',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.42,
                 'attr6' => 17.57,
@@ -1681,7 +1681,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2021-01-22 20:53:00',
+                'updated_at' => '2022-03-10 17:14:57',
             ),
             52 => 
             array (
@@ -1720,8 +1720,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 54,
                 'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Race 2017 Série',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.42,
                 'attr6' => 17.57,
@@ -1745,15 +1745,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-07-26 18:57:17',
-                'updated_at' => '2021-01-22 20:54:09',
+                'updated_at' => '2022-03-10 17:11:50',
             ),
             54 => 
             array (
                 'id' => 55,
-                'device_id' => 55,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Slalom 2017 Série',
+                'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => 5.45,
                 'attr6' => 17.57,
@@ -1777,7 +1777,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-06-09 18:57:17',
-                'updated_at' => '2020-03-17 23:04:14',
+                'updated_at' => '2022-03-10 17:10:52',
             ),
             55 => 
             array (
@@ -4406,9 +4406,9 @@ class TechnicaldatasTableSeeder extends Seeder
             137 => 
             array (
                 'id' => 138,
-                'device_id' => 144,
+                'device_id' => 163,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => '2020 - Tristant Algret',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -4433,7 +4433,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-06-05 05:46:42',
-                'updated_at' => '2020-09-15 14:35:38',
+                'updated_at' => '2022-03-10 17:34:19',
             ),
             138 => 
             array (
@@ -4630,9 +4630,9 @@ class TechnicaldatasTableSeeder extends Seeder
             144 => 
             array (
                 'id' => 145,
-                'device_id' => 151,
+                'device_id' => 163,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => '2020 - Cédric Bordes',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -4657,7 +4657,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-09-15 14:38:51',
-                'updated_at' => '2020-09-15 15:27:02',
+                'updated_at' => '2022-03-10 17:33:40',
             ),
             145 => 
             array (
@@ -4758,9 +4758,9 @@ class TechnicaldatasTableSeeder extends Seeder
             148 => 
             array (
                 'id' => 149,
-                'device_id' => 155,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Race 2019 Série Cédric',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -4785,14 +4785,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-09-15 15:37:05',
-                'updated_at' => '2020-09-15 15:37:33',
+                'updated_at' => '2022-03-10 17:27:05',
             ),
             149 => 
             array (
                 'id' => 150,
-                'device_id' => 156,
+                'device_id' => 54,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Slalom 2020 série',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -4817,7 +4817,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-09-15 15:39:10',
-                'updated_at' => '2021-02-08 13:08:24',
+                'updated_at' => '2022-03-10 17:23:55',
             ),
             150 => 
             array (
@@ -4854,9 +4854,9 @@ class TechnicaldatasTableSeeder extends Seeder
             151 => 
             array (
                 'id' => 152,
-                'device_id' => 158,
+                'device_id' => 163,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => '2020 - Pascal Toselli',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -4881,7 +4881,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-09-30 07:27:23',
-                'updated_at' => '2020-09-30 07:27:23',
+                'updated_at' => '2022-03-10 17:32:57',
             ),
             152 => 
             array (
@@ -6007,8 +6007,8 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 188,
                 'device_id' => 196,
-                'body' => NULL,
-                'serial' => NULL,
+                'body' => '<p>Mat Type 2 matteo yachino</p>',
+                'serial' => 'Serial 97 Type 2',
                 'attr3' => NULL,
                 'attr4' => 95.3,
                 'attr5' => NULL,
@@ -6033,14 +6033,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-11-16 19:30:06',
-                'updated_at' => '2021-11-16 19:30:06',
+                'updated_at' => '2022-03-10 17:30:28',
             ),
             188 => 
             array (
                 'id' => 189,
-                'device_id' => 197,
-                'body' => NULL,
-                'serial' => NULL,
+                'device_id' => 54,
+                'body' => '<p>JC Select&nbsp;</p>',
+                'serial' => 'Race 2018 Série JC',
                 'attr3' => NULL,
                 'attr4' => 95.0,
                 'attr5' => NULL,
@@ -6065,7 +6065,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-11-19 15:33:56',
-                'updated_at' => '2021-11-19 15:33:56',
+                'updated_at' => '2022-03-10 17:28:31',
             ),
             189 => 
             array (
