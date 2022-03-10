@@ -63,7 +63,7 @@ class DeviceController extends Controller
     public function show(Category $category, Device $device)
     {
 
-        $reviews = $device->reviews()->paginate(5);
+        $reviews = $device->reviews()->latest()->paginate(5);
 
         // calcul des données techniques moyennes
 

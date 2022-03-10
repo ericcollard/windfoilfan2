@@ -15,6 +15,24 @@
 
 @section('css')
     <style>
+
+        .review_body .container, .device_body .container  {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .review_body .multi-col-2, .device_body .multi-col-2 {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 2em;
+            -moz-column-gap: 2em;
+            column-gap: 2em;
+            -webkit-column-width: 300px;
+            -moz-column-width: 300px;
+            column-width: 300px;
+        }
+
         .floue{
             height: 200px;
             background: linear-gradient(-180deg, rgba(255,255,255,0), rgba(255,255,255,1));
@@ -223,7 +241,7 @@
                                 <ul class="social-list list-inline mt-3">
                                     @can ('update', $device)
                                         <li class="list-inline-item text-center">
-                                            <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
+                                            <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill mb-1" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
                                         </li>
                                     @endcan
                                     @can ('delete', $device)
@@ -243,7 +261,7 @@
 
                     </div>
 
-                    <div class="card-body ">
+                    <div class="card-body device_body">
                         <div id="post-body">
                             {!! $device->body !!}
                         </div>
@@ -303,10 +321,8 @@
                         <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
-                    <div class="col-4">
-                        <div style="float: right">
+                    <div class="col-4 text-end">
                             {!! $reviews->links() !!}
-                        </div>
                     </div>
                 </div>
 
@@ -318,8 +334,11 @@
                                     <div class="col-6 col-md-2">
                                         <b>{{ $review->owner->name }}</b>
                                     </div>
-                                    <div class="col-6 col-md-10">
+                                    <div class="col-6 col-md-5">
                                         <i class="mdi mdi-message-text"></i><b> Posté le</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
+                                    </div>
+                                    <div class="col-12 col-md-5 text-end">
+                                        <b>{{ __('Title') }}</b> : {{ $review->title }}
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +360,7 @@
                                     <div class="col-md-10 col-sm-12">
 
                                         <div class="module">
-                                            <div class="collapse" id="collapseReview{{ $review->id }}" >
+                                            <div class="collapse review_body" id="collapseReview{{ $review->id }}" >
                                                 {!! $review->body !!}
                                             </div>
                                             <div class="floue"></div>
@@ -364,7 +383,7 @@
 
                                                 @can ('update', $review)
                                                     <li class="list-inline-item text-center">
-                                                        <a class="btn btn-warning rounded-pill" href="{{ route('review.edit',$review) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Edit') }}</a>
+                                                        <a class="btn btn-warning rounded-pill mb-1" href="{{ route('review.edit',$review) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Edit') }}</a>
                                                     </li>
                                                 @endcan
                                                 @can ('delete', $review)

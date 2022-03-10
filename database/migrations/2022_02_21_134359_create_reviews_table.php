@@ -19,10 +19,10 @@ class CreateReviewsTable extends Migration
             $table->integer('user_id');
             $table->string('title');
             $table->text('body');
-            $table->text('test_equipment');
-            $table->integer('test_duration');
-            $table->string('test_conditions');
-            $table->string('test_place');
+            $table->text('test_equipment')->nullable();
+            $table->integer('test_duration')->nullable();
+            $table->string('test_conditions')->nullable();
+            $table->string('test_place')->nullable();
             $table->timestamps();
         });
     }

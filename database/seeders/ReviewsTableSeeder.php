@@ -4793,6 +4793,224 @@ array (
 'created_at' => '2021-11-09 21:24:29',
 'updated_at' => '2021-11-10 19:58:44',
 ),
+121 => 
+array (
+'id' => 129,
+'device_id' => 168,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<div class="container">
+<div class="row">
+<div class="col-lg">
+<p>A l\'occasion de la r&eacute;ception d\'un mod&egrave;le de pr&eacute;-s&eacute;rie, nous vous faisons d&eacute;couvrir le mod&egrave;le Race. Je pr&eacute;cise que malgr&eacute; cette pr&eacute;sentation, il faudra attendre encore au moins 6 semaines avant de pouvoir acqu&eacute;rir un mod&egrave;le de s&eacute;rie car ne nombreux petits d&eacute;tails d\'industrialisation sont encore &agrave; r&eacute;gler. Le premier r&eacute;sultat est cependant tr&egrave;s encourageant.&nbsp;</p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<h3>Le mat</h3>
+<p>Le mat HM97 consitue la pi&egrave;ce ma&icirc;tresse du puzzle. Depuis toujours, F4 a bien compris qu\'une grande partie se jouait l&agrave;, et nous avons toujours eu des mats d\'une qualit&eacute; assez exceptionelle. Leur force : des rigidit&eacute;s en flexion et torsion de tr&egrave;s haut niveau. Cette fois, le dernier venu explose litt&eacute;ralement toutes nos r&eacute;f&eacute;rences. La marque a fait le choix d\'un mat un peu plus &eacute;pais que la moyenne pour favoriser le contr&ocirc;le : une strat&eacute;gie qui pourrait g&ecirc;ner les meilleurs mondiaux, mais qui sera certainement payante pour les amateurs.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0943.jpeg" alt="F4 Race foll 2021" /></p>
+<p>Ce mat sera commun &agrave; toutes les configurations F4, y compris le mod&egrave;le freeride. Cela veut aussi dire qu\'il sera enfin possible, avec le m&ecirc;me mat, d\'avoir &agrave; la fois un foil de race ultime, un mod&egrave;le de freerace ou de slalom mais aussi un mod&egrave;le de freewave pour aller jouer dans les vagues ... et ceci sans aucune concession sur le contr&ocirc;le gr&acirc;ce &agrave; une rigidit&eacute; au top.</p>
+<p>Tout se jouera dans les tailles de fuselage et les mod&egrave;les d\'ailes.</p>
+<p>Cette compatibilit&eacute; sera aussi un super atout pour celui qui veut faire &eacute;voluer un foil du freeride vers de la perf. Certes l\'investissement de d&eacute;part est l&eacute;g&egrave;rement sup&eacute;rieur (environ 2000&euro; contre 1600 &agrave; 1700 pour les meilleurs mod&egrave;les freeride carbone), mais ce sera le seul foil freeride du march&eacute; &agrave; b&eacute;n&eacute;ficier d\'un mat haut module, &eacute;volutif sans changement vers un mod&egrave;le de course.</p>
+</div>
+<div class="col-lg-6">
+<h3>Les stabilisateurs</h3>
+<p>Les stabilisateurs changent &eacute;galement compl&egrave;tement.</p>
+<p>Cette fois, on quitte la s&eacute;rie des stab qui &eacute;taient partag&eacute;s avec NeilPryde pour des mod&egrave;les &agrave; plus grand allongement.&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0949.jpeg" alt="F4 Race foll 2021" /></p>
+<p>Le berceau assise du stab est d&eacute;sormais int&eacute;gr&eacute; au moulage, et ne sera donc plus produit en imprimante 3D.</p>
+<p>Cela va permettre de faire baisser le cout des jeux de cales et d\'avoir des jonctions plus propres.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0950.jpeg" alt="F4 Race foll 2021" /></p>
+</div>
+<div class="col-lg-6">
+<h3>Les fuselages</h3>
+<p>Pas de changement sur l\'assise du stab, mais je r&eacute;itt&egrave;re mon commentaire concernant le bien fond&eacute; des filetage profonds comme c\'est le cas ici. Cela &eacute;vite en particulier des foirages trop rapides d&egrave;s que l\'on serre un peu fort. Et si un jour on doit poser des h&eacute;licoils, on n\'a pas le probl&egrave;me de l\'h&eacute;licoil qui bute au fond et qui d&eacute;passe.&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0946.jpeg" alt="F4 Race foll 2021" /></p>
+<p>L\'assise de l\'aile avant est compl&egrave;tement nouvelle. On a enfin un assise plane qui va donner plus de libret&eacute; quant aux profils d\'aile puisqu\'il ne sera plus n&eacute;cessaire d\'avoir un extrados constant. Elle est aussi plus large afin de favoriser la ridigit&eacute; de fixation des ailes &agrave; grande envergure.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0948.jpeg" alt="F4 Race foll 2021" /></p>
+</div>
+<div class="col-lg-6">
+<h3>Les ailes</h3>
+<p>Les ailes (ici les surfaces 945 et 850) sont &eacute;galement nouvelles. En terme d\'outline et de profil, elles sont issues du d&eacute;veloppement de la derni&egrave;re 900 de la marque, avec des bouts d\'aile encore plus fins pour favoriser la glisse.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0951.jpeg" alt="F4 Race foll 2021" /></p>
+<p>Les ailes viennent d&eacute;sormais se fixer sur un fuselage plat, avec 5 vis M6 Torx. Elles int&egrave;grent un petit morceau de fuselage pour peaufiner les &eacute;coulements entre le bord de fuite et le fuselage.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0952.jpeg" alt="F4 Race foll 2021" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-01/IMG_0953.jpeg" alt="F4 Race foll 2021" /></p>
+<p>Ces 2 grandes surfaces seront accompagn&eacute;es d\'une s&eacute;rie d\'ailes typ&eacute;es slalom entre 337 et 720 cm2, et d\'une 800 freerace privil&eacute;giant l\'accessibilit&eacute;.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg">
+<p>Voil&agrave; pour un premier un boxing rapide du mod&egrave;le 2021. A venir toute une gamme avec des fuselages de 78 &agrave; 115, des ailes de 337cm2 &agrave; 2500cm2. Aux dires de la nouvelle structure F4, tout ceci devrait &ecirc;tre disponible autour de d&eacute;but Mars, avec un site Internet remis &agrave; jour et la possibilit&eacute; de constituer vos packages sur mesure. A tr&egrave;s vite pour un premier test sur l\'eau.</p>
+</div>
+</div>
+</div>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 20:31:29',
+'updated_at' => '2022-03-10 20:31:29',
+),
+122 => 
+array (
+'id' => 130,
+'device_id' => 16,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-apBl2gZO8s.jpg" alt="" /></p>
+<p>La finition des pi&egrave;ces carbone est superbe. Aucune bavure, les talons sont ponc&eacute;s pour que les ajustement se fassent sans forcer. J\'ai re&ccedil;u 2 ailes avec une finition mat magnifique, et une aile brillante. Visiblement, les 2 ailes mattes et le mat ne sont plus en prepreg, contrairement &agrave; l\'aile brillante.</p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-OsvKvQRoh2.jpg" alt="" /></p>
+<p>Les fuselages sont lourds mais respirent &agrave; rigidit&eacute;. Ils sont tr&egrave;s g&eacute;n&eacute;reusement dimensionn&eacute;s . Ils sont anodis&eacute;s noir mat ... mais cette anodisation parait l&eacute;g&egrave;re.</p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-c38IhSDHXZ.jpg" alt="" /></p>
+<p>Le berceau de l\'aile est usin&eacute; dans la masse, tandis que celui du stab passe par une cale visiblement r&eacute;alis&eacute;e en impression 3D. <img src="/storage/photos/1/2018-12/f4-race-foil-2019-YP0BlxNrQV.jpg" alt="" /></p>
+<p>Cela va permettre de r&eacute;aliser &eacute;ventuellement d\'autres cales pour modifier l\'angle du stab.</p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-WmuipFXhjF.jpg" alt="" /></p>
+<p>L\'assemblage se fait sans probl&egrave;me, mais on regr&ecirc;te juste que F4 ai d&eacute;cid&eacute; de rester sur une visserie M5 6 pans. Grace &agrave; Starboard, nous avons pris l\'habitude d\'utilser du Torx dans ces diam&egrave;tres, beaucoup plus r&eacute;sistant dans le temps, et permettant un meilleur couple de serrage. L\'autre solution consiste &agrave; passer &agrave; du M6 comme Taaroa ... bref, apr&egrave;s un serrage o&ugrave; d&eacute;j&agrave; une t&ecirc;te de vis &agrave; montr&eacute; des signes de faiblesse, je me suis empress&eacute; de remplacer les vis fournies par du Torx.</p>
+<h3>Mesures</h3>
+<p>Je n\'ai pas pu m\'emp&ecirc;cher de mesurer la rigidit&eacute; en flexion et en torsion du mat pour en savoir plus sur cette nouvelle version. Disons le tout de suite, ce n\'est pas le mat le plus raide du march&eacute; en flexion, mais il est dans les 4 premiers. Par contre, avec une &eacute;paisseur moyenne de 14,5 mm, c\'est l\'un des plus fins. De fa&ccedil;on &eacute;vidente, il explose les scores sur le module de rigidit&eacute; en flexion (rigidit&eacute; rapport&eacute;e &agrave; l\'&eacute;paisseur) avec une valeur 50% plus &eacute;lev&eacute;e que le 2e, 75% plus &eacute;lev&eacute;e que le NP F4, et 3600% plus elev&eacute;e que le foil le plus souple que l\'on ait mesur&eacute; !! &nbsp;&nbsp;</p>
+<p>En torsion, il prend la 2e place des mats carbone mesur&eacute;s.</p>
+<p>Bien s&ucirc;r, tout ceci n\'est que tr&egrave;s th&eacute;orique, mais cela montre le soin que F4 a apport&eacute; &agrave; la construction de son foil.</p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 20:48:06',
+'updated_at' => '2022-03-10 20:49:10',
+),
+123 => 
+array (
+'id' => 131,
+'device_id' => 29,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<p>Aujourd\'hui, nous avons re&ccedil;u les 2 nouveaux foils Alpine de windsurf : les A1 Aluiminum et A1 Carbone. Ce sont 2 pi&egrave;ces absolument magnifiques, produites 100% en France, que nous nous faisons un plaisir de pr&eacute;senter en d&eacute;tail.</p>
+<p>Commen&ccedil;ons par quelques donn&eacute;es techniques basiques</p>
+<ul>
+<li>la version alu poss&egrave;de un mat de 85cm avec une corde de 15.5cm. Nous l\'avons pes&eacute; &agrave; 5kg24 dans sa totalit&eacute;</li>
+</ul>
+<p>Ces foils nous ont &eacute;t&eacute; livr&eacute;s par la soci&eacute;t&eacute; Alpine avec 2 ailes :</p>
+<ul>
+<li>une Light Wind de 84cm d\'envergure et 14cm de corde</li>
+<li>une aile de vent soutenu de 64cm d\'envergure et 14,5 cm de corde</li>
+</ul>
+<p>D&egrave;s le d&eacute;ballage, la qualit&eacute; de fabrication saute aux yeux. Fid&egrave;le &agrave; son habitude, Alpine propose des produits ultra bien finis, dont toutes les pi&egrave;ces m&eacute;talliques re&ccedil;oivent une anodisation orange du plus bel effet. De ce c&ocirc;t&eacute;, Alpine a positionn&eacute; la barre tr&egrave;s haut !</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-1.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Les 2 mats font pratiquement la m&ecirc;me taille. Suite aux premiers essai de l\'an pass&eacute;, le mod&egrave;le aluminium a &eacute;t&eacute; enti&egrave;rement repens&eacute;, et le mat semble cette fois ultra rigide ... un excellent point que nous v&eacute;rifieront sur l\'eau tr&egrave;s vite.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-2.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Ils viennent s\'emboiter dans le fuselage au moyen d\'un boitier cylindrique, le tout &eacute;tant bloqu&eacute; par des vis transversales et lat&eacute;rales (comme chez Starboard). A l\'usage, nous savons d&eacute;sormais que cela assure une liaison fiable et rigide.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-3.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Le fuselage est &eacute;quip&eacute; d\'une anode qui limite la corrosion des autres pi&egrave;ces. Nous l\'avons test&eacute; : associ&eacute;e &agrave; des vis enduites de Tef Gel, cela permet de laisser le foil mont&eacute; plusieurs jours sans g&eacute;n&eacute;rer d\'oxydation visible. Nous vous incitons tout de m&ecirc;me &agrave; d&eacute;monter r&eacute;guli&egrave;rement vos foils alu.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-4.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Le talon du mat alu re&ccedil;oit une mini platine, largement suffisante &agrave; nos yeux ... qui peut &ecirc;tre &eacute;largie &agrave; l\'aide d\'une platine carbone (fournie), et peut &ecirc;tre remplac&eacute; par une version PowerBox.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-5.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Un tr&egrave;s (tr&egrave;s tr&egrave;s) bon point : comme chez Starboard, les inserts sont pivotants, et offrent un d&eacute;battement suffisant pour que l\'on puisse monter le foil sans bricolage sur les diff&eacute;rents flotteurs dont les per&ccedil;ages ne sont jamais au m&ecirc;me endroit (merci Cobra).</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-6.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>C&ocirc;t&eacute; ailes, nous avons re&ccedil;u 2 ailes en Carbone, tr&egrave;s l&eacute;g&egrave;res, et recevant une finition mate tr&egrave;s propre sans masquage ni peinture ... certainement ce qui se fait de mieux &agrave; l\'heure actuelle. Les ailes sont aussi disponibles dans d\'autres finitions plus haut de gamme pour ceux qui veulent les utiliser comme miroirs pour se raser le matin :)</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-7.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>La 84cm light wind utilise un profil plut&ocirc;t fin.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-8.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Le 64 a une forme tr&egrave;s diff&eacute;rente, avec un profil plus &eacute;pais</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-9.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>L\'ensemble est mont&eacute; sur le fuselage avec des entretoises en plastiques. Ces pi&egrave;ces servent &eacute;galement de r&eacute;glage d\'angle puisque Alpine livre le foil avec plusieurs cales &agrave; la fois pour l\'aile et pour le stab. Les cales poss&egrave;dent des petits t&eacute;tons de centrage qui sont bien pratiques &agrave; l\'usage. Le tout est assembl&eacute; avec des Torx T30, la cl&eacute; &eacute;tant fournie.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-10.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-11.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p>Le stab, quant &agrave; lui, est un mod&egrave;le ultra fin, qui va certainement occasionner bine peu de train&eacute;e. Il faudra cependant en prendre soin vu sa finesse, mais c\'est aussi une tr&egrave;s jolie pi&egrave;ce.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-12.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 20:56:04',
+'updated_at' => '2022-03-10 20:56:04',
+),
+124 => 
+array (
+'id' => 132,
+'device_id' => 138,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<p>Pour 2020, AlpineFoil nous propose 2 nouvelles d&eacute;clinaisons de son windfoil carbone A1 : le "Sport" et le "Race". Ces 2 nouveaux mod&egrave;les sont bas&eacute;s sur un mat de 97cm, notablement optimis&eacute; pour la glisse avec avec un profil plus fin (13.9mm en t&ecirc;te contre 16mm) que sur le A1 original.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-1.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>Sur ces 2 mod&egrave;les, l\'&eacute;chantillonnage a &eacute;t&eacute; revu par rapport au A1 avec, notemment, des quantit&eacute;s de carbone haut module (M40J et autres) bien plus importantes. Ceci a pour objectif de compenser la plus faible &eacute;paisseur, et la plus grande longueur de mat, pour conserver une raideur optimale.&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-2.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>Le mod&egrave;le Sport est destin&eacute;s aux amateurs sportifs, qui veulent d&eacute;couvrir des sensations de glisse sup&eacute;rieures au A1. La mod&egrave;le Race, destin&eacute; aux experts, est g&eacute;om&eacute;triquement identique, mais profite d\'un mat beaoucoup plus raide pour plus de contr&ocirc;le dans le vent, y compris avec les planches larges et les plus grands fuselages.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-9.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>Sur ce nouvel A1 Sport, le fuselage a &eacute;t&eacute; &eacute;galement revu par rapport au A1 \'standard\'. La longueur totale est identique, mais l\'aile a &eacute;t&eacute; recul&eacute;e de 10mm par rapport au mod&egrave;le 2019. C\'est assez visible sur la photo ci -dessus.</p>
+<p>Le fuselage a &eacute;t&eacute; &eacute;galement &eacute;paissi pour ajouter de la raideur. C\'est en particulier tr&egrave;s visible autour de la jonction mat / fuselage (cf. photo ci dessous)</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>En regardant de pr&egrave;s, on remarquera aussi que la queue du Sport a &eacute;t&eacute; revue pour affiner les sorties d\'eau.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-13.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>Pour finir avec le jeux des 7 diff&eacute;rences, les plus attentifs remarqueront que l\'assise du talon a une nouvelle forme avec un &eacute;paississement plus marqu&eacute;, pour am&eacute;liorer le blocage de la platine carbone propos&eacute;e en option.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>De fa&ccedil;on tout &agrave; fait logique, la platine est &eacute;galement revue pour matcher avec ce nouveau talon:</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740" /></p>
+<p>Vous remarquez &eacute;galement que cette derni&egrave;re est dissym&eacute;trique avec un c&ocirc;t&eacute; plus &eacute;pais que l\'autre. En fonction de son montage cela veut dire qu\'on va ajouter ou retirer 1&deg; environ d\'angle de rake. Je pr&eacute;cise qu\'il existe &eacute;galement une 2e platine en option avec un angle de 0.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870" /></p>
+<p>Je ne pourrai pas terminer cette pr&eacute;sentation sans mettre en lumi&egrave;re l\'exceptionelle finition du A1 Sport ... dans la pure tradition AlpineFoil, et bien s&ucirc;r un point important &agrave; nos yeux : il est con&ccedil;u ET fabriqu&eacute; en France. A l\'instar des produits Lokefoil et AHD, choisir un foil AlpineFoil, c\'est &eacute;videmment soutenir nos artisans et industriels fran&ccedil;ais, qui font d\'&eacute;normes efforts pour propoer des produits ultra qualitatifs &agrave; des prix identiques aux productions asiatiques !</p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 20:57:27',
+'updated_at' => '2022-03-10 20:57:27',
+),
+125 => 
+array (
+'id' => 133,
+'device_id' => 147,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<div class="multi-col-2">
+<div><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_5063.jpg" alt="Alpinefoil A1 race" /></div>
+<div>
+<p>Pour 2020, AlpineFoil nous propose 2 nouvelles d&eacute;clinaisons de son windfoil carbone A1 : le "Sport" et le "Race". Ces 2 nouveaux mod&egrave;les sont bas&eacute;s sur un mat de 97cm, notablement optimis&eacute; pour la glisse avec avec un profil plus fin (13.9mm en t&ecirc;te contre 16mm) que sur le A1 original.</p>
+<p>Sur ces 2 mod&egrave;les, l\'&eacute;chantillonnage a &eacute;t&eacute; revu par rapport au A1 avec, notemment, des quantit&eacute;s de carbone haut module (M40J et autres) bien plus importantes. Ceci a pour objectif de compenser la plus faible &eacute;paisseur, et la plus grande longueur de mat, pour conserver une raideur optimale. Les 2 mod&egrave;les sont d&eacute;sormais livr&eacute;s en standard avec l\'aile Regata 850.</p>
+<p>Le mod&egrave;le Race, destin&eacute; aux experts, est g&eacute;om&eacute;triquement identique, mais profite d\'un mat beaoucoup plus raide pour plus de contr&ocirc;le dans le vent, y compris avec les planches larges et les plus grands fuselages.</p>
+<p>Sur ce nouvel A1 Race, le fuselage a &eacute;t&eacute; &eacute;galement revu par rapport au A1 \'standard\'. La longueur totale passe &agrave; 125cm, ave une aile tr&egrave;s avanc&eacute;e pour un maxiumum de puissance.&nbsp;Le fuselage a &eacute;t&eacute; &eacute;galement &eacute;paissi pour ajouter de la raideur. C\'est en particulier tr&egrave;s visible autour de la jonction mat / fuselage (cf. photo ci dessous)</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>Pour finir avec le jeux des 7 diff&eacute;rences, les plus attentifs remarqueront que l\'assise du talon a une nouvelle forme avec un &eacute;paississement plus marqu&eacute;, pour am&eacute;liorer le blocage de la platine carbone propos&eacute;e en option.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p>De fa&ccedil;on tout &agrave; fait logique, la platine est &eacute;galement revue pour matcher avec ce nouveau talon:</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740" /></p>
+<p>Vous remarquez &eacute;galement que cette derni&egrave;re est dissym&eacute;trique avec un c&ocirc;t&eacute; plus &eacute;pais que l\'autre. En fonction de son montage cela veut dire qu\'on va ajouter ou retirer 1&deg; environ d\'angle de rake. Je pr&eacute;cise qu\'il existe &eacute;galement une 2e platine en option avec un angle de 0.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870" /></p>
+<p>Je ne pourrai pas terminer cette pr&eacute;sentation sans mettre en lumi&egrave;re l\'exceptionelle finition du A1 Race ... dans la pure tradition AlpineFoil, et bien s&ucirc;r un point important &agrave; nos yeux : il est con&ccedil;u ET fabriqu&eacute; en France. A l\'instar des produits Lokefoil et AHD, choisir un foil AlpineFoil, c\'est &eacute;videmment soutenir nos artisans et industriels fran&ccedil;ais, qui font d\'&eacute;normes efforts pour propoer des produits ultra qualitatifs &agrave; des prix identiques aux productions asiatiques !</p>
+</div>
+</div>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 20:58:14',
+'updated_at' => '2022-03-10 20:58:14',
+),
+126 => 
+array (
+'id' => 134,
+'device_id' => 164,
+'user_id' => 5,
+'title' => 'Présentation',
+'body' => '<p>Voici quelques photos des premiers mod&egrave;les de s&eacute;rie :</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0617.jpg" alt="AFS wind 95 v2" /></p>
+<p>Le combo avec aile S820</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0618.jpg" alt="AFS wind 95 v2" /></p>
+<p>Le nouveau fuselage &agrave; section carr&eacute;e</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0619.jpg" alt="AFS wind 95 v2" /></p>
+<p>La liaison mat / fuslelage coll&eacute; et tourillon&eacute;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0620.jpg" alt="AFS wind 95 v2" /></p>
+<p>Les nouveaux inserts noy&eacute;s apr&egrave;s moulage</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0622.jpg" alt="AFS wind 95 v2" /></p>
+<p>Le nouveau mat &agrave; corde &eacute;volutive</p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2022-03-10 21:02:20',
+'updated_at' => '2022-03-10 21:02:20',
+),
 ));
         
         

@@ -5334,9 +5334,9 @@ class TechnicaldatasTableSeeder extends Seeder
             166 => 
             array (
                 'id' => 167,
-                'device_id' => 173,
+                'device_id' => 147,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Mesures',
                 'attr3' => NULL,
                 'attr4' => 97.0,
                 'attr5' => NULL,
@@ -5361,14 +5361,14 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-11 10:35:44',
-                'updated_at' => '2021-02-11 10:37:30',
+                'updated_at' => '2022-03-10 21:00:55',
             ),
             167 => 
             array (
                 'id' => 168,
-                'device_id' => 174,
+                'device_id' => 138,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Mesures',
                 'attr3' => NULL,
                 'attr4' => 97.0,
                 'attr5' => NULL,
@@ -5393,7 +5393,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-11 10:38:38',
-                'updated_at' => '2021-02-11 10:40:07',
+                'updated_at' => '2022-03-10 21:00:05',
             ),
             168 => 
             array (
