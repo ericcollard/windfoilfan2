@@ -151,6 +151,7 @@
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.categories') }}">{{ __('Posts') }}</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.category',$device->category) }}">{{ $device->category->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('device.category',$device->category) }}?from={{ $device->brand->slug }}">{{ $device->brand->name }}</a></li>
                             <li class="breadcrumb-item active">{{ $device->name }}</li>
                         </ol>
                     </div>
@@ -211,19 +212,37 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <p>Progarmme : La zone verte situe le programme d'utilisation dans la fourchette FREESTYLE / FREERIDE / FREERACE / RACE</p>
-                            </div>
-                            <div class="col-6">
-                                    <?php
-                                    $fs = $device->programme_start;
-                                    $rs = $device->programme_end;
-                                    $lpc = $fs*10;
-                                    $cpc = ($rs-$fs)*10;
-                                    $rpc = 100-$rs*10;
+                                <p>Programme : La zone verte situe le programme d'utilisation dans la fourchette FREESTYLE / FREERIDE / FREERACE / RACE</p>
+                                <?php
+                                $fs = $device->programme_start;
+                                $rs = $device->programme_end;
+                                $lpc = $fs*10;
+                                $cpc = ($rs-$fs)*10;
+                                $rpc = 100-$rs*10;
 
-                                    echo "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
-                                    ?>
-                                </div>
+                                echo "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
+                                ?>
+                            </div>
+                            <div class="col-6 text-end">
+                                <ul class="social-list list-inline mt-3">
+                                    @can ('update', $device)
+                                        <li class="list-inline-item text-center">
+                                            <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
+                                        </li>
+                                    @endcan
+                                    @can ('delete', $device)
+                                        <li class="list-inline-item text-center">
+                                            <form id="deleteData" method="POST" action="{{ route('device.destroy',['category'=>$device->category, 'device'=>$device]) }}" >
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <button type="button" class="btn btn-danger rounded-pill">
+                                                    <a href="javascript:{}" onclick="document.getElementById('deleteData').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                                </button>
+                                            </form>
+                                        </li>
+                                    @endcan
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
@@ -255,9 +274,9 @@
                             <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
                                 <thead>
                                 <tr>
-                                    <th>Action</th>
-                                    <th>Numéro de série</th>
-                                    <th>Created</th>
+                                    <th>{{ __('Action') }}</th>
+                                    <th>{{ __('Serial number') }}</th>
+                                    <th>{{ __('Created at') }}</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -285,7 +304,7 @@
 
                 <div class="row">
                     <div class="col-8 mb-2">
-                        <a class="btn btn-primary" href="#" role="button">Répondre</a>
+                        <a class="btn btn-warning rounded-pill" href="#" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4">
@@ -355,7 +374,7 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <a class="btn btn-primary" href="#" role="button">Répondre</a>
+                        <a class="btn btn-warning rounded-pill" href="#" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4">

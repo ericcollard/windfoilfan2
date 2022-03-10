@@ -142,7 +142,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button id="btn_submit" type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                            <button id="btn_submit" type="submit" class="btn btn-primary rounded-pill">{{ __('Save') }}</button>
                         </div>
 
                         @if (count($errors))

@@ -385,7 +385,7 @@ class DevicesTableSeeder extends Seeder
             15 => 
             array (
                 'id' => 16,
-                'name' => 'Race foil',
+                'name' => 'SLALOM RACE USA',
                 'slug' => 'f4-race-foil-2019',
                 'user_id' => 1,
                 'category_id' => 1,
@@ -421,29 +421,9 @@ class DevicesTableSeeder extends Seeder
                 'programme_start' => 7.0,
                 'programme_end' => 10.0,
                 'created_at' => '2018-12-03 19:57:17',
-                'updated_at' => '2021-08-01 08:39:26',
+                'updated_at' => '2022-03-10 17:01:12',
             ),
             16 => 
-            array (
-                'id' => 17,
-                'name' => 'Race foil Proto',
-                'slug' => 'f4-race-foil-proto-2018',
-                'user_id' => 1,
-                'category_id' => 1,
-                'brand_id' => 35,
-                'status' => 'Hidden',
-                'body' => 'Description',
-                'year' => 2018,
-                'price' => '2400.00',
-                'link_test' => NULL,
-                'link_presentation' => NULL,
-                'link_product' => NULL,
-                'programme_start' => 7.0,
-                'programme_end' => 10.0,
-                'created_at' => '2018-08-01 18:57:17',
-                'updated_at' => '2021-03-07 18:07:48',
-            ),
-            17 => 
             array (
                 'id' => 18,
                 'name' => 'Sword RS',
@@ -463,7 +443,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-10-01 18:57:17',
                 'updated_at' => '2021-01-29 09:54:20',
             ),
-            18 => 
+            17 => 
             array (
                 'id' => 19,
                 'name' => 'Sword M80',
@@ -483,7 +463,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:21',
             ),
-            19 => 
+            18 => 
             array (
                 'id' => 20,
                 'name' => 'Noe 97 Freerace UHM',
@@ -528,7 +508,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2020-01-05 19:57:17',
                 'updated_at' => '2021-06-14 14:21:01',
             ),
-            20 => 
+            19 => 
             array (
                 'id' => 21,
                 'name' => 'Noe 97 Freerace UHM',
@@ -550,7 +530,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2019-06-15 18:57:17',
                 'updated_at' => '2021-06-14 14:21:22',
             ),
-            21 => 
+            20 => 
             array (
                 'id' => 22,
                 'name' => 'Noe 97 Freerace',
@@ -570,7 +550,7 @@ class DevicesTableSeeder extends Seeder
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:37',
             ),
-            22 => 
+            21 => 
             array (
                 'id' => 23,
                 'name' => 'Noe 97 Freeride',
@@ -612,7 +592,7 @@ class DevicesTableSeeder extends Seeder
             'created_at' => '2018-11-01 19:57:17',
             'updated_at' => '2020-03-26 22:45:23',
         ),
-        23 => 
+        22 => 
         array (
             'id' => 24,
             'name' => 'Noe 80 Freeride',
@@ -653,7 +633,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-01 18:57:17',
         'updated_at' => '2020-06-25 10:17:39',
     ),
-    24 => 
+    23 => 
     array (
         'id' => 25,
         'name' => 'Glide Wind',
@@ -684,7 +664,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-24 18:57:17',
         'updated_at' => '2021-01-22 21:04:37',
     ),
-    25 => 
+    24 => 
     array (
         'id' => 26,
         'name' => 'Flight Evo',
@@ -713,7 +693,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-12-24 19:57:17',
         'updated_at' => '2021-01-29 09:51:02',
     ),
-    26 => 
+    25 => 
     array (
         'id' => 27,
         'name' => 'Ghost Wsiper 111',
@@ -733,7 +713,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-08-01 18:57:17',
         'updated_at' => '2021-03-07 18:07:06',
     ),
-    27 => 
+    26 => 
     array (
         'id' => 28,
         'name' => 'Wind 105',
@@ -761,7 +741,7 @@ class DevicesTableSeeder extends Seeder
         'created_at' => '2018-06-02 18:57:17',
         'updated_at' => '2021-08-01 08:31:53',
     ),
-    28 => 
+    27 => 
     array (
         'id' => 29,
         'name' => 'A1 ALU 2018 ULW',
@@ -814,7 +794,7 @@ class DevicesTableSeeder extends Seeder
     'created_at' => '2018-05-30 18:57:17',
     'updated_at' => '2020-04-09 07:13:55',
 ),
-29 => 
+28 => 
 array (
     'id' => 30,
     'name' => 'LK1 850',
@@ -843,7 +823,7 @@ array (
     'created_at' => '2018-04-25 18:57:17',
     'updated_at' => '2021-06-14 14:20:36',
 ),
-30 => 
+29 => 
 array (
     'id' => 31,
     'name' => 'Wind 85',
@@ -863,7 +843,7 @@ array (
     'created_at' => '2018-04-28 18:57:17',
     'updated_at' => '2021-06-14 14:16:52',
 ),
-31 => 
+30 => 
 array (
     'id' => 32,
     'name' => 'Wind 85',
@@ -892,7 +872,7 @@ array (
     'created_at' => '2019-09-15 18:57:17',
     'updated_at' => '2021-08-01 08:31:21',
 ),
-32 => 
+31 => 
 array (
     'id' => 33,
     'name' => 'Wind 95 F700',
@@ -912,7 +892,7 @@ array (
     'created_at' => '2018-06-10 18:57:17',
     'updated_at' => '2021-08-01 08:31:48',
 ),
-33 => 
+32 => 
 array (
     'id' => 34,
     'name' => 'Wind 95',
@@ -945,7 +925,7 @@ array (
     'created_at' => '2019-12-15 19:57:17',
     'updated_at' => '2021-06-14 14:16:11',
 ),
-34 => 
+33 => 
 array (
     'id' => 35,
     'name' => 'GT Alu v4',
@@ -965,7 +945,7 @@ array (
     'created_at' => '2018-02-12 19:57:17',
     'updated_at' => '2021-06-14 14:17:45',
 ),
-35 => 
+34 => 
 array (
     'id' => 36,
     'name' => 'GT Alu Mat 95 V6',
@@ -985,7 +965,7 @@ array (
     'created_at' => '2019-07-10 18:57:17',
     'updated_at' => '2020-03-13 20:30:42',
 ),
-36 => 
+35 => 
 array (
     'id' => 37,
     'name' => 'Flow H9',
@@ -1012,7 +992,7 @@ array (
     'created_at' => '2018-02-12 19:57:17',
     'updated_at' => '2020-03-30 20:55:31',
 ),
-37 => 
+36 => 
 array (
     'id' => 38,
     'name' => 'Vini pro',
@@ -1032,7 +1012,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2021-06-14 14:10:05',
 ),
-38 => 
+37 => 
 array (
     'id' => 39,
     'name' => 'Vini Air',
@@ -1052,7 +1032,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2020-03-13 20:26:32',
 ),
-39 => 
+38 => 
 array (
     'id' => 40,
     'name' => 'Vini ride',
@@ -1072,7 +1052,7 @@ array (
     'created_at' => '2019-06-01 18:57:17',
     'updated_at' => '2020-03-13 20:26:35',
 ),
-40 => 
+39 => 
 array (
     'id' => 41,
     'name' => 'Tae Proto',
@@ -1092,7 +1072,7 @@ array (
     'created_at' => '2018-11-15 19:57:17',
     'updated_at' => '2020-03-13 20:25:35',
 ),
-41 => 
+40 => 
 array (
     'id' => 42,
     'name' => 'H10 Evo',
@@ -1112,7 +1092,7 @@ array (
     'created_at' => '2017-11-06 19:57:17',
     'updated_at' => '2020-03-13 20:28:28',
 ),
-42 => 
+41 => 
 array (
     'id' => 43,
     'name' => 'WH Flight Alu 85',
@@ -1132,7 +1112,7 @@ array (
     'created_at' => '2018-04-21 18:57:17',
     'updated_at' => '2021-06-14 14:16:43',
 ),
-43 => 
+42 => 
 array (
     'id' => 44,
     'name' => 'Envol',
@@ -1152,7 +1132,7 @@ array (
     'created_at' => '2017-10-18 18:57:17',
     'updated_at' => '2020-03-13 20:30:23',
 ),
-44 => 
+43 => 
 array (
     'id' => 45,
     'name' => 'Perf',
@@ -1172,7 +1152,7 @@ array (
     'created_at' => '2017-10-18 18:57:17',
     'updated_at' => '2020-03-13 20:30:20',
 ),
-45 => 
+44 => 
 array (
     'id' => 46,
     'name' => 'Easy LW HD 2017',
@@ -1192,7 +1172,7 @@ array (
     'created_at' => '2017-08-22 18:57:17',
     'updated_at' => '2021-01-22 21:03:23',
 ),
-46 => 
+45 => 
 array (
     'id' => 47,
     'name' => '85 Carbon',
@@ -1212,7 +1192,7 @@ array (
     'created_at' => '2017-07-26 18:57:17',
     'updated_at' => '2020-03-22 17:56:39',
 ),
-47 => 
+46 => 
 array (
     'id' => 48,
     'name' => 'GT Carbon 85 light',
@@ -1232,7 +1212,7 @@ array (
     'created_at' => '2019-07-10 18:57:17',
     'updated_at' => '2020-03-22 17:56:44',
 ),
-48 => 
+47 => 
 array (
     'id' => 49,
     'name' => 'Race Carbon P2',
@@ -1252,7 +1232,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:54:07',
 ),
-49 => 
+48 => 
 array (
     'id' => 50,
     'name' => 'Race Carbon P3',
@@ -1272,7 +1252,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:06',
 ),
-50 => 
+49 => 
 array (
     'id' => 51,
     'name' => 'Race Carbon P4',
@@ -1292,7 +1272,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:12',
 ),
-51 => 
+50 => 
 array (
     'id' => 52,
     'name' => 'Race Carbon P5',
@@ -1312,7 +1292,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-01-22 20:53:00',
 ),
-52 => 
+51 => 
 array (
     'id' => 53,
     'name' => 'Profoil F1',
@@ -1332,7 +1312,7 @@ array (
     'created_at' => '2017-07-31 18:57:17',
     'updated_at' => '2021-06-14 14:20:56',
 ),
-53 => 
+52 => 
 array (
     'id' => 54,
     'name' => '95 Carbon',
@@ -1352,7 +1332,7 @@ array (
     'created_at' => '2017-07-26 18:57:17',
     'updated_at' => '2021-01-22 20:54:09',
 ),
-54 => 
+53 => 
 array (
     'id' => 55,
     'name' => 'Slalom Carbon',
@@ -1372,7 +1352,7 @@ array (
     'created_at' => '2017-06-09 18:57:17',
     'updated_at' => '2020-03-17 23:04:14',
 ),
-55 => 
+54 => 
 array (
     'id' => 56,
     'name' => 'Windfoil',
@@ -1392,7 +1372,7 @@ array (
     'created_at' => '2017-05-03 18:57:17',
     'updated_at' => '2020-03-13 20:27:31',
 ),
-56 => 
+55 => 
 array (
     'id' => 57,
     'name' => 'RS:Flight AL',
@@ -1412,7 +1392,7 @@ array (
     'created_at' => '2017-05-03 18:57:17',
     'updated_at' => '2020-03-13 20:28:56',
 ),
-57 => 
+56 => 
 array (
     'id' => 58,
     'name' => 'RSX',
@@ -1432,7 +1412,7 @@ array (
     'created_at' => '2017-05-10 18:57:17',
     'updated_at' => '2020-03-13 20:26:14',
 ),
-58 => 
+57 => 
 array (
     'id' => 59,
     'name' => 'AFS2',
@@ -1452,7 +1432,7 @@ array (
     'created_at' => '2017-04-24 18:57:17',
     'updated_at' => '2021-06-14 14:16:03',
 ),
-59 => 
+58 => 
 array (
     'id' => 60,
     'name' => 'RS:Flight F4',
@@ -1472,7 +1452,7 @@ array (
     'created_at' => '2017-04-10 18:57:17',
     'updated_at' => '2020-06-25 10:14:29',
 ),
-60 => 
+59 => 
 array (
     'id' => 61,
     'name' => 'Windfoil 2017',
@@ -1492,7 +1472,7 @@ array (
     'created_at' => '2017-04-04 18:57:17',
     'updated_at' => '2020-03-13 20:30:45',
 ),
-61 => 
+60 => 
 array (
     'id' => 62,
     'name' => 'Alu LW 2017',
@@ -1512,7 +1492,7 @@ array (
     'created_at' => '2017-03-17 19:57:17',
     'updated_at' => '2020-03-30 19:46:07',
 ),
-62 => 
+61 => 
 array (
     'id' => 63,
     'name' => 'Windfoil',
@@ -1532,7 +1512,7 @@ array (
     'created_at' => '2016-11-02 19:57:17',
     'updated_at' => '2021-03-07 18:06:40',
 ),
-63 => 
+62 => 
 array (
     'id' => 64,
     'name' => 'Windfoil',
@@ -1552,7 +1532,7 @@ array (
     'created_at' => '2016-10-01 18:57:17',
     'updated_at' => '2020-03-13 20:31:10',
 ),
-64 => 
+63 => 
 array (
     'id' => 65,
     'name' => 'Windfoil',
@@ -1572,7 +1552,7 @@ array (
     'created_at' => '2016-10-01 18:57:17',
     'updated_at' => '2020-03-13 20:31:08',
 ),
-65 => 
+64 => 
 array (
     'id' => 66,
     'name' => 'Hybrid 900',
@@ -1592,7 +1572,7 @@ array (
     'created_at' => '2016-08-22 18:57:17',
     'updated_at' => '2020-03-13 20:31:03',
 ),
-66 => 
+65 => 
 array (
     'id' => 68,
     'name' => 'Vini CR LW XLW',
@@ -1612,7 +1592,7 @@ array (
     'created_at' => '2016-05-15 18:57:17',
     'updated_at' => '2020-03-13 20:26:39',
 ),
-67 => 
+66 => 
 array (
     'id' => 70,
     'name' => 'Windfoil',
@@ -1632,7 +1612,7 @@ array (
     'created_at' => '2017-05-02 18:57:17',
     'updated_at' => '2020-03-22 17:52:48',
 ),
-68 => 
+67 => 
 array (
     'id' => 71,
     'name' => 'Windfoil',
@@ -1652,7 +1632,7 @@ array (
     'created_at' => '2015-06-15 18:57:17',
     'updated_at' => '2020-03-13 20:31:06',
 ),
-69 => 
+68 => 
 array (
     'id' => 72,
     'name' => 'AFS1',
@@ -1672,7 +1652,7 @@ array (
     'created_at' => '2015-08-25 18:57:17',
     'updated_at' => '2020-03-13 20:31:02',
 ),
-70 => 
+69 => 
 array (
     'id' => 73,
     'name' => 'Airwave 6\'2',
@@ -1696,7 +1676,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-02-06 22:02:47',
 ),
-71 => 
+70 => 
 array (
     'id' => 74,
     'name' => 'Wizzard 103',
@@ -1716,7 +1696,7 @@ array (
     'created_at' => '2018-07-07 18:57:17',
     'updated_at' => '2021-02-06 22:02:51',
 ),
-72 => 
+71 => 
 array (
     'id' => 75,
     'name' => 'Pocket Rocket E Tech',
@@ -1740,7 +1720,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:58:56',
 ),
-73 => 
+72 => 
 array (
     'id' => 76,
     'name' => 'Tiny 110 Carbone',
@@ -1760,7 +1740,7 @@ array (
     'created_at' => '2016-05-15 18:57:17',
     'updated_at' => '2021-02-06 21:47:19',
 ),
-74 => 
+73 => 
 array (
     'id' => 77,
     'name' => 'Freefoil 112 AST',
@@ -1780,7 +1760,7 @@ array (
     'created_at' => '2019-06-21 18:57:17',
     'updated_at' => '2021-02-06 21:47:37',
 ),
-75 => 
+74 => 
 array (
     'id' => 78,
     'name' => 'AIRIDE 81 LTD',
@@ -1800,7 +1780,7 @@ array (
     'created_at' => '2019-04-23 18:57:17',
     'updated_at' => '2021-02-06 22:01:31',
 ),
-76 => 
+75 => 
 array (
     'id' => 79,
     'name' => 'Eco 121',
@@ -1820,7 +1800,7 @@ array (
     'created_at' => '2017-08-21 18:57:17',
     'updated_at' => '2021-02-06 21:47:26',
 ),
-77 => 
+76 => 
 array (
     'id' => 80,
     'name' => 'FreeFoil 132 Carbone',
@@ -1840,7 +1820,7 @@ array (
     'created_at' => '2019-05-06 18:57:17',
     'updated_at' => '2021-02-06 21:48:17',
 ),
-78 => 
+77 => 
 array (
     'id' => 81,
     'name' => 'Hydrofoil 120 Fws',
@@ -1860,7 +1840,7 @@ array (
     'created_at' => '2018-08-14 18:57:17',
     'updated_at' => '2021-02-06 22:02:00',
 ),
-79 => 
+78 => 
 array (
     'id' => 82,
     'name' => 'Foil 122 Flex Balsa',
@@ -1880,7 +1860,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 21:45:39',
 ),
-80 => 
+79 => 
 array (
     'id' => 83,
     'name' => 'Airtime 125 Verre',
@@ -1900,7 +1880,7 @@ array (
     'created_at' => '2018-08-17 18:57:17',
     'updated_at' => '2021-02-06 21:48:31',
 ),
-81 => 
+80 => 
 array (
     'id' => 84,
     'name' => 'Hydrofoil 135 Pro',
@@ -1920,7 +1900,7 @@ array (
     'created_at' => '2017-04-11 18:57:17',
     'updated_at' => '2021-02-06 22:01:46',
 ),
-82 => 
+81 => 
 array (
     'id' => 85,
     'name' => 'Slant 133',
@@ -1940,7 +1920,7 @@ array (
     'created_at' => '2016-12-12 19:57:17',
     'updated_at' => '2021-02-06 22:02:15',
 ),
-83 => 
+82 => 
 array (
     'id' => 86,
     'name' => 'RF 81 CARBONE',
@@ -1960,7 +1940,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 22:00:49',
 ),
-84 => 
+83 => 
 array (
     'id' => 87,
     'name' => 'F1X M V1',
@@ -1980,7 +1960,7 @@ array (
     'created_at' => '2017-06-26 18:57:17',
     'updated_at' => '2021-02-06 22:02:56',
 ),
-85 => 
+84 => 
 array (
     'id' => 88,
     'name' => 'Foil 144',
@@ -2000,7 +1980,7 @@ array (
     'created_at' => '2018-07-28 18:57:17',
     'updated_at' => '2021-02-06 22:02:35',
 ),
-86 => 
+85 => 
 array (
     'id' => 89,
     'name' => 'Hydrofoil 150 FWS',
@@ -2020,7 +2000,7 @@ array (
     'created_at' => '2019-03-02 19:57:17',
     'updated_at' => '2021-02-06 21:51:01',
 ),
-87 => 
+86 => 
 array (
     'id' => 90,
     'name' => 'AWF2',
@@ -2040,7 +2020,7 @@ array (
     'created_at' => '2018-07-15 18:57:17',
     'updated_at' => '2021-02-06 21:54:52',
 ),
-88 => 
+87 => 
 array (
     'id' => 91,
     'name' => 'F1X L V1',
@@ -2060,7 +2040,7 @@ array (
     'created_at' => '2018-11-02 19:57:17',
     'updated_at' => '2021-02-06 22:03:07',
 ),
-89 => 
+88 => 
 array (
     'id' => 92,
     'name' => 'Thunderbold 75',
@@ -2080,7 +2060,7 @@ array (
     'created_at' => '2019-04-01 18:57:17',
     'updated_at' => '2021-02-06 21:55:41',
 ),
-90 => 
+89 => 
 array (
     'id' => 93,
     'name' => 'Thunderbold 85',
@@ -2100,7 +2080,7 @@ array (
     'created_at' => '2019-05-01 18:57:17',
     'updated_at' => '2021-02-06 22:01:21',
 ),
-91 => 
+90 => 
 array (
     'id' => 94,
     'name' => 'Foil 177',
@@ -2120,7 +2100,7 @@ array (
     'created_at' => '2019-05-10 18:57:17',
     'updated_at' => '2021-02-06 22:03:17',
 ),
-92 => 
+91 => 
 array (
     'id' => 95,
     'name' => 'H Fire Pro 91 Ltd',
@@ -2140,7 +2120,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:51:21',
 ),
-93 => 
+92 => 
 array (
     'id' => 96,
     'name' => 'RF 91 CARBONE',
@@ -2160,7 +2140,7 @@ array (
     'created_at' => '2018-03-28 18:57:17',
     'updated_at' => '2021-02-06 22:00:33',
 ),
-94 => 
+93 => 
 array (
     'id' => 97,
     'name' => 'FireRace 120',
@@ -2180,7 +2160,7 @@ array (
     'created_at' => '2017-04-21 18:57:17',
     'updated_at' => '2021-02-06 21:49:53',
 ),
-95 => 
+94 => 
 array (
     'id' => 98,
     'name' => 'RS:One Convertible',
@@ -2200,7 +2180,7 @@ array (
     'created_at' => '2017-04-19 18:57:17',
     'updated_at' => '2021-02-06 21:50:26',
 ),
-96 => 
+95 => 
 array (
     'id' => 99,
     'name' => 'RS:X Convertible',
@@ -2220,7 +2200,7 @@ array (
     'created_at' => '2017-04-19 18:57:17',
     'updated_at' => '2021-02-06 21:50:30',
 ),
-97 => 
+96 => 
 array (
     'id' => 100,
     'name' => 'Rocket plus CED 123',
@@ -2240,7 +2220,7 @@ array (
     'created_at' => '2018-09-18 18:57:17',
     'updated_at' => '2021-02-06 21:54:43',
 ),
-98 => 
+97 => 
 array (
     'id' => 101,
     'name' => 'Foil 147 Tecnora',
@@ -2260,7 +2240,7 @@ array (
     'created_at' => '2017-04-23 18:57:17',
     'updated_at' => '2021-02-06 22:03:05',
 ),
-99 => 
+98 => 
 array (
     'id' => 102,
     'name' => 'H Fire 91',
@@ -2280,7 +2260,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:58:05',
 ),
-100 => 
+99 => 
 array (
     'id' => 103,
     'name' => 'Hi Flight',
@@ -2300,7 +2280,7 @@ array (
     'created_at' => '2018-09-25 18:57:17',
     'updated_at' => '2021-02-06 21:55:04',
 ),
-101 => 
+100 => 
 array (
     'id' => 104,
     'name' => 'Techno Windfoil',
@@ -2320,7 +2300,7 @@ array (
     'created_at' => '2019-06-08 18:57:17',
     'updated_at' => '2021-02-06 21:50:22',
 ),
-102 => 
+101 => 
 array (
     'id' => 105,
     'name' => 'Gecko Foil 120',
@@ -2340,7 +2320,7 @@ array (
     'created_at' => '2018-04-18 18:57:17',
     'updated_at' => '2021-02-06 21:50:20',
 ),
-103 => 
+102 => 
 array (
     'id' => 106,
     'name' => 'FOIL X 145 STARLITE',
@@ -2370,7 +2350,7 @@ array (
     'created_at' => '2020-03-22 22:53:39',
     'updated_at' => '2021-02-06 21:55:32',
 ),
-104 => 
+103 => 
 array (
     'id' => 107,
     'name' => 'Bullet V1',
@@ -2401,7 +2381,7 @@ array (
     'created_at' => '2020-03-30 16:14:00',
     'updated_at' => '2021-06-14 14:20:39',
 ),
-105 => 
+104 => 
 array (
     'id' => 112,
     'name' => 'Swart',
@@ -2423,7 +2403,7 @@ array (
     'created_at' => '2017-04-06 12:06:44',
     'updated_at' => '2021-11-06 16:56:49',
 ),
-106 => 
+105 => 
 array (
     'id' => 113,
     'name' => 'Skyscape',
@@ -2445,7 +2425,7 @@ array (
     'created_at' => '2017-08-06 12:12:13',
     'updated_at' => '2021-11-06 16:58:11',
 ),
-107 => 
+106 => 
 array (
     'id' => 114,
     'name' => 'Fly',
@@ -2478,7 +2458,7 @@ array (
     'created_at' => '2017-08-06 12:17:42',
     'updated_at' => '2021-11-06 17:08:22',
 ),
-108 => 
+107 => 
 array (
     'id' => 115,
     'name' => 'Vega',
@@ -2504,7 +2484,7 @@ array (
     'created_at' => '2019-11-06 13:41:14',
     'updated_at' => '2021-11-06 17:08:05',
 ),
-109 => 
+108 => 
 array (
     'id' => 116,
     'name' => 'Hyperglide',
@@ -2524,7 +2504,7 @@ array (
     'created_at' => '2018-06-12 12:49:45',
     'updated_at' => '2021-11-06 18:00:57',
 ),
-110 => 
+109 => 
 array (
     'id' => 117,
     'name' => 'IRIS F',
@@ -2546,7 +2526,7 @@ array (
     'created_at' => '2018-06-21 12:54:14',
     'updated_at' => '2021-11-06 17:08:32',
 ),
-111 => 
+110 => 
 array (
     'id' => 118,
     'name' => 'Flight',
@@ -2576,7 +2556,7 @@ array (
     'created_at' => '2018-07-27 13:12:56',
     'updated_at' => '2021-11-06 16:56:23',
 ),
-112 => 
+111 => 
 array (
     'id' => 119,
     'name' => 'Hydra',
@@ -2603,7 +2583,7 @@ array (
     'created_at' => '2018-09-04 13:18:33',
     'updated_at' => '2021-11-06 17:59:49',
 ),
-113 => 
+112 => 
 array (
     'id' => 120,
     'name' => 'IRIS X',
@@ -2628,7 +2608,7 @@ array (
     'created_at' => '2019-04-02 16:13:15',
     'updated_at' => '2021-11-06 18:00:45',
 ),
-114 => 
+113 => 
 array (
     'id' => 121,
     'name' => 'Hyperglide 2',
@@ -2656,7 +2636,7 @@ array (
     'created_at' => '2019-05-31 22:00:00',
     'updated_at' => '2021-11-06 18:00:53',
 ),
-115 => 
+114 => 
 array (
     'id' => 122,
     'name' => 'F-Type',
@@ -2683,7 +2663,7 @@ array (
     'created_at' => '2018-09-21 22:00:00',
     'updated_at' => '2021-11-06 16:59:28',
 ),
-116 => 
+115 => 
 array (
     'id' => 123,
     'name' => 'Air Ride',
@@ -2711,7 +2691,7 @@ array (
     'created_at' => '2019-09-30 22:00:00',
     'updated_at' => '2021-11-06 16:58:14',
 ),
-117 => 
+116 => 
 array (
     'id' => 124,
     'name' => 'Skyblade',
@@ -2739,7 +2719,7 @@ array (
     'created_at' => '2019-08-23 22:00:00',
     'updated_at' => '2021-11-06 18:00:47',
 ),
-118 => 
+117 => 
 array (
     'id' => 125,
     'name' => 'IRIS X',
@@ -2805,7 +2785,7 @@ array (
     'created_at' => '2020-06-03 17:24:58',
     'updated_at' => '2021-10-13 09:44:20',
 ),
-119 => 
+118 => 
 array (
     'id' => 126,
     'name' => 'FoilGlide',
@@ -2880,7 +2860,7 @@ array (
     'created_at' => '2020-04-06 17:32:01',
     'updated_at' => '2021-11-06 17:06:10',
 ),
-120 => 
+119 => 
 array (
     'id' => 127,
     'name' => 'Hydrofoil 135 ES',
@@ -2920,7 +2900,7 @@ array (
 'created_at' => '2020-04-06 18:40:30',
 'updated_at' => '2021-02-06 22:01:48',
 ),
-121 => 
+120 => 
 array (
 'id' => 128,
 'name' => 'IRIS Z',
@@ -2948,7 +2928,7 @@ array (
 'created_at' => '2020-04-06 18:46:04',
 'updated_at' => '2021-11-06 17:06:05',
 ),
-122 => 
+121 => 
 array (
 'id' => 129,
 'name' => 'IRIS RF',
@@ -2979,7 +2959,7 @@ array (
 'created_at' => '2020-04-06 20:10:55',
 'updated_at' => '2021-11-06 18:00:19',
 ),
-123 => 
+122 => 
 array (
 'id' => 130,
 'name' => 'IRIS Z',
@@ -2999,7 +2979,7 @@ array (
 'created_at' => '2020-04-06 20:15:55',
 'updated_at' => '2021-06-14 14:19:46',
 ),
-124 => 
+123 => 
 array (
 'id' => 131,
 'name' => 'RF 71 Carbon',
@@ -3044,7 +3024,7 @@ array (
 'created_at' => '2020-04-08 14:16:00',
 'updated_at' => '2021-02-06 21:56:11',
 ),
-125 => 
+124 => 
 array (
 'id' => 132,
 'name' => 'VINI PRO V2',
@@ -3078,7 +3058,7 @@ array (
 'created_at' => '2020-04-09 07:20:17',
 'updated_at' => '2020-04-17 06:56:32',
 ),
-126 => 
+125 => 
 array (
 'id' => 133,
 'name' => 'FOIL FREERIDE 150',
@@ -3098,7 +3078,7 @@ array (
 'created_at' => '2020-04-09 07:41:53',
 'updated_at' => '2021-02-06 22:01:28',
 ),
-127 => 
+126 => 
 array (
 'id' => 134,
 'name' => 'FOIL FREERIDE 125',
@@ -3118,7 +3098,7 @@ array (
 'created_at' => '2020-04-09 07:43:47',
 'updated_at' => '2021-02-06 22:01:18',
 ),
-128 => 
+127 => 
 array (
 'id' => 135,
 'name' => 'AIRIDE 81 MTE',
@@ -3138,7 +3118,7 @@ array (
 'created_at' => '2020-04-09 08:02:34',
 'updated_at' => '2020-04-09 08:02:34',
 ),
-129 => 
+128 => 
 array (
 'id' => 136,
 'name' => 'Tiny',
@@ -3180,7 +3160,7 @@ array (
 'created_at' => '2020-04-17 06:49:25',
 'updated_at' => '2020-04-17 06:53:39',
 ),
-130 => 
+129 => 
 array (
 'id' => 137,
 'name' => 'Iris X proto 2 ( Serial FM95 001 191209)',
@@ -3200,7 +3180,7 @@ array (
 'created_at' => '2019-12-22 11:48:11',
 'updated_at' => '2020-04-25 06:17:34',
 ),
-131 => 
+130 => 
 array (
 'id' => 138,
 'name' => 'A1 SPORT',
@@ -3237,7 +3217,7 @@ array (
 'created_at' => '2020-04-25 06:19:35',
 'updated_at' => '2021-06-14 14:20:53',
 ),
-132 => 
+131 => 
 array (
 'id' => 139,
 'name' => 'WARP FOIL',
@@ -3327,7 +3307,7 @@ array (
 'created_at' => '2020-05-01 11:33:58',
 'updated_at' => '2020-05-01 14:18:02',
 ),
-133 => 
+132 => 
 array (
 'id' => 140,
 'name' => 'FALCON FOIL',
@@ -3361,7 +3341,7 @@ array (
 'created_at' => '2020-05-01 12:17:47',
 'updated_at' => '2020-05-01 12:25:19',
 ),
-134 => 
+133 => 
 array (
 'id' => 141,
 'name' => 'RF 81 CARBONE V2',
@@ -3426,7 +3406,7 @@ array (
 'created_at' => '2020-05-03 11:09:02',
 'updated_at' => '2021-10-13 09:47:01',
 ),
-135 => 
+134 => 
 array (
 'id' => 142,
 'name' => 'IQFOIL 95',
@@ -3471,7 +3451,7 @@ array (
 'created_at' => '2020-05-03 11:43:24',
 'updated_at' => '2020-05-03 12:02:42',
 ),
-136 => 
+135 => 
 array (
 'id' => 143,
 'name' => 'IQFOIL 8M',
@@ -3514,7 +3494,7 @@ array (
 'created_at' => '2020-05-03 12:45:33',
 'updated_at' => '2020-05-03 16:08:44',
 ),
-137 => 
+136 => 
 array (
 'id' => 144,
 'name' => 'IQ FOIL - Tristant Algret',
@@ -3534,7 +3514,7 @@ array (
 'created_at' => '2020-06-05 05:46:42',
 'updated_at' => '2020-09-15 14:35:38',
 ),
-138 => 
+137 => 
 array (
 'id' => 145,
 'name' => 'Iris X Serial FM95 015 200113 - rejeté',
@@ -3554,7 +3534,7 @@ array (
 'created_at' => '2020-04-10 06:33:32',
 'updated_at' => '2020-06-11 15:40:20',
 ),
-139 => 
+138 => 
 array (
 'id' => 146,
 'name' => 'Magic Carpet',
@@ -3601,7 +3581,7 @@ array (
 'created_at' => '2020-06-23 20:14:49',
 'updated_at' => '2020-09-05 07:58:55',
 ),
-140 => 
+139 => 
 array (
 'id' => 147,
 'name' => 'A1 RACE',
@@ -3637,7 +3617,7 @@ array (
 'created_at' => '2020-06-25 09:57:32',
 'updated_at' => '2021-08-01 08:39:30',
 ),
-141 => 
+140 => 
 array (
 'id' => 148,
 'name' => 'Freefoil 115 Pro Edition',
@@ -3657,7 +3637,7 @@ array (
 'created_at' => '2020-07-16 20:03:06',
 'updated_at' => '2021-02-08 17:27:13',
 ),
-142 => 
+141 => 
 array (
 'id' => 149,
 'name' => 'FOIL COMP 91 AI',
@@ -3685,7 +3665,7 @@ array (
 'created_at' => '2020-08-01 08:25:08',
 'updated_at' => '2020-08-07 06:54:38',
 ),
-143 => 
+142 => 
 array (
 'id' => 150,
 'name' => 'FOIL RIDE 145',
@@ -3722,7 +3702,7 @@ array (
 'created_at' => '2020-08-14 12:24:48',
 'updated_at' => '2021-02-06 22:01:35',
 ),
-144 => 
+143 => 
 array (
 'id' => 151,
 'name' => 'IQ FOIL - Cédric Bordes',
@@ -3742,7 +3722,7 @@ array (
 'created_at' => '2020-09-15 14:38:51',
 'updated_at' => '2020-09-15 15:27:02',
 ),
-145 => 
+144 => 
 array (
 'id' => 152,
 'name' => 'Phantom Proto 2',
@@ -3762,7 +3742,7 @@ array (
 'created_at' => '2020-09-15 15:28:33',
 'updated_at' => '2020-09-15 15:32:38',
 ),
-146 => 
+145 => 
 array (
 'id' => 153,
 'name' => 'Phantom Présérie',
@@ -3782,7 +3762,7 @@ array (
 'created_at' => '2020-09-15 15:30:33',
 'updated_at' => '2020-09-15 15:30:33',
 ),
-147 => 
+146 => 
 array (
 'id' => 154,
 'name' => 'Phantom Proto 1 (marek)',
@@ -3802,7 +3782,7 @@ array (
 'created_at' => '2020-09-15 15:32:25',
 'updated_at' => '2020-09-15 15:33:18',
 ),
-148 => 
+147 => 
 array (
 'id' => 155,
 'name' => 'Race Carbone Cédric',
@@ -3822,7 +3802,7 @@ array (
 'created_at' => '2020-09-15 15:37:05',
 'updated_at' => '2020-09-15 15:37:33',
 ),
-149 => 
+148 => 
 array (
 'id' => 156,
 'name' => 'Carbone 95 mast standard',
@@ -3842,7 +3822,7 @@ array (
 'created_at' => '2020-09-15 15:39:10',
 'updated_at' => '2021-02-08 13:08:24',
 ),
-150 => 
+149 => 
 array (
 'id' => 157,
 'name' => 'SLALOM FOIL 91 CARBON REFLEX',
@@ -3871,7 +3851,7 @@ array (
 'created_at' => '2020-09-24 12:27:12',
 'updated_at' => '2021-02-07 22:36:04',
 ),
-151 => 
+150 => 
 array (
 'id' => 158,
 'name' => 'IQ FOIL - Pascal Toselli',
@@ -3891,7 +3871,7 @@ array (
 'created_at' => '2020-09-30 07:27:23',
 'updated_at' => '2020-09-30 07:27:23',
 ),
-152 => 
+151 => 
 array (
 'id' => 159,
 'name' => 'FOILRIDE 105 & 125',
@@ -3912,7 +3892,7 @@ array (
 'created_at' => '2020-10-15 11:35:08',
 'updated_at' => '2021-02-06 22:01:06',
 ),
-153 => 
+152 => 
 array (
 'id' => 160,
 'name' => 'E-FOIL CRUISING',
@@ -3946,7 +3926,7 @@ array (
 'created_at' => '2020-11-11 19:26:42',
 'updated_at' => '2020-11-11 19:30:53',
 ),
-154 => 
+153 => 
 array (
 'id' => 161,
 'name' => 'COMPACT FOIL 83',
@@ -3986,7 +3966,7 @@ array (
 'created_at' => '2020-11-21 20:24:50',
 'updated_at' => '2021-02-06 21:59:31',
 ),
-155 => 
+154 => 
 array (
 'id' => 162,
 'name' => 'IRIS X MKII',
@@ -4017,7 +3997,7 @@ array (
 'created_at' => '2020-12-13 11:23:37',
 'updated_at' => '2021-11-06 17:05:53',
 ),
-156 => 
+155 => 
 array (
 'id' => 163,
 'name' => 'IQ 95 MAST, Ailes Slalom, Fuselage 105',
@@ -4038,7 +4018,7 @@ array (
 'created_at' => '2020-12-17 20:17:52',
 'updated_at' => '2021-02-08 12:58:34',
 ),
-157 => 
+156 => 
 array (
 'id' => 164,
 'name' => 'WIND 95 V2',
@@ -4082,7 +4062,7 @@ array (
 'created_at' => '2020-12-18 17:43:00',
 'updated_at' => '2021-06-14 14:16:14',
 ),
-158 => 
+157 => 
 array (
 'id' => 165,
 'name' => 'IRIS R PROTO 2021 n°1',
@@ -4102,7 +4082,7 @@ array (
 'created_at' => '2020-12-22 10:53:50',
 'updated_at' => '2020-12-22 10:53:50',
 ),
-159 => 
+158 => 
 array (
 'id' => 166,
 'name' => 'IRIS X Proto 1',
@@ -4122,7 +4102,7 @@ array (
 'created_at' => '2020-12-22 11:07:36',
 'updated_at' => '2020-12-22 11:08:25',
 ),
-160 => 
+159 => 
 array (
 'id' => 167,
 'name' => 'IRIS Z PROTO 1',
@@ -4142,10 +4122,10 @@ array (
 'created_at' => '2020-12-22 11:23:44',
 'updated_at' => '2020-12-22 11:23:44',
 ),
-161 => 
+160 => 
 array (
 'id' => 168,
-'name' => 'SLALOM RACE',
+'name' => 'SLALOM RACE EURO',
 'slug' => 'f4-race-2021',
 'user_id' => 1,
 'category_id' => 1,
@@ -4219,9 +4199,9 @@ array (
 'programme_start' => 5.0,
 'programme_end' => 10.0,
 'created_at' => '2021-01-10 15:05:27',
-'updated_at' => '2021-08-01 08:32:27',
+'updated_at' => '2022-03-10 17:01:30',
 ),
-162 => 
+161 => 
 array (
 'id' => 169,
 'name' => 'IRIS R PROTO 2021 n°2',
@@ -4241,7 +4221,7 @@ array (
 'created_at' => '2021-02-03 17:03:42',
 'updated_at' => '2021-02-03 17:09:45',
 ),
-163 => 
+162 => 
 array (
 'id' => 170,
 'name' => 'IRIS X Proto 2',
@@ -4261,7 +4241,7 @@ array (
 'created_at' => '2021-02-03 17:27:43',
 'updated_at' => '2021-02-11 07:57:17',
 ),
-164 => 
+163 => 
 array (
 'id' => 171,
 'name' => 'IRIS Z proto 2',
@@ -4281,7 +4261,7 @@ array (
 'created_at' => '2021-02-03 17:42:06',
 'updated_at' => '2021-02-03 17:42:06',
 ),
-165 => 
+164 => 
 array (
 'id' => 172,
 'name' => 'SLALOM FOIL 81 CARBON REFLEX',
@@ -4309,7 +4289,7 @@ array (
 'created_at' => '2021-02-07 22:14:37',
 'updated_at' => '2021-02-08 17:26:39',
 ),
-166 => 
+165 => 
 array (
 'id' => 173,
 'name' => 'A1 RACE MESURES',
@@ -4329,7 +4309,7 @@ array (
 'created_at' => '2021-02-11 10:35:44',
 'updated_at' => '2021-02-11 10:37:30',
 ),
-167 => 
+166 => 
 array (
 'id' => 174,
 'name' => 'A1 SPORT MESURES',
@@ -4349,27 +4329,7 @@ array (
 'created_at' => '2021-02-11 10:38:38',
 'updated_at' => '2021-02-11 10:40:07',
 ),
-168 => 
-array (
-'id' => 175,
-'name' => 'RACE 12032012M950181 PROTO',
-'slug' => 'f4-race-12032012m950181-proto-2021',
-'user_id' => 1,
-'category_id' => 1,
-'brand_id' => 35,
-'status' => 'Hidden',
-'body' => '<p>s</p>',
-'year' => 2021,
-'price' => NULL,
-'link_test' => NULL,
-'link_presentation' => NULL,
-'link_product' => NULL,
-'programme_start' => NULL,
-'programme_end' => NULL,
-'created_at' => '2021-02-11 10:41:56',
-'updated_at' => '2021-09-30 07:14:16',
-),
-169 => 
+167 => 
 array (
 'id' => 177,
 'name' => 'LK1 PERFORMANCE',
@@ -4392,7 +4352,7 @@ array (
 'created_at' => '2021-03-07 20:09:52',
 'updated_at' => '2021-03-08 19:20:05',
 ),
-170 => 
+168 => 
 array (
 'id' => 178,
 'name' => 'HRDROFOIL SLALOM PRO',
@@ -4436,7 +4396,7 @@ array (
 'created_at' => '2021-03-11 12:44:25',
 'updated_at' => '2021-03-11 12:53:18',
 ),
-171 => 
+169 => 
 array (
 'id' => 179,
 'name' => 'IRIS X MAST PRESERIE UD 0001',
@@ -4456,7 +4416,7 @@ array (
 'created_at' => '2021-04-20 10:44:01',
 'updated_at' => '2021-04-20 10:44:01',
 ),
-172 => 
+170 => 
 array (
 'id' => 180,
 'name' => 'FLIGHT FR',
@@ -4482,7 +4442,7 @@ array (
 'created_at' => '2021-05-15 12:38:14',
 'updated_at' => '2021-05-15 12:38:43',
 ),
-173 => 
+171 => 
 array (
 'id' => 181,
 'name' => 'Hyperglide 4',
@@ -4518,7 +4478,7 @@ array (
 'created_at' => '2021-06-10 13:23:12',
 'updated_at' => '2021-11-06 17:58:04',
 ),
-174 => 
+172 => 
 array (
 'id' => 182,
 'name' => 'A1 RACE SL',
@@ -4538,7 +4498,7 @@ array (
 'created_at' => '2021-06-14 14:07:32',
 'updated_at' => '2021-06-17 13:26:33',
 ),
-175 => 
+173 => 
 array (
 'id' => 183,
 'name' => 'BULLET M40J',
@@ -4566,7 +4526,7 @@ array (
 'created_at' => '2021-06-15 10:13:12',
 'updated_at' => '2021-06-17 13:17:24',
 ),
-176 => 
+174 => 
 array (
 'id' => 184,
 'name' => 'FOIL+',
@@ -4586,7 +4546,7 @@ array (
 'created_at' => '2021-06-15 10:15:19',
 'updated_at' => '2021-11-06 18:00:58',
 ),
-177 => 
+175 => 
 array (
 'id' => 185,
 'name' => 'FREERIDE CARBONE',
@@ -4609,7 +4569,7 @@ array (
 'created_at' => '2021-08-01 08:30:21',
 'updated_at' => '2021-08-05 10:56:32',
 ),
-178 => 
+176 => 
 array (
 'id' => 186,
 'name' => 'IRIS X E26 TE 0005',
@@ -4629,7 +4589,7 @@ array (
 'created_at' => '2021-09-28 16:09:38',
 'updated_at' => '2021-09-28 16:09:38',
 ),
-179 => 
+177 => 
 array (
 'id' => 187,
 'name' => 'SLALOM UHM',
@@ -4649,7 +4609,7 @@ array (
 'created_at' => '2021-09-28 16:11:32',
 'updated_at' => '2021-09-28 16:14:11',
 ),
-180 => 
+178 => 
 array (
 'id' => 188,
 'name' => 'IRIS X GA 003',
@@ -4669,7 +4629,7 @@ array (
 'created_at' => '2021-10-01 06:09:16',
 'updated_at' => '2021-10-01 06:09:16',
 ),
-181 => 
+179 => 
 array (
 'id' => 189,
 'name' => 'FLY',
@@ -4698,7 +4658,7 @@ array (
 'created_at' => '2021-10-14 11:10:48',
 'updated_at' => '2021-11-06 17:57:48',
 ),
-182 => 
+180 => 
 array (
 'id' => 190,
 'name' => 'IRIS R MKII 85',
@@ -4728,7 +4688,7 @@ array (
 'created_at' => '2021-11-05 15:30:12',
 'updated_at' => '2021-11-05 16:50:06',
 ),
-183 => 
+181 => 
 array (
 'id' => 191,
 'name' => 'GOLD FOIL',
@@ -4748,7 +4708,7 @@ array (
 'created_at' => '2021-11-06 17:57:20',
 'updated_at' => '2021-11-06 18:52:00',
 ),
-184 => 
+182 => 
 array (
 'id' => 192,
 'name' => 'STINGRAY LTD 130',
@@ -4774,7 +4734,7 @@ array (
 'created_at' => '2021-11-09 20:58:14',
 'updated_at' => '2021-11-11 13:30:10',
 ),
-185 => 
+183 => 
 array (
 'id' => 193,
 'name' => 'IRIS R PITCH TEST',
@@ -4794,7 +4754,7 @@ array (
 'created_at' => '2021-11-13 16:36:47',
 'updated_at' => '2021-11-13 16:38:25',
 ),
-186 => 
+184 => 
 array (
 'id' => 195,
 'name' => 'IRIS X GEN 2 SERIAL',
@@ -4814,7 +4774,7 @@ array (
 'created_at' => '2021-11-16 19:26:37',
 'updated_at' => '2021-11-16 19:26:37',
 ),
-187 => 
+185 => 
 array (
 'id' => 196,
 'name' => 'CARBONE 95 C600 97',
@@ -4834,7 +4794,7 @@ array (
 'created_at' => '2021-11-16 19:30:06',
 'updated_at' => '2021-11-16 19:30:06',
 ),
-188 => 
+186 => 
 array (
 'id' => 197,
 'name' => 'CARBON 95 STD JC',
@@ -4854,27 +4814,7 @@ array (
 'created_at' => '2021-11-19 15:33:56',
 'updated_at' => '2021-11-19 15:33:56',
 ),
-189 => 
-array (
-'id' => 198,
-'name' => 'RACE THIN JC',
-'slug' => 'f4-race-thin-jc-2021',
-'user_id' => 1,
-'category_id' => 1,
-'brand_id' => 35,
-'status' => 'Hidden',
-'body' => '<p>JC MAES (from chinook)</p>',
-'year' => 2021,
-'price' => NULL,
-'link_test' => NULL,
-'link_presentation' => NULL,
-'link_product' => NULL,
-'programme_start' => NULL,
-'programme_end' => NULL,
-'created_at' => '2021-11-19 15:35:48',
-'updated_at' => '2021-11-19 15:35:48',
-),
-190 => 
+187 => 
 array (
 'id' => 199,
 'name' => 'IRIS R MAST GEN 2 COBRA',
@@ -4894,7 +4834,7 @@ array (
 'created_at' => '2021-12-07 14:24:12',
 'updated_at' => '2021-12-07 14:24:12',
 ),
-191 => 
+188 => 
 array (
 'id' => 200,
 'name' => 'IRIS Z GEN 2 COBRA SEPT',

@@ -56,7 +56,7 @@ class TechnicaldataController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function show(Technicaldata $technicaldata)
     {
@@ -125,14 +125,15 @@ class TechnicaldataController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit(Technicaldata $technicaldata)
     {
         $action = URL::route('technicaldata.update',['technicaldata' => $technicaldata]);
         $method = 'PATCH';
+        $attributes = Attribute::where('category_id',$technicaldata->device->category->id)->get()->groupBy('group');
 
-        return view('technicaldatas.edit', compact('action', 'method','technicaldata'));
+        return view('technicaldatas.edit', compact('action', 'method','technicaldata','attributes'));
     }
 
     /**
@@ -140,11 +141,21 @@ class TechnicaldataController extends Controller
      *
      * @param  \App\Http\Requests\UpdateTechnicaldataRequest  $request
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function update(UpdateTechnicaldataRequest $request, Technicaldata $technicaldata)
     {
-        //
+        try {
+            $data = $request->all();
+            //dd($data);
+            $technicaldata->update($data);   // grace au fillable, on ne touche qu'aux champs correspondant à l'object
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "I'm sorry, impossible to store you item at the moment");
+        }
+
+        return redirect($technicaldata->path());
     }
 
     /**
@@ -155,7 +166,14 @@ class TechnicaldataController extends Controller
      */
     public function destroy(Technicaldata $technicaldata)
     {
-        //
+        $target = $technicaldata->device->path();
+        $technicaldata->delete();
+
+        if (request()->wantsJson())
+        {
+            return response(['status' => 'Your data has been deleted'],200);
+        }
+        return redirect($target);
     }
 
 
@@ -170,7 +188,7 @@ class TechnicaldataController extends Controller
                     return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
                 })
                 ->addColumn('action', function(Technicaldata $technicaldata) {
-                    return '<a href="'.route('technicaldata.show',$technicaldata).'">'. __('See').'</a>';
+                    return '<a href="'.route('technicaldata.show',$technicaldata).'" class="btn btn-sm btn-primary rounded-pill" role="button"><i class="mdi mdi-eye"></i> '. __('See').'</a>';
                 })
                 ->make(true);
         }

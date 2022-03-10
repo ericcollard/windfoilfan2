@@ -79,7 +79,7 @@
                         @if ($method === 'POST')
                             <li class="breadcrumb-item active">{{ __('Create') }}</li>
                         @else
-                            <li class="breadcrumb-item"><a href="#">{{ $device->name }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ $device->path() }}">{{ $device->name }}</a></li>
                             <li class="breadcrumb-item active">{{ __('Edit') }}</li>
                         @endif
 
@@ -196,7 +196,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button id="btn_submit" type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                            <button id="btn_submit" type="submit" class="btn btn-primary rounded-pill">{{ __('Save') }}</button>
                         </div>
 
                         @if (count($errors))

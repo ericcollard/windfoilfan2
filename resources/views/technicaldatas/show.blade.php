@@ -51,22 +51,41 @@
                     <div class="card-header">
                         <div class="row">
                             <div class="col-4">
-                                Identification : {{  $technicaldata->serial }}
+                                {{ __('Serial number') }} : {{  $technicaldata->serial }}
                             </div>
                             <div class="col-4">
                                 {{ $technicaldata->device->category->name }} {{ $technicaldata->device->brand->name }} {{ $technicaldata->device->name }} {{ $technicaldata->device->year }}
                             </div>
-                            <div class="col-4">
+                            <div class="col-4  text-end">
                                 {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }}
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-10">
+                            <div class="col-8">
                                 Commentaire :
                                 {!! $technicaldata->body !!}
                             </div>
-                            <div class="col-2">
-                                <a href="{{ route('technicaldata.edit',[ 'technicaldata'=>$technicaldata]) }}" class="action-icon"> <i class="mdi mdi-square-edit-outline"></i> Update</a>
+                            <div class="col-4 text-end">
+
+                                <ul class="social-list list-inline mt-3">
+                                    @can ('update', $technicaldata)
+                                        <li class="list-inline-item text-center">
+                                            <a href="{{ route('technicaldata.edit',[ 'technicaldata'=>$technicaldata]) }}" class="btn btn-sm btn-warning rounded-pill" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
+                                        </li>
+                                    @endcan
+                                    @can ('delete', $technicaldata)
+                                        <li class="list-inline-item text-center">
+                                            <form id="deleteData" method="POST" action="{{ route('technicaldata.destroy',['technicaldata' => $technicaldata]) }}" >
+                                                {{ csrf_field() }}
+                                                {{ method_field('DELETE') }}
+                                                <button type="button" class="btn btn-sm btn-danger rounded-pill">
+                                                    <a href="javascript:{}" onclick="document.getElementById('deleteData').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
+                                                </button>
+                                            </form>
+                                        </li>
+                                    @endcan
+                                </ul>
+
                             </div>
                         </div>
                     </div>

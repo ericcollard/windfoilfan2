@@ -76,12 +76,12 @@
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                         <li class="breadcrumb-item"><a href="{{ route('device.categories') }}">{{ __('Devices') }}</a></li>
-                        <li class="breadcrumb-item"><a href="#">{{ $technicaldata->device->name }}</a></li>
-                        <li class="breadcrumb-item"><a href="#">{{ __('Technical data') }}</a></li>
+                        <li class="breadcrumb-item"><a href="{{ $technicaldata->device->path() }}">{{ $technicaldata->device->name }}</a></li>
+                        <li class="breadcrumb-item">{{ __('Technical data') }}</li>
                         @if ($method === 'POST')
                             <li class="breadcrumb-item active">{{ __('Create') }}</li>
                         @else
-
+                            <li class="breadcrumb-item"><a href="{{ route('technicaldata.show',$technicaldata) }}">{{ $technicaldata->id }}</a></li>
                             <li class="breadcrumb-item active">{{ __('Edit') }}</li>
                         @endif
 
@@ -90,7 +90,7 @@
                 @if ($method === 'POST')
                     <h4 class="page-title">{{ __('Create technical data') }}</h4>
                 @else
-                    <h4 class="page-title">{{ __('Edit technical data') }} : <b>{{ $technicaldata->device->name }}</h4>
+                    <h4 class="page-title">{{ __('Edit technical data') }} ref {{ $technicaldata->id }} for {{ $technicaldata->device->name }}</h4>
                 @endif
 
             </div>
@@ -116,24 +116,40 @@
                                        value="{{ $technicaldata->device_id ? $technicaldata->device_id : old('device_id') }}" required/>
                             </div>
                             <div class="col-lg-4  mb-3">
-                                <label for="serial" class="form-label">{{ __('serial') }}</label>
+                                <label for="serial" class="form-label">{{ __('Serial number') }}</label>
                                 <input type="text" class="form-control" id="serial" name="serial"
                                        value="{{ $technicaldata->serial ? $technicaldata->serial : old('serial') }}" />
                             </div>
                         </div>
 
+                        @foreach ($attributes as $group => $attributeGroup)
+                            <div class="row">
+                                @if ($group !='structural_result_group')
+                                    <div class="h5">{{ __($group) }}</div>
 
+                                    @foreach ($attributeGroup as $attribute)
+                                        @if ( ! in_array($attribute->slug, ['flex_module','tors_module','flex_thickness_coef']))
+                                            <div class="col-lg-3  mb-4">
+                                                <label for="{{ $attribute->field }}">{{ __($attribute->slug) }} ({{ __($attribute->unit) }}):</label>
+                                                <input type="text" class="form-control" id="{{ $attribute->field }}" name="{{ $attribute->field }}"
+                                                       value="{{ $technicaldata->{$attribute->field} ? $technicaldata->{$attribute->field} : old($attribute->field) }}" > </input>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                @endif
+                            </div>
+                        @endforeach
 
 
                         <div class="row">
                             <div class="col-lg-12  mb-3">
-                                <label for="body">{{ __('body') }}</label>
+                                <label for="body">{{ __('Comments') }}</label>
                                 <textarea id="body" name="body" >{!!  $technicaldata->body ?  $technicaldata->body : old('body') !!}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <button id="btn_submit" type="submit" class="btn btn-primary">{{ __('Save') }}</button>
+                            <button id="btn_submit" type="submit" class="btn btn-primary rounded-pill">{{ __('Save') }}</button>
                         </div>
 
                         @if (count($errors))

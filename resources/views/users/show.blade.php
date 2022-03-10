@@ -85,12 +85,12 @@
                                         <form class="d-sm-inline-block" method="POST" action="{{ route('user.destroy',['user' => $user]) }}">
                                             {{ csrf_field() }}
                                             {{ method_field('DELETE') }}
-                                            <button type="submit" class="btn btn-danger"> {{ __('Delete') }}</button>
+                                            <button type="submit" class="btn btn-danger rounded-pill"> {{ __('Delete') }}</button>
                                         </form>
                                     @endcan
 
                                     @can ('update', $user)
-                                    <button type="button" class="btn btn-light">
+                                    <button type="button" class="btn btn-warning rounded-pill m-lg-2">
                                         <a href="{{ route('user.edit' , ['user' => $user]) }}" style="color: inherit">
                                             <i class="mdi mdi-account-edit me-1"></i> {{ __('Edit profile') }}
                                         </a>
@@ -110,7 +110,7 @@
                                         <div class="mb-3 row-cols-lg-auto g-3 align-items-center">
                                             <input type="file" id="avatar" name="avatar" class="form-control" style="display: inline; width: auto">
                                             <input type="hidden" id="user_id" name="user_id" value={{ $user->id }}>
-                                            <button class="btn btn-light" type="submit"><i class="mdi mdi-upload me-1"></i>
+                                            <button class="btn btn-light rounded-pill  m-lg-2" type="submit"><i class="mdi mdi-upload me-1"></i>
                                                 @if ($user->avatar_path)
                                                     {{ __('Modify avatar') }}
                                                 @else

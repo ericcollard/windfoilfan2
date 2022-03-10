@@ -115,16 +115,16 @@ class UsersTableSeeder extends Seeder
                 'avatar_path' => 'JkG1ZzUdXlkvOs77HIGUtfUjOpReEy6ksccYtJuC.jpeg',
                 'prefered_spots' => 'La Ciotat',
                 'discipline_start' => '2015-02-25 00:00:00',
-                'personal_equipment' => '<p>Flotteurs : Horue Airtime 125, Starboard Foil 144, Tabou Airide 145, Zeeko Airwave, Exocet RF 81</p>
-<p>Foils : F4 2020, Iris X, Starboard Carbon 95, GA Mach 1, Loke LK1, Taaroa Noe 97 UHM</p>
-<p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 5.8</p>
-<p>Wisbone : AL360 RTE</p>',
+                'personal_equipment' => '<p>Flotteurs : Phantom IRIS X MKII 85, Starboard Foil 150, Exocet RF 85 V2, AFS Compact 83, JP freefoil LXT 115</p>
+<p>Foils : F4 2021, Phantom Iris X, Moses Vento 85 freeride</p>
+<p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 6,7 et 8, Severne Hyperglide 4 7m, NP Freefoil 4.8</p>
+<p>Wisbone : AL360 RTE, AL360 Foil</p>',
                 'postal_code' => '13011',
                 'brand_id' => NULL,
                 'weight' => 78,
                 'remember_token' => 'm5HgjJM1iCeDGiKodyTMA6yKtg8f8E4ecyO2hvYGCdmgDEIqCgiyx1NaTbkW',
                 'created_at' => '2020-01-01 00:00:00',
-                'updated_at' => '2020-04-15 16:09:47',
+                'updated_at' => '2022-03-10 16:44:30',
             ),
             5 => 
             array (

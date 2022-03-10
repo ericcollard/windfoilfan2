@@ -504,7 +504,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 16,
                 'device_id' => 16,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série 2019 USA',
                 'attr3' => NULL,
                 'attr4' => 97.0,
                 'attr5' => NULL,
@@ -529,15 +529,15 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-12-03 19:57:17',
-                'updated_at' => '2021-08-01 08:39:26',
+                'updated_at' => '2022-03-10 16:54:29',
             ),
             16 => 
             array (
                 'id' => 17,
-                'device_id' => 17,
+                'device_id' => 16,
                 'body' => NULL,
-                'serial' => NULL,
-                'attr3' => 0.0,
+                'serial' => 'Proto 2018',
+                'attr3' => NULL,
                 'attr4' => 97.0,
                 'attr5' => NULL,
                 'attr6' => 16.3,
@@ -561,7 +561,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-08-01 18:57:17',
-                'updated_at' => '2021-03-07 18:07:48',
+                'updated_at' => '2022-03-10 16:53:56',
             ),
             17 => 
             array (
@@ -5176,7 +5176,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'id' => 162,
                 'device_id' => 168,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => 'Série 2021 thin',
                 'attr3' => NULL,
                 'attr4' => 96.5,
                 'attr5' => NULL,
@@ -5201,7 +5201,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-01-10 15:05:27',
-                'updated_at' => '2021-08-01 08:32:27',
+                'updated_at' => '2022-03-10 16:58:15',
             ),
             162 => 
             array (
@@ -5398,9 +5398,9 @@ class TechnicaldatasTableSeeder extends Seeder
             168 => 
             array (
                 'id' => 169,
-                'device_id' => 175,
+                'device_id' => 168,
                 'body' => NULL,
-                'serial' => NULL,
+                'serial' => '12032012M950181 PROTO FEV 2021',
                 'attr3' => NULL,
                 'attr4' => 96.5,
                 'attr5' => NULL,
@@ -5425,7 +5425,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-02-11 10:41:56',
-                'updated_at' => '2021-09-30 07:14:16',
+                'updated_at' => '2022-03-10 16:57:32',
             ),
             169 => 
             array (
@@ -6070,9 +6070,9 @@ class TechnicaldatasTableSeeder extends Seeder
             189 => 
             array (
                 'id' => 190,
-                'device_id' => 198,
-                'body' => NULL,
-                'serial' => NULL,
+                'device_id' => 168,
+                'body' => '<p>Achet&eacute; d\'occasion chez Chinook</p>',
+                'serial' => 'Serie 2021 Thin JC',
                 'attr3' => NULL,
                 'attr4' => 97.0,
                 'attr5' => NULL,
@@ -6097,7 +6097,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-11-19 15:35:48',
-                'updated_at' => '2021-11-19 15:35:48',
+                'updated_at' => '2022-03-10 17:00:18',
             ),
             190 => 
             array (
