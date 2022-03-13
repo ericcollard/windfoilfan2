@@ -109,43 +109,64 @@
 
 
         .barcontent {
-            height:100%;
+            height: 100%;
             display: inline-block;
-            margin:0px;
-            padding:0px;
-            height:22px;
+            margin: 0px;
+            padding: 0px;
+            height: 22px;
         }
+
         .left {
-            background-color:dimgrey;
+            background-color: dimgrey;
         }
+
         .center {
-            background-color:greenyellow;
+            background-color: greenyellow;
         }
+
         .right {
-            background-color:dimgrey;
+            background-color: dimgrey;
         }
+
         .bar {
-            min-width:100px;
-            position:relative;
+            min-width: 100px;
+            position: relative;
 
         }
 
         .bar:before {
             font-size: 0.7em;
             color: white;
-            content : 'FREESTYLE';
+            content: 'FREESTYLE';
             position: absolute;
-            left:5px;
+            left: 5px;
             top: 1px;
         }
 
         .bar:after {
             font-size: 0.7em;
             color: white;
-            content : 'RACE';
+            content: 'RACE';
             position: absolute;
-            right:5px;
+            right: 5px;
             top: 1px;
+        }
+
+
+        .review_body .citation {
+            background-color: #f6f6f6;
+            border: solid 1px #A9B8C2;
+            margin: 5px
+        }
+
+        .review_body .citation .citation_author {
+            background-color: #A9B8C2;
+            padding: 5px;
+            color: #0c1021;
+        }
+
+        .review_body .citation .citation_body {
+            padding: 5px;
         }
 
     </style>
@@ -153,7 +174,15 @@
 
 
     <!-- third party css -->
-    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="
+
+
+
+
+
+
+
+{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- third party css end -->
 
@@ -228,7 +257,7 @@
                             <div class="col-5 col-md-4">
                                 {{ $device->reviews_count }}
                                 @if ($device->reviews_count > 0)
-                                    ( {{ __('Last') }} {{ $reviews->last()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->last()->owner->name }})
+                                    ( {{ __('Last') }} {{ $reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->first()->owner->name }})
                                 @endif
                             </div>
                             <div class="col-1 col-md-2 text-end">
@@ -411,7 +440,7 @@
 
                                         <div class="module">
                                             <div class="collapse review_body" id="collapseReview{{ $review->id }}" >
-                                                {!! $review->body !!}
+                                                {!! $review->formatted_body() !!}
                                             </div>
                                             <div class="floue"></div>
 
@@ -430,7 +459,11 @@
                                             </div>
                                             <div class="col-4  text-end">
 
-
+                                                @can ('answer', $review)
+                                                    <li class="list-inline-item text-center">
+                                                        <a class="btn btn-success rounded-pill mb-1" href="{{ route('review.cite',$review) }}" role="button"> <i class="mdi mdi-chat-processing-outline"></i>  {{ __('Cite') }}</a>
+                                                    </li>
+                                                @endcan
                                                 @can ('update', $review)
                                                     <li class="list-inline-item text-center">
                                                         <a class="btn btn-warning rounded-pill mb-1" href="{{ route('review.edit',$review) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Edit') }}</a>

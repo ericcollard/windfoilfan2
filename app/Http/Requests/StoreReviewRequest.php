@@ -27,7 +27,6 @@ class StoreReviewRequest extends FormRequest
             'device_id' => 'required|exists:devices,id',
             'user_id' => 'required|exists:users,id',
             'body'        => 'required',
-            'title'        => 'required',
         ];
     }
 }

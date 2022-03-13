@@ -6,6 +6,7 @@ use App\Http\Requests\StoreReviewRequest;
 use App\Http\Requests\UpdateReviewRequest;
 use App\Models\Device;
 use App\Models\Review;
+use Html2Text\Html2Text;
 use Illuminate\Support\Facades\URL;
 
 class ReviewController extends Controller
@@ -51,6 +52,28 @@ class ReviewController extends Controller
 
         return view('reviews.edit', compact('action', 'method','review'));
     }
+
+    /**
+     * Show the form for citing an existing review.
+     *
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function cite(Review $referReview)
+    {
+        $action = URL::route('review.store');
+        $method = 'POST';
+
+        $review = new Review();
+        $review->user_id = auth()->user()->id;
+        $review->device_id = $referReview->device->id;
+        $html = new Html2Text($referReview->body);
+
+        $review->body = '[quote="doudou"]'.$html->getText().'[/quote]';
+
+        return view('reviews.edit', compact('action', 'method','review'));
+    }
+
+
 
     /**
      * Update the specified resource in storage.

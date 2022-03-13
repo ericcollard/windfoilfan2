@@ -47,12 +47,16 @@
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
                             <li class="breadcrumb-item">{{ __('Devices') }}</li>
-                            <li class="breadcrumb-item"><a href="">AAA}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ $dataTable->getOptions()['custom_paramaters']['basis_route'] }}">{{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}</a></li>
+                            <li class="breadcrumb-item">{{ __('Technical data') }}</li>
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>
                     </div>
                     <h4 class="page-title">
-
+                        {{ __('Technical data list') }} - {{ __('Category') }} {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
+                        @if( $dataTable->getOptions()['custom_paramaters']['brand_name'] <> "" )
+                            - {{ __('Brand') }} : {{ $dataTable->getOptions()['custom_paramaters']['brand_name'] }}
+                        @endif
                     </h4>
                 </div>
             </div>

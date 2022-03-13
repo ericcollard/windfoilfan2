@@ -87,9 +87,9 @@
                     </ol>
                 </div>
                 @if ($method === 'POST')
-                    <h4 class="page-title">{{ __('Create review') }}</h4>
+                    <h4 class="page-title">{{ __('Create review') }} {{ __('for') }} {{ $review->device->name }}</h4>
                 @else
-                    <h4 class="page-title">{{ __('Edit review') }} ref {{ $review->id }} for {{ $review->device->name }}</h4>
+                    <h4 class="page-title">{{ __('Edit review') }} ref {{ $review->id }} {{ __('for') }} {{ $review->device->name }}</h4>
                 @endif
 
             </div>
@@ -109,20 +109,25 @@
                         <input type="hidden" id="id" name="id" value={{ $review->id }}>
 
                         <div class="row">
-                            <div class="col-lg-4  mb-3">
-                                <label for="title" class="form-label">{{ __('Title') }}*</label>
+                            <div class="col-lg-3  mb-2">
+                                <label for="title" class="form-label">{{ __('Title') }}</label>
                                 <input type="text" class="form-control" id="title" name="title"
-                                       value="{{ $review->title ? $review->title : old('title') }}" required/>
+                                       value="{{ $review->title ? $review->title : old('title') }}"/>
                             </div>
-                            <div class="col-lg-4  mb-3">
+                            <div class="col-lg-3  mb-2">
                                 <label for="device_id" class="form-label">{{ __('device_id') }}*</label>
                                 <input type="text" class="form-control" id="device_id" name="device_id"
                                        value="{{ $review->device_id ? $review->device_id : old('device_id') }}" required/>
                             </div>
-                            <div class="col-lg-4  mb-3">
+                            <div class="col-lg-3  mb-2">
                                 <label for="user_id" class="form-label">{{ __('user_id') }}*</label>
                                 <input type="text" class="form-control" id="user_id" name="user_id"
                                        value="{{ $review->user_id ? $review->user_id : old('user_id') }}" required/>
+                            </div>
+                            <div class="col-lg-3  mb-2">
+                                <label for="created_at" class="form-label">{{ __('created_at') }}*</label>
+                                <input type="text" class="form-control" id="created_at" name="created_at"
+                                       value="{{ $review->created_at ? $review->created_at : old('created_at') }}" required/>
                             </div>
                         </div>
 

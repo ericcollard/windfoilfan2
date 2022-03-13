@@ -6,6 +6,8 @@ use App\DataTables\TechnicaldatasDataTable;
 use App\Http\Requests\StoreTechnicaldataRequest;
 use App\Http\Requests\UpdateTechnicaldataRequest;
 use App\Models\Attribute;
+use App\Models\Brand;
+use App\Models\Category;
 use App\Models\Device;
 use App\Models\Technicaldata;
 use Illuminate\Support\Facades\DB;
@@ -20,12 +22,24 @@ class TechnicaldataController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(TechnicaldatasDataTable $dataTable)
+    public function category(TechnicaldatasDataTable $dataTable,Category $category)
     {
+        $dataTable->with('category', $category);
 
-        $device = Device::where('id', 163)
-            ->firstOrFail();
-        $dataTable->with('device', $device);
+        $brand = "";
+        if(array_key_exists('from', request()->all()))
+        {
+            $brand_slug = request()->from;
+            $brand = Brand::where('slug', $brand_slug)
+                ->firstOrFail();
+            $dataTable->with('brand', $brand);
+        }
+
+        $brands = Brand::whereHas('devices', function($query) use($category) {
+            $query->where('category_id', $category->id);
+        })->get();
+
+        $dataTable->with('brands', $brands);
 
         return $dataTable
             ->render('technicaldatas.index');

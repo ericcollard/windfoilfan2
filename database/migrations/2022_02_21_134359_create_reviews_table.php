@@ -17,7 +17,7 @@ class CreateReviewsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('device_id');
             $table->integer('user_id');
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->text('body');
             $table->text('test_equipment')->nullable();
             $table->integer('test_duration')->nullable();

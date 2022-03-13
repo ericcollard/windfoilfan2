@@ -62,6 +62,11 @@
                 </a>
                 <div class="collapse" id="sidebarMesures" style="">
                     <ul class="side-nav-second-level">
+                        @foreach($devicecategories as $category)
+                            <li >
+                                <a href="{{ route('technicaldata.category',$category) }}">{{ __($category->name) }}</a>
+                            </li>
+                        @endforeach
                         <li>
                             <a href="#">Torsion</a>
                         </li>

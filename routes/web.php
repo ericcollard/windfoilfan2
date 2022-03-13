@@ -56,13 +56,17 @@ Route::delete('/devices/{category}/{device}',[DeviceController::class, 'destroy'
 
 Route::get('/technicaldatas',[TechnicaldataController::class, 'index'])->name('technicaldata.index');
 Route::get('technicaldatas/devicedata/{device}', [TechnicaldataController::class, 'devicedata'])->name('technicaldatas.devicedata');
+Route::get('/technicaldatas/c/{category}',[TechnicaldataController::class, 'category'])->name('technicaldata.category');
+Route::get('/technicaldatas/create/{device}', [TechnicaldataController::class, 'create'])->name('technicaldata.create');
 Route::get('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'show'])->name('technicaldata.show');
 Route::get('/technicaldatas/{technicaldata}/edit', [TechnicaldataController::class, 'edit'])->name('technicaldata.edit');
 Route::patch('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'update'])->name('technicaldata.update');
 Route::delete('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'destroy'])->name('technicaldata.destroy');
 
+
 Route::get('/reviews/create/{device}', [ReviewController::class, 'create'])->name('review.create');
 Route::get('/reviews/{review}/edit', [ReviewController::class, 'edit'])->name('review.edit');
+Route::get('/reviews/{referReview}/cite', [ReviewController::class, 'cite'])->name('review.cite');
 Route::patch('/reviews/{review}',[ReviewController::class, 'update'])->name('review.update');
 Route::post('/reviews',[ReviewController::class, 'store'])->name('review.store');
 Route::delete('/reviews/{review}',[ReviewController::class, 'destroy'])->name('review.destroy');
