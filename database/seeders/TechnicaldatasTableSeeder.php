@@ -6027,13 +6027,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 4.84,
                 'attr19' => 926.63387024793,
                 'attr20' => 1052.7887671865,
-                'attr21' => 17.442878018802,
+                'attr21' => 25.117744347075,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
-                'created_at' => '2021-11-19 15:33:56',
-                'updated_at' => '2022-03-10 17:28:31',
+                'created_at' => '2018-11-18 15:33:56',
+                'updated_at' => '2022-03-13 00:49:13',
             ),
             188 => 
             array (
@@ -6059,13 +6059,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 3.11,
                 'attr19' => 2583.4723110599,
                 'attr20' => 1672.7941271484,
-                'attr21' => 50.477621192756,
+                'attr21' => 72.687774517569,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
-                'created_at' => '2021-11-19 15:35:48',
-                'updated_at' => '2022-03-10 17:00:18',
+                'created_at' => '2021-01-19 15:35:48',
+                'updated_at' => '2022-03-12 23:24:20',
             ),
             189 => 
             array (

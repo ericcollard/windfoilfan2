@@ -21,6 +21,18 @@
             padding-right: 0;
         }
 
+        .device_body img  {
+
+        }
+
+        .chart-gauge {
+            height: 200px;
+        }
+
+        .chart-radar {
+            height: 600px;
+        }
+
         .review_body .multi-col-2, .device_body .multi-col-2 {
             -webkit-column-count: 2;
             -moz-column-count: 2;
@@ -220,12 +232,12 @@
                                 @endif
                             </div>
                             <div class="col-1 col-md-2 text-end">
-                                    <p>{{ __('Price') }} : {{ $device->price }} €</p>
+
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-6 mt-2">
                                 <p>Programme : La zone verte situe le programme d'utilisation dans la fourchette FREESTYLE / FREERIDE / FREERACE / RACE</p>
                                 <?php
                                 $fs = $device->programme_start;
@@ -239,6 +251,7 @@
                             </div>
                             <div class="col-6 text-end">
                                 <ul class="social-list list-inline mt-3">
+                                    <p>{{ __('Price') }} : {{ $device->price }} €</p>
                                     @can ('update', $device)
                                         <li class="list-inline-item text-center">
                                             <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill mb-1" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
@@ -282,38 +295,61 @@
                             </div>
                         </div>
 
-                        <div class="row collapse "  id="collapseTechnicaldata">
+                        <div class="collapse "  id="collapseTechnicaldata">
 
                             <div class="table-responsive">
-                            <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
-                                <thead>
-                                <tr>
-                                    <th>{{ __('Action') }}</th>
-                                    <th>{{ __('Serial number') }}</th>
-                                    <th>{{ __('Created at') }}</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
+                                <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
+                                    <thead>
+                                    <tr>
+                                        <th>{{ __('Action') }}</th>
+                                        <th>{{ __('Serial number') }}</th>
+                                        <th>{{ __('Created at') }}</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
                             </div>
 
-                            <div>
-                                <h3>Données techniques moyennes</h3>
-                                {{ (float)$device->{'attr3'} }}
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>Dernières données techniques enregistrées</h3>
+                                        @foreach($attributes as $group => $attributesSet)
+                                            @foreach($attributesSet as $attribute)
+                                                @if ($group == 'usage_group')
+                                                    <?php
+                                                    $chart1Data['labels'][] = __($attribute->slug) ;
+                                                    $chart1Data['values'][] = (float)$attributesSet->results->{$attribute->field};
+                                                    ?>
+                                                @elseif ($group == 'structural_result_group')
+                                                    <?php
+                                                    $chart2Data['labels'][] = __($attribute->slug) ;
+                                                    $chart2Data['values'][] = (float)$attributesSet->results->{$attribute->field};
+                                                    $chart2Data['min'][] = $technicaldatas_minmax->{'min_'.$attribute->field};
+                                                    $chart2Data['max'][] = $technicaldatas_minmax->{'max_'.$attribute->field};
+                                                    ?>
+                                                @endif
+                                            @endforeach
+                                        @endforeach
+                                </div>
                             </div>
+
+                            <div class="row g-0">
+                                <div class="col-8">
+                                    <div id="container-radar" class="chart-radar"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div id="container-flex" class="chart-gauge"></div>
+                                    <div id="container-torsion" class="chart-gauge"></div>
+                                    <div id="container-module" class="chart-gauge"></div>
+
+                                </div>
+                            </div>
+
 
                         </div>
-
-
-
                     </div>
                 </div>
-
-
-
-
-
 
 
                 <div class="row">
@@ -442,25 +478,219 @@
     <script src="{{asset('assets/libs/datatables/datatables.min.js')}}"></script>
     <script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+
     <script type="text/javascript">
         $(function () {
-
             var table = $('#yajra-datatable').DataTable({
                 processing: true,
                 serverSide: true,
                 responsive: true,
                 iDisplayLength: 50,
                 bFilter: false,
+                order: [[ 2, 'asc' ]],
                 dom: 'rtip',
                 ajax: "{{ route('technicaldatas.devicedata',$device ) }}",
                 columns: [
                     {data: 'action', name: 'action'},
                     {data: 'serial', name: 'serial'},
-                    {data: 'created_at', name: 'created_at'},
+                    {
+                        data: 'created_at',
+                        name: 'created_at',
+                    }
+                ],
+                columnDefs: [
+                    { targets: 2,
+                        render: function(data, type) {
+                            if (type == 'sort') {
+                                return data;
+                            }
+                            var date = new Date(data);
+                            return date.toLocaleDateString();
+                        }
+                    }
                 ]
             });
 
         });
+
+        Highcharts.chart('container-radar', {
+            chart: {
+                polar: true,
+                type: 'line'
+            },
+            title:  false,
+            pane: {
+                size: '70%'
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                categories: <?php echo json_encode($chart1Data['labels']) ?>,
+                tickmarkPlacement: 'on',
+                lineWidth: 0
+            },
+            yAxis: {
+                gridLineInterpolation: 'polygon',
+                lineWidth: 0,
+                min: 0,
+                max: 10
+            },
+            tooltip: {
+                shared: true,
+                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.2f}</b><br/>'
+            },
+            legend: false,
+            series: [{
+                name: 'En navigation',
+                data: {{ json_encode($chart1Data['values']) }},
+                pointPlacement: 'on'
+            }],
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    }
+                }]
+            }
+
+        });
+
+
+        var gaugeOptions = {
+            chart: {
+                type: 'solidgauge'
+            },
+            title: {
+                verticalAlign: "bottom",
+                style: { "color": "#333333", "fontSize": "10px" }
+            },
+            pane: {
+                center: ['50%', '80%'],
+                size: '90%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor:
+                        Highcharts.defaultOptions.legend.backgroundColor || '#EEE',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+            exporting: {
+                enabled: false
+            },
+            tooltip: {
+                enabled: false
+            },
+            credits: {
+                enabled: false
+            },
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.2, '#DF5353'], // red
+                    [0.5, '#DDDF0D'], // yellow
+                    [0.8, '#55BF3B'] // green
+                ],
+                lineWidth: 0,
+                tickWidth: 0,
+                minorTickInterval: null,
+                labels: {
+                    y: 20
+                }
+            },
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: -30,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+        };
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-flex', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($chart2Data['min'][0]) }},
+                max: {{ round($chart2Data['max'][0]) }},
+                tickPositions : [{{ round($chart2Data['min'][0]) }},{{ round($chart2Data['max'][0]) }}]
+            },
+            title: {
+                text: 'Coefficient de rigidité en flexion (EIx)',
+            },
+            series: [{
+                name: 'Flexion',
+                data: [{{ $chart2Data['values'][0] }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">N.m2</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-torsion', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($chart2Data['min'][1]) }},
+                max: {{ round($chart2Data['max'][1]) }},
+                tickPositions : [{{ round($chart2Data['min'][1]) }},{{ round($chart2Data['max'][1]) }}]            },
+            title: {
+                text: 'Coefficient de rigidité en torsion (GIg)',
+            },
+
+            series: [{
+                name: 'Flexion',
+                data: [{{ $chart2Data['values'][1] }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">N.m2/Rad</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-module', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: {{ round($chart2Data['min'][2]) }},
+                max: {{ round($chart2Data['max'][2]) }},
+                tickPositions : [{{ round($chart2Data['min'][2]) }},{{ round($chart2Data['max'][2]) }}]            },
+            title: {
+                text: "Module d'Young (E)",
+            },
+            series: [{
+                name: 'Flexion',
+                data: [{{ $chart2Data['values'][2] }}], //22590
+                dataLabels: {
+                    format:
+                        '<div style="text-align:center">' +
+                        '<span style="font-size:12px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:10px;opacity:0.4">GPa</span>' +
+                        '</div>'
+                },
+            }]
+
+        }));
+
+
+
+
     </script>
 
 @endsection

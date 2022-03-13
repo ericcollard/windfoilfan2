@@ -184,9 +184,10 @@ class TechnicaldataController extends Controller
         if ($request->ajax()) {
             return Datatables::of($data)
                 ->addIndexColumn()
+                /*
                 ->editColumn('created_at', function ($request) {
-                    return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
-                })
+                    return $request->created_at->formatLocalized('%d %B %Y');
+                })*/
                 ->addColumn('action', function(Technicaldata $technicaldata) {
                     return '<a href="'.route('technicaldata.show',$technicaldata).'" class="btn btn-sm btn-primary rounded-pill" role="button"><i class="mdi mdi-eye"></i> '. __('See').'</a>';
                 })

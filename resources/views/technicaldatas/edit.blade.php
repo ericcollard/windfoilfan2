@@ -120,7 +120,13 @@
                                 <input type="text" class="form-control" id="serial" name="serial"
                                        value="{{ $technicaldata->serial ? $technicaldata->serial : old('serial') }}" />
                             </div>
+                            <div class="col-lg-4  mb-3">
+                                <label for="created_at" class="form-label">{{ __('created_at') }}</label>
+                                <input type="text" class="form-control" id="created_at" name="created_at"
+                                       value="{{ $technicaldata->created_at ? $technicaldata->created_at : old('created_at') }}" />
+                            </div>
                         </div>
+
 
                         @foreach ($attributes as $group => $attributeGroup)
                             <div class="row">

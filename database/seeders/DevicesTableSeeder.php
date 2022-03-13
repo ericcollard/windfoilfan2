@@ -3675,8 +3675,8 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-01/race_foil_115.jpg" alt="" /></div>
-<div class="col-lg">Pour 2021, F4 propose une nouvelle gamme avec des changements subtentiels. Ces changements sont li&eacute;s &agrave; 2 &eacute;l&eacute;ments :
+<div class="col-3"><img class="img-fluid" src="/storage/photos/1/2021-01/race_foil_115.jpg" alt="" /></div>
+<div class="col-9">Pour 2021, F4 propose une nouvelle gamme avec des changements subtentiels. Ces changements sont li&eacute;s &agrave; 2 &eacute;l&eacute;ments :
 <ul>
 <li class="col-lg">un d&eacute;placement de la production en Asie, pour pouvoir passer &agrave; une production industrielle et permettre un d&eacute;veloppement du volume de ventes</li>
 <li class="col-lg">une volont&eacute; d\'offrir &agrave; la fois plus de polyvalence multi-segment (Wing &amp; Winf) et plus de fiabilit&eacute; (fixation des ailes, jonction mat / fuselage, assise stab).</li>
@@ -3694,7 +3694,7 @@ array (
     'programme_start' => 5.0,
     'programme_end' => 10.0,
     'created_at' => '2021-01-10 15:05:27',
-    'updated_at' => '2022-03-10 20:33:09',
+    'updated_at' => '2022-03-12 12:38:36',
 ),
 142 => 
 array (
