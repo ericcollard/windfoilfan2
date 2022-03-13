@@ -314,23 +314,37 @@
                             <div class="row">
                                 <div class="col-12">
                                     <h3>Dernières données techniques enregistrées</h3>
-                                        @foreach($attributes as $group => $attributesSet)
-                                            @foreach($attributesSet as $attribute)
-                                                @if ($group == 'usage_group')
-                                                    <?php
-                                                    $chart1Data['labels'][] = __($attribute->slug) ;
-                                                    $chart1Data['values'][] = (float)$attributesSet->results->{$attribute->field};
-                                                    ?>
-                                                @elseif ($group == 'structural_result_group')
-                                                    <?php
-                                                    $chart2Data['labels'][] = __($attribute->slug) ;
-                                                    $chart2Data['values'][] = (float)$attributesSet->results->{$attribute->field};
-                                                    $chart2Data['min'][] = $technicaldatas_minmax->{'min_'.$attribute->field};
-                                                    $chart2Data['max'][] = $technicaldatas_minmax->{'max_'.$attribute->field};
-                                                    ?>
-                                                @endif
-                                            @endforeach
-                                        @endforeach
+                                    <?php
+                                        $chart1Data = [];
+                                        $chart2Data = [];
+                                        foreach ($attributes as $group => $attributesSet)
+                                            {
+                                                foreach ($attributesSet as $attribute)
+                                                    {
+                                                        if ($group == 'usage_group')
+                                                            {
+                                                                $chart1Data['labels'][] = __($attribute->slug) ;
+                                                                if (! is_null($attributesSet->results))
+                                                                {
+                                                                    $chart1Data['values'][] = (float)$attributesSet->results->{$attribute->field};
+                                                                }
+                                                                else
+                                                                    $chart1Data['values'][] = 0;
+                                                            }
+                                                        elseif ($group == 'structural_result_group')
+                                                            {
+                                                                if (! is_null($attributesSet->results) and !is_null($technicaldatas_minmax))
+                                                                {
+                                                                    $chart2Data['labels'][] = __($attribute->slug) ;
+                                                                    $chart2Data['values'][] = (float)$attributesSet->results->{$attribute->field};
+                                                                    $chart2Data['min'][] = $technicaldatas_minmax->{'min_'.$attribute->field};
+                                                                    $chart2Data['max'][] = $technicaldatas_minmax->{'max_'.$attribute->field};
+                                                                }
+                                                            }
+                                                    }
+                                            }
+                                    ?>
+
                                 </div>
                             </div>
 
@@ -518,6 +532,14 @@
 
         });
 
+        var labels = [];
+        var values = [];
+        @if(array_key_exists('labels',$chart1Data) and array_key_exists('values',$chart1Data))
+            labels = {!! json_encode($chart1Data['labels']) !!} ;
+            values = {!! json_encode($chart1Data['values']) !!} ;
+        @endif
+
+
         Highcharts.chart('container-radar', {
             chart: {
                 polar: true,
@@ -531,7 +553,7 @@
                 enabled: false
             },
             xAxis: {
-                categories: <?php echo json_encode($chart1Data['labels']) ?>,
+                categories: labels,
                 tickmarkPlacement: 'on',
                 lineWidth: 0
             },
@@ -548,7 +570,7 @@
             legend: false,
             series: [{
                 name: 'En navigation',
-                data: {{ json_encode($chart1Data['values']) }},
+                data: values,
                 pointPlacement: 'on'
             }],
             responsive: {
@@ -558,8 +580,15 @@
                     }
                 }]
             }
-
         });
+
+
+
+
+
+
+
+
 
 
         var gaugeOptions = {
@@ -617,19 +646,29 @@
             }
         };
 
-        // The speed gauge
+        var minvalue =  0;
+        var maxvalue = 0;
+        var currentvalue = 0;
+
+        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data))
+            minvalue = {{ round($chart2Data['min'][0]) }};
+            maxvalue = {{ round($chart2Data['max'][0]) }};
+            currentvalue = {{ $chart2Data['values'][0] }};
+        @endif
+
+
         var chartSpeed = Highcharts.chart('container-flex', Highcharts.merge(gaugeOptions, {
             yAxis: {
-                min: {{ round($chart2Data['min'][0]) }},
-                max: {{ round($chart2Data['max'][0]) }},
-                tickPositions : [{{ round($chart2Data['min'][0]) }},{{ round($chart2Data['max'][0]) }}]
+                min: minvalue,
+                max: maxvalue,
+                tickPositions : [minvalue,maxvalue],
             },
             title: {
                 text: 'Coefficient de rigidité en flexion (EIx)',
             },
             series: [{
                 name: 'Flexion',
-                data: [{{ $chart2Data['values'][0] }}], //22590
+                data: [currentvalue], //22590
                 dataLabels: {
                     format:
                         '<div style="text-align:center">' +
@@ -637,23 +676,33 @@
                         '<span style="font-size:10px;opacity:0.4">N.m2</span>' +
                         '</div>'
                 },
-            }]
+            }],
 
         }));
 
-        // The speed gauge
+        @if( array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data) )
+            minvalue = {{ round($chart2Data['min'][1]) }};
+            maxvalue = {{ round($chart2Data['max'][1]) }};
+            currentvalue = {{ $chart2Data['values'][1] }};
+        @else
+            minvalue =  0;
+            maxvalue = 0;
+            currentvalue = 0;
+        @endif
+
         var chartSpeed = Highcharts.chart('container-torsion', Highcharts.merge(gaugeOptions, {
             yAxis: {
-                min: {{ round($chart2Data['min'][1]) }},
-                max: {{ round($chart2Data['max'][1]) }},
-                tickPositions : [{{ round($chart2Data['min'][1]) }},{{ round($chart2Data['max'][1]) }}]            },
+                min: minvalue,
+                max: maxvalue,
+                tickPositions: [minvalue, maxvalue],
+            },
             title: {
                 text: 'Coefficient de rigidité en torsion (GIg)',
             },
 
             series: [{
                 name: 'Flexion',
-                data: [{{ $chart2Data['values'][1] }}], //22590
+                data: [currentvalue], //22590
                 dataLabels: {
                     format:
                         '<div style="text-align:center">' +
@@ -665,18 +714,28 @@
 
         }));
 
-        // The speed gauge
+        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data))
+            minvalue = {{ round($chart2Data['min'][2]) }};
+            maxvalue = {{ round($chart2Data['max'][2]) }};
+            currentvalue = {{ $chart2Data['values'][2] }};
+        @else
+            minvalue =  0;
+            maxvalue = 0;
+            currentvalue = 0;
+        @endif
+
         var chartSpeed = Highcharts.chart('container-module', Highcharts.merge(gaugeOptions, {
             yAxis: {
-                min: {{ round($chart2Data['min'][2]) }},
-                max: {{ round($chart2Data['max'][2]) }},
-                tickPositions : [{{ round($chart2Data['min'][2]) }},{{ round($chart2Data['max'][2]) }}]            },
+                min: minvalue,
+                max: maxvalue,
+                tickPositions: [minvalue, maxvalue],
+            },
             title: {
                 text: "Module d'Young (E)",
             },
             series: [{
                 name: 'Flexion',
-                data: [{{ $chart2Data['values'][2] }}], //22590
+                data: [currentvalue], //22590
                 dataLabels: {
                     format:
                         '<div style="text-align:center">' +
