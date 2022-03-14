@@ -368,5 +368,6 @@
     "Distinct IP views" : "Adresses IP distinctes",
     "Brands" : "Marques",
     "Brands list" : "Liste des marques",
-    "Brand title" : "La marque :NAME sur Windfoilfan"
+    "Brand title" : "La marque :NAME sur Windfoilfan",
+    "Unique IP": "Ip distinctes"
 }

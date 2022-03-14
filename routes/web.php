@@ -74,7 +74,9 @@ Route::post('/reviews',[ReviewController::class, 'store'])->name('review.store')
 Route::delete('/reviews/{review}',[ReviewController::class, 'destroy'])->name('review.destroy');
 
 Route::get('/brands',[BrandController::class, 'index'])->name('brand.index');
+Route::get('/brands/{brand}/edit', [BrandController::class, 'edit'])->name('brand.edit');
 Route::get('/brands/{brand}',[BrandController::class, 'show'])->name('brand.show');
+Route::patch('/brands/{brand}',[BrandController::class, 'update'])->name('brand.update');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 

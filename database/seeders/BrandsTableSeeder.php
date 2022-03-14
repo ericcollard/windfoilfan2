@@ -717,8 +717,8 @@ class BrandsTableSeeder extends Seeder
                 'id' => 78,
                 'name' => 'PHANTOM',
                 'slug' => 'phantom',
-                'logo_path' => 'phantom.png',
-                'body' => 'blablabla',
+                'logo_path' => '6VqJd9NX8tFKz8FpulaabHmNvW0A8mvUG0u3j9cw.png',
+                'body' => '<p>Description de la marque&nbsp;</p>',
                 'url' => 'https://www.phantom-windsurfing.com',
             ),
             78 => 

@@ -35,4 +35,10 @@ class Brand extends Model
         return $this->logo_path ? Storage::disk('logos')->url($this->logo_path) : asset('assets/images/brands/default.png');
     }
 
+    /**  path  */
+    public function path()
+    {
+        return route('brand.show',[ 'brand' => $this]);
+    }
+
 }
