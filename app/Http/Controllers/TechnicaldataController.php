@@ -13,6 +13,7 @@ use App\Models\Technicaldata;
 use App\Models\User;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Facades\DataTables;
 use Yajra\DataTables\Utilities\Request;
@@ -246,5 +247,106 @@ class TechnicaldataController extends Controller
                 ->make(true);
         }
     }
+
+
+    /**
+     * Display a chart sorting all devices for one attribute
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function attributeChart( Attribute $attribute)
+    {
+        if (!$attribute) abort(403, 'No attribute defined');
+        $category = $attribute->category;
+
+        $names = [];
+        $values = [];
+
+
+
+        $devicesQuery = DB::table('technicaldatas')
+            ->join('devices', 'technicaldatas.device_id', '=', 'devices.id')
+            ->join('brands', 'devices.brand_id', '=', 'brands.id')
+            ->where('devices.category_id','=',$category->id)
+            ->whereNotNull($attribute->field)
+            ->orderBy($attribute->field, 'desc');
+
+        /*
+        if (! Gate::allows('see-hidden')) {
+            // The current user can't see hidden gears
+            $devicesQuery->where('devices.status','=','Published');
+        }
+        */
+
+        $technicalDatas = $devicesQuery
+            ->select('technicaldatas.id','technicaldatas.serial', 'devices.name as device', 'devices.year as year', 'brands.name as brand', 'brands.id as brand_id', 'technicaldatas.user_id', $attribute->field.' as value')
+            ->get();
+
+        // recherche min et max
+        $cnt = count($technicalDatas);
+
+        $dataMin = $technicalDatas[$cnt-1]->value;
+        $dataMax = $technicalDatas[0]->value;
+
+        // Autorisations à voir pour les données structure
+        if  ( $attribute->group == "structural_group" or $attribute->group == "structural_result_group")
+            $see_all = auth()->user()->hasRole('ROLE_ADMIN');
+        else
+            $see_all = true;
+        $see_patrial = auth()->user()->hasRole('ROLE_CONTRIBUTOR');
+
+        if (is_null(auth()->user()->brand_id))
+            $brand_id_allowed = 0;
+        else
+            $brand_id_allowed = auth()->user()->brand_id;
+
+        if (auth()->user())
+            $user_is_allowed = auth()->user()->id;
+        else
+            $user_is_allowed = 0;
+
+        foreach ($technicalDatas as $technicaldata)
+        {
+            if ($see_all or ($see_patrial and ($brand_id_allowed == $technicaldata->brand_id)) or ($see_patrial and ($user_is_allowed == $technicaldata->user_id)))
+            {
+                $names[] = $technicaldata->brand.' '.$technicaldata->device.' '.$technicaldata->year.' '.$technicaldata->serial.' (id-'.$technicaldata->id.')';
+            }
+            else
+            {
+                $names[] = 'nc.'; //'id-'.$technicaldata->id;
+            }
+
+            if ($attribute->chart =='pourcentage')
+                $values[] = (double)($technicaldata->value-$dataMin)/($dataMax-$dataMin)*100.0;
+            else
+                $values[] = (double)($technicaldata->value);
+        }
+
+        if ($attribute->chart =='pourcentage')
+        {
+            $chartMin = 0.0;
+            $chartMax = 100.0;
+            $legende = 'Valeur (%)';
+            $draggable = 'false';
+        }
+        if ($attribute->chart =='note')
+        {
+            $chartMin = 0.0;
+            $chartMax = 10.0;
+            $legende = 'Note / 10';
+            $draggable = 'true';
+        }
+        if ($attribute->chart =='valeur')
+        {
+            $chartMin = $dataMin;
+            $chartMax = $dataMax;
+            $legende = 'Valeur ('.$attribute->unit.')';
+            $draggable = 'false';
+        }
+
+        return view('technicaldatas.chart', compact('attribute','names','values','chartMin','chartMax','legende','draggable'));
+    }
+
+
 
 }

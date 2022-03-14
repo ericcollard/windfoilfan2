@@ -1145,7 +1145,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 35,
                 'device_id' => 35,
-                'user_id' => 5,
+                'user_id' => 3,
                 'body' => NULL,
                 'serial' => 'Alu V4 2018',
                 'attr3' => -1.0,

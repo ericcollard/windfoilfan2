@@ -1,7 +1,7 @@
 @extends('layouts.vertical')
 
 @section('page_title')
-
+    {{ __('Technical data') }} ref {{$technicaldata->id }}
 @endsection
 @section('page_description')
 
@@ -29,7 +29,7 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('device.categories') }}">{{ __('Posts') }}</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('device.categories') }}">{{ __('Devices') }}</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.category',$technicaldata->device->category) }}">{{ $technicaldata->device->category->name }}</a></li>
                             <li class="breadcrumb-item"><a href="{{ route('device.category',$technicaldata->device->category) }}?from={{ $technicaldata->device->brand->slug }}">{{ $technicaldata->device->brand->name }}</a></li>
                             <li class="breadcrumb-item active"><a href="{{ $technicaldata->device->path() }}">{{ $technicaldata->device->name }}</a></li>

@@ -13,8 +13,14 @@
 @endsection
 
 @section('script-head')
+
+
+
     <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
     <script>
+
+        /*  TODO : empêcher d'accéder au code HTML pour user non administrateur  */
+
         var editor_config = {
             path_absolute : "/",
             selector: 'textarea#body',
