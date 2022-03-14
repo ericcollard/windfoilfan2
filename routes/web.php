@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrandController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
@@ -72,6 +73,8 @@ Route::patch('/reviews/{review}',[ReviewController::class, 'update'])->name('rev
 Route::post('/reviews',[ReviewController::class, 'store'])->name('review.store');
 Route::delete('/reviews/{review}',[ReviewController::class, 'destroy'])->name('review.destroy');
 
+Route::get('/brands',[BrandController::class, 'index'])->name('brand.index');
+Route::get('/brands/{brand}',[BrandController::class, 'show'])->name('brand.show');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 

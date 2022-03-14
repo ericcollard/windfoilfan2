@@ -50,6 +50,8 @@ class TechnicaldatasDataTable extends DataTable
      */
     public function query(Technicaldata $model): Builder
     {
+
+
         $builder =  $model->newQuery();
         $builder->join('devices', 'devices.id', '=', 'technicaldatas.device_id');
         $builder->join('users', 'users.id', '=', 'technicaldatas.user_id');

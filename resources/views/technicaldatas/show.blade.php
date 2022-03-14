@@ -103,8 +103,12 @@
                                     <div class="col-xl-6">
                                         @foreach($attributeGroup as $attribute)
                                             <?php
+                                            if (!empty($attribute)) {
                                                 $chartData['labels'][] = __($attribute->name);
+                                            }
+                                            if (!empty($technicaldata)) {
                                                 $chartData['values'][] = (float)$technicaldata->{$attribute->field};
+                                            }
                                             ?>
                                             <p>
                                                 {{ __($attribute->slug) }} :
@@ -403,10 +407,5 @@
 @endsection
 
 @section('css')
-
-    <style>
-
-    </style>
-
 
 @endsection

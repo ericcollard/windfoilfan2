@@ -17,6 +17,9 @@ class CreateBrandsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name',50);
             $table->string('slug',50)->unique();
+            $table->string('logo_path')->nullable();
+            $table->text('body')->nullable();
+            $table->string('url')->nullable();
         });
     }
 

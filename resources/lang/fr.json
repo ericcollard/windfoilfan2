@@ -363,5 +363,10 @@
     "for" : "pour",
     "Cite" : "Citer",
     "Technical data list" : "Liste des données techniques",
-    "Add a technical data set" : "Ajouter un jeu de données techniques"
+    "Add a technical data set" : "Ajouter un jeu de données techniques",
+    "Technical data sets" : "Jeux de données techniques",
+    "Distinct IP views" : "Adresses IP distinctes",
+    "Brands" : "Marques",
+    "Brands list" : "Liste des marques",
+    "Brand title" : "La marque :NAME sur Windfoilfan"
 }

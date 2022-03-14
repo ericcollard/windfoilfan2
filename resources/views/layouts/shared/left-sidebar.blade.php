@@ -48,7 +48,7 @@
                             </li>
                         @endforeach
                         <li>
-                            <a href="#">Marques</a>
+                            <a href="{{ route('brand.index') }}">Marques</a>
                         </li>
                     </ul>
                 </div>

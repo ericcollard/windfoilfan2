@@ -70,6 +70,23 @@ return [
             ],
         ],
 
+        'logos' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/logos'),
+            'url' => env('APP_URL').'/storage/logos',
+            'visibility' => 'public',
+            'permissions' => [
+                'file' => [
+                    'public' => 0666,
+                    'private' => 0600,
+                ],
+                'dir' => [
+                    'public' => 0775,
+                    'private' => 0700,
+                ],
+            ],
+        ],
+
         'moves' => [
             'driver' => 'local',
             'root' => storage_path('app/public/moves'),

@@ -1,11 +1,19 @@
-@extends('layouts.vertical', ["page_title"=> "main.dashboard"])
+@extends('layouts.vertical')
 
-@section('css')
-<!-- third party css -->
-<link href="{{asset('assets/libs/admin-resources/admin-resources.min.css')}}" rel="stylesheet" type="text/css">
-</link>
-<!-- third party css end -->
+@section('page_title')
+    {{ $brand->name }}
 @endsection
+@section('page_description')
+    Tout l'univers de la marque {{ $brand->name }}
+@endsection
+@section('page_image')
+
+@endsection
+@section('page_author')
+    Glissattitude
+@endsection
+
+
 
 @section('content')
 <!-- Start Content-->
@@ -16,16 +24,13 @@
         <div class="col-12">
             <div class="page-title-box">
                 <div class="page-title-right">
-                    <form class="d-flex">
-                        <div class="input-group">
-                            <input type="text" class="form-control form-control-light" id="dash-daterange">
-                            <span class="input-group-text bg-primary border-primary text-white">
-                                <i class="mdi mdi-calendar-range font-13"></i>
-                            </span>
-                        </div>
-                    </form>
+                    <ol class="breadcrumb m-0">
+                        <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
+                        <li class="breadcrumb-item">{{ __('Brands') }}</li>
+                        <li class="breadcrumb-item">{{ $brand->name }}</li>
+                    </ol>
                 </div>
-                <h4 class="page-title">{{ __('Dashboard') }}</h4>
+                <h1 class="page-title">{{ __("Brand title", ['name' => $brand->name]) }}</h1>
             </div>
         </div>
     </div>
@@ -34,6 +39,8 @@
 
     <!-- start 1ere ligne -->
     <div class="row">
+
+
         <div class="col-xl-5 col-lg-6">
 
             <div class="row">
@@ -46,7 +53,7 @@
                             <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Foils</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['foilCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}">Voir tous les foils</a></span>
+                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}?from={{ $brand->slug  }}">Voir tous les foils</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -61,7 +68,7 @@
                             <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Flotteurs</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['boardCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}">Voir tous les flotteurs</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}?from={{ $brand->slug  }}">Voir tous les flotteurs</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -78,7 +85,7 @@
                             <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Voiles</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['sailCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}">Voir toutes les voiles</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}?from={{ $brand->slug  }}">Voir toutes les voiles</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -90,8 +97,8 @@
                             <div class="float-end">
                                 <i class="mdi mdi-pulse widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Growth">Marques</h5>
-                            <h3 class="mt-3 mb-3">{{ $dashboard['brandCnt'] }}</h3>
+                            <h5 class="text-muted fw-normal mt-0" title="Growth">Messages</h5>
+                            <h3 class="mt-3 mb-3">{{ $dashboard['reviewCnt'] }}</h3>
                             <p class="mb-0 text-muted">
                                 <span class="text-nowrap text-success"><a href="{{ route('brand.index') }}">Voir toutes les marques</a></span>
 
@@ -103,30 +110,8 @@
 
         </div> <!-- end col -->
 
-        <div class="col-xl-3 col-lg-3">
-            <div class="card card-h-100">
-                <div class="card-body">
-                    <h4 class="header-title mb-0">{{ __('Popular brands') }}</h4><p class="mb-2 text-muted">{{ __('last 365 days') }}</p>
-                    <div class="table-responsive">
-                        <table class="table table-centered table-nowrap table-hover mb-0">
-                            <tbody>
-                            @foreach($dashboard['brandsWithViewCount'] as $item)
-                                <tr>
-                                    <td>
-                                        <h5 class="font-14 my-0 fw-normal"><a href="">{{ $item->brand }}</a></h5>
-                                    </td>
-                                    <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Views') }}</h5>
-                                    </td>
-                                </tr>
-                            @endforeach
-                            </tbody>
-                        </table>
-                    </div> <!-- end table-responsive-->
 
-                </div> <!-- end card-body-->
-            </div> <!-- end card-->
-        </div> <!-- end col -->
+
         <div class="col-xl-4 col-lg-3">
             <div class="card card-h-100">
                 <div class="card-body">
@@ -142,7 +127,7 @@
                                         <h5 class="font-14 my-0 fw-normal"><a href="{{ route('device.show',['category'=>$item->category , 'device'=>$item->id]) }}">{{ $item->device }} {{ $item->year }}</a></h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->brand }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ __($item->category) }}</h5>
                                     </td>
                                     <td>
                                         <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Views') }}</h5>
@@ -156,6 +141,20 @@
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
         </div> <!-- end col -->
+
+        <div class="col-xl-3 col-lg-3 text-end">
+            @if ($brand->url )
+                <a href = "{{ $brand->url }}">
+                    <img src="{{ $brand->logoUrl() }}" alt="{{ $brand->name }} brand logo " class="img-fluid"/>
+                </a>
+
+            @else
+                <img src="{{ $brand->logoUrl() }}" alt="{{ $brand->name }} brand logo " class="img-fluid"/>
+            @endif
+
+
+        </div> <!-- end col -->
+
     </div>
     <!-- end 1ere ligne -->
 
@@ -181,18 +180,7 @@
                     <div data-simplebar style="max-height: 419px;">
                         <div class="timeline-alt pb-0">
 
-                            @foreach($dashboard['lastReviews'] as $review)
-                            <div class="timeline-item">
-                                <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
-                                <div class="timeline-item-info">
-                                    <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }}</a>
-                                    <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
-                                    <p class="mb-0 pb-2">
-                                        <small class="text-muted">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small>
-                                    </p>
-                                </div>
-                            </div>
-                            @endforeach
+
 
 
                         </div>
@@ -225,72 +213,6 @@
 
 <!-- demo app -->
 <script>
-
-    var colors = ["#727cf5", "#e3eaef"];
-    var dataColors = $("#messages-chart").data('colors');
-
-    if (dataColors) {
-        colors = dataColors.split(",");
-    }
-
-    var options = {
-        chart: {
-            height: 257,
-            type: 'bar',
-            stacked: true
-        },
-        plotOptions: {
-            bar: {
-                horizontal: false,
-                //columnWidth: '20%'
-            }
-        },
-        dataLabels: {
-            enabled: false
-        },
-        stroke: {
-            show: true,
-            width: 2,
-            colors: ['transparent']
-        },
-        series: [ {
-            data: {!!  json_encode($dashboard['chartDataByMonth']['values']) !!} ,
-            name: 'messages',
-            showInLegend: false,
-        } ],
-        zoom: {
-            enabled: false
-        },
-        legend: {
-            show: false
-        },
-        colors: colors,
-        xaxis: {
-            categories: {!! json_encode($dashboard['chartDataByMonth']['dates'])   !!}  ,
-            axisBorder: {
-                show: false
-            }
-        },
-        yaxis: {
-            labels: {
-                offsetX: -15
-            }
-        },
-        fill: {
-            opacity: 1
-        },
-        tooltip: {
-            y: {
-                formatter: function formatter(val) {
-                    return val + " messages";
-                }
-            }
-        }
-    };
-
-    var chart = new ApexCharts(document.querySelector("#messages-chart"), options);
-
-    chart.render();
 
 
 </script>
