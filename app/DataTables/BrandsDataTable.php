@@ -98,7 +98,7 @@ group by `brands`.`id`
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->dom('Bfrtip')
-                    ->orderBy(4,'desc')
+                    ->orderBy(5,'desc')
                     ->parameters([
                         'language' => [
                             'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here

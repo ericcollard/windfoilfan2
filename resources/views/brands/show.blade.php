@@ -24,7 +24,7 @@
                 <div class="page-title-right">
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                        <li class="breadcrumb-item">{{ __('Brands') }}</li>
+                        <li class="breadcrumb-item"><a href="{{ route('brand.index') }}">{{ __('Brands') }}</a></li>
                         <li class="breadcrumb-item">{{ $brand->name }}</li>
                     </ol>
                 </div>
@@ -34,7 +34,7 @@
     </div>
     <!-- end page title -->
 
-    <div class="row">
+    <div class="row mb-2">
         <div class="col-9">
             {!! $brand->body !!}
         </div>
