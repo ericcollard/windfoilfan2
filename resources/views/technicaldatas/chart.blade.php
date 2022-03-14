@@ -121,6 +121,7 @@
                                     'In <b>' + this.series.name + '</b>, <b>' + this.category + '</b> was set to <b>' + Highcharts.numberFormat(this.y, 2) + '</b>'
                                 );
 
+                                //$.MessageBox("A plain MessageBox can replace Javascript's window.alert(), and it looks definitely better...");
                                 $.ajax({
                                     type: "POST",
                                     data: {"_token": "{{ csrf_token() }}","deviceName": this.category, "value" : Highcharts.numberFormat(this.y, 2), "attributeField" : "{{ $attribute->field }}" },

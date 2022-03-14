@@ -347,6 +347,45 @@ class TechnicaldataController extends Controller
         return view('technicaldatas.chart', compact('attribute','names','values','chartMin','chartMax','legende','draggable'));
     }
 
+    /**
+     * Store a new value for attribute for the given device.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function attributeStore(Request $request)
+    {
+        //dd($request);
+        //if ( Gate::allows('can-update-device'))
+        //{
+            $deviceName = request('deviceName');
+            $technicaldataId = $this->getIdFomName($deviceName);
+
+            $newvalue = request('value');
+            $attributeField = request('attributeField');
+
+            if ($technicaldataId && $newvalue && $attributeField)
+            {
+                $data = Technicaldata::find($technicaldataId);
+                $data->{$attributeField} = $newvalue;
+                $data->save();
+            }
+        //}
+        return;
+    }
+
+
+    private function getIdFomName(string $deviceName)
+    {
+        $pos1 = strrpos($deviceName, ")" , -1);
+        if ($pos1 === false) return null;
+        $pos2 = strrpos($deviceName, "-" , -1) + 1;
+        if ($pos2 === false) return null;
+        $StrId = substr($deviceName, $pos2, $pos1-$pos2);
+        if ($StrId === false) return null;
+
+        return (integer)$StrId;
+    }
 
 
 }
