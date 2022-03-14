@@ -16,14 +16,15 @@
 @section('css')
     <style>
 
+        .brand-logo {
+            height: 30px;
+            margin-right: 10px;
+        }
         .review_body .container, .device_body .container  {
             padding-left: 0;
             padding-right: 0;
         }
 
-        .device_body img  {
-
-        }
 
         .chart-gauge {
             height: 200px;
@@ -174,23 +175,10 @@
 
 
     <!-- third party css -->
-    <link href="
-
-
-
-
-
-
-
-{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- third party css end -->
 
-    <style>
-
-
-
-    </style>
 
 @endsection
 
@@ -215,7 +203,8 @@
                         </ol>
                     </div>
                     <h1 class="page-title">
-                        <span style="font-size: 1.8rem">{{ $device->brand->name }} {{ $device->name }} {{ $device->year }}</span>
+                        <img src="{{ $device->brand->logoUrl() }}" alt="{{ $device->brand->name }} brand logo " class="brand-logo"/>
+                        <span>{{ $device->brand->name }} {{ $device->name }} {{ $device->year }}</span>
                     </h1>
 
 
@@ -278,16 +267,17 @@
                                 echo "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
                                 ?>
                             </div>
-                            <div class="col-6 text-end">
+                            <div class="col-6 text-end mt-2">
+                                <p>{{ __('Price') }} : {{ $device->price }} €</p>
                                 <ul class="social-list list-inline mt-3">
-                                    <p>{{ __('Price') }} : {{ $device->price }} €</p>
+
                                     @can ('update', $device)
-                                        <li class="list-inline-item text-center">
-                                            <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill mb-1" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
+                                        <li class="list-inline-item text-center mb-1">
+                                            <a href="{{ route('device.edit',['category'=>$device->category, 'device'=>$device]) }}" class="btn  btn-warning rounded-pill" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Edit") }}</a>
                                         </li>
                                     @endcan
                                     @can ('delete', $device)
-                                        <li class="list-inline-item text-center">
+                                        <li class="list-inline-item text-center mb-1">
                                             <form id="deleteData" method="POST" action="{{ route('device.destroy',['category'=>$device->category, 'device'=>$device]) }}" >
                                                 {{ csrf_field() }}
                                                 {{ method_field('DELETE') }}

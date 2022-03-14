@@ -14,10 +14,6 @@
 @endsection
 
 
-
-
-
-
 @section('content')
     <!-- Start Content-->
     <div class="container-fluid">
@@ -167,6 +163,4 @@
     </script>
 @endsection
 
-@section('css')
 
-@endsection

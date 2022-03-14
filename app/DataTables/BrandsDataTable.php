@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Models\Brand;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use Yajra\DataTables\Html\Button;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
@@ -23,7 +24,15 @@ class BrandsDataTable extends DataTable
             ->editColumn('name', function ($request) {
                 return '<a href="'.route('brand.show',$request->slug).'">'.$request->name.'</a>';
             })
-            ->rawColumns(['name']);
+            ->addColumn('logo', function ($request) {
+
+                $url = ($request->logo_path ? Storage::disk('logos')->url($request->logo_path) : asset('assets/images/brands/default.png')) ;
+                return '<img src="'.$url.'" class="brand-logo"/>';
+
+            })
+            ->rawColumns(['name','logo']);
+
+
 
     }
 
@@ -107,6 +116,12 @@ group by `brands`.`id`
     protected function getColumns()
     {
         return [
+            Column::computed('logo')->title(__('Logo'))
+                ->addClass('text-center')
+                ->exportable(false)
+                ->printable(false)
+                ->searchable(false)
+                ->width(60),
             Column::make('name')->title(__('Name')),
             Column::make('device_cnt')->title(__('Devices'))->searchable(false),
             Column::make('data_cnt')->title(__('Technical data sets'))->searchable(false),

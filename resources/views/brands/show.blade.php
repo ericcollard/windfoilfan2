@@ -13,8 +13,6 @@
     Glissattitude
 @endsection
 
-
-
 @section('content')
 <!-- Start Content-->
 <div class="container-fluid">

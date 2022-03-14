@@ -18,17 +18,18 @@
 
     <!-- third party css -->
     <link href="{{asset('assets/libs/datatables/datatables.min.css')}}" rel="stylesheet" type="text/css" />
-
     <!-- third party css end -->
 
     <style>
-
         div.dataTables_wrapper div.dataTables_filter
         {
             float: right;
         }
-
+        .brand-logo  {
+            height: 35px;
+        }
     </style>
+
 
 @endsection
 

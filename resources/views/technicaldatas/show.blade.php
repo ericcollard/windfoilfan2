@@ -14,7 +14,17 @@
 @endsection
 
 
+@section('css')
+    <style>
 
+        .brand-logo {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+    </style>
+
+@endsection
 
 
 
@@ -37,7 +47,10 @@
                             <li class="breadcrumb-item active">{{ $technicaldata->id }}</li>
                         </ol>
                     </div>
-                    <h1 class="page-title">{{ __('Technical data') }} ref {{$technicaldata->id }}</h1>
+                    <h1 class="page-title">
+                        <img src="{{ $technicaldata->device->brand->logoUrl() }}" alt="{{ $technicaldata->device->brand->name }} brand logo " class="brand-logo"/>
+                        <span>{{ __('Technical data') }} ref {{$technicaldata->id }}</span>
+                    </h1>
                 </div>
             </div>
         </div>
@@ -406,6 +419,3 @@
     <!-- end demo js-->
 @endsection
 
-@section('css')
-
-@endsection
