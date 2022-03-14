@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateBrandRequest;
 use App\Models\Brand;
 use App\Models\Device;
 use App\Models\Review;
+use App\Models\Technicaldata;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
@@ -58,6 +59,7 @@ class BrandController extends Controller
 
 
         $dashboard['reviewCnt'] = Review::join('devices', 'reviews.device_id', '=', 'devices.id')->where('devices.brand_id',$brand->id)->count();
+        $dashboard['dataCnt'] = Technicaldata::join('devices', 'technicaldatas.device_id', '=', 'devices.id')->where('devices.brand_id',$brand->id)->count();
         $dashboard['foilCnt'] = Device::where('category_id', 1)->where('brand_id',$brand->id)->count();
         $dashboard['boardCnt'] = Device::where('category_id', 2)->where('brand_id',$brand->id)->count();
         $dashboard['sailCnt'] = Device::where('category_id', 3)->where('brand_id',$brand->id)->count();

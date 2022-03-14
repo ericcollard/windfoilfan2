@@ -119,10 +119,14 @@
                             <div class="float-end">
                                 <i class="mdi mdi-pulse widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Growth">Messages</h5>
-                            <h3 class="mt-3 mb-3">{{ $dashboard['reviewCnt'] }}</h3>
+                            <h5 class="text-muted fw-normal mt-0" title="Growth">Données techniques</h5>
+                            <h3 class="mt-3 mb-3">{{ $dashboard['dataCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success">.</span>
+                                <span class="text-nowrap text-success">Donnés
+                                    <a href="{{ route('technicaldata.category','foil') }}?from={{ $brand->slug  }}">Foils</a> -
+                                    <a href="{{ route('technicaldata.category','board') }}?from={{ $brand->slug  }}">Flotteurs</a> -
+                                    <a href="{{ route('technicaldata.category','sail') }}?from={{ $brand->slug  }}">Voiles</a>
+                                </span>
 
                             </p>
                         </div> <!-- end card-body-->
