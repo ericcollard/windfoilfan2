@@ -124,11 +124,13 @@
                                 <input type="text" class="form-control" id="user_id" name="user_id"
                                        value="{{ $review->user_id ? $review->user_id : old('user_id') }}" required/>
                             </div>
-                            <div class="col-lg-3  mb-2">
-                                <label for="created_at" class="form-label">{{ __('created_at') }}*</label>
-                                <input type="text" class="form-control" id="created_at" name="created_at"
-                                       value="{{ $review->created_at ? $review->created_at : old('created_at') }}" required/>
-                            </div>
+                            @if ($method !== 'POST')
+                                <div class="col-lg-3  mb-2">
+                                    <label for="created_at" class="form-label">{{ __('created_at') }}*</label>
+                                    <input type="text" class="form-control" id="created_at" name="created_at"
+                                           value="{{ $review->created_at ? $review->created_at : old('created_at') }}" required/>
+                                </div>
+                            @endif
                         </div>
 
 

@@ -326,6 +326,16 @@
 
                         <div class="collapse "  id="collapseTechnicaldata">
 
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    @can ('addData', $device)
+                                            <a href="{{ route('technicaldata.create',[ 'device'=>$device]) }}" class="btn  btn-success rounded-pill mb-1" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Add a technical data set") }}</a>
+                                    @endcan
+                                </div>
+                            </div>
+
+
+
                             <div class="table-responsive">
                                 <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
                                     <thead>
@@ -417,7 +427,7 @@
                                         <i class="mdi mdi-message-text"></i><b> Posté le</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
                                     </div>
                                     <div class="col-12 col-md-5 text-end">
-                                        <b>{{ __('Title') }}</b> : {{ $review->title }}
+                                        <b>{{ __('Title') }}</b> : {{ is_null($review->title) ? 'nc' :  $review->title }}
                                     </div>
                                 </div>
                             </div>

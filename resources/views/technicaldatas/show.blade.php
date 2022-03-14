@@ -55,7 +55,7 @@
                                 {{ __('Serial number') }} : {{  $technicaldata->serial }}
                             </div>
                             <div class="col-4">
-                                {{ $technicaldata->device->category->name }} {{ $technicaldata->device->brand->name }} {{ $technicaldata->device->name }} {{ $technicaldata->device->year }}
+                                {{ $technicaldata->device->category->name }} <a href="{{ $technicaldata->device->path() }}">{{ $technicaldata->device->brand->name }} {{ $technicaldata->device->name }} {{ $technicaldata->device->year }}</a>
                             </div>
                             <div class="col-4  text-end">
                                 {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }} par {{$technicaldata->author->name }}

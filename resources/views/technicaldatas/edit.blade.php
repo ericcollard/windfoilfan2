@@ -88,7 +88,7 @@
                     </ol>
                 </div>
                 @if ($method === 'POST')
-                    <h4 class="page-title">{{ __('Create technical data') }}</h4>
+                    <h4 class="page-title">{{ __('Add a technical data set') }} for {{ $technicaldata->device->name }}</h4>
                 @else
                     <h4 class="page-title">{{ __('Edit technical data') }} ref {{ $technicaldata->id }} for {{ $technicaldata->device->name }}</h4>
                 @endif
@@ -125,11 +125,13 @@
                                 <input type="text" class="form-control" id="serial" name="serial"
                                        value="{{ $technicaldata->serial ? $technicaldata->serial : old('serial') }}" />
                             </div>
-                            <div class="col-lg-3  mb-3">
-                                <label for="created_at" class="form-label">{{ __('created_at') }}</label>
-                                <input type="text" class="form-control" id="created_at" name="created_at"
-                                       value="{{ $technicaldata->created_at ? $technicaldata->created_at : old('created_at') }}" />
-                            </div>
+                            @if ($method !== 'POST')
+                                <div class="col-lg-3  mb-3">
+                                    <label for="created_at" class="form-label">{{ __('created_at') }}</label>
+                                    <input type="text" class="form-control" id="created_at" name="created_at"
+                                           value="{{ $technicaldata->created_at ? $technicaldata->created_at : old('created_at') }}" />
+                                </div>
+                            @endif
                         </div>
 
 

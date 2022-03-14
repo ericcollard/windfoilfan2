@@ -56,12 +56,13 @@ Route::delete('/devices/{category}/{device}',[DeviceController::class, 'destroy'
 
 Route::get('/technicaldatas',[TechnicaldataController::class, 'index'])->name('technicaldata.index');
 Route::get('technicaldatas/devicedata/{device}', [TechnicaldataController::class, 'devicedata'])->name('technicaldatas.devicedata');
-Route::get('/technicaldatas/c/{category}',[TechnicaldataController::class, 'category'])->name('technicaldata.category');
+Route::get('/technicaldatas/category/{category}',[TechnicaldataController::class, 'category'])->name('technicaldata.category');
 Route::get('/technicaldatas/create/{device}', [TechnicaldataController::class, 'create'])->name('technicaldata.create');
 Route::get('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'show'])->name('technicaldata.show');
 Route::get('/technicaldatas/{technicaldata}/edit', [TechnicaldataController::class, 'edit'])->name('technicaldata.edit');
 Route::patch('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'update'])->name('technicaldata.update');
 Route::delete('/technicaldatas/{technicaldata}',[TechnicaldataController::class, 'destroy'])->name('technicaldata.destroy');
+Route::post('/technicaldatas',[TechnicaldataController::class, 'store'])->name('technicaldata.store');
 
 
 Route::get('/reviews/create/{device}', [ReviewController::class, 'create'])->name('review.create');

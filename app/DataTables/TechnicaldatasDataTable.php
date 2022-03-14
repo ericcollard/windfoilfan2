@@ -27,6 +27,10 @@ class TechnicaldatasDataTable extends DataTable
             ->editColumn('created_at', function ($request) {
                 return $request->created_at->formatLocalized('%d %b %Y'); //'%d %B %Y'
             })
+            ->editColumn('name', function ($request) {
+                return '<a href="'.route('technicaldata.show',$request->id).'">'.$request->name.'</a>';
+            })
+            ->rawColumns(['name']);
         ;
 
         if ($this->category->id == 1) {

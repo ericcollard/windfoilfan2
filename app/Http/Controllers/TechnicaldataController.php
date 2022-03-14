@@ -62,26 +62,6 @@ class TechnicaldataController extends Controller
         return $dataTable->render('technicaldatas.index');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param StoreTechnicaldataRequest $request
-     * @return Response
-     */
-    public function store(StoreTechnicaldataRequest $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
@@ -188,6 +168,47 @@ class TechnicaldataController extends Controller
 
         return redirect($technicaldata->path());
     }
+
+    /**
+     * Create the form for creation the specified resource.
+     *
+     * @param  \App\Models\Device  $device
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     */
+    public function create(Device $device)
+    {
+        $action = URL::route('technicaldata.store');
+        $method = 'POST';
+        $technicaldata = new Technicaldata();
+        $technicaldata->user_id = auth()->user()->id;
+        $technicaldata->device_id = $device->id;
+
+        $attributes = Attribute::where('category_id',$device->category->id)->get()->groupBy('group');
+
+        return view('technicaldatas.edit', compact('action', 'method','technicaldata','attributes'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param StoreTechnicaldataRequest $request
+     * @return Response
+     */
+    public function store(StoreTechnicaldataRequest $request)
+    {
+        try {
+
+            $data = $request->all();
+            $technicaldata = Technicaldata::create($data);
+
+        } catch (\Exception $e) {
+            // catch exception when trying to insert invalid reply (spam or missing data)
+            abort(403, "I'm sorry, impossible to store you item at the moment");
+        }
+
+        return redirect($technicaldata->path());
+    }
+
 
     /**
      * Remove the specified resource from storage.
