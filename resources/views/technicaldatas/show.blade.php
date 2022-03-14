@@ -58,7 +58,7 @@
                                 {{ $technicaldata->device->category->name }} {{ $technicaldata->device->brand->name }} {{ $technicaldata->device->name }} {{ $technicaldata->device->year }}
                             </div>
                             <div class="col-4  text-end">
-                                {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }}
+                                {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }} par {{$technicaldata->author->name }}
                             </div>
                         </div>
                         <div class="row">

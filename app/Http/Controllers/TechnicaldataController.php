@@ -10,6 +10,8 @@ use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Device;
 use App\Models\Technicaldata;
+use App\Models\User;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
 use Yajra\DataTables\Facades\DataTables;
@@ -20,7 +22,9 @@ class TechnicaldataController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @param TechnicaldatasDataTable $dataTable
+     * @param Category $category
+     * @return Response
      */
     public function category(TechnicaldatasDataTable $dataTable,Category $category)
     {
@@ -35,20 +39,33 @@ class TechnicaldataController extends Controller
             $dataTable->with('brand', $brand);
         }
 
+        $author = "";
+        if(array_key_exists('by', request()->all()))
+        {
+            $author_id = request()->by;
+            $author = User::where('id', $author_id)
+                ->firstOrFail();
+            $dataTable->with('author', $author);
+        }
+
+        // lectures des marques pour le menu déroulant
         $brands = Brand::whereHas('devices', function($query) use($category) {
             $query->where('category_id', $category->id);
         })->get();
-
         $dataTable->with('brands', $brands);
 
-        return $dataTable
-            ->render('technicaldatas.index');
+        // lectures des users pour le menu déroulant
+        $authors = User::whereHas('technicaldatas')->get();
+        $dataTable->with('authors', $authors);
+
+
+        return $dataTable->render('technicaldatas.index');
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -58,8 +75,8 @@ class TechnicaldataController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreTechnicaldataRequest  $request
-     * @return \Illuminate\Http\Response
+     * @param StoreTechnicaldataRequest $request
+     * @return Response
      */
     public function store(StoreTechnicaldataRequest $request)
     {
@@ -70,7 +87,7 @@ class TechnicaldataController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Response|\Illuminate\View\View
      */
     public function show(Technicaldata $technicaldata)
     {
@@ -139,7 +156,7 @@ class TechnicaldataController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|Response|\Illuminate\View\View
      */
     public function edit(Technicaldata $technicaldata)
     {
@@ -155,7 +172,7 @@ class TechnicaldataController extends Controller
      *
      * @param  \App\Http\Requests\UpdateTechnicaldataRequest  $request
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|Response|\Illuminate\Routing\Redirector
      */
     public function update(UpdateTechnicaldataRequest $request, Technicaldata $technicaldata)
     {
@@ -176,7 +193,7 @@ class TechnicaldataController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Technicaldata  $technicaldata
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|Response|\Illuminate\Routing\Redirector
      */
     public function destroy(Technicaldata $technicaldata)
     {

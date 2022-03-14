@@ -3,8 +3,8 @@
 namespace App\DataTables;
 
 use App\Models\Device;
-use Illuminate\Support\Facades\Route;
-use phpGPX\Models\Extensions\AbstractExtension;
+use Illuminate\Database\Eloquent\Builder;
+use Yajra\DataTables\DataTableAbstract;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
 
@@ -14,9 +14,9 @@ class DevicesDataTable extends DataTable
      * Build DataTable class.
      *
      * @param mixed $query Results from query() method.
-     * @return \Yajra\DataTables\DataTableAbstract
+     * @return DataTableAbstract
      */
-    public function dataTable($query)
+    public function dataTable($query): DataTableAbstract
     {
         return datatables()
             ->eloquent($query)
@@ -39,10 +39,10 @@ class DevicesDataTable extends DataTable
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\Device $model
-     * @return \Illuminate\Database\Eloquent\Builder
+     * @param Device $model
+     * @return Builder
      */
-    public function query(Device $model)
+    public function query(Device $model): Builder
     {
         $builder = $model->newQuery()->where('category_id',$this->category->id);
         if ($this->brand)
@@ -77,7 +77,7 @@ class DevicesDataTable extends DataTable
      *
      * @return \Yajra\DataTables\Html\Builder
      */
-    public function html()
+    public function html(): \Yajra\DataTables\Html\Builder
     {
 
         // préparation des paramètres à transmettre au Builder
@@ -197,7 +197,7 @@ class DevicesDataTable extends DataTable
      *
      * @return array
      */
-    protected function getColumns()
+    protected function getColumns(): array
     {
         return [
             Column::make('brand.name')->title(__('Brand')),
@@ -221,7 +221,7 @@ class DevicesDataTable extends DataTable
      *
      * @return string
      */
-    protected function filename()
+    protected function filename(): string
     {
         return 'Devices_' . date('YmdHis');
     }

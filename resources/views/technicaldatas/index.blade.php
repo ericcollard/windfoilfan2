@@ -57,6 +57,9 @@
                         @if( $dataTable->getOptions()['custom_paramaters']['brand_name'] <> "" )
                             - {{ __('Brand') }} : {{ $dataTable->getOptions()['custom_paramaters']['brand_name'] }}
                         @endif
+                        @if( $dataTable->getOptions()['custom_paramaters']['author_name'] <> "" )
+                            - {{ __('Author') }} : {{ $dataTable->getOptions()['custom_paramaters']['author_name'] }}
+                        @endif
                     </h4>
                 </div>
             </div>

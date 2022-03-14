@@ -25,6 +25,7 @@ class StoreTechnicaldataRequest extends FormRequest
     {
         return [
             'device_id' => 'required|exists:devices,id',
+            'user_id' => 'required|exists:users,id',
         ];
     }
 }

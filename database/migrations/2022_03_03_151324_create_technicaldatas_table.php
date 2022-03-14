@@ -16,6 +16,7 @@ class CreateTechnicaldatasTable extends Migration
         Schema::create('technicaldatas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedInteger('device_id');
+            $table->unsignedInteger('user_id');
             $table->text('body')->nullable();
             $table->string('serial')->nullable();
             for ($i = 3; $i <= 25; $i++) {
