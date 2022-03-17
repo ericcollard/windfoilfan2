@@ -42,14 +42,15 @@ class MainController extends Controller
         //marques avec produits
         $dashboard['brandCnt'] =  Brand::whereHas('devices')->count();
 
-        //marques populaires (dernier 12 mois)
+        //produits populaires (dernier 12 mois)
         $dashboard['deviceWithViewCount'] = DB::table('statistics')
             ->select( DB::raw('count(*) as cnt'),
                 DB::raw('devices.name as device'),
                 DB::raw('devices.id as id'),
                 DB::raw('brands.name as brand'),
                 DB::raw('devices.year as year'),
-                DB::raw('categories.slug as category')
+                DB::raw('categories.slug as category'),
+                DB::raw('brands.logo_path as logo_path'),
             )
             ->join('devices', 'statistics.statisticable_id', '=', 'devices.id')
             ->join('brands', 'devices.brand_id', '=', 'brands.id')
@@ -66,6 +67,8 @@ class MainController extends Controller
             ->select( DB::raw('count(*) as cnt'),
                 DB::raw('brands.name as brand'),
                 DB::raw('brands.id as id'),
+                DB::raw('brands.slug as slug'),
+                DB::raw('brands.logo_path as logo_path'),
             )
             ->join('devices', 'statistics.statisticable_id', '=', 'devices.id')
             ->join('brands', 'devices.brand_id', '=', 'brands.id')

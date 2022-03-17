@@ -5,6 +5,16 @@
 <link href="{{asset('assets/libs/admin-resources/admin-resources.min.css')}}" rel="stylesheet" type="text/css">
 </link>
 <!-- third party css end -->
+
+
+<style>
+
+    .brand-logo  {
+        height: 18px;
+        margin-right: 5px;
+    }
+</style>
+
 @endsection
 
 @section('content')
@@ -26,7 +36,7 @@
 
     <!-- start 1ere ligne -->
     <div class="row">
-        <div class="col-xl-5 col-lg-6">
+        <div class="col-xl-4 col-lg-3">
 
             <div class="row">
                 <div class="col-lg-6">
@@ -95,7 +105,7 @@
 
         </div> <!-- end col -->
 
-        <div class="col-xl-3 col-lg-3">
+        <div class="col-xl-3 col-lg-4">
             <div class="card card-h-100">
                 <div class="card-body">
                     <h4 class="header-title mb-0">{{ __('Popular brands') }}</h4><p class="mb-2 text-muted">{{ __('last 365 days') }}</p>
@@ -105,7 +115,14 @@
                             @foreach($dashboard['brandsWithViewCount'] as $item)
                                 <tr>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal"><a href="">{{ $item->brand }}</a></h5>
+                                        <h5 class="font-14 my-0 fw-normal">
+                                            @if ($item->logo_path)
+                                                <img src="{{  Storage::disk('logos')->url($item->logo_path) }}" class="brand-logo"/>
+                                            @else
+                                                <img src="{{  asset('assets/images/brands/default.png') }}" class="brand-logo"/>
+                                            @endif
+                                            <a href="{{ route('brand.show',$item->slug) }}">{{ $item->brand }}</a>
+                                        </h5>
                                     </td>
                                     <td>
                                         <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Views') }}</h5>
@@ -119,7 +136,8 @@
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
         </div> <!-- end col -->
-        <div class="col-xl-4 col-lg-3">
+
+        <div class="col-xl-5 col-lg-5">
             <div class="card card-h-100">
                 <div class="card-body">
                     <h4 class="header-title mb-0">{{ __('Popular devices') }}</h4><p class="mb-2 text-muted">{{ __('last 365 days') }}</p>
@@ -131,7 +149,14 @@
                             @foreach($dashboard['deviceWithViewCount'] as $item)
                                 <tr>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal"><a href="{{ route('device.show',['category'=>$item->category , 'device'=>$item->id]) }}">{{ $item->device }} {{ $item->year }}</a></h5>
+                                        <h5 class="font-14 my-0 fw-normal">
+                                            @if ($item->logo_path)
+                                                <img src="{{  Storage::disk('logos')->url($item->logo_path) }}" class="brand-logo"/>
+                                            @else
+                                                <img src="{{  asset('assets/images/brands/default.png') }}" class="brand-logo"/>
+                                            @endif
+                                            <a href="{{ route('device.show',['category'=>$item->category , 'device'=>$item->id]) }}">{{ $item->device }} {{ $item->year }}</a>
+                                        </h5>
                                     </td>
                                     <td>
                                         <h5 class="font-14 my-0 fw-normal">{{ $item->brand }}</h5>

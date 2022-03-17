@@ -195,6 +195,9 @@
 
             </div> <!-- end col-->
 
+            <!-- TODO : ajouter la liste des messages et gears créés par l'utilisateur -->
+
+
             <div class="col-xl-8">
 
                 <!-- Chart-->

@@ -3,9 +3,8 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Role\RoleChecker;
-use App\Role\UserRole;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use  Illuminate\Auth\Access\Response;
 
 class UserPolicy
 {
@@ -18,28 +17,24 @@ class UserPolicy
      * @param  string  $ability
      * @return void|bool
      */
-    /*
-    public function before(User $user, $ability)
-    {
-        if (RoleChecker::check($user, UserRole::ROLE_ADMIN))
-        {
-            return true;
-        }
-    }
-*/
+
+    /* Dans toutes les situations, le cas des ADIMINISTRATEUR est traité par un GATE::before dans el AuthServiceProvider
+
     /**
      * Determine whether the user can view any models.
+     * Nobody else admin can see the list of users
      *
      * @param  \App\Models\User  $user
      * @return mixed
      */
     public function viewAny(User $user)
     {
-        return false;
+        Response::deny("You don't have enought right to view this ressource.");
     }
 
     /**
      * Determine whether the user can view the model.
+     * Everybody can see the profil of one user
      *
      * @param  \App\Models\User  $user
      * @param  \App\Models\User  $model
