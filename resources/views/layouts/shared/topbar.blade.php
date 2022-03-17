@@ -63,6 +63,9 @@
                         @if (Auth::user()->brand)
                             <span class="badge bg-danger  float-end">Pro</span>
                         @endif
+                        @if (Auth::user()->hasRole('ROLE_ADMIN'))
+                            <span class="badge bg-danger  float-end">Admin</span>
+                        @endif
                         <span class="account-user-name">{{ Auth::user()->name }}</span>
 
                         <span class="account-position">{{ Auth::user()->email }}</span>

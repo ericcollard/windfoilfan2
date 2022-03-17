@@ -65,5 +65,14 @@ class AuthServiceProvider extends ServiceProvider
             return null;
         });
 
+        Gate::define('edit-admin-data', function ($user) {
+            if (RoleChecker::check($user, UserRole::ROLE_ADMIN))
+            {
+                return true;
+            }
+            return null;
+        });
+
+
     }
 }

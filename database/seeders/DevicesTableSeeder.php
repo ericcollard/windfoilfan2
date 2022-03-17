@@ -372,7 +372,7 @@ class DevicesTableSeeder extends Seeder
                 'id' => 19,
                 'name' => 'Sword M80',
                 'slug' => 'taaroa-sword-m80-2018',
-                'user_id' => 1,
+                'user_id' => 3,
                 'category_id' => 1,
                 'brand_id' => 103,
                 'status' => 'Archived',

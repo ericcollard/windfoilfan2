@@ -11,6 +11,17 @@ use Illuminate\Support\Facades\URL;
 
 class ReviewController extends Controller
 {
+
+    /**
+     * Create the controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->authorizeResource(Review::class, 'review');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -60,6 +71,9 @@ class ReviewController extends Controller
      */
     public function cite(Review $referReview)
     {
+        $this->authorize('answer', $referReview->device);
+
+
         $action = URL::route('review.store');
         $method = 'POST';
 
@@ -68,7 +82,7 @@ class ReviewController extends Controller
         $review->device_id = $referReview->device->id;
         $html = new Html2Text($referReview->body);
 
-        $review->body = '[quote="doudou"]'.$html->getText().'[/quote]';
+        $review->body = '[quote="'.$referReview->owner->name.'"]'.$html->getText().'[/quote]';
 
         return view('reviews.edit', compact('action', 'method','review'));
     }

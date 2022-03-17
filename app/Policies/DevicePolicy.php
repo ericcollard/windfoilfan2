@@ -5,6 +5,7 @@ namespace App\Policies;
 use App\Models\Device;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Support\Facades\Auth;
 
 class DevicePolicy
 {
@@ -28,9 +29,17 @@ class DevicePolicy
      * @param  \App\Models\Device  $device
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Device $device)
+    public function view(?User $user, Device $device)
     {
-        //
+        if ($device->status == "Archived") {
+            // visible uniquement par admin ou propriétaire ou marque
+            if (Auth::guest()) return false;;
+            if ($user->id == $device->creator->id or $user->brand_id == $device->brand->id) return true;
+            return false;
+        }
+
+        // visible par tous si on connait le lien pour les status Hidden et Published
+        return true;
     }
 
     /**
@@ -41,7 +50,9 @@ class DevicePolicy
      */
     public function create(User $user)
     {
-        //
+        if (Auth::guest()) return false;
+        if ($user->hasRole('ROLE_CONTRIBUTOR')) return true;
+        return false;
     }
 
     /**
@@ -53,7 +64,10 @@ class DevicePolicy
      */
     public function update(User $user, Device $device)
     {
-        //
+        if (Auth::guest()) return false;
+        if ($user->id == $device->creator->id) return true;
+        return false;
+
     }
 
     /**
@@ -65,7 +79,9 @@ class DevicePolicy
      */
     public function delete(User $user, Device $device)
     {
-        //
+        if (Auth::guest()) return false;
+        if ($user->id == $device->creator->id) return true;
+        return false;
     }
 
     /**
@@ -77,7 +93,9 @@ class DevicePolicy
      */
     public function restore(User $user, Device $device)
     {
-        //
+        if (Auth::guest()) return false;
+        if ($user->id == $device->creator->id) return true;
+        return false;
     }
 
     /**
@@ -89,6 +107,21 @@ class DevicePolicy
      */
     public function forceDelete(User $user, Device $device)
     {
-        //
+        if (Auth::guest()) return false;
+        if ($user->id == $device->creator->id) return true;
+        return false;
+    }
+
+    /**
+     * Determine whether the user can create a new comment for the device
+     *
+     * @param  \App\Models\User  $user
+     * @param  \App\Models\Device  $device
+     * @return \Illuminate\Auth\Access\Response|bool
+     */
+    public function answer(User $user, Device $device)
+    {
+        if (Auth::guest()) return false;
+        return true;
     }
 }

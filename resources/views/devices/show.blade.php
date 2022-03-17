@@ -222,34 +222,34 @@
 
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-3  col-md-4">
                                 <h5>{{ __('Creation date') }}</h5>
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 col-md-3">
                                 <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5>
                             </div>
-                            <div class="col-5 col-md-4">
+                            <div class="col-4 col-md-3">
                                 <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5>
                             </div>
-                            <div class="col-1 col-md-2 text-end">
+                            <div class="col-2 col-md-2 text-end">
                                     <div class="badge bg-dark" style="margin : 0 0.4rem">{{ $device->category->name }}</div>
                                     <div class="badge {{ $device->statusClass() }}">{{ __($device->status) }}</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
-                                {{ $device->created_at->formatLocalized('%A %d %B %Y ') }}
+                            <div class="col-3  col-md-4">
+                                {{ $device->created_at->formatLocalized('%d %B %Y ') }} {{ __('by') }} {{ $device->creator->name }}
                             </div>
-                            <div class="col-3">
+                            <div class="col-3 col-md-3">
                                 {{ $device->statistics_count }} {{ __('Unique IP') }}
                             </div>
-                            <div class="col-5 col-md-4">
+                            <div class="col-4 col-md-3">
                                 {{ $device->reviews_count }}
                                 @if ($device->reviews_count > 0)
                                     ( {{ __('Last') }} {{ $reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->first()->owner->name }})
                                 @endif
                             </div>
-                            <div class="col-1 col-md-2 text-end">
+                            <div class="col-2 col-md-2 text-end">
 
                             </div>
                         </div>
@@ -304,7 +304,7 @@
                             <div class="col-6">
                                 <i class="mdi mdi-chart-bar"></i>
                                 <a class="" data-bs-toggle="collapse" href="#collapseTechnicaldata" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                    {{ $device->technicaldatas->count() }} jeu(x) de données techniques disponibles
+                                    {{ $device->technicaldatas->count() }} {{ __('available data set(s)') }}
                                 </a>
 
                             </div>
@@ -397,8 +397,12 @@
 
                 <div class="row">
                     <div class="col-8 mb-2">
-                        <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
-                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
+                        @can ('answer', $device)
+                            <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }}</a>
+                        @else
+                            <a class="btn btn-success rounded-pill" href="{{ route('login') }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }} : {{ __('please connect') }}</a>
+                        @endcan
+                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4 text-end">
                             {!! $reviews->links() !!}
@@ -414,7 +418,7 @@
                                         <b>{{ $review->owner->name }}</b>
                                     </div>
                                     <div class="col-6 col-md-5">
-                                        <i class="mdi mdi-message-text"></i><b> Posté le</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
+                                        <i class="mdi mdi-message-text"></i><b> {{ __('Posted on') }}</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
                                     </div>
                                     <div class="col-12 col-md-5 text-end">
                                         <b>{{ __('Title') }}</b> : {{ is_null($review->title) ? 'nc' :  $review->title }}
@@ -447,7 +451,10 @@
                                             @auth
                                                 <a role="button" class="switch collapsed" data-bs-toggle="collapse" href="#collapseReview{{ $review->id }}"  aria-controls="collapseReview{{ $review->id }}"></a>
                                             @else
-                                                <div id="post-overlay"><span class="badge badge-outline-dark">Pour lire cet article, <br><a href="{{ route('login') }}">connectez vous</a> c'est gratuit !</span></div>
+                                                <div id="post-overlay"><span class="badge badge-outline-dark">{!!  __('Please connect', ['LINK' => route('login')]) !!}</div>
+
+
+
                                             @endif
 
                                         </div>
@@ -459,7 +466,7 @@
                                             </div>
                                             <div class="col-4  text-end">
 
-                                                @can ('answer', $review)
+                                                @can ('answer',$device)
                                                     <li class="list-inline-item text-center">
                                                         <a class="btn btn-success rounded-pill mb-1" href="{{ route('review.cite',$review) }}" role="button"> <i class="mdi mdi-chat-processing-outline"></i>  {{ __('Cite') }}</a>
                                                     </li>
@@ -474,7 +481,7 @@
                                                         <form id="deleteReview{{ $review->id }}" method="POST" action="{{ route('review.destroy',['review'=>$review]) }}" >
                                                             {{ csrf_field() }}
                                                             {{ method_field('DELETE') }}
-                                                            <button type="button" class="btn btn-danger rounded-pill">
+                                                            <button type="button" class="btn btn-danger rounded-pill  mb-1">
                                                                 <a href="javascript:{}" onclick="document.getElementById('deleteReview{{ $review->id }}').submit(); return false;" style="color: inherit;"><i class="mdi mdi-delete me-1"></i>{{ __('Delete') }}</a>
                                                             </button>
                                                         </form>
@@ -500,8 +507,12 @@
 
                 <div class="row">
                     <div class="col-8">
-                        <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  Répondre</a>
-                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} sur {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
+                        @can ('answer', $device)
+                            <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }}</a>
+                        @else
+                            <a class="btn btn-success rounded-pill" href="{{ route('login') }}" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __('Answer') }} : {{ __('please connect') }}</a>
+                        @endcan
+                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
                     <div class="col-4">
                         <div style="float: right">

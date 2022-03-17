@@ -4,6 +4,7 @@ namespace App\DataTables;
 
 use App\Models\Device;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\DataTableAbstract;
 use Yajra\DataTables\Html\Column;
 use Yajra\DataTables\Services\DataTable;
@@ -64,7 +65,8 @@ class DevicesDataTable extends DataTable
                 else
                 {
                     // non professionel > accès aux données publiées
-                    $builder->where('status','Published');
+                    $builder->where('status','Published')
+                        ->orwhere('user_id',auth()->user()->id);
                 }
             }
 
@@ -137,13 +139,20 @@ class DevicesDataTable extends DataTable
             ];
         }
 
-        $buttons[] = [
-            'text' =>'Nouveau',
-            'action' => "function (e, dt, button, config) {
+        if (! Auth::guest())
+        {
+            if (Auth::user()->can('create',Device::class)) {
+                $buttons[] = [
+                    'text' =>'Nouveau',
+                    'action' => "function (e, dt, button, config) {
                                         window.location = '".route('device.create')."';
                                     }",
-            'className' => 'btn btn-success mb-2 me-2',
-        ];
+                    'className' => 'btn btn-success mb-2 me-2',
+                ];
+            }
+        }
+
+
 
 
         $buttons[] = [

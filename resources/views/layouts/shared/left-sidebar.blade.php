@@ -227,7 +227,7 @@
                 <div class="collapse" id="sidebarAdmin" style="">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{ route('user.list') }}">Users</a>
+                            <a href="{{ route('user.list') }}">{{ __('Users') }}</a>
                         </li>
                     </ul>
                 </div>

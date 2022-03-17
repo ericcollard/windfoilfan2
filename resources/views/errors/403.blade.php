@@ -32,14 +32,14 @@
                 <img class="img-fluid" src="{{asset('assets/images/oups.png')}}" style="width: 50%;"><br>
                 <p class="text-center mt-3">  {{ __($exception->getMessage() ?: 'Forbidden') }}</p>
                 <p class="text-center text-muted h4">#{{ $exception->getStatusCode()  }} :
-                    Les droits attribués à votre profil <br>ne vous permettent pas d'accéder à cette ressource</p>
+                    {!! __("Your profile credentials are not enough <br>for you to access the resource.")  !!} </p>
                 <p class="text-center text-muted thin h4 mt-4">
                     @if (Auth::guest())
-                        Utilisateur non connecté
+                        {{ __('Not connected user') }}
                     @else
-                        Utilisateur connecté : <a href="{{  Auth::user()->path() }}">{{ Auth::user()->name }}</a><br>
-                        Identifiant : {{ Auth::user()->id }}<br>
-                        Rôles attribués :
+                        {{ __('Connected user') }} : <a href="{{  Auth::user()->path() }}">{{ Auth::user()->name }}</a><br>
+                        {{ __('Identifier') }} : {{ Auth::user()->id }}<br>
+                        {{ __('Credentials') }} :
                             @foreach( Auth::user()->getRoles() as $role)
                                 {{ $role }}
                             @endforeach

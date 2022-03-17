@@ -2,9 +2,11 @@
 
 namespace App\Policies;
 
+use App\Models\Device;
 use App\Models\Review;
 use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
+use Illuminate\Support\Facades\Auth;
 
 class ReviewPolicy
 {
@@ -18,7 +20,7 @@ class ReviewPolicy
      */
     public function viewAny(User $user)
     {
-        //
+        return true;
     }
 
     /**
@@ -30,7 +32,7 @@ class ReviewPolicy
      */
     public function view(User $user, Review $review)
     {
-        //
+        return true;
     }
 
     /**
@@ -41,7 +43,8 @@ class ReviewPolicy
      */
     public function create(User $user)
     {
-        //
+        // tout le monde peut créer si connecté
+        return true;
     }
 
     /**
@@ -53,7 +56,7 @@ class ReviewPolicy
      */
     public function update(User $user, Review $review)
     {
-        //
+        return ($user->id == $review->owner->id);
     }
 
     /**
@@ -65,7 +68,7 @@ class ReviewPolicy
      */
     public function delete(User $user, Review $review)
     {
-        //
+        return ($user->id == $review->owner->id);
     }
 
     /**
@@ -91,4 +94,5 @@ class ReviewPolicy
     {
         //
     }
+
 }

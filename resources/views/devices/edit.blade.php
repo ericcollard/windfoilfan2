@@ -181,7 +181,7 @@
                             <div class="col-lg-3  mb-3">
                                 @if ($method != 'POST')
                                     <label for="created_at">{{ __('Created at') }}</label>
-                                    <input class="form-control" name="created_at" id="created_at" type="text" value="{{ $device->created_at ? $device->created_at->format('d-m-Y H:i:s') : old('created_at') }}"></input>
+                                    <input class="form-control" name="created_at" id="created_at" type="text" value="{{ $device->created_at ? $device->created_at->format('d-m-Y H:i:s') : old('created_at') }}"  @cannot('edit-admin-data',Auth::user()) readonly @endcannot></input>
                                     <small class="form-text text-muted"><em>{{ __('The value should match the date format : day-month-YEAR Hour:Min:sec (ex. 10-12-2018 15:25:00).') }}</em></small>
                                 @endif
                             </div>
