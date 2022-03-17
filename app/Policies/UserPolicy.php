@@ -3,8 +3,9 @@
 namespace App\Policies;
 
 use App\Models\User;
+use App\Role\RoleChecker;
+use App\Role\UserRole;
 use Illuminate\Auth\Access\HandlesAuthorization;
-use  Illuminate\Auth\Access\Response;
 
 class UserPolicy
 {
@@ -29,7 +30,7 @@ class UserPolicy
      */
     public function viewAny(User $user)
     {
-        Response::deny("You don't have enought right to view this ressource.");
+        return false;
     }
 
     /**

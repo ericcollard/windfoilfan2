@@ -151,5 +151,10 @@ class User extends Authenticatable implements MustVerifyEmail
         }
     }
 
+    public function path()
+    {
+        return route('user.show', $this);
+    }
+
 
 }
