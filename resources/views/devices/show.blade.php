@@ -318,7 +318,7 @@
 
                             <div class="row mt-2">
                                 <div class="col-12">
-                                    @can ('addData', $device)
+                                    @can ('create', App\Models\Technicaldata::class)
                                             <a href="{{ route('technicaldata.create',[ 'device'=>$device]) }}" class="btn  btn-success rounded-pill mb-1" role="button"> <i class="mdi mdi-square-edit-outline"></i> {{ __("Add a technical data set") }}</a>
                                     @endcan
                                 </div>

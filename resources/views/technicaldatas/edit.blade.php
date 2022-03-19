@@ -113,12 +113,12 @@
                             <div class="col-lg-3  mb-3">
                                 <label for="device_id" class="form-label">{{ __('device_id') }}*</label>
                                 <input type="text" class="form-control" id="device_id" name="device_id"
-                                       value="{{ $technicaldata->device_id ? $technicaldata->device_id : old('device_id') }}" required/>
+                                       value="{{ $technicaldata->device_id ? $technicaldata->device_id : old('device_id') }}" required @cannot('edit-admin-data',Auth::user()) readonly @endcannot/>
                             </div>
                             <div class="col-lg-3  mb-3">
                                 <label for="user_id" class="form-label">{{ __('user_id') }}*</label>
                                 <input type="text" class="form-control" id="user_id" name="user_id"
-                                       value="{{ $technicaldata->user_id ? $technicaldata->user_id : old('user_id') }}" required/>
+                                       value="{{ $technicaldata->user_id ? $technicaldata->user_id : old('user_id') }}" required @cannot('edit-admin-data',Auth::user()) readonly @endcannot/>
                             </div>
                             <div class="col-lg-3  mb-3">
                                 <label for="serial" class="form-label">{{ __('Serial number') }}</label>
@@ -129,7 +129,7 @@
                                 <div class="col-lg-3  mb-3">
                                     <label for="created_at" class="form-label">{{ __('created_at') }}</label>
                                     <input type="text" class="form-control" id="created_at" name="created_at"
-                                           value="{{ $technicaldata->created_at ? $technicaldata->created_at : old('created_at') }}" />
+                                           value="{{ $technicaldata->created_at ? $technicaldata->created_at : old('created_at') }}" @cannot('edit-admin-data',Auth::user()) readonly @endcannot/>
                                 </div>
                             @endif
                         </div>

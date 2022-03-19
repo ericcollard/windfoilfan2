@@ -61,10 +61,23 @@ class TechnicaldatasDataTable extends DataTable
             $builder->where('device_id',$this->device->id);
         if ($this->category)
             $builder->where('devices.category_id',$this->category->id);
-        if ($this->brand and $this->category)
-            $builder->where('devices.brand_id',$this->brand->id);
-        if ($this->author)
-            $builder->where('technicaldatas.user_id',$this->author->id);
+
+        /*
+        if ($this->brand and $this->category and $this->author)
+        {
+            $builder->where(function($query) {
+            $query->where('devices.brand_id',$this->brand->id)
+                ->orWhere('technicaldatas.user_id',$this->author->id);
+            });
+        }
+        else
+        {*/
+            if ($this->brand and $this->category)
+                $builder->where('devices.brand_id',$this->brand->id);
+            if ($this->author)
+                $builder->where('technicaldatas.user_id',$this->author->id);
+        //}
+
         return $builder;
     }
 

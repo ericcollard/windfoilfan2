@@ -12,6 +12,7 @@ use App\Models\Device;
 use App\Models\Technicaldata;
 use App\Models\User;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
@@ -21,6 +22,17 @@ use Yajra\DataTables\Utilities\Request;
 class TechnicaldataController extends Controller
 {
     /**
+     * Create the controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->authorizeResource(Technicaldata::class, 'technicaldata');
+    }
+
+
+    /**
      * Display a listing of the resource.
      *
      * @param TechnicaldatasDataTable $dataTable
@@ -29,25 +41,57 @@ class TechnicaldataController extends Controller
      */
     public function category(TechnicaldatasDataTable $dataTable,Category $category)
     {
+        $this->authorize('viewAny', Technicaldata::class);
+
         $dataTable->with('category', $category);
 
-        $brand = "";
+        $brandRequest = null;
+        $authorRequest = null;
+        $brandUser = null;
+        $authorUser = null;
+        $brand = null;
+        $author = null;
+
+        if (Auth::User()->brand_id)  $brandUser = Auth::User()->brand;
+        $authorUser = Auth::User();
+
         if(array_key_exists('from', request()->all()))
         {
             $brand_slug = request()->from;
-            $brand = Brand::where('slug', $brand_slug)
+            $brandRequest = Brand::where('slug', $brand_slug)
                 ->firstOrFail();
-            $dataTable->with('brand', $brand);
         }
-
-        $author = "";
         if(array_key_exists('by', request()->all()))
         {
             $author_id = request()->by;
-            $author = User::where('id', $author_id)
+            $authorRequest = User::where('id', $author_id)
                 ->firstOrFail();
-            $dataTable->with('author', $author);
         }
+
+        if (Auth::User()->hasRole('ROLE_ADMIN'))
+        {
+            $brand = $brandRequest;
+            $author = $authorRequest;
+        }
+        elseif (Auth::User()->hasRole('ROLE_CONTRIBUTOR'))
+        {
+            if ($brandUser)
+            {
+                // user de la marque
+                $brand = $brandUser;
+            }
+            else
+            {
+                // contributeur externe
+                $author = $authorUser;
+                $brand = $brandRequest;
+            }
+        }
+
+
+        if ($brand) $dataTable->with('brand', $brand);
+        if ($author) $dataTable->with('author', $author);
+
 
         // lectures des marques pour le menu déroulant
         $brands = Brand::whereHas('devices', function($query) use($category) {
