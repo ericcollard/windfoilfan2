@@ -59,7 +59,7 @@ class PostPolicy
      */
     public function create(User $user)
     {
-        return true;
+        return ($user->hasRole('ROLE_CONTRIBUTOR'));
     }
 
     /**
@@ -95,7 +95,7 @@ class PostPolicy
      */
     public function restore(User $user, Post $post)
     {
-        //
+        return $post->user_id === $user->id;
     }
 
     /**

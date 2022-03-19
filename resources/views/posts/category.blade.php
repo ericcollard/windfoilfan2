@@ -86,7 +86,15 @@
                 @endcan
             @endforeach
         </div>
+        <div class="row">
+            <div class="col-8 mb-2">
+                @can ('create', App\Models\Post::class)
+                    <a href="{{ route('post.create',['postCategory' => $postCategory]) }}" class="btn btn-sm btn-success rounded-pill" role="button"> <i class="mdi mdi-pencil me-1"></i> {{ __("Create") }}</a>
+                @endcan
+            </div>
 
+
+        </div>
 
     </div>
 

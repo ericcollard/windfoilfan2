@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
+use App\Http\Requests\UpdatePostRequest;
 use App\Models\PostCategory;
 use App\Models\Post;
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use SplFileObject;
@@ -23,7 +26,7 @@ class PostController extends Controller
     /**
      * Display a listing of post categories
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function categories()
     {
@@ -37,7 +40,7 @@ class PostController extends Controller
      * Display a listing of post for a specified categories
      *
      * @param  \App\Models\PostCategory  $postCategory
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function postCategory(PostCategory $postCategory)
     {
@@ -51,7 +54,7 @@ class PostController extends Controller
      * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\View\View
      */
     public function show(PostCategory $postCategory, Post $post)
     {
@@ -74,7 +77,7 @@ class PostController extends Controller
      *
      * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function edit(PostCategory $postCategory, Post $post)
     {
@@ -90,7 +93,7 @@ class PostController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
+     * @return Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Http\Response|\Illuminate\View\View
      */
     public function create()
     {
@@ -106,20 +109,14 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\PostCategory  $postCategory
-     * @param  \App\Models\Post  $post
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @param UpdatePostRequest $request
+     * @param \App\Models\PostCategory $postCategory
+     * @param \App\Models\Post $post
+     * @return Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function update(Request $request, PostCategory $postCategory, Post $post)
+    public function update(UpdatePostRequest $request, PostCategory $postCategory, Post $post)
     {
         try {
-
-            $this->validate($request, [
-                'title'        => 'required',
-                'body'        => 'required',
-                'post_categories_id' => 'required|exists:post_categories,id',
-            ]);
 
             $data = $request->all();
 
@@ -136,36 +133,29 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @param StorePostRequest $request
+     * @return Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
 
         try {
-            $this->validate($request, [
-                'title'        => 'required',
-                'body'        => 'required',
-                'post_categories_id' => 'required|exists:post_categories,id',
-            ]);
-
             // add the slug to the data
             $data = $request->all();
-
             $post = Post::create($data);
 
         } catch (\Exception $e) {
             // catch exception when trying to insert invalid reply (spam or missing data)
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
-        return redirect(route('post.show',['post' => $post]))->with('flash', 'Your device has been created!');
+        return redirect($post->path())->with('flash', 'Your device has been created!');
     }
 
     /**
      * Remove the specified resource from storage.
      * @param  \App\Models\PostCategory  $postCategory
      * @param  \App\Models\Post  $post
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
+     * @return Application|\Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Routing\Redirector
      */
     public function destroy(PostCategory $postCategory, Post $post)
     {
