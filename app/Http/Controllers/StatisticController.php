@@ -4,10 +4,22 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreStatisticRequest;
 use App\Http\Requests\UpdateStatisticRequest;
+use App\Models\Device;
 use App\Models\Statistic;
 
 class StatisticController extends Controller
 {
+
+    public function calculate()
+    {
+        $devices = Device::all();
+        foreach ($devices as $device)
+        {
+            $device->updateViewsfromStatistics();
+        }
+        return view('statistics.calculate', compact('devices'));
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -229,6 +229,9 @@
                         <li>
                             <a href="{{ route('user.list') }}">{{ __('Users') }}</a>
                         </li>
+                        <li>
+                            <a href="{{ route('statistic.calculate') }}">{{ __('Update statistics') }}</a>
+                        </li>
                     </ul>
                 </div>
             </li>

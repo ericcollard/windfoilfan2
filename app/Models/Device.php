@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
@@ -20,6 +21,7 @@ class Device extends Model
     {
         parent::boot();
 
+        /*
         static::addGlobalScope('reviewCount', function ($builder)
         {
             $builder->withCount('reviews');
@@ -29,6 +31,7 @@ class Device extends Model
         {
             $builder->withCount('statistics');
         });
+        */
 
         static::deleting(function ($device)
         {
@@ -123,5 +126,55 @@ class Device extends Model
         return $slugRoot.$slugAddon;
     }
 
+    /**
+     * Record one more view for this device
+     * @return Model
+     */
+    public function recordDisplay()
+    {
+        if (Auth::check())
+        {
+            $attributes['user_id'] = Auth::user()->id;
+        }
+        else
+        {
+            $attributes['ip'] = request()->ip();
+        }
 
+        $stat = $this->statistics()->where($attributes)->first();
+
+        if (!$stat)
+        {
+            // one insert it only if it not exist before
+            $attributes['hits'] = 1;
+            $attributes['agent'] = substr(request()->header('User-Agent'),0,250);
+            return $this->statistics()->create($attributes);
+        }
+        else
+        {
+            $stat->hits++;
+            $stat->save();
+        }
+
+        if ($this->last_ip != request()->ip())
+        {
+            $this->views++;
+            $this->last_ip = request()->ip();
+            $this->save();
+        }
+
+
+    }
+
+    public function updateViewsfromStatistics()
+    {
+        $nb = $this->statistics()
+            ->selectRaw('sum(statistics.hits) AS hit_cnt')
+            ->firstOrFail();
+        if ($nb->hit_cnt)
+            $this->views = $nb->hit_cnt;
+        else
+            $this->views = 0;
+        $this->save();
+    }
 }

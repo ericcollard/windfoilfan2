@@ -40,8 +40,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 1.0,
                 'programme_end' => 6.0,
+                'views' => 91,
+                'last_ip' => NULL,
                 'created_at' => '2019-11-05 19:57:16',
-                'updated_at' => '2021-06-14 14:18:41',
+                'updated_at' => '2022-03-20 20:50:42',
             ),
             1 => 
             array (
@@ -63,8 +65,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 4.0,
                 'programme_end' => 6.0,
+                'views' => 106,
+                'last_ip' => NULL,
                 'created_at' => '2019-09-15 18:57:16',
-                'updated_at' => '2020-04-09 06:51:28',
+                'updated_at' => '2022-03-20 20:50:42',
             ),
             2 => 
             array (
@@ -89,8 +93,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u39163s1-loke-foil-windfoil-lk-race-loke-foil-2020.html',
                 'programme_start' => 8.0,
                 'programme_end' => 10.0,
+                'views' => 228,
+                'last_ip' => NULL,
                 'created_at' => '2019-08-27 18:57:17',
-                'updated_at' => '2021-05-13 17:29:28',
+                'updated_at' => '2022-03-20 20:50:42',
             ),
             3 => 
             array (
@@ -111,8 +117,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u39055s1-starboard-supercruiser-alu-starboard-2020.html',
                 'programme_start' => 2.0,
                 'programme_end' => 4.0,
+                'views' => 190,
+                'last_ip' => NULL,
                 'created_at' => '2019-08-24 18:57:17',
-                'updated_at' => '2022-03-10 17:23:14',
+                'updated_at' => '2022-03-20 20:50:42',
             ),
             4 => 
             array (
@@ -131,6 +139,8 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 5.0,
                 'programme_end' => 7.0,
+                'views' => 0,
+                'last_ip' => NULL,
                 'created_at' => '2019-08-15 18:57:17',
                 'updated_at' => '2021-06-14 14:20:46',
             ),
@@ -157,8 +167,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u38754s1-gaastra-mach-1-gaastra-2019.html',
                 'programme_start' => 1.0,
                 'programme_end' => 5.0,
+                'views' => 164,
+                'last_ip' => NULL,
                 'created_at' => '2019-07-03 18:57:17',
-                'updated_at' => '2021-08-01 08:38:21',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             6 => 
             array (
@@ -185,8 +197,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u38221s1-phantom-iris-r-pwa-team-set-phantom-2020.html',
                 'programme_start' => 6.0,
                 'programme_end' => 10.0,
+                'views' => 221,
+                'last_ip' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2022-03-10 20:54:12',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             7 => 
             array (
@@ -215,8 +229,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u40938s1-phantom-iris-x-sport-set-phantom-2020.html',
                 'programme_start' => 6.0,
                 'programme_end' => 9.0,
+                'views' => 487,
+                'last_ip' => NULL,
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2022-03-10 20:53:34',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             8 => 
             array (
@@ -235,8 +251,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 6.0,
                 'programme_end' => 9.0,
+                'views' => 204,
+                'last_ip' => NULL,
                 'created_at' => '2019-04-15 18:57:17',
-                'updated_at' => '2022-03-10 17:59:53',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             9 => 
             array (
@@ -262,8 +280,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 2.0,
                 'programme_end' => 4.0,
+                'views' => 148,
+                'last_ip' => NULL,
                 'created_at' => '2019-05-27 18:57:17',
-                'updated_at' => '2020-03-26 22:45:23',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             10 => 
             array (
@@ -282,8 +302,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u32580s1-zeeko-amplifier-deep-tuttle-zeeko-2019.html',
                 'programme_start' => 4.0,
                 'programme_end' => 6.0,
+                'views' => 131,
+                'last_ip' => NULL,
                 'created_at' => '2019-05-02 18:57:17',
-                'updated_at' => '2020-03-30 19:46:00',
+                'updated_at' => '2022-03-20 20:52:40',
             ),
             11 => 
             array (
@@ -316,8 +338,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u35849s1-alpinefoil-a1-carbon-alpinefoil-2019.html',
                 'programme_start' => 6.0,
                 'programme_end' => 8.0,
+                'views' => 111,
+                'last_ip' => NULL,
                 'created_at' => '2019-03-04 19:57:17',
-                'updated_at' => '2021-06-14 14:20:43',
+                'updated_at' => '2022-03-20 20:52:41',
             ),
             12 => 
             array (
@@ -344,8 +368,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 7.0,
                 'programme_end' => 10.0,
+                'views' => 189,
+                'last_ip' => NULL,
                 'created_at' => '2018-12-03 19:57:17',
-                'updated_at' => '2022-03-10 20:48:55',
+                'updated_at' => '2022-03-20 20:52:41',
             ),
             13 => 
             array (
@@ -364,6 +390,8 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-sword-taaroa-2019.html',
                 'programme_start' => 5.0,
                 'programme_end' => 7.0,
+                'views' => 0,
+                'last_ip' => NULL,
                 'created_at' => '2018-10-01 18:57:17',
                 'updated_at' => '2021-01-29 09:54:20',
             ),
@@ -384,6 +412,8 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-sword-taaroa-2019.html',
                 'programme_start' => 5.0,
                 'programme_end' => 7.0,
+                'views' => 0,
+                'last_ip' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:21',
             ),
@@ -429,8 +459,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-noe-97-uhm-taaroa-2020.html',
                 'programme_start' => 5.0,
                 'programme_end' => 7.0,
+                'views' => 348,
+                'last_ip' => NULL,
                 'created_at' => '2020-01-05 19:57:17',
-                'updated_at' => '2021-06-14 14:21:01',
+                'updated_at' => '2022-03-20 20:52:41',
             ),
             16 => 
             array (
@@ -451,6 +483,8 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => NULL,
                 'programme_start' => 5.0,
                 'programme_end' => 7.0,
+                'views' => 0,
+                'last_ip' => NULL,
                 'created_at' => '2019-06-15 18:57:17',
                 'updated_at' => '2021-06-14 14:21:22',
             ),
@@ -471,6 +505,8 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37960s1-taaroa-evo-97-freerace-taaroa-2019.html',
                 'programme_start' => 4.0,
                 'programme_end' => 6.0,
+                'views' => 0,
+                'last_ip' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
                 'updated_at' => '2021-01-29 09:54:37',
             ),
@@ -513,8 +549,10 @@ class DevicesTableSeeder extends Seeder
             'link_product' => 'https://marseille.glissattitude.com/windfoil/u36486s1-taaroa-noe-97-freeride-taaroa-2020.html',
             'programme_start' => 3.0,
             'programme_end' => 5.0,
+            'views' => 112,
+            'last_ip' => NULL,
             'created_at' => '2018-11-01 19:57:17',
-            'updated_at' => '2020-03-26 22:45:23',
+            'updated_at' => '2022-03-20 20:52:41',
         ),
         19 => 
         array (
@@ -554,8 +592,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36239s1-taaroa-noe-80-taaroa-2020.html',
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 181,
+        'last_ip' => NULL,
         'created_at' => '2018-08-01 18:57:17',
-        'updated_at' => '2020-06-25 10:17:39',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     20 => 
     array (
@@ -585,8 +625,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37855s1-divers-affuteuse-razor-tune-2-meules-divers.html',
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 193,
+        'last_ip' => NULL,
         'created_at' => '2018-08-24 18:57:17',
-        'updated_at' => '2021-01-22 21:04:37',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     21 => 
     array (
@@ -614,6 +656,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37196s1-neil-pryde-rsflight-alu-evo-neil-pryde-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2018-12-24 19:57:17',
         'updated_at' => '2021-01-29 09:51:02',
     ),
@@ -634,8 +678,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 81,
+        'last_ip' => NULL,
         'created_at' => '2018-08-01 18:57:17',
-        'updated_at' => '2021-03-07 18:07:06',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     23 => 
     array (
@@ -662,8 +708,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34767s1-afs-afs-wind-105-afs-2019.html',
         'programme_start' => 7.0,
         'programme_end' => 9.0,
+        'views' => 106,
+        'last_ip' => NULL,
         'created_at' => '2018-06-02 18:57:17',
-        'updated_at' => '2021-08-01 08:31:53',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     24 => 
     array (
@@ -691,8 +739,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u35941s1-alpinefoil-a1-aluminium-alpinefoil-2019.html',
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 116,
+        'last_ip' => NULL,
         'created_at' => '2018-05-30 18:57:17',
-        'updated_at' => '2022-03-10 20:56:22',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     25 => 
     array (
@@ -720,8 +770,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34705s1-loke-foil-windfoil-lk1-loke-foil-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 233,
+        'last_ip' => NULL,
         'created_at' => '2018-04-25 18:57:17',
-        'updated_at' => '2021-06-14 14:20:36',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     26 => 
     array (
@@ -740,6 +792,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34769s1-afs-afs-wind-85-afs-2019.html',
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2018-04-28 18:57:17',
         'updated_at' => '2021-06-14 14:16:52',
     ),
@@ -769,8 +823,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34769s1-afs-afs-wind-85-afs-2019.html',
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 214,
+        'last_ip' => NULL,
         'created_at' => '2019-09-15 18:57:17',
-        'updated_at' => '2021-08-01 08:31:21',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     28 => 
     array (
@@ -789,6 +845,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2018-06-10 18:57:17',
         'updated_at' => '2021-08-01 08:31:48',
     ),
@@ -822,8 +880,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34768s1-afs-afs-wind-95-afs-2020.html',
         'programme_start' => 4.0,
         'programme_end' => 8.0,
+        'views' => 227,
+        'last_ip' => NULL,
         'created_at' => '2019-12-15 19:57:17',
-        'updated_at' => '2021-06-14 14:16:11',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     30 => 
     array (
@@ -842,8 +902,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33415s1-starboard-gt-alu-starboard-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 85,
+        'last_ip' => NULL,
         'created_at' => '2018-02-12 19:57:17',
-        'updated_at' => '2022-03-10 17:22:01',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     31 => 
     array (
@@ -862,6 +924,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33415s1-starboard-gt-alu-starboard-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2019-07-10 18:57:17',
         'updated_at' => '2022-03-10 17:22:19',
     ),
@@ -889,8 +953,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34718s1-fanatic-ws-flow-foil-h9-combo-fanatic-2018.html',
         'programme_start' => 2.0,
         'programme_end' => 3.0,
+        'views' => 93,
+        'last_ip' => NULL,
         'created_at' => '2018-02-12 19:57:17',
-        'updated_at' => '2020-03-30 20:55:31',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     33 => 
     array (
@@ -909,6 +975,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2019-06-01 18:57:17',
         'updated_at' => '2021-06-14 14:10:05',
     ),
@@ -929,6 +997,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2019-06-01 18:57:17',
         'updated_at' => '2020-03-13 20:26:32',
     ),
@@ -949,6 +1019,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2019-06-01 18:57:17',
         'updated_at' => '2020-03-13 20:26:35',
     ),
@@ -969,6 +1041,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2018-11-15 19:57:17',
         'updated_at' => '2020-03-13 20:25:35',
     ),
@@ -989,8 +1063,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 82,
+        'last_ip' => NULL,
         'created_at' => '2017-11-06 19:57:17',
-        'updated_at' => '2020-03-13 20:28:28',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     38 => 
     array (
@@ -1009,6 +1085,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => NULL,
         'programme_end' => NULL,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2018-04-21 18:57:17',
         'updated_at' => '2021-06-14 14:16:43',
     ),
@@ -1029,8 +1107,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 82,
+        'last_ip' => NULL,
         'created_at' => '2017-10-18 18:57:17',
-        'updated_at' => '2020-03-13 20:30:23',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     40 => 
     array (
@@ -1049,6 +1129,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-10-18 18:57:17',
         'updated_at' => '2020-03-13 20:30:20',
     ),
@@ -1069,6 +1151,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 7.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-08-22 18:57:17',
         'updated_at' => '2021-01-22 21:03:23',
     ),
@@ -1089,8 +1173,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u35048s1-starboard-gts-carbon-foil-starboard-2019.html',
         'programme_start' => 5.0,
         'programme_end' => 7.0,
+        'views' => 86,
+        'last_ip' => NULL,
         'created_at' => '2017-07-26 18:57:17',
-        'updated_at' => '2020-03-22 17:56:39',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     43 => 
     array (
@@ -1109,8 +1195,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 7.0,
+        'views' => 97,
+        'last_ip' => NULL,
         'created_at' => '2017-07-31 18:57:17',
-        'updated_at' => '2021-06-14 14:20:56',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     44 => 
     array (
@@ -1129,8 +1217,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u32570s1-starboard-race-carbon-foil-starboard-2019.html',
         'programme_start' => 7.0,
         'programme_end' => 10.0,
+        'views' => 175,
+        'last_ip' => NULL,
         'created_at' => '2017-07-26 18:57:17',
-        'updated_at' => '2021-01-22 20:54:09',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     45 => 
     array (
@@ -1149,6 +1239,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 1.0,
         'programme_end' => 3.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-05-03 18:57:17',
         'updated_at' => '2020-03-13 20:27:31',
     ),
@@ -1169,8 +1261,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 91,
+        'last_ip' => NULL,
         'created_at' => '2017-05-03 18:57:17',
-        'updated_at' => '2020-03-13 20:28:56',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     47 => 
     array (
@@ -1189,8 +1283,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 7.0,
+        'views' => 94,
+        'last_ip' => NULL,
         'created_at' => '2017-05-10 18:57:17',
-        'updated_at' => '2020-03-13 20:26:14',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     48 => 
     array (
@@ -1209,6 +1305,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-04-24 18:57:17',
         'updated_at' => '2021-06-14 14:16:03',
     ),
@@ -1229,8 +1327,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 6.0,
+        'views' => 98,
+        'last_ip' => NULL,
         'created_at' => '2017-04-10 18:57:17',
-        'updated_at' => '2020-06-25 10:14:29',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     50 => 
     array (
@@ -1249,6 +1349,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-04-04 18:57:17',
         'updated_at' => '2020-03-13 20:30:45',
     ),
@@ -1269,8 +1371,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u32580s1-zeeko-amplifier-deep-tuttle-zeeko-2019.html',
         'programme_start' => 4.0,
         'programme_end' => 6.0,
+        'views' => 70,
+        'last_ip' => NULL,
         'created_at' => '2017-03-17 19:57:17',
-        'updated_at' => '2020-03-30 19:46:07',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     52 => 
     array (
@@ -1289,6 +1393,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 6.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2016-11-02 19:57:17',
         'updated_at' => '2021-03-07 18:06:40',
     ),
@@ -1309,6 +1415,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 3.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2016-10-01 18:57:17',
         'updated_at' => '2020-03-13 20:31:10',
     ),
@@ -1329,6 +1437,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 3.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2016-10-01 18:57:17',
         'updated_at' => '2020-03-13 20:31:08',
     ),
@@ -1349,6 +1459,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 3.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2016-08-22 18:57:17',
         'updated_at' => '2020-03-13 20:31:03',
     ),
@@ -1369,8 +1481,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u28106s1-horue-vini-pro-horue-2019.html',
         'programme_start' => 0.0,
         'programme_end' => 4.0,
+        'views' => 117,
+        'last_ip' => NULL,
         'created_at' => '2016-05-15 18:57:17',
-        'updated_at' => '2020-03-13 20:26:39',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     57 => 
     array (
@@ -1389,6 +1503,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 1.0,
         'programme_end' => 2.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2017-05-02 18:57:17',
         'updated_at' => '2020-03-22 17:52:48',
     ),
@@ -1409,6 +1525,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 3.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2015-06-15 18:57:17',
         'updated_at' => '2020-03-13 20:31:06',
     ),
@@ -1429,6 +1547,8 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 0,
+        'last_ip' => NULL,
         'created_at' => '2015-08-25 18:57:17',
         'updated_at' => '2020-03-13 20:31:02',
     ),
@@ -1453,8 +1573,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u39353s1-zeeko-airwave-6-2-v1-windfoil-supfoil-wingfoil-zeeko-2020.html',
         'programme_start' => NULL,
         'programme_end' => 2.0,
+        'views' => 37,
+        'last_ip' => NULL,
         'created_at' => '2019-05-10 18:57:17',
-        'updated_at' => '2021-02-06 22:02:47',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     61 => 
     array (
@@ -1473,8 +1595,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 0.0,
         'programme_end' => 2.0,
+        'views' => 32,
+        'last_ip' => NULL,
         'created_at' => '2018-07-07 18:57:17',
-        'updated_at' => '2021-02-06 22:02:51',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     62 => 
     array (
@@ -1497,8 +1621,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 43,
+        'last_ip' => NULL,
         'created_at' => '2018-09-25 18:57:17',
-        'updated_at' => '2021-02-06 21:58:56',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     63 => 
     array (
@@ -1517,8 +1643,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/flotteur/u28111s1-horue-tiny-carbon-horue-2019.html',
         'programme_start' => 0.0,
         'programme_end' => 4.0,
+        'views' => 189,
+        'last_ip' => NULL,
         'created_at' => '2016-05-15 18:57:17',
-        'updated_at' => '2021-02-06 21:47:19',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     64 => 
     array (
@@ -1537,8 +1665,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38483s1-exocet-freefoil-ast-exocet-2019.html',
         'programme_start' => 2.0,
         'programme_end' => 5.0,
+        'views' => 169,
+        'last_ip' => NULL,
         'created_at' => '2019-06-21 18:57:17',
-        'updated_at' => '2021-02-06 21:47:37',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     65 => 
     array (
@@ -1557,8 +1687,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38796s1-tabou-airide-ltd-tabou-2020.html',
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 226,
+        'last_ip' => NULL,
         'created_at' => '2019-04-23 18:57:17',
-        'updated_at' => '2021-02-06 22:01:31',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     66 => 
     array (
@@ -1577,8 +1709,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 98,
+        'last_ip' => NULL,
         'created_at' => '2017-08-21 18:57:17',
-        'updated_at' => '2021-02-06 21:47:26',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     67 => 
     array (
@@ -1597,8 +1731,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38430s1-exocet-freefoil-carbone-exocet-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 249,
+        'last_ip' => NULL,
         'created_at' => '2019-05-06 18:57:17',
-        'updated_at' => '2021-02-06 21:48:17',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     68 => 
     array (
@@ -1617,8 +1753,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31525s1-jp-australia-hydrofoil-board-pro-edition-jp-australia-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 205,
+        'last_ip' => NULL,
         'created_at' => '2018-08-14 18:57:17',
-        'updated_at' => '2021-02-06 22:02:00',
+        'updated_at' => '2022-03-20 20:52:41',
     ),
     69 => 
     array (
@@ -1637,8 +1775,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33670s1-starboard-foil-board-flex-balsa-starboard-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 191,
+        'last_ip' => NULL,
         'created_at' => '2018-03-28 18:57:17',
-        'updated_at' => '2021-02-06 21:45:39',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     70 => 
     array (
@@ -1657,8 +1797,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36311s1-horue-airtime-verre-carbone-horue-2019.html',
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 199,
+        'last_ip' => NULL,
         'created_at' => '2018-08-17 18:57:17',
-        'updated_at' => '2021-02-06 21:48:31',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     71 => 
     array (
@@ -1677,8 +1819,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31525s1-jp-australia-hydrofoil-board-pro-edition-jp-australia-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 123,
+        'last_ip' => NULL,
         'created_at' => '2017-04-11 18:57:17',
-        'updated_at' => '2021-02-06 22:01:46',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     72 => 
     array (
@@ -1697,8 +1841,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 6.0,
         'programme_end' => 8.0,
+        'views' => 91,
+        'last_ip' => NULL,
         'created_at' => '2016-12-12 19:57:17',
-        'updated_at' => '2021-02-06 22:02:15',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     73 => 
     array (
@@ -1717,8 +1863,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 111,
+        'last_ip' => NULL,
         'created_at' => '2018-03-28 18:57:17',
-        'updated_at' => '2021-02-06 22:00:49',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     74 => 
     array (
@@ -1737,8 +1885,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u32524s1-elix-f1x-elix-2018.html',
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 90,
+        'last_ip' => NULL,
         'created_at' => '2017-06-26 18:57:17',
-        'updated_at' => '2021-02-06 22:02:56',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     75 => 
     array (
@@ -1757,8 +1907,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33670s1-starboard-foil-board-flex-balsa-starboard-2019.html',
         'programme_start' => 6.0,
         'programme_end' => 9.0,
+        'views' => 172,
+        'last_ip' => NULL,
         'created_at' => '2018-07-28 18:57:17',
-        'updated_at' => '2021-02-06 22:02:35',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     76 => 
     array (
@@ -1777,8 +1929,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31526s1-jp-australia-hydrofoil-board-fws-jp-australia-2019.html',
         'programme_start' => 8.0,
         'programme_end' => 10.0,
+        'views' => 56,
+        'last_ip' => NULL,
         'created_at' => '2019-03-02 19:57:17',
-        'updated_at' => '2021-02-06 21:51:01',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     77 => 
     array (
@@ -1797,8 +1951,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 7.0,
+        'views' => 38,
+        'last_ip' => NULL,
         'created_at' => '2018-07-15 18:57:17',
-        'updated_at' => '2021-02-06 21:54:52',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     78 => 
     array (
@@ -1817,8 +1973,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 9.0,
         'programme_end' => 10.0,
+        'views' => 31,
+        'last_ip' => NULL,
         'created_at' => '2018-11-02 19:57:17',
-        'updated_at' => '2021-02-06 22:03:07',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     79 => 
     array (
@@ -1837,8 +1995,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37840s1-ahd-thunderbold-ahd-2019.html',
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 29,
+        'last_ip' => NULL,
         'created_at' => '2019-04-01 18:57:17',
-        'updated_at' => '2021-02-06 21:55:41',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     80 => 
     array (
@@ -1857,8 +2017,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37840s1-ahd-thunderbold-ahd-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 5.0,
+        'views' => 44,
+        'last_ip' => NULL,
         'created_at' => '2019-05-01 18:57:17',
-        'updated_at' => '2021-02-06 22:01:21',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     81 => 
     array (
@@ -1877,8 +2039,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 9.0,
         'programme_end' => 10.0,
+        'views' => 49,
+        'last_ip' => NULL,
         'created_at' => '2019-05-10 18:57:17',
-        'updated_at' => '2021-02-06 22:03:17',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     82 => 
     array (
@@ -1897,8 +2061,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 9.0,
         'programme_end' => 10.0,
+        'views' => 37,
+        'last_ip' => NULL,
         'created_at' => '2018-09-25 18:57:17',
-        'updated_at' => '2021-02-06 21:51:21',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     83 => 
     array (
@@ -1917,8 +2083,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 7.0,
         'programme_end' => 9.0,
+        'views' => 136,
+        'last_ip' => NULL,
         'created_at' => '2018-03-28 18:57:17',
-        'updated_at' => '2021-02-06 22:00:33',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     84 => 
     array (
@@ -1937,8 +2105,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 5.0,
+        'views' => 38,
+        'last_ip' => NULL,
         'created_at' => '2017-04-21 18:57:17',
-        'updated_at' => '2021-02-06 21:49:53',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     85 => 
     array (
@@ -1957,8 +2127,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 5.0,
+        'views' => 132,
+        'last_ip' => NULL,
         'created_at' => '2017-04-19 18:57:17',
-        'updated_at' => '2021-02-06 21:50:26',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     86 => 
     array (
@@ -1977,8 +2149,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 4.0,
         'programme_end' => 5.0,
+        'views' => 125,
+        'last_ip' => NULL,
         'created_at' => '2017-04-19 18:57:17',
-        'updated_at' => '2021-02-06 21:50:30',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     87 => 
     array (
@@ -1997,8 +2171,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 40,
+        'last_ip' => NULL,
         'created_at' => '2018-09-18 18:57:17',
-        'updated_at' => '2021-02-06 21:54:43',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     88 => 
     array (
@@ -2017,8 +2193,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 78,
+        'last_ip' => NULL,
         'created_at' => '2017-04-23 18:57:17',
-        'updated_at' => '2021-02-06 22:03:05',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     89 => 
     array (
@@ -2037,8 +2215,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 39,
+        'last_ip' => NULL,
         'created_at' => '2018-09-25 18:57:17',
-        'updated_at' => '2021-02-06 21:58:05',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     90 => 
     array (
@@ -2057,8 +2237,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 4.0,
+        'views' => 31,
+        'last_ip' => NULL,
         'created_at' => '2018-09-25 18:57:17',
-        'updated_at' => '2021-02-06 21:55:04',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     91 => 
     array (
@@ -2077,8 +2259,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37656s1-bic-130l-techno-windfoil-130-bic-2019.html',
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 117,
+        'last_ip' => NULL,
         'created_at' => '2019-06-08 18:57:17',
-        'updated_at' => '2021-02-06 21:50:22',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     92 => 
     array (
@@ -2097,8 +2281,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 4.0,
+        'views' => 40,
+        'last_ip' => NULL,
         'created_at' => '2018-04-18 18:57:17',
-        'updated_at' => '2021-02-06 21:50:20',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     93 => 
     array (
@@ -2127,8 +2313,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38907s1-starboard-foil-x-board-starlite-starboard-2020.html',
         'programme_start' => 2.0,
         'programme_end' => 5.0,
+        'views' => 311,
+        'last_ip' => NULL,
         'created_at' => '2020-03-22 22:53:39',
-        'updated_at' => '2021-02-06 21:55:32',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     94 => 
     array (
@@ -2158,8 +2346,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u40089s1-zeeko-bullet-v1-zeeko-2020.html',
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 394,
+        'last_ip' => NULL,
         'created_at' => '2020-03-30 16:14:00',
-        'updated_at' => '2021-06-14 14:20:39',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     95 => 
     array (
@@ -2180,8 +2370,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 1.0,
         'programme_end' => 4.0,
+        'views' => 103,
+        'last_ip' => NULL,
         'created_at' => '2017-04-06 12:06:44',
-        'updated_at' => '2021-11-06 16:56:49',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     96 => 
     array (
@@ -2202,8 +2394,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 3.0,
         'programme_end' => 7.0,
+        'views' => 102,
+        'last_ip' => NULL,
         'created_at' => '2017-08-06 12:12:13',
-        'updated_at' => '2021-11-06 16:58:11',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     97 => 
     array (
@@ -2235,8 +2429,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 39,
+        'last_ip' => NULL,
         'created_at' => '2017-08-06 12:17:42',
-        'updated_at' => '2021-11-06 17:08:22',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     98 => 
     array (
@@ -2261,8 +2457,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windsurf/u40382s1-xo-sail-vega-xo-sail-2020.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 196,
+        'last_ip' => NULL,
         'created_at' => '2019-11-06 13:41:14',
-        'updated_at' => '2021-11-06 17:08:05',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     99 => 
     array (
@@ -2281,8 +2479,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 8.0,
         'programme_end' => 10.0,
+        'views' => 94,
+        'last_ip' => NULL,
         'created_at' => '2018-06-12 12:49:45',
-        'updated_at' => '2021-11-06 18:00:57',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     100 => 
     array (
@@ -2303,8 +2503,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 6.0,
         'programme_end' => 9.0,
+        'views' => 110,
+        'last_ip' => NULL,
         'created_at' => '2018-06-21 12:54:14',
-        'updated_at' => '2021-11-06 17:08:32',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     101 => 
     array (
@@ -2333,8 +2535,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 1.0,
         'programme_end' => 5.0,
+        'views' => 97,
+        'last_ip' => NULL,
         'created_at' => '2018-07-27 13:12:56',
-        'updated_at' => '2021-11-06 16:56:23',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     102 => 
     array (
@@ -2360,8 +2564,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 1.0,
         'programme_end' => 5.0,
+        'views' => 112,
+        'last_ip' => NULL,
         'created_at' => '2018-09-04 13:18:33',
-        'updated_at' => '2021-11-06 17:59:49',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     103 => 
     array (
@@ -2385,8 +2591,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 5.0,
         'programme_end' => 8.0,
+        'views' => 119,
+        'last_ip' => NULL,
         'created_at' => '2019-04-02 16:13:15',
-        'updated_at' => '2021-11-06 18:00:45',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     104 => 
     array (
@@ -2413,8 +2621,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38332s1-severn-hyperglide-2-severn-2019.html',
         'programme_start' => 7.0,
         'programme_end' => 10.0,
+        'views' => 96,
+        'last_ip' => NULL,
         'created_at' => '2019-05-31 22:00:00',
-        'updated_at' => '2021-11-06 18:00:53',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     105 => 
     array (
@@ -2440,8 +2650,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36492s1-duotone-f-type-duotone-2020.html',
         'programme_start' => 1.0,
         'programme_end' => 5.0,
+        'views' => 105,
+        'last_ip' => NULL,
         'created_at' => '2018-09-21 22:00:00',
-        'updated_at' => '2021-11-06 16:59:28',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     106 => 
     array (
@@ -2468,8 +2680,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38991s1-gaastra-airride-gaastra-2020.html',
         'programme_start' => 3.0,
         'programme_end' => 6.0,
+        'views' => 141,
+        'last_ip' => NULL,
         'created_at' => '2019-09-30 22:00:00',
-        'updated_at' => '2021-11-06 16:58:14',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     107 => 
     array (
@@ -2496,8 +2710,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38893s1-loft-skyblade-loft-2020.html',
         'programme_start' => 6.0,
         'programme_end' => 10.0,
+        'views' => 155,
+        'last_ip' => NULL,
         'created_at' => '2019-08-23 22:00:00',
-        'updated_at' => '2021-11-06 18:00:47',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     108 => 
     array (
@@ -2562,8 +2778,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u40559s1-phantom-iris-x-board-phantom-2021.html',
         'programme_start' => 6.0,
         'programme_end' => 9.0,
+        'views' => 375,
+        'last_ip' => NULL,
         'created_at' => '2020-06-03 17:24:58',
-        'updated_at' => '2021-10-13 09:44:20',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     109 => 
     array (
@@ -2637,8 +2855,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38896s1-severn-foilglide-severn-2020.html',
         'programme_start' => 2.0,
         'programme_end' => 5.0,
+        'views' => 420,
+        'last_ip' => NULL,
         'created_at' => '2020-04-06 17:32:01',
-        'updated_at' => '2021-11-06 17:06:10',
+        'updated_at' => '2022-03-20 20:52:42',
     ),
     110 => 
     array (
@@ -2677,8 +2897,10 @@ class DevicesTableSeeder extends Seeder
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u36356s1-jp-australia-hydrofoil-board-es-jp-australia-2020.html',
     'programme_start' => 4.0,
     'programme_end' => 7.0,
+    'views' => 182,
+    'last_ip' => NULL,
     'created_at' => '2020-04-06 18:40:30',
-    'updated_at' => '2021-02-06 22:01:48',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 111 => 
 array (
@@ -2705,8 +2927,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40386s1-phantom-iris-z-phantom-2020.html',
     'programme_start' => 3.0,
     'programme_end' => 6.0,
+    'views' => 285,
+    'last_ip' => NULL,
     'created_at' => '2020-04-06 18:46:04',
-    'updated_at' => '2021-11-06 17:06:05',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 112 => 
 array (
@@ -2736,8 +2960,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 7.0,
     'programme_end' => 10.0,
+    'views' => 288,
+    'last_ip' => NULL,
     'created_at' => '2020-04-06 20:10:55',
-    'updated_at' => '2021-11-06 18:00:19',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 113 => 
 array (
@@ -2756,6 +2982,8 @@ array (
     'link_product' => NULL,
     'programme_start' => 3.0,
     'programme_end' => 6.0,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-04-06 20:15:55',
     'updated_at' => '2021-06-14 14:19:46',
 ),
@@ -2801,8 +3029,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34454s1-exocet-rf-foil-board-carbon-exocet-2020.html',
     'programme_start' => 4.0,
     'programme_end' => 8.0,
+    'views' => 542,
+    'last_ip' => NULL,
     'created_at' => '2020-04-08 14:16:00',
-    'updated_at' => '2021-02-06 21:56:11',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 115 => 
 array (
@@ -2835,8 +3065,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => 4.0,
+    'views' => 272,
+    'last_ip' => NULL,
     'created_at' => '2020-04-09 07:20:17',
-    'updated_at' => '2020-04-17 06:56:32',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 116 => 
 array (
@@ -2855,6 +3087,8 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38905s1-starboard-foil-board-freeride-flax-balsa-starboard-2020.html',
     'programme_start' => 6.0,
     'programme_end' => 9.0,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-04-09 07:41:53',
     'updated_at' => '2021-02-06 22:01:28',
 ),
@@ -2875,6 +3109,8 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38905s1-starboard-foil-board-freeride-flax-balsa-starboard-2020.html',
     'programme_start' => 4.0,
     'programme_end' => 8.0,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-04-09 07:43:47',
     'updated_at' => '2021-02-06 22:01:18',
 ),
@@ -2895,6 +3131,8 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38805s1-tabou-airide-mte-tabou-2020.html',
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-04-09 08:02:34',
     'updated_at' => '2020-04-09 08:02:34',
 ),
@@ -2937,8 +3175,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => 3.0,
+    'views' => 268,
+    'last_ip' => NULL,
     'created_at' => '2020-04-17 06:49:25',
-    'updated_at' => '2020-04-17 06:53:39',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 120 => 
 array (
@@ -2957,8 +3197,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40223s1-alpinefoil-a1-sport-carbone-alpinefoil-2020.html',
     'programme_start' => 4.0,
     'programme_end' => 7.0,
+    'views' => 116,
+    'last_ip' => NULL,
     'created_at' => '2020-04-25 06:19:35',
-    'updated_at' => '2022-03-10 20:57:38',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 121 => 
 array (
@@ -3047,8 +3289,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windsurf/u40557s1-duotone-warp-foil-duotone-2020.html',
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 114,
+    'last_ip' => NULL,
     'created_at' => '2020-05-01 11:33:58',
-    'updated_at' => '2020-05-01 14:18:02',
+    'updated_at' => '2022-03-20 20:52:42',
 ),
 122 => 
 array (
@@ -3081,8 +3325,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40558s1-fanatic-falcon-foil-fanatic-2020.html',
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 68,
+    'last_ip' => NULL,
     'created_at' => '2020-05-01 12:17:47',
-    'updated_at' => '2020-05-01 12:25:19',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 123 => 
 array (
@@ -3146,8 +3392,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34454s1-exocet-rf-foil-board-carbon-exocet-2020.html',
     'programme_start' => 6.0,
     'programme_end' => 9.0,
+    'views' => 981,
+    'last_ip' => NULL,
     'created_at' => '2020-05-03 11:09:02',
-    'updated_at' => '2021-10-13 09:47:01',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 124 => 
 array (
@@ -3191,8 +3439,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u39925s1-starboard-iqfoil-board-95-carbon-reflex-starboard-2020.html',
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 110,
+    'last_ip' => NULL,
     'created_at' => '2020-05-03 11:43:24',
-    'updated_at' => '2020-05-03 12:02:42',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 125 => 
 array (
@@ -3234,8 +3484,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u39929s1-starboard-iqfoil-hyperglide-olympic-sail-starboard-2020.html',
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 176,
+    'last_ip' => NULL,
     'created_at' => '2020-05-03 12:45:33',
-    'updated_at' => '2020-05-03 16:08:44',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 126 => 
 array (
@@ -3281,8 +3533,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41093s1-tabou-magic-carpet-tabou-2020.html',
     'programme_start' => NULL,
     'programme_end' => 1.0,
+    'views' => 476,
+    'last_ip' => NULL,
     'created_at' => '2020-06-23 20:14:49',
-    'updated_at' => '2020-09-05 07:58:55',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 127 => 
 array (
@@ -3307,8 +3561,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40224s1-alpinefoil-a1-race-carbone-alpinefoil-2020.html',
     'programme_start' => 7.0,
     'programme_end' => 9.0,
+    'views' => 264,
+    'last_ip' => NULL,
     'created_at' => '2020-06-25 09:57:32',
-    'updated_at' => '2022-03-10 20:58:53',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 128 => 
 array (
@@ -3327,8 +3583,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40581s1-jp-australia-freefoil-pro-edition-jp-australia-2020.html',
     'programme_start' => 1.0,
     'programme_end' => 4.0,
+    'views' => 502,
+    'last_ip' => NULL,
     'created_at' => '2020-07-16 20:03:06',
-    'updated_at' => '2021-02-08 17:27:13',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 129 => 
 array (
@@ -3355,8 +3613,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 10.0,
     'programme_end' => 10.0,
+    'views' => 299,
+    'last_ip' => NULL,
     'created_at' => '2020-08-01 08:25:08',
-    'updated_at' => '2020-08-07 06:54:38',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 130 => 
 array (
@@ -3392,8 +3652,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41361s1-patrick-foil-ride-patrick-2021.html',
     'programme_start' => 7.0,
     'programme_end' => 9.0,
+    'views' => 785,
+    'last_ip' => NULL,
     'created_at' => '2020-08-14 12:24:48',
-    'updated_at' => '2021-02-06 22:01:35',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 131 => 
 array (
@@ -3412,6 +3674,8 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-09-15 15:28:33',
     'updated_at' => '2020-09-15 15:32:38',
 ),
@@ -3432,6 +3696,8 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-09-15 15:30:33',
     'updated_at' => '2020-09-15 15:30:33',
 ),
@@ -3452,6 +3718,8 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 0,
+    'last_ip' => NULL,
     'created_at' => '2020-09-15 15:32:25',
     'updated_at' => '2020-09-15 15:33:18',
 ),
@@ -3481,8 +3749,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38908s1-starboard-foil-slalom-carbon-reflex-starboard-2021.html',
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 469,
+    'last_ip' => NULL,
     'created_at' => '2020-09-24 12:27:12',
-    'updated_at' => '2021-02-07 22:36:04',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 135 => 
 array (
@@ -3502,8 +3772,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41361s1-patrick-foil-ride-patrick-2021.html',
     'programme_start' => 3.0,
     'programme_end' => 7.0,
+    'views' => 394,
+    'last_ip' => NULL,
     'created_at' => '2020-10-15 11:35:08',
-    'updated_at' => '2021-02-06 22:01:06',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 136 => 
 array (
@@ -3536,8 +3808,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 379,
+    'last_ip' => NULL,
     'created_at' => '2020-11-11 19:26:42',
-    'updated_at' => '2020-11-11 19:30:53',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 137 => 
 array (
@@ -3576,8 +3850,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 7.0,
     'programme_end' => 9.0,
+    'views' => 988,
+    'last_ip' => NULL,
     'created_at' => '2020-11-21 20:24:50',
-    'updated_at' => '2021-02-06 21:59:31',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 138 => 
 array (
@@ -3607,8 +3883,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 8.0,
+    'views' => 790,
+    'last_ip' => NULL,
     'created_at' => '2020-12-13 11:23:37',
-    'updated_at' => '2021-11-06 17:05:53',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 139 => 
 array (
@@ -3628,8 +3906,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 10.0,
+    'views' => 478,
+    'last_ip' => NULL,
     'created_at' => '2020-12-17 20:17:52',
-    'updated_at' => '2022-03-10 17:32:05',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 140 => 
 array (
@@ -3661,8 +3941,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34768s1-afs-afs-wind-95-afs-2021.html',
     'programme_start' => 5.0,
     'programme_end' => 8.0,
+    'views' => 554,
+    'last_ip' => NULL,
     'created_at' => '2020-12-18 17:43:00',
-    'updated_at' => '2022-03-10 21:02:06',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 141 => 
 array (
@@ -3693,8 +3975,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 10.0,
+    'views' => 1036,
+    'last_ip' => '::1',
     'created_at' => '2021-01-10 15:05:27',
-    'updated_at' => '2022-03-12 12:38:36',
+    'updated_at' => '2022-03-20 21:36:37',
 ),
 142 => 
 array (
@@ -3721,8 +4005,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 6.0,
     'programme_end' => 8.0,
+    'views' => 573,
+    'last_ip' => NULL,
     'created_at' => '2021-02-07 22:14:37',
-    'updated_at' => '2021-02-08 17:26:39',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 143 => 
 array (
@@ -3744,8 +4030,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34705s1-loke-foil-windfoil-lk1-loke-foil-2019.html',
     'programme_start' => 3.0,
     'programme_end' => 7.0,
+    'views' => 540,
+    'last_ip' => NULL,
     'created_at' => '2021-03-07 20:09:52',
-    'updated_at' => '2021-03-08 19:20:05',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 144 => 
 array (
@@ -3788,8 +4076,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u42641s1-jp-australia-hydrofoil-racing-slalom-jp-australia-2021.html',
     'programme_start' => 7.0,
     'programme_end' => 9.0,
+    'views' => 385,
+    'last_ip' => NULL,
     'created_at' => '2021-03-11 12:44:25',
-    'updated_at' => '2021-03-11 12:53:18',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 145 => 
 array (
@@ -3814,8 +4104,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u42637s1-neil-pryde-flight-fr-sans-tete-neil-pryde-2021.html',
     'programme_start' => 4.0,
     'programme_end' => 7.0,
+    'views' => 650,
+    'last_ip' => '::1',
     'created_at' => '2021-05-15 12:38:14',
-    'updated_at' => '2021-05-15 12:38:43',
+    'updated_at' => '2022-03-20 21:31:22',
 ),
 146 => 
 array (
@@ -3850,8 +4142,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38332s1-severn-hyperglide-4-severn-2021.html',
     'programme_start' => 8.0,
     'programme_end' => 10.0,
+    'views' => 454,
+    'last_ip' => NULL,
     'created_at' => '2021-06-10 13:23:12',
-    'updated_at' => '2021-11-06 17:58:04',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 147 => 
 array (
@@ -3870,8 +4164,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 7.0,
+    'views' => 567,
+    'last_ip' => NULL,
     'created_at' => '2021-06-14 14:07:32',
-    'updated_at' => '2021-06-17 13:26:33',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 148 => 
 array (
@@ -3898,8 +4194,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 411,
+    'last_ip' => NULL,
     'created_at' => '2021-06-15 10:13:12',
-    'updated_at' => '2022-03-10 18:08:27',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 149 => 
 array (
@@ -3918,8 +4216,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 257,
+    'last_ip' => NULL,
     'created_at' => '2021-06-15 10:15:19',
-    'updated_at' => '2021-11-06 18:00:58',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 150 => 
 array (
@@ -3941,8 +4241,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 1.0,
     'programme_end' => 4.0,
+    'views' => 743,
+    'last_ip' => '::1',
     'created_at' => '2021-08-01 08:30:21',
-    'updated_at' => '2021-08-05 10:56:32',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 151 => 
 array (
@@ -3970,8 +4272,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u44815s1-xo-sail-fly-xo-sail-2022.html',
     'programme_start' => 5.0,
     'programme_end' => 8.0,
+    'views' => 1140,
+    'last_ip' => NULL,
     'created_at' => '2021-10-14 11:10:48',
-    'updated_at' => '2021-11-06 17:57:48',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 152 => 
 array (
@@ -4000,8 +4304,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 8.0,
     'programme_end' => 10.0,
+    'views' => 1793,
+    'last_ip' => NULL,
     'created_at' => '2021-11-05 15:30:12',
-    'updated_at' => '2021-11-05 16:50:06',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 153 => 
 array (
@@ -4020,8 +4326,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 9.0,
     'programme_end' => 10.0,
+    'views' => 879,
+    'last_ip' => NULL,
     'created_at' => '2021-11-06 17:57:20',
-    'updated_at' => '2021-11-06 18:52:00',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 154 => 
 array (
@@ -4046,8 +4354,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 2.0,
     'programme_end' => 4.0,
+    'views' => 1021,
+    'last_ip' => NULL,
     'created_at' => '2021-11-09 20:58:14',
-    'updated_at' => '2021-11-11 13:30:10',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 155 => 
 array (
@@ -4066,8 +4376,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
+    'views' => 22,
+    'last_ip' => '::1',
     'created_at' => '2021-11-16 19:30:06',
-    'updated_at' => '2022-03-10 17:30:50',
+    'updated_at' => '2022-03-20 20:52:43',
 ),
 ));
         

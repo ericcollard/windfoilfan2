@@ -213,6 +213,7 @@
         </div>
         <!-- end page title -->
 
+
         <div class="row">
             <div class="col-12">
 
@@ -241,11 +242,11 @@
                                 {{ $device->created_at->formatLocalized('%d %B %Y ') }} {{ __('by') }} {{ $device->creator->name }}
                             </div>
                             <div class="col-3 col-md-3">
-                                {{ $device->statistics_count }} {{ __('Unique IP') }}
+                                {{ $device->views }} {{ __('Views') }}
                             </div>
                             <div class="col-4 col-md-3">
-                                {{ $device->reviews_count }}
-                                @if ($device->reviews_count > 0)
+                                {{ $device->reviews->count() }}
+                                @if ($device->reviews->count() > 0)
                                     ( {{ __('Last') }} {{ $reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->first()->owner->name }})
                                 @endif
                             </div>
@@ -409,7 +410,7 @@
                     </div>
                 </div>
 
-                @if ($device->reviews_count > 0)
+                @if ($device->reviews->count() > 0)
                     @foreach($reviews as $review)
                         <div class="card d-block ">
                             <div class="card-header">

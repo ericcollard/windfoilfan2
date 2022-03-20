@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-
+    // TODO : gérer les stat siur les posts
     /**
      * The model's default values for attributes.
      *

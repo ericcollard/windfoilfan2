@@ -43,8 +43,9 @@ class MainController extends Controller
         $dashboard['brandCnt'] =  Brand::whereHas('devices')->count();
 
         //produits populaires (dernier 12 mois)
+        //$dashboard['deviceWithViewCount'] = Device::orderBy('views', 'desc')->take(5)->get();
         $dashboard['deviceWithViewCount'] = DB::table('statistics')
-            ->select( DB::raw('count(*) as cnt'),
+            ->select( DB::raw('sum(hits) as cnt'),
                 DB::raw('devices.name as device'),
                 DB::raw('devices.id as id'),
                 DB::raw('brands.name as brand'),
@@ -60,11 +61,21 @@ class MainController extends Controller
             ->groupBy('devices.name','devices.id', 'brands.name','devices.year','categories.slug')
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
-        //dd($dashboard['deviceWithViewCount']);
 
         //marques populaires (dernier 12 mois)
+        /*
+        $dashboard['brandsWithViewCount']  = Brand::join('devices', 'devices.brand_id', '=', 'brands.id')
+            ->select( DB::raw('sum(views) as view_count'),
+                DB::raw('brands.*')
+            )
+            ->groupBy('brands.id')
+            ->orderBy('view_count', 'DESC')
+            ->take(5)->get();
+        */
+
+
         $dashboard['brandsWithViewCount'] = DB::table('statistics')
-            ->select( DB::raw('count(*) as cnt'),
+            ->select( DB::raw('sum(hits) as cnt'),
                 DB::raw('brands.name as brand'),
                 DB::raw('brands.id as id'),
                 DB::raw('brands.slug as slug'),

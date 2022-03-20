@@ -5,6 +5,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostCategoryController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\StatisticController;
 use App\Http\Controllers\TechnicaldataController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DeviceController;
@@ -81,6 +82,8 @@ Route::get('/brands/{brand}',[BrandController::class, 'show'])->name('brand.show
 Route::patch('/brands/{brand}',[BrandController::class, 'update'])->name('brand.update');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
+Route::get('/statistics/update', [StatisticController::class, 'calculate'])->name('statistic.calculate');
+
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();

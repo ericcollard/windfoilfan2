@@ -29,6 +29,8 @@ class CreateDevicesTable extends Migration
             $table->string('link_product')->nullable();
             $table->Double('programme_start')->nullable();
             $table->Double('programme_end')->nullable();
+            $table->unsignedInteger('views')->default(0);
+            $table->string('last_ip',20)->nullable();
             $table->timestamps();
         });
     }

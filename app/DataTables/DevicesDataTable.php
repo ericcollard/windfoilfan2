@@ -46,6 +46,7 @@ class DevicesDataTable extends DataTable
     public function query(Device $model): Builder
     {
         $builder = $model->newQuery()->where('category_id',$this->category->id);
+        $builder->withCount('reviews');
         if ($this->brand)
             $builder->where('brand_id',$this->brand->id);
         if (auth()->guest()) $builder->where('status','Published');
@@ -212,8 +213,8 @@ class DevicesDataTable extends DataTable
             Column::make('brand.name')->title(__('Brand')),
             Column::make('name')->title(__('Name')),
             Column::make('year')->title(__('Year')),
-            Column::make('statistics_count')->title(__('Views')),
-            Column::make('reviews_count')->title(__('Reviews')),
+            Column::make('views')->title(__('Views')),
+            Column::make('reviews_count')->title(__('Messages')),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
             Column::computed('action')->title(__('Action'))
