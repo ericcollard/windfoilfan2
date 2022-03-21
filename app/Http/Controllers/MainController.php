@@ -44,21 +44,15 @@ class MainController extends Controller
 
         //produits populaires (dernier 12 mois)
         //$dashboard['deviceWithViewCount'] = Device::orderBy('views', 'desc')->take(5)->get();
-        $dashboard['deviceWithViewCount'] = DB::table('statistics')
-            ->select( DB::raw('sum(hits) as cnt'),
-                DB::raw('devices.name as device'),
-                DB::raw('devices.id as id'),
-                DB::raw('brands.name as brand'),
-                DB::raw('devices.year as year'),
-                DB::raw('categories.slug as category'),
-                DB::raw('brands.logo_path as logo_path'),
-            )
-            ->join('devices', 'statistics.statisticable_id', '=', 'devices.id')
+
+        $dashboard['deviceWithViewCount'] = Device::select( DB::raw('sum(hits) as cnt'),
+            DB::raw('devices.*')
+        )
+            ->join('device_statistics', 'device_statistics.device_id', '=', 'devices.id')
             ->join('brands', 'devices.brand_id', '=', 'brands.id')
             ->join('categories', 'devices.category_id', '=', 'categories.id')
-            ->where('statistics.statisticable_type', "App\\Models\\Device")
-            ->where('statistics.created_at', '>=', DB::raw('DATE_SUB(CURDATE(), INTERVAL 365 DAY)'))
-            ->groupBy('devices.name','devices.id', 'brands.name','devices.year','categories.slug')
+            ->where('device_statistics.day', '>=', DB::raw('DATE_SUB(CURDATE(), INTERVAL 365 DAY)'))
+            ->groupBy('devices.id')
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
 
@@ -73,19 +67,13 @@ class MainController extends Controller
             ->take(5)->get();
         */
 
-
-        $dashboard['brandsWithViewCount'] = DB::table('statistics')
-            ->select( DB::raw('sum(hits) as cnt'),
-                DB::raw('brands.name as brand'),
-                DB::raw('brands.id as id'),
-                DB::raw('brands.slug as slug'),
-                DB::raw('brands.logo_path as logo_path'),
-            )
-            ->join('devices', 'statistics.statisticable_id', '=', 'devices.id')
-            ->join('brands', 'devices.brand_id', '=', 'brands.id')
-            ->where('statistics.statisticable_type', "App\\Models\\Device")
-            ->where('statistics.created_at', '>=', DB::raw('DATE_SUB(CURDATE(),INTERVAL 365 DAY)'))
-            ->groupBy('brands.name', 'brands.id')
+        $dashboard['brandsWithViewCount'] = Brand::select( DB::raw('sum(hits) as cnt'),
+            DB::raw('brands.*')
+        )
+            ->join('devices', 'devices.brand_id', '=', 'brands.id')
+            ->join('device_statistics', 'device_statistics.device_id', '=', 'devices.id')
+            ->where('device_statistics.day', '>=', DB::raw('DATE_SUB(CURDATE(), INTERVAL 365 DAY)'))
+            ->groupBy('brands.id')
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
 

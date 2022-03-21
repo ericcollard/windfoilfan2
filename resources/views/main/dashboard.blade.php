@@ -112,20 +112,20 @@
                     <div class="table-responsive">
                         <table class="table table-centered table-nowrap table-hover mb-0">
                             <tbody>
-                            @foreach($dashboard['brandsWithViewCount'] as $item)
+                            @foreach($dashboard['brandsWithViewCount'] as $brand)
                                 <tr>
                                     <td>
                                         <h5 class="font-14 my-0 fw-normal">
-                                            @if ($item->logo_path)
-                                                <img src="{{  Storage::disk('logos')->url($item->logo_path) }}" class="brand-logo"/>
+                                            @if ($brand->logo_path)
+                                                <img src="{{  Storage::disk('logos')->url($brand->logo_path) }}" class="brand-logo"/>
                                             @else
                                                 <img src="{{  asset('assets/images/brands/default.png') }}" class="brand-logo"/>
                                             @endif
-                                            <a href="{{ route('brand.show',$item->slug) }}">{{ $item->brand }}</a>
+                                            <a href="{{ $brand->path() }}">{{ $brand->name }}</a>
                                         </h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Views') }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ $brand->cnt }} {{ __('Views') }}</h5>
                                     </td>
                                 </tr>
                             @endforeach
@@ -146,23 +146,23 @@
                     <div class="table-responsive">
                         <table class="table table-centered table-nowrap table-hover mb-0">
                             <tbody>
-                            @foreach($dashboard['deviceWithViewCount'] as $item)
+                            @foreach($dashboard['deviceWithViewCount'] as $device)
                                 <tr>
                                     <td>
                                         <h5 class="font-14 my-0 fw-normal">
-                                            @if ($item->logo_path)
-                                                <img src="{{  Storage::disk('logos')->url($item->logo_path) }}" class="brand-logo"/>
+                                            @if ($device->brand->logo_path)
+                                                <img src="{{  Storage::disk('logos')->url($device->brand->logo_path) }}" class="brand-logo"/>
                                             @else
                                                 <img src="{{  asset('assets/images/brands/default.png') }}" class="brand-logo"/>
                                             @endif
-                                            <a href="{{ route('device.show',['category'=>$item->category , 'device'=>$item->id]) }}">{{ $item->device }} {{ $item->year }}</a>
+                                            <a href="{{ $device->path() }}">{{ $device->name }} {{ $device->year }}</a>
                                         </h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->brand }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ $device->brand->name }}</h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Views') }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ $device->cnt }} {{ __('Views') }}</h5>
                                     </td>
                                 </tr>
                             @endforeach

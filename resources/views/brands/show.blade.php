@@ -145,19 +145,16 @@
                     <div class="table-responsive">
                         <table class="table table-centered table-nowrap table-hover mb-0">
                             <tbody>
-                            @foreach($dashboard['deviceWithViewCount'] as $item)
+                            @foreach($dashboard['deviceWithViewCount'] as $device)
                                 <tr>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal"><a href="{{ route('device.show',['category'=>$item->category , 'device'=>$item->id]) }}">{{ $item->device }} {{ $item->year }}</a></h5>
+                                        <h5 class="font-14 my-0 fw-normal"><a href="{{ $device->path() }}">{{ $device->name }} {{ $device->year }}</a></h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ __($item->category) }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ __($device->category->slug) }}</h5>
                                     </td>
                                     <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->cnt }} {{ __('Unique IP') }}</h5>
-                                    </td>
-                                    <td>
-                                        <h5 class="font-14 my-0 fw-normal">{{ $item->hits }} {{ __('Views') }}</h5>
+                                        <h5 class="font-14 my-0 fw-normal">{{ $device->cnt }} {{ __('Views') }}</h5>
                                     </td>
                                 </tr>
                             @endforeach

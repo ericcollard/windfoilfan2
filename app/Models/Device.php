@@ -163,7 +163,6 @@ class Device extends Model
             $this->save();
         }
 
-
     }
 
     public function updateViewsfromStatistics()

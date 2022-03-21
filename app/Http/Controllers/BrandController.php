@@ -77,22 +77,15 @@ class BrandController extends Controller
         $dashboard['sailCnt'] = Device::where('category_id', 3)->where('brand_id',$brand->id)->count();
 
         //produits populaires (dernier 12 mois)
-        $dashboard['deviceWithViewCount'] = DB::table('statistics')
-            ->select( DB::raw('count(*) as cnt'),
-                DB::raw('sum(statistics.hits) as hits'),
-                DB::raw('devices.name as device'),
-                DB::raw('devices.id as id'),
-                DB::raw('brands.name as brand'),
-                DB::raw('devices.year as year'),
-                DB::raw('categories.slug as category')
-            )
-            ->join('devices', 'statistics.statisticable_id', '=', 'devices.id')
+        $dashboard['deviceWithViewCount'] = Device::select( DB::raw('sum(hits) as cnt'),
+            DB::raw('devices.*')
+        )
+            ->join('device_statistics', 'device_statistics.device_id', '=', 'devices.id')
             ->join('brands', 'devices.brand_id', '=', 'brands.id')
             ->join('categories', 'devices.category_id', '=', 'categories.id')
-            ->where('statistics.statisticable_type', "App\\Models\\Device")
+            ->where('device_statistics.day', '>=', DB::raw('DATE_SUB(CURDATE(), INTERVAL 365 DAY)'))
             ->where('brands.id', '=', $brand->id)
-            ->where('statistics.created_at', '>=', DB::raw('DATE_SUB(CURDATE(), INTERVAL 365 DAY)'))
-            ->groupBy('devices.name','devices.id', 'brands.name','devices.year','categories.slug')
+            ->groupBy('devices.id')
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
 
