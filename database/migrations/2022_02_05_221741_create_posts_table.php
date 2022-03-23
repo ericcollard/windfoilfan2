@@ -21,7 +21,8 @@ class CreatePostsTable extends Migration
             $table->string('description');
             $table->text('body');
             $table->string('status')->default('Published'); // Published : Hidden : Archived
-            $table->integer('views');
+            $table->unsignedInteger('views')->default(0);
+            $table->string('last_ip',20)->nullable();
             $table->timestamps();
         });
     }

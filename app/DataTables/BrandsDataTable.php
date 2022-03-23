@@ -60,9 +60,8 @@ group by `brands`.`id`
         $builder->join('devices', 'devices.brand_id', '=', 'brands.id');
         $builder->join('technicaldatas', 'technicaldatas.device_id', '=', 'devices.id');
         $builder->join('reviews', 'reviews.device_id', '=', 'devices.id');
-        $builder->join('statistics', 'statistics.statisticable_id', '=', 'devices.id');
-        $builder->where('statistics.statisticable_type', '=', 'App\\Models\\Device');
-        $builder->selectRaw('brands.*, count( DISTINCT devices.id) AS device_cnt , count(DISTINCT technicaldatas.id) AS data_cnt , count(DISTINCT reviews.id) AS review_cnt, count(DISTINCT statistics.id) AS ip_cnt, sum(statistics.hits) AS hit_cnt');
+        $builder->join('device_statistics', 'device_statistics.device_id', '=', 'devices.id');
+        $builder->selectRaw('brands.*, count( DISTINCT devices.id) AS device_cnt , count(DISTINCT technicaldatas.id) AS data_cnt , count(DISTINCT reviews.id) AS review_cnt, sum(device_statistics.hits) AS hit_cnt');
         $builder->groupBy('brands.id');
         return $builder;
 
@@ -126,7 +125,6 @@ group by `brands`.`id`
             Column::make('device_cnt')->title(__('Devices'))->searchable(false),
             Column::make('data_cnt')->title(__('Technical data sets'))->searchable(false),
             Column::make('review_cnt')->title(__('Messages'))->searchable(false),
-            Column::make('ip_cnt')->title(__('Distinct IP views'))->searchable(false),
             Column::make('hit_cnt')->title(__('Views'))->searchable(false),
         ];
     }

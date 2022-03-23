@@ -69,7 +69,7 @@
                                 </span>
                                 <span class="pe-2 text-nowrap mb-2 d-inline-block">
                                     <i class='uil uil-schedule text-muted'></i>
-                                    <b>{{ $post->updated_at->formatLocalized(' %d %B %Y ') }}</b>
+                                    <b>{{ $post->created_at->formatLocalized(' %d %B %Y ') }}</b>
                                 </span>
                             </p>
                             <div id="tooltip-container">

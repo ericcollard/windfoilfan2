@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Brand;
 use App\Models\Device;
+use App\Models\Post;
 use App\Models\Review;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
@@ -77,6 +78,10 @@ class MainController extends Controller
         });
         $dashboard['lastReviews'] =  $reviews->take(3)->get();
 
+        // derniers posts
+        $posts = Post::latest()
+            ->where('status','Published');
+        $dashboard['posts'] =  $posts->take(6)->get();
 
         // Graphique de publication des messages
         $chartDatas = Review::select([
@@ -122,6 +127,21 @@ class MainController extends Controller
             $dashboard['chartViewsByMonth']['values'][] = (int)$data->hits;
         }
         //dd($dashboard['chartViewsByMonth']);
+
+        // Graphique des créations d'utilisateurs
+        $viewsByMonth = DB::table('users')
+            ->select(DB::raw('count(*) as cnt, DATE(DATE_SUB(created_at,INTERVAL DAYOFMONTH(created_at)-1 DAY)) AS mois'))
+            ->whereBetween('created_at', [Carbon::now()->subMonth(36), Carbon::now()])
+            ->groupBy('mois')
+            ->get();
+
+        $dashboard['chartUsersByMonth']['dates'] = array();
+        $dashboard['chartUsersByMonth']['values'] = array();
+
+        foreach($viewsByMonth as $data) {
+            $dashboard['chartUsersByMonth']['dates'][] = Carbon::createFromFormat('Y-m-d', $data->mois)->format('M Y');
+            $dashboard['chartUsersByMonth']['values'][] = (int)$data->cnt;
+        }
 
         return view('main.dashboard',compact('dashboard'));
     }

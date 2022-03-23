@@ -1,10 +1,12 @@
 @extends('layouts.vertical', ["page_title"=> "main.dashboard"])
-
+<!-- TODO : meta facebook pour toute les pages -->
 @section('css')
 <!-- third party css -->
 <link href="{{asset('assets/libs/admin-resources/admin-resources.min.css')}}" rel="stylesheet" type="text/css">
 </link>
 <!-- third party css end -->
+
+
 
 
 <style>
@@ -45,10 +47,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-account-multiple widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Foils</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Number of Customers">{{ __('Foils') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['foilCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}">Voir tous les foils</a></span>
+                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}">{{ __('See all foils') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -60,10 +62,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-cart-plus widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Flotteurs</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Number of Orders">{{ __('Boards') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['boardCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}">Voir tous les flotteurs</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}">{{ __('See all boards') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -77,10 +79,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-currency-usd widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Voiles</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Average Revenue">{{ __('Sails') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['sailCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}">Voir toutes les voiles</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}">{{ __('See all sails') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -92,10 +94,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-pulse widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Growth">Marques</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Growth">{{ __('Brands') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['brandCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('brand.index') }}">Voir toutes les marques</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('brand.index') }}">{{ __('See all brands') }}</a></span>
 
                             </p>
                         </div> <!-- end card-body-->
@@ -193,7 +195,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-2">Derniers messages</h4>
+                    <h4 class="header-title mb-2">{{ __('Last messages') }}</h4>
 
                     <div data-simplebar style="max-height: 419px;">
                         <div class="timeline-alt pb-0">
@@ -224,10 +226,10 @@
     </div>
 
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-4">
             <div class="card card-h-100">
                 <div class="card-body">
-                    <h4 class="header-title mb-3">VUES (derniers 36 mois)</h4>
+                    <h4 class="header-title mb-0">{{ __('Views') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
 
                     <div dir="ltr">
                         <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
@@ -236,15 +238,46 @@
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
         </div>
-        <div class="col-lg-6 card-h-100">
+        <div class="col-lg-4 card-h-100">
 
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-3">Vues 2</h4>
+                    <h4 class="header-title mb-0">{{ __('Users creation') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
 
                     <div dir="ltr">
                         <div id="views-chart-2" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
                     </div>
+
+                </div> <!-- end card-body-->
+                <!-- end card-body -->
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 card-h-100">
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title mb-2">{{ __('Last posts') }}</h4>
+                    <div class="table-responsive">
+                        <table class="table table-centered table-nowrap table-hover mb-0">
+                            <tbody>
+                            @foreach($dashboard['posts'] as $post)
+                                <tr>
+                                    <td>
+                                        <h5 class="font-14 my-0 fw-normal">
+                                            <img class="rounded brand-logo " src="{{ $post->imagePath() }}" alt="{{ $post->title }}">
+                                            <a href="{{ $post->path() }}">{{ $post->title }}</a>
+                                        </h5>
+                                    </td>
+                                    <td>
+                                        <h5 class="font-14 my-0 fw-normal">{{ $post->views }} {{ __('Views') }}</h5>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                    </div> <!-- end table-responsive-->
 
                 </div> <!-- end card-body-->
                 <!-- end card-body -->
@@ -352,15 +385,32 @@
         },
     };
 
+    var dataArrayViews2 = {
+        series: [ {
+            data: {!!  json_encode($dashboard['chartUsersByMonth']['values']) !!} ,
+            name: 'Vues',
+            showInLegend: false,
+        } ],
+        xaxis: {
+            categories: {!! json_encode($dashboard['chartUsersByMonth']['dates'])   !!}  ,
+            axisBorder: {
+                show: false
+            }
+        },
+    };
+
+
+
 
 
 
     var chart = new ApexCharts(document.querySelector("#messages-chart"), { ...options, ...dataArrayMessages });
     var chart1 = new ApexCharts(document.querySelector("#views-chart-1"), { ...options, ...dataArrayViews1 });
+    var chart2 = new ApexCharts(document.querySelector("#views-chart-2"), { ...options, ...dataArrayViews2 });
 
     chart.render();
     chart1.render();
-
+    chart2.render();
 
 
 

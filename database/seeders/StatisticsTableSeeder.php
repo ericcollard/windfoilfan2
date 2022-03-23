@@ -96,12 +96,12 @@ class StatisticsTableSeeder extends Seeder
                 'id' => 7,
                 'ip' => NULL,
                 'user_id' => 5,
-                'hits' => 2,
+                'hits' => 5,
                 'statisticable_id' => 8,
                 'statisticable_type' => 'App\\Models\\Device',
             'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
                 'created_at' => '2022-03-23 01:56:14',
-                'updated_at' => '2022-03-23 22:13:03',
+                'updated_at' => '2022-03-23 22:34:49',
             ),
             7 => 
             array (
@@ -162,6 +162,66 @@ class StatisticsTableSeeder extends Seeder
             'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
                 'created_at' => '2022-03-23 22:04:13',
                 'updated_at' => '2022-03-23 22:08:07',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'ip' => NULL,
+                'user_id' => 2,
+                'hits' => 2,
+                'statisticable_id' => 8,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-03-23 22:18:18',
+                'updated_at' => '2022-03-23 22:20:46',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'ip' => NULL,
+                'user_id' => 2,
+                'hits' => 1,
+                'statisticable_id' => 182,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-03-23 22:22:59',
+                'updated_at' => '2022-03-23 22:22:59',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'ip' => NULL,
+                'user_id' => 5,
+                'hits' => 2,
+                'statisticable_id' => 130,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-03-23 22:35:25',
+                'updated_at' => '2022-03-23 22:35:32',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'ip' => NULL,
+                'user_id' => 5,
+                'hits' => 2,
+                'statisticable_id' => 7,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-03-23 22:35:37',
+                'updated_at' => '2022-03-23 22:35:43',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'ip' => NULL,
+                'user_id' => 5,
+                'hits' => 1,
+                'statisticable_id' => 11,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-03-23 22:35:49',
+                'updated_at' => '2022-03-23 22:35:49',
             ),
         ));
         

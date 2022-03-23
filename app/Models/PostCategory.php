@@ -13,7 +13,7 @@ class PostCategory extends Model
 
     public function posts() {
         return $this->hasMany(Post::class,'post_categories_id')
-            ->orderBy('updated_at', 'DESC');
+            ->orderBy('created_at', 'DESC');
     }
 
 }

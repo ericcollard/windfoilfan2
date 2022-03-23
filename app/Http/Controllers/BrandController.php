@@ -134,6 +134,23 @@ class BrandController extends Controller
             $dashboard['chartDataByMonth']['values'][] = (int)$value;
         }
 
+        // Graphique des visites dernière année
+        $viewsByMonth = DB::table('device_statistics')
+            ->select(DB::raw('sum(hits) as hits, DATE(DATE_SUB(device_statistics.day,INTERVAL DAYOFMONTH(device_statistics.day)-1 DAY)) AS mois'))
+            ->join('devices', 'device_statistics.device_id', '=', 'devices.id')
+            ->where('devices.brand_id',$brand->id)
+            ->whereBetween('device_statistics.day', [Carbon::now()->subMonth(36), Carbon::now()])
+            ->groupBy('mois')
+            ->get();
+        $dashboard['chartViewsByMonth']['dates'] = array();
+        $dashboard['chartViewsByMonth']['values'] = array();
+
+        foreach($viewsByMonth as $data) {
+            $dashboard['chartViewsByMonth']['dates'][] = Carbon::createFromFormat('Y-m-d', $data->mois)->format('M Y');
+            $dashboard['chartViewsByMonth']['values'][] = (int)$data->hits;
+        }
+        //dd($dashboard['chartViewsByMonth']);
+
 
         return view('brands.show', compact('brand','dashboard'));
     }

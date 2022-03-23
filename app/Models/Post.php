@@ -9,16 +9,8 @@ class Post extends Model
 {
     use HasFactory;
     // TODO : gérer les stat siur les posts
-    /**
-     * The model's default values for attributes.
-     *
-     * @var array
-     */
-    protected $attributes = [
-        'views' => '0',
-    ];
 
-    protected $fillable = ['user_id','title','body','description','created_at','post_categories_id'];
+    protected $fillable = ['user_id','title','body','description','created_at','post_categories_id','views','last_ip'];
 
     protected $with = ['owner','category']; // à chaque fois qu'on fera une Query sur Report, le owner sera récupéré en même temps.
 
@@ -91,6 +83,22 @@ class Post extends Model
                 $class = "bg-dark";
         }
         return $class;
+    }
+
+
+    /**
+     * Record one more view for this device
+     * @return Model
+     */
+    public function recordDisplay()
+    {
+        if ($this->last_ip != request()->ip())
+        {
+            $this->views++;
+            $this->last_ip = request()->ip();
+            $this->save();
+        }
+
     }
 
 }

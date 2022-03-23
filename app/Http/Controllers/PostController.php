@@ -58,6 +58,10 @@ class PostController extends Controller
      */
     public function show(PostCategory $postCategory, Post $post)
     {
+        // enregistre les stats de visite
+        $post->recordDisplay();
+
+
         $shareComponent = (new \Jorenvh\Share\Share)->page(
             URL::full(),
             $post->description,

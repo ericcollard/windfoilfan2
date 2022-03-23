@@ -70,10 +70,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-account-multiple widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Number of Customers">Foils</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Number of Customers">{{ __('Foils') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['foilCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}?from={{ $brand->slug  }}">Voir tous les foils</a></span>
+                                <span class="text-nowrap text-success "><a href="{{ route('device.category','foil') }}?from={{ $brand->slug  }}">{{ __('See all foils') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -85,10 +85,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-cart-plus widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Number of Orders">Flotteurs</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Number of Orders">{{ __('Boards') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['boardCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}?from={{ $brand->slug  }}">Voir tous les flotteurs</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','board') }}?from={{ $brand->slug  }}">{{ __('See all boards') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -102,10 +102,10 @@
                             <div class="float-end">
                                 <i class="mdi mdi-currency-usd widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Average Revenue">Voiles</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Average Revenue">{{ __('Sails') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['sailCnt'] }}</h3>
                             <p class="mb-0 text-muted">
-                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}?from={{ $brand->slug  }}">Voir toutes les voiles</a></span>
+                                <span class="text-nowrap text-success"><a href="{{ route('device.category','sail') }}?from={{ $brand->slug  }}">{{ __('See all sails') }}</a></span>
                             </p>
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
@@ -117,13 +117,13 @@
                             <div class="float-end">
                                 <i class="mdi mdi-pulse widget-icon"></i>
                             </div>
-                            <h5 class="text-muted fw-normal mt-0" title="Growth">Données techniques</h5>
+                            <h5 class="text-muted fw-normal mt-0" title="Growth">{{ __('Technical data') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['dataCnt'] }}</h3>
                             <p class="mb-0 text-muted">
                                 <span class="text-nowrap text-success">Donnés
-                                    <a href="{{ route('technicaldata.category','foil') }}?from={{ $brand->slug  }}">Foils</a> -
-                                    <a href="{{ route('technicaldata.category','board') }}?from={{ $brand->slug  }}">Flotteurs</a> -
-                                    <a href="{{ route('technicaldata.category','sail') }}?from={{ $brand->slug  }}">Voiles</a>
+                                    <a href="{{ route('technicaldata.category','foil') }}?from={{ $brand->slug  }}">{{ __('Foils') }}</a> -
+                                    <a href="{{ route('technicaldata.category','board') }}?from={{ $brand->slug  }}">{{ __('Boards') }}</a> -
+                                    <a href="{{ route('technicaldata.category','sail') }}?from={{ $brand->slug  }}">{{ __('Sails') }}</a>
                                 </span>
 
                             </p>
@@ -188,7 +188,7 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-2">Derniers messages</h4>
+                    <h4 class="header-title mb-2">{{ __('Last messages') }}s</h4>
 
                     <div data-simplebar style="max-height: 419px;">
                         <div class="timeline-alt pb-0">
@@ -217,6 +217,23 @@
 
 
 
+    <div class="row">
+        <div class="col-xl-7 col-lg-6">
+            <div class="card card-h-100">
+                <div class="card-body">
+                    <h4 class="header-title mb-3">{{__('Views')}}</h4>
+
+                    <div dir="ltr">
+                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div>
+        <div class="col-xl-5 col-lg-6">
+
+        </div>
+    </div>
 
 
 
@@ -261,11 +278,6 @@
             width: 2,
             colors: ['transparent']
         },
-        series: [ {
-            data: {!!  json_encode($dashboard['chartDataByMonth']['values']) !!} ,
-            name: 'messages',
-            showInLegend: false,
-        } ],
         zoom: {
             enabled: false
         },
@@ -273,12 +285,6 @@
             show: false
         },
         colors: colors,
-        xaxis: {
-            categories: {!! json_encode($dashboard['chartDataByMonth']['dates'])   !!}  ,
-            axisBorder: {
-                show: false
-            }
-        },
         yaxis: {
             labels: {
                 offsetX: -15
@@ -296,10 +302,41 @@
         }
     };
 
-    var chart = new ApexCharts(document.querySelector("#messages-chart"), options);
+
+    var dataArrayMessages = {
+        series: [ {
+            data: {!!  json_encode($dashboard['chartDataByMonth']['values']) !!} ,
+            name: 'messages',
+            showInLegend: false,
+        } ],
+        xaxis: {
+            categories: {!! json_encode($dashboard['chartDataByMonth']['dates'])   !!}  ,
+            axisBorder: {
+                show: false
+            }
+        },
+    };
+
+    var dataArrayViews1 = {
+        series: [ {
+            data: {!!  json_encode($dashboard['chartViewsByMonth']['values']) !!} ,
+            name: 'Vues',
+            showInLegend: false,
+        } ],
+        xaxis: {
+            categories: {!! json_encode($dashboard['chartViewsByMonth']['dates'])   !!}  ,
+            axisBorder: {
+                show: false
+            }
+        },
+    };
+
+
+    var chart = new ApexCharts(document.querySelector("#messages-chart"), { ...options, ...dataArrayMessages });
+    var chart1 = new ApexCharts(document.querySelector("#views-chart-1"), { ...options, ...dataArrayViews1 });
 
     chart.render();
-
+    chart1.render();
 
 </script>
 <!-- end demo js-->

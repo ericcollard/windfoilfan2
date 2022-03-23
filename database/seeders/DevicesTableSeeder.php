@@ -190,17 +190,17 @@ class DevicesTableSeeder extends Seeder
 <p>Le foil est fourni en standard avec un jeu de cals de stab, et un jeux de cale de Rake. Les ailes disponibles vont de 950 (pour naviger en 8 &agrave; 10m2) &agrave; 330 (en gros la taille habituelle d\'un stab)</p>
 </div>
 </div>',
-                'year' => 2019,
+                'year' => NULL,
                 'price' => '3428.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u38221s1-phantom-iris-r-pwa-team-set-phantom-2020.html',
                 'programme_start' => 6.0,
                 'programme_end' => 10.0,
-                'views' => 1572,
-                'last_ip' => NULL,
+                'views' => 1573,
+                'last_ip' => '::1',
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2022-03-20 20:52:40',
+                'updated_at' => '2022-03-23 22:35:43',
             ),
             7 => 
             array (
@@ -222,7 +222,7 @@ class DevicesTableSeeder extends Seeder
 <p>Comme pour le R, chaque set est fourni avec une malette, un set de cales de stab, la visserie, et une boite de cales de Rake.</p>
 </div>
 </div>',
-                'year' => 2020,
+                'year' => NULL,
                 'price' => '2309.00',
                 'link_test' => NULL,
                 'link_presentation' => NULL,
@@ -232,7 +232,7 @@ class DevicesTableSeeder extends Seeder
                 'views' => 4601,
                 'last_ip' => '::1',
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2022-03-23 22:06:32',
+                'updated_at' => '2022-03-23 22:34:40',
             ),
             8 => 
             array (
@@ -2975,17 +2975,17 @@ array (
     'brand_id' => 78,
     'status' => 'Hidden',
     'body' => '<p>Le freeride</p>',
-    'year' => 2020,
+    'year' => NULL,
     'price' => NULL,
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
     'programme_start' => 3.0,
     'programme_end' => 6.0,
-    'views' => 4,
-    'last_ip' => NULL,
+    'views' => 5,
+    'last_ip' => '::1',
     'created_at' => '2020-04-06 20:15:55',
-    'updated_at' => '2021-06-14 14:19:46',
+    'updated_at' => '2022-03-23 22:35:32',
 ),
 114 => 
 array (
