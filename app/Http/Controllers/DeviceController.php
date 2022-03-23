@@ -159,7 +159,7 @@ class DeviceController extends Controller
 
         }
 
-
+        //dd($attributes);
         return view('devices.show', compact('device','reviews','attributes','technicaldatas_minmax'));
     }
 

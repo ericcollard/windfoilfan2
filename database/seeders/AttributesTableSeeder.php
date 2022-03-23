@@ -238,7 +238,7 @@ class AttributesTableSeeder extends Seeder
                 'id' => 16,
                 'name' => 'Déflexion latérale à 70',
                 'slug' => 'def70f',
-                'body' => NULL,
+                'body' => '<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>',
                 'unit' => 'mm',
                 'decimals' => 2,
                 'group' => 'structural_group',
@@ -251,7 +251,7 @@ class AttributesTableSeeder extends Seeder
                 'id' => 17,
                 'name' => 'Déflexion latérale en bout',
                 'slug' => 'defendf',
-                'body' => NULL,
+                'body' => '<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>',
                 'unit' => 'mm',
                 'decimals' => 2,
                 'group' => 'structural_group',
@@ -264,7 +264,7 @@ class AttributesTableSeeder extends Seeder
                 'id' => 18,
                 'name' => 'Déflexion en torsion',
                 'slug' => 'deftor',
-                'body' => NULL,
+                'body' => '<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>',
                 'unit' => 'mm',
                 'decimals' => 2,
                 'group' => 'structural_group',
@@ -279,6 +279,7 @@ class AttributesTableSeeder extends Seeder
                 'slug' => 'flex_module',
                 'body' => '<p>La rigidit&eacute; en flexion est &eacute;valu&eacute;e &agrave; partir des mesures de flexion du mat sur un banc. Le mat est soumis &agrave; un charge de 10kg positionn&eacute;e &agrave; 70cm de l\'encastrement.</p>
 <p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en flexion EIx &agrave; partir de la fl&ecirc;che mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux.&nbsp;La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 10 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
+<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>
 <p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt="" /></p>',
                 'unit' => 'N.m2',
                 'decimals' => 2,
@@ -294,6 +295,7 @@ class AttributesTableSeeder extends Seeder
                 'slug' => 'tors_module',
                 'body' => '<p>La rigidit&eacute; en torsion est &eacute;valu&eacute;e &agrave; partir des mesures du mat sur un banc. Le mat est soumis &agrave; un charge de 6,25kg positionn&eacute;e &agrave; 35cm de l\'axe de torsion.</p>
 <p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en torsion GIg &agrave; partir de la d&eacute;formation mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux. La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 10 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
+<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>
 <p><img class="img-fluid" src="/storage/photos/5/attributes/poutres torsion.png" alt="Rigidit&eacute; en torsion foil" /></p>',
                 'unit' => 'N.m2/Rad',
                 'decimals' => 2,
@@ -310,6 +312,7 @@ class AttributesTableSeeder extends Seeder
                 'body' => '<p>La rigidit&eacute; en flexion est &eacute;valu&eacute;e &agrave; partir des mesures de flexion du mat sur un banc. Le mat est soumis &agrave; un charge de 10kg positionn&eacute;e &agrave; 70cm de l\'encastrement.</p>
 <p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en flexion EIx &agrave; partir de la fl&ecirc;che mesur&eacute;e, puis un module d\'Young E.&nbsp;</p>
 <p>Cette valeur donne une indication sur la ratio Rigidit&eacute; / Epaisseur du profil, que l\'on peut rapprocher du ratio&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Rigidit&eacute; / Train&eacute;e. La valeur de 0 correspond au foil le plus souple parmi nos mesures.&nbsp;</span>La valeur de 10 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
+<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>
 <p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt="" /></p>',
                 'unit' => 'Gpa',
                 'decimals' => 2,

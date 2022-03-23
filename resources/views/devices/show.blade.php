@@ -347,24 +347,32 @@
                                     <?php
                                         $chart1Data = [];
                                         $chart2Data = [];
+                                        $technicaldata_id = null;
                                         foreach ($attributes as $group => $attributesSet)
                                             {
                                                 foreach ($attributesSet as $attribute)
                                                     {
                                                         if ($group == 'usage_group')
                                                             {
-                                                                $chart1Data['labels'][] = __($attribute->slug) ;
+
                                                                 if (! is_null($attributesSet->results))
                                                                 {
                                                                     $chart1Data['values'][] = (float)$attributesSet->results->{$attribute->field};
+                                                                    $link = route('technicaldatas.attributeChart',$attribute->slug).'?technicaldata='.$attributesSet->results->id;
+                                                                    $chart1Data['labels'][] = '<a href="'.$link.'" style="color: #727cf5; cursor:pointer;">'.__($attribute->slug).'</a>' ;
                                                                 }
                                                                 else
+                                                                {
+                                                                    $chart1Data['labels'][] = __($attribute->slug) ;
                                                                     $chart1Data['values'][] = 0;
+                                                                }
+
                                                             }
                                                         elseif ($group == 'structural_result_group')
                                                             {
                                                                 if (! is_null($attributesSet->results) and !is_null($technicaldatas_minmax))
                                                                 {
+                                                                    $chart2Data['link'][] = route('technicaldatas.attributeChart',$attribute->slug).'?technicaldata='.$attributesSet->results->id;
                                                                     $chart2Data['labels'][] = __($attribute->slug) ;
                                                                     $chart2Data['values'][] = (float)$attributesSet->results->{$attribute->field};
                                                                     $chart2Data['min'][] = $technicaldatas_minmax->{'min_'.$attribute->field};
@@ -691,14 +699,17 @@
             }
         };
 
-        var minvalue =  0;
-        var maxvalue = 0;
-        var currentvalue = 0;
-
-        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data))
+        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data) and array_key_exists('link',$chart2Data))
             minvalue = {{ round($chart2Data['min'][0]) }};
             maxvalue = {{ round($chart2Data['max'][0]) }};
             currentvalue = {{ $chart2Data['values'][0] }};
+            title = '<a href= "{{ $chart2Data['link'][0] }}" style="color: #727cf5; cursor:pointer;">Coefficient de rigidité en flexion (EIx)</a>';
+
+        @else
+            minvalue =  0;
+            maxvalue = 0;
+            currentvalue = 0;
+            title = 'Coefficient de rigidité en flexion (EIx)';
         @endif
 
 
@@ -709,7 +720,8 @@
                 tickPositions : [minvalue,maxvalue],
             },
             title: {
-                text: 'Coefficient de rigidité en flexion (EIx)',
+                text: title,
+                useHtml: true
             },
             series: [{
                 name: 'Flexion',
@@ -725,14 +737,16 @@
 
         }));
 
-        @if( array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data) )
+        @if( array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data)  and array_key_exists('link',$chart2Data))
             minvalue = {{ round($chart2Data['min'][1]) }};
             maxvalue = {{ round($chart2Data['max'][1]) }};
             currentvalue = {{ $chart2Data['values'][1] }};
+            title = '<a href= "{{ $chart2Data['link'][1] }}" style="color: #727cf5; cursor:pointer;">Coefficient de rigidité en torsion (GIg)</a>';
         @else
             minvalue =  0;
             maxvalue = 0;
             currentvalue = 0;
+            title = 'Coefficient de rigidité en torsion (GIg)';
         @endif
 
         var chartSpeed = Highcharts.chart('container-torsion', Highcharts.merge(gaugeOptions, {
@@ -742,7 +756,8 @@
                 tickPositions: [minvalue, maxvalue],
             },
             title: {
-                text: 'Coefficient de rigidité en torsion (GIg)',
+                useHtml: true,
+                text: title,
             },
 
             series: [{
@@ -759,14 +774,16 @@
 
         }));
 
-        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data))
+        @if(array_key_exists('min',$chart2Data) and array_key_exists('max',$chart2Data) and array_key_exists('values',$chart2Data) and array_key_exists('link',$chart2Data))
             minvalue = {{ round($chart2Data['min'][2]) }};
             maxvalue = {{ round($chart2Data['max'][2]) }};
             currentvalue = {{ $chart2Data['values'][2] }};
+            title = '<a href= "{{ $chart2Data['link'][2] }}" style="color: #727cf5; cursor:pointer;">Module d Young (E)</a>';
         @else
             minvalue =  0;
             maxvalue = 0;
             currentvalue = 0;
+            title = 'Module d Young (E)';
         @endif
 
         var chartSpeed = Highcharts.chart('container-module', Highcharts.merge(gaugeOptions, {
@@ -776,7 +793,9 @@
                 tickPositions: [minvalue, maxvalue],
             },
             title: {
-                text: "Module d'Young (E)",
+                useHtml: true,
+                text: title,
+
             },
             series: [{
                 name: 'Flexion',

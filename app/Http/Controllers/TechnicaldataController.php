@@ -391,14 +391,14 @@ class TechnicaldataController extends Controller
             else
                 $colors[] = '#00b2ff';
 
-            if ($see_all or ($see_patrial and ($brand_id_allowed == $technicaldata->brand_id)) or ($see_patrial and ($user_is_allowed == $technicaldata->user_id)))
+            if ($see_all or ($see_patrial and ($brand_id_allowed == $technicaldata->brand_id)) or ($see_patrial and ($user_is_allowed == $technicaldata->user_id)) or ($techdata and $technicaldata->id == $techdata->id))
             {
                 $complete_name = $technicaldata->brand.' '.$technicaldata->device.' '.$technicaldata->year.' '.$technicaldata->serial.' (id-'.$technicaldata->id.')';
                 $names[] = $complete_name;
             }
             else
             {
-                $names[] = 'nc.'; //'id-'.$technicaldata->id;
+                    $names[] = 'nc.'; //'id-'.$technicaldata->id;
             }
 
             if ($attribute->chart =='pourcentage')

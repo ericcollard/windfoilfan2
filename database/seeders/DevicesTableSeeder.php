@@ -229,10 +229,10 @@ class DevicesTableSeeder extends Seeder
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u40938s1-phantom-iris-x-sport-set-phantom-2020.html',
                 'programme_start' => 6.0,
                 'programme_end' => 9.0,
-                'views' => 4600,
-                'last_ip' => NULL,
+                'views' => 4601,
+                'last_ip' => '::1',
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2022-03-20 20:52:40',
+                'updated_at' => '2022-03-23 22:06:32',
             ),
             8 => 
             array (
@@ -3392,7 +3392,7 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34454s1-exocet-rf-foil-board-carbon-exocet-2020.html',
     'programme_start' => 6.0,
     'programme_end' => 9.0,
-    'views' => 7779,
+    'views' => 7778,
     'last_ip' => '::1',
     'created_at' => '2020-05-03 11:09:02',
     'updated_at' => '2022-03-21 00:13:28',
@@ -4164,10 +4164,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 7.0,
-    'views' => 1567,
-    'last_ip' => NULL,
+    'views' => 1568,
+    'last_ip' => '::1',
     'created_at' => '2021-06-14 14:07:32',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-03-23 21:58:08',
 ),
 148 => 
 array (
@@ -4194,10 +4194,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
-    'views' => 1417,
-    'last_ip' => NULL,
+    'views' => 1418,
+    'last_ip' => '::1',
     'created_at' => '2021-06-15 10:13:12',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-03-23 20:43:12',
 ),
 149 => 
 array (
