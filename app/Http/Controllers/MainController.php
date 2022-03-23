@@ -43,8 +43,6 @@ class MainController extends Controller
         $dashboard['brandCnt'] =  Brand::whereHas('devices')->count();
 
         //produits populaires (dernier 12 mois)
-        //$dashboard['deviceWithViewCount'] = Device::orderBy('views', 'desc')->take(5)->get();
-
         $dashboard['deviceWithViewCount'] = Device::select( DB::raw('sum(hits) as cnt'),
             DB::raw('devices.*')
         )
@@ -57,16 +55,6 @@ class MainController extends Controller
             ->take(5)->get();
 
         //marques populaires (dernier 12 mois)
-        /*
-        $dashboard['brandsWithViewCount']  = Brand::join('devices', 'devices.brand_id', '=', 'brands.id')
-            ->select( DB::raw('sum(views) as view_count'),
-                DB::raw('brands.*')
-            )
-            ->groupBy('brands.id')
-            ->orderBy('view_count', 'DESC')
-            ->take(5)->get();
-        */
-
         $dashboard['brandsWithViewCount'] = Brand::select( DB::raw('sum(hits) as cnt'),
             DB::raw('brands.*')
         )
@@ -77,7 +65,7 @@ class MainController extends Controller
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
 
-        // last reviews
+        // Derniers messages
         $reviews = Review::latest();
         // only those with device visible
         $reviews->whereExists(function($query)
@@ -87,10 +75,10 @@ class MainController extends Controller
                 ->whereRaw('devices.id = reviews.device_id')
                 ->where('status','Published');
         });
-
         $dashboard['lastReviews'] =  $reviews->take(3)->get();
 
-        // review posting chart
+
+        // Graphique de publication des messages
         $chartDatas = Review::select([
             DB::raw("DATE_FORMAT(created_at, '%Y-%m') new_date"),
             DB::raw('COUNT(id) AS count'),
@@ -119,6 +107,21 @@ class MainController extends Controller
             $dashboard['chartDataByMonth']['dates'][] = $dateStr;
             $dashboard['chartDataByMonth']['values'][] = (int)$value;
         }
+
+        // Graphique des visites dernière année
+        $viewsByMonth = DB::table('device_statistics')
+            ->select(DB::raw('sum(hits) as hits, DATE(DATE_SUB(device_statistics.day,INTERVAL DAYOFMONTH(device_statistics.day)-1 DAY)) AS mois'))
+            ->whereBetween('device_statistics.day', [Carbon::now()->subMonth(36), Carbon::now()])
+            ->groupBy('mois')
+            ->get();
+        $dashboard['chartViewsByMonth']['dates'] = array();
+        $dashboard['chartViewsByMonth']['values'] = array();
+
+        foreach($viewsByMonth as $data) {
+            $dashboard['chartViewsByMonth']['dates'][] = Carbon::createFromFormat('Y-m-d', $data->mois)->format('M Y');
+            $dashboard['chartViewsByMonth']['values'][] = (int)$data->hits;
+        }
+        //dd($dashboard['chartViewsByMonth']);
 
         return view('main.dashboard',compact('dashboard'));
     }

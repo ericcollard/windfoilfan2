@@ -223,10 +223,36 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card card-h-100">
+                <div class="card-body">
+                    <h4 class="header-title mb-3">VUES (derniers 36 mois)</h4>
+
+                    <div dir="ltr">
+                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+        </div>
+        <div class="col-lg-6 card-h-100">
+
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title mb-3">Vues 2</h4>
+
+                    <div dir="ltr">
+                        <div id="views-chart-2" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+
+                </div> <!-- end card-body-->
+                <!-- end card-body -->
+            </div>
 
 
-
-
+        </div>
+    </div>
 
 
 
@@ -250,6 +276,9 @@
         colors = dataColors.split(",");
     }
 
+
+
+
     var options = {
         chart: {
             height: 257,
@@ -270,11 +299,6 @@
             width: 2,
             colors: ['transparent']
         },
-        series: [ {
-            data: {!!  json_encode($dashboard['chartDataByMonth']['values']) !!} ,
-            name: 'messages',
-            showInLegend: false,
-        } ],
         zoom: {
             enabled: false
         },
@@ -282,12 +306,6 @@
             show: false
         },
         colors: colors,
-        xaxis: {
-            categories: {!! json_encode($dashboard['chartDataByMonth']['dates'])   !!}  ,
-            axisBorder: {
-                show: false
-            }
-        },
         yaxis: {
             labels: {
                 offsetX: -15
@@ -305,9 +323,45 @@
         }
     };
 
-    var chart = new ApexCharts(document.querySelector("#messages-chart"), options);
+
+    var dataArrayMessages = {
+        series: [ {
+            data: {!!  json_encode($dashboard['chartDataByMonth']['values']) !!} ,
+            name: 'messages',
+            showInLegend: false,
+        } ],
+        xaxis: {
+            categories: {!! json_encode($dashboard['chartDataByMonth']['dates'])   !!}  ,
+            axisBorder: {
+                show: false
+            }
+        },
+    };
+
+    var dataArrayViews1 = {
+        series: [ {
+            data: {!!  json_encode($dashboard['chartViewsByMonth']['values']) !!} ,
+            name: 'Vues',
+            showInLegend: false,
+        } ],
+        xaxis: {
+            categories: {!! json_encode($dashboard['chartViewsByMonth']['dates'])   !!}  ,
+            axisBorder: {
+                show: false
+            }
+        },
+    };
+
+
+
+
+    var chart = new ApexCharts(document.querySelector("#messages-chart"), { ...options, ...dataArrayMessages });
+    var chart1 = new ApexCharts(document.querySelector("#views-chart-1"), { ...options, ...dataArrayViews1 });
 
     chart.render();
+    chart1.render();
+
+
 
 
 </script>
