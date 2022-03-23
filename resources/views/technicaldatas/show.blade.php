@@ -125,12 +125,16 @@
                                             ?>
                                             <p>
                                                 {{ __($attribute->slug) }} :
-                                                {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
-                                                (
-                                                <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
-                                                -
-                                                <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
-                                                )
+                                                @if (is_null($technicaldata->{$attribute->field}))
+                                                    {{ 'nc.' }}
+                                                @else
+                                                    <a href="{{ route('technicaldatas.attributeChart',$attribute->slug) }}?technicaldata={{ $technicaldata->id }}&device={{ $technicaldata->device->id }}">{{ number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}</a>
+                                                @endif
+                                            (
+                                            <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
+                                            -
+                                            <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
+                                            )
 
                                             </p>
                                         @endforeach
@@ -149,13 +153,16 @@
                                             @foreach($attributeGroup as $key => $attribute)
                                                 <p>
                                                     {{ __($attribute->slug) }} :
-                                                    {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
+                                                    @if (is_null($technicaldata->{$attribute->field}))
+                                                        {{ 'nc.' }}
+                                                    @else
+                                                        <a href="{{ route('technicaldatas.attributeChart',$attribute->slug) }}?technicaldata={{ $technicaldata->id }}&device={{ $technicaldata->device->id }}">{{ number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}</a>
+                                                    @endif
                                                     (
                                                     <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
                                                     -
                                                     <span class="text-success">max = {{ number_format($technicaldatas_minmax->{'max_'.$attribute->field},2) }}</span>
                                                     )
-
                                                 </p>
                                             @endforeach
                                         </div>
@@ -194,7 +201,11 @@
                                                     {{ is_null($technicaldata->{$attribute->field}) ? 'nc' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
                                                 @endif
                                             @else
-                                                {{ is_null($technicaldata->{$attribute->field}) ? 'nc.' : number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}
+                                                @if (is_null($technicaldata->{$attribute->field}))
+                                                    {{ 'nc.' }}
+                                                @else
+                                                    <a href="{{ route('technicaldatas.attributeChart',$attribute->slug) }}?technicaldata={{ $technicaldata->id }}&device={{ $technicaldata->device->id }}">{{ number_format($technicaldata->{$attribute->field},2) }} {{ $attribute->unit }}</a>
+                                                @endif
                                                 (
                                                 <span class="text-warning">min = {{ number_format($technicaldatas_minmax->{'min_'.$attribute->field},2) }}</span>
                                                 -

@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\URL;
+use phpGPX\Models\Extensions\AbstractExtension;
 use Yajra\DataTables\Facades\DataTables;
 use Yajra\DataTables\Utilities\Request;
 
@@ -303,10 +304,34 @@ class TechnicaldataController extends Controller
         if (!$attribute) abort(403, 'No attribute defined');
         $category = $attribute->category;
 
+        $device = null;
+        if(array_key_exists('device', request()->all()))
+        {
+            $device_id = request()->device;
+            $device = Device::where('id', $device_id)
+                ->firstOrFail();
+        }
+
+        $techdata = null;
+        if(array_key_exists('technicaldata', request()->all()))
+        {
+            $techdata_id = request()->technicaldata;
+            $techdata = Technicaldata::where('id', $techdata_id)
+                ->firstOrFail();
+        }
+
+        $brand = null;
+        if(array_key_exists('brand', request()->all()))
+        {
+            $brand_id = request()->brand;
+            $brand = Brand::where('id', $brand_id)
+                ->firstOrFail();
+        }
+
+
         $names = [];
         $values = [];
-
-
+        $colors = [];
 
         $devicesQuery = DB::table('technicaldatas')
             ->join('devices', 'technicaldatas.device_id', '=', 'devices.id')
@@ -323,7 +348,7 @@ class TechnicaldataController extends Controller
         */
 
         $technicalDatas = $devicesQuery
-            ->select('technicaldatas.id','technicaldatas.serial', 'devices.name as device', 'devices.year as year', 'brands.name as brand', 'brands.id as brand_id', 'technicaldatas.user_id', $attribute->field.' as value')
+            ->select('technicaldatas.id','technicaldatas.serial', 'devices.name as device', 'devices.year as year', 'brands.name as brand', 'brands.id as brand_id', 'technicaldatas.user_id', $attribute->field.' as value', 'devices.id as device_id')
             ->get();
 
         // recherche min et max
@@ -333,27 +358,43 @@ class TechnicaldataController extends Controller
         $dataMax = $technicalDatas[0]->value;
 
         // Autorisations à voir pour les données structure
-        if  ( $attribute->group == "structural_group" or $attribute->group == "structural_result_group")
-            $see_all = auth()->user()->hasRole('ROLE_ADMIN');
-        else
-            $see_all = true;
-        $see_patrial = auth()->user()->hasRole('ROLE_CONTRIBUTOR');
-
-        if (is_null(auth()->user()->brand_id))
-            $brand_id_allowed = 0;
-        else
-            $brand_id_allowed = auth()->user()->brand_id;
-
+        $see_all = false;
+        $see_patrial = false;
         if (auth()->user())
+        {
             $user_is_allowed = auth()->user()->id;
+            if  ( $attribute->group == "structural_group" or $attribute->group == "structural_result_group")
+                $see_all = auth()->user()->hasRole('ROLE_ADMIN');
+            else
+                $see_all = true;
+            $see_patrial = auth()->user()->hasRole('ROLE_CONTRIBUTOR');
+
+            if (is_null(auth()->user()->brand_id))
+                $brand_id_allowed = 0;
+            else
+                $brand_id_allowed = auth()->user()->brand_id;
+        }
         else
+        {
             $user_is_allowed = 0;
+        }
+
 
         foreach ($technicalDatas as $technicaldata)
         {
+            if ($techdata and $technicaldata->id == $techdata->id)
+                $colors[] = '#00FF15FF';
+            elseif ($device and $technicaldata->device_id == $device->id)
+                $colors[] = '#ff0000';
+            elseif ($brand and $technicaldata->brand_id == $brand->id)
+                $colors[] = '#FFCC00FF';
+            else
+                $colors[] = '#00b2ff';
+
             if ($see_all or ($see_patrial and ($brand_id_allowed == $technicaldata->brand_id)) or ($see_patrial and ($user_is_allowed == $technicaldata->user_id)))
             {
-                $names[] = $technicaldata->brand.' '.$technicaldata->device.' '.$technicaldata->year.' '.$technicaldata->serial.' (id-'.$technicaldata->id.')';
+                $complete_name = $technicaldata->brand.' '.$technicaldata->device.' '.$technicaldata->year.' '.$technicaldata->serial.' (id-'.$technicaldata->id.')';
+                $names[] = $complete_name;
             }
             else
             {
@@ -388,7 +429,7 @@ class TechnicaldataController extends Controller
             $draggable = 'false';
         }
 
-        return view('technicaldatas.chart', compact('attribute','names','values','chartMin','chartMax','legende','draggable'));
+        return view('technicaldatas.chart', compact('attribute','names','values','colors','chartMin','chartMax','legende','draggable','device','techdata'));
     }
 
     /**

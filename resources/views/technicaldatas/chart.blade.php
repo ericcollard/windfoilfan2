@@ -75,6 +75,16 @@
 
         var gearnames =  <?php echo json_encode($names) ?>;
         var values =  <?php echo json_encode($values) ?>;
+        var colors =  <?php echo json_encode($colors) ?>;
+        var device_id = 0;
+        var data_id = 0;
+
+        <?php
+            if ($device)
+                echo "device_id = ".$device->id.";";
+            if ($techdata)
+                echo "data_id = ".$techdata->id.";";
+        ?>
 
         var chart = new Highcharts.Chart({
             chart: {
@@ -89,6 +99,7 @@
                 labels: {
                     formatter: function() {
                         if (this.value.includes('(id-')) {
+
                             return '<a href="/technicaldatas/'+conv(this.value) +'">'+this.value+'</a>';
                         }
                         else {
@@ -143,7 +154,8 @@
                 },
                 bar: {
                     stacking: 'normal',
-                    minPointLength: 2
+                    minPointLength: 2,
+                    colorByPoint: true //need to become true for color bar.
                 },
             },
             credits: {
@@ -152,11 +164,14 @@
             tooltip: {
                 valueDecimals: 2
             },
-
+            column: {
+                colorByPoint: true //need to become true for color bar.
+            },
             series: [{
                 data: values,
                 type: 'bar',
                 showInLegend: false,
+                colors : colors,
             } ]
 
         });
