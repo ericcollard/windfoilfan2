@@ -4403,10 +4403,10 @@ array (
     'link_product' => NULL,
     'programme_start' => NULL,
     'programme_end' => NULL,
-    'views' => 0,
-    'last_ip' => NULL,
+    'views' => 1,
+    'last_ip' => '::1',
     'created_at' => '2022-03-21 08:46:47',
-    'updated_at' => '2022-03-21 09:11:13',
+    'updated_at' => '2022-03-24 21:58:44',
 ),
 157 => 
 array (

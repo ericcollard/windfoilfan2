@@ -20202,12 +20202,12 @@ class StatisticsTableSeeder extends Seeder
                 'id' => 6958,
                 'ip' => NULL,
                 'user_id' => 5,
-                'hits' => 9,
+                'hits' => 11,
                 'statisticable_id' => 215,
                 'statisticable_type' => 'App\\Models\\Device',
             'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15',
                 'created_at' => '2022-03-21 08:46:47',
-                'updated_at' => '2022-03-22 18:22:29',
+                'updated_at' => '2022-03-24 21:59:54',
             ),
             182 => 
             array (
