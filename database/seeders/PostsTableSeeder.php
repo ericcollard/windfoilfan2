@@ -165,9 +165,10 @@ class PostsTableSeeder extends Seeder
 </div>
 </div>',
                 'status' => 'Published',
-                'views' => 1248,
-                'created_at' => '2022-01-01 00:00:00',
-                'updated_at' => '2022-01-01 00:00:00',
+                'views' => 1249,
+                'last_ip' => '::1',
+                'created_at' => '2022-03-01 00:00:00',
+                'updated_at' => '2022-03-23 23:12:42',
             ),
             1 => 
             array (
@@ -195,6 +196,7 @@ class PostsTableSeeder extends Seeder
 ',
                 'status' => 'Published',
                 'views' => 62281,
+                'last_ip' => NULL,
                 'created_at' => '2016-04-03 21:55:41',
                 'updated_at' => '2016-04-03 21:55:41',
             ),
@@ -237,6 +239,7 @@ class PostsTableSeeder extends Seeder
 <p>Renseignements et r&eacute;servations : 04 94 46 63 18 / contact@yctoulon.fr</p>',
                 'status' => 'Published',
                 'views' => 5181,
+                'last_ip' => NULL,
                 'created_at' => '2022-01-02 01:00:38',
                 'updated_at' => '2022-01-02 01:00:38',
             ),
@@ -247,13 +250,15 @@ class PostsTableSeeder extends Seeder
                 'post_categories_id' => 2,
                 'title' => 'Après une heure de Vol',
                 'description' => 'Combien faut il de temps pour appréhender le windfoil ? l\'exemple de nos athlètes',
-            'body' => '<p>Ce WE, à l\'occasion d\'une journée test Windfoil à Serre Ponçon, nous avons eu l\'occasion de mettre le pied à l\'étrier pour Bérénice et Jeanne, 2 filles du pôle France. Cela a permi de mesurer la vitesse de prise en main pour des windsurfers très aguerris, mais qui n\'avais jamais mis un pied du une planche de windfoil (plus habituées à la RSX). On constate assez rapidement que les nouveaux foils comme le Horue permettent une prise en main ultra-rapide ... ceci tranche avec ce que nous avons connus ne serait-ce qu\'il y a un an.</p><p>On vous laisse juger le résultat de cette première heure de pratique sur notre Foil Horue, monté pour l\'une sur notre proto windfoil, et pour l\'autre sur une Exocet RS3.</p><p><br></p><iframe width="560" height="315" src="https://www.youtube.com/embed/uO0d735po20" frameborder="0" allowfullscreen=""></iframe>
-
-',
+            'body' => '<p>Ce WE, &agrave; l\'occasion d\'une journ&eacute;e test Windfoil &agrave; Serre Pon&ccedil;on, nous avons eu l\'occasion de mettre le pied &agrave; l\'&eacute;trier pour B&eacute;r&eacute;nice et Jeanne, 2 athl&egrave;tes du p&ocirc;le France de Marseille. Cela a permi de mesurer la vitesse de prise en main pour des windsurfers tr&egrave;s aguerris, mais qui n\'avaient jamais mis un pied sur une planche de windfoil (plus habitu&eacute;es &agrave; la RSX). On constate assez rapidement que les nouveaux foils comme le Horue permettent une prise en main ultra-rapide ... ceci tranche avec ce que nous avons connus ne serait-ce qu\'il y a un an.</p>
+<p>On vous laisse juger le r&eacute;sultat de cette premi&egrave;re heure de pratique sur notre Foil Horue, mont&eacute; pour l\'une sur notre proto windfoil, et pour l\'autre sur une Exocet RS3.</p>
+<p>&nbsp;</p>
+<p><iframe src="https://www.youtube.com/embed/uO0d735po20" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
                 'status' => 'Published',
-                'views' => 722,
-                'created_at' => '2021-10-02 01:00:38',
-                'updated_at' => '2021-10-02 01:00:38',
+                'views' => 723,
+                'last_ip' => '::1',
+                'created_at' => '2016-08-02 01:00:38',
+                'updated_at' => '2022-03-23 23:22:39',
             ),
             4 => 
             array (
@@ -304,6 +309,7 @@ class PostsTableSeeder extends Seeder
 ',
                 'status' => 'Published',
                 'views' => 6637,
+                'last_ip' => NULL,
                 'created_at' => '2016-08-04 17:28:01',
                 'updated_at' => '2016-08-04 17:28:01',
             ),
@@ -421,6 +427,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 10584,
+            'last_ip' => NULL,
             'created_at' => '2017-02-27 16:31:02',
             'updated_at' => '2017-02-27 16:31:02',
         ),
@@ -436,6 +443,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 1516,
+            'last_ip' => NULL,
             'created_at' => '2017-03-03 10:15:06',
             'updated_at' => '2017-03-03 10:15:06',
         ),
@@ -451,6 +459,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 1653,
+            'last_ip' => NULL,
             'created_at' => '2017-03-07 16:19:46',
             'updated_at' => '2017-03-07 16:19:46',
         ),
@@ -477,6 +486,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 2530,
+            'last_ip' => NULL,
             'created_at' => '2017-03-07 17:06:09',
             'updated_at' => '2017-03-07 17:06:09',
         ),
@@ -492,6 +502,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 857,
+            'last_ip' => NULL,
             'created_at' => '2021-12-02 01:00:38',
             'updated_at' => '2021-12-02 01:00:38',
         ),
@@ -528,6 +539,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
             'status' => 'Published',
             'views' => 1404,
+            'last_ip' => NULL,
             'created_at' => '2017-03-30 18:37:07',
             'updated_at' => '2017-03-30 18:37:07',
         ),
@@ -550,6 +562,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
         'status' => 'Published',
         'views' => 872,
+        'last_ip' => NULL,
         'created_at' => '2017-04-03 12:40:49',
         'updated_at' => '2017-04-03 12:40:49',
     ),
@@ -565,6 +578,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 ',
         'status' => 'Published',
         'views' => 1637,
+        'last_ip' => NULL,
         'created_at' => '2017-05-09 12:21:32',
         'updated_at' => '2017-05-09 12:21:32',
     ),
@@ -582,6 +596,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 <p>&nbsp;</p>',
         'status' => 'Published',
         'views' => 2301,
+        'last_ip' => NULL,
         'created_at' => '2017-07-28 12:58:47',
         'updated_at' => '2017-07-28 12:58:47',
     ),
@@ -691,6 +706,7 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 <p><iframe src="https://www.youtube.com/embed/3zXBm6jyrQ4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
 'views' => 4429,
+'last_ip' => NULL,
 'created_at' => '2017-10-02 12:27:59',
 'updated_at' => '2022-02-19 13:06:28',
 ),
@@ -731,6 +747,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 3278,
+'last_ip' => NULL,
 'created_at' => '2022-02-13 08:19:02',
 'updated_at' => '2022-02-13 08:19:02',
 ),
@@ -778,6 +795,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 2251,
+'last_ip' => NULL,
 'created_at' => '2017-10-18 18:05:14',
 'updated_at' => '2017-10-18 18:05:14',
 ),
@@ -793,6 +811,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 722,
+'last_ip' => NULL,
 'created_at' => '2018-04-16 00:34:29',
 'updated_at' => '2018-04-16 00:34:29',
 ),
@@ -812,6 +831,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 931,
+'last_ip' => NULL,
 'created_at' => '2018-04-16 00:52:55',
 'updated_at' => '2018-04-16 00:52:55',
 ),
@@ -827,6 +847,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1596,
+'last_ip' => NULL,
 'created_at' => '2022-02-16 08:19:02',
 'updated_at' => '2022-02-16 08:19:02',
 ),
@@ -842,6 +863,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1021,
+'last_ip' => NULL,
 'created_at' => '2018-05-18 11:26:43',
 'updated_at' => '2018-05-18 11:26:43',
 ),
@@ -914,6 +936,7 @@ array (
 </ul>',
 'status' => 'Published',
 'views' => 17474,
+'last_ip' => NULL,
 'created_at' => '2018-06-04 10:45:15',
 'updated_at' => '2022-02-19 20:57:25',
 ),
@@ -929,6 +952,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 360,
+'last_ip' => NULL,
 'created_at' => '2018-06-15 22:22:24',
 'updated_at' => '2018-06-15 22:22:24',
 ),
@@ -988,6 +1012,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1470,
+'last_ip' => NULL,
 'created_at' => '2018-06-19 12:45:03',
 'updated_at' => '2018-06-19 12:45:03',
 ),
@@ -1090,6 +1115,7 @@ array (
 <p>Toutes ces remarques sont pertinentes, et th&eacute;oriquement justes. Dans les faits, le syst&egrave;me d\'assemblage Tuttle n\'est pas parfait, mais il est l&agrave; et on fait avec. Les solutions que nous pr&eacute;sentons ici fonctionnent parfaitement, y compris l\'appui en fond de boitier. Nous avons test&eacute; ces solutions depuis des mois et &ccedil;a marche sans risque pour la structure des planches ni du foil, donc pourquoi s\'en priver ?</p>',
 'status' => 'Published',
 'views' => 4424,
+'last_ip' => NULL,
 'created_at' => '2018-06-25 14:37:02',
 'updated_at' => '2022-02-19 20:56:22',
 ),
@@ -1143,6 +1169,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1042,
+'last_ip' => NULL,
 'created_at' => '2018-06-27 22:44:18',
 'updated_at' => '2018-06-27 22:44:18',
 ),
@@ -1242,6 +1269,7 @@ array (
 </div>',
 'status' => 'Published',
 'views' => 2892,
+'last_ip' => NULL,
 'created_at' => '2018-07-10 14:13:39',
 'updated_at' => '2022-02-19 13:13:42',
 ),
@@ -1252,20 +1280,20 @@ array (
 'post_categories_id' => 2,
 'title' => 'Comment voler dans moins de 10knt ?',
 'description' => 'Cela nécessite à la fois un matériel bien choisie, et une technique aboutie. Voici nos conseils',
-'body' => '<p>Voler dans moins de 10 knt est le graal de tout windfoileur. Cela nécessite à la fois un matériel bien choisie, et une technique aboutie. Voici nos conseils</p>
+'body' => '<p>Voler dans moins de 10 knt est le graal de tout windfoileur. Cela n&eacute;cessite &agrave; la fois un mat&eacute;riel bien choisi, et une technique aboutie. Voici nos conseils</p>
 <h3>Dans l\'ordre d\'importance</h3>
 <ol>
-<li>Avoir un mat très dynamique (100%) et parfaitement adapté à la voile ... c\'est indispensable pour un pumping efficace</li>
-<li>Trouver la taille de voile idéale par rapport à votre gabarit et votre condition physique. Pour mes 78kg, entre 8 et 9m. Trop petit =  pas assez d\'appui; trop gros = mouvement pas assez tonique</li>
-<li>En fonction de son matos, trouver la bonne technique de pumping. En général, avec des mats très dynamique, le plus efficace passe par des petits mouvements pas très amples proches de la fréquence de raisonnance du gréement. Dans le cas d\'un gréement plus mou, on privilégiera des mouvements plus amples mais plus lents.</li>
+<li>Avoir un mat tr&egrave;s dynamique (100%) et parfaitement adapt&eacute; &agrave; la voile ... c\'est indispensable pour un pumping efficace</li>
+<li>Trouver la taille de voile id&eacute;ale par rapport &agrave; votre gabarit et votre condition physique. Pour mes 78kg, entre 8 et 9m. Trop petit = &nbsp;pas assez d\'appui, trop gros = mouvement pas assez tonique</li>
+<li>En fonction de son matos, trouver la bonne technique de pumping. En g&eacute;n&eacute;ral, avec des mats tr&egrave;s dynamique, le plus efficace passe par des petits mouvements pas tr&egrave;s amples proches de la fr&eacute;quence de raisonnance du gr&eacute;ement. Dans le cas d\'un gr&eacute;ement plus mou, on privil&eacute;giera des mouvements plus amples mais plus lents.</li>
 </ol>
-<h3>Technique de décollage</h3>
-<p>Dans tous les cas, on va commencer avec le gréement pour générer un appui aérodynamique, puis dès que celui ci est trouvé, on va transférer le pumping du haut du corps vers les pieds pour pousser sur le foil et lui faire prendre de la vitesse.</p>
-<p>En fonction du flotteur, on sera plus ou moins abattu ... en général quasi travers avec un flotteur étroit. Avec un flotteur très large au cul, on commence travers pour trouver l\'appui aérodynamique, puis on abat au fur et à mesure que l\'on transfert le pumping vers les pieds. Dès que le foil déleste la planche, on re-loffe (sans appuyer sur les talon !!!) pour ré-aumgenter l\'appui dans le voile grâce au vent apparent.</p>
-<p>Modèle de foil</p>
-<p>On lit tout et son contraire concernant le foil qui volera le plus tôt. Pour faire un point précis, nous avons choisi de faire un test objectif avec quelques foils que nous avions sous la main, en ne modifiant que ce paramètre (même flotteur, gréement, pilote, vent). Voici le résultat, du foil décollant le plus facilement (et permettant de rester en l\'air) , à celui décoillant les plus difficilement parmi les foils testée ce jour là</p>
+<h3>Technique de d&eacute;collage</h3>
+<p>Dans tous les cas, on va commencer avec le gr&eacute;ement pour g&eacute;n&eacute;rer un appui a&eacute;rodynamique, puis d&egrave;s que celui ci est trouv&eacute;, on va transf&eacute;rer le pumping du haut du corps vers les pieds pour pousser sur le foil vers l\'avant et lui faire prendre de la vitesse.</p>
+<p>En fonction du flotteur, on sera plus ou moins abattu ... en g&eacute;n&eacute;ral quasi travers avec un flotteur &eacute;troit. Avec un flotteur tr&egrave;s large au cul, on commence travers pour trouver l\'appui a&eacute;rodynamique, puis on abat au fur et &agrave; mesure que l\'on transfert le pumping vers les pieds. D&egrave;s que le foil d&eacute;leste la planche, on re-loffe (sans appuyer sur les talon !!!) pour r&eacute;-aumgenter l\'appui dans le voile gr&acirc;ce au vent apparent.</p>
+<p>Mod&egrave;le de foil</p>
+<p>On lit tout et son contraire concernant le foil qui volera le plus t&ocirc;t. Pour faire un point pr&eacute;cis, nous avons choisi de faire un test objectif avec quelques foils que nous avions sous la main, en ne modifiant que ce param&egrave;tre (m&ecirc;me flotteur, gr&eacute;ement, pilote, vent). Voici le r&eacute;sultat, du foil d&eacute;collant le plus facilement (et permettant de rester en l\'air) , &agrave; celui d&eacute;collant le plus difficilement parmi les foils test&eacute;e ce jour l&agrave;</p>
 <ul>
-<li>Alpinefoil Race + Aile Regara 1100</li>
+<li>Alpinefoil Race + Aile Regatta 1100</li>
 <li>LK race avec aile L</li>
 <li>F4 Race 120+ avec aile 1000</li>
 <li>Phantom IRIS X avec aile 950</li>
@@ -1276,14 +1304,14 @@ array (
 <li>Fanatic Flow 900</li>
 <li>AFS 95 avec aile S950</li>
 </ul>
-<div>Ce test montre que le décollage n\'est clairment pas proporionnel à la surface de l\'aile contrairement aux idées reçues. Tous les foils testés ici sont équipés avec des ailes assez grosses.</div>
-<div>Je précise que dans le vent très faible du jour, une fois en l\'air, les vitesses des foils étaient très différentes, et coté décollage, il a des groupes qui se détachent car certains sont assez proches (l\'alpine et le loke, ensuite les F4, phantom, Starboard, puis le gaastra et le Taaroa)</div>
-<div></div>
-',
+<div>Ce test montre que le d&eacute;collage n\'est clairement pas proportionnel &agrave; la surface de l\'aile contrairement aux id&eacute;es re&ccedil;ues. Tous les foils test&eacute;s ici sont &eacute;quip&eacute;s avec des ailes assez grosses mais le Supercruiser avec son aile de 1700cm2 ne sort pas en t&ecirc;te, loin de l&agrave;.</div>
+<div>Je pr&eacute;cise que dans le vent tr&egrave;s faible du jour, une fois en l\'air, les vitesses des foils &eacute;taient tr&egrave;s diff&eacute;rentes, et cot&eacute; d&eacute;collage, il a des groupes qui se d&eacute;tachent car certains sont assez proches (l\'alpine et le loke, ensuite les F4, phantom, Starboard, puis le gaastra et le Taaroa)</div>
+<div>&nbsp;</div>',
 'status' => 'Published',
-'views' => 1560,
+'views' => 1561,
+'last_ip' => '::1',
 'created_at' => '2021-11-02 01:00:38',
-'updated_at' => '2021-11-02 01:00:38',
+'updated_at' => '2022-03-23 23:20:36',
 ),
 28 => 
 array (
@@ -1297,6 +1325,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 240,
+'last_ip' => NULL,
 'created_at' => '2018-08-14 23:27:01',
 'updated_at' => '2018-08-14 23:27:01',
 ),
@@ -1312,6 +1341,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 453,
+'last_ip' => NULL,
 'created_at' => '2018-08-20 23:55:41',
 'updated_at' => '2018-08-20 23:55:41',
 ),
@@ -1332,6 +1362,7 @@ array (
 <p>Au final, en utilisation foill, la F-Type &eacute;crase litt&eacute;ralement la Volt. Que ce soit en terme de performances et que d\'agr&eacute;ment, il n\'y a pas photo !</p>',
 'status' => 'Published',
 'views' => 876,
+'last_ip' => NULL,
 'created_at' => '2018-09-04 21:21:02',
 'updated_at' => '2022-02-19 22:23:54',
 ),
@@ -1426,6 +1457,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 3618,
+'last_ip' => NULL,
 'created_at' => '2018-10-02 00:14:00',
 'updated_at' => '2018-10-02 00:14:00',
 ),
@@ -1541,9 +1573,10 @@ array (
 </div>
 </div>',
 'status' => 'Published',
-'views' => 4321,
+'views' => 4322,
+'last_ip' => '::1',
 'created_at' => '2022-02-02 01:00:38',
-'updated_at' => '2022-02-02 01:00:38',
+'updated_at' => '2022-03-23 23:23:28',
 ),
 33 => 
 array (
@@ -1554,20 +1587,20 @@ array (
 'description' => 'En foil, le choix de la taille de la voile et de celle du flotteur sont très liées.',
 'body' => '<p><img src="/storage/photos/1/legacy/c7ab117940c0c9b25ec382fb4bc79b50.jpg" alt="" /></p>
 <p>En foil, le choix de la taille de la voile et de celle du flotteur sont tr&egrave;s li&eacute;es. C\'est tr&egrave;s important de bien comprendre ce point lorsque l\'on choisi son mat&eacute;riel.</p>
-<p>C\'est le domaine le plus complexe &agrave; appr&eacute;hender tant les id&eacute;es re&ccedil;ues sont encr&eacute;es. On le sait, le foil attire avant tout les d&eacute;butants pour son c&ocirc;t&eacute; light wind. Ils ne passent &agrave; une navigation foil tout temps qu\'apr&egrave;s plusieurs mois ou saisons de pratique.</p>
-<p>Pour de nombreux planchistes "aileron", petit temps rime avec flotteur large. Ils font donc souvent ce raccourci erron&eacute; : "pour naviguer dans le light, il suffit de prendre un flotteur le plus large possible, un foil et une petite voile ("on m\'a dit qu\'avec le foil tu mets 2m2 de moins"). Pass&eacute; les premi&egrave;res sessions pour appr&eacute;hender la b&ecirc;te, on les voit tous revenir en nous disant "je ne comprend pas, il me faut entre 15 et 20 knt de vent pour voler, ce n\'est pas normal" ... oui, je confirme, ce n\'est pas normal !!! Tout simplement parce qu\'un flotteur large n&eacute;cessite une pouss&eacute;e v&eacute;lique importante pour le faire acc&eacute;l&eacute;rer. N\'oublions pas que les formula &eacute;taient utilis&eacute;es avec 11.7m2, et qu\'un flotteur de 135L s\'utilise souvent avec 8,5m2. M&ecirc;me si le foil permet de naviguer dans peu de vent, ne croyez pas que vous arrivez &agrave; faire d&eacute;coller une planche de 85cm de large avec 7m2 dans 8 knt de vent, c\'est tout simplement impossible &agrave; moins de peser 45kg.</p>
+<p>C\'est le domaine le plus complexe &agrave; appr&eacute;hender tant les id&eacute;es re&ccedil;ues sont encr&eacute;es. On le sait : le foil attire avant tout les d&eacute;butants pour son c&ocirc;t&eacute; light wind. Ils ne passent &agrave; une navigation foil tout temps qu\'apr&egrave;s plusieurs mois ou saisons de pratique.</p>
+<p>Pour de nombreux planchistes "aileron", petit temps rime avec flotteur large. Ils font donc souvent ce raccourci erron&eacute; : "pour naviguer dans le light, il suffit de prendre un flotteur le plus large possible, un foil et une petite voile ("on m\'a dit qu\'avec le foil tu mets 2m2 de moins"). Pass&eacute; les premi&egrave;res sessions pour appr&eacute;hender la b&ecirc;te, on les voit tous revenir en nous disant "je ne comprends pas, il me faut entre 15 et 20 knt de vent pour voler, ce n\'est pas normal" ... oui, je confirme, ce n\'est pas normal !!! Tout simplement parce qu\'un flotteur large n&eacute;cessite une pouss&eacute;e v&eacute;lique importante pour le faire acc&eacute;l&eacute;rer. N\'oublions pas que les formula &eacute;taient utilis&eacute;es avec 11.7m2, et qu\'un flotteur de 135L s\'utilise souvent avec 8,5m2. M&ecirc;me si le foil permet de naviguer dans peu de vent, ne croyez pas que vous arrivez &agrave; faire d&eacute;coller une planche de 85cm de large avec 7m2 dans 8 knt de vent, c\'est tout simplement impossible &agrave; moins de peser 45kg.</p>
 <h3>Id&eacute;e re&ccedil;ue num&eacute;ro 1 : un flotteur large part plus vite au planning</h3>
-<p>Tous ceux qui font se raccourci ont dans la t&ecirc;te les gros flotteurs de windsurf light wind, voir les formula qui sont effectivement con&ccedil;us pour naviguer dans moins de 10 Knt. Ils ont juste oubli&eacute; petit un d&eacute;tail : en formula, on utilise une voile de 10.7m2 ... Etes vous r&eacute;ellement pr&ecirc;t &agrave; naviguer en foil avec une voile aussi grosse ?</p>
-<p>Un flotteur large entraine beaucoup de frottement tant qu\'il n\'est pas parti au planning. Il a donc besoin d\'une tr&egrave;s forte pouss&eacute;e v&eacute;lique pour le faire acc&eacute;l&eacute;rer. Si vous avez un doute, faites le test : essayez de partir au plnning avec une formula et une voile de 6.5 m2 .... vous verrez qu\'il vous faudra au moins une 15aine de knt !</p>
+<p>Tous ceux qui font ce raccourci ont dans la t&ecirc;te les gros flotteurs de windsurf light wind, voir les formula qui sont effectivement con&ccedil;us pour naviguer dans moins de 10 Knt. Ils ont juste oubli&eacute; petit un d&eacute;tail : en formula, on utilise une voile de 10.7m2 ... Etes vous r&eacute;ellement pr&ecirc;t &agrave; naviguer en foil avec une voile aussi grosse ?</p>
+<p>Un flotteur large entraine beaucoup de frottement tant qu\'il n\'est pas parti au planning. Il a donc besoin d\'une tr&egrave;s forte pouss&eacute;e v&eacute;lique pour le faire acc&eacute;l&eacute;rer. Si vous avez un doute, faites le test : essayez de partir au planning avec une formula et une voile de 6 m2 .... vous verrez qu\'il vous faudra au moins une 15aine de knt !</p>
 <h3>Id&eacute;e re&ccedil;ue num&eacute;ro 2 : une voile plus grosse permet de naviguer avec moins de vent</h3>
 <p>Plus la voile est grande, plus elle va g&eacute;n&eacute;rer de puisance, mais plus elle va &ecirc;tre lourde. Comme notre objectif est de d&eacute;coller, une voile qui enfonce la planche dans l\'eau ne va pas nous aider.</p>
 <p>En windfoil, on est vite g&ecirc;n&eacute; en vol si la voile est trop puissante. Par contre, il faut de la puissance pour d&eacute;coller. C\'est tout le dilemne . La solution est d\'utiliser une voile de taille raisonnable pour &ecirc;tre &agrave; l\'aise en l\'air, et de pomper pour g&eacute;n&eacute;rer de la puissance &agrave; bas r&eacute;gime. Il faut donc avec une voile suffisament l&eacute;g&egrave;re pour avoir un mouvement de pumping efficace.</p>
 <p>Comme pour le flotteur, il faudra trouver le bon compromis</p>
 <h3>Id&eacute;e re&ccedil;ue num&eacute;ro 3 : en foil, le flotteur importe peu</h3>
-<p>Malheureusement, vous vous rendez vite compte que l\'on passe beaucoup de temps au coutant avec l\'eau. Que ce soit lors du d&eacute;collage , lors des manoeuvres, ou lorsque la planche vient effleurer l\'eau, le flotteur a une vraie influance sur la navigation en foil.</p>
-<p>Qui plus est, la position des footstraps, la position du foil, et la position du pied de mat conditionnent enti&egrave;rement l\'&eacute;quilibre du foil en l\'air.&nbsp;</p>
+<p>Malheureusement, vous vous rendez vite compte que l\'on passe beaucoup de temps au contact avec l\'eau. Que ce soit lors du d&eacute;collage , lors des manoeuvres, ou lorsque la planche vient effleurer l\'eau, le shape flotteur a une vraie influance sur la navigation en foil.</p>
+<p>Qui plus est, la position des footstraps, la position du foil, et la position du pied de mat conditionnent enti&egrave;rement l\'&eacute;quilibre du foil en l\'air. C\'est ainsi peut &ecirc;tre le plus impostant : la g&eacute;om&eacute;trie conditionnne tout l\'&eacute;quilibre en vol, et donc une grande partie du plaisir.&nbsp;</p>
 <h3>Quelle est la bonne taille ?</h3>
-<p>Si on a compris ce qui pr&eacute;c&egrave;de, on en d&eacute;duira que le choix de la taille de voile max (pour le petit temps) est tr&egrave;s li&eacute; au choix du flotteur ... ou que le choix du flotteur doit se faire en fonction de la voile que l\'on compte utiliser. Avec le m&ecirc;me foil, le m&ecirc;me mod&egrave;le de voile et dans les m&ecirc;mes conditions, si on a besoin de 7,5m2 pour un flotteur de 80cm de large, il faudra 8,6m2 au minimum pour un flotteur de 90cm de large ... c\'est un test que nous avons fait &agrave; plusieurs reprise et qui s\'est v&eacute;rifi&eacute; &agrave; chaque fois.</p>
+<p>Si on a int&eacute;gr&eacute; ce qui pr&eacute;c&egrave;de, vous en d&eacute;duirez que le choix de la taille de voile max (pour le petit temps) est tr&egrave;s li&eacute; au choix du flotteur ... ou que le choix du flotteur doit se faire en fonction de la voile que l\'on compte utiliser. Avec le m&ecirc;me foil, le m&ecirc;me mod&egrave;le de voile et dans les m&ecirc;mes conditions, si on a besoin de 7,5m2 pour un flotteur de 80cm de large, il faudra 8,6m2 au minimum pour un flotteur de 90cm de large ... c\'est un test que nous avons fait &agrave; plusieurs reprise et qui s\'est v&eacute;rifi&eacute; &agrave; chaque fois.</p>
 <p>Vous en d&eacute;duirez ais&eacute;ment que</p>
 <ul>
 <li>Si vous voulez naviguer avec 7m2 max dans le light, choisissez un flotteur de 75cm de large&nbsp;</li>
@@ -1580,9 +1613,10 @@ array (
 <p>&nbsp;</p>
 <p>&nbsp;</p>',
 'status' => 'Published',
-'views' => 1543,
+'views' => 1544,
+'last_ip' => '::1',
 'created_at' => '2018-10-02 01:02:45',
-'updated_at' => '2022-02-19 22:19:55',
+'updated_at' => '2022-03-23 23:31:55',
 ),
 34 => 
 array (
@@ -1605,6 +1639,7 @@ array (
 <p>&nbsp;</p>',
 'status' => 'Published',
 'views' => 765,
+'last_ip' => NULL,
 'created_at' => '2022-02-10 08:19:02',
 'updated_at' => '2022-02-10 08:19:02',
 ),
@@ -1618,6 +1653,7 @@ array (
 'body' => '<p>A venir</p>',
 'status' => 'Published',
 'views' => 60,
+'last_ip' => NULL,
 'created_at' => '2018-10-02 01:07:32',
 'updated_at' => '2022-02-19 20:59:11',
 ),
@@ -1652,6 +1688,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 2340,
+'last_ip' => NULL,
 'created_at' => '2018-10-02 01:09:46',
 'updated_at' => '2018-10-02 01:09:46',
 ),
@@ -1689,6 +1726,7 @@ array (
 <p><img src="/storage/photos/1/legacy/cale_stab_noire_1.5_93_.jpg" alt="Herve en plein surf" /></p>',
 'status' => 'Published',
 'views' => 243,
+'last_ip' => NULL,
 'created_at' => '2019-01-13 19:15:53',
 'updated_at' => '2019-01-13 19:15:53',
 ),
@@ -1711,6 +1749,7 @@ array (
 </div>',
 'status' => 'Published',
 'views' => 674,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:25:26',
 'updated_at' => '2019-01-22 00:25:26',
 ),
@@ -1726,6 +1765,7 @@ src="https://www.youtube.com/embed/a92iMXUiO00?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 254,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:28:31',
 'updated_at' => '2019-01-22 00:28:31',
 ),
@@ -1741,6 +1781,7 @@ src="https://www.youtube.com/embed/aNBteEUL4zE?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 87,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:37:13',
 'updated_at' => '2019-01-22 00:37:13',
 ),
@@ -1754,6 +1795,7 @@ array (
 'body' => '<p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
 'views' => 532,
+'last_ip' => NULL,
 'created_at' => '2022-02-14 08:19:02',
 'updated_at' => '2022-02-14 08:19:02',
 ),
@@ -1769,6 +1811,7 @@ src="https://www.youtube.com/embed/wPb1TQTSpxE?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 432,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:41:52',
 'updated_at' => '2019-01-22 00:41:52',
 ),
@@ -1784,6 +1827,7 @@ src="https://www.youtube.com/embed/XS2s1CqZfq8?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 132,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:43:06',
 'updated_at' => '2019-01-22 00:43:06',
 ),
@@ -1799,6 +1843,7 @@ src="https://www.youtube.com/embed/sapOJ1xN2Gc?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 43,
+'last_ip' => NULL,
 'created_at' => '2019-01-22 00:44:08',
 'updated_at' => '2019-01-22 00:44:08',
 ),
@@ -1814,6 +1859,7 @@ src="https://www.youtube.com/embed/uIoVgQyYIDw?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 86,
+'last_ip' => NULL,
 'created_at' => '2017-04-22 00:45:09',
 'updated_at' => '2017-04-22 00:45:09',
 ),
@@ -1830,6 +1876,7 @@ src="https://www.youtube.com/embed/vDuLzwIsi2E?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
 'status' => 'Published',
 'views' => 234,
+'last_ip' => NULL,
 'created_at' => '2017-05-22 00:46:13',
 'updated_at' => '2017-05-22 00:46:13',
 ),
@@ -1931,6 +1978,7 @@ array (
 <p><img title="Gliss Test Session" src="YYYYYYGTS.jpg" alt="Gliss Test Session" /></p>',
 'status' => 'Published',
 'views' => 345,
+'last_ip' => NULL,
 'created_at' => '2019-03-07 17:35:16',
 'updated_at' => '2019-03-07 17:35:16',
 ),
@@ -1948,6 +1996,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1341,
+'last_ip' => NULL,
 'created_at' => '2019-03-28 20:52:18',
 'updated_at' => '2019-03-28 20:52:18',
 ),
@@ -2020,6 +2069,7 @@ array (
 <div><img src="/storage/photos/1/legacy/u38483s1.jpg" alt="Exocet FReefoil AST" />&nbsp;<img src="/storage/photos/1/legacy/u38235s1.jpg" alt="Tabou Airride 81 AST" /></div>',
 'status' => 'Published',
 'views' => 4321,
+'last_ip' => NULL,
 'created_at' => '2019-05-23 13:36:09',
 'updated_at' => '2022-02-19 22:15:23',
 ),
@@ -2074,9 +2124,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 4321,
+'views' => 4322,
+'last_ip' => '::1',
 'created_at' => '2022-02-16 08:19:02',
-'updated_at' => '2022-02-16 08:19:02',
+'updated_at' => '2022-03-23 23:46:07',
 ),
 51 => 
 array (
@@ -2110,6 +2161,7 @@ Entre le FAST Hotel et la base nautique, votre GPS préféré aura aussi peut ê
 ',
 'status' => 'Published',
 'views' => 234,
+'last_ip' => NULL,
 'created_at' => '2019-06-14 22:30:16',
 'updated_at' => '2019-06-14 22:30:16',
 ),
@@ -2135,6 +2187,7 @@ array (
 <p><img src="/storage/photos/1/legacy/s8.jpg" alt="conviviale savines juin 2019" /></p>',
 'status' => 'Published',
 'views' => 214,
+'last_ip' => NULL,
 'created_at' => '2019-07-03 12:29:21',
 'updated_at' => '2019-07-03 12:29:21',
 ),
@@ -2155,6 +2208,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 1434,
+'last_ip' => NULL,
 'created_at' => '2019-08-07 14:53:59',
 'updated_at' => '2019-08-07 14:53:59',
 ),
@@ -2204,6 +2258,7 @@ array (
 <p><img src="/storage/photos/1/legacy/chapelle-saint-michel.jpg" alt="Raid St Michel GPS" /></p>',
 'status' => 'Published',
 'views' => 123,
+'last_ip' => NULL,
 'created_at' => '2019-08-19 19:04:21',
 'updated_at' => '2019-08-19 19:04:21',
 ),
@@ -2219,6 +2274,7 @@ array (
 <p><iframe src="https://www.youtube.com/embed/PfWiSezhjAM" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
 'views' => 97,
+'last_ip' => NULL,
 'created_at' => '2019-09-21 23:57:09',
 'updated_at' => '2019-09-21 23:57:09',
 ),
@@ -2256,6 +2312,7 @@ array (
 <p><img src="http://www.afwf.fr/wp-content/uploads/2019/05/la-ciotat-detail-1-1024x663.jpg" width="1024" height="663" /></p>',
 'status' => 'Published',
 'views' => 125,
+'last_ip' => NULL,
 'created_at' => '2020-04-09 13:16:53',
 'updated_at' => '2020-04-09 13:16:53',
 ),
@@ -2275,6 +2332,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 76,
+'last_ip' => NULL,
 'created_at' => '2020-03-07 16:42:57',
 'updated_at' => '2020-03-07 16:42:57',
 ),
@@ -2311,6 +2369,7 @@ array (
 <p>Dès que vous achetez un pack board + foil chez GlissAttitude, nous réalisons pour vous tous les ajustements (ponçage du talon, ovalisation des trous, mise en place de vis CHC à la bonne taille, et éventuellement réglage du rake) .. pour que ce soit plug and play de vôtre côté.</p>',
 'status' => 'Published',
 'views' => 3421,
+'last_ip' => NULL,
 'created_at' => '2022-02-17 08:19:02',
 'updated_at' => '2022-02-17 08:19:02',
 ),
@@ -2345,6 +2404,7 @@ array (
 ',
 'status' => 'Published',
 'views' => 3214,
+'last_ip' => NULL,
 'created_at' => '2022-02-18 08:19:02',
 'updated_at' => '2022-02-18 08:19:02',
 ),
@@ -2360,6 +2420,7 @@ array (
 <p><img src="/storage/photos/1/legacy/test-day-exocet.jpg" alt="test exocet GlissAttitude" /></p>',
 'status' => 'Published',
 'views' => 54,
+'last_ip' => NULL,
 'created_at' => '2020-07-03 22:56:32',
 'updated_at' => '2020-07-03 22:56:32',
 ),
@@ -2408,9 +2469,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 4121,
+'views' => 4122,
+'last_ip' => '::1',
 'created_at' => '2022-02-20 08:19:02',
-'updated_at' => '2022-02-20 08:19:02',
+'updated_at' => '2022-03-23 23:45:56',
 ),
 62 => 
 array (
@@ -2440,9 +2502,10 @@ array (
 <p></p>
 <p>Si vous voulez en savoir plus sur les diverses solutions de protection de nez de flotteur, c\'est par <a href = "/blog/protection-nez-windfoil.html">ici</a></p>',
 'status' => 'Published',
-'views' => 352,
+'views' => 353,
+'last_ip' => '::1',
 'created_at' => '2022-02-19 08:19:02',
-'updated_at' => '2022-02-19 08:19:02',
+'updated_at' => '2022-03-23 23:46:01',
 ),
 63 => 
 array (
@@ -2593,6 +2656,7 @@ array (
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
 'status' => 'Published',
 'views' => 6120,
+'last_ip' => NULL,
 'created_at' => '2020-10-01 22:19:52',
 'updated_at' => '2020-10-01 22:19:52',
 ),
@@ -2718,9 +2782,10 @@ array (
 </table>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
 'status' => 'Published',
-'views' => 8290,
+'views' => 8291,
+'last_ip' => '::1',
 'created_at' => '2021-02-18 15:49:20',
-'updated_at' => '2021-02-18 15:49:20',
+'updated_at' => '2022-03-23 23:13:00',
 ),
 65 => 
 array (
@@ -2754,6 +2819,7 @@ array (
 <p>Pour finir, je soulignerai la gentillesse et l\'accueil tr&egrave;s chalereux des organisateurs (R&eacute;gis en t&ecirc;te). On reviendra l\'an prochain, promis !</p>',
 'status' => 'Published',
 'views' => 265,
+'last_ip' => NULL,
 'created_at' => '2021-06-16 18:49:57',
 'updated_at' => '2021-06-16 18:49:57',
 ),
@@ -2870,9 +2936,10 @@ array (
 <h3>Bilan</h3>
 <p>Comme je l&rsquo;avais annonc&eacute;, ce long post ne vas pas vous dire quel mod&egrave;le choisir, mais j&rsquo;esp&egrave;re qu&rsquo;il pourra vous permettre de r&eacute;fl&eacute;chir &agrave; vos envies, et &agrave; conforter les sensations que vous avez ressenti pour mieux exprimer votre besoin lors d&rsquo;un changement. A partir de l&agrave;, un professionnel comp&eacute;tent et honn&ecirc;te saura vous orienter vers le choix le plus pertinent pour vous.</p>',
 'status' => 'Published',
-'views' => 2567,
+'views' => 2568,
+'last_ip' => '::1',
 'created_at' => '2021-06-24 15:47:06',
-'updated_at' => '2022-02-19 22:13:51',
+'updated_at' => '2022-03-23 23:32:08',
 ),
 67 => 
 array (
@@ -2921,9 +2988,10 @@ array (
 <p><img src="/storage/photos/1/legacy/i16.jpeg" /></p>
 <p><img src="/storage/photos/1/legacy/i17.jpeg" /></p>',
 'status' => 'Published',
-'views' => 129,
+'views' => 130,
+'last_ip' => '::1',
 'created_at' => '2021-10-11 18:49:30',
-'updated_at' => '2021-10-11 18:49:30',
+'updated_at' => '2022-03-23 23:33:20',
 ),
 ));
         

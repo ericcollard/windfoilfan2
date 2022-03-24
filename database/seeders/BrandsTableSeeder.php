@@ -1066,8 +1066,8 @@ class BrandsTableSeeder extends Seeder
             116 => 
             array (
                 'id' => 117,
-                'name' => 'ZAG',
-                'slug' => 'zag',
+                'name' => 'Z FIN',
+                'slug' => 'zfin',
                 'logo_path' => NULL,
                 'body' => NULL,
                 'url' => NULL,

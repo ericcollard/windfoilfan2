@@ -5011,6 +5011,60 @@ array (
 'created_at' => '2022-03-10 21:02:20',
 'updated_at' => '2022-03-10 21:02:20',
 ),
+127 => 
+array (
+'id' => 135,
+'device_id' => 8,
+'user_id' => 5,
+'title' => 'GEN2 : Le diable se cache dans les détails',
+'body' => '<div class="row">
+<div class="col-4">
+<p><img class="img-fluid" src="/storage/photos/5/2022-03/cwc.jpg" alt="" /></p>
+</div>
+<div class="col-8">
+<h3>Contexte</h3>
+<p>Une fois n\'est pas coutume, je me suis permis de prendre du temps avant d\'&eacute;crire un compte rendu sur cet IRIS X 2022. Cela m\'a permis de l\'utiliser dans des conditions tr&egrave;s vari&eacute;es : de la pr&eacute;paration du D&eacute;fi Wind Corsica, aux sessions hivernales d\'Est &agrave; l\'Almanarre en passant par les coups de mistral bien irr&eacute;guliers &agrave; La ciotat. Il faut dire que les &eacute;volutions en windfoil sont d&eacute;sormais de plus en plus subtiles, et font l\'object d\'une recherche de compromis. Les produits les plus aboutis, exempts de d&eacute;fauts majeurs, demandent donc plus de temps pour en cerner tout le caract&egrave;re.</p>
+</div>
+</div>
+<h3>Changement de production</h3>
+<div class="row">
+<div class="col-8">
+<p>Sur le papier, cet IRIS X est inchang&eacute; depuis 3 saisons maintenant, et exterieurement, il faut avoir l\'oeil pour distinguer les &eacute;volutions. Mais comme souvent, le diable se cache dans les d&eacute;tails, et il peuvent faire une vraie diff&eacute;rence ! Soyons honn&egrave;tes, il s\'agit bien du m&ecirc;me mod&egrave;le : c\'est la construction qui a &eacute;volu&eacute; avec un changement d\'usine et un gros travail d\'industrialisation et de mise au point.</p>
+<p>De loin, on pourrait immaginer que sous-traiter la production d\'un foil en Asie se r&eacute;sume &agrave; concevoir des moules et donner des sp&eacute;cifications de layup ... mais coyez moi, on est loin du compte. J\'ai l\'occasion de suivre le processus de mise au point de plusieurs marques, et il est assez &eacute;tonnant de voir les efforts et le temps n&eacute;cessaire &agrave; l\'aboutissement vers un produit commercialisable. Sans rentrer plus dans les d&eacute;tails, je peux vous dire qu\'on relativise tr&egrave;s vite le cout du mat&eacute;riel qui pourrait para&icirc;tre &eacute;lev&eacute; vu de l\'exterieur.</p>
+<h3>G&eacute;n&eacute;ration 2</h3>
+<p>Apr&egrave;s cette petite parenth&egrave;se, revenons en &agrave; notre IRIS X 2022, et rentons un peu plus dans les d&eacute;tails. Comme la g&eacute;om&eacute;trie g&eacute;n&eacute;rale des &eacute;l&eacute;ments est inchang&eacute;e, les &eacute;volutions concernent 2 points</p>
+<ul>
+<li>la qualit&eacute; des moulages et le respect de la g&eacute;om&eacute;trie th&eacute;orique</li>
+<li>le processus et les mat&eacute;riaux utilis&eacute;s dans la structure</li>
+</ul>
+<p>Sur le premier point, il faut savoir que m&ecirc;me si les foils sont produits dans des moules, on est souvent surpris de voir combien les pi&egrave;ces peuvent r&eacute;guli&egrave;rement varier. Le respect de la g&eacute;om&eacute;trie th&eacute;orique reprose sur un tr&egrave;s subtil &eacute;quilibre entre la quantit&eacute; de mat&eacute;riaux ins&eacute;r&eacute;s dans le moule et les positionnements, de mani&egrave;re &agrave; ce que le moule ferme parfaitement sans risque de manque et donc de fragilisation des bords de fuite ultra fins. En ce qui concerne les foils Phantom, un &eacute;norme travail de mise au point a &eacute;t&eacute; r&eacute;alis&eacute; suite au changement d\'usine, avec une quantit&eacute; assez importante de prototypes. Le r&eacute;sultat est clairement &agrave; la hauteur de l\'effort consenti, avec les profils les plus fins et propres du march&eacute; sans aucune reprise manuelle (ailes et mat). Ici, pas de place aux al&eacute;as d\'une finition &agrave; la main : le respect de la g&eacute;om&eacute;trie nominale frise la perfection, et nous verrons que les sensations en navigation n\'y sont pas &eacute;trang&egrave;res.</p>
+<p>Sur le deuxi&egrave;me point (mat&eacute;riaux et structure), les plus observateurs remarqueront que les mats de IRIS X dit GEN2 n\'ont pas le m&ecirc;me aspect que les mats premi&egrave;re g&eacute;n&eacute;ration ... et ce n\'est pas un hazard : on ne voit plus les petits carr&eacute;s caract&eacute;ristiques d\'un tissus carbone en surface. Sans d&eacute;voiler les &eacute;volutions internes majeures de cette nouvelle construction, nous verrons que Phantom a r&eacute;ussi a offrir un ratio rigidit&eacute; &nbsp;/ &eacute;paisseur des profils en tr&egrave;s nette hausse par rapport &agrave; la version pr&eacute;c&eacute;dente.</p>
+</div>
+<div class="col-4">
+<p><img class="img-fluid" src="/storage/photos/5/2022-03/IMG_7972.jpeg" alt="" width="1200" height="707" /></p>
+</div>
+</div>
+<h3>Et sur l\'eau, quelle diff&eacute;rence ?</h3>
+<p>Bien &eacute;videmment, tous ces &eacute;l&eacute;ments n\'auraient aucun int&eacute;r&ecirc;t si on ne ressentait rien sur l\'eau ... alors qu\'est ce que &ccedil;a donne ?</p>
+<p>Pour &ecirc;tre tr&egrave;s clair, l\'IRIS X GEN 2 reste un IRIS X. Les yeux ferm&eacute;s, on reconnait parfaitement la signature des foils Phantom, &agrave; savoir une glisse tr&egrave;s fine et fluide, une totale absence de bruit ou de vibration (preuve de la qualit&eacute; des &eacute;coulements hydrodynamiques) et un caract&egrave;re plut&ocirc;t vif.</p>
+<h5>D&eacute;collage</h5>
+<p>Dans le la pack de s&eacute;rie, livr&eacute; avec les ailes 550 et 730, je me permets de pr&eacute;ciser une fois de plus ici que la 730, est bien une aile parfaitement adapt&eacute;e au Light wind. Cette aile remplace la 800 de la g&eacute;n&eacute;ration 1, mais malgr&eacute; la surface moins &eacute;lev&eacute;e, il faut bien int&eacute;grer que c\'est une aile puissante qui compense largement sa surface l&eacute;g&egrave;rement plus faible par une glisse &eacute;norme et une vitesse g&eacute;n&eacute;ratrice de portance. Pour donner des rep&egrave;res, elle est parfaotement adapt&eacute;e &agrave; une naviguation dans 8 knt en 8m2 .. &agrave; condition d\'avoir un minimum de technique). La 550 s\'utilise dans soucis &agrave; partir de 13-14 knt en 7m.</p>
+<p>Les diff&eacute;rences de sensation sont logiquement tr&egrave;s li&eacute;es aux 2 &eacute;volutions techniques du processus de construction.</p>
+<h5>La glisse</h5>
+<p>La glisse fait encore un pas en avant, avec des sensations carr&eacute;ment jouissives sur l\'aile de 550. On a beau avoir un assez grand stab sur cette version de s&eacute;rie (250cm2), &ccedil;a glisse tout seul, m&ecirc;me sans aller chercher des vents forts et sans se mettre dans le rouge. D\'ailleurs, c\'est en laissant vivre ce foil qu\'il est le plus efficace : il ne faut pas lui rentrer dedans mais le laisser travailler pour en tirer le meilleur.&nbsp;</p>
+<h5>Le contr&ocirc;le</h5>
+<p>M&ecirc;me si le Phantom reste vif, le contr&ocirc;le est encore plus facile qu\'avec la premi&egrave;re g&eacute;n&eacute;ration, gr&acirc;ce notamment &agrave; une meilleure rigidit&eacute; en torsion. La diff&eacute;rence sur le banc de banc de mesure n\'est pas &eacute;norme mais bien visible tout de m&ecirc;me .. et cela se sent sur l\'eau. Par ailleurs, pour avoir mesur&eacute; plusieurs mats, il semblerait que les &eacute;carts de production soient beaucoup mieux ma&icirc;tris&eacute;s que dans l\'ancienne production. A l\'&eacute;poque, nous avions mesur&eacute; de gros &eacute;carts de rigidit&eacute; d\'un mat &agrave; l\'autre. &nbsp;</p>
+<h3>Bilan</h3>
+<p>Le tour de force de Phantom est donc d\'avoir r&eacute;ussi &agrave; augmenter sensiblement la rigidit&eacute;, tout en r&eacute;duisant notablement l\'&eacute;paisseur du profil. Sur les mod&egrave;les de s&eacute;rie, on est ainsi pass&eacute; de 14.3 &agrave; 13.5mm d\'&eacute;paisseur maxi sur la base du mat !! Autant vous dire que le gain de glisse n\'est pas juste un hazard.&nbsp;</p>
+<p>Le r&eacute;sultat de tout ceci, c\'est un foil encore plus agr&eacute;able &agrave; naviguer, sur lequel on est plus serain. Par rapport &agrave; la version pr&eacute;c&eacute;dente, j\'ai notablement am&eacute;lior&eacute; mes vitesses moyennes de navigation en s&eacute;curit&eacute; (plus de 2 knt), avec r&eacute;guli&egrave;rement des V10s au dessus des 28 knt au travers (je sais, c\'est pas &eacute;norme pour certains 😂, mais pour moi qui ne suis pas comp&eacute;titeur, c\'est d&eacute;j&agrave; pas mal .. et surtout, je ne me mets pas plein largue en limite de contr&ocirc;le pour le faire 🙃).&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/5/2022-03/IMG_7973.jpeg" alt="" width="1200" height="707" /></p>',
+'test_equipment' => 'IRIS X MKII 85, et voiles HG4 et IRIS X MKII',
+'test_duration' => 20,
+'test_conditions' => 'Un peu de tout',
+'test_place' => 'Almanarre',
+'created_at' => '2022-03-20 08:54:37',
+'updated_at' => '2022-03-22 09:21:54',
+),
 ));
         
         

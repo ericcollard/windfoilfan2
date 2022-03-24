@@ -204,7 +204,7 @@
                     </div>
                     <h1 class="page-title">
                         <img src="{{ $device->brand->logoUrl() }}" alt="{{ $device->brand->name }} brand logo " class="brand-logo"/>
-                        <span>{{ $device->brand->name }} {{ $device->name }} {{ $device->year }}</span>
+                        <span><a href="{{ $device->brand->path() }}">{{ $device->brand->name }}</a> {{ $device->name }} {{ $device->year }}</span>
                     </h1>
 
 
