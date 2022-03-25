@@ -6,12 +6,28 @@ use App\Http\Requests\StoreStatisticRequest;
 use App\Http\Requests\UpdateStatisticRequest;
 use App\Models\Device;
 use App\Models\Statistic;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class StatisticController extends Controller
 {
 
-    public function calculate()
+    /**
+     * Create the controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->authorizeResource(User::class, 'user');
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
 
         DB::statement("INSERT into device_statistics (hits,device_id,day)
@@ -27,7 +43,7 @@ class StatisticController extends Controller
 
 
         DB::statement(
-       "UPDATE
+            "UPDATE
     devices AS t
     LEFT JOIN (
         SELECT
@@ -51,18 +67,6 @@ SET
             $device->updateViewsfromStatistics();
         }*/
         return view('statistics.calculate', compact('devices'));
-    }
-
-
-
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
     }
 
     /**

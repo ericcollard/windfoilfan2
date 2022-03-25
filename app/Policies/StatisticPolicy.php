@@ -18,9 +18,8 @@ class StatisticPolicy
      */
     public function viewAny(User $user)
     {
-        //
+        return false;
     }
-
     /**
      * Determine whether the user can view the model.
      *
@@ -30,7 +29,7 @@ class StatisticPolicy
      */
     public function view(User $user, Statistic $statistic)
     {
-        //
+        return false;
     }
 
     /**
@@ -41,7 +40,7 @@ class StatisticPolicy
      */
     public function create(User $user)
     {
-        //
+        return false;
     }
 
     /**
@@ -53,7 +52,7 @@ class StatisticPolicy
      */
     public function update(User $user, Statistic $statistic)
     {
-        //
+        return false;
     }
 
     /**
@@ -65,7 +64,7 @@ class StatisticPolicy
      */
     public function delete(User $user, Statistic $statistic)
     {
-        //
+        return false;
     }
 
     /**
@@ -77,7 +76,7 @@ class StatisticPolicy
      */
     public function restore(User $user, Statistic $statistic)
     {
-        //
+        return false;
     }
 
     /**
@@ -89,6 +88,6 @@ class StatisticPolicy
      */
     public function forceDelete(User $user, Statistic $statistic)
     {
-        //
+        return false;
     }
 }

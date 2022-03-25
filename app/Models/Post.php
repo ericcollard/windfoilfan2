@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-    // TODO : gérer les stat siur les posts
 
     protected $fillable = ['user_id','title','body','description','created_at','post_categories_id','views','last_ip'];
 

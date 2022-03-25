@@ -82,7 +82,7 @@ Route::get('/brands/{brand}',[BrandController::class, 'show'])->name('brand.show
 Route::patch('/brands/{brand}',[BrandController::class, 'update'])->name('brand.update');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
-Route::get('/statistics/update', [StatisticController::class, 'calculate'])->name('statistic.calculate');
+Route::get('/statistics', [StatisticController::class, 'index'])->name('statistic.calculate');
 
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
