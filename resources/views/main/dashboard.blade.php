@@ -278,7 +278,6 @@
                             </tbody>
                         </table>
                     </div> <!-- end table-responsive-->
-
                 </div> <!-- end card-body-->
                 <!-- end card-body -->
             </div>

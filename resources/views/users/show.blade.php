@@ -187,70 +187,99 @@
                 @endcan
                 <!-- End Email-->
 
-                <!-- Messages-->
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="header-title mb-3">Messages</h4>
-
-                    </div> <!-- end card-body-->
-                </div> <!-- end card-->
 
             </div> <!-- end col-->
 
-            <!-- TODO : ajouter la liste des messages et gears créés par l'utilisateur -->
+            <div class="col-xl-3">
 
-
-            <div class="col-xl-8">
-
-                <!-- Chart-->
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title mb-3">Orders & Revenue</h4>
+                        <h4 class="header-title mb-2">{{ __('Last messages') }}</h4>
+
+                        <div data-simplebar style="max-height: 419px;">
+                            <div class="timeline-alt pb-0">
+
+                                @foreach($user->reviews()->latest()->take(6)->get() as $review)
+                                    <div class="timeline-item">
+                                        <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                        <div class="timeline-item-info">
+                                            <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }}</a>
+                                            <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
+                                            <p class="mb-0 pb-2">
+                                                <small class="text-muted">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                @endforeach
+
+                            </div>
+                            <!-- end timeline -->
+                        </div> <!-- end slimscroll -->
                     </div>
+                    <!-- end card-body -->
                 </div>
-                <!-- End Chart-->
+            </div>
 
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="card tilebox-one">
-                            <div class="card-body">
-
-                            </div> <!-- end card-body-->
-                        </div>
-                        <!--end card-->
-                    </div><!-- end col -->
-
-                    <div class="col-sm-4">
-                        <div class="card tilebox-one">
-                            <div class="card-body">
-
-                            </div> <!-- end card-body-->
-                        </div>
-                        <!--end card-->
-                    </div><!-- end col -->
-
-                    <div class="col-sm-4">
-                        <div class="card tilebox-one">
-                            <div class="card-body">
-
-                            </div> <!-- end card-body-->
-                        </div>
-                        <!--end card-->
-                    </div><!-- end col -->
-
-                </div>
-                <!-- end row -->
-
+            <div class="col-xl-2">
 
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title mb-3">My Products</h4>
+                        <h4 class="header-title mb-2">{{ __('Last devices') }}</h4>
 
-                    </div> <!-- end card-body-->
-                </div> <!-- end card-->
+                        <div data-simplebar style="max-height: 419px;">
+                            <div class="timeline-alt pb-0">
 
+                                @foreach($user->devices()->latest()->take(6)->get() as $device)
+                                    <div class="timeline-item">
+                                        <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                        <div class="timeline-item-info">
+                                            <a href="#" class="text-info fw-bold mb-1 d-block">{{ $device->creator->name }}</a>
+                                            <small><a href='{{ $device->path() }}'>{{ $device->name }} {{ $device->brand->name }} </a></small>
+                                            <p class="mb-0 pb-2">
+                                                <small class="text-muted">{{ __('The') }} {{ $device->created_at->format('d-m-Y') }}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                @endforeach
+
+                            </div>
+                            <!-- end timeline -->
+                        </div> <!-- end slimscroll -->
+                    </div>
+                    <!-- end card-body -->
+                </div>
             </div>
-            <!-- end col -->
+
+            <div class="col-xl-3">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title mb-2">{{ __('Last Technical data sets') }}</h4>
+
+                        <div data-simplebar style="max-height: 419px;">
+                            <div class="timeline-alt pb-0">
+
+                                @foreach($user->technicaldatas()->latest()->take(6)->get() as $dataset)
+                                    <div class="timeline-item">
+                                        <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                        <div class="timeline-item-info">
+                                            <a href="#" class="text-info fw-bold mb-1 d-block">{{ $dataset->author->name }}</a>
+                                            <small><a href='{{ $dataset->path() }}'>{{ $dataset->id }} {{ $dataset->serial }} </a> {{ __('for') }} {{ $dataset->device->name }}  </small>
+                                            <p class="mb-0 pb-2">
+                                                <small class="text-muted">{{ __('The') }} {{ $dataset->created_at->format('d-m-Y') }}</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                @endforeach
+
+                            </div>
+                            <!-- end timeline -->
+                        </div> <!-- end slimscroll -->
+                    </div>
+                    <!-- end card-body -->
+                </div>
+            </div>
+
 
         </div>
         <!-- end row -->
