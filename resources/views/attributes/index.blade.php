@@ -1,10 +1,10 @@
 @extends('layouts.vertical')
 
 @section('page_title')
-    {{ __('Attributes list') }}
+    {{ __('Brands list') }}
 @endsection
 @section('page_description')
-    {{ __('List of all the attributes') }}
+    {{ __('List of all the brands') }}
 @endsection
 @section('page_image')
 
@@ -47,12 +47,12 @@
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{ route('home') }}">Windfoilfan</a></li>
-                            <li class="breadcrumb-item">{{ __('Attributes') }}</li>
+                            <li class="breadcrumb-item">{{ __('Brands') }}</li>
                             <li class="breadcrumb-item active">{{ __('List') }}</li>
                         </ol>
                     </div>
                     <h4 class="page-title">
-                        {{ __('Attributes list') }}
+                        {{ __('Brands list') }}
                     </h4>
                 </div>
             </div>

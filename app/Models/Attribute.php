@@ -8,7 +8,7 @@ class Attribute extends Model
 {
     public $timestamps = false;
 
-    protected $fillable = ['name','group','field','unit','decimals','body','category_id'];
+    protected $fillable = ['name','group','field','unit','decimals','body','category_id','slug','chart'];
 
     public function getRouteKeyName()
     {
@@ -22,6 +22,6 @@ class Attribute extends Model
 
     public function path()
     {
-        return "";
+        return route('attribute.show',$this);
     }
 }

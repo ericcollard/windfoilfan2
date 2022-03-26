@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AttributeController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\PostCategoryController;
@@ -80,6 +81,12 @@ Route::get('/brands',[BrandController::class, 'index'])->name('brand.index');
 Route::get('/brands/{brand}/edit', [BrandController::class, 'edit'])->name('brand.edit');
 Route::get('/brands/{brand}',[BrandController::class, 'show'])->name('brand.show');
 Route::patch('/brands/{brand}',[BrandController::class, 'update'])->name('brand.update');
+
+Route::get('/attributes',[AttributeController::class, 'index'])->name('attribute.index');
+Route::get('/attributes/{attribute}',[AttributeController::class, 'show'])->name('attribute.show');
+Route::get('/attributes/{attribute}/edit',[AttributeController::class, 'edit'])->name('attribute.edit');
+Route::delete('/attributes/{attribute}',[AttributeController::class, 'destroy'])->name('attribute.destroy');
+Route::patch('/attributes/{attribute}',[AttributeController::class, 'update'])->name('attribute.update');
 
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 Route::get('/statistics', [StatisticController::class, 'index'])->name('statistic.calculate');

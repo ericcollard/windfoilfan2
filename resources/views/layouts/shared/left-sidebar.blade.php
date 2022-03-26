@@ -232,6 +232,13 @@
                         <li>
                             <a href="{{ route('statistic.calculate') }}">{{ __('Update statistics') }}</a>
                         </li>
+                        <li>
+                            <a href="{{ route('attribute.index') }}">{{ __('Attributes') }}</a>
+                        </li>
+
+
+
+
                     </ul>
                 </div>
             </li>

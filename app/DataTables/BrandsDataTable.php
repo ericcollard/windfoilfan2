@@ -44,18 +44,6 @@ class BrandsDataTable extends DataTable
      */
     public function query(Brand $model)
     {
-
-        /*
-select `brands`.*, count( DISTINCT devices.id) , count(DISTINCT technicaldatas.id) , count(DISTINCT reviews.id) , count(DISTINCT statistics.id) , sum(statistics.hits)
-from `brands`
-inner join `devices` on `devices`.`brand_id` = `brands`.`id`
-inner join `technicaldatas` on `technicaldatas`.device_id = `devices`.`id`
-inner join `reviews` on `reviews`.device_id = `devices`.`id`
-inner join `statistics` on `statistics`.statisticable_id = `devices`.`id`
-where statistics.statisticable_type = 'App\\Models\\Device'
-group by `brands`.`id`
-
- */
         $builder =  $model->newQuery();
         $builder->join('devices', 'devices.brand_id', '=', 'brands.id');
         $builder->join('technicaldatas', 'technicaldatas.device_id', '=', 'devices.id');
@@ -64,7 +52,6 @@ group by `brands`.`id`
         $builder->selectRaw('brands.*, count( DISTINCT devices.id) AS device_cnt , count(DISTINCT technicaldatas.id) AS data_cnt , count(DISTINCT reviews.id) AS review_cnt, sum(device_statistics.hits) AS hit_cnt');
         $builder->groupBy('brands.id');
         return $builder;
-
     }
 
     /**
