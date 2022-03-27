@@ -152,7 +152,8 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         if ( $password !== null & $password !== "" )
         {
-            $this->attributes['password'] = bcrypt($password);
+            //$this->attributes['password'] = bcrypt($password);
+            $this->attributes['password'] = Hash::needsRehash($password) ? bcrypt($password) : $password;
         }
     }
 
