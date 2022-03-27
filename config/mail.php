@@ -45,10 +45,6 @@ return [
             'auth_mode' => null,
         ],
 
-        'mailjet' => [
-            'transport' => 'mailjet',
-        ],
-
         'ses' => [
             'transport' => 'ses',
         ],
@@ -74,9 +70,6 @@ return [
         'array' => [
             'transport' => 'array',
         ],
-
-
-
     ],
 
     /*
@@ -91,8 +84,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'admin@windfoilfan.com'),
-        'name' => env('MAIL_FROM_NAME', 'Windfoilfan'),
+        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
