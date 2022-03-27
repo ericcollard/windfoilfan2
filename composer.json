@@ -15,7 +15,9 @@
         "jorenvanhocht/laravel-share": "^4.1",
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.7",
+        "mailjet/laravel-mailjet": "^3.0",
         "orangehill/iseed": "^3.0",
+        "symfony/http-client": "^6.0",
         "tinymce/tinymce": "^5.10",
         "unisharp/laravel-filemanager": "^2.3",
         "yajra/laravel-datatables": "^1.5"

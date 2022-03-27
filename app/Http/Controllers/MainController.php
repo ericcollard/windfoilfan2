@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\Contact;
 use App\Models\Brand;
 use App\Models\Device;
 use App\Models\Post;
@@ -12,17 +13,23 @@ use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class MainController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return Application|Factory|View|\Illuminate\View\View
-     */
-    public function landing()
+
+    function landing()
     {
         return view('main.landing');
+    }
+
+    function test()
+    {
+
+        Mail::to('eric@glissattitude.com')
+            ->send(new Contact());
+
+        return view('main.test');
     }
 
 
