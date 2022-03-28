@@ -14,6 +14,7 @@
         "jorenvanhocht/laravel-share": "^4.1",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
+        "mailjet/laravel-mailjet": "^3.0",
         "orangehill/iseed": "^3.0",
         "tinymce/tinymce": "^6.0",
         "unisharp/laravel-filemanager": "^2.4",
