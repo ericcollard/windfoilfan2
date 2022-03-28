@@ -15,8 +15,8 @@
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
         "orangehill/iseed": "^3.0",
-        "tinymce/tinymce": "^5.10",
-        "unisharp/laravel-filemanager": "^2.3",
+        "tinymce/tinymce": "^6.0",
+        "unisharp/laravel-filemanager": "^2.4",
         "yajra/laravel-datatables": "^1.5"
     },
     "require-dev": {
