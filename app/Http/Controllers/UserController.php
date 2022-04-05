@@ -58,7 +58,7 @@ class UserController extends Controller
             ['avatar_path' => request()->file('avatar')->storePublicly('', 'avatars')]
         );
 
-        return back();
+        return back()->with( ['message' => 'Nouvel avatar sauvegardé', 'alert' => 'success']);
     }
 
     /**
@@ -109,7 +109,7 @@ class UserController extends Controller
         }
         $user->update($data);
 
-        return redirect(route('user.show',['user' => $user]))->with('flash', 'Your profile has been updated!');
+        return redirect(route('user.show',['user' => $user]))->with( ['message' => 'Profil correctement mis à jour', 'alert' => 'success']);
 
     }
 
@@ -123,6 +123,6 @@ class UserController extends Controller
     public function destroy(User $user): RedirectResponse
     {
         $user->delete();
-        return redirect(route('user.list'));
+        return redirect(route('user.list'))->with( ['message' => 'Utilisateur supprimé', 'alert' => 'success']);
     }
 }

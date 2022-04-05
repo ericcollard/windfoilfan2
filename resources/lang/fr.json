@@ -392,5 +392,8 @@
     "Users creation" : "Nouveaux utilisateurs",
     "Last posts" : "Derniers articles",
     "Last Technical data sets" : "Dernières mesures",
-    "Last devices" : "Derniers produits"
+    "Last devices" : "Derniers produits",
+    "success" : "Succès",
+    "danger" : "Danger",
+    "warning" : "Attention"
 }

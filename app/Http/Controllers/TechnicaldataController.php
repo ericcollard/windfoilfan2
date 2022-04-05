@@ -212,7 +212,7 @@ class TechnicaldataController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($technicaldata->path());
+        return redirect($technicaldata->path())->with( ['message' => 'Jeu de données mis à jour', 'alert' => 'success']);
     }
 
     /**
@@ -252,7 +252,7 @@ class TechnicaldataController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($technicaldata->path());
+        return redirect($technicaldata->path())->with( ['message' => 'Nouveau jeu de données correctement créé', 'alert' => 'success']);
     }
 
 
@@ -271,7 +271,7 @@ class TechnicaldataController extends Controller
         {
             return response(['status' => 'Your data has been deleted'],200);
         }
-        return redirect($target);
+        return redirect($target)->with( ['message' => 'Jeu de données supprimé', 'alert' => 'success']);
     }
 
 

@@ -108,7 +108,7 @@ class ReviewController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($review->device->path());
+        return redirect($review->device->path())->with( ['message' => 'Message mis à jour', 'alert' => 'success']);
     }
 
 
@@ -131,7 +131,7 @@ class ReviewController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($review->device->path());
+        return redirect($review->device->path())->with( ['message' => 'Message correctement créé', 'alert' => 'success']);
     }
 
     /**
@@ -164,6 +164,6 @@ class ReviewController extends Controller
         {
             return response(['status' => 'Your review has been deleted'],200);
         }
-        return redirect($target);
+        return redirect($target)->with( ['message' => 'Message supprimé', 'alert' => 'success']);
     }
 }

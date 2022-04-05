@@ -2,12 +2,14 @@
 
 
 @section('css')
-
 @endsection
 
 @section('content')
     <!-- Start Content-->
+
     <div class="container-fluid">
+
+blab la
 
 
 
@@ -17,5 +19,4 @@
 @endsection
 
 @section('script-bottom')
-
 @endsection

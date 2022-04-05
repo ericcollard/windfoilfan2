@@ -101,7 +101,7 @@ class AttributeController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($attribute->path());
+        return redirect($attribute->path())->with( ['message' => 'Attribut mis à jour', 'alert' => 'success']);
     }
 
     /**

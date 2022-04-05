@@ -222,7 +222,7 @@ class DeviceController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($device->path());
+        return redirect($device->path())->with( ['message' => 'Produit créé', 'alert' => 'success']);
     }
 
 
@@ -245,7 +245,7 @@ class DeviceController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($device->path());
+        return redirect($device->path())->with( ['message' => 'Produit mis à jour', 'alert' => 'success']);
     }
 
 
@@ -264,6 +264,6 @@ class DeviceController extends Controller
         {
             return response(['status' => 'Your post has been deleted'],200);
         }
-        return redirect(route('device.category', $category));
+        return redirect(route('device.category', $category))->with( ['message' => 'Produit supprimé', 'alert' => 'success']);
     }
 }

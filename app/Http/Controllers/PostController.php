@@ -131,7 +131,7 @@ class PostController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($post->path());
+        return redirect($post->path())->with( ['message' => 'Article mis à jour', 'alert' => 'success']);
     }
 
     /**
@@ -152,7 +152,7 @@ class PostController extends Controller
             // catch exception when trying to insert invalid reply (spam or missing data)
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
-        return redirect($post->path())->with('flash', 'Your device has been created!');
+        return redirect($post->path())->with( ['message' => 'Article correctement créé', 'alert' => 'success']);
     }
 
     /**
@@ -169,7 +169,7 @@ class PostController extends Controller
         {
             return response(['status' => 'Your post has been deleted'],200);
         }
-        return redirect(route('post.postCategory', $postCategory))->with('flash', 'Your gear has been deleted!');
+        return redirect(route('post.postCategory', $postCategory))->with( ['message' => 'Article supprimé', 'alert' => 'success']);
     }
 
     public function extract()

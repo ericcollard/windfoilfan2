@@ -91,6 +91,7 @@ Route::patch('/attributes/{attribute}',[AttributeController::class, 'update'])->
 Route::get('/language/{lang}', [MainController::class, 'language'])->name('language');
 Route::get('/statistics', [StatisticController::class, 'index'])->name('statistic.calculate');
 Route::get('/test', [MainController::class, 'test'])->name('test');
+Route::get('/test2', [MainController::class, 'test2'])->name('test2');
 Route::get('/test-contact', function () {
     return new App\Mail\Contact();
 });

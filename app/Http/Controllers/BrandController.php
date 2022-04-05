@@ -204,7 +204,7 @@ class BrandController extends Controller
             abort(403, "I'm sorry, impossible to store you item at the moment");
         }
 
-        return redirect($brand->path());
+        return redirect($brand->path())->with( ['message' => 'Marque mis à jour', 'alert' => 'success']);
     }
 
     /**
