@@ -386,7 +386,7 @@ class TechnicaldataController extends Controller
                 $colors[] = '#00FF15FF';
             elseif ($device and $technicaldata->device_id == $device->id)
                 $colors[] = '#ff0000';
-            elseif ($brand and $technicaldata->brand_id == $brand->id)
+            elseif (($brand and $technicaldata->brand_id == $brand->id) or ( auth()->check() and auth()->user()->brand and $technicaldata->brand_id == auth()->user()->brand->id  ))
                 $colors[] = '#FFCC00FF';
             else
                 $colors[] = '#00b2ff';

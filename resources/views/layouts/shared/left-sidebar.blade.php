@@ -80,101 +80,26 @@
                 <div class="collapse" id="sidebarCharts" style="">
                     <ul class="side-nav-second-level">
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarChartsFoil" aria-expanded="false" aria-controls="sidebarChartsFoil" class="collapsed">
-                                <span> Foil </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarChartsFoil" style="">
-                                <ul class="side-nav-third-level">
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','flex_module') }}">Coef Flexion</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','tors_module') }}">Coef Torsion</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','flex_thickness_coef') }}">Module flex</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','glide') }}">Glisse</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','lift') }}">Décollage</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','lateral') }}">Stab Latérale</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','longitudinal') }}">Stab Longi</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','control') }}">Contrôle</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarChartsBoard" aria-expanded="false" aria-controls="sidebarChartsBoard" class="collapsed">
-                                <span> Flotteur </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarChartsBoard" style="">
-                                <ul class="side-nav-third-level">
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','ofo') }}">OFO</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','weight-f') }}">Poids</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','touch-side') }}">Touchettes rail</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','touch-front') }}">Touchettes avant</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','glide-f') }}">Glisse</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','power') }}">Puissance</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','inertia') }}">Inertie</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','control-f') }}">Contrôle</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+                        @foreach($devicecategories as $category)
+                            <li  class="side-nav-item">
+                                <a data-bs-toggle="collapse" href="#sidebarCharts{{ $category->slug }}" aria-expanded="false" aria-controls="sidebarCharts{{ $category->slug }}" class="collapsed">
+                                    <span> {{ __($category->name) }} </span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <div class="collapse" id="sidebarCharts{{ $category->slug }}" style="">
+                                    <ul class="side-nav-third-level">
+                                        @foreach($category->attributes()->whereNotNull('chart_display')->orderBy('chart_display', 'asc')->get() as $attribute)
+                                            <li>
+                                                <a href="{{ route('technicaldatas.attributeChart',$attribute) }}">{{ $attribute->name }}</a>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            </li>
+                        @endforeach
 
-                        <li class="side-nav-item">
-                            <a data-bs-toggle="collapse" href="#sidebarChartsSail" aria-expanded="false" aria-controls="sidebarChartsSail" class="collapsed">
-                                <span> Voile </span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <div class="collapse" id="sidebarChartsSail" style="">
-                                <ul class="side-nav-third-level">
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','weight-s') }}">Poids</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','back-hand') }}">Main arrière</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','stability') }}">Stabilisation</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','lightness') }}">Légèreté ressent</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('technicaldatas.attributeChart','upwind') }}">Perf près</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
+
                     </ul>
                 </div>
             </li>

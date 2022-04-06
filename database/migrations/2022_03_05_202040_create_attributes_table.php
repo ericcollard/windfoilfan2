@@ -22,6 +22,7 @@ class CreateAttributesTable extends Migration
             $table->unsignedInteger('decimals')->default(0);
             $table->string('group',50)->nullable();
             $table->string('chart',50)->default('note'); // 'pourcentage', 'valeur'
+            $table->unsignedInteger('chart_display')->nullable(); // 0 > non affiché, sinon dans l'ordre
             $table->string('field',7);
             $table->unsignedInteger('category_id');
         });

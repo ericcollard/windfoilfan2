@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Attribute;
 use App\Models\Category;
 use App\Models\PostCategory;
 use App\Models\Technicaldata;
@@ -31,7 +32,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         Paginator::useBootstrap();
 
         View::composer('layouts.shared.left-sidebar', function ($view) {

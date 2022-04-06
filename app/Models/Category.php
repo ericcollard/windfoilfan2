@@ -19,6 +19,11 @@ class Category extends Model
         return $this->hasMany(Device::class);
     }
 
+    public function attributes()
+    {
+        return $this->hasMany(Attribute::class);
+    }
+
     public function getIconHtmlCode()
     {
         return '<i class="css-mapping icon icon-silhouette-'.$this->slug.'" ></i>';

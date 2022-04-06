@@ -22,7 +22,7 @@ class UsersTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'name' => 'SuperAdmin',
+                'name' => 'Administrateur',
                 'email' => 'info@glissattitude.com',
                 'email_verified_at' => '2020-01-01 00:00:00',
                 'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
@@ -66,7 +66,7 @@ class UsersTableSeeder extends Seeder
             2 => 
             array (
                 'id' => 3,
-                'name' => 'Contrib Autre',
+                'name' => 'Contrib A2',
                 'email' => 'admin@glissattitude.com',
                 'email_verified_at' => '2020-01-01 00:00:00',
                 'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
@@ -88,7 +88,7 @@ class UsersTableSeeder extends Seeder
             3 => 
             array (
                 'id' => 4,
-                'name' => 'visitor-windfoilfan',
+                'name' => 'Visiteur',
                 'email' => 'visitor@glissattitude.com',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
@@ -107,11 +107,11 @@ class UsersTableSeeder extends Seeder
             4 => 
             array (
                 'id' => 5,
-                'name' => 'Eric COLLARD',
+                'name' => 'Contrib Starboard',
                 'email' => 'eric@glissattitude.com',
                 'email_verified_at' => '2020-01-10 00:00:00',
                 'password' => '$2y$10$Qy.UROfMdVwkZKQlopVjWOapcHwDxLeLIG.4z7E.AJ7C0x2nv7b8e',
-                'roles' => '["ROLE_ADMIN"]',
+                'roles' => '["ROLE_CONTRIBUTOR"]',
                 'avatar_path' => 'JkG1ZzUdXlkvOs77HIGUtfUjOpReEy6ksccYtJuC.jpeg',
                 'prefered_spots' => 'La Ciotat',
                 'discipline_start' => '2015-02-25 00:00:00',
@@ -120,7 +120,7 @@ class UsersTableSeeder extends Seeder
 <p>Voiles : Severne Hyperglide 2 9m, Phantom Iris X 6,7 et 8, Severne Hyperglide 4 7m, NP Freefoil 4.8</p>
 <p>Wisbone : AL360 RTE, AL360 Foil</p>',
                 'postal_code' => '13011',
-                'brand_id' => NULL,
+                'brand_id' => 100,
                 'weight' => 78,
                 'remember_token' => '6DVzXMBh3eKsvIurbhdHVpljBAVkzUh0PvH9LHzWEc9qCjhH9u0TDAtPX0qQ',
                 'created_at' => '2020-01-01 00:00:00',
