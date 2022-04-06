@@ -134,10 +134,10 @@
                 <div class="collapse" id="sidebarSessions" style="">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="#">Toutes les sessions</a>
+                            <a href="{{ route('sessions') }}">Toutes les sessions</a>
                         </li>
                         <li>
-                            <a href="#">Session perso</a>
+                            <a href="{{ route('sessions') }}">Session perso</a>
                         </li>
                     </ul>
                 </div>

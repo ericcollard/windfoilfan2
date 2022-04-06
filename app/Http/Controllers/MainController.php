@@ -27,6 +27,13 @@ class MainController extends Controller
         return view('main.landing');
     }
 
+
+    function sessions()
+    {
+
+        return view('main.sessions');
+    }
+
     function test()
     {
 

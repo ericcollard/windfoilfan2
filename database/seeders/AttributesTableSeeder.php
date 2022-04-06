@@ -101,10 +101,21 @@ class AttributesTableSeeder extends Seeder
                 'id' => 8,
                 'name' => 'Glisse',
                 'slug' => 'glide',
-                'body' => '<div class="multi-col-2">
-<p>Ce crit&egrave;re porte sur la sensation de glisse ressentie, sans lien direct avec la vitesse atteinte.</p>
-<p>La plupart du temps, une sensation de glisse importante est la cons&eacute;quence de profils tr&egrave;s fins, donc potentiellement plus souple : il faut veiller &agrave; ce que cela n\'ait pas une influence n&eacute;gative sur le contr&ocirc;le et la stabilit&eacute;. Une structure souple pose peu de probl&egrave;me dans une utilisation light wind, mais peut vite devenir d&eacute;sagrable dans un vent plus soutenu.</p>
-<p>Par ailleurs, les foils offrant beaucoup de glisse procurent des acc&eacute;l&eacute;rations assez franches lors des changements de cap. Ils sont donc plus pointus &agrave; ma&icirc;triser et donc moins adapt&eacute;s au d&eacute;butants ou aux pratiquants peu techniques. Ces dernier privil&eacute;gieront souvcent des mod&egrave;les proposant une vitesse plus lin&eacute;aire.</p>
+                'body' => '<h3>Glisse</h3>
+<p>Ce crit&egrave;re est purement subjectif. Il porte sur la <strong>sensation de glisse ressentie</strong>, sans lien direct avec la vitesse r&eacute;elle atteinte.</p>
+<div class="row">
+<div class="col-lg-6">
+<p>La plupart du temps, une sensation de glisse importante est la cons&eacute;quence de profils tr&egrave;s fins, donc potentiellement plus souples. On immagine imm&eacute;diatement que c\'est une affaire de compromis, car une souplesse excessive a une influence n&eacute;gative sur le contr&ocirc;le et la stabilit&eacute;. Une structure souple pose moins de probl&egrave;me dans une utilisation light wind, mais peut vite devenir d&eacute;sagrable dans un vent plus soutenu.</p>
+</div>
+<div class="col-lg-6">
+<p>Les foils offrant beaucoup de glisse procurent souvent des acc&eacute;l&eacute;rations assez franches lors des changements de cap. Ils sont donc plus pointus &agrave; ma&icirc;triser et donc moins adapt&eacute;s au d&eacute;butants ou aux pratiquants peu techniques. Ces dernier privil&eacute;gieront souvent des mod&egrave;les proposant une vitesse plus lin&eacute;aire.</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de comparaison des produits entre eux crit&egrave;re par crit&egrave;re. Il ne s\'agit ni d\'un jugement absolu, ni que quelque chose d\'immuable. A chaque nouveau test, nos r&eacute;f&eacute;rences sont susceptibles de changer, et nous r&eacute;-adaptons notre classement r&eacute;guli&egrave;rement.</p>
+<hr />
+<p class="mb-0">Il est &eacute;galement important de consid&eacute;rer les autres param&egrave;tres car chaque produit est un tout.</p>
 </div>',
                 'unit' => NULL,
                 'decimals' => 1,
@@ -119,24 +130,37 @@ class AttributesTableSeeder extends Seeder
                 'id' => 9,
                 'name' => 'Décollage',
                 'slug' => 'lift',
-            'body' => '<p>Ce crit&egrave;re porte sur le potentiel de d&eacute;collage dans le petit temps (vent faible). Il d&eacute;pend essentiellement de 2 &eacute;l&eacute;ments antagonistes : la train&eacute;e du foil et la portance de l\'aile.</p>
+                'body' => '<h3>D&eacute;collage</h3>
+<p>Ce crit&egrave;re porte sur le potentiel de d&eacute;collage dans le petit temps (vent faible). Il d&eacute;pend essentiellement de 2 &eacute;l&eacute;ments antagonistes : la train&eacute;e du foil et la portance de l\'aile.</p>
+<div class="row">
+<div class="col-lg-6">
 <p><strong>Attention</strong> : Contrairement aux id&eacute;es re&ccedil;ues, ce n\'est pas le foil qui aura la plus grande aile (ou la plus de surface portante) qui d&eacute;collera le plus vite, comme nous l\'avons v&eacute;rifi&eacute; des 10aines de fois. Il faut en effet bien dissocier 2 notions distinctes : la vitesse de d&eacute;collage (la vitesse de la planche au moment o&ugrave; elle d&eacute;cole), et le vent n&eacute;cessaire pour d&eacute;coller. La plupart des pratiquants cherchent &agrave; voler dans peu de vent, mais pas forc&eacute;ment &agrave; voler &agrave; basse vitesse !!!</p>
 <ul>
 <li>Avec les tr&egrave;s grosses ailes (grosse surface, et souvent &eacute;paisseur importante), le d&eacute;collage intervient alors que la planche &eacute;volue &agrave; tr&egrave;s basse vitesse. Par contre, compte tenu de la train&eacute;e de ces ailes, il faut une puissance assez importante dans la voile pour amener le flotteur &agrave; cette vitesse.</li>
 <li>Au contraire avec les ailes plus fines, le d&eacute;collage n&eacute;cessitera une vitesse de d&eacute;placement plus importante, mais la faible train&eacute;e du foil permet au flotteur d\'acc&eacute;l&eacute;rer plus facilement jusqu\'&agrave; cette vitesse.</li>
 </ul>
+</div>
+<div class="col-lg-6">
 <p><strong>On l\'aura compris, d&eacute;coller avec peu de vent suppose avant tout un ratio glisse / portance optimal.</strong></p>
 <p>Il y a par ailleurs 2 options pour naviguer avec peu de vent :</p>
 <ul>
 <li>Utiliser un mat&eacute;riel l&eacute;ger, avec peu de train&eacute;e, et un gr&eacute;ement l&eacute;ger et tr&egrave;s dynamique</li>
 <li>Utiliser de tr&egrave;s grandes voiles, ainsi qu\'une planche et un foil (rigide et puissant) capable de les supporter.</li>
 </ul>
-<p><strong>Attention</strong>, la deuxi&egrave;me option suppose d\'avoir la condition physique, et la technique pour pomper avec une &eacute;norme voile ... et ce n\'est pas donn&eacute; &agrave; tout le monde !</p>',
+<p><strong>Attention</strong>, la deuxi&egrave;me option suppose d\'avoir la condition physique, et la technique pour pomper avec une &eacute;norme voile ... et ce n\'est pas donn&eacute; &agrave; tout le monde !</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de comparaison des produits entre eux crit&egrave;re par crit&egrave;re. Il ne s\'agit ni d\'un jugement absolu, ni que quelque chose d\'immuable. A chaque nouveau test, nos r&eacute;f&eacute;rences sont susceptibles de changer, et nous r&eacute;-adaptons notre classement r&eacute;guli&egrave;rement.</p>
+<hr />
+<p class="mb-0">Il est &eacute;galement important de consid&eacute;rer les autres param&egrave;tres car chaque produit est un tout.</p>
+</div>',
                 'unit' => NULL,
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 2,
                 'field' => 'attr9',
                 'category_id' => 1,
             ),
@@ -161,23 +185,34 @@ class AttributesTableSeeder extends Seeder
                 'id' => 11,
                 'name' => 'Stabilité latérale',
                 'slug' => 'lateral',
-                'body' => '<p>Ce crit&egrave;re porte sur la stabilit&eacute; lat&eacute;rale ressentie.</p>
-<div class="multi-col-2">
+                'body' => '<h3>Stabilit&eacute; lat&eacute;rale</h3>
+<p>Ce crit&egrave;re subjectif porte sur la stabilit&eacute; lat&eacute;rale ressentie.</p>
+<div class="row">
+<div class="col-lg-6">
 <p><img class="img-fluid" style="display: block; margin-left: auto; margin-right: auto;" src="/storage/photos/5/attributes/2094ad651bf69118009444b9a71bd639.png" alt="stabilite laterale foil" /></p>
+</div>
+<div class="col-lg-6">
 <p>Imaginons une bille qui se prom&egrave;ne sur un profil qui repr&eacute;sente l\'angle de g&icirc;te. Les diff&eacute;rents cas pr&eacute;sent&eacute;s illustre le type de stabilit&eacute; lat&eacute;rale que l\'on retrouve sur les diff&eacute;rents foil.</p>
 <p>Si je prends l\'<strong>exemple du haut</strong>, on voit que la bille \'veut\' revenir naturellement au centre m&ecirc;me si on l\'&eacute;carte fortement de sa position neutre. Il faut aller assez loin pour qu\'elle ne parte toute seule. C\'est un &eacute;quilibre tr&egrave;s stable jusqu\'&agrave; un angle de g&icirc;te important. Dans le cas du foil, on aura un foil qui se remet tout seul &agrave; plat m&ecirc;me quand on l\'&eacute;carte de sa position d\'&eacute;quilibre. Dans certains cas, on peut aller jusqu\'&agrave; un foil que l\'on n\'arrive pas &agrave; mettre &agrave; la contre g&icirc;te.</p>
-<p>Au contraire, dans l\'<strong>exemple du bas</strong>, la bille ne restera jamais en &eacute;quilibre.&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Dans le cas du foil, on aura un foil qui est tr&egrave;s difficile &agrave; g&eacute;rer car il demande des ajustements actif en permanence. Cela peut &eacute;ventullement avoir un int&eacute;r&ecirc;t dans une utilisation freestyle, mais n&eacute;cessite une grosse dext&eacute;rit&eacute;.</span></p>
+<p>Au contraire, dans l\'<strong>exemple du bas</strong>, la bille ne restera jamais en &eacute;quilibre.&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Dans le cas du foil, on aura un foil qui est tr&egrave;s difficile &agrave; g&eacute;rer car il demande des ajustements actif en permanence. Cela peut &eacute;ventuellement avoir un int&eacute;r&ecirc;t dans une utilisation freestyle, mais n&eacute;cessite une grosse dext&eacute;rit&eacute;.</span></p>
+<p>Pour illustrer ce param&egrave;tre tr&egrave;s important, on trouvera un <span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">&eacute;quilibre lat&eacute;ral neutre &agrave; stable </span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">sur des foils comme les Loke race, Starboard carbone, Taaroa Noe ou autre F4. Ce sont des foils faciles &agrave; mettre &agrave; la contre-g&icirc;te, et &agrave; contr&ocirc;ler ainsi ... m&ecirc;me sans utiliser dse flotteurs larges et puissants.</span></p>
+<p><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Des exemples de foils tr&egrave;s stables : celui des </span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">AFS 2017-2019 avec ailes F700 et F800 ou du Fanatic Flow 900. On peut m&ecirc;me</span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">&nbsp;sentir une difficult&eacute; &agrave; mettre le foil &agrave; la contre g&icirc;te tant il sont stable. Ce type de foil est particuli&egrave;rement agr&eacute;able avec les flotteurs larges et puissants, ou pour une navigation en mode freeride, car il demande tr&egrave;s peu d\'effort de correction.</span></p>
+<p><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Sur des foils comme le Vini par exemple, l\'&eacute;quilibre est assez stable au centre mais devient instable lorsque l\'on s\'&eacute;carte du centre. Il faut donc navigvuer sans trop s\'&eacute;carter de l\'horizontale.</span></p>
+<p>Des foils comme le XtremFoil 2017, l\'aeromod, le manta 2017,&nbsp; le Fanatic Flow H9 pr&eacute;sentent une instabilit&eacute; marqu&eacute;e au centre. Certains, comme les IRIS F, Loke Lk1, GA Mach1&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">pr&eacute;sentent une tr&egrave;s l&eacute;g&egrave;re instabilit&eacute; au centre : ils sont d\'autant plus agr&eacute;ables qu\'on les cale au pr&egrave;s &agrave; la contre g&icirc;te.</span></p>
+<p>Enfin, les premi&egrave;res g&eacute;n&eacute;rations de foil correspondait souvent &agrave; la situation du foil instable. Ce type de comportement a tendance &agrave; dispara&icirc;tre sur les mod&egrave;les r&eacute;cents.</p>
 </div>
-<p>Pour illustrer ce param&egrave;tre tr&egrave;s important, on trouvera un <span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">&eacute;quilibre lat&eacute;ral neutre &agrave; stable </span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">sur des foils comme les Loke race, Starboard carbone, Taaroa Noe ou autre F4. Ce sont des foils facils &agrave; mettre &agrave; la contre g&icirc;te, et &agrave; contr&ocirc;ler ainsi ... m&ecirc;me sans utiliser dse flotteurs larges et puissants.</span></p>
-<p><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Le cas assez marquant est celui des </span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">AFS avec ailes F700 et F800 ou du Fanatic Flow 900,</span><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;"> o&ugrave; on sent m&ecirc;me une difficult&eacute; &agrave; mettre le foil &agrave; la contre g&icirc;te tant il est stable. Avec les ailes R1000 ou autre 700S, cet effet est moins marqu&eacute;. Ce type de foil est particuli&egrave;rement agr&eacute;able avec les flotteurs larges et puissants, ou pour une navigation en mode freeride, car il demande tr&egrave;s peu d\'effort de correction.</span></p>
-<p><span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Sur des foils comme le Vini par exemple, l\'&eacute;quilibre est assez stable au centre mais devient instable lorsque l\'on s\'&eacute;carte du centre.</span></p>
-<p>Des foils comme le XtremFoil 2017, l\'aeromod, le manta 2017,&nbsp; le Fanatic Flow H9 pr&eacute;sentent une instabilit&eacute; marqu&eacute;e au centre. Certians, comme les IRIS F, Loke Lk1, GA Mach1&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">pr&eacute;sentent une tr&egrave;s l&eacute;g&egrave;re instabilit&eacute; au centre : ils sont d\'autant plus agr&eacute;ables qu\'on les cale au pr&egrave;s &agrave; la contre g&icirc;te.</span></p>
-<p>Enfin, les premi&egrave;res g&eacute;n&eacute;rations de foil correspondait souvent &agrave; la situation du foil instable. Ce type de comprtement a tendance &agrave; dispara&icirc;tre sur les mod&egrave;les les plus r&eacute;cents.</p>',
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de comparaison des produits entre eux crit&egrave;re par crit&egrave;re. Il ne s\'agit ni d\'un jugement absolu, ni que quelque chose d\'immuable. A chaque nouveau test, nos r&eacute;f&eacute;rences sont susceptibles de changer, et nous r&eacute;-adaptons notre classement r&eacute;guli&egrave;rement.</p>
+<hr />
+<p class="mb-0">Il est &eacute;galement important de consid&eacute;rer les autres param&egrave;tres car chaque produit est un tout.</p>
+</div>
+</div>',
                 'unit' => NULL,
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 3,
                 'field' => 'attr11',
                 'category_id' => 1,
             ),
@@ -186,17 +221,28 @@ class AttributesTableSeeder extends Seeder
                 'id' => 12,
                 'name' => 'Stabilité longitudinale',
                 'slug' => 'longitudinal',
-                'body' => '<div class="multi-col-2">
-<p>Ce crit&egrave;re repr&eacute;sente la stabilit&eacute; longitudinale ressentie. On s\'int&eacute;resse donc ici au mouvement du foil dans l\'axe longitudinal.</p>
-<p>Un foil insuffisament stable sur cet axe va monter et descendre sans arr&ecirc;t (il faut le dauphin). On aura ainsi beaucoup de difficult&eacute; &agrave; maintenir une altitude constante.</p>
+                'body' => '<h3>Stabilit&eacute; longitudinale</h3>
+<p>Ce crit&egrave;re repr&eacute;sente la stabilit&eacute; longitudinale ressentie. On s\'int&eacute;resse donc ici au mouvement du foil dans l\'axe longitudinal. Pour le dire autrement, on &eacute;value si le foil a tendance &agrave; faire le dauphin.</p>
+<div class="row">
+<div class="col-lg-6">
+<p>Un foil insuffisament stable sur cet axe va monter et descendre sans arr&ecirc;t. On aura ainsi beaucoup de difficult&eacute; &agrave; maintenir une altitude constante.</p>
 <p>Au contraire, une forte stabilit&eacute; longitudinale semble faciliter les d&eacute;buts, mais peut devenir perturbant car il est alors difficile de corriger ses erreurs : on a l\'impression que le foil est difficile &agrave; "ratrapper" lorsqu\'il est parti dans une tendance &agrave; monter ou a descendre. De m&ecirc;me, un foil tr&egrave;s stable en longitudinal peut &ecirc;tre complexe &agrave; g&eacute;rer dans la houle.</p>
-<p>Comme toujours, c\'est souvent un comportement interm&eacute;diaire qui est le plus agr&eacute;able &agrave; g&eacute;rer. L\'un des param&egrave;tres influant de fa&ccedil;on importante sur ce comportement est la longueur du fuselage. Un fuselage long (&agrave; condition qu\'il soit rigide) en tendance &agrave; proposer une forte stabilit&eacute; longitudinale. Au contraire, un fuselage court offrira souvent une grande r&eacute;activit&eacute; et plus de glisse.</p>
+</div>
+<div class="col-lg-6">
+<p>Comme toujours, c\'est souvent un comportement interm&eacute;diaire qui est le plus agr&eacute;able &agrave; g&eacute;rer. L\'un des param&egrave;tres influants de fa&ccedil;on importante sur ce comportement est la longueur du fuselage. Un fuselage long (&agrave; condition qu\'il soit rigide) en tendance &agrave; proposer une forte stabilit&eacute; longitudinale. Au contraire, un fuselage court offrira souvent une grande r&eacute;activit&eacute; et plus de glisse.</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de comparaison des produits entre eux crit&egrave;re par crit&egrave;re. Il ne s\'agit ni d\'un jugement absolu, ni que quelque chose d\'immuable. A chaque nouveau test, nos r&eacute;f&eacute;rences sont susceptibles de changer, et nous r&eacute;-adaptons notre classement r&eacute;guli&egrave;rement.</p>
+<hr />
+<p class="mb-0">Il est &eacute;galement important de consid&eacute;rer les autres param&egrave;tres car chaque produit est un tout.</p>
 </div>',
                 'unit' => NULL,
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 4,
                 'field' => 'attr12',
                 'category_id' => 1,
             ),
@@ -205,16 +251,27 @@ class AttributesTableSeeder extends Seeder
                 'id' => 13,
                 'name' => 'Contrôle',
                 'slug' => 'control',
-                'body' => '<div class="multi-col-2">
-<p>Ce crit&egrave;re repr&eacute;sente la facilit&eacute; de contr&ocirc;le du foil dans le clapot ou les conditions difficile. Un gros contr&ocirc;le est souvent synonyme d\'un comportement assez doux ... et en g&eacute;n&eacute;ral antagoniste avec la nervosit&eacute; (int&eacute;ressante dans le tr&egrave;s petit temps, ou dans une utilisation freestyle).&nbsp;</p>
-<p>Dans la notion de contr&ocirc;le, la stabilit&eacute; en lacet et en lat&eacute;rale joue un r&ocirc;le important.&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Un foil tr&egrave;s stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation tr&egrave;s agr&eacute;able, gage d\'une glisse tr&egrave;s pure, et d\'un comportement tr&egrave;s rassurant.</span></p>
-<p>Tous les essais et mesures semblent indiquer que le contr&ocirc;le est tr&egrave;s li&eacute; &agrave; la rigidit&eacute; structurelle de l\'ensemble (en particulier la rigidit&eacute; en torsion du mat), et &agrave; gros facteur d\'amortisement (au contraire d\'un foil nerveux).</p>
+                'body' => '<h3>Contr&ocirc;le</h3>
+<p>Ce crit&egrave;re repr&eacute;sente la facilit&eacute; de contr&ocirc;le de l\'assiette du foil en navigation. Un gros contr&ocirc;le est souvent synonyme d\'un comportement assez doux ... et en g&eacute;n&eacute;ral antagoniste avec la nervosit&eacute; (int&eacute;ressante dans le tr&egrave;s petit temps, ou dans une utilisation freestyle).&nbsp;</p>
+<div class="row">
+<div class="col-lg-6">
+<p>Dans la notion de contr&ocirc;le, la stabilit&eacute; en lacet et en lat&eacute;rale joue un r&ocirc;le important.&nbsp;<span style="font-family: -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif;">Un foil tr&egrave;s stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation tr&egrave;s agr&eacute;able, gage d\'une glisse tr&egrave;s pure, et d\'un comportement rassurant.</span></p>
+</div>
+<div class="col-lg-6">
+<p>Tous les essais et mesures semblent indiquer que le contr&ocirc;le est tr&egrave;s li&eacute; &agrave; la rigidit&eacute; structurelle de l\'ensemble (en particulier la rigidit&eacute; en torsion du mat), et &agrave; gros facteur d\'amortissement (au contraire d\'un foil nerveux).</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de comparaison des produits entre eux crit&egrave;re par crit&egrave;re. Il ne s\'agit ni d\'un jugement absolu, ni que quelque chose d\'immuable. A chaque nouveau test, nos r&eacute;f&eacute;rences sont susceptibles de changer, et nous r&eacute;-adaptons notre classement r&eacute;guli&egrave;rement.</p>
+<hr />
+<p class="mb-0">Il est &eacute;galement important de consid&eacute;rer les autres param&egrave;tres car chaque produit est un tout.</p>
 </div>',
                 'unit' => NULL,
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => 2,
+                'chart_display' => 5,
                 'field' => 'attr13',
                 'category_id' => 1,
             ),
@@ -293,15 +350,30 @@ class AttributesTableSeeder extends Seeder
                 'id' => 19,
             'name' => 'Coefficient de rigidité en flexion (EIx)',
                 'slug' => 'flex_module',
-                'body' => '<p>La rigidit&eacute; en flexion est &eacute;valu&eacute;e &agrave; partir des mesures de flexion du mat sur un banc. Le mat est soumis &agrave; un charge de 10kg positionn&eacute;e &agrave; 70cm de l\'encastrement.</p>
-<p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en flexion EIx &agrave; partir de la fl&ecirc;che mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux.&nbsp;La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 10 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
-<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>
-<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt="" /></p>',
+                'body' => '<h3>La rigidit&eacute; en flexion</h3>
+<div class="row">
+<div class="col-lg-6">
+<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt="" /></p>
+</div>
+<div class="col-lg-6">
+<p>La rigidit&eacute; en flexion est &eacute;valu&eacute;e &agrave; partir des mesures de flexion du mat sur un banc. Le mat est soumis &agrave; un charge de 10kg positionn&eacute;e &agrave; 70cm de l\'encastrement.</p>
+<p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en flexion EIx &agrave; partir de la fl&ecirc;che mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux.&nbsp;La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 100 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s par nos soins.</p>
+<p>Pour une question de confidentialit&eacute; industrielle, la visualisation des donn&eacute;es de ce sh&eacute;ma est r&eacute;serv&eacute;e aux administrateurs, et aux marques.</p>
+<p>&nbsp;</p>
+<p>Avec l\'experience, nous avons constat&eacute; qu\'un mat tr&egrave;s souple en flexion avait une influence sur la stabilit&eacute; lat&eacute;rale, et sur la sensation de contr&ocirc;le.</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de mesures objectives. Il ne s\'agit pas d\'un jugement, et doit rester un indicateur pouvant expliquer certains comportements.</p>
+<hr />
+<p class="mb-0">Il est important de consid&eacute;rer tous les param&egrave;tres pour &eacute;valuer un produit car le r&eacute;sultat final est un tout.</p>
+</div>',
                 'unit' => 'N.m2',
                 'decimals' => 2,
                 'group' => 'structural_result_group',
                 'chart' => 'pourcentage',
-                'chart_display' => 3,
+                'chart_display' => 6,
                 'field' => 'attr19',
                 'category_id' => 1,
             ),
@@ -310,15 +382,29 @@ class AttributesTableSeeder extends Seeder
                 'id' => 20,
             'name' => 'Coefficient de rigidité en torsion (GIg)',
                 'slug' => 'tors_module',
-                'body' => '<p>La rigidit&eacute; en torsion est &eacute;valu&eacute;e &agrave; partir des mesures du mat sur un banc. Le mat est soumis &agrave; un charge de 6,25kg positionn&eacute;e &agrave; 35cm de l\'axe de torsion.</p>
-<p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en torsion GIg &agrave; partir de la d&eacute;formation mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux. La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 10 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
-<p>Pour une question de confidentialité industrielle, la visualisation des données de ce shéma est réservée aux administrateurs</p>
-<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres torsion.png" alt="Rigidit&eacute; en torsion foil" /></p>',
+                'body' => '<h3>Rigidit&eacute; en torsion</h3>
+<div class="row">
+<div class="col-lg-6">
+<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres torsion.png" alt="Rigidit&eacute; en torsion foil" /></p>
+</div>
+<div class="col-lg-6">
+<p>La rigidit&eacute; en torsion est &eacute;valu&eacute;e &agrave; partir des mesures du mat sur un banc. Le mat est fix&eacute; &agrave; sa base et pos&eacute; en son extr&ecirc;mit&eacute; sur un couteau afin de g&eacute;n&eacute;rer de la torsion pure. Le fuselage est soumis &agrave; un charge de 6,25kg positionn&eacute;e &agrave; 35cm de l\'axe de torsion. La mesure est r&eacute;alis&eacute;e &agrave; 25cm de l\'axe de torsion.&nbsp;</p>
+<p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en torsion GIg &agrave; partir de la d&eacute;formation mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux. La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 100 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
+<p><img class="img-fluid" src="/storage/photos/5/attributes/banc-mesure-structure-foil.jpg" alt="Banc de mesure" /></p>
+<p>Pour une question de confidentialit&eacute; industrielle, la visualisation des donn&eacute;es de ce sh&eacute;ma est r&eacute;serv&eacute;e aux administrateurs et aux marques.</p>
+</div>
+</div>
+<div class="alert alert-warning mt-4" role="alert">
+<h4 class="alert-heading">Important !</h4>
+<p>Ce diagramme est &eacute;tabli sur la base de mesures objectives. Il ne s\'agit pas d\'un jugement, et doit rester un indicateur pouvant expliquer certains comportements.</p>
+<hr />
+<p class="mb-0">Il est important de consid&eacute;rer tous les param&egrave;tres pour &eacute;valuer un produit car le r&eacute;sultat final est un tout.</p>
+</div>',
                 'unit' => 'N.m2/Rad',
                 'decimals' => 2,
                 'group' => 'structural_result_group',
                 'chart' => 'pourcentage',
-                'chart_display' => 4,
+                'chart_display' => 7,
                 'field' => 'attr20',
                 'category_id' => 1,
             ),
@@ -434,7 +520,7 @@ class AttributesTableSeeder extends Seeder
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => 4,
+                'chart_display' => NULL,
                 'field' => 'attr9',
                 'category_id' => 2,
             ),
@@ -465,7 +551,7 @@ class AttributesTableSeeder extends Seeder
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 6,
                 'field' => 'attr11',
                 'category_id' => 2,
             ),
@@ -480,7 +566,7 @@ Plus il est faible, plus le flotteur sera adapté aux foils de petite taille (de
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 7,
                 'field' => 'attr12',
                 'category_id' => 2,
             ),
@@ -511,7 +597,7 @@ Plus il est faible, plus le flotteur sera adapté aux foils de petite taille (de
                 'decimals' => 1,
                 'group' => 'usage_group',
                 'chart' => 'note',
-                'chart_display' => NULL,
+                'chart_display' => 8,
                 'field' => 'attr14',
                 'category_id' => 2,
             ),

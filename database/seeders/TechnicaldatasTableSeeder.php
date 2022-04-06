@@ -64,8 +64,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.56,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 1.93,
-                'attr9' => 5.53,
+                'attr8' => 1.04,
+                'attr9' => 5.05,
                 'attr10' => 4.01,
                 'attr11' => 8.5,
                 'attr12' => 6.99,
@@ -83,7 +83,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-09-15 18:57:16',
-                'updated_at' => '2020-04-09 06:51:28',
+                'updated_at' => '2022-04-06 22:47:43',
             ),
             2 => 
             array (
@@ -130,8 +130,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 5.15,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 1.02,
-                'attr9' => 5.77,
+                'attr8' => 0.51,
+                'attr9' => 6.27,
                 'attr10' => 0.52,
                 'attr11' => 5.0,
                 'attr12' => 5.52,
@@ -149,7 +149,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-08-24 18:57:17',
-                'updated_at' => '2021-08-01 08:37:18',
+                'updated_at' => '2022-04-06 22:47:34',
             ),
             4 => 
             array (
@@ -164,7 +164,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.0,
                 'attr7' => 12.7,
                 'attr8' => 9.03,
-                'attr9' => 8.59,
+                'attr9' => 8.86,
                 'attr10' => 7.0,
                 'attr11' => 6.5,
                 'attr12' => 7.53,
@@ -182,7 +182,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-08-15 18:57:17',
-                'updated_at' => '2021-06-14 14:20:46',
+                'updated_at' => '2022-04-06 22:44:40',
             ),
             5 => 
             array (
@@ -196,7 +196,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.3,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 4.02,
+                'attr8' => 4.11,
                 'attr9' => 8.24,
                 'attr10' => 1.0,
                 'attr11' => 4.0,
@@ -215,7 +215,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-03 18:57:17',
-                'updated_at' => '2021-08-01 08:38:21',
+                'updated_at' => '2022-04-06 22:13:59',
             ),
             6 => 
             array (
@@ -230,7 +230,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.8,
                 'attr7' => 13.8,
                 'attr8' => 10.0,
-                'attr9' => 9.61,
+                'attr9' => 9.49,
                 'attr10' => 9.72,
                 'attr11' => 8.0,
                 'attr12' => 9.51,
@@ -248,7 +248,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2022-03-10 18:02:52',
+                'updated_at' => '2022-04-06 22:43:49',
             ),
             7 => 
             array (
@@ -263,7 +263,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.6,
                 'attr7' => 14.3,
                 'attr8' => 10.0,
-                'attr9' => 9.62,
+                'attr9' => 9.49,
                 'attr10' => 8.98,
                 'attr11' => 7.99,
                 'attr12' => 7.5,
@@ -281,7 +281,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2022-03-10 17:45:34',
+                'updated_at' => '2022-04-06 22:43:51',
             ),
             8 => 
             array (
@@ -329,7 +329,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 18.0,
                 'attr7' => 13.8,
                 'attr8' => 9.99,
-                'attr9' => 8.02,
+                'attr9' => 9.34,
                 'attr10' => 5.0,
                 'attr11' => 4.49,
                 'attr12' => 7.5,
@@ -341,13 +341,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 5.14,
                 'attr19' => 1521.3391899593,
                 'attr20' => 991.35777638703,
-                'attr21' => 30.28933209101,
+                'attr21' => 43.616638211054,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-08-15 18:57:17',
-                'updated_at' => '2022-03-10 17:43:40',
+                'updated_at' => '2022-04-06 22:46:29',
             ),
             10 => 
             array (
@@ -362,7 +362,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 18.0,
                 'attr7' => 13.8,
                 'attr8' => 10.0,
-                'attr9' => 8.02,
+                'attr9' => 9.36,
                 'attr10' => 5.0,
                 'attr11' => 3.47,
                 'attr12' => 7.5,
@@ -374,13 +374,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 6.23,
                 'attr19' => 1559.4255674548,
                 'attr20' => 817.96398636197,
-                'attr21' => 31.047618568949,
+                'attr21' => 44.708570739286,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-04-15 18:57:17',
-                'updated_at' => '2022-03-10 17:38:43',
+                'updated_at' => '2022-04-06 22:46:27',
             ),
             11 => 
             array (
@@ -395,7 +395,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 18.0,
                 'attr7' => 13.7,
                 'attr8' => 10.0,
-                'attr9' => 9.02,
+                'attr9' => 8.88,
                 'attr10' => 5.0,
                 'attr11' => 3.47,
                 'attr12' => 7.48,
@@ -407,13 +407,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 6.69,
                 'attr19' => 1374.0526752451,
                 'attr20' => 761.74545136584,
-                'attr21' => 27.616624773516,
+                'attr21' => 39.767939673863,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-03-15 19:57:17',
-                'updated_at' => '2022-03-10 17:42:18',
+                'updated_at' => '2022-04-06 22:44:03',
             ),
             12 => 
             array (
@@ -461,7 +461,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 3.01,
-                'attr9' => 4.5,
+                'attr9' => 3.16,
                 'attr10' => 3.49,
                 'attr11' => 4.52,
                 'attr12' => 4.54,
@@ -479,7 +479,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-02 18:57:17',
-                'updated_at' => '2020-03-30 19:46:00',
+                'updated_at' => '2022-04-06 22:49:26',
             ),
             14 => 
             array (
@@ -494,7 +494,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 19.2,
                 'attr7' => 16.2,
                 'attr8' => 6.41,
-                'attr9' => 7.81,
+                'attr9' => 7.96,
                 'attr10' => 7.0,
                 'attr11' => 7.51,
                 'attr12' => 7.5,
@@ -512,7 +512,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-03-04 19:57:17',
-                'updated_at' => '2021-06-14 14:20:43',
+                'updated_at' => '2022-04-06 22:46:47',
             ),
             15 => 
             array (
@@ -527,7 +527,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 16.3,
                 'attr7' => 12.7,
                 'attr8' => 8.01,
-                'attr9' => 9.39,
+                'attr9' => 9.21,
                 'attr10' => 10.0,
                 'attr11' => 9.11,
                 'attr12' => 9.53,
@@ -545,7 +545,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-12-03 19:57:17',
-                'updated_at' => '2022-03-10 16:54:29',
+                'updated_at' => '2022-04-06 22:43:54',
             ),
             16 => 
             array (
@@ -560,7 +560,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 16.3,
                 'attr7' => 12.7,
                 'attr8' => 8.03,
-                'attr9' => 9.52,
+                'attr9' => 9.23,
                 'attr10' => 10.0,
                 'attr11' => 9.02,
                 'attr12' => 9.52,
@@ -578,7 +578,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-08-01 18:57:17',
-                'updated_at' => '2022-03-10 16:53:56',
+                'updated_at' => '2022-04-06 22:43:08',
             ),
             17 => 
             array (
@@ -593,7 +593,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 19.2,
                 'attr7' => 15.7,
                 'attr8' => 6.95,
-                'attr9' => 5.44,
+                'attr9' => 4.96,
                 'attr10' => 6.48,
                 'attr11' => 8.98,
                 'attr12' => 4.55,
@@ -611,7 +611,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-10-01 18:57:17',
-                'updated_at' => '2021-01-29 09:54:20',
+                'updated_at' => '2022-04-06 22:48:07',
             ),
             18 => 
             array (
@@ -626,7 +626,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 19.2,
                 'attr7' => 15.7,
                 'attr8' => 6.92,
-                'attr9' => 5.51,
+                'attr9' => 5.04,
                 'attr10' => 6.5,
                 'attr11' => 8.99,
                 'attr12' => 4.56,
@@ -644,7 +644,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
-                'updated_at' => '2021-01-29 09:54:21',
+                'updated_at' => '2022-04-06 22:47:54',
             ),
             19 => 
             array (
@@ -725,7 +725,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 19.4,
                 'attr7' => 15.9,
                 'attr8' => 6.89,
-                'attr9' => 5.5,
+                'attr9' => 4.97,
                 'attr10' => 6.49,
                 'attr11' => 8.0,
                 'attr12' => 4.53,
@@ -743,7 +743,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
-                'updated_at' => '2021-01-29 09:54:37',
+                'updated_at' => '2022-04-06 22:47:58',
             ),
             22 => 
             array (
@@ -757,7 +757,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.9,
                 'attr6' => 19.4,
                 'attr7' => 15.9,
-                'attr8' => 5.96,
+                'attr8' => 5.0,
                 'attr9' => 8.0,
                 'attr10' => 2.98,
                 'attr11' => 8.0,
@@ -770,13 +770,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 4.96,
                 'attr19' => 1261.2227030371,
                 'attr20' => 1048.9523968926,
-                'attr21' => 18.357463251811,
+                'attr21' => 26.434747082608,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
-                'updated_at' => '2020-03-26 22:45:23',
+                'updated_at' => '2022-04-06 22:15:11',
             ),
             23 => 
             array (
@@ -790,7 +790,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.65,
                 'attr6' => 19.9,
                 'attr7' => 16.1,
-                'attr8' => 5.96,
+                'attr8' => 5.0,
                 'attr9' => 8.0,
                 'attr10' => 2.98,
                 'attr11' => 8.0,
@@ -803,13 +803,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 4.38,
                 'attr19' => 1465.6561869281,
                 'attr20' => 955.1545973535,
-                'attr21' => 20.112664407327,
+                'attr21' => 28.96223674655,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-08-01 18:57:17',
-                'updated_at' => '2020-06-25 10:17:39',
+                'updated_at' => '2022-04-06 22:15:08',
             ),
             24 => 
             array (
@@ -823,8 +823,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => NULL,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 1.96,
-                'attr9' => 3.52,
+                'attr8' => 1.48,
+                'attr9' => 4.69,
                 'attr10' => 0.49,
                 'attr11' => 2.98,
                 'attr12' => 3.01,
@@ -842,7 +842,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-08-24 18:57:17',
-                'updated_at' => '2021-01-22 21:04:37',
+                'updated_at' => '2022-04-06 22:49:57',
             ),
             25 => 
             array (
@@ -856,7 +856,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.06,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 5.46,
+                'attr8' => 5.0,
                 'attr9' => 6.04,
                 'attr10' => 1.53,
                 'attr11' => 4.0,
@@ -875,7 +875,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-12-24 19:57:17',
-                'updated_at' => '2021-01-29 09:51:02',
+                'updated_at' => '2022-04-06 22:15:00',
             ),
             26 => 
             array (
@@ -923,7 +923,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 21.0,
                 'attr7' => 15.15,
                 'attr8' => 5.0,
-                'attr9' => 5.52,
+                'attr9' => 5.04,
                 'attr10' => 7.98,
                 'attr11' => 10.0,
                 'attr12' => 8.28,
@@ -941,7 +941,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-06-02 18:57:17',
-                'updated_at' => '2021-08-01 08:31:53',
+                'updated_at' => '2022-04-06 22:47:51',
             ),
             28 => 
             array (
@@ -989,7 +989,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 19.8,
                 'attr7' => 15.17,
                 'attr8' => 8.59,
-                'attr9' => 8.57,
+                'attr9' => 8.99,
                 'attr10' => 6.51,
                 'attr11' => 5.52,
                 'attr12' => 5.0,
@@ -1007,7 +1007,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-04-25 18:57:17',
-                'updated_at' => '2021-06-14 14:20:36',
+                'updated_at' => '2022-04-06 22:44:48',
             ),
             30 => 
             array (
@@ -1021,8 +1021,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.79,
                 'attr6' => 20.5,
                 'attr7' => 15.2,
-                'attr8' => 4.41,
-                'attr9' => 4.99,
+                'attr8' => 3.57,
+                'attr9' => 4.13,
                 'attr10' => 3.49,
                 'attr11' => 8.49,
                 'attr12' => 7.51,
@@ -1040,7 +1040,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-04-28 18:57:17',
-                'updated_at' => '2021-06-14 14:16:52',
+                'updated_at' => '2022-04-06 22:48:43',
             ),
             31 => 
             array (
@@ -1054,8 +1054,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 3.98,
                 'attr6' => 20.5,
                 'attr7' => 15.2,
-                'attr8' => 4.43,
-                'attr9' => 5.0,
+                'attr8' => 4.08,
+                'attr9' => 4.13,
                 'attr10' => 3.48,
                 'attr11' => 8.53,
                 'attr12' => 7.48,
@@ -1073,7 +1073,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-09-15 18:57:17',
-                'updated_at' => '2021-08-01 08:31:21',
+                'updated_at' => '2022-04-06 22:48:13',
             ),
             32 => 
             array (
@@ -1153,8 +1153,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 5.16,
                 'attr6' => 15.9,
                 'attr7' => 15.9,
-                'attr8' => 2.02,
-                'attr9' => 4.53,
+                'attr8' => 1.78,
+                'attr9' => 3.43,
                 'attr10' => 2.5,
                 'attr11' => 6.0,
                 'attr12' => 5.0,
@@ -1172,7 +1172,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-02-12 19:57:17',
-                'updated_at' => '2022-03-10 17:21:34',
+                'updated_at' => '2022-04-06 22:49:18',
             ),
             35 => 
             array (
@@ -1186,8 +1186,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 5.16,
                 'attr6' => 15.9,
                 'attr7' => 15.9,
-                'attr8' => 1.97,
-                'attr9' => 5.0,
+                'attr8' => 1.76,
+                'attr9' => 3.48,
                 'attr10' => 2.52,
                 'attr11' => 6.0,
                 'attr12' => 5.0,
@@ -1199,13 +1199,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 4.74,
                 'attr19' => 762.22092658056,
                 'attr20' => 1074.9940099018,
-                'attr21' => 15.175552516026,
+                'attr21' => 21.852795623077,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2020-03-13 20:30:42',
+                'updated_at' => '2022-04-06 22:48:18',
             ),
             36 => 
             array (
@@ -1220,7 +1220,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 0.77,
-                'attr9' => 4.0,
+                'attr9' => 2.35,
                 'attr10' => 0.46,
                 'attr11' => 1.51,
                 'attr12' => 1.49,
@@ -1238,7 +1238,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2018-02-12 19:57:17',
-                'updated_at' => '2020-03-30 20:55:31',
+                'updated_at' => '2022-04-06 22:49:45',
             ),
             37 => 
             array (
@@ -1450,7 +1450,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 3.49,
                 'attr6' => 18.19,
                 'attr7' => 17.9,
-                'attr8' => 1.53,
+                'attr8' => 0.28,
                 'attr9' => 6.0,
                 'attr10' => 3.01,
                 'attr11' => 3.48,
@@ -1463,13 +1463,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 6.64,
                 'attr19' => 1118.98900499,
                 'attr20' => 662.45535068039,
-                'attr21' => 15.240884677166,
+                'attr21' => 21.946873935119,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-10-18 18:57:17',
-                'updated_at' => '2020-03-13 20:30:23',
+                'updated_at' => '2022-04-06 22:12:21',
             ),
             44 => 
             array (
@@ -1483,7 +1483,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 3.49,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 2.55,
+                'attr8' => 1.95,
                 'attr9' => 1.01,
                 'attr10' => 0.48,
                 'attr11' => 3.47,
@@ -1502,7 +1502,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-10-18 18:57:17',
-                'updated_at' => '2020-03-13 20:30:20',
+                'updated_at' => '2022-04-06 22:12:57',
             ),
             45 => 
             array (
@@ -1516,7 +1516,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 2.8,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 8.8,
+                'attr8' => 7.44,
                 'attr9' => 7.0,
                 'attr10' => 2.0,
                 'attr11' => 0.53,
@@ -1535,7 +1535,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-08-22 18:57:17',
-                'updated_at' => '2021-01-22 21:03:23',
+                'updated_at' => '2022-04-06 22:10:29',
             ),
             46 => 
             array (
@@ -1582,7 +1582,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.75,
                 'attr6' => 16.8,
                 'attr7' => 15.6,
-                'attr8' => 5.0,
+                'attr8' => 5.36,
                 'attr9' => 6.49,
                 'attr10' => 4.49,
                 'attr11' => 7.0,
@@ -1595,13 +1595,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 11.1,
                 'attr19' => 928.93701988401,
                 'attr20' => 410.95080498465,
-                'attr21' => 17.486232313795,
+                'attr21' => 25.180174531864,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-07-10 18:57:17',
-                'updated_at' => '2022-03-10 17:19:56',
+                'updated_at' => '2022-04-06 22:14:30',
             ),
             48 => 
             array (
@@ -1616,7 +1616,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 5.39,
-                'attr9' => 9.4,
+                'attr9' => 8.9,
                 'attr10' => 10.0,
                 'attr11' => 7.0,
                 'attr12' => 10.0,
@@ -1634,7 +1634,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2022-03-10 17:16:48',
+                'updated_at' => '2022-04-06 22:43:57',
             ),
             49 => 
             array (
@@ -1649,7 +1649,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 5.44,
-                'attr9' => 9.4,
+                'attr9' => 8.86,
                 'attr10' => 10.0,
                 'attr11' => 7.0,
                 'attr12' => 10.0,
@@ -1667,7 +1667,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2022-03-10 17:16:16',
+                'updated_at' => '2022-04-06 22:44:06',
             ),
             50 => 
             array (
@@ -1682,7 +1682,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 5.4,
-                'attr9' => 9.41,
+                'attr9' => 8.9,
                 'attr10' => 10.0,
                 'attr11' => 7.0,
                 'attr12' => 10.0,
@@ -1700,7 +1700,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2022-03-10 17:15:47',
+                'updated_at' => '2022-04-06 22:43:59',
             ),
             51 => 
             array (
@@ -1715,7 +1715,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 5.4,
-                'attr9' => 9.41,
+                'attr9' => 8.9,
                 'attr10' => 10.0,
                 'attr11' => 7.0,
                 'attr12' => 10.0,
@@ -1733,7 +1733,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2019-05-10 18:57:17',
-                'updated_at' => '2022-03-10 17:14:57',
+                'updated_at' => '2022-04-06 22:44:01',
             ),
             52 => 
             array (
@@ -1748,7 +1748,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.07,
                 'attr7' => 12.9,
                 'attr8' => 9.04,
-                'attr9' => 8.03,
+                'attr9' => 8.87,
                 'attr10' => 6.24,
                 'attr11' => 3.51,
                 'attr12' => 6.0,
@@ -1766,7 +1766,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-07-31 18:57:17',
-                'updated_at' => '2021-06-14 14:20:56',
+                'updated_at' => '2022-04-06 22:46:03',
             ),
             53 => 
             array (
@@ -1781,7 +1781,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 5.41,
-                'attr9' => 9.4,
+                'attr9' => 8.86,
                 'attr10' => 10.0,
                 'attr11' => 7.0,
                 'attr12' => 10.0,
@@ -1799,7 +1799,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-07-26 18:57:17',
-                'updated_at' => '2022-03-10 17:11:50',
+                'updated_at' => '2022-04-06 22:44:08',
             ),
             54 => 
             array (
@@ -1814,7 +1814,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.57,
                 'attr7' => 14.25,
                 'attr8' => 6.07,
-                'attr9' => 3.02,
+                'attr9' => 5.9,
                 'attr10' => 1.01,
                 'attr11' => 7.0,
                 'attr12' => 5.52,
@@ -1826,13 +1826,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 4.52,
                 'attr19' => 878.70453213166,
                 'attr20' => 1127.3044825349,
-                'attr21' => 17.461733040245,
+                'attr21' => 25.144895577953,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-06-09 18:57:17',
-                'updated_at' => '2022-03-10 17:10:52',
+                'updated_at' => '2022-04-06 22:50:06',
             ),
             55 => 
             array (
@@ -1847,7 +1847,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 5.41,
-                'attr9' => 4.55,
+                'attr9' => 3.57,
                 'attr10' => 0.5,
                 'attr11' => 0.24,
                 'attr12' => 2.49,
@@ -1865,7 +1865,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-05-03 18:57:17',
-                'updated_at' => '2020-03-13 20:27:31',
+                'updated_at' => '2022-04-06 22:49:08',
             ),
             56 => 
             array (
@@ -1879,8 +1879,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.69,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 5.91,
-                'attr9' => 2.49,
+                'attr8' => 4.99,
+                'attr9' => 1.8,
                 'attr10' => 1.51,
                 'attr11' => 4.03,
                 'attr12' => 3.48,
@@ -1898,7 +1898,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-05-03 18:57:17',
-                'updated_at' => '2020-03-13 20:28:56',
+                'updated_at' => '2022-04-06 22:50:11',
             ),
             57 => 
             array (
@@ -1945,8 +1945,8 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 4.1,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 4.42,
-                'attr9' => 4.98,
+                'attr8' => 3.33,
+                'attr9' => 2.95,
                 'attr10' => 3.52,
                 'attr11' => 8.01,
                 'attr12' => 7.15,
@@ -1964,7 +1964,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-04-24 18:57:17',
-                'updated_at' => '2021-06-14 14:16:03',
+                'updated_at' => '2022-04-06 22:49:02',
             ),
             59 => 
             array (
@@ -2011,7 +2011,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => NULL,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 1.04,
+                'attr8' => 0.22,
                 'attr9' => 1.5,
                 'attr10' => 1.0,
                 'attr11' => 0.02,
@@ -2030,7 +2030,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-04-04 18:57:17',
-                'updated_at' => '2020-03-13 20:30:45',
+                'updated_at' => '2022-04-06 22:12:17',
             ),
             61 => 
             array (
@@ -2045,7 +2045,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 2.59,
-                'attr9' => 4.01,
+                'attr9' => 2.37,
                 'attr10' => 1.0,
                 'attr11' => 3.5,
                 'attr12' => 4.47,
@@ -2063,7 +2063,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-03-17 19:57:17',
-                'updated_at' => '2020-03-30 19:46:07',
+                'updated_at' => '2022-04-06 22:49:40',
             ),
             62 => 
             array (
@@ -2077,7 +2077,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 3.42,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 7.99,
+                'attr8' => 7.9,
                 'attr9' => 4.48,
                 'attr10' => 1.0,
                 'attr11' => 7.51,
@@ -2096,7 +2096,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2016-11-02 19:57:17',
-                'updated_at' => '2021-03-07 18:06:40',
+                'updated_at' => '2022-04-06 22:10:57',
             ),
             63 => 
             array (
@@ -2210,7 +2210,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 15.9,
                 'attr7' => 15.8,
                 'attr8' => 7.34,
-                'attr9' => 4.99,
+                'attr9' => 6.36,
                 'attr10' => 1.01,
                 'attr11' => 2.01,
                 'attr12' => 4.46,
@@ -2222,13 +2222,13 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr18' => 7.88,
                 'attr19' => 528.88065235849,
                 'attr20' => 551.45656760191,
-                'attr21' => 10.629795195844,
+                'attr21' => 15.306905082015,
                 'attr22' => NULL,
                 'attr23' => NULL,
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2016-05-15 18:57:17',
-                'updated_at' => '2020-03-13 20:26:39',
+                'updated_at' => '2022-04-06 22:48:55',
             ),
             67 => 
             array (
@@ -2243,7 +2243,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 3.03,
-                'attr9' => 5.5,
+                'attr9' => 4.09,
                 'attr10' => 0.48,
                 'attr11' => 0.0,
                 'attr12' => 7.03,
@@ -2261,7 +2261,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2017-05-02 18:57:17',
-                'updated_at' => '2020-03-22 17:52:48',
+                'updated_at' => '2022-04-06 22:48:04',
             ),
             68 => 
             array (
@@ -3463,7 +3463,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => 5.71,
                 'attr6' => 17.2,
                 'attr7' => 14.1,
-                'attr8' => 5.0,
+                'attr8' => 4.61,
                 'attr9' => 7.51,
                 'attr10' => 7.0,
                 'attr11' => 7.0,
@@ -3482,7 +3482,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-03-30 16:14:00',
-                'updated_at' => '2021-06-14 14:20:39',
+                'updated_at' => '2022-04-06 22:14:09',
             ),
             105 => 
             array (
@@ -4091,7 +4091,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 5.0,
-                'attr9' => 6.0,
+                'attr9' => 8.0,
                 'attr10' => 4.0,
                 'attr11' => 6.0,
                 'attr12' => 5.0,
@@ -4109,7 +4109,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-04-06 20:15:55',
-                'updated_at' => '2022-03-10 17:55:35',
+                'updated_at' => '2022-04-06 22:47:25',
             ),
             124 => 
             array (
@@ -4355,7 +4355,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 18.2,
                 'attr7' => 13.9,
                 'attr8' => 7.71,
-                'attr9' => 8.24,
+                'attr9' => 8.99,
                 'attr10' => 7.12,
                 'attr11' => 7.0,
                 'attr12' => 8.5,
@@ -4373,7 +4373,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2020-04-25 06:19:35',
-                'updated_at' => '2021-06-14 14:20:53',
+                'updated_at' => '2022-04-06 22:45:38',
             ),
             132 => 
             array (
@@ -5345,7 +5345,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.0,
                 'attr7' => 14.5,
                 'attr8' => 8.24,
-                'attr9' => 8.6,
+                'attr9' => 9.11,
                 'attr10' => 10.0,
                 'attr11' => 9.53,
                 'attr12' => 9.52,
@@ -5363,7 +5363,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-01-10 15:05:27',
-                'updated_at' => '2022-03-10 16:58:15',
+                'updated_at' => '2022-04-06 22:44:15',
             ),
             162 => 
             array (
@@ -5774,7 +5774,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => NULL,
                 'attr7' => NULL,
                 'attr8' => 7.69,
-                'attr9' => 8.23,
+                'attr9' => 9.01,
                 'attr10' => 7.51,
                 'attr11' => 7.52,
                 'attr12' => 8.48,
@@ -5792,7 +5792,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-06-14 14:07:32',
-                'updated_at' => '2021-06-17 13:26:33',
+                'updated_at' => '2022-04-06 22:45:36',
             ),
             175 => 
             array (
@@ -5807,7 +5807,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr6' => 17.8,
                 'attr7' => 13.65,
                 'attr8' => 8.0,
-                'attr9' => 5.0,
+                'attr9' => 7.24,
                 'attr10' => 8.0,
                 'attr11' => 9.0,
                 'attr12' => 8.0,
@@ -5825,7 +5825,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-06-15 10:13:12',
-                'updated_at' => '2022-03-10 18:48:26',
+                'updated_at' => '2022-04-06 22:48:35',
             ),
             176 => 
             array (
@@ -5872,7 +5872,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr5' => NULL,
                 'attr6' => NULL,
                 'attr7' => NULL,
-                'attr8' => 4.69,
+                'attr8' => 4.09,
                 'attr9' => 8.02,
                 'attr10' => 2.0,
                 'attr11' => 9.02,
@@ -5891,7 +5891,7 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr24' => NULL,
                 'attr25' => NULL,
                 'created_at' => '2021-08-01 08:30:21',
-                'updated_at' => '2021-08-05 10:56:32',
+                'updated_at' => '2022-04-06 22:13:57',
             ),
             178 => 
             array (

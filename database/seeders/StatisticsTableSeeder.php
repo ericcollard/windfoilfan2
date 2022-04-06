@@ -24927,6 +24927,42 @@ class StatisticsTableSeeder extends Seeder
                 'created_at' => '2022-03-24 21:56:32',
                 'updated_at' => '2022-03-24 21:56:45',
             ),
+            75 => 
+            array (
+                'id' => 8196,
+                'ip' => NULL,
+                'user_id' => 4,
+                'hits' => 1,
+                'statisticable_id' => 185,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-04-06 19:56:32',
+                'updated_at' => '2022-04-06 19:56:32',
+            ),
+            76 => 
+            array (
+                'id' => 8197,
+                'ip' => NULL,
+                'user_id' => 4,
+                'hits' => 2,
+                'statisticable_id' => 183,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-04-06 19:56:49',
+                'updated_at' => '2022-04-06 22:05:07',
+            ),
+            77 => 
+            array (
+                'id' => 8198,
+                'ip' => '::1',
+                'user_id' => NULL,
+                'hits' => 1,
+                'statisticable_id' => 183,
+                'statisticable_type' => 'App\\Models\\Device',
+            'agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15',
+                'created_at' => '2022-04-06 22:04:51',
+                'updated_at' => '2022-04-06 22:04:51',
+            ),
         ));
         
         
