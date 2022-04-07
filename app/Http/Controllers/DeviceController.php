@@ -38,6 +38,7 @@ class DeviceController extends Controller
         return view('devices.categories', compact('categories'));
     }
 
+
     /**
      * Display a listing of devices for specified category.
      *
@@ -66,6 +67,8 @@ class DeviceController extends Controller
         return $dataTable
             ->render('devices.category');
     }
+
+
 
     /**
      * Display the specified resource.

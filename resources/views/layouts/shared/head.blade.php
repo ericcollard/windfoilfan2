@@ -1,12 +1,5 @@
 <meta charset="utf-8" />
 
-<x-meta
-    title="{{ View::getSection('page_title') }} | Windfoilfan - Ultimate windfoil database"
-    description="{{ View::getSection('page_description') }}"
-    image="{{ View::getSection('page_image') }}"
-    author="{{ View::getSection('page_author') }}"
-    url="{{ View::getSection('page_url') }}"
-/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 

@@ -3,12 +3,15 @@
 @section('page_title')
     {{ $device->name }}
 @endsection
+
 @section('page_description')
     Article : {{ $device->name }}
 @endsection
+
 @section('page_image')
 
 @endsection
+
 @section('page_author')
     {{ $device->creator->name }}
 @endsection

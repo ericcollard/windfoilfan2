@@ -7,7 +7,6 @@
     "require": {
         "php": "^7.3|^8.0",
         "biscolab/laravel-recaptcha": "^5.2",
-        "cagilo/cagilo": "^2.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.4",
         "html2text/html2text": "^4.3",

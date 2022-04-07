@@ -90,8 +90,6 @@
     "/assets/js/tinymce/README.md": "/assets/js/tinymce/README.md",
     "/assets/js/tinymce/bower.json": "/assets/js/tinymce/bower.json",
     "/assets/js/tinymce/composer.json": "/assets/js/tinymce/composer.json",
-    "/assets/js/tinymce/jquery.tinymce.js": "/assets/js/tinymce/jquery.tinymce.js",
-    "/assets/js/tinymce/jquery.tinymce.min.js": "/assets/js/tinymce/jquery.tinymce.min.js",
     "/assets/js/tinymce/license.txt": "/assets/js/tinymce/license.txt",
     "/assets/js/tinymce/package.json": "/assets/js/tinymce/package.json",
     "/assets/js/tinymce/tinymce.d.ts": "/assets/js/tinymce/tinymce.d.ts",
