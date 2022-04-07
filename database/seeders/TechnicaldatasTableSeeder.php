@@ -23,7 +23,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 1,
                 'device_id' => 1,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -56,7 +56,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'device_id' => 2,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -89,7 +89,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'device_id' => 3,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 100.0,
@@ -122,7 +122,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 4,
                 'device_id' => 4,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -155,7 +155,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 5,
                 'device_id' => 5,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -188,7 +188,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 6,
                 'device_id' => 6,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -221,7 +221,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 7,
                 'device_id' => 7,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série Sonic',
                 'attr3' => NULL,
@@ -254,7 +254,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 8,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série 2020',
                 'attr3' => NULL,
@@ -287,7 +287,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 9,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto 1 2019',
                 'attr3' => NULL,
@@ -320,7 +320,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 10,
                 'device_id' => 11,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'V2 Série',
                 'attr3' => NULL,
@@ -353,7 +353,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 11,
                 'device_id' => 11,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'V1 Série',
                 'attr3' => NULL,
@@ -386,7 +386,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 12,
                 'device_id' => 11,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Présérie 2019',
                 'attr3' => NULL,
@@ -419,7 +419,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 13,
                 'device_id' => 13,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -452,7 +452,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 14,
                 'device_id' => 14,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 109.0,
@@ -485,7 +485,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 15,
                 'device_id' => 15,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -518,7 +518,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 16,
                 'device_id' => 16,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série 2019 USA',
                 'attr3' => NULL,
@@ -551,7 +551,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 17,
                 'device_id' => 16,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto 2018',
                 'attr3' => NULL,
@@ -584,7 +584,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 18,
                 'device_id' => 18,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -617,7 +617,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 19,
                 'device_id' => 19,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -650,7 +650,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 20,
                 'device_id' => 20,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -683,7 +683,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 21,
                 'device_id' => 21,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -716,7 +716,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 22,
                 'device_id' => 22,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -749,7 +749,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 23,
                 'device_id' => 23,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -782,7 +782,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 24,
                 'device_id' => 24,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -815,7 +815,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 25,
                 'device_id' => 25,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -848,7 +848,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 26,
                 'device_id' => 26,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -881,7 +881,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 27,
                 'device_id' => 27,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -914,7 +914,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 28,
                 'device_id' => 28,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -947,7 +947,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 29,
                 'device_id' => 29,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 155.0,
@@ -980,7 +980,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 30,
                 'device_id' => 30,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 100.0,
@@ -1013,7 +1013,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 31,
                 'device_id' => 31,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -1046,7 +1046,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 32,
                 'device_id' => 32,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -1079,7 +1079,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 33,
                 'device_id' => 33,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -1112,7 +1112,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 34,
                 'device_id' => 34,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -1178,7 +1178,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 36,
                 'device_id' => 36,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1211,7 +1211,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 37,
                 'device_id' => 37,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -1244,7 +1244,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 38,
                 'device_id' => 38,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1277,7 +1277,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 39,
                 'device_id' => 39,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1310,7 +1310,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 40,
                 'device_id' => 40,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1343,7 +1343,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 41,
                 'device_id' => 41,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1376,7 +1376,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 42,
                 'device_id' => 42,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1409,7 +1409,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 43,
                 'device_id' => 43,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -1442,7 +1442,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 44,
                 'device_id' => 44,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 100.0,
@@ -1475,7 +1475,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 45,
                 'device_id' => 45,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 100.0,
@@ -1508,7 +1508,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 46,
                 'device_id' => 46,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 95.0,
@@ -1541,7 +1541,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 47,
                 'device_id' => 47,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Slalom 2017 Série',
                 'attr3' => NULL,
@@ -1574,7 +1574,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 48,
                 'device_id' => 47,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>Mesur&eacute; avec Tiesda</p>',
                 'serial' => 'Slalom 2019 Proto light',
                 'attr3' => NULL,
@@ -1607,7 +1607,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 49,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2019 Série P2',
                 'attr3' => NULL,
@@ -1640,7 +1640,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 50,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2019 Série P3',
                 'attr3' => NULL,
@@ -1673,7 +1673,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 51,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2019 Série P4',
                 'attr3' => NULL,
@@ -1706,7 +1706,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 52,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2019 Série P5',
                 'attr3' => NULL,
@@ -1739,7 +1739,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 53,
                 'device_id' => 53,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -1772,7 +1772,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 54,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2017 Série',
                 'attr3' => NULL,
@@ -1805,7 +1805,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 55,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Slalom 2017 Série',
                 'attr3' => NULL,
@@ -1838,7 +1838,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 56,
                 'device_id' => 56,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1871,7 +1871,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 57,
                 'device_id' => 57,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1904,7 +1904,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 58,
                 'device_id' => 58,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 90.0,
@@ -1937,7 +1937,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 59,
                 'device_id' => 59,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -1970,7 +1970,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 60,
                 'device_id' => 60,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2003,7 +2003,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 61,
                 'device_id' => 61,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 99.0,
@@ -2036,7 +2036,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 62,
                 'device_id' => 62,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 109.0,
@@ -2069,7 +2069,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 63,
                 'device_id' => 63,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2102,7 +2102,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 64,
                 'device_id' => 64,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 99.0,
@@ -2135,7 +2135,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 65,
                 'device_id' => 65,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 0.0,
@@ -2168,7 +2168,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 66,
                 'device_id' => 66,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2201,7 +2201,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 67,
                 'device_id' => 68,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 180.0,
@@ -2234,7 +2234,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 68,
                 'device_id' => 70,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2267,7 +2267,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 69,
                 'device_id' => 71,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2300,7 +2300,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 70,
                 'device_id' => 72,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -2333,7 +2333,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 71,
                 'device_id' => 73,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 72.0,
@@ -2366,7 +2366,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 72,
                 'device_id' => 74,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 76.0,
@@ -2399,7 +2399,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 73,
                 'device_id' => 75,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 86.0,
@@ -2432,7 +2432,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 74,
                 'device_id' => 76,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 75.8,
@@ -2465,7 +2465,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 75,
                 'device_id' => 77,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 76.0,
@@ -2498,7 +2498,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 76,
                 'device_id' => 78,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.0,
@@ -2531,7 +2531,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 77,
                 'device_id' => 79,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 77.5,
@@ -2564,7 +2564,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 78,
                 'device_id' => 80,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 86.0,
@@ -2597,7 +2597,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 79,
                 'device_id' => 81,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 78.0,
@@ -2630,7 +2630,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 80,
                 'device_id' => 82,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 75.5,
@@ -2663,7 +2663,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 81,
                 'device_id' => 83,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.0,
@@ -2696,7 +2696,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 82,
                 'device_id' => 84,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 86.0,
@@ -2729,7 +2729,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 83,
                 'device_id' => 85,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 88.5,
@@ -2762,7 +2762,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 84,
                 'device_id' => 86,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.0,
@@ -2795,7 +2795,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 85,
                 'device_id' => 87,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 82.0,
@@ -2828,7 +2828,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 86,
                 'device_id' => 88,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 87.0,
@@ -2861,7 +2861,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 87,
                 'device_id' => 89,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -2894,7 +2894,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 88,
                 'device_id' => 90,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 87.0,
@@ -2927,7 +2927,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 89,
                 'device_id' => 91,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -2960,7 +2960,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 90,
                 'device_id' => 92,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 75.0,
@@ -2993,7 +2993,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 91,
                 'device_id' => 93,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 85.0,
@@ -3026,7 +3026,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 92,
                 'device_id' => 94,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -3059,7 +3059,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 93,
                 'device_id' => 95,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -3092,7 +3092,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 94,
                 'device_id' => 96,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -3125,7 +3125,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 95,
                 'device_id' => 97,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 75.0,
@@ -3158,7 +3158,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 96,
                 'device_id' => 98,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 80.0,
@@ -3191,7 +3191,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 97,
                 'device_id' => 99,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 80.0,
@@ -3224,7 +3224,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 98,
                 'device_id' => 100,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 77.0,
@@ -3257,7 +3257,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 99,
                 'device_id' => 101,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 95.0,
@@ -3290,7 +3290,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 100,
                 'device_id' => 102,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -3323,7 +3323,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 101,
                 'device_id' => 103,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 78.0,
@@ -3356,7 +3356,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 102,
                 'device_id' => 104,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.5,
@@ -3389,7 +3389,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 103,
                 'device_id' => 105,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 76.0,
@@ -3422,7 +3422,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 104,
                 'device_id' => 106,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 71.0,
@@ -3455,7 +3455,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 105,
                 'device_id' => 107,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -3488,7 +3488,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 106,
                 'device_id' => 112,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.0,
@@ -3521,7 +3521,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 107,
                 'device_id' => 113,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 7.0,
@@ -3554,7 +3554,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 108,
                 'device_id' => 114,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.6,
@@ -3587,7 +3587,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 109,
                 'device_id' => 115,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.4,
@@ -3620,7 +3620,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 110,
                 'device_id' => 116,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 8.0,
@@ -3653,7 +3653,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 111,
                 'device_id' => 117,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 7.0,
@@ -3686,7 +3686,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 112,
                 'device_id' => 118,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.7,
@@ -3719,7 +3719,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 113,
                 'device_id' => 119,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.7,
@@ -3752,7 +3752,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 114,
                 'device_id' => 120,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.8,
@@ -3785,7 +3785,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 115,
                 'device_id' => 121,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 9.0,
@@ -3818,7 +3818,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 116,
                 'device_id' => 122,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.8,
@@ -3851,7 +3851,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 117,
                 'device_id' => 123,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.7,
@@ -3884,7 +3884,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 118,
                 'device_id' => 124,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 8.0,
@@ -3917,7 +3917,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 119,
                 'device_id' => 125,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 83.0,
@@ -3950,7 +3950,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 120,
                 'device_id' => 126,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.0,
@@ -3983,7 +3983,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 121,
                 'device_id' => 127,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 85.0,
@@ -4016,7 +4016,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 122,
                 'device_id' => 128,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.8,
@@ -4049,7 +4049,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 123,
                 'device_id' => 129,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.0,
@@ -4082,7 +4082,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 124,
                 'device_id' => 130,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série Avril 2020 Sonic',
                 'attr3' => NULL,
@@ -4115,7 +4115,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 125,
                 'device_id' => 131,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 71.0,
@@ -4148,7 +4148,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 126,
                 'device_id' => 132,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -4181,7 +4181,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 127,
                 'device_id' => 133,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 85.0,
@@ -4214,7 +4214,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 128,
                 'device_id' => 134,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 76.0,
@@ -4247,7 +4247,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 129,
                 'device_id' => 135,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -4280,7 +4280,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 130,
                 'device_id' => 136,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 75.0,
@@ -4313,7 +4313,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 131,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
             'serial' => 'proto 2 (Serial FM95 001 191209) Dec 2019',
                 'attr3' => NULL,
@@ -4346,7 +4346,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 132,
                 'device_id' => 138,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -4379,7 +4379,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 133,
                 'device_id' => 139,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -4412,7 +4412,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 134,
                 'device_id' => 140,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -4445,7 +4445,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 135,
                 'device_id' => 141,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.0,
@@ -4478,7 +4478,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 136,
                 'device_id' => 142,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 95.0,
@@ -4511,7 +4511,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 137,
                 'device_id' => 143,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 8.0,
@@ -4544,7 +4544,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 138,
                 'device_id' => 163,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => '2020 - Tristant Algret',
                 'attr3' => NULL,
@@ -4577,7 +4577,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 139,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série FM95 015 200113 Avril 2020 Rejeté',
                 'attr3' => NULL,
@@ -4610,7 +4610,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 140,
                 'device_id' => 146,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 78.0,
@@ -4643,7 +4643,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 141,
                 'device_id' => 147,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => -1.0,
@@ -4676,7 +4676,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 142,
                 'device_id' => 148,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 70.0,
@@ -4709,7 +4709,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 143,
                 'device_id' => 149,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -4742,7 +4742,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 144,
                 'device_id' => 150,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 85.0,
@@ -4775,7 +4775,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 145,
                 'device_id' => 163,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => '2020 - Cédric Bordes',
                 'attr3' => NULL,
@@ -4808,7 +4808,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 146,
                 'device_id' => 152,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -4841,7 +4841,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 147,
                 'device_id' => 153,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -4874,7 +4874,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 148,
                 'device_id' => 154,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -4907,7 +4907,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 149,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Race 2019 Série Cédric',
                 'attr3' => NULL,
@@ -4940,7 +4940,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 150,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Slalom 2020 série',
                 'attr3' => NULL,
@@ -4973,7 +4973,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 151,
                 'device_id' => 157,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -5006,7 +5006,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 152,
                 'device_id' => 163,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => '2020 - Pascal Toselli',
                 'attr3' => NULL,
@@ -5039,7 +5039,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 153,
                 'device_id' => 159,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 65.0,
@@ -5072,7 +5072,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 154,
                 'device_id' => 160,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5105,7 +5105,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 155,
                 'device_id' => 161,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 83.0,
@@ -5138,7 +5138,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 156,
                 'device_id' => 162,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5171,7 +5171,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 157,
                 'device_id' => 163,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5204,7 +5204,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 158,
                 'device_id' => 164,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5237,7 +5237,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 159,
                 'device_id' => 7,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto Cobra 1 Dec 2020',
                 'attr3' => NULL,
@@ -5270,7 +5270,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 160,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto 1 Cobra Déc 2020',
                 'attr3' => NULL,
@@ -5303,7 +5303,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 161,
                 'device_id' => 130,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto Cobra 1 Dec 2020',
                 'attr3' => NULL,
@@ -5336,7 +5336,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 162,
                 'device_id' => 168,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série 2021 thin',
                 'attr3' => NULL,
@@ -5369,7 +5369,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 163,
                 'device_id' => 7,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto Cobra 2 février 2021',
                 'attr3' => NULL,
@@ -5402,7 +5402,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 164,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto 2 Cobra Fev 2021',
                 'attr3' => NULL,
@@ -5435,7 +5435,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 165,
                 'device_id' => 130,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto Cobra 2 février 2021',
                 'attr3' => NULL,
@@ -5468,7 +5468,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 166,
                 'device_id' => 172,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 81.0,
@@ -5501,7 +5501,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 167,
                 'device_id' => 147,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Mesures',
                 'attr3' => NULL,
@@ -5534,7 +5534,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 168,
                 'device_id' => 138,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Mesures',
                 'attr3' => NULL,
@@ -5567,7 +5567,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 169,
                 'device_id' => 168,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => '12032012M950181 PROTO FEV 2021',
                 'attr3' => NULL,
@@ -5600,7 +5600,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 170,
                 'device_id' => 177,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 100.0,
@@ -5633,7 +5633,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 171,
                 'device_id' => 178,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 91.0,
@@ -5666,7 +5666,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 172,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
             'serial' => 'Présérie Cobra (UD 0001) Avril 2021',
                 'attr3' => NULL,
@@ -5699,7 +5699,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 173,
                 'device_id' => 180,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5732,7 +5732,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 174,
                 'device_id' => 181,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5765,7 +5765,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 175,
                 'device_id' => 182,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5798,7 +5798,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 176,
                 'device_id' => 183,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Mesures Sept 2021',
                 'attr3' => 1.0,
@@ -5831,7 +5831,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 177,
                 'device_id' => 184,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 8.0,
@@ -5864,7 +5864,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 178,
                 'device_id' => 185,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => NULL,
@@ -5897,7 +5897,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 179,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'E26 TE 0005 Sept 2021',
                 'attr3' => NULL,
@@ -5930,7 +5930,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 181,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'TE GA 003 Oct 2021',
                 'attr3' => NULL,
@@ -5963,7 +5963,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 182,
                 'device_id' => 189,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 5.5,
@@ -5996,7 +5996,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 183,
                 'device_id' => 190,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 85.0,
@@ -6029,7 +6029,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 184,
                 'device_id' => 191,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 6.0,
@@ -6062,7 +6062,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 185,
                 'device_id' => 192,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => NULL,
                 'attr3' => 76.0,
@@ -6095,7 +6095,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 186,
                 'device_id' => 7,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Proto PITCH TEST Nov 2021',
                 'attr3' => NULL,
@@ -6128,7 +6128,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 187,
                 'device_id' => 8,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'GEN 2 Série Nov 2021',
                 'attr3' => NULL,
@@ -6161,7 +6161,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 188,
                 'device_id' => 196,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>Mat Type 2 matteo yachino</p>',
                 'serial' => 'Serial 97 Type 2',
                 'attr3' => NULL,
@@ -6194,7 +6194,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 189,
                 'device_id' => 54,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>JC Select&nbsp;</p>',
                 'serial' => 'Race 2018 Série JC',
                 'attr3' => NULL,
@@ -6227,7 +6227,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 190,
                 'device_id' => 168,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>Achet&eacute; d\'occasion chez Chinook</p>',
                 'serial' => 'Serie 2021 Thin JC',
                 'attr3' => NULL,
@@ -6260,7 +6260,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 191,
                 'device_id' => 7,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'GEN 2 Série COBRA Dec 2021',
                 'attr3' => NULL,
@@ -6293,7 +6293,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 192,
                 'device_id' => 130,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => NULL,
                 'serial' => 'Série Cobra GEN 2 déc 2021',
                 'attr3' => NULL,
@@ -6755,7 +6755,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 215,
                 'device_id' => 215,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>Aile 900</p>
 <p>epaisseur 13,7</p>
 <p>corde 12,5</p>
@@ -6793,7 +6793,7 @@ class TechnicaldatasTableSeeder extends Seeder
             array (
                 'id' => 216,
                 'device_id' => 216,
-                'user_id' => 5,
+                'user_id' => 1,
                 'body' => '<p>Longueur fuselage 100</p>
 <p>Aile Medium &gt;&nbsp;</p>
 <p>&eacute;paisseur : 11,18mm</p>
@@ -6835,6 +6835,39 @@ class TechnicaldatasTableSeeder extends Seeder
                 'attr25' => NULL,
                 'created_at' => '2022-03-21 08:49:15',
                 'updated_at' => '2022-03-21 09:05:28',
+            ),
+            206 => 
+            array (
+                'id' => 217,
+                'device_id' => 164,
+                'user_id' => 1,
+                'body' => NULL,
+                'serial' => NULL,
+                'attr3' => NULL,
+                'attr4' => 94.0,
+                'attr5' => NULL,
+                'attr6' => 19.2,
+                'attr7' => 15.8,
+                'attr8' => 8.2,
+                'attr9' => NULL,
+                'attr10' => NULL,
+                'attr11' => 6.76,
+                'attr12' => 8.0,
+                'attr13' => 7.53,
+                'attr14' => NULL,
+                'attr15' => 7.91,
+                'attr16' => 7.91,
+                'attr17' => NULL,
+                'attr18' => 4.97,
+                'attr19' => 1417.4803830594183,
+                'attr20' => 1014.4658143641577,
+                'attr21' => 30.480383026246436,
+                'attr22' => NULL,
+                'attr23' => NULL,
+                'attr24' => NULL,
+                'attr25' => NULL,
+                'created_at' => '2022-03-30 15:04:14',
+                'updated_at' => '2022-04-05 13:33:51',
             ),
         ));
         

@@ -4797,7 +4797,7 @@ array (
 array (
 'id' => 129,
 'device_id' => 168,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<div class="container">
 <div class="row">
@@ -4857,7 +4857,7 @@ array (
 array (
 'id' => 130,
 'device_id' => 16,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-apBl2gZO8s.jpg" alt="" /></p>
 <p>La finition des pi&egrave;ces carbone est superbe. Aucune bavure, les talons sont ponc&eacute;s pour que les ajustement se fassent sans forcer. J\'ai re&ccedil;u 2 ailes avec une finition mat magnifique, et une aile brillante. Visiblement, les 2 ailes mattes et le mat ne sont plus en prepreg, contrairement &agrave; l\'aile brillante.</p>
@@ -4883,7 +4883,7 @@ array (
 array (
 'id' => 131,
 'device_id' => 29,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<p>Aujourd\'hui, nous avons re&ccedil;u les 2 nouveaux foils Alpine de windsurf : les A1 Aluiminum et A1 Carbone. Ce sont 2 pi&egrave;ces absolument magnifiques, produites 100% en France, que nous nous faisons un plaisir de pr&eacute;senter en d&eacute;tail.</p>
 <p>Commen&ccedil;ons par quelques donn&eacute;es techniques basiques</p>
@@ -4930,7 +4930,7 @@ array (
 array (
 'id' => 132,
 'device_id' => 138,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<p>Pour 2020, AlpineFoil nous propose 2 nouvelles d&eacute;clinaisons de son windfoil carbone A1 : le "Sport" et le "Race". Ces 2 nouveaux mod&egrave;les sont bas&eacute;s sur un mat de 97cm, notablement optimis&eacute; pour la glisse avec avec un profil plus fin (13.9mm en t&ecirc;te contre 16mm) que sur le A1 original.</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-1.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
@@ -4961,7 +4961,7 @@ array (
 array (
 'id' => 133,
 'device_id' => 147,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<div class="multi-col-2">
 <div><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_5063.jpg" alt="Alpinefoil A1 race" /></div>
@@ -4991,7 +4991,7 @@ array (
 array (
 'id' => 134,
 'device_id' => 164,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<p>Voici quelques photos des premiers mod&egrave;les de s&eacute;rie :</p>
 <p><img class="img-fluid" src="/storage/photos/1/2020-12/IMG_0617.jpg" alt="AFS wind 95 v2" /></p>
@@ -5008,14 +5008,14 @@ array (
 'test_duration' => NULL,
 'test_conditions' => NULL,
 'test_place' => NULL,
-'created_at' => '2022-03-10 21:02:20',
-'updated_at' => '2022-03-10 21:02:20',
+'created_at' => '2021-01-15 21:02:20',
+'updated_at' => '2021-01-15 21:02:20',
 ),
 127 => 
 array (
 'id' => 135,
 'device_id' => 8,
-'user_id' => 5,
+'user_id' => 1,
 'title' => 'GEN2 : Le diable se cache dans les détails',
 'body' => '<div class="row">
 <div class="col-4">
@@ -5064,6 +5064,35 @@ array (
 'test_place' => 'Almanarre',
 'created_at' => '2022-03-20 08:54:37',
 'updated_at' => '2022-03-22 09:21:54',
+),
+128 => 
+array (
+'id' => 136,
+'device_id' => 164,
+'user_id' => 1,
+'title' => 'Unpacking modèle 2022',
+'body' => '<p>Pour la premi&egrave;re fois, on re&ccedil;oit un AFS dans un carton qui ne fait pas 1m2 ... belle surprise, et rangement bien compact. Merci papa noel AFS 😀</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8090.jpg" alt="AFS 95 2022 Slalom sac de transport" /></p>
+<p>Au d&eacute;ballage, on a une jolie panoplie avec 2 ailes et 2 stab ... de quoi naviguer &agrave; la fois dans le light avec l\'aile de 900cm2 (1m d\'envergure) , et dans le medium avec la 570 (72,5cm d\'envergure).</p>
+<p>Les 2 stab de 200 et 240 viennent s\'accocier naturellement aux 2 ailes pour &eacute;quilibrer l\'ensemble</p>
+<p>Le fuselage et le mat sont g&eacute;om&eacute;triquement identiques au mod&egrave;le 20212, mais &agrave; priori renforc&eacute;s pour accepter les contraintes de l\'assemblage d&eacute;montable mat / fuselage.&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8091.jpg" alt="AFS 95 2022 Slalom pi&egrave;ces" /></p>
+<p>Comme depuis 2 ans chez AFS, les profils restent assez &eacute;pais (surtout en ce qui concerne le mat, avec une &eacute;paisseur max en queue de 15,8mm environ) pour conserver un maximum de rigidit&eacute;, mais les bords d\'attaque et bords de fuite sont tr&egrave;s fins pour garantir des &eacute;coulements tr&egrave;s fluides.&nbsp;</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8092.jpg" alt="AFS 95 2022 Slalom jonction" /></p>
+<p>L\'assemblage mat / fuselage, qui repr&eacute;sente l\'une des 2 grosses &eacute;volutions de ce foil pour 2022 (avec les ailes), est tr&egrave;s bien con&ccedil;u, avec un emboitement conique tr&egrave;s propre. Aucun jeu m&ecirc;me avant serrage, et le serrage vient solidariser le tout de fa&ccedil;on ultra rigide. Vu l\'emboitement, il y a fort &agrave; parier qu\'il sera impossible de sentir la diff&eacute;rence avec le T bar fixe ... sauf lors du transport qui sera &eacute;videment bien plus compact. Super job !!!!</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8093.jpg" alt="AFS 95 2022 Slalom jonction zoom" /></p>
+<p>Ce gros plan de l\'assemblage vous montre les pr&eacute;cisions d\'accostage une fois le fuselage serr&eacute;.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8094.jpg" alt="AFS 95 2022 Slalom finition aile " /></p>
+<p>Les 2 ailes que nous avons re&ccedil;ues sont 100% nouvelles (outline, dimensions, profils). Elles sont visiblement plus fines que les mod&egrave;les 2021, mais pourtant tr&egrave;s rigides. La finition reste identique avec le carbone &agrave; nu ponc&eacute;. On voit encore les petites traces de pon&ccedil;age et quelques pores, mais contrairement aux ailes vernies de certaines marques concurrentes, on s\'approche certainement plus pr&egrave;s du profil nominal.</p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-04/IMG_8096.jpg" alt="AFS 95 2022 Slalom concavit&eacute; bord de fuite " /></p>
+<p>Les nouveaux profils proposent une &eacute;paisseur max assez recul&eacute;e et un concave assez marqu&eacute; avant le bord de fuite. Vivement la fin du Mistral baston &agrave; 40knt pour tester tout cela sur l\'eau !</p>
+<p>Rendez vous dans quelques jours pour le retour sur les sensations, et sur les mesures techniques.&nbsp;</p>',
+'test_equipment' => 'Na.',
+'test_duration' => 1,
+'test_conditions' => 'na.',
+'test_place' => 'Glissattitude',
+'created_at' => '2022-04-02 13:23:31',
+'updated_at' => '2022-04-07 19:26:16',
 ),
 ));
         

@@ -3934,17 +3934,17 @@ array (
 </div>
 </div>
 </div>',
-    'year' => 2021,
-    'price' => '1990.00',
+    'year' => 2022,
+    'price' => '2200.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34768s1-afs-afs-wind-95-afs-2021.html',
     'programme_start' => 5.0,
     'programme_end' => 8.0,
-    'views' => 4164,
-    'last_ip' => NULL,
+    'views' => 4165,
+    'last_ip' => '::1',
     'created_at' => '2020-12-18 17:43:00',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-07 19:31:40',
 ),
 141 => 
 array (

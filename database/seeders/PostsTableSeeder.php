@@ -935,10 +935,10 @@ array (
 <li>modifie la vivacit&eacute; du foil</li>
 </ul>',
 'status' => 'Published',
-'views' => 17474,
-'last_ip' => NULL,
+'views' => 17475,
+'last_ip' => '::1',
 'created_at' => '2018-06-04 10:45:15',
-'updated_at' => '2022-02-19 20:57:25',
+'updated_at' => '2022-04-06 23:46:20',
 ),
 22 => 
 array (
@@ -1663,34 +1663,33 @@ array (
 'user_id' => 1,
 'post_categories_id' => 5,
 'title' => 'la stabilité',
-'description' => 'A venir',
-'body' => '<p>Quand nous parlons de stabilité du foil, nous évoquons en réalité 3 composantes de cette stabilité :</p>
+'description' => 'Quand nous parlons de stabilité du foil, nous évoquons en réalité 3 composantes de cette stabilité : longitudinale, latérale et en lacet',
+'body' => '<p>Quand nous parlons de stabilit&eacute; du foil, nous &eacute;voquons en r&eacute;alit&eacute; 3 composantes de cette stabilit&eacute; :</p>
 <ul>
-<li>La stabilité longitudinale ... on s\'intéresse au mouvement du foil dans l\'axe longitudinal. Un foil insufisament stable sur cet axe va monter et descendre sans arrêt. On aura surtout beaucoup de difficulté à maintenir une altitude constante.</li>
-<li>La stabilité latérale  ... on s\'intéresse au mouvement du foil à la gîte et à la contre gîte.</li>
-<li>La stabilité en lacet... on s\'intéresse au mouvement de la planche qui ne vas pas droit, mais tend à zigzaguer.</li>
+<li>La stabilit&eacute; longitudinale ... on s\'int&eacute;resse au mouvement du foil dans l\'axe longitudinal. Un foil insufisament stable sur cet axe va monter et descendre sans arr&ecirc;t. On aura surtout beaucoup de difficult&eacute; &agrave; maintenir une altitude constante.</li>
+<li>La stabilit&eacute; lat&eacute;rale&nbsp;&nbsp;... on s\'int&eacute;resse au mouvement du foil &agrave; la g&icirc;te et &agrave; la contre g&icirc;te.</li>
+<li>La stabilit&eacute; en lacet... on s\'int&eacute;resse au mouvement de la planche qui ne vas pas droit, mais tend &agrave; zigzaguer.</li>
 </ul>
-<h2>Stabilité longitudinale</h2>
-<p>Une forte stabilité longitudinale facilite les débuts, mais peut devenir gênante dasn la houle. En effet, un foil très stable rend plus difficile les corrections rapides de hauteur </p>
-<h2>Stabilité latérale </h2>
-<p>Imaginons une bille qui se promène sur un profil qui représente l\'angle de gîte. Si je prends l\'exemple du haut, on voit que la bille veut revenir au centre même si on l\'écarte fortement de sa position neutre. Il faut aller assez loin pour qu\'elle ne parte toute seule. C\'est un équilibre très stable jusqu\'à un angle de gîte important. Au contraire, dans le cas du bas, la bille ne restera jamais en équilibre.</p>
+<h2>Stabilit&eacute; longitudinale</h2>
+<p>Une forte stabilit&eacute; longitudinale facilite les d&eacute;buts, mais peut devenir g&ecirc;nante dasn la houle. En effet, un foil tr&egrave;s stable rend plus difficile les corrections rapides de hauteur&nbsp;</p>
+<h2>Stabilit&eacute; lat&eacute;rale&nbsp;</h2>
+<p>Imaginons une bille qui se prom&egrave;ne sur un profil qui repr&eacute;sente l\'angle de g&icirc;te. Si je prends l\'exemple du haut, on voit que la bille veut revenir au centre m&ecirc;me si on l\'&eacute;carte fortement de sa position neutre. Il faut aller assez loin pour qu\'elle ne parte toute seule. C\'est un &eacute;quilibre tr&egrave;s stable jusqu\'&agrave; un angle de g&icirc;te important. Au contraire, dans le cas du bas, la bille ne restera jamais en &eacute;quilibre.</p>
 <p style="text-align: center;"><img src="/storage/photos/1/legacy/2094ad651bf69118009444b9a71bd639.png" /></p>
 <ul>
-<li>On retrouvera l\'équilibre latéral très stable sur des foils comme les Loke, AFS2, Starboard, F4, et dans une moindre mesure sur les Select, NP alu, Zeeko (ces 2 derniers se rapprochant un peu plus du H10)</li>
-<li>On aura un équilibre stable au centre sur des foils comme le Vini par exemple, mais l\'équilibre devient instable lorsque l\'on s\'écarte du centre.</li>
-<li>Des foils comme le XtremFoil 2017, l\'aeromod, le manta 2017 et le Ketos présente une instabilité au centre</li>
-<li>Enfin, les premières générations de foil correspondait souvent à la situation du foil instable</li>
-<li>Le H10, dans ces conditions de vent léger, inaugure une nouvelle situation : le neutre jusqu\'à un angle important. A la fois, on n\'est pas calé, à la fois c\'est sain car il ne part pas tout seul et on le contrôle facilement.</li>
+<li>On retrouvera l\'&eacute;quilibre lat&eacute;ral tr&egrave;s stable sur des foils comme les Loke, AFS2, Starboard, F4, et dans une moindre mesure sur les Select, NP alu, Zeeko (ces 2 derniers se rapprochant un peu plus du H10)</li>
+<li>On aura un &eacute;quilibre stable au centre sur des foils comme le Vini par exemple, mais l\'&eacute;quilibre devient instable lorsque l\'on s\'&eacute;carte du centre.</li>
+<li>Des foils comme le XtremFoil 2017, l\'aeromod, le manta 2017 et le Ketos pr&eacute;sente une instabilit&eacute; au centre</li>
+<li>Enfin, les premi&egrave;res g&eacute;n&eacute;rations de foil correspondait souvent &agrave; la situation du foil instable</li>
+<li>Le H10, dans ces conditions de vent l&eacute;ger, inaugure une nouvelle situation : le neutre jusqu\'&agrave; un angle important. A la fois, on n\'est pas cal&eacute;, &agrave; la fois c\'est sain car il ne part pas tout seul et on le contr&ocirc;le facilement.</li>
 </ul>
-<p>La conséquence de cette stabilité latérale très neutre est une certaine facilité à le mettre à la contre gîte, même si la faible longueur du mat (et le vent trop faible aujourd\'hui) limite forcément les choses. En tout cas, ce comportement a l\'air parfaitement adapté aux flotteurs pas trop large, comme nous avons déjà pu le constater avec les RS:Flight AL et Zeeko</p>
-<h2>Stabilité en lacet</h2>
-<p>Un foil très stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation très agréable, gage d\'une glisse très pure.</p>
-',
+<p>La cons&eacute;quence de cette stabilit&eacute; lat&eacute;rale tr&egrave;s neutre est une certaine facilit&eacute; &agrave; le mettre &agrave; la contre g&icirc;te, m&ecirc;me si la faible longueur du mat (et le vent trop faible aujourd\'hui) limite forc&eacute;ment les choses. En tout cas, ce comportement a l\'air parfaitement adapt&eacute; aux flotteurs pas trop large, comme nous avons d&eacute;j&agrave; pu le constater avec les RS:Flight AL et Zeeko</p>
+<h2>Stabilit&eacute; en lacet</h2>
+<p>Un foil tr&egrave;s stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation tr&egrave;s agr&eacute;able, gage d\'une glisse tr&egrave;s pure.</p>',
 'status' => 'Published',
-'views' => 2340,
-'last_ip' => NULL,
+'views' => 2341,
+'last_ip' => '::1',
 'created_at' => '2018-10-02 01:09:46',
-'updated_at' => '2018-10-02 01:09:46',
+'updated_at' => '2022-04-07 16:41:05',
 ),
 37 => 
 array (
