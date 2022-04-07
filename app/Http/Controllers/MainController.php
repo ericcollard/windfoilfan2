@@ -27,7 +27,34 @@ class MainController extends Controller
         return view('main.landing');
     }
 
+    public function sitemap()
+    {
+        $pages = [];
 
+        $devices = Device::where('status','=','Published')->get();
+        foreach($devices as $device)
+        {
+            $pages[] = [
+                'lastmod' => $device->updated_at,
+                'url' => $device->path(),
+                'priority' => 0.5
+            ];
+
+        }
+
+        $posts = Post::All();
+        foreach($posts as $post)
+        {
+            $pages[] = [
+                'lastmod' => $post->updated_at,
+                'url' => $post->path(),
+                'priority' => 0.8
+            ];
+        }
+
+
+        return response()->view('main.sitemap', compact('pages'))->header('Content-Type', 'application/xml');
+    }
     function sessions()
     {
 
