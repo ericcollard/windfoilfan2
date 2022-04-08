@@ -21,7 +21,6 @@ class DevicesDataTable extends DataTable
     {
         return datatables()
             ->eloquent($query)
-            ->addColumn('action', 'devices.action',1)
             ->editColumn('created_at', function ($request) {
                 return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
             })
@@ -217,12 +216,6 @@ class DevicesDataTable extends DataTable
             Column::make('reviews_count')->title(__('Messages')),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
-            Column::computed('action')->title(__('Action'))
-                ->addClass('text-center')
-                ->exportable(false)
-                ->printable(false)
-                ->width(60)
-                ->addClass('text-center'),
         ];
     }
 
