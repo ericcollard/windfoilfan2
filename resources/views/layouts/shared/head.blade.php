@@ -1,7 +1,5 @@
 <meta charset="utf-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+@meta_tags
 
 <!-- App favicon -->
 <link rel="shortcut icon" href="{{asset('/assets/images/favicon.ico')}}">

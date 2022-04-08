@@ -30,6 +30,13 @@ class PostController extends Controller
      */
     public function categories()
     {
+        // tags meta
+        $this->addMetaTags("Liste des catégories d'articles",
+            "Liste des catégories d'articles",
+            ['article', 'post', 'conseil', 'tuto', 'tutoriel', 'technologie', 'évènement', 'video' ],
+            null
+        );
+
         $categories = PostCategory::with('posts')->orderBy('order')->get();
 
         return view('posts.categories', compact('categories'));
@@ -44,6 +51,13 @@ class PostController extends Controller
      */
     public function postCategory(PostCategory $postCategory)
     {
+        // tags meta
+        $this->addMetaTags("Articles de la catégorie ".$postCategory->name,
+            "Articles de la catégorie ".$postCategory->name,
+            ['article', 'post', 'conseil', 'tuto', 'tutoriel', 'technologie', 'évènement', 'video' ],
+            null
+        );
+
         return view('posts.category', compact('postCategory'));
     }
 
@@ -61,6 +75,12 @@ class PostController extends Controller
         // enregistre les stats de visite
         $post->recordDisplay();
 
+        // tags meta
+        $this->addMetaTags("Article ".$post->title,
+            "Article ".$post->title." : ".$post->description,
+            ['article', 'post', 'conseil', 'tuto', 'tutoriel', 'technologie', 'évènement', 'video' ],
+            $post->imagePath()
+        );
 
         $shareComponent = (new \Jorenvh\Share\Share)->page(
             URL::full(),
@@ -85,6 +105,13 @@ class PostController extends Controller
      */
     public function edit(PostCategory $postCategory, Post $post)
     {
+        // tags meta
+        $this->addMetaTags("Mise à jour de l'article ".$post->title,
+            "Mise à jour de l'article ".$post->title,
+            ['article', 'post', 'conseil', 'tuto', 'tutoriel', 'technologie', 'évènement', 'video' ],
+            null
+        );
+
         $action = URL::route('post.update',['postCategory' => $postCategory, 'post' => $post]);
         $method = 'PATCH';
         $categories = PostCategory::all();
@@ -101,6 +128,13 @@ class PostController extends Controller
      */
     public function create()
     {
+        // tags meta
+        $this->addMetaTags("Création d'un article ",
+            "Création d'un article ",
+            ['article', 'post', 'conseil', 'tuto', 'tutoriel', 'technologie', 'évènement', 'video' ],
+            null
+        );
+
         $action = URL::route('post.store');
         $method = 'POST';
         $categories = PostCategory::all();

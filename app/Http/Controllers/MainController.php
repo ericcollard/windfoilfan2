@@ -7,6 +7,8 @@ use App\Models\Brand;
 use App\Models\Device;
 use App\Models\Post;
 use App\Models\Review;
+use Butschster\Head\Facades\Meta;
+use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -14,6 +16,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\URL;
 
 class MainController extends Controller
 {
@@ -24,6 +27,12 @@ class MainController extends Controller
      */
     public function landing()
     {
+        // tags meta
+        $this->addMetaTags('Accueil',
+            "Page d'accueil",
+            ['base de donnée', 'database', 'foil', 'windfoil', 'board', 'glisse', 'light wind', 'windsurf foil' ],
+            URL::asset('assets/images/startup.jpg')
+        );
         return view('main.landing');
     }
 
@@ -83,7 +92,12 @@ class MainController extends Controller
      */
     public function dashboard()
     {
-
+        // tags meta
+        $this->addMetaTags('Tableau de bord',
+            "Tableau de bord",
+            ['base de donnée', 'database', 'foil', 'windfoil', 'board', 'glisse', 'light wind', 'windsurf foil' ],
+            URL::asset('assets/images/startup.jpg')
+        );
         // number of review
         $dashboard['reviewCnt'] = Review::count();
         $dashboard['foilCnt'] = Device::where('category_id', 1)->count();
@@ -208,5 +222,6 @@ class MainController extends Controller
         session(['locale' => $locale]);
         return back();
     }
+
 
 }

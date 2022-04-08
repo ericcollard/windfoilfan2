@@ -7,6 +7,8 @@ use App\Http\Requests\StoreAttributeRequest;
 use App\Http\Requests\UpdateAttributeRequest;
 use App\Models\Attribute;
 use App\Models\Category;
+use Butschster\Head\Facades\Meta;
+use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Support\Facades\URL;
 
 class AttributeController extends Controller
@@ -31,6 +33,13 @@ class AttributeController extends Controller
      */
     public function index(AttributesDataTable $dataTable)
     {
+        // tags meta
+        $this->addMetaTags('Liste des attributs',
+            'Liste des attributs disponibles',
+            ['critère', 'glisse', 'controle', 'décollage', 'stabilité', 'attribut', 'attributs' ],
+            null
+        );
+
         return $dataTable->render('attributes.index');
     }
 
@@ -63,6 +72,13 @@ class AttributeController extends Controller
      */
     public function show(Attribute $attribute)
     {
+        // tags meta
+        $this->addMetaTags('Détail de l attribut '.$attribute->name,
+            'Détail de l attribut '.$attribute->name,
+            ['critère', 'glisse', 'controle', 'décollage', 'stabilité', 'attribut', 'attributs' ],
+            null
+        );
+
         return view('attributes.show', compact('attribute'));
     }
 
@@ -74,6 +90,13 @@ class AttributeController extends Controller
      */
     public function edit(Attribute $attribute)
     {
+        // tags meta
+        $this->addMetaTags('Mise à jour de l attribut '.$attribute->name,
+            'Mise à jour de l attribut '.$attribute->name,
+            ['critère', 'glisse', 'controle', 'décollage', 'stabilité', 'attribut', 'attributs' ],
+            null
+        );
+
         $action = URL::route('attribute.update',$attribute);
         $method = 'PATCH';
         $categories = Category::all();
@@ -114,4 +137,6 @@ class AttributeController extends Controller
     {
         //
     }
+
+
 }

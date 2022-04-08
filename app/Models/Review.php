@@ -74,4 +74,37 @@ class Review extends Model
         return $html;
     }
 
+    /**
+     * search all images in body
+     */
+    public function images()
+    {
+        preg_match_all('/(<img[^>]+>)/i', $this->body, $image_matches, PREG_SET_ORDER);
+        $imagesPath = [];
+        foreach ($image_matches as $image_match)
+        {
+            $imagetag = $image_match[0];
+            if(preg_match('@src="([^"]+)"@',$imagetag,$match))
+            {
+                $imagesPath[] = $match[1];
+            }
+        }
+        return $imagesPath;
+    }
+
+    /**
+     * search first image path
+     */
+    public function imagePath()
+    {
+        $images = $this->images();
+        $imagePath = "";
+        if (count($images) > 0)
+            $imagePath = url('/').$images[0];
+        else
+            $imagePath = asset('assets/images/post.png');
+        return $imagePath;
+    }
+
+
 }

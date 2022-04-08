@@ -42,6 +42,13 @@ class TechnicaldataController extends Controller
      */
     public function category(TechnicaldatasDataTable $dataTable,Category $category)
     {
+        // tags meta
+        $this->addMetaTags("Liste des données techniques de la catégorie ".$category->name,
+            "Liste des données techniques de la catégorie ".$category->name,
+            ['mesure', 'critère', 'donnée', 'base de donnée', 'mesures', 'rigidité', 'épaisseur', 'longueur' ],
+            null
+        );
+
         $this->authorize('viewAny', Technicaldata::class);
 
         $dataTable->with('category', $category);
@@ -117,6 +124,15 @@ class TechnicaldataController extends Controller
      */
     public function show(Technicaldata $technicaldata)
     {
+
+        // tags meta
+        $this->addMetaTags("Données techniques de ".$technicaldata->device->getFullName(),
+            "Données techniques de ".$technicaldata->device->getFullName(),
+            ['mesure', 'critère', 'donnée', 'base de donnée', 'mesures', 'rigidité', 'épaisseur', 'longueur' ],
+            null
+        );
+
+
         $attributes = Attribute::where('category_id',$technicaldata->device->category->id)->get()->groupBy([
             'group',
         ],$preserveKeys = true);
@@ -186,6 +202,15 @@ class TechnicaldataController extends Controller
      */
     public function edit(Technicaldata $technicaldata)
     {
+
+        // tags meta
+        $this->addMetaTags("Mise à jour des données techniques de ".$technicaldata->device->getFullName(),
+            "Mise à jour des données techniques de ".$technicaldata->device->getFullName(),
+            ['mesure', 'critère', 'donnée', 'base de donnée', 'mesures', 'rigidité', 'épaisseur', 'longueur' ],
+            null
+        );
+
+
         $action = URL::route('technicaldata.update',['technicaldata' => $technicaldata]);
         $method = 'PATCH';
         $attributes = Attribute::where('category_id',$technicaldata->device->category->id)->get()->groupBy('group');
@@ -301,6 +326,13 @@ class TechnicaldataController extends Controller
      */
     public function attributeChart( Attribute $attribute)
     {
+        // tags meta
+        $this->addMetaTags("Diagramme ".$attribute->name." pour les ".$attribute->category->name,
+            "Graphique comparatif ".$attribute->name." pour les ".$attribute->category->name,
+            ['comparaison','graphique','mesure', 'critère', 'donnée', 'base de donnée', 'mesures', 'rigidité', 'épaisseur', 'longueur' ],
+            null
+        );
+
         if (!$attribute) abort(403, 'No attribute defined');
         $category = $attribute->category;
 

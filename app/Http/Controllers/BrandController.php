@@ -9,6 +9,8 @@ use App\Models\Brand;
 use App\Models\Device;
 use App\Models\Review;
 use App\Models\Technicaldata;
+use Butschster\Head\Facades\Meta;
+use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
@@ -35,6 +37,13 @@ class BrandController extends Controller
      */
     public function index(BrandsDataTable $dataTable)
     {
+        // tags meta
+        $this->addMetaTags('Liste des marques',
+            'Liste des marques',
+            ['marques', 'marque', 'Phantom', 'Excoet', 'Starboard', 'Alpine', 'F4 Foil','Taaroa','Moses'],
+            null
+        );
+
         return $dataTable->render('brands.index');
     }
 
@@ -67,6 +76,15 @@ class BrandController extends Controller
      */
     public function show(Brand $brand)
     {
+
+        // tags meta
+        $this->addMetaTags('Marque '.$brand->name,
+            "Tout l'univers de la marque ".$brand->name,
+            ['marques', 'marque', 'Phantom', 'Excoet', 'Starboard', 'Alpine', 'F4 Foil','Taaroa','Moses','foil','foils'],
+            null
+        );
+
+
         $dashboard = [];
 
 
@@ -163,6 +181,13 @@ class BrandController extends Controller
      */
     public function edit(Brand $brand)
     {
+        // tags meta
+        $this->addMetaTags('Mise à jour marque '.$brand->name,
+            "Mise à jour de la fiche marque ".$brand->name,
+            ['marques', 'marque', 'Phantom', 'Excoet', 'Starboard', 'Alpine', 'F4 Foil','Taaroa','Moses','foil','foils'],
+            null
+        );
+
         $action = URL::route('brand.update',['brand' => $brand]);
         $method = 'PATCH';
 
@@ -217,4 +242,5 @@ class BrandController extends Controller
     {
         //
     }
+
 }

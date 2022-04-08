@@ -79,6 +79,17 @@ class Device extends Model
         return route('device.show',['category' => $this->category, 'device' => $this]);
     }
 
+    public function getFullName()
+    {
+        $name = "";
+        if ($this->category->name)  $name = $this->category->name;
+        if ($this->brand->name)  $name = $name.' '.$this->brand->name;
+        if ($this->name)  $name = $name.' '.$this->name;
+        if ($this->year)  $name = $name.' '.$this->year;
+
+        return $name;
+    }
+
     public function statusClass()
     {
         $class = "";
@@ -176,4 +187,38 @@ class Device extends Model
             $this->views = 0;
         $this->save();
     }
+
+    /**
+     * search all images in body
+     */
+    public function images()
+    {
+        preg_match_all('/(<img[^>]+>)/i', $this->body, $image_matches, PREG_SET_ORDER);
+        $imagesPath = [];
+        foreach ($image_matches as $image_match)
+        {
+            $imagetag = $image_match[0];
+            if(preg_match('@src="([^"]+)"@',$imagetag,$match))
+            {
+                $imagesPath[] = $match[1];
+            }
+        }
+        return $imagesPath;
+    }
+
+    /**
+     * search first image path
+     */
+    public function imagePath()
+    {
+        $images = $this->images();
+        $imagePath = "";
+        if (count($images) > 0)
+            $imagePath = url('/').$images[0];
+        else
+            $imagePath = asset('assets/images/post.png');
+        return $imagePath;
+    }
+
+
 }

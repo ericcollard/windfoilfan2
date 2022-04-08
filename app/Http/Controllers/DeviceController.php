@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\DataTables\DevicesDataTable;
-use App\DataTables\TechnicaldatasDataTable;
 use App\Http\Requests\StoreDeviceRequest;
 use App\Http\Requests\UpdateDeviceRequest;
 use App\Models\Attribute;
 use App\Models\Brand;
 use App\Models\Category;
 use App\Models\Device;
-use App\Models\Statistic;
-use App\Models\User;
+use Butschster\Head\Facades\Meta;
+use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\URL;
 
@@ -35,6 +34,14 @@ class DeviceController extends Controller
     public function categories()
     {
         $categories = Category::with('devices')->get();
+
+        // tags meta
+        $this->addMetaTags('Liste des catégories de produit',
+            'Liste des catégories de produit',
+            ['test', 'avis', 'review', 'evaluation', 'critere', 'compte rendu', 'description', 'photos' ],
+            null
+        );
+
         return view('devices.categories', compact('categories'));
     }
 
@@ -46,6 +53,13 @@ class DeviceController extends Controller
      */
     public function category(DevicesDataTable $dataTable,Category $category)
     {
+
+        // tags meta
+        $this->addMetaTags('Liste des '.$category->name,
+            'Liste des produits dans la catégorie '.$category->name,
+            ['test', 'avis', 'review', 'evaluation', 'critere', 'compte rendu', 'description', 'photos' ],
+            null
+        );
 
         $brand = "";
         if(array_key_exists('from', request()->all()))
@@ -81,11 +95,17 @@ class DeviceController extends Controller
         // enregistre les stats de visite
         $device->recordDisplay();
 
+        // tags meta
+        $this->addMetaTags('Fiche produit '.$device->getFullName(),
+            'Fiche produit pour'.$device->getFullName().' avec compte-rendus et messages',
+            [$device->name, $device->brand->name, $device->category->name, 'test', 'avis', 'review', 'evaluation', 'critere', 'compte rendu', 'description', 'photos' ],
+            $device->imagePath()
+        );
+
 
         $reviews = $device->reviews()->latest()->paginate(5);
 
         // calcul des données techniques moyennes
-
         $attributes = Attribute::where('category_id',$device->category->id)->get()->groupBy([
             'group',
         ],$preserveKeys = true);
@@ -176,6 +196,14 @@ class DeviceController extends Controller
      */
     public function edit(Category $category, Device $device)
     {
+
+        // tags meta
+        $this->addMetaTags('Mise à jour du '.$device->name,
+            'Mise à jour du '.$device->name,
+            ['test', 'avis', 'review', 'evaluation', 'critere', 'compte rendu', 'description', 'photos' ],
+            null
+        );
+
         $action = URL::route('device.update',['category' => $category, 'device' => $device]);
         $method = 'PATCH';
         $categories = Category::all();
@@ -194,6 +222,13 @@ class DeviceController extends Controller
      */
     public function create()
     {
+        // tags meta
+        $this->addMetaTags('Création produit',
+            'Création d un nouveau produit',
+            ['produit', 'foil', 'board', 'voile', 'nouveau', 'compte rendu', 'description', 'photos' ],
+            null
+        );
+
         $action = URL::route('device.store');
         $method = 'POST';
 
@@ -269,4 +304,6 @@ class DeviceController extends Controller
         }
         return redirect(route('device.category', $category))->with( ['message' => 'Produit supprimé', 'alert' => 'success']);
     }
+
+
 }

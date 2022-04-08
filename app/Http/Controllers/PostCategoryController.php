@@ -46,8 +46,8 @@ class PostCategoryController extends Controller
      */
     public function show(PostCategory $postCategory)
     {
-        //$posts = $postCategory->Posts();
-        return view('postcategories.show', compact('postCategory'));
+
+        //
     }
 
     /**

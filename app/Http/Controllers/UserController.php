@@ -69,6 +69,13 @@ class UserController extends Controller
      */
     public function show(User $user)
     {
+        // tags meta
+        $this->addMetaTags("Fiche utilisateur de ".$user->name,
+            "Fiche utilisateur de ".$user->name,
+            ['user','utilisteur','profile', 'mot de passe', 'droits', 'autorisation' ,'role'],
+            null
+        );
+
         return view('users.show', ['user' => $user]);
     }
 
