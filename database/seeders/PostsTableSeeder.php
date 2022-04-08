@@ -2654,10 +2654,10 @@ array (
 </table>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
 'status' => 'Published',
-'views' => 6120,
-'last_ip' => NULL,
+'views' => 6121,
+'last_ip' => '::1',
 'created_at' => '2020-10-01 22:19:52',
-'updated_at' => '2020-10-01 22:19:52',
+'updated_at' => '2022-04-08 16:03:48',
 ),
 64 => 
 array (

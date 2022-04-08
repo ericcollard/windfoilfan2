@@ -122,7 +122,7 @@ class UsersTableSeeder extends Seeder
                 'postal_code' => '13011',
                 'brand_id' => 100,
                 'weight' => 78,
-                'remember_token' => '0HdpGRbCoyl1l9DIkczCv6En2BadxKZawPreqJREqcmYTx2DgmW3NDySnL0g',
+                'remember_token' => 'kVsaMx8HWczHhckifUxrb0UafONvWiiHyt3urRFRL8TILHXVEirI4Ouv7XVT',
                 'created_at' => '2020-01-01 00:00:00',
                 'updated_at' => '2022-03-10 16:44:30',
             ),
