@@ -1,5 +1,6 @@
 @extends('layouts.vertical')
-<!-- TODO : meta facebook pour toute les pages -->
+
+
 @section('css')
 <!-- third party css -->
 <link href="{{asset('assets/libs/admin-resources/admin-resources.min.css')}}" rel="stylesheet" type="text/css">
@@ -366,6 +367,13 @@
                 show: false
             }
         },
+        tooltip: {
+            y: {
+                formatter: function formatter(val) {
+                    return val + " messages";
+                }
+            }
+        }
     };
 
     var dataArrayViews1 = {
@@ -380,6 +388,13 @@
                 show: false
             }
         },
+        tooltip: {
+            y: {
+                formatter: function formatter(val) {
+                    return val + " vues";
+                }
+            }
+        }
     };
 
     var dataArrayViews2 = {
@@ -394,6 +409,13 @@
                 show: false
             }
         },
+        tooltip: {
+            y: {
+                formatter: function formatter(val) {
+                    return val + " utilisateurs";
+                }
+            }
+        }
     };
 
 
