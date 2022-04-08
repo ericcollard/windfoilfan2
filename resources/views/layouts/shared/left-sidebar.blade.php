@@ -178,7 +178,7 @@
             <img src="{{asset('assets/images/help-icon.svg')}}" height="90" alt="Helper Icon Image" />
             <h5 class="mt-3">Participer</h5>
             <p class="mb-3">Postez vos propres compte-rendus et analysez vos sessions</p>
-            <a href="javascript: void(0);" class="btn btn-outline-light btn-sm">Participer</a>
+            <a href="{{ route('landing') }}" class="btn btn-outline-light btn-sm">Participer</a>
         </div>
         <!-- end Help Box -->
         <!-- End Sidebar -->
