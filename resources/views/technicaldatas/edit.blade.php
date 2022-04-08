@@ -1,20 +1,10 @@
 @extends('layouts.vertical', ["page_title"=> __('Edit technical data')])
 
-@section('page_title')
-    {{  __('Edit technical data') }}
-@endsection
-@section('page_description')
-    {{  __('Edit technical data') }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
 
 @section('script-head')
-    @include('layouts.shared.tinymcescript')
+    <x-head.tinymce-config/>
 @endsection
+
 
 @section('content')
 <!-- Start Content-->

@@ -1,17 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    Produits : {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
-@endsection
-@section('page_description')
-    Produits : {{ $dataTable->getOptions()['custom_paramaters']['category_name'] }}
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
 
 @section('css')
 

@@ -1,18 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ __('Brands list') }}
-@endsection
-@section('page_description')
-    {{ __('List of all the brands') }}
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
-
 @section('css')
 
 

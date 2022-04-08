@@ -1,18 +1,5 @@
 @extends('layouts.vertical')
 
-
-@section('page_title')
-    {{ __('Not Found')  }}
-@endsection
-@section('page_description')
-    {{ __('Not Found')  }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
-
 @section('css')
 
     <style>

@@ -1,21 +1,7 @@
-@extends('layouts.vertical', ["page_title"=> __('Edit review')])
-
-@section('page_title')
-    {{  __('Edit review') }}
-@endsection
-@section('page_description')
-    {{  __('Edit review') }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
+@extends('layouts.vertical')
 
 @section('script-head')
-
-    @include('layouts.shared.tinymcescript')
-
+    <x-head.tinymce-config/>
 @endsection
 
 @section('content')

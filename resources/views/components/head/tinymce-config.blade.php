@@ -1,4 +1,4 @@
-<script src="{{ asset('js/tinymce/tinymce.js') }}" referrerpolicy="origin"></script>
+<script src="{{ asset('js/tinymce/tinymce.min.js') }}" referrerpolicy="origin"></script>
 
 <script>
 
@@ -45,9 +45,6 @@
             });
         }
     };
-
-
-
 
     tinymce.init(editor_config);
 

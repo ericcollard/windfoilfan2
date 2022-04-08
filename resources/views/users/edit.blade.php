@@ -1,20 +1,9 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ __('Edit user pofile')  }}
-@endsection
-@section('page_description')
-    {{ __('Edit user pofile')  }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
+@section('script-head')
+    <x-head.tinymce-config/>
 @endsection
 
-@section('script-head')
-    @include('layouts.shared.tinymcescript')
-@endsection
 
 @section('content')
 <!-- Start Content-->

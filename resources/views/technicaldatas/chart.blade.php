@@ -1,19 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-
-@endsection
-@section('page_description')
-
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-
-@endsection
-
-
 @section('content')
     <!-- Start Content-->
     <div class="container-fluid">

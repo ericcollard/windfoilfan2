@@ -73,15 +73,6 @@ class MainController extends Controller
     function test()
     {
 
-        //Mail::to('eric@glissattitude.com')
-         //   ->send(new Contact());
-
-        return redirect(route('test2'))->with( ['message' => 'That was great!', 'alert' => 'warning']);
-    }
-
-    function test2()
-    {
-
         return view('main.test');
     }
 

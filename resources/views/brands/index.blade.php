@@ -1,17 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ __('Attributes list') }}
-@endsection
-@section('page_description')
-    {{ __('List of all the attributes') }}
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
 
 @section('css')
 

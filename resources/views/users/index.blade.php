@@ -1,17 +1,6 @@
 @extends('layouts.vertical')
 
 
-@section('page_title')
-    {{ __('Users list')  }}
-@endsection
-@section('page_description')
-    {{ __('Users list')  }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
 
 @section('css')
 

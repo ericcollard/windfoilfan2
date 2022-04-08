@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ["page_title"=> "Basic Tables"])
+@extends('layouts.vertical')
 
 @section('content')
 <!-- Start Content-->

@@ -1,24 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ $attribute->name }}
-@endsection
-@section('page_description')
-
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-
-@endsection
-
-@section('css')
-
-@endsection
-
-
-
 
 @section('content')
     <!-- Start Content-->

@@ -1,22 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    Articles :  {{ $postCategory->name }}
-@endsection
-@section('page_description')
-    Articles :  {{ $postCategory->name }}
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
-
-@section('css')
-
-@endsection
-
 
 
 @section('content')

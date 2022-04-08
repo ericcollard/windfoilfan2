@@ -1,18 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ $brand->name }}
-@endsection
-@section('page_description')
-    Tout l'univers de la marque {{ $brand->name }}
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
-
 @section('content')
 <!-- Start Content-->
 <div class="container-fluid">

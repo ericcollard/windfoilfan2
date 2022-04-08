@@ -1,31 +1,15 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ __('Technical data') }} ref {{$technicaldata->id }}
-@endsection
-@section('page_description')
-
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-
-@endsection
-
 
 @section('css')
     <style>
-
         .brand-logo {
             height: 30px;
             margin-right: 10px;
         }
 
     </style>
-
 @endsection
-
 
 
 @section('content')

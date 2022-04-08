@@ -1,20 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-    {{ $post->title }}
-@endsection
-@section('page_description')
-    Article : {{ $post->description }}
-@endsection
-@section('page_image')
-    @if (strlen($post->imagePath()) > 0 )
-        {{ $post->imagePath() }}
-    @endif
-@endsection
-@section('page_author')
-    {{ $post->owner->name }}
-@endsection
-
 @section('css')
     <style>
 

@@ -1,19 +1,7 @@
-@extends('layouts.vertical', ["page_title"=> __('Edit device')])
-
-@section('page_title')
-    {{  __('Edit device') }}
-@endsection
-@section('page_description')
-    {{  __('Edit device') }}
-@endsection
-@section('page_image')
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
+@extends('layouts.vertical')
 
 @section('script-head')
-    @include('layouts.shared.tinymcescript')
+    <x-head.tinymce-config/>
 @endsection
 
 @section('content')

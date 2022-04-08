@@ -1,18 +1,5 @@
 @extends('layouts.vertical')
 
-@section('page_title')
-
-@endsection
-@section('page_description')
-
-@endsection
-@section('page_image')
-
-@endsection
-@section('page_author')
-    Glissattitude
-@endsection
-
 @section('content')
 <!-- Start Content-->
 <div class="container-fluid">

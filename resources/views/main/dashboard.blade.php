@@ -1,12 +1,10 @@
-@extends('layouts.vertical', ["page_title"=> "main.dashboard"])
+@extends('layouts.vertical')
 <!-- TODO : meta facebook pour toute les pages -->
 @section('css')
 <!-- third party css -->
 <link href="{{asset('assets/libs/admin-resources/admin-resources.min.css')}}" rel="stylesheet" type="text/css">
 </link>
 <!-- third party css end -->
-
-
 
 
 <style>
