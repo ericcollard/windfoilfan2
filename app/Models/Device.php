@@ -21,18 +21,6 @@ class Device extends Model
     {
         parent::boot();
 
-        /*
-        static::addGlobalScope('reviewCount', function ($builder)
-        {
-            $builder->withCount('reviews');
-        });
-
-        static::addGlobalScope('statisticsCount', function ($builder)
-        {
-            $builder->withCount('statistics');
-        });
-        */
-
         static::deleting(function ($device)
         {
             // $gear->reports()->delete();  supprime tous les report, mais ne d'éclenche pas l'event delete poru chaucn > les activity report ne sont pas supprimé par le trigger
@@ -40,6 +28,12 @@ class Device extends Model
             $device->statistics->each->delete();
             $device->technicaldatas->each->delete();
         });
+    }
+
+
+    public function getRouteKeyName()
+    {
+        return 'slug'; // instead of id (Search in Route)
     }
 
     /** Database Models Relations */

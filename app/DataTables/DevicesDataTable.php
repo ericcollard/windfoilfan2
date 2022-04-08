@@ -29,7 +29,7 @@ class DevicesDataTable extends DataTable
                 return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
             })
             ->editColumn('name', function ($request) {
-                return '<a href="'.route('device.show',['category'=>$request->category->slug , 'device'=>$request->id]).'">'.$request->name.'</a>';
+                return '<a href="'.$request->path().'">'.$request->name.'</a>';
             })
 
             ->rawColumns(['status','action','name']);
