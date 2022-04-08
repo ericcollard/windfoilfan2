@@ -78,7 +78,12 @@
                             plus de 200 produits dédiés au windfoil.</p>
 
                         <a href="{{ route('login') }}" class="btn btn-success" style="margin-right: 1em">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
-                        <a href="{{ route('register') }}" class="btn btn-info">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('register') }}" class="btn btn-info" style="margin-right: 1em">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('home') }}" class="btn btn-light">Juste visiter <i class="mdi mdi-arrow-right ms-1"></i></a>
+
+                        <p class="mt-4 font-16 text-white"><em>Info. En tant que simple visiteur, les fonctionnalités et données visibles seront fortement
+                                réduites. En vous connectant, vous aurez accès à l'essentiel des éléments.</em></p>
+
                     </div>
                 </div>
                 <div class="col-md-5 offset-md-2">
