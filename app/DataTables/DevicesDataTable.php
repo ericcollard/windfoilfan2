@@ -31,7 +31,14 @@ class DevicesDataTable extends DataTable
                 return '<a href="'.$request->path().'">'.$request->name.'</a>';
             })
 
-            ->rawColumns(['status','action','name']);
+            ->rawColumns(['status','program','name'])
+
+            ->addColumn('program', function($device) {
+            $lpc = $device->programme_start*10;
+            $cpc = ($device->programme_end-$device->programme_start)*10;
+            $rpc = 100-$device->programme_end*10;
+            return "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
+            });
 
 
     }
@@ -190,7 +197,7 @@ class DevicesDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->dom('Bfrtip')
-                    ->orderBy(6)
+                    ->orderBy(7)
                     ->parameters([
                 'language' => [
                     'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here
@@ -212,10 +219,12 @@ class DevicesDataTable extends DataTable
             Column::make('brand.name')->title(__('Brand')),
             Column::make('name')->title(__('Name')),
             Column::make('year')->title(__('Year')),
+            Column::make('program')->title(__('Program')),
             Column::make('views')->title(__('Views')),
             Column::make('reviews_count')->title(__('Messages')),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
+
         ];
     }
 

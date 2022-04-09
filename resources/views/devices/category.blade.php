@@ -16,6 +16,49 @@
             float: right;
         }
 
+        .barcontent {
+            height:100%;
+            display: inline-block;
+            margin:0px;
+            padding:0px;
+            height:22px;
+        }
+
+        .left {
+            background-color:lightgrey;
+        }
+
+        .center {
+            background-color:#4e73df;
+        }
+        .right {
+            background-color:lightgrey;
+        }
+
+        .bar {
+            min-width:100px;
+            position:relative;
+        }
+
+        .bar:before {
+            font-size: 0.7em;
+            color: white;
+            content : 'FS';
+            position: absolute;
+            left:5px;
+            top: 1px;
+        }
+
+        .bar:after {
+            font-size: 0.7em;
+            color: white;
+            content : 'RS';
+            position: absolute;
+            right:5px;
+            top: 1px;
+        }
+
+
     </style>
 
 @endsection
