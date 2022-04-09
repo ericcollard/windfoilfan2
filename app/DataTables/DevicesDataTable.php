@@ -22,7 +22,8 @@ class DevicesDataTable extends DataTable
         return datatables()
             ->eloquent($query)
             ->editColumn('created_at', function ($request) {
-                return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
+                //return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
+                return $request->created_at->format('d/m/Y');
             })
             ->editColumn('status', function ($request) {
                 return '<div class="badge '.$request->statusClass().'">'.__($request->status).'</div>';
