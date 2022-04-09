@@ -70,6 +70,12 @@ class DeviceController extends Controller
             $dataTable->with('brand', $brand);
         }
 
+        if(array_key_exists('program_target', request()->all()))
+        {
+            $program_target = request()->program_target;
+            $dataTable->with('program_target', $program_target);
+        }
+
         $dataTable->with('category', $category);
 
         $brands = Brand::whereHas('devices', function($query) use($category) {

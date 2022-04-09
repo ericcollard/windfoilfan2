@@ -56,6 +56,31 @@ class DevicesDataTable extends DataTable
         $builder->withCount('reviews');
         if ($this->brand)
             $builder->where('brand_id',$this->brand->id);
+        if ($this->program_target)
+        {
+            switch ($this->program_target):
+                case 'FREESTYLE':
+                    $builder->where('programme_start','<',0.5);
+                    $builder->where('programme_end','>',0.5);
+                    break;
+                case 'FREERIDE':
+                    $builder->where('programme_start','<',2.5);
+                    $builder->where('programme_end','>',2.5);
+                    break;
+                case 'FREERACE':
+                    $builder->where('programme_start','<',5.0);
+                    $builder->where('programme_end','>',5.0);
+                    break;
+                case 'COURSE SLALOM':
+                    $builder->where('programme_start','<',7.5);
+                    $builder->where('programme_end','>',7.5);
+                    break;
+                case 'COURSE RACE':
+                    $builder->where('programme_start','<',9.5);
+                    $builder->where('programme_end','>',9.5);
+                    break;
+            endswitch;
+        }
         if (auth()->guest()) $builder->where('status','Published');
         if (auth()->check())
         {
@@ -147,6 +172,45 @@ class DevicesDataTable extends DataTable
             ];
         }
 
+
+        if ($this->program_target) {
+            $buttons[] = [
+                'text' =>'Supprimer le filtre de programme',
+                'action' => "function (e, dt, button, config) {
+                                        window.location = '".$localRoute."';
+                                    }",
+                'className' => 'btn btn-success mb-2 me-2',
+            ];
+        }
+        else
+        {
+            $programs = ['FREESTYLE','FREERIDE','FREERACE','COURSE SLALOM','COURSE RACE'];
+
+            foreach ($programs as $program)
+            {
+                $programButtons[] =  [
+                    [
+                        'text' =>'<i class="fa fa-eye"></i> ' . $program,
+                        'action' => "function (e, dt, button, config) {
+                                        window.location = '".$localRoute."' + '?program_target=".$program."';
+                                    }"
+
+                    ],
+                ];
+            }
+
+
+            $buttons[] = [
+                "extend"=> 'collection',
+                "text"=> 'Filtrer par Programme',
+                'className' => 'btn btn-info mb-2 me-2',
+                "buttons" =>
+                    [
+                        $programButtons
+                    ]
+            ];
+        }
+
         if (! Auth::guest())
         {
             if (Auth::user()->can('create',Device::class)) {
@@ -192,6 +256,11 @@ class DevicesDataTable extends DataTable
             $custom_paramaters['brand_name'] = $this->brand->name;
         else
             $custom_paramaters['brand_name'] = "";
+
+        if ($this->program_target)
+            $custom_paramaters['program_target'] = $this->program_target;
+        else
+            $custom_paramaters['program_target'] = "";
 
         return $this->builder()
                     ->setTableId('devices-table')

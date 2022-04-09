@@ -90,11 +90,22 @@
                         @if( $dataTable->getOptions()['custom_paramaters']['brand_name'] <> "" )
                             - Marque : {{ $dataTable->getOptions()['custom_paramaters']['brand_name'] }}
                         @endif
+                        @if( $dataTable->getOptions()['custom_paramaters']['program_target'] <> "" )
+                            - Filtré pour le programme {{ $dataTable->getOptions()['custom_paramaters']['program_target'] }}
+                        @endif
                     </h4>
                 </div>
             </div>
         </div>
         <!-- end page title -->
+
+        <div class="row">
+            <div class="col-12">
+                <h5><i class="mdi mdi-lightbulb-on-outline"></i> Légende de la colonne "Programme"</h5>
+                <p>La zone bleue indique le domaine d'utilisation du produit, sur une échelle balayant les programmes
+                FREESTYLE - FREERIDE - FREERACE - COURSE SLALOM - COURSE RACE</p>
+            </div>
+        </div>
 
 
         <div class="row">
