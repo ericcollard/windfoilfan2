@@ -3,10 +3,19 @@
 
 <head>
     @include('layouts.shared.head', ["page_title" => "Accueil"])
+    {!! htmlScriptTagJsApi() !!}
 </head>
 
 
 <body class="loading" data-layout-config='{"darkMode":false}'>
+
+    @if(Session::has('message'))
+        <div class="alert alert-{{ Session::get('alert', 'success') }} alert-dismissible fade show mt-2" role="alert">
+            <strong>{{ __(Session::get('alert', 'success')) }} !</strong> {{ Session::get('message', '') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
 
     <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg py-lg-3 navbar-dark">
@@ -72,7 +81,7 @@
                             La base de donnée Windfoil la plus complète au monde
                         </h2>
 
-                        <p class="mb-4 font-16 text-white">Windfoilfan est une base de donnée participative
+                        <p class="mb-4 font-16 text-white">Windfoilfan est une base de donnée collaborative
                             regroupant
                             les mesures, les caractéristiques, les compte rendu de test, les performances de
                             plus de 200 produits dédiés au windfoil.</p>
@@ -82,7 +91,7 @@
                         <a href="{{ route('home') }}" class="btn btn-light">Juste visiter <i class="mdi mdi-arrow-right ms-1"></i></a>
 
                         <p class="mt-4 font-16 text-white"><em>Info. En tant que simple visiteur, les fonctionnalités et données visibles seront fortement
-                                réduites. En vous connectant, vous aurez accès à l'essentiel des éléments.</em></p>
+                                réduites. En vous connectant, vous aurez accès à l'essentiel des éléments. Créez gratuitement votre compte !</em></p>
 
                     </div>
                 </div>
@@ -122,7 +131,7 @@
                         <h4 class="mt-3">Classement</h4>
                         <p class="text-muted mt-2 mb-0">Le matériel est classé par catégorie, par marque et par millésime. Vous pouvez accéder à la liste des
                             produits, mais aussi à des tableaux de synthèse, et des classements par critères.
-                            Tous les avis sont attachés au matériel qu'ils décrivent. La recherche est donc particulièremnt aisée..
+                            Tous les avis sont rattachés au matériel qu'ils décrivent. La recherche est donc particulièrement aisée..
                         </p>
                     </div>
                 </div>
@@ -136,7 +145,7 @@
                         </div>
                         <h4 class="mt-3">Indépendant</h4>
                         <p class="text-muted mt-2 mb-0">WindfoilFan n'est pas financé par les marques. Les avis sont libres et indépendants.
-                            Chaque pratiqaunt peut contribuer et publier ses propres avis, à condition de respecter une charte de 'bonne conduite'.
+                            Chaque pratiquant peut contribuer et publier ses propres avis, à condition de respecter une charte de 'bonne conduite'.
                             Nous vous invitons d'ailleurs chaleureusement à le faire.
                         </p>
                     </div>
@@ -152,7 +161,7 @@
                         <h4 class="mt-3">Confiance et pertinence</h4>
                         <p class="text-muted mt-2 mb-0">Pour chaque avis publiés, on vous donne tous les outils pour pouvoir juger le
                             niveau de confiance et de pertinence que vous pouvez apporter à cet avis. En particulier, vous devriez
-                            pouvoir établir si le testeur est dans un contexte équivallent au vôtre.
+                            pouvoir établir si le testeur est dans un contexte équivalent au vôtre.
                         </p>
                     </div>
                 </div>
@@ -200,7 +209,7 @@
                         </div>
                         <h4 class="mt-3">Pédagogique</h4>
                         <p class="text-muted mt-2 mb-0">En plus des données propres aux produits, nous avons regroupé une série d'articles didactiques
-                            sur la pratique du windfoil.
+                            sur la pratique du windfoil. Ils abordent le matériel, son entretien, la réparation, les réglages, les techniques de navigation et bien d'autres
                         </p>
                     </div>
                 </div>
@@ -231,6 +240,7 @@
                     <div class="mt-4">
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Présentations produits</p>
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Compte-rendus de test</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Discussions</p>
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Classements par critères</p>
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Mesures techniques</p>
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Calculs de vos performances</p>
@@ -255,7 +265,7 @@
                 <div class="col-lg-12">
                     <div class="text-center">
                         <h3>Contactez <span class="text-primary">nous</span></h3>
-                        <p class="text-muted mt-2">Veuillez remplir le formulaire ci-joint et nous reviendrons vers vous très vite. Pour plus
+                        <p class="text-muted mt-2">Pour nous contacter, veuillez remplir le formulaire ci-joint et nous reviendrons vers vous très vite. Pour plus
                             <br>d'information, contactez nous.
                         </p>
                     </div>
@@ -271,18 +281,19 @@
                 </div>
 
                 <div class="col-md-8">
-                    <form>
+                    <form method="POST" action="{{ route('message') }}">
+                        @csrf
                         <div class="row mt-4">
                             <div class="col-lg-6">
                                 <div class="mb-2">
                                     <label for="fullname" class="form-label">Votre Nom</label>
-                                    <input class="form-control form-control-light" type="text" id="fullname" placeholder="Nom...">
+                                    <input class="form-control form-control-light" type="text" id="fullname" name="fullname" placeholder="Nom...">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mb-2">
-                                    <label for="emailaddress" class="form-label">Votre Email</label>
-                                    <input class="form-control form-control-light" type="email" required="" id="emailaddress" placeholder="Entrez votre Email...">
+                                    <label for="emailaddress" class="form-label">Votre Email*</label>
+                                    <input class="form-control form-control-light" type="email"  id="emailaddress" name="emailaddress" placeholder="Entrez votre Email..." required>
                                 </div>
                             </div>
                         </div>
@@ -291,7 +302,7 @@
                             <div class="col-lg-12">
                                 <div class="mb-2">
                                     <label for="subject" class="form-label">Sujet</label>
-                                    <input class="form-control form-control-light" type="text" id="subject" placeholder="Entrez le sujet...">
+                                    <input class="form-control form-control-light" type="text" id="subject" name="subject" placeholder="Entrez le sujet...">
                                 </div>
                             </div>
                         </div>
@@ -300,16 +311,30 @@
                             <div class="col-lg-12">
                                 <div class="mb-2">
                                     <label for="comments" class="form-label">Message</label>
-                                    <textarea id="comments" rows="4" class="form-control form-control-light" placeholder="Ecrivez votre message ici..."></textarea>
+                                    <textarea id="comments" rows="4" class="form-control form-control-light" name="comments" placeholder="Ecrivez votre message ici..."></textarea>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mt-2">
-                            <div class="col-12 text-end">
-                                <button class="btn btn-primary">Envoyez un message <i class="mdi mdi-telegram ms-1"></i> </button>
+                            <div class="col-lg-6">
+                                {!!  htmlFormSnippet() !!}
+                            </div>
+                            <div class="col-lg-6 text-end">
+                                <button id="btn_submit"  type="submit" class="btn btn-primary">Envoyez votre message <i class="mdi mdi-telegram ms-1"></i> </button>
                             </div>
                         </div>
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                     </form>
                 </div>
             </div>
@@ -335,12 +360,14 @@
                 </div>
                 <div class="col-lg-5 offset-lg-1">
                     <div class="mt-4">
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Accès aux données techniques</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Accès aux données techniques de vos foils</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Suivi des évolutions et dérives de production</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Comparaison des données techniques</p>
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Accès aux statistiques</p>
-                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Présentation de votre marque</p>
+                        <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Acc!s à la page de présentation de votre marque</p>
                     </div>
 
-                    <a href="#contact" class="btn btn-primary btn-rounded mt-3">Demander un accès pro<i class="mdi mdi-arrow-right ms-1"></i></a>
+                    <a href="{{ route('pro') }}" class="btn btn-primary btn-rounded mt-3">Demander un accès pro<i class="mdi mdi-arrow-right ms-1"></i></a>
 
                 </div>
             </div>
@@ -360,63 +387,9 @@
                                             de test, les performances de plus de 200 produits dédiés au windfoil.
                     </p>
 
-                    <ul class="social-list list-inline mt-3">
-                        <li class="list-inline-item text-center">
-                            <a href="javascript: void(0);" class="social-list-item border-primary text-primary"><i class="mdi mdi-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item text-center">
-                            <a href="javascript: void(0);" class="social-list-item border-danger text-danger"><i class="mdi mdi-google"></i></a>
-                        </li>
-                        <li class="list-inline-item text-center">
-                            <a href="javascript: void(0);" class="social-list-item border-info text-info"><i class="mdi mdi-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item text-center">
-                            <a href="javascript: void(0);" class="social-list-item border-secondary text-secondary"><i class="mdi mdi-github"></i></a>
-                        </li>
-                    </ul>
-
                 </div>
-
-                <div class="col-lg-2 mt-3 mt-lg-0">
-                    <h5 class="text-light">Company</h5>
-
-                    <ul class="list-unstyled ps-0 mb-0 mt-3">
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">About Us</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Documentation</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Blog</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Affiliate Program</a></li>
-                    </ul>
-
-                </div>
-
-                <div class="col-lg-2 mt-3 mt-lg-0">
-                    <h5 class="text-light">Apps</h5>
-
-                    <ul class="list-unstyled ps-0 mb-0 mt-3">
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Ecommerce Pages</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Email</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Social Feed</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Projects</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Tasks Management</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-lg-2 mt-3 mt-lg-0">
-                    <h5 class="text-light">Discover</h5>
-
-                    <ul class="list-unstyled ps-0 mb-0 mt-3">
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Help Center</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Our Products</a></li>
-                        <li class="mt-2"><a href="javascript: void(0);" class="text-muted">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="mt-5">
-                        <p class="text-muted mt-4 text-center mb-0">© 2022 Windfoilfan. Powered by Glissattitude</p>
-                    </div>
+                <div class="col-lg-6 text-end">
+                    <p class="text-muted">© 2022 Windfoilfan. Powered by Glissattitude</p>
                 </div>
             </div>
         </div>

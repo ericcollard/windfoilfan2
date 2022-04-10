@@ -22,7 +22,6 @@ class DevicesDataTable extends DataTable
         return datatables()
             ->eloquent($query)
             ->editColumn('created_at', function ($request) {
-                //return $request->created_at->formatLocalized('%d %B %Y'); //'%d %B %Y'
                 return $request->created_at->format('d/m/Y');
             })
             ->editColumn('status', function ($request) {
@@ -267,7 +266,7 @@ class DevicesDataTable extends DataTable
                     ->columns($this->getColumns())
                     ->minifiedAjax()
                     ->dom('Bfrtip')
-                    ->orderBy(7)
+                    ->orderBy(6)
                     ->parameters([
                 'language' => [
                     'url' => url('/vendor/datatables/lang/'.config('locale.languages')[session ('locale')][1].'.json'),//<--here

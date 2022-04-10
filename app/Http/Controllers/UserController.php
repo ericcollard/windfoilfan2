@@ -17,8 +17,6 @@ use Illuminate\Validation\ValidationException;
 class UserController extends Controller
 {
 
-    // TODO : vérifier la fonctionnement de l'envoi des mails à l'inscritpion
-
     /**
      * Create the controller instance.
      *

@@ -96,6 +96,9 @@ Route::get('/sessions', [MainController::class, 'sessions'])->name('sessions');
 Route::get('/test-contact', function () {
     return new App\Mail\Contact();
 });
+Route::post('/message',[MainController::class, 'message'])->name('message');
+Route::get('/pro', [MainController::class, 'pro'])->name('pro');
+Route::post('/prosend',[MainController::class, 'prosend'])->name('prosend');
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
     \UniSharp\LaravelFilemanager\Lfm::routes();

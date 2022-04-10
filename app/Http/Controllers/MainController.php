@@ -7,8 +7,6 @@ use App\Models\Brand;
 use App\Models\Device;
 use App\Models\Post;
 use App\Models\Review;
-use Butschster\Head\Facades\Meta;
-use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -16,7 +14,10 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Http\Request;
+use Throwable;
 
 class MainController extends Controller
 {
@@ -214,5 +215,55 @@ class MainController extends Controller
         return back();
     }
 
+
+    public function message(Request $request)
+    {
+
+        $request->validate([
+            'emailaddress' => 'required|string|email|max:255',
+            'g-recaptcha-response' => 'recaptcha',
+        ]);
+
+        try {
+            Mail::to('info@glissattitude.com')->send(new Contact($request->except('_token')));
+        }
+        catch (Throwable $e)
+        {
+            redirect(route('landing'))->with( ['message' => "Anomalie lors de l'envoi du message : ".$e->getMessage() , 'alert' => 'danger']);
+        }
+
+        return redirect(route('landing'))->with( ['message' => 'Votre message a bien été envoyé, nous vous répondrons au plus vite.', 'alert' => 'success']);
+
+    }
+
+    public function pro(Request $request)
+    {
+        $post = Post::where('id', '94')->first();
+        return view('main.proaccess', compact('post'));
+    }
+
+    public function prosend(Request $request)
+    {
+
+        $request->validate([
+            'emailaddress' => 'required|string|email|max:255',
+            'g-recaptcha-response' => 'recaptcha',
+            'password' => 'required|string|confirmed|min:8',
+        ]);
+
+        $datas = $request->except('_token');
+        $datas['subject'] = "Demande d'accès professionel";
+
+        try {
+            Mail::to('info@glissattitude.com')->send(new Contact($datas));
+        }
+        catch (Throwable $e)
+        {
+            redirect(route('pro'))->with( ['message' => "Anomalie lors de l'envoi du message : ".$e->getMessage() , 'alert' => 'danger']);
+        }
+
+        return redirect(route('pro'))->with( ['message' => 'Votre message a bien été envoyé, nous vous répondrons au plus vite.', 'alert' => 'success']);
+
+    }
 
 }

@@ -12,13 +12,19 @@ class Contact extends Mailable
     use Queueable, SerializesModels;
 
     /**
+     * Elements de contact
+     * @var array
+     */
+    public $contact;
+
+    /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Array $contact)
     {
-        //
+        $this->contact = $contact;
     }
 
     /**

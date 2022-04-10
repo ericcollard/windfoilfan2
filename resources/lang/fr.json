@@ -395,5 +395,7 @@
     "Last devices" : "Derniers produits",
     "success" : "Succès",
     "danger" : "Danger",
-    "warning" : "Attention"
+    "warning" : "Attention",
+    "Professional access demand" : "Demande d'accès professionel",
+    "Send your demand" : "Envoyer votre demande"
 }
