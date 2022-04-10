@@ -1,4 +1,4 @@
-@extends('layouts.vertical', ["page_title"=> __('Edit post')])
+@extends('layouts.vertical')
 
 @section('script-head')
     <x-head.tinymce-config/>
