@@ -203,7 +203,7 @@ class DevicesDataTable extends DataTable
             $buttons[] = [
                 "extend"=> 'collection',
                 "text"=> 'Filtrer par Programme',
-                'className' => 'btn btn-info mb-2 me-2',
+                'className' => 'btn btn-success mb-2 me-2',
                 "buttons" =>
                     [
                         $programButtons

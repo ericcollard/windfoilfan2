@@ -42,17 +42,13 @@
         <!-- user block-->
         <li class="dropdown notification-list">
             @guest
-                <span class="nav-link  nav-user  me-0">
-                    <span>
-                        <span class="account-user-name">{{ __('Not connected') }}</span>
-                        <span class="account-position">
-                            <a href="{{ route('login') }}">{{ __('Login') }}</a>
-                            -
-                            @if (Route::has('register'))
-                                <a href="{{ route('register') }}">{{ __('Register') }}</a>
-                            @endif
-                        </span>
-                    </span>
+                <span class="nav-link  nav-user  me-0" style="padding : 14px 10px 0px 10px  !important;">
+                    {{ __('Not connected') }} <br>
+                    <a href="{{ route('login') }}">{{ __('Login') }}</a>
+                    -
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}">{{ __('Register') }}</a>
+                    @endif
                 </span>
             @else
                 <a class="nav-link dropdown-toggle nav-user arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
