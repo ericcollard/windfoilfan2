@@ -290,7 +290,7 @@ class DevicesDataTable extends DataTable
             Column::make('year')->title(__('Year')),
             Column::make('program')->title(__('Program')),
             Column::make('views')->title(__('Views')),
-            Column::make('reviews_count')->title(__('Messages')),
+            Column::make('reviews_count')->title(__('Messages'))->searchable(false),
             Column::make('status')->title(__('Status')),
             Column::make('created_at')->title(__('Created at')),
 
