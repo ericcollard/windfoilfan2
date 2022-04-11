@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
         View::composer('layouts.shared.left-sidebar', function ($view) {
 
             $postcategories = Cache::rememberForever('postcategories', function() {
-                return PostCategory::all();
+                return PostCategory::orderBy('order')->get();
             });
             $devicecategories = Cache::rememberForever('devicecategories', function() {
                 return Category::all();
