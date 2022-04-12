@@ -165,10 +165,10 @@ class PostsTableSeeder extends Seeder
 </div>
 </div>',
                 'status' => 'Published',
-                'views' => 1249,
-                'last_ip' => '::1',
+                'views' => 1253,
+                'last_ip' => '88.163.167.153',
                 'created_at' => '2022-03-01 00:00:00',
-                'updated_at' => '2022-03-23 23:12:42',
+                'updated_at' => '2022-04-10 23:38:41',
             ),
             1 => 
             array (
@@ -195,10 +195,10 @@ class PostsTableSeeder extends Seeder
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>
 ',
                 'status' => 'Published',
-                'views' => 62281,
-                'last_ip' => NULL,
+                'views' => 62282,
+                'last_ip' => '54.36.148.111',
                 'created_at' => '2016-04-03 21:55:41',
-                'updated_at' => '2016-04-03 21:55:41',
+                'updated_at' => '2022-04-09 06:13:41',
             ),
             2 => 
             array (
@@ -238,10 +238,10 @@ class PostsTableSeeder extends Seeder
 <p>Mat&eacute;riel : Starbaord et NeilPryde</p>
 <p>Renseignements et r&eacute;servations : 04 94 46 63 18 / contact@yctoulon.fr</p>',
                 'status' => 'Published',
-                'views' => 5181,
-                'last_ip' => NULL,
+                'views' => 5182,
+                'last_ip' => '54.36.148.89',
                 'created_at' => '2022-01-02 01:00:38',
-                'updated_at' => '2022-01-02 01:00:38',
+                'updated_at' => '2022-04-09 07:53:46',
             ),
             3 => 
             array (
@@ -255,10 +255,10 @@ class PostsTableSeeder extends Seeder
 <p>&nbsp;</p>
 <p><iframe src="https://www.youtube.com/embed/uO0d735po20" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
                 'status' => 'Published',
-                'views' => 723,
-                'last_ip' => '::1',
+                'views' => 724,
+                'last_ip' => '54.36.148.135',
                 'created_at' => '2016-08-02 01:00:38',
-                'updated_at' => '2022-03-23 23:22:39',
+                'updated_at' => '2022-04-09 07:57:01',
             ),
             4 => 
             array (
@@ -308,128 +308,151 @@ class PostsTableSeeder extends Seeder
 
 ',
                 'status' => 'Published',
-                'views' => 6637,
-                'last_ip' => NULL,
+                'views' => 6638,
+                'last_ip' => '54.36.148.246',
                 'created_at' => '2016-08-04 17:28:01',
-                'updated_at' => '2016-08-04 17:28:01',
+                'updated_at' => '2022-04-09 05:56:10',
             ),
             5 => 
             array (
                 'id' => 10,
                 'user_id' => 1,
-                'post_categories_id' => 10,
+                'post_categories_id' => 1,
                 'title' => 'FAQ Windfoil',
-                'description' => 'Qu’est ce que le foil ? Pourquoi le windfoil ? Une nouvelle mode ou un évolution irrémédiable ? ... abordons de nombreux sujets ',
-                'body' => '<p>Nous abordons ici les idée reçue et répondons aux questions que l\'on nous pose très fréquemment au sujet du winfoil
-</p><p><a href="#p1">Qu’est ce que le foil ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p2">Pourquoi le windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="p3">Une nouvelle mode ou un évolution irrémédiable ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p4">Pourquoi maintenant et pas avant ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="p5">Pourquoi c’est plus simple à petite vitesse et dans le petit temps ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="p6">Quel flotteur pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p6a">Idée reçue : le flotteur n’a pas d’importance car il ne touche pas l’eau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p7">Idée reçue : il faut renforcer le boitier</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p8">Quelle voile pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p9">Idée reçue : C\'est trop technique, je n\'ai pas le niveau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p10">Idée reçue : Je suis trop vieux, je n\'y arriverai jamais</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p11">Idée reçue : J\'ai pas envie de réapprendre autre chose</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p12">Idée reçue : C\'est pas l\'avenir car ça ne marche pas dans les vagues et dans le vent fort</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p13">Idée reçue : Ca n’a pas d’avenir car c’est moins performant que le slalom</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p14">Idée reçue : C\'est dangereux</a></span>
-<br><a href="#p22">Idée reçue : C\'est du carbone, donc fragile. Peux on protéger ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p15">Idée reçue : Le windfoil c’est cher</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p16">Idée reçue : Il y a trop de modèles et on s’y perd</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p17">Idée reçue : Il faut que je teste pour voir si ça me plait</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p18">Idée reçue : Ca va évoluer tellement vite qu\'il vaut mieux attendre</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p19">Idée reçue : Il va y avoir de la concurrence et les prix vont s\'écrouler</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p20">Idée reçue : Dès que ça va être fait en chine, il y aura des copies pas cher</a></span><br>
-</p><p><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"></span>
-</p><hr class="cutter"><p><br>
-</p><h2 id="p1">Qu’est ce que le foil ?</h2><p>Pour ceux qui sont en retard d’une guerre, le foil est le nom donné à un appendice qui remplace l’aileron. En plus du plan anti-dérive vertical, on a également des plans porteurs horizontaux (en orange sur la photo ci dessous) qui génèrent non plus une force anti-dérive mais une réelle portance verticale au point de soulever la planche … qui ne touche alors plus l’eau.
-</p><p><img src="/storage/photos/1/legacy/b778acae2e827b33b9761f4711771920.jpg" alt="19 oct. 2016 09:30:49">
-</p><h2 id="p2">Pourquoi le windfoil ?</h2><p>Les plus vieux d’entre nous ont probablement connus la vraie « <strong><span style="color: rgb(149, 55, 52);">Planche à voile</span></strong> » avec laquelle on naviguait en « déplacement ». Ce terme est donné aux embarcations qui flottent car leur volume est plus important que leur poids. Lorsqu’elles avancent, ces embarcations déplacent un volume d’eau équivalent à leur poids. Bien évidement, c’est un mode de navigation plutôt lent. A la voile, c’est le cas de l’antique windsurfer, ou des monocoques actuels.
-</p><p>Il y a une grosse 20aine d’années, le <strong><span style="color: rgb(149, 55, 52);">funboard</span></strong> a été inventé en proposant un nouveau mode de navigation : le planning. Cette fois, la planche n’est plus portée par son volume mais par une portance générée grâce à la vitesse. On a ainsi démultiplié la vitesse, et surtout les sensations grâce à une résistance à l’avancement beaucoup plus faible … la glisse … vous voyez ce dont je parle. Je suis sûr que vous êtes tous addicts de cette sensation difficile à décrire du planning.
-</p><p>Le <strong><span style="color: rgb(149, 55, 52);">windfoil</span></strong> (ou windsurf à foil) est une nouvelle génération de glisse. Après la navigation en déplacement puis au planning, on passe à une navigation en vol. Les sensations de glisse font encore un bon en avant, en particulier grâce à une diminution drastique de la trainée. Et qui dit moins de trainée, dit moins de puissance vélique nécessaire, plus de légèreté etc. .. bref, une nouvelle révolution fondamentale dans le monde du windsurf.
-</p><p><img src="/storage/photos/1/legacy/868f36a6ddfe3014d4f2658abb91a71f.jpg">
-</p><h2 id="p3">Une nouvelle mode ou un évolution irrémédiable ?</h2><p>C’est la grande question du moment. Les conservateurs voient ceci comme une mode, et ceux qui pratiquent déjà comme l’évolution naturelle du windsurf.
-</p><p>En prenant un peu de recul, on a observé le même type de réaction lors de l’arrivée du funboard : beaucoup de compétiteurs en planche open dénigraient le funboard, avant d’y passer ou d’abonner. La transition a pris des années. Par ailleurs, tous les autres support à la voile passent aussi au foil (dériveurs, catamarans sportifs, multicoques de course au large, et même monocoques).
-</p><p>Au final, il y a fort parier que l’évolution vers le windfoil sera irréversible même si elle prendra du temps. Ceci, seul l\'avenir permettra de confirmer ceci.
-</p><h2 id="p4">Pourquoi maintenant et pas avant ?</h2><p>Les premiers essais de planche à voile sur foil datent de plus de 30 ans, mais ces premiers essais étaient loin d’être concluants.
-</p><p><img src="/storage/photos/1/legacy/b450624ea6e311596429a3b48af6915b.jpg">
-</p><p>L’époque ‘moderne’ du windfoil a été lancée par AHD il y a quelques années, et perce aujourd’hui grace à une conjonction de plusieurs facteurs
-</p><ul>
-<li>l’allègement du matériel</li>
-<li>la généralisation et la baisse des coûts des structures composites carbones</li>
-<li>la baisse des coûts de l’usinage CNC permettant d’usiner des moules précis</li>
-</ul><p>L’ensemble du poids du pilote et de sa monture dépassent les 100 kg. Cela veut dire que l’aile du foil doit générer une portance de plus de 100kg pour une envergure de 70cm et une corde de 12cm. Autant dire que la précision du profil et la solidité de la structure sont primordiales.
-</p><h2 id="p5">Pourquoi c’est plus simple à petite vitesse et dans le petit temps ?</h2><p>Tout ceux qui passent au windfoil se rendront très vite compte que l’engin est bien plus simple à maîtriser dans peu de vent et à vitesse faible et moyenne (entre 12 et 15 knt, avec des voiles de 5,2 à 6,5). C’est d’ailleurs les conditions que l’on conseille aux débutants dans la discipline, mais pourquoi ?
-</p><p>Si on analyse le fonctionnement du foil à petite vitesse, on a un équilibre stable : quand on appuie sur le pied arrière, cela occasionne une augmentation de la portance et fait monter le foil, mais en même temps, cela occasionne une augmentation de la trainée et ceci a pour effet de freiner et de refaire baisser la portance. L’équilibre est stable.
-</p><p>A plus haute vitesse, l’inertie supérieure de l\'ensemble rend la baisse de vitesse beaucoup plus faible et le foil a vite tendance à sortie de l’eau si on ne corrige pas la balance de poids entre les 2 pieds. Il faut donc en permanence maintenir l’assiette longitudinale du flotteur … un peu plus compliqué lorsque l’on n’a pas l’habitude.
-</p><h2 id="p6">Quel flotteur pour faire du windfoil ?</h2><p>Pour débuter le windfoil, la plupart des windsurfeurs voudront se rassurer en limitant leur investissement et en leur permettant de revenir au windsurf classique. Pour ceci, ils vont utiliser un flotteur d’occasion existant, mais quel type de flotteur de windsurf ‘classique’ permet de s’initier le plus facilement au windfoil ?
-</p><p>Il y a déjà pas mal de littérature à ce sujet sur les forums ou les sites des marques de foil. Finalement, la réponse est très simple :
-</p><ul>
-<li><span style="color: rgb(149, 55, 52);"><strong>Outline</strong></span> : il faut idéalement un flotteur mesurant entre 75 et 85cm de large, le plus court possible, le plus léger possible, et le plus large possible à l’arrière (dont plutôt typé slalom light wind)</li>
-<li><span style="color: rgb(192, 80, 77);"><strong>Boitier</strong></span> : la plupart des foils nécessitent un boitier d’aileron type deep tuttle. Idéalement, on préfèrera des boitiers traversant (qui viennent jusqu’au pont de la planche, sans ‘cheminées’ pour mettre les vis) car ils favorisent une reprise des efforts sur le pont et simplifient l\'installation du foil</li>
-<li><span style="color: rgb(149, 55, 52);"><strong>Footstraps</strong></span> : La position des footstraps est très importante en windfoil ... voir primmordiale. <br>
+                'description' => 'Qu’est ce que le foil ? Pourquoi le windfoil ? Une nouvelle mode ou un évolution irrémédiable ? ... abordons de nombreux sujets',
+                'body' => '<p>Nous abordons ici les id&eacute;e re&ccedil;ue et r&eacute;pondons aux questions que l\'on nous pose tr&egrave;s fr&eacute;quemment au sujet du winfoil</p>
+<p><a href="#p1">Qu&rsquo;est ce que le foil ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p2">Pourquoi le windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p3">Une nouvelle mode ou un &eacute;volution irr&eacute;m&eacute;diable ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p4">Pourquoi maintenant et pas avant ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p5">Pourquoi c&rsquo;est plus simple &agrave; petite vitesse et dans le petit temps ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p6">Quel flotteur pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p6a">Id&eacute;e re&ccedil;ue : le flotteur n&rsquo;a pas d&rsquo;importance car il ne touche pas l&rsquo;eau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p7">Id&eacute;e re&ccedil;ue : il faut renforcer le boitier</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p8">Quelle voile pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p9">Id&eacute;e re&ccedil;ue : C\'est trop technique, je n\'ai pas le niveau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p10">Id&eacute;e re&ccedil;ue : Je suis trop vieux, je n\'y arriverai jamais</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p11">Id&eacute;e re&ccedil;ue : J\'ai pas envie de r&eacute;apprendre autre chose</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p12">Id&eacute;e re&ccedil;ue : C\'est pas l\'avenir car &ccedil;a ne marche pas dans les vagues et dans le vent fort</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p13">Id&eacute;e re&ccedil;ue : Ca n&rsquo;a pas d&rsquo;avenir car c&rsquo;est moins performant que le slalom</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p14">Id&eacute;e re&ccedil;ue : C\'est dangereux</a></span> <br><a href="#p22">Id&eacute;e re&ccedil;ue : C\'est du carbone, donc fragile. Peux on prot&eacute;ger ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p15">Id&eacute;e re&ccedil;ue : Le windfoil c&rsquo;est cher</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p16">Id&eacute;e re&ccedil;ue : Il y a trop de mod&egrave;les et on s&rsquo;y perd</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p17">Id&eacute;e re&ccedil;ue : Il faut que je teste pour voir si &ccedil;a me plait</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p18">Id&eacute;e re&ccedil;ue : Ca va &eacute;voluer tellement vite qu\'il vaut mieux attendre</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p19">Id&eacute;e re&ccedil;ue : Il va y avoir de la concurrence et les prix vont s\'&eacute;crouler</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p20">Id&eacute;e re&ccedil;ue : D&egrave;s que &ccedil;a va &ecirc;tre fait en chine, il y aura des copies pas cher</a></span></p>
+<p>&nbsp;</p>
+<hr class="cutter">
+<p>&nbsp;</p>
+<h2 id="p1">Qu&rsquo;est ce que le foil ?</h2>
+<p>Pour ceux qui sont en retard d&rsquo;une guerre, le foil est le nom donn&eacute; &agrave; un appendice qui remplace l&rsquo;aileron. En plus du plan anti-d&eacute;rive vertical, on a &eacute;galement des plans porteurs horizontaux (en orange sur la photo ci dessous) qui g&eacute;n&egrave;rent non plus une force anti-d&eacute;rive mais une r&eacute;elle portance verticale au point de soulever la planche &hellip; qui ne touche alors plus l&rsquo;eau.</p>
+<p><img src="/storage/photos/1/legacy/b778acae2e827b33b9761f4711771920.jpg" alt="19 oct. 2016 09:30:49"></p>
+<h2 id="p2">Pourquoi le windfoil ?</h2>
+<p>Les plus vieux d&rsquo;entre nous ont probablement connus la vraie &laquo; <strong><span style="color: rgb(149, 55, 52);">Planche &agrave; voile</span></strong> &raquo; avec laquelle on naviguait en &laquo; d&eacute;placement &raquo;. Ce terme est donn&eacute; aux embarcations qui flottent car leur volume est plus important que leur poids. Lorsqu&rsquo;elles avancent, ces embarcations d&eacute;placent un volume d&rsquo;eau &eacute;quivalent &agrave; leur poids. Bien &eacute;videment, c&rsquo;est un mode de navigation plut&ocirc;t lent. A la voile, c&rsquo;est le cas de l&rsquo;antique windsurfer, ou des monocoques actuels.</p>
+<p>Il y a une grosse 20aine d&rsquo;ann&eacute;es, le <strong><span style="color: rgb(149, 55, 52);">funboard</span></strong> a &eacute;t&eacute; invent&eacute; en proposant un nouveau mode de navigation : le planning. Cette fois, la planche n&rsquo;est plus port&eacute;e par son volume mais par une portance g&eacute;n&eacute;r&eacute;e gr&acirc;ce &agrave; la vitesse. On a ainsi d&eacute;multipli&eacute; la vitesse, et surtout les sensations gr&acirc;ce &agrave; une r&eacute;sistance &agrave; l&rsquo;avancement beaucoup plus faible &hellip; la glisse &hellip; vous voyez ce dont je parle. Je suis s&ucirc;r que vous &ecirc;tes tous addicts de cette sensation difficile &agrave; d&eacute;crire du planning.</p>
+<p>Le <strong><span style="color: rgb(149, 55, 52);">windfoil</span></strong> (ou windsurf &agrave; foil) est une nouvelle g&eacute;n&eacute;ration de glisse. Apr&egrave;s la navigation en d&eacute;placement puis au planning, on passe &agrave; une navigation en vol. Les sensations de glisse font encore un bon en avant, en particulier gr&acirc;ce &agrave; une diminution drastique de la train&eacute;e. Et qui dit moins de train&eacute;e, dit moins de puissance v&eacute;lique n&eacute;cessaire, plus de l&eacute;g&egrave;ret&eacute; etc. .. bref, une nouvelle r&eacute;volution fondamentale dans le monde du windsurf.</p>
+<p><img src="/storage/photos/1/legacy/868f36a6ddfe3014d4f2658abb91a71f.jpg"></p>
+<h2 id="p3">Une nouvelle mode ou un &eacute;volution irr&eacute;m&eacute;diable ?</h2>
+<p>C&rsquo;est la grande question du moment. Les conservateurs voient ceci comme une mode, et ceux qui pratiquent d&eacute;j&agrave; comme l&rsquo;&eacute;volution naturelle du windsurf.</p>
+<p>En prenant un peu de recul, on a observ&eacute; le m&ecirc;me type de r&eacute;action lors de l&rsquo;arriv&eacute;e du funboard : beaucoup de comp&eacute;titeurs en planche open d&eacute;nigraient le funboard, avant d&rsquo;y passer ou d&rsquo;abonner. La transition a pris des ann&eacute;es. Par ailleurs, tous les autres support &agrave; la voile passent aussi au foil (d&eacute;riveurs, catamarans sportifs, multicoques de course au large, et m&ecirc;me monocoques).</p>
+<p>Au final, il y a fort parier que l&rsquo;&eacute;volution vers le windfoil sera irr&eacute;versible m&ecirc;me si elle prendra du temps. Ceci, seul l\'avenir permettra de confirmer ceci.</p>
+<h2 id="p4">Pourquoi maintenant et pas avant ?</h2>
+<p>Les premiers essais de planche &agrave; voile sur foil datent de plus de 30 ans, mais ces premiers essais &eacute;taient loin d&rsquo;&ecirc;tre concluants.</p>
+<p><img src="/storage/photos/1/legacy/b450624ea6e311596429a3b48af6915b.jpg"></p>
+<p>L&rsquo;&eacute;poque &lsquo;moderne&rsquo; du windfoil a &eacute;t&eacute; lanc&eacute;e par AHD il y a quelques ann&eacute;es, et perce aujourd&rsquo;hui grace &agrave; une conjonction de plusieurs facteurs</p>
 <ul>
-<li>Position latérale : La navigation en foil se fait plus ‘debout’ qu’en funboard. Il est nécessaire d’avoir les pieds bien à plat sur la planche, donc éviter les straps très excentrés des planches de slalom. Certains flotteurs de free-race offrent des positions d’inserts plus centrés, ce qui est parfait pour le windfoil. Sinon, vous pouvez demander à un shapeur de rajouter quelques inserts sur votre flotteur. </li>
-<li>Position longitudinale : l’un des éléments fondamentaux en windfoil est l’équilibre longitudinal. Il faut globalement que la poussé du foil se fasse entre les 2 pieds pour permettre au pilote de contrôler le plus facilement possible l’incidence du foil. Comme le centre de poussée des différents foil du marché n’est jamais au même endroit, l’idéal est d’avoir de multiples possibilités de réglage pour trouver l’équilibre idéal. Ci dessous, vous trouverez les cas de foil poussant sur le pied arrière (on est obligé de se pencher en arrière pour rester en l\'air), ou sur le pied avant (il faut exégérément pousser sur le pied avant pour éviter de srotir de l\'eau quand la vitesse augmente)</li>
-</ul></li>
-</ul><p><br>
-</p><ul>
-</ul><p><img src="/storage/photos/1/legacy/587264727d35654572d6a3be76d22f98.jpg">
-</p><h2 id="p6a">Idée reçue : le flotteur n’a pas d’importance car il ne touche pas l’eau</h2><p>Ceci est totalement faux à plusieurs titres
-</p><ol>
-<li>Le flotteur touche l’eau dans toutes les phases ou l’on ne vole pas, y compris avant le décollage ou lors des touchettes. Le shape a donc une influence importante, en particulier dans le vent léger ou la houle</li>
-<li>Si le shape ne joue que sur certaines phase de l’utilisation, les autres éléments géométriques du flotteurs sont primordiaux car ils déterminent entièrement le comportement et l’équilibre en vol : largeur arrière, largeur au maître beau, position des footstraps (cf. ce dessus), position du pied de mat.</li>
-<li>L\'inertie du flotteur a une gosse importance sur la facilité d’utilisation et le plaisir dégagé … d’où le développement de flotteurs très courts, et très légers sur l’avant.</li>
-</ol><p>On peut donc tout à fait recycler un flotteur pour faire du windfoil, mais il ne faut pas prendre n\'importe quoi et encore moins penser que cela n\'a pas d\'importance.
-</p><h2 id="p7">Idée reçue : il faut renforcer le boitier</h2><p>Installer un foil nécessite un boitier deep-tuttle. Si vous désirez utiliser une planche équipée en powerbox, il faudra soit revendre votre flotteur, soit faire remplacer le boitier. Si votre flotteur est par contre déjà équipé d’un deep-tuttle, aucune urgence : naviguez comme cela, et si le boitier avoue une faiblesse, il sera toujours temps de le remplacer. Si vous veniez à faire remplacer le boitier de votre flotteur, bien choisir un boitier traversant.
-</p><p><img src="/storage/photos/1/legacy/1bba766e8ef864d40686402cb1e825f3.jpg"><br>
-</p><p>Par contre, si votre flotteur ne permet pas de trouver en standard une position de footstraps compatibles avec le windfoil, il faudra effectivement faire poser des inserts supplémentaires, sans pour autant que cela n’handicape l’utilisation classique si vous vouliez y revenir.
-</p><p>Dans le cas des foil possédant une platine sous la carène (type Zeeko), les contraintes sont moins importantes. Par contre il faudra de grosses rondelles (type loké) sur le pont, pour éviter les arrachements lors de touchettes
-</p><h2 id="p8">Quelle voile pour faire du windfoil ?</h2><p>Le windfoil est très peu exigeant côté voile car il nécessite très peu de poussée. Globalement, on navigue avec 2m2 de moins qu’en funboard et des voiles de vague ou de freeride à 2 cam légères sont idéales pour pratiquer avec plaisir. Les besoins étant nouveaux, c\'est vraisemblablement un domaine ou les choses vont beaucoup évoluer. En funboard, on avait tendance à naviguer sur-toilé, alors que cette fois on est sous-toilé ... plus besoin de gréements ultra rigides !
-</p><h2 id="p9">Idée reçue : C\'est trop technique, je n\'ai pas le niveau</h2><p>Le niveau requis est celui de la navigation confortable au harnais, pieds dans les footstraps. Bien sûr, les excellents funboarders apprendront souvent plus vite, mais contrairement au kitefoil qui est réellement technique, le windfoil est accessible à la plupart. Pour donner une idée, il faut 2 demi-journées à un bon navigateur pour commencer à voler sur des bords entiers. Le record observé est de 15-20mn pour des jeunes compétiteurs comme les filles du pôle France.
-</p><h2 id="p10">Idée reçue : Je suis trop vieux, je n\'y arriverai jamais</h2><p>Avec 2 ans d’expérience de journées découvertes, et autre journées test, nous avons pu constater (à une exception près) que tous ceux qui s\'en sont réellement donné les moyens ont réussi à voler. Ce n’est pas une question d’âge mais d’ouverture d’esprit et d’acceptation à écouter les conseils (très dur pour certains).
-</p><p>Certes comme toujours quand on apprend, il y a une phase un peu plus physique car on est assez crispé au départ. Dès cette phase derrière nous, c\'est une navigation avec beaucoup de douceur et beaucoup moins d\'effort (on arrive sans problème à naviguer des heures sans harnais !). La dépense physique est concentrée au décollage, et elle est du même ordre que pour partir au planning avec une planche standard.
-</p><p>Au final, le windfoil est une activité beaucoup moins physique que le funboard. Les frottements étant très réduits, on utilise très peu de force propulsive donc des voiles qui font environ 2m2 de moins qu\'en Windsurf \'classique\'. Les chocs contre le clapot sont aussi fortement réduits.
-</p><h2 id="p11">Idée reçue : J\'ai pas envie de réapprendre autre chose</h2><p>On ne peut rien pour vous :)
-</p><p>
-L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonction de la dextérité des pratiquants, il faut entre 2h et 5h pour faire des vols de plus de 50m. La décontraction arrive about de 4 ou 5 sorties<br>
-</p><h2 id="p12">Idée reçue : C\'est pas l\'avenir car ça ne marche pas dans les vagues et dans le vent fort</h2><p>Comme toute évolution, il faut du temps pour que les choses s’installent. En dehors du matériel qui va continuer à progresser, la technique va beaucoup évoluer. A ce jour, nous avons tous un niveau de débutant ou de débutant débrouillé. Quelques rares exceptions (Philippe Caneri, Benjamin Tillier) nous donnent une idée du potentiel de foil. Que ce soit en terme de performance que de maniabilité, le potentiel est énorme. Les premiers funboarders ont mis un moment à dompter les vagues … mais le niveau moyen des pratiquants n’a jamais arrêté de progresser pour repousser les limites du possible.
-</p><p>On débute idéalement dans des vents médium (atour de 15 knt). En progressant, on appréhende de mieux en mieux les vents plus soutenus, et avec un peu d’habitude, naviguer dans 25knt ne pose aucun problème … il faut juste adapter les tailles de voile et ne pas hésiter à rapidement descendre en 4m2 voir moins. On prend même un plaisir certain à naviguer avec un mouchoir de poche dans les mains.<br>
-</p><p>Naviguer dans les vagues est un sujet plus complexe et seuls quelques très bon foileurs profitent réellement de l’ultra maniabilité du foil dans ces conditions. Avec un peu de recul, combien faut il à un débutant windsurfeur avant d’aller surfer dans les vagues ??? Finalement, il n’est pas évident que ce soit beaucoup plus long en soi, mais on manque de recul pour l’affirmer.
-</p><h2 id="p13">Idée reçue : Ca n’a pas d’avenir car c’est moins performant que le slalom</h2><p>Encore une fois, c’est effectivement moins rapide qu’un flotteur de slalom POUR LE MOMENT.
-</p><p>Pour infos, les vitesses atteintes en foil sont de l’ordre de 17-18 knt quand on débute, et sans grand niveau, on pousse jusqu’à 22-24 ont en se mettant dans le rouge. Les extra-terrestres du foil  ont déjà dépassé les 30 knt .. et ce n’est qu’un début.
-</p><p>Compte tenu du peu de frottement du foil, le windfoil peut théoriquement aller beaucoup plus vite que le funboard, mais il faut oser border … et pour l’instant on manque encore de niveau pour la plupart.
-</p><p>Mais pourquoi voulez vous aller vite ?
-</p><ul>
-<li>pour aller plus vite que les autres ? Le tirage de bourre en foil va arriver comme en slalom. Faites confiance aux compétiteurs dans l’âme</li>
-<li>pour les sensations ? A 20knt en foil, on a autant de sensations qu’à 35 en funboard</li>
-<li>pour se faire mal lors des boites ? Pas de stress, je suis sûr que certains arriveront à se mettre des bonnes roustes en voulant aller vite en winfoil</li>
-</ul><p>Si on parle de cap, le foil est largement devant le windsurf classique … sur des parcours type triangle, il y a donc fort à parier que le foil soit devant<br>
-</p><p>Si on parle de sensations et de départ planning (car c’est aussi une performance), le windsurf classique est déjà largement battu
-</p><p>Au final, c’est surtout un argument donné par ceux qui ne pratiquent pas réellement et veulent s’auto-convaincre d\'avoir raison.<br>
-</p><h2 id="p14">Idée reçue : C\'est dangereux</h2><p>A ce jour, on n’observe pratiquement aucun accident en windfoil. Contrairement au kitefoil, les risques sont très limités, surtout dans la phase d’apprentissage. A l’exclusion de quelques amerrissages sur le nez de la planche, ou de quelques genous dans la voile, rien de bien méchant. Le fait d’être dans les straps, avec le wishbone dans les mains permet à priori de ne jamais tomber sur le foil. Les vitesses d’évolution étant assez faibles au début, les chutes sont assez douces … ce qui en fait un sport peu traumatique par rapport au windsurf classique.
-</p><p>Au pire peut on se faire mal aux chevilles (c’est arrivé à quelques débutants), mais on fera attention d’avoir des straps peu excentrés et pas trop ouverts.
-</p><p>Le seul danger peut provenir des manipulations du foil à terre, et du waterstart où le pied peut passer très près des ailes. Nous conseillons de toute façon d’éviter systématiquement le waterstart en windfoil pour éviter tout problème de ce côté.
-</p><p>Par précaution, on conseillera aussi le casque et le gilet lors des premiers runs (ou si vous avez décider de battre des records de vitesse) … principe de précaution
-</p><h2 id="p22">Idée reçue : C\'est du carbone, donc fragile. Peux on protéger ?</h2><p>Sur les foils de série, bien conçus, nous n\'avons dénoté aucune casse. Il faut bien évidemment éviter de taper dans un rocher ou de racler le fond, mais c\'est la même chose avec vos jolis ailerons de slalom ! En cas de rencontre brutale avec le fond, c\'est plus souvent le boitier de la planche qui risque de passer un mauvais moment ou le nez de cette dernière si vous passez par devant.
-</p><p>Lors de vos débuts, nous conseillons très fortement de mettre des protections sur le nez de la planche et/ou un déviator pour éviter d\'abîmer le nez le la planche. En effet, vous allez immanquablement passer par devant une paire de fois avant d\'apprendre à être plus doux et mesuré sur les appuis.
-</p><p>Nous vous conseillons aussi une housse pour protéger les foils (les bord de fuite fins sont en général fragiles) lors du transport.
-</p><h2 id="p15">Idée reçue : Le windfoil c’est cher</h2><p>Oui et non : comme tout, cela peut être cher quand on veut s’équiper avec le top de ce qui se fait. Cela peut être aussi tout à fait raisonnable grâce à l’arrivée de matériel produit en série et avec des matériaux moins couteux (cf foil alu NP par exemple … et il y en aura d’autres comme le prochain Horue).
-</p><p>Quand on aborde de ce sujet, la question n’est pas le tarif du foil en soit, mais le coût global relativement aux autres alternatives. Le windfoil nécessitant moins de gréements et étant bien moins exigeant de ce point de vue, ceci équilibre tout à fait le tarif de l’appendice. Sauf à vouloir faire de la compétition, exit les voiles au dessus de 7.5 m2, ou les modèles à plus de 2 cambers.
-</p><p>Pour une utilisation loisir, un quiver 7m, 5m, 3,5m est parfait pour naviguer dans toutes les conditions.
-</p><h2 id="p16">Idée reçue : Il y a trop de modèles et on s’y perd </h2><p>Lorsqu’il n’y avait qu’un ou 2 modèles, la plupart se plaignaient de ne pas avoir le choix. Maintenant, il y en aurait trop ???
-</p><p>Ce qui est certain, c’est que
-</p><ul>
-<li>parmi tous les modèles vendus, assez peu offrent à la fois : un modèle réellement abouti, une disponibilité raisonnable, un SAV de qualité, la pérennité de la marque, une certaines évolutivité</li>
-<li>nous sommes là pour vous aider à faire le bon choix en fonction de vos contraintes (type de pratique, environnement de navigation, niveau, budget ) et cette diversité permet justement de coller assez facilement aux spécificités de chacun.</li>
-</ul><h2 id="p17">Idée reçue : Il faut que je teste pour voir si ça me plait</h2><p>C’est une remarque que nous avons dû entendre 2000 fois cet été.  Nous avons d’ailleurs mis en place des cours de découverte windfoil avec plusieurs clubs (YCT, Neptune). Il vous permettront d’avoir des premières sensations.
-</p><p>Dans les faits, comme toute discipline dans laquelle on débute, les premiers instants sont plutôt ingrats même si ils peuvent être amusants. Après les premières sensations de vol qui sont très excitantes, le windfoil devient vraiment addictif lorsque l’on parvient à se décontracter en vol.  Comme on le disait un peu plus haut, cela intervient après quelques sorties. <span class="redactor-invisible-space"> </span>Nous n’avons à ce jour qu’un seul exemple de pratiquant qui a fait l’effort de passer le cap et qui a décidé de revenir au funboard classique … et nous pensons que cela est dû à un gabarit hors norme et un mauvais choix de matériel. Tous les autres rêvent windfoil, naviguent windfoil et parlent windfoil.
-</p><p>Compte tenu de la sensation éprouvée en vol, on a du mal à imaginer qu’un windsurfeur puisse ne pas prendre goût au windfoil … à condition de savoir persévérer lors des premières sorties.
-</p><h2 id="p18">Idée reçue : Ca va évoluer tellement vite qu\'il vaut mieux attendre</h2><p>Le windfoil en est effectivement à ses débuts, mais nous en sommes déjà grosso-modo à la 3e génération de foil. Les tâtonnements et les évolutions les plus fondamentales sont derrière nous désormais. Les premières générations ont exploré des directions un peu extrêmes, mais les choses ont beaucoup convergé avec les 2e et 3e générations. Les évolutions vont être désormais plus subtiles, mais bien sûr, on ne va pas s’arrêter là .. et tant mieux.
-</p><p>D’autre part, qui dit nouvelle pratique dit aussi demande beaucoup plus forte que l’offre sur le marché de l’occasion.  La revente d’occasion ne pose aucun problème quand on choisi un modèle qui fonctionne.
-</p><p>On peut toujours attendre la version suivante mais c’est une course perdue d’avance. Si on avait attendu que le funboard n’évolue plus avant de ranger sa planche à dérive, on naviguerai encore tous en planche open … et pourtant il y a eu de nombreuses évolutions majeures dans le funboard, et on en a tous profité sans forcément ramener toujours ceci au prix.
-</p><p>Pour ne pas « perdre d’argent », attendre ne sert donc à rien, mais choisir un modèle qui va se revendre est fondamental. Il faut donc simplement ne pas aller chercher des produits exotiques avec lesquels vous allez gagner 200eur à l’achat pour se retrouver avec un produit invendable dans 6 mois.<br>
-</p><h2 id="p19">Idée reçue : Il va y avoir de la concurrence et les prix vont s\'écrouler</h2><p>L’évolution des prix n’a aucun lien avec le nombre de marques, mais avec le cout de revient des produits. On va passer de productions artisanales ou chaque production unitaire coute cher en main d’oeuvre au regard du cout des matériaux, à des productions industrielles ou le cout de revient unitaire en production sera plus faible, mais qui nécessitera des investissements plus conséquents : développement, industrialisation pour définir des process reproductibles, suivi qualité, marketing, structure de distribution permettant d’assumer une diffusion en série sur du moyen et du long terme.
-</p><p>Au final, les coûts s’équilibrent grossièrement, et on ne peut pas s’attendre à voir les prix chuter de façon significative sur des produits développés à iso qualité de matériaux et de technologie. <br>
-</p><p>Par contre 2 phénomènes vont apparaîtrent
-</p><ul>
-<li>des nouveaux acteurs vont profiter de l’engouement pour proposer des produits moins chers en rognant sur la qualité des matériaux, la qualité des process de production, le développement (en copiant), le réseau de distribution (vente directe), et la pérennité des produits. Ce type de modèle économique à court terme est inévitable.</li>
-<li>le volume va permettre d’accéder à des technologies différentes. On en a un exemple flagrant avec l’arrivée des foils aluminium produits par extrusion, moulage et soudure Tig. Ce sont des procédés inaccessibles à l’artisan, mais qui permettent de produire à des couts réduits.</li>
-</ul><h2 id="p20">Idée reçue : Dès que ça va être fait en chine, il y aura des copies pas cher <br></h2><p>Comme d’habitude, l’Asie sait profiter très vite des opportunités commerciales, surtout lorsque les marchés ne sont pas structurés. Comme dans tous les domaines que nous avons connus (windsurf, SUP, kite etc.), les arnaques font la compétition avec les faux bons plans. Au final, que ce soit en europe, en chine ou au fin fond de l’Afrique, le Père Noël n’est qu’un mythe et les vrais bons produits ont des coûts similaires.
-</p><p>Il y a effectivement déjà des offres très alléchantes sur ebay (foil carbone à 250€ par lot de 50) et nous encourageons ceux qui veulent jeter de l’argent par les fenêtres à y souscrire au plus vite. Nous savons que ce sont des arnaques, alors nous préférons que ce soit les autres qui fassent les cobayes :)
-</p><p><br>
-</p><ul>
+<li>l&rsquo;all&egrave;gement du mat&eacute;riel</li>
+<li>la g&eacute;n&eacute;ralisation et la baisse des co&ucirc;ts des structures composites carbones</li>
+<li>la baisse des co&ucirc;ts de l&rsquo;usinage CNC permettant d&rsquo;usiner des moules pr&eacute;cis</li>
 </ul>
-
-',
+<p>L&rsquo;ensemble du poids du pilote et de sa monture d&eacute;passent les 100 kg. Cela veut dire que l&rsquo;aile du foil doit g&eacute;n&eacute;rer une portance de plus de 100kg pour une envergure de 70cm et une corde de 12cm. Autant dire que la pr&eacute;cision du profil et la solidit&eacute; de la structure sont primordiales.</p>
+<h2 id="p5">Pourquoi c&rsquo;est plus simple &agrave; petite vitesse et dans le petit temps ?</h2>
+<p>Tout ceux qui passent au windfoil se rendront tr&egrave;s vite compte que l&rsquo;engin est bien plus simple &agrave; ma&icirc;triser dans peu de vent et &agrave; vitesse faible et moyenne (entre 12 et 15 knt, avec des voiles de 5,2 &agrave; 6,5). C&rsquo;est d&rsquo;ailleurs les conditions que l&rsquo;on conseille aux d&eacute;butants dans la discipline, mais pourquoi ?</p>
+<p>Si on analyse le fonctionnement du foil &agrave; petite vitesse, on a un &eacute;quilibre stable : quand on appuie sur le pied arri&egrave;re, cela occasionne une augmentation de la portance et fait monter le foil, mais en m&ecirc;me temps, cela occasionne une augmentation de la train&eacute;e et ceci a pour effet de freiner et de refaire baisser la portance. L&rsquo;&eacute;quilibre est stable.</p>
+<p>A plus haute vitesse, l&rsquo;inertie sup&eacute;rieure de l\'ensemble rend la baisse de vitesse beaucoup plus faible et le foil a vite tendance &agrave; sortie de l&rsquo;eau si on ne corrige pas la balance de poids entre les 2 pieds. Il faut donc en permanence maintenir l&rsquo;assiette longitudinale du flotteur &hellip; un peu plus compliqu&eacute; lorsque l&rsquo;on n&rsquo;a pas l&rsquo;habitude.</p>
+<h2 id="p6">Quel flotteur pour faire du windfoil ?</h2>
+<p>Pour d&eacute;buter le windfoil, la plupart des windsurfeurs voudront se rassurer en limitant leur investissement et en leur permettant de revenir au windsurf classique. Pour ceci, ils vont utiliser un flotteur d&rsquo;occasion existant, mais quel type de flotteur de windsurf &lsquo;classique&rsquo; permet de s&rsquo;initier le plus facilement au windfoil ?</p>
+<p>Il y a d&eacute;j&agrave; pas mal de litt&eacute;rature &agrave; ce sujet sur les forums ou les sites des marques de foil. Finalement, la r&eacute;ponse est tr&egrave;s simple :</p>
+<ul>
+<li><span style="color: rgb(149, 55, 52);"><strong>Outline</strong></span> : il faut id&eacute;alement un flotteur mesurant entre 75 et 85cm de large, le plus court possible, le plus l&eacute;ger possible, et le plus large possible &agrave; l&rsquo;arri&egrave;re (dont plut&ocirc;t typ&eacute; slalom light wind)</li>
+<li><span style="color: rgb(192, 80, 77);"><strong>Boitier</strong></span> : la plupart des foils n&eacute;cessitent un boitier d&rsquo;aileron type deep tuttle. Id&eacute;alement, on pr&eacute;f&egrave;rera des boitiers traversant (qui viennent jusqu&rsquo;au pont de la planche, sans &lsquo;chemin&eacute;es&rsquo; pour mettre les vis) car ils favorisent une reprise des efforts sur le pont et simplifient l\'installation du foil</li>
+<li><span style="color: rgb(149, 55, 52);"><strong>Footstraps</strong></span> : La position des footstraps est tr&egrave;s importante en windfoil ... voir primmordiale. <br>
+<ul>
+<li>Position lat&eacute;rale : La navigation en foil se fait plus &lsquo;debout&rsquo; qu&rsquo;en funboard. Il est n&eacute;cessaire d&rsquo;avoir les pieds bien &agrave; plat sur la planche, donc &eacute;viter les straps tr&egrave;s excentr&eacute;s des planches de slalom. Certains flotteurs de free-race offrent des positions d&rsquo;inserts plus centr&eacute;s, ce qui est parfait pour le windfoil. Sinon, vous pouvez demander &agrave; un shapeur de rajouter quelques inserts sur votre flotteur.</li>
+<li>Position longitudinale : l&rsquo;un des &eacute;l&eacute;ments fondamentaux en windfoil est l&rsquo;&eacute;quilibre longitudinal. Il faut globalement que la pouss&eacute; du foil se fasse entre les 2 pieds pour permettre au pilote de contr&ocirc;ler le plus facilement possible l&rsquo;incidence du foil. Comme le centre de pouss&eacute;e des diff&eacute;rents foil du march&eacute; n&rsquo;est jamais au m&ecirc;me endroit, l&rsquo;id&eacute;al est d&rsquo;avoir de multiples possibilit&eacute;s de r&eacute;glage pour trouver l&rsquo;&eacute;quilibre id&eacute;al. Ci dessous, vous trouverez les cas de foil poussant sur le pied arri&egrave;re (on est oblig&eacute; de se pencher en arri&egrave;re pour rester en l\'air), ou sur le pied avant (il faut ex&eacute;g&eacute;r&eacute;ment pousser sur le pied avant pour &eacute;viter de srotir de l\'eau quand la vitesse augmente)</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p><img src="/storage/photos/1/legacy/587264727d35654572d6a3be76d22f98.jpg"></p>
+<h2 id="p6a">Id&eacute;e re&ccedil;ue : le flotteur n&rsquo;a pas d&rsquo;importance car il ne touche pas l&rsquo;eau</h2>
+<p>Ceci est totalement faux &agrave; plusieurs titres</p>
+<ol>
+<li>Le flotteur touche l&rsquo;eau dans toutes les phases ou l&rsquo;on ne vole pas, y compris avant le d&eacute;collage ou lors des touchettes. Le shape a donc une influence importante, en particulier dans le vent l&eacute;ger ou la houle</li>
+<li>Si le shape ne joue que sur certaines phase de l&rsquo;utilisation, les autres &eacute;l&eacute;ments g&eacute;om&eacute;triques du flotteurs sont primordiaux car ils d&eacute;terminent enti&egrave;rement le comportement et l&rsquo;&eacute;quilibre en vol : largeur arri&egrave;re, largeur au ma&icirc;tre beau, position des footstraps (cf. ce dessus), position du pied de mat.</li>
+<li>L\'inertie du flotteur a une gosse importance sur la facilit&eacute; d&rsquo;utilisation et le plaisir d&eacute;gag&eacute; &hellip; d&rsquo;o&ugrave; le d&eacute;veloppement de flotteurs tr&egrave;s courts, et tr&egrave;s l&eacute;gers sur l&rsquo;avant.</li>
+</ol>
+<p>On peut donc tout &agrave; fait recycler un flotteur pour faire du windfoil, mais il ne faut pas prendre n\'importe quoi et encore moins penser que cela n\'a pas d\'importance.</p>
+<h2 id="p7">Id&eacute;e re&ccedil;ue : il faut renforcer le boitier</h2>
+<p>Installer un foil n&eacute;cessite un boitier deep-tuttle. Si vous d&eacute;sirez utiliser une planche &eacute;quip&eacute;e en powerbox, il faudra soit revendre votre flotteur, soit faire remplacer le boitier. Si votre flotteur est par contre d&eacute;j&agrave; &eacute;quip&eacute; d&rsquo;un deep-tuttle, aucune urgence : naviguez comme cela, et si le boitier avoue une faiblesse, il sera toujours temps de le remplacer. Si vous veniez &agrave; faire remplacer le boitier de votre flotteur, bien choisir un boitier traversant.</p>
+<p><img src="/storage/photos/1/legacy/1bba766e8ef864d40686402cb1e825f3.jpg"></p>
+<p>Par contre, si votre flotteur ne permet pas de trouver en standard une position de footstraps compatibles avec le windfoil, il faudra effectivement faire poser des inserts suppl&eacute;mentaires, sans pour autant que cela n&rsquo;handicape l&rsquo;utilisation classique si vous vouliez y revenir.</p>
+<p>Dans le cas des foil poss&eacute;dant une platine sous la car&egrave;ne (type Zeeko), les contraintes sont moins importantes. Par contre il faudra de grosses rondelles (type lok&eacute;) sur le pont, pour &eacute;viter les arrachements lors de touchettes</p>
+<h2 id="p8">Quelle voile pour faire du windfoil ?</h2>
+<p>Le windfoil est tr&egrave;s peu exigeant c&ocirc;t&eacute; voile car il n&eacute;cessite tr&egrave;s peu de pouss&eacute;e. Globalement, on navigue avec 2m2 de moins qu&rsquo;en funboard et des voiles de vague ou de freeride &agrave; 2 cam l&eacute;g&egrave;res sont id&eacute;ales pour pratiquer avec plaisir. Les besoins &eacute;tant nouveaux, c\'est vraisemblablement un domaine ou les choses vont beaucoup &eacute;voluer. En funboard, on avait tendance &agrave; naviguer sur-toil&eacute;, alors que cette fois on est sous-toil&eacute; ... plus besoin de gr&eacute;ements ultra rigides !</p>
+<h2 id="p9">Id&eacute;e re&ccedil;ue : C\'est trop technique, je n\'ai pas le niveau</h2>
+<p>Le niveau requis est celui de la navigation confortable au harnais, pieds dans les footstraps. Bien s&ucirc;r, les excellents funboarders apprendront souvent plus vite, mais contrairement au kitefoil qui est r&eacute;ellement technique, le windfoil est accessible &agrave; la plupart. Pour donner une id&eacute;e, il faut 2 demi-journ&eacute;es &agrave; un bon navigateur pour commencer &agrave; voler sur des bords entiers. Le record observ&eacute; est de 15-20mn pour des jeunes comp&eacute;titeurs comme les filles du p&ocirc;le France.</p>
+<h2 id="p10">Id&eacute;e re&ccedil;ue : Je suis trop vieux, je n\'y arriverai jamais</h2>
+<p>Avec 2 ans d&rsquo;exp&eacute;rience de journ&eacute;es d&eacute;couvertes, et autre journ&eacute;es test, nous avons pu constater (&agrave; une exception pr&egrave;s) que tous ceux qui s\'en sont r&eacute;ellement donn&eacute; les moyens ont r&eacute;ussi &agrave; voler. Ce n&rsquo;est pas une question d&rsquo;&acirc;ge mais d&rsquo;ouverture d&rsquo;esprit et d&rsquo;acceptation &agrave; &eacute;couter les conseils (tr&egrave;s dur pour certains).</p>
+<p>Certes comme toujours quand on apprend, il y a une phase un peu plus physique car on est assez crisp&eacute; au d&eacute;part. D&egrave;s cette phase derri&egrave;re nous, c\'est une navigation avec beaucoup de douceur et beaucoup moins d\'effort (on arrive sans probl&egrave;me &agrave; naviguer des heures sans harnais !). La d&eacute;pense physique est concentr&eacute;e au d&eacute;collage, et elle est du m&ecirc;me ordre que pour partir au planning avec une planche standard.</p>
+<p>Au final, le windfoil est une activit&eacute; beaucoup moins physique que le funboard. Les frottements &eacute;tant tr&egrave;s r&eacute;duits, on utilise tr&egrave;s peu de force propulsive donc des voiles qui font environ 2m2 de moins qu\'en Windsurf \'classique\'. Les chocs contre le clapot sont aussi fortement r&eacute;duits.</p>
+<h2 id="p11">Id&eacute;e re&ccedil;ue : J\'ai pas envie de r&eacute;apprendre autre chose</h2>
+<p>On ne peut rien pour vous :)</p>
+<p>L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonction de la dext&eacute;rit&eacute; des pratiquants, il faut entre 2h et 5h pour faire des vols de plus de 50m. La d&eacute;contraction arrive about de 4 ou 5 sorties</p>
+<h2 id="p12">Id&eacute;e re&ccedil;ue : C\'est pas l\'avenir car &ccedil;a ne marche pas dans les vagues et dans le vent fort</h2>
+<p>Comme toute &eacute;volution, il faut du temps pour que les choses s&rsquo;installent. En dehors du mat&eacute;riel qui va continuer &agrave; progresser, la technique va beaucoup &eacute;voluer. A ce jour, nous avons tous un niveau de d&eacute;butant ou de d&eacute;butant d&eacute;brouill&eacute;. Quelques rares exceptions (Philippe Caneri, Benjamin Tillier) nous donnent une id&eacute;e du potentiel de foil. Que ce soit en terme de performance que de maniabilit&eacute;, le potentiel est &eacute;norme. Les premiers funboarders ont mis un moment &agrave; dompter les vagues &hellip; mais le niveau moyen des pratiquants n&rsquo;a jamais arr&ecirc;t&eacute; de progresser pour repousser les limites du possible.</p>
+<p>On d&eacute;bute id&eacute;alement dans des vents m&eacute;dium (atour de 15 knt). En progressant, on appr&eacute;hende de mieux en mieux les vents plus soutenus, et avec un peu d&rsquo;habitude, naviguer dans 25knt ne pose aucun probl&egrave;me &hellip; il faut juste adapter les tailles de voile et ne pas h&eacute;siter &agrave; rapidement descendre en 4m2 voir moins. On prend m&ecirc;me un plaisir certain &agrave; naviguer avec un mouchoir de poche dans les mains.</p>
+<p>Naviguer dans les vagues est un sujet plus complexe et seuls quelques tr&egrave;s bon foileurs profitent r&eacute;ellement de l&rsquo;ultra maniabilit&eacute; du foil dans ces conditions. Avec un peu de recul, combien faut il &agrave; un d&eacute;butant windsurfeur avant d&rsquo;aller surfer dans les vagues ??? Finalement, il n&rsquo;est pas &eacute;vident que ce soit beaucoup plus long en soi, mais on manque de recul pour l&rsquo;affirmer.</p>
+<h2 id="p13">Id&eacute;e re&ccedil;ue : Ca n&rsquo;a pas d&rsquo;avenir car c&rsquo;est moins performant que le slalom</h2>
+<p>Encore une fois, c&rsquo;est effectivement moins rapide qu&rsquo;un flotteur de slalom POUR LE MOMENT.</p>
+<p>Pour infos, les vitesses atteintes en foil sont de l&rsquo;ordre de 17-18 knt quand on d&eacute;bute, et sans grand niveau, on pousse jusqu&rsquo;&agrave; 22-24 ont en se mettant dans le rouge. Les extra-terrestres du foil ont d&eacute;j&agrave; d&eacute;pass&eacute; les 30 knt .. et ce n&rsquo;est qu&rsquo;un d&eacute;but.</p>
+<p>Compte tenu du peu de frottement du foil, le windfoil peut th&eacute;oriquement aller beaucoup plus vite que le funboard, mais il faut oser border &hellip; et pour l&rsquo;instant on manque encore de niveau pour la plupart.</p>
+<p>Mais pourquoi voulez vous aller vite ?</p>
+<ul>
+<li>pour aller plus vite que les autres ? Le tirage de bourre en foil va arriver comme en slalom. Faites confiance aux comp&eacute;titeurs dans l&rsquo;&acirc;me</li>
+<li>pour les sensations ? A 20knt en foil, on a autant de sensations qu&rsquo;&agrave; 35 en funboard</li>
+<li>pour se faire mal lors des boites ? Pas de stress, je suis s&ucirc;r que certains arriveront &agrave; se mettre des bonnes roustes en voulant aller vite en winfoil</li>
+</ul>
+<p>Si on parle de cap, le foil est largement devant le windsurf classique &hellip; sur des parcours type triangle, il y a donc fort &agrave; parier que le foil soit devant</p>
+<p>Si on parle de sensations et de d&eacute;part planning (car c&rsquo;est aussi une performance), le windsurf classique est d&eacute;j&agrave; largement battu</p>
+<p>Au final, c&rsquo;est surtout un argument donn&eacute; par ceux qui ne pratiquent pas r&eacute;ellement et veulent s&rsquo;auto-convaincre d\'avoir raison.</p>
+<h2 id="p14">Id&eacute;e re&ccedil;ue : C\'est dangereux</h2>
+<p>A ce jour, on n&rsquo;observe pratiquement aucun accident en windfoil. Contrairement au kitefoil, les risques sont tr&egrave;s limit&eacute;s, surtout dans la phase d&rsquo;apprentissage. A l&rsquo;exclusion de quelques amerrissages sur le nez de la planche, ou de quelques genous dans la voile, rien de bien m&eacute;chant. Le fait d&rsquo;&ecirc;tre dans les straps, avec le wishbone dans les mains permet &agrave; priori de ne jamais tomber sur le foil. Les vitesses d&rsquo;&eacute;volution &eacute;tant assez faibles au d&eacute;but, les chutes sont assez douces &hellip; ce qui en fait un sport peu traumatique par rapport au windsurf classique.</p>
+<p>Au pire peut on se faire mal aux chevilles (c&rsquo;est arriv&eacute; &agrave; quelques d&eacute;butants), mais on fera attention d&rsquo;avoir des straps peu excentr&eacute;s et pas trop ouverts.</p>
+<p>Le seul danger peut provenir des manipulations du foil &agrave; terre, et du waterstart o&ugrave; le pied peut passer tr&egrave;s pr&egrave;s des ailes. Nous conseillons de toute fa&ccedil;on d&rsquo;&eacute;viter syst&eacute;matiquement le waterstart en windfoil pour &eacute;viter tout probl&egrave;me de ce c&ocirc;t&eacute;.</p>
+<p>Par pr&eacute;caution, on conseillera aussi le casque et le gilet lors des premiers runs (ou si vous avez d&eacute;cider de battre des records de vitesse) &hellip; principe de pr&eacute;caution</p>
+<h2 id="p22">Id&eacute;e re&ccedil;ue : C\'est du carbone, donc fragile. Peux on prot&eacute;ger ?</h2>
+<p>Sur les foils de s&eacute;rie, bien con&ccedil;us, nous n\'avons d&eacute;not&eacute; aucune casse. Il faut bien &eacute;videmment &eacute;viter de taper dans un rocher ou de racler le fond, mais c\'est la m&ecirc;me chose avec vos jolis ailerons de slalom ! En cas de rencontre brutale avec le fond, c\'est plus souvent le boitier de la planche qui risque de passer un mauvais moment ou le nez de cette derni&egrave;re si vous passez par devant.</p>
+<p>Lors de vos d&eacute;buts, nous conseillons tr&egrave;s fortement de mettre des protections sur le nez de la planche et/ou un d&eacute;viator pour &eacute;viter d\'ab&icirc;mer le nez le la planche. En effet, vous allez immanquablement passer par devant une paire de fois avant d\'apprendre &agrave; &ecirc;tre plus doux et mesur&eacute; sur les appuis.</p>
+<p>Nous vous conseillons aussi une housse pour prot&eacute;ger les foils (les bord de fuite fins sont en g&eacute;n&eacute;ral fragiles) lors du transport.</p>
+<h2 id="p15">Id&eacute;e re&ccedil;ue : Le windfoil c&rsquo;est cher</h2>
+<p>Oui et non : comme tout, cela peut &ecirc;tre cher quand on veut s&rsquo;&eacute;quiper avec le top de ce qui se fait. Cela peut &ecirc;tre aussi tout &agrave; fait raisonnable gr&acirc;ce &agrave; l&rsquo;arriv&eacute;e de mat&eacute;riel produit en s&eacute;rie et avec des mat&eacute;riaux moins couteux (cf foil alu NP par exemple &hellip; et il y en aura d&rsquo;autres comme le prochain Horue).</p>
+<p>Quand on aborde de ce sujet, la question n&rsquo;est pas le tarif du foil en soit, mais le co&ucirc;t global relativement aux autres alternatives. Le windfoil n&eacute;cessitant moins de gr&eacute;ements et &eacute;tant bien moins exigeant de ce point de vue, ceci &eacute;quilibre tout &agrave; fait le tarif de l&rsquo;appendice. Sauf &agrave; vouloir faire de la comp&eacute;tition, exit les voiles au dessus de 7.5 m2, ou les mod&egrave;les &agrave; plus de 2 cambers.</p>
+<p>Pour une utilisation loisir, un quiver 7m, 5m, 3,5m est parfait pour naviguer dans toutes les conditions.</p>
+<h2 id="p16">Id&eacute;e re&ccedil;ue : Il y a trop de mod&egrave;les et on s&rsquo;y perd</h2>
+<p>Lorsqu&rsquo;il n&rsquo;y avait qu&rsquo;un ou 2 mod&egrave;les, la plupart se plaignaient de ne pas avoir le choix. Maintenant, il y en aurait trop ???</p>
+<p>Ce qui est certain, c&rsquo;est que</p>
+<ul>
+<li>parmi tous les mod&egrave;les vendus, assez peu offrent &agrave; la fois : un mod&egrave;le r&eacute;ellement abouti, une disponibilit&eacute; raisonnable, un SAV de qualit&eacute;, la p&eacute;rennit&eacute; de la marque, une certaines &eacute;volutivit&eacute;</li>
+<li>nous sommes l&agrave; pour vous aider &agrave; faire le bon choix en fonction de vos contraintes (type de pratique, environnement de navigation, niveau, budget ) et cette diversit&eacute; permet justement de coller assez facilement aux sp&eacute;cificit&eacute;s de chacun.</li>
+</ul>
+<h2 id="p17">Id&eacute;e re&ccedil;ue : Il faut que je teste pour voir si &ccedil;a me plait</h2>
+<p>C&rsquo;est une remarque que nous avons d&ucirc; entendre 2000 fois cet &eacute;t&eacute;. Nous avons d&rsquo;ailleurs mis en place des cours de d&eacute;couverte windfoil avec plusieurs clubs (YCT, Neptune). Il vous permettront d&rsquo;avoir des premi&egrave;res sensations.</p>
+<p>Dans les faits, comme toute discipline dans laquelle on d&eacute;bute, les premiers instants sont plut&ocirc;t ingrats m&ecirc;me si ils peuvent &ecirc;tre amusants. Apr&egrave;s les premi&egrave;res sensations de vol qui sont tr&egrave;s excitantes, le windfoil devient vraiment addictif lorsque l&rsquo;on parvient &agrave; se d&eacute;contracter en vol. Comme on le disait un peu plus haut, cela intervient apr&egrave;s quelques sorties. Nous n&rsquo;avons &agrave; ce jour qu&rsquo;un seul exemple de pratiquant qui a fait l&rsquo;effort de passer le cap et qui a d&eacute;cid&eacute; de revenir au funboard classique &hellip; et nous pensons que cela est d&ucirc; &agrave; un gabarit hors norme et un mauvais choix de mat&eacute;riel. Tous les autres r&ecirc;vent windfoil, naviguent windfoil et parlent windfoil.</p>
+<p>Compte tenu de la sensation &eacute;prouv&eacute;e en vol, on a du mal &agrave; imaginer qu&rsquo;un windsurfeur puisse ne pas prendre go&ucirc;t au windfoil &hellip; &agrave; condition de savoir pers&eacute;v&eacute;rer lors des premi&egrave;res sorties.</p>
+<h2 id="p18">Id&eacute;e re&ccedil;ue : Ca va &eacute;voluer tellement vite qu\'il vaut mieux attendre</h2>
+<p>Le windfoil en est effectivement &agrave; ses d&eacute;buts, mais nous en sommes d&eacute;j&agrave; grosso-modo &agrave; la 3e g&eacute;n&eacute;ration de foil. Les t&acirc;tonnements et les &eacute;volutions les plus fondamentales sont derri&egrave;re nous d&eacute;sormais. Les premi&egrave;res g&eacute;n&eacute;rations ont explor&eacute; des directions un peu extr&ecirc;mes, mais les choses ont beaucoup converg&eacute; avec les 2e et 3e g&eacute;n&eacute;rations. Les &eacute;volutions vont &ecirc;tre d&eacute;sormais plus subtiles, mais bien s&ucirc;r, on ne va pas s&rsquo;arr&ecirc;ter l&agrave; .. et tant mieux.</p>
+<p>D&rsquo;autre part, qui dit nouvelle pratique dit aussi demande beaucoup plus forte que l&rsquo;offre sur le march&eacute; de l&rsquo;occasion. La revente d&rsquo;occasion ne pose aucun probl&egrave;me quand on choisi un mod&egrave;le qui fonctionne.</p>
+<p>On peut toujours attendre la version suivante mais c&rsquo;est une course perdue d&rsquo;avance. Si on avait attendu que le funboard n&rsquo;&eacute;volue plus avant de ranger sa planche &agrave; d&eacute;rive, on naviguerai encore tous en planche open &hellip; et pourtant il y a eu de nombreuses &eacute;volutions majeures dans le funboard, et on en a tous profit&eacute; sans forc&eacute;ment ramener toujours ceci au prix.</p>
+<p>Pour ne pas &laquo; perdre d&rsquo;argent &raquo;, attendre ne sert donc &agrave; rien, mais choisir un mod&egrave;le qui va se revendre est fondamental. Il faut donc simplement ne pas aller chercher des produits exotiques avec lesquels vous allez gagner 200eur &agrave; l&rsquo;achat pour se retrouver avec un produit invendable dans 6 mois.</p>
+<h2 id="p19">Id&eacute;e re&ccedil;ue : Il va y avoir de la concurrence et les prix vont s\'&eacute;crouler</h2>
+<p>L&rsquo;&eacute;volution des prix n&rsquo;a aucun lien avec le nombre de marques, mais avec le cout de revient des produits. On va passer de productions artisanales ou chaque production unitaire coute cher en main d&rsquo;oeuvre au regard du cout des mat&eacute;riaux, &agrave; des productions industrielles ou le cout de revient unitaire en production sera plus faible, mais qui n&eacute;cessitera des investissements plus cons&eacute;quents : d&eacute;veloppement, industrialisation pour d&eacute;finir des process reproductibles, suivi qualit&eacute;, marketing, structure de distribution permettant d&rsquo;assumer une diffusion en s&eacute;rie sur du moyen et du long terme.</p>
+<p>Au final, les co&ucirc;ts s&rsquo;&eacute;quilibrent grossi&egrave;rement, et on ne peut pas s&rsquo;attendre &agrave; voir les prix chuter de fa&ccedil;on significative sur des produits d&eacute;velopp&eacute;s &agrave; iso qualit&eacute; de mat&eacute;riaux et de technologie. </p>
+<p>Par contre 2 ph&eacute;nom&egrave;nes vont appara&icirc;trent</p>
+<ul>
+<li>des nouveaux acteurs vont profiter de l&rsquo;engouement pour proposer des produits moins chers en rognant sur la qualit&eacute; des mat&eacute;riaux, la qualit&eacute; des process de production, le d&eacute;veloppement (en copiant), le r&eacute;seau de distribution (vente directe), et la p&eacute;rennit&eacute; des produits. Ce type de mod&egrave;le &eacute;conomique &agrave; court terme est in&eacute;vitable.</li>
+<li>le volume va permettre d&rsquo;acc&eacute;der &agrave; des technologies diff&eacute;rentes. On en a un exemple flagrant avec l&rsquo;arriv&eacute;e des foils aluminium produits par extrusion, moulage et soudure Tig. Ce sont des proc&eacute;d&eacute;s inaccessibles &agrave; l&rsquo;artisan, mais qui permettent de produire &agrave; des couts r&eacute;duits.</li>
+</ul>
+<h2 id="p20">Id&eacute;e re&ccedil;ue : D&egrave;s que &ccedil;a va &ecirc;tre fait en chine, il y aura des copies pas cher </h2>
+<p>Comme d&rsquo;habitude, l&rsquo;Asie sait profiter tr&egrave;s vite des opportunit&eacute;s commerciales, surtout lorsque les march&eacute;s ne sont pas structur&eacute;s. Comme dans tous les domaines que nous avons connus (windsurf, SUP, kite etc.), les arnaques font la comp&eacute;tition avec les faux bons plans. Au final, que ce soit en europe, en chine ou au fin fond de l&rsquo;Afrique, le P&egrave;re No&euml;l n&rsquo;est qu&rsquo;un mythe et les vrais bons produits ont des co&ucirc;ts similaires.</p>
+<p>Il y a effectivement d&eacute;j&agrave; des offres tr&egrave;s all&eacute;chantes sur ebay (foil carbone &agrave; 250&euro; par lot de 50) et nous encourageons ceux qui veulent jeter de l&rsquo;argent par les fen&ecirc;tres &agrave; y souscrire au plus vite. Nous savons que ce sont des arnaques, alors nous pr&eacute;f&eacute;rons que ce soit les autres qui fassent les cobayes :)</p>
+<p>&nbsp;</p>',
             'status' => 'Published',
-            'views' => 10584,
-            'last_ip' => NULL,
+            'views' => 10586,
+            'last_ip' => '88.163.167.153',
             'created_at' => '2017-02-27 16:31:02',
-            'updated_at' => '2017-02-27 16:31:02',
+            'updated_at' => '2022-04-11 00:14:41',
         ),
         6 => 
         array (
@@ -442,10 +465,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
             'status' => 'Published',
-            'views' => 1516,
-            'last_ip' => NULL,
+            'views' => 1517,
+            'last_ip' => '54.36.148.232',
             'created_at' => '2017-03-03 10:15:06',
-            'updated_at' => '2017-03-03 10:15:06',
+            'updated_at' => '2022-04-09 07:38:03',
         ),
         7 => 
         array (
@@ -458,10 +481,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
             'status' => 'Published',
-            'views' => 1653,
-            'last_ip' => NULL,
+            'views' => 1654,
+            'last_ip' => '54.36.149.75',
             'created_at' => '2017-03-07 16:19:46',
-            'updated_at' => '2017-03-07 16:19:46',
+            'updated_at' => '2022-04-09 07:39:13',
         ),
         8 => 
         array (
@@ -485,10 +508,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
             'status' => 'Published',
-            'views' => 2530,
-            'last_ip' => NULL,
+            'views' => 2531,
+            'last_ip' => '54.36.149.6',
             'created_at' => '2017-03-07 17:06:09',
-            'updated_at' => '2017-03-07 17:06:09',
+            'updated_at' => '2022-04-09 07:40:38',
         ),
         9 => 
         array (
@@ -501,10 +524,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
             'status' => 'Published',
-            'views' => 857,
-            'last_ip' => NULL,
+            'views' => 858,
+            'last_ip' => '54.36.148.22',
             'created_at' => '2021-12-02 01:00:38',
-            'updated_at' => '2021-12-02 01:00:38',
+            'updated_at' => '2022-04-09 07:42:07',
         ),
         10 => 
         array (
@@ -538,10 +561,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
             'status' => 'Published',
-            'views' => 1404,
-            'last_ip' => NULL,
+            'views' => 1405,
+            'last_ip' => '54.36.148.83',
             'created_at' => '2017-03-30 18:37:07',
-            'updated_at' => '2017-03-30 18:37:07',
+            'updated_at' => '2022-04-09 07:43:28',
         ),
         11 => 
         array (
@@ -561,10 +584,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
         'status' => 'Published',
-        'views' => 872,
-        'last_ip' => NULL,
+        'views' => 873,
+        'last_ip' => '54.36.148.205',
         'created_at' => '2017-04-03 12:40:49',
-        'updated_at' => '2017-04-03 12:40:49',
+        'updated_at' => '2022-04-09 07:44:52',
     ),
     12 => 
     array (
@@ -577,16 +600,16 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 
 ',
         'status' => 'Published',
-        'views' => 1637,
-        'last_ip' => NULL,
+        'views' => 1638,
+        'last_ip' => '54.36.148.74',
         'created_at' => '2017-05-09 12:21:32',
-        'updated_at' => '2017-05-09 12:21:32',
+        'updated_at' => '2022-04-09 07:46:22',
     ),
     13 => 
     array (
         'id' => 27,
         'user_id' => 1,
-        'post_categories_id' => 4,
+        'post_categories_id' => 6,
         'title' => 'Recommandations de serrage visserie',
         'description' => 'Voici nos recommandation pour réaliser des serrages sans risque',
         'body' => '<p>Lorsque vous montez votre foil, il faut &agrave; la fois serrer la visserie suffisament pour &eacute;viter de perdre une aile en route, et &agrave; la fois ne pas bourriner au risque de d&eacute;truire les filetages.&nbsp;</p>
@@ -595,10 +618,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 <p>Pour les serrages M6 qui sont viss&eacute;s dans des inserts inox M6 , on vous conseille d\'adopter un couple de serrage de 8 netwton m&egrave;tres</p>
 <p>&nbsp;</p>',
         'status' => 'Published',
-        'views' => 2301,
-        'last_ip' => NULL,
+        'views' => 2303,
+        'last_ip' => '88.163.167.153',
         'created_at' => '2017-07-28 12:58:47',
-        'updated_at' => '2017-07-28 12:58:47',
+        'updated_at' => '2022-04-11 00:10:18',
     ),
     14 => 
     array (
@@ -705,10 +728,10 @@ L\'apprentissage est beaucoup plus facile que le kite foil par exemple. En fonct
 <h2>Le boss au micro</h2>
 <p><iframe src="https://www.youtube.com/embed/3zXBm6jyrQ4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 4429,
-'last_ip' => NULL,
+'views' => 4430,
+'last_ip' => '54.36.148.30',
 'created_at' => '2017-10-02 12:27:59',
-'updated_at' => '2022-02-19 13:06:28',
+'updated_at' => '2022-04-09 05:57:10',
 ),
 15 => 
 array (
@@ -746,10 +769,10 @@ array (
 <p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA?rel=0&amp;showinfo=0" width="853" height="480" frameborder="0" allowfullscreen=""></iframe></p>
 ',
 'status' => 'Published',
-'views' => 3278,
-'last_ip' => NULL,
+'views' => 3279,
+'last_ip' => '54.36.148.133',
 'created_at' => '2022-02-13 08:19:02',
-'updated_at' => '2022-02-13 08:19:02',
+'updated_at' => '2022-04-09 06:19:29',
 ),
 16 => 
 array (
@@ -794,10 +817,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 2251,
-'last_ip' => NULL,
+'views' => 2252,
+'last_ip' => '54.36.148.212',
 'created_at' => '2017-10-18 18:05:14',
-'updated_at' => '2017-10-18 18:05:14',
+'updated_at' => '2022-04-09 07:47:42',
 ),
 17 => 
 array (
@@ -846,10 +869,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 1596,
-'last_ip' => NULL,
+'views' => 1597,
+'last_ip' => '54.36.148.11',
 'created_at' => '2022-02-16 08:19:02',
-'updated_at' => '2022-02-16 08:19:02',
+'updated_at' => '2022-04-09 07:18:10',
 ),
 20 => 
 array (
@@ -935,10 +958,10 @@ array (
 <li>modifie la vivacit&eacute; du foil</li>
 </ul>',
 'status' => 'Published',
-'views' => 17475,
-'last_ip' => '::1',
+'views' => 17476,
+'last_ip' => '54.36.148.255',
 'created_at' => '2018-06-04 10:45:15',
-'updated_at' => '2022-04-06 23:46:20',
+'updated_at' => '2022-04-09 06:00:20',
 ),
 22 => 
 array (
@@ -1114,10 +1137,10 @@ array (
 <p>Les scientifiques dans l\'&acirc;me vous expliqueront que l\'assemblage conique est le meilleur. D\'autres qu\'il devrait &ecirc;tre doublement conique pour &ecirc;tre de qualit&eacute; (cas du boitier probox). On pourrait aussi ajouter qu\'un appui en fond de boitier est une h&eacute;r&eacute;sie concernant le talon Tuttle puisque le boitier n\'est pas fait pour cela (syst&egrave;me hyperstatique ...) etc. etc.</p>
 <p>Toutes ces remarques sont pertinentes, et th&eacute;oriquement justes. Dans les faits, le syst&egrave;me d\'assemblage Tuttle n\'est pas parfait, mais il est l&agrave; et on fait avec. Les solutions que nous pr&eacute;sentons ici fonctionnent parfaitement, y compris l\'appui en fond de boitier. Nous avons test&eacute; ces solutions depuis des mois et &ccedil;a marche sans risque pour la structure des planches ni du foil, donc pourquoi s\'en priver ?</p>',
 'status' => 'Published',
-'views' => 4424,
-'last_ip' => NULL,
+'views' => 4425,
+'last_ip' => '54.36.148.115',
 'created_at' => '2018-06-25 14:37:02',
-'updated_at' => '2022-02-19 20:56:22',
+'updated_at' => '2022-04-09 06:01:03',
 ),
 25 => 
 array (
@@ -1168,10 +1191,10 @@ array (
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>
 ',
 'status' => 'Published',
-'views' => 1042,
-'last_ip' => NULL,
+'views' => 1044,
+'last_ip' => '114.119.134.231',
 'created_at' => '2018-06-27 22:44:18',
-'updated_at' => '2018-06-27 22:44:18',
+'updated_at' => '2022-04-10 12:23:10',
 ),
 26 => 
 array (
@@ -1268,10 +1291,10 @@ array (
 </div>
 </div>',
 'status' => 'Published',
-'views' => 2892,
-'last_ip' => NULL,
+'views' => 2894,
+'last_ip' => '54.36.149.59',
 'created_at' => '2018-07-10 14:13:39',
-'updated_at' => '2022-02-19 13:13:42',
+'updated_at' => '2022-04-09 05:53:25',
 ),
 27 => 
 array (
@@ -1308,10 +1331,10 @@ array (
 <div>Je pr&eacute;cise que dans le vent tr&egrave;s faible du jour, une fois en l\'air, les vitesses des foils &eacute;taient tr&egrave;s diff&eacute;rentes, et cot&eacute; d&eacute;collage, il a des groupes qui se d&eacute;tachent car certains sont assez proches (l\'alpine et le loke, ensuite les F4, phantom, Starboard, puis le gaastra et le Taaroa)</div>
 <div>&nbsp;</div>',
 'status' => 'Published',
-'views' => 1561,
-'last_ip' => '::1',
+'views' => 1562,
+'last_ip' => '54.36.148.44',
 'created_at' => '2021-11-02 01:00:38',
-'updated_at' => '2022-03-23 23:20:36',
+'updated_at' => '2022-04-09 07:49:46',
 ),
 28 => 
 array (
@@ -1340,19 +1363,19 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 453,
-'last_ip' => NULL,
+'views' => 454,
+'last_ip' => '54.36.148.225',
 'created_at' => '2018-08-20 23:55:41',
-'updated_at' => '2018-08-20 23:55:41',
+'updated_at' => '2022-04-09 05:55:15',
 ),
 30 => 
 array (
 'id' => 47,
 'user_id' => 1,
-'post_categories_id' => 10,
+'post_categories_id' => 1,
 'title' => 'Voile spécifique ? Comparaison Volt & F-Type',
 'description' => 'Comparons F Type de Volt pour comprendre l\'intérêt d\'une voile dédiée au Windfoil',
-'body' => '<p><img src="/storage/photos/1/legacy/IMG_7710.jpg" alt="" /></p>
+'body' => '<p><img src="/storage/photos/1/legacy/IMG_7710.jpg" alt=""></p>
 <p>La question de la voile d&eacute;di&eacute;e en Foil se pose de plus en plus. Est ce r&eacute;ellement utile , et si oui en quoi ?</p>
 <p>Pour r&eacute;pondre &agrave; cette question, nous avons compar&eacute; sur le m&ecirc;me mat&eacute;riel (flotteur / foil) et dans les m&ecirc;me conditions de vent un peu soutenu, une voile North VOLT , et la Duotone F-TYpe. Les 2 &eacute;taient gr&eacute;&eacute;e sur le m&ecirc;me mat RDM en 4,00m</p>
 <p>L\'essai a &eacute;t&eacute; men&eacute; avec un combo Horue Airtime / Starbaord GTS, et un combo Starboard Foil 122 / Lk1</p>
@@ -1361,10 +1384,10 @@ array (
 <p>Sur le foil le plus en glisse (qui n&eacute;cessite le moins de puissance) , les diff&eacute;rences de performances au portant sont un peu plus liss&eacute;es. Au pr&egrave;s t sur le foil n&eacute;cessitant le plus de puissance, l\'&eacute;cart est plus important.</p>
 <p>Au final, en utilisation foill, la F-Type &eacute;crase litt&eacute;ralement la Volt. Que ce soit en terme de performances et que d\'agr&eacute;ment, il n\'y a pas photo !</p>',
 'status' => 'Published',
-'views' => 876,
-'last_ip' => NULL,
+'views' => 878,
+'last_ip' => '88.163.167.153',
 'created_at' => '2018-09-04 21:21:02',
-'updated_at' => '2022-02-19 22:23:54',
+'updated_at' => '2022-04-11 00:14:17',
 ),
 31 => 
 array (
@@ -1456,10 +1479,10 @@ array (
 <div>N\'ayant absolument aucune envie d\'aller me frotter à des voiles de 9m2 et plus, je serai très intéressé si quelqu\'un se dévouait pour réaliser un comparatif objectif après avoir testé tous ces flotteurs. Avis aux amateurs :)</div>
 ',
 'status' => 'Published',
-'views' => 3618,
-'last_ip' => NULL,
+'views' => 3619,
+'last_ip' => '54.36.148.56',
 'created_at' => '2018-10-02 00:14:00',
-'updated_at' => '2018-10-02 00:14:00',
+'updated_at' => '2022-04-09 06:15:27',
 ),
 32 => 
 array (
@@ -1573,19 +1596,19 @@ array (
 </div>
 </div>',
 'status' => 'Published',
-'views' => 4322,
-'last_ip' => '::1',
+'views' => 4324,
+'last_ip' => '54.36.148.157',
 'created_at' => '2022-02-02 01:00:38',
-'updated_at' => '2022-03-23 23:23:28',
+'updated_at' => '2022-04-09 07:51:04',
 ),
 33 => 
 array (
 'id' => 50,
 'user_id' => 1,
-'post_categories_id' => 10,
+'post_categories_id' => 1,
 'title' => 'Voile et Flotteur : la bonne taille',
 'description' => 'En foil, le choix de la taille de la voile et de celle du flotteur sont très liées.',
-'body' => '<p><img src="/storage/photos/1/legacy/c7ab117940c0c9b25ec382fb4bc79b50.jpg" alt="" /></p>
+'body' => '<p><img src="/storage/photos/1/legacy/c7ab117940c0c9b25ec382fb4bc79b50.jpg" alt=""></p>
 <p>En foil, le choix de la taille de la voile et de celle du flotteur sont tr&egrave;s li&eacute;es. C\'est tr&egrave;s important de bien comprendre ce point lorsque l\'on choisi son mat&eacute;riel.</p>
 <p>C\'est le domaine le plus complexe &agrave; appr&eacute;hender tant les id&eacute;es re&ccedil;ues sont encr&eacute;es. On le sait : le foil attire avant tout les d&eacute;butants pour son c&ocirc;t&eacute; light wind. Ils ne passent &agrave; une navigation foil tout temps qu\'apr&egrave;s plusieurs mois ou saisons de pratique.</p>
 <p>Pour de nombreux planchistes "aileron", petit temps rime avec flotteur large. Ils font donc souvent ce raccourci erron&eacute; : "pour naviguer dans le light, il suffit de prendre un flotteur le plus large possible, un foil et une petite voile ("on m\'a dit qu\'avec le foil tu mets 2m2 de moins"). Pass&eacute; les premi&egrave;res sessions pour appr&eacute;hender la b&ecirc;te, on les voit tous revenir en nous disant "je ne comprends pas, il me faut entre 15 et 20 knt de vent pour voler, ce n\'est pas normal" ... oui, je confirme, ce n\'est pas normal !!! Tout simplement parce qu\'un flotteur large n&eacute;cessite une pouss&eacute;e v&eacute;lique importante pour le faire acc&eacute;l&eacute;rer. N\'oublions pas que les formula &eacute;taient utilis&eacute;es avec 11.7m2, et qu\'un flotteur de 135L s\'utilise souvent avec 8,5m2. M&ecirc;me si le foil permet de naviguer dans peu de vent, ne croyez pas que vous arrivez &agrave; faire d&eacute;coller une planche de 85cm de large avec 7m2 dans 8 knt de vent, c\'est tout simplement impossible &agrave; moins de peser 45kg.</p>
@@ -1613,10 +1636,10 @@ array (
 <p>&nbsp;</p>
 <p>&nbsp;</p>',
 'status' => 'Published',
-'views' => 1544,
-'last_ip' => '::1',
+'views' => 1546,
+'last_ip' => '88.163.167.153',
 'created_at' => '2018-10-02 01:02:45',
-'updated_at' => '2022-03-23 23:31:55',
+'updated_at' => '2022-04-11 00:13:59',
 ),
 34 => 
 array (
@@ -1638,10 +1661,10 @@ array (
 <p>Notre conseil est donc simple : d&eacute;butez avec votre ancien boitier .. et si vous observez des fissures, faites le remplacer. Si il ne se passe rien avat que nous ne passiez &agrave; un flotteur d&eacute;di&eacute;, vous aurez &eacute;conomis&eacute; 350eur !</p>
 <p>&nbsp;</p>',
 'status' => 'Published',
-'views' => 765,
-'last_ip' => NULL,
+'views' => 766,
+'last_ip' => '54.36.149.94',
 'created_at' => '2022-02-10 08:19:02',
-'updated_at' => '2022-02-10 08:19:02',
+'updated_at' => '2022-04-09 07:20:33',
 ),
 35 => 
 array (
@@ -1652,10 +1675,10 @@ array (
 'description' => 'Comment le réglage de pied de mat influe sur le comportement en vol',
 'body' => '<p>A venir</p>',
 'status' => 'Published',
-'views' => 60,
-'last_ip' => NULL,
+'views' => 61,
+'last_ip' => '54.36.148.54',
 'created_at' => '2018-10-02 01:07:32',
-'updated_at' => '2022-02-19 20:59:11',
+'updated_at' => '2022-04-09 06:02:04',
 ),
 36 => 
 array (
@@ -1686,10 +1709,10 @@ array (
 <h2>Stabilit&eacute; en lacet</h2>
 <p>Un foil tr&egrave;s stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation tr&egrave;s agr&eacute;able, gage d\'une glisse tr&egrave;s pure.</p>',
 'status' => 'Published',
-'views' => 2341,
-'last_ip' => '::1',
+'views' => 2342,
+'last_ip' => '54.36.149.102',
 'created_at' => '2018-10-02 01:09:46',
-'updated_at' => '2022-04-07 16:41:05',
+'updated_at' => '2022-04-09 05:54:17',
 ),
 37 => 
 array (
@@ -1724,10 +1747,10 @@ array (
 <p></p>
 <p><img src="/storage/photos/1/legacy/cale_stab_noire_1.5_93_.jpg" alt="Herve en plein surf" /></p>',
 'status' => 'Published',
-'views' => 243,
-'last_ip' => NULL,
+'views' => 244,
+'last_ip' => '54.36.148.7',
 'created_at' => '2019-01-13 19:15:53',
-'updated_at' => '2019-01-13 19:15:53',
+'updated_at' => '2022-04-09 07:52:20',
 ),
 38 => 
 array (
@@ -1747,42 +1770,38 @@ array (
 <div class="row"><iframe id="ytplayer" src="https://www.youtube.com/embed/X3NONBxHGMg?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 </div>',
 'status' => 'Published',
-'views' => 674,
-'last_ip' => NULL,
+'views' => 675,
+'last_ip' => '54.36.148.111',
 'created_at' => '2019-01-22 00:25:26',
-'updated_at' => '2019-01-22 00:25:26',
+'updated_at' => '2022-04-09 07:55:38',
 ),
 39 => 
 array (
 'id' => 62,
 'user_id' => 1,
-'post_categories_id' => 9,
+'post_categories_id' => 3,
 'title' => 'Foil in SantaManza',
 'description' => 'nc',
-'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
-src="https://www.youtube.com/embed/a92iMXUiO00?autoplay=1&loop=1"
-frameborder="0" allowfullscreen></iframe>',
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/a92iMXUiO00?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 254,
-'last_ip' => NULL,
+'views' => 256,
+'last_ip' => '88.163.167.153',
 'created_at' => '2019-01-22 00:28:31',
-'updated_at' => '2019-01-22 00:28:31',
+'updated_at' => '2022-04-11 00:12:38',
 ),
 40 => 
 array (
 'id' => 63,
 'user_id' => 1,
-'post_categories_id' => 9,
+'post_categories_id' => 3,
 'title' => 'Video test RF81',
 'description' => 'nc',
-'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
-src="https://www.youtube.com/embed/aNBteEUL4zE?autoplay=1&loop=1"
-frameborder="0" allowfullscreen></iframe>',
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/aNBteEUL4zE?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 87,
-'last_ip' => NULL,
+'views' => 89,
+'last_ip' => '88.163.167.153',
 'created_at' => '2019-01-22 00:37:13',
-'updated_at' => '2019-01-22 00:37:13',
+'updated_at' => '2022-04-11 00:12:01',
 ),
 41 => 
 array (
@@ -1793,10 +1812,10 @@ array (
 'description' => 'Vidéo expliquant le fonctionnement du palan d\'amure',
 'body' => '<p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 532,
-'last_ip' => NULL,
+'views' => 533,
+'last_ip' => '54.36.148.177',
 'created_at' => '2022-02-14 08:19:02',
-'updated_at' => '2022-02-14 08:19:02',
+'updated_at' => '2022-04-09 07:22:55',
 ),
 42 => 
 array (
@@ -1834,17 +1853,15 @@ frameborder="0" allowfullscreen></iframe>',
 array (
 'id' => 68,
 'user_id' => 1,
-'post_categories_id' => 9,
+'post_categories_id' => 3,
 'title' => 'Vidéo test Slingshot',
 'description' => 'nc',
-'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
-src="https://www.youtube.com/embed/sapOJ1xN2Gc?autoplay=1&loop=1"
-frameborder="0" allowfullscreen></iframe>',
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/sapOJ1xN2Gc?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 43,
-'last_ip' => NULL,
+'views' => 45,
+'last_ip' => '88.163.167.153',
 'created_at' => '2019-01-22 00:44:08',
-'updated_at' => '2019-01-22 00:44:08',
+'updated_at' => '2022-04-11 00:11:36',
 ),
 45 => 
 array (
@@ -1994,16 +2011,16 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 1341,
-'last_ip' => NULL,
+'views' => 1342,
+'last_ip' => '54.36.148.180',
 'created_at' => '2019-03-28 20:52:18',
-'updated_at' => '2019-03-28 20:52:18',
+'updated_at' => '2022-04-09 05:58:10',
 ),
 49 => 
 array (
 'id' => 75,
 'user_id' => 1,
-'post_categories_id' => 10,
+'post_categories_id' => 1,
 'title' => 'Flotteurs AST ou Carbone ?',
 'description' => 'Voici un guide pour aider à faire le bon investissement en ce qui concerne le flotteur.',
 'body' => '<p>Avec l\'explosion de la pratique du foil, vous &ecirc;tes de plus en plus nombreux &agrave; vouloir gouter &agrave; cette nouvelle discipline. On ne risque pas de vous en bl&acirc;mer ... !</p>
@@ -2065,68 +2082,65 @@ array (
 <div>Foil Free-Race : Tabou Airide 81 et JP Hydrofoil 135</div>
 <div>Foil Freeride : Exocet Freefoil 112, 132 et&nbsp;JP Hydrofoil 120</div>
 <div>&nbsp;</div>
-<div><img src="/storage/photos/1/legacy/u38483s1.jpg" alt="Exocet FReefoil AST" />&nbsp;<img src="/storage/photos/1/legacy/u38235s1.jpg" alt="Tabou Airride 81 AST" /></div>',
+<div><img src="/storage/photos/1/legacy/u38483s1.jpg" alt="Exocet FReefoil AST">&nbsp;<img src="/storage/photos/1/legacy/u38235s1.jpg" alt="Tabou Airride 81 AST"></div>',
 'status' => 'Published',
-'views' => 4321,
-'last_ip' => NULL,
+'views' => 4323,
+'last_ip' => '88.163.167.153',
 'created_at' => '2019-05-23 13:36:09',
-'updated_at' => '2022-02-19 22:15:23',
+'updated_at' => '2022-04-11 00:13:38',
 ),
 50 => 
 array (
 'id' => 76,
 'user_id' => 1,
-'post_categories_id' => 4,
+'post_categories_id' => 6,
 'title' => 'Eviter la salade d\'inserts',
-'description' => 'Comment éviter de détruire les inserts du talon Deep Tuttle de votre foil ',
-'body' => '<p>Depuis la généralisation du DeepTuttle en tant que standard de fixation Foil / Flotteurs, nous avons régulièrement des remontés client concernant les inserts de talon. Plus précisément, de nombreux clients se plaignent d\'inserts neufs mal taraudés. </p>
-<p>Devant un nombre conséquent de remontés, communes à toutes les marques (alors que les inserts sont tous différents), nous nous sommes interrogés sur le phénomène et avons cherché une parade.</p>
+'description' => 'Comment éviter de détruire les inserts du talon Deep Tuttle de votre foil',
+'body' => '<p>Depuis la g&eacute;n&eacute;ralisation du DeepTuttle en tant que standard de fixation Foil / Flotteurs, nous avons r&eacute;guli&egrave;rement des remont&eacute;s client concernant les inserts de talon. Plus pr&eacute;cis&eacute;ment, de nombreux clients se plaignent d\'inserts neufs mal taraud&eacute;s.&nbsp;</p>
+<p>Devant un nombre cons&eacute;quent de remont&eacute;s, communes &agrave; toutes les marques (alors que les inserts sont tous diff&eacute;rents), nous nous sommes interrog&eacute;s sur le ph&eacute;nom&egrave;ne et avons cherch&eacute; une parade.</p>
 <h2>La raison</h2>
-<p>Après avoir longuement analysé le problème, et vérifié les inserts fournis neufs par les fabriquants, nous sommes en mesure de vous confirmer que les inserts ne présentent pas de défaut d\'origine .. et pas plus chez AFS que RRD, TAAROA, STARBOARD ou LOKE. A la limite, cela pourrait arriver exceptionnement (bien que nous n\'en ayons pas trouvé), mais jamais sur les 2 vis du même foil.</p>
-<p>Le problème que nombreux pratiquants rencontrent est le résultat du cumul de 2 choses</p>
+<p>Apr&egrave;s avoir longuement analys&eacute; le probl&egrave;me, et v&eacute;rifi&eacute; les inserts fournis neufs par les fabriquants, nous sommes en mesure de vous confirmer que les inserts ne pr&eacute;sentent pas de d&eacute;faut d\'origine .. et pas plus chez AFS que RRD, TAAROA, STARBOARD ou LOKE. A la limite, cela pourrait arriver exceptionnement (bien que nous n\'en ayons pas trouv&eacute;), mais jamais sur les 2 vis du m&ecirc;me foil.</p>
+<p>Le probl&egrave;me que nombreux pratiquants rencontrent est le r&eacute;sultat du cumul de 2 choses</p>
 <ul>
-<li>un désaxement entre les perçages du talon de foil, et du boitier du flotteur</li>
-<li>une faible tolérence des inserts en INOX</li>
+<li>un d&eacute;saxement entre les per&ccedil;ages du talon de foil, et du boitier du flotteur</li>
+<li>une faible tol&eacute;rence des inserts en INOX</li>
 </ul>
-<h4>Désaxement</h4>
-<p>Visiblement, parmi les affres de la description du standard Tuttle (et Deep Tuttle) , de nombreuses zones de flou persistent. Au chapitre des éléments géométriques mal définis (ou définis différemment suivant les versions et interprétations du standard) figurent</p>
+<h4>D&eacute;saxement</h4>
+<p>Visiblement, parmi les affres de la description du standard Tuttle (et Deep Tuttle) , de nombreuses zones de flou persistent. Au chapitre des &eacute;l&eacute;ments g&eacute;om&eacute;triques mal d&eacute;finis (ou d&eacute;finis diff&eacute;remment suivant les versions et interpr&eacute;tations du standard) figurent</p>
 <ul>
-<li>les rayons des différents congés</li>
-<li>les hauteurs de talon devant et derrière</li>
-<li>la profondeur des perçages</li>
+<li>les rayons des diff&eacute;rents cong&eacute;s</li>
+<li>les hauteurs de talon devant et derri&egrave;re</li>
+<li>la profondeur des per&ccedil;ages</li>
 <li>la position des inserts en profondeur</li>
-<li>la position des axes de perçage (inserts)</li>
+<li>la position des axes de per&ccedil;age (inserts)</li>
 </ul>
-<div><img src="/storage/photos/1/legacy/tuttle-deep-tuttle.jpg" alt="Definition deep tuttle" /></div>
-<p>C\'est précisément ce dernier point qui nous pose problème aujourd\'hui. On ne jette ni la pierre à Cobra qui produit les flotteurs, ni aux fabriquants de foil, mais force est de constater qu\'ils ont du mal à se mettre d\'accord. Pire encore, on a des écarts de géométrie flagrantes d\'un flotteur à l\'autre alors qu\'ils viennent tous du même fabriquant (Cobra en Thailande) !</p>
-<p><img src="/storage/photos/1/legacy/desaxement-boitier.jpg" alt="desaxement boitier" /></p>
-<p>Bref, on ne vas pas changer ceci de notre côté (même si il y a de nets progrès sur les flotteurs dernières génération), alors à nous de nous adapter pour ne plus subir ces désaxements.</p>
-<h4>Tolérence des inserts</h4>
-<p>Avec l\'arivée du Windfoil, la plupart des fabriquants ont pris conscience des efforts importants subis par la vis arrière du talon. Pour éviter au maximum les arrachements, nombreux ont opté pour des inserts en Inox, théoriquement plus résistants que les inserts en laiton (le laiton est un métal plus tendre). D\'autres, comme Horue, on simplement décidé de passer à du 14mm au lieu du 9 ou du 12.</p>
-<p><img src="/storage/photos/1/legacy/inserts-laiton.jpg" alt="Inserts" /></p>
-<p>Jusque là, pourquoi pas ... </p>
-<p>En faisant ce choix, les fabriquants de foil ont oublié un petit détail : on ne vit pas dans un monde parfait ou tout est normé, et où toutes les normes sont respectées. Et il se trouve que la dureté de l\'INOX a un vilain défaut : si on visse un tout petit peu de travers dans un filetage Inox, celui ci foire immédiatement et irrémédiablement. Il est alors tès difficile de revenir en arrière, même avec un tarraud. Bilan : insert à remplacer ... lorsque la vis n\'est pas carrément bloquée dedans.</p>
-<p>Avec le laiton et sa tendresse, les inserts ont le pouvoir de s\'auto-tarauder avec la vis inox. Vous l\'avez tous vécu : une vis d\'aileron sur laquelle on force un peu, et tout rentre dans l\'ordre après avoir traversé entièrement l\'insert avec la vis. Sur l\'Inox, n\'y comptez pas !</p>
+<div><img src="/storage/photos/1/legacy/tuttle-deep-tuttle.jpg" alt="Definition deep tuttle"></div>
+<p>C\'est pr&eacute;cis&eacute;ment ce dernier point qui nous pose probl&egrave;me aujourd\'hui. On ne jette ni la pierre &agrave; Cobra qui produit les flotteurs, ni aux fabriquants de foil, mais force est de constater qu\'ils ont du mal &agrave; se mettre d\'accord. Pire encore, on a des &eacute;carts de g&eacute;om&eacute;trie flagrantes d\'un flotteur &agrave; l\'autre alors qu\'ils viennent tous du m&ecirc;me fabriquant (Cobra en Thailande) !</p>
+<p><img src="/storage/photos/1/legacy/desaxement-boitier.jpg" alt="desaxement boitier"></p>
+<p>Bref, on ne vas pas changer ceci de notre c&ocirc;t&eacute; (m&ecirc;me si il y a de nets progr&egrave;s sur les flotteurs derni&egrave;res g&eacute;n&eacute;ration), alors &agrave; nous de nous adapter pour ne plus subir ces d&eacute;saxements.</p>
+<h4>Tol&eacute;rence des inserts</h4>
+<p>Avec l\'ariv&eacute;e du Windfoil, la plupart des fabriquants ont pris conscience des efforts importants subis par la vis arri&egrave;re du talon. Pour &eacute;viter au maximum les arrachements, nombreux ont opt&eacute; pour des inserts en Inox, th&eacute;oriquement plus r&eacute;sistants que les inserts en laiton (le laiton est un m&eacute;tal plus tendre). D\'autres, comme Horue, on simplement d&eacute;cid&eacute; de passer &agrave; du 14mm au lieu du 9 ou du 12.</p>
+<p><img src="/storage/photos/1/legacy/inserts-laiton.jpg" alt="Inserts"></p>
+<p>Jusque l&agrave;, pourquoi pas ...&nbsp;</p>
+<p>En faisant ce choix, les fabriquants de foil ont oubli&eacute; un petit d&eacute;tail : on ne vit pas dans un monde parfait ou tout est norm&eacute;, et o&ugrave; toutes les normes sont respect&eacute;es. Et il se trouve que la duret&eacute; de l\'INOX a un vilain d&eacute;faut : si on visse un tout petit peu de travers dans un filetage Inox, celui ci foire imm&eacute;diatement et irr&eacute;m&eacute;diablement. Il est alors t&egrave;s difficile de revenir en arri&egrave;re, m&ecirc;me avec un tarraud. Bilan : insert &agrave; remplacer ... lorsque la vis n\'est pas carr&eacute;ment bloqu&eacute;e dedans.</p>
+<p>Avec le laiton et sa tendresse, les inserts ont le pouvoir de s\'auto-tarauder avec la vis inox. Vous l\'avez tous v&eacute;cu : une vis d\'aileron sur laquelle on force un peu, et tout rentre dans l\'ordre apr&egrave;s avoir travers&eacute; enti&egrave;rement l\'insert avec la vis. Sur l\'Inox, n\'y comptez pas !</p>
 <h2>Les solutions</h2>
-<p>Quand on a compris d\'où venait le problème, la solution saute aux yeux : annuler le désaxement.</p>
+<p>Quand on a compris d\'o&ugrave; venait le probl&egrave;me, la solution saute aux yeux : annuler le d&eacute;saxement.</p>
 <p>Donc</p>
 <ol>
-<li>Dans un premier temps, remplacer vos inserts foirés par des neufs (certains fabriquant en fournissent un en plus dans les kit de visserie) ... en espérant que vous n\'ayez pas foirés les deux en insistant lourdement !</li>
-<li>Remplacez éventuellement la vis, car elle s\'abime aussi vite que l\'insert quand on vis de travers</li>
-<li>Ovalisez le trou dans la planche, dans l\'axe longitudinal, à l\'aide d\'une perceuse et d\'un foret, ou mieux d\'une fraise si vous avez. Ne pas ovaliser dans l\'axe transversal pour ne pas avoir un trou énorme, et que les rondelles puissent continuer à s\'appuyer sur les côtés du trou.</li>
+<li>Dans un premier temps, remplacer vos inserts foir&eacute;s par des neufs (certains fabriquant en fournissent un en plus dans les kit de visserie) ... en esp&eacute;rant que vous n\'ayez pas foir&eacute;s les deux en insistant lourdement !</li>
+<li>Remplacez &eacute;ventuellement la vis, car elle s\'abime aussi vite que l\'insert quand on vis de travers</li>
+<li>Ovalisez le trou dans la planche, dans l\'axe longitudinal, &agrave; l\'aide d\'une perceuse et d\'un foret, ou mieux d\'une fraise si vous avez. Ne pas ovaliser dans l\'axe transversal pour ne pas avoir un trou &eacute;norme, et que les rondelles puissent continuer &agrave; s\'appuyer sur les c&ocirc;t&eacute;s du trou.</li>
 </ol>
-<p><img src="/storage/photos/1/legacy/desaxeemnt-oblong.jpg" alt="trous oblongs" /></p>
-<p>Au passage, signalons la très bonne initiative de Starboard qui livre toutes ses planches depuis plusieurs saisons avec des trous déjà ovalisés. Je ne comprends toujours pas pourquoi les autres marques n\'aient pas imposé cette solution auprès de Cobra !</p>
+<p><img src="/storage/photos/1/legacy/desaxeemnt-oblong.jpg" alt="trous oblongs"></p>
+<p>Au passage, signalons la tr&egrave;s bonne initiative de Starboard qui livre toutes ses planches depuis plusieurs saisons avec des trous d&eacute;j&agrave; ovalis&eacute;s. Je ne comprends toujours pas pourquoi les autres marques n\'aient pas impos&eacute; cette solution aupr&egrave;s de Cobra !</p>
 <h2>Bilan</h2>
-<p>Voilà, une fois de plus, j\'espère que cette petute exlication vous fera gagner du temps, et vous évitera de préparer une vinaigrette à base d\'inserts. Je vous conseille donc de toujours ovaliser vos trous de vis de boitier ... cela vous permet de lmonter n\'importe quel foil sans risque.</p>
-
-
-',
+<p>Voil&agrave;, une fois de plus, j\'esp&egrave;re que cette petute exlication vous fera gagner du temps, et vous &eacute;vitera de pr&eacute;parer une vinaigrette &agrave; base d\'inserts. Je vous conseille donc de toujours ovaliser vos trous de vis de boitier ... cela vous permet de lmonter n\'importe quel foil sans risque.</p>',
 'status' => 'Published',
-'views' => 4322,
-'last_ip' => '::1',
+'views' => 4324,
+'last_ip' => '88.163.167.153',
 'created_at' => '2022-02-16 08:19:02',
-'updated_at' => '2022-03-23 23:46:07',
+'updated_at' => '2022-04-11 00:09:49',
 ),
 51 => 
 array (
@@ -2206,10 +2220,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 1434,
-'last_ip' => NULL,
+'views' => 1435,
+'last_ip' => '54.36.148.165',
 'created_at' => '2019-08-07 14:53:59',
-'updated_at' => '2019-08-07 14:53:59',
+'updated_at' => '2022-04-09 05:59:17',
 ),
 54 => 
 array (
@@ -2319,93 +2333,86 @@ array (
 array (
 'id' => 83,
 'user_id' => 1,
-'post_categories_id' => 9,
+'post_categories_id' => 3,
 'title' => 'Pêche au sabre',
 'description' => 'nc',
-'body' => '<p>omment se nourrir à l\'aide d\'un wind foil ... une leçon de survie par notre fidèle contributeur : Hervé</p>
-
-<p><iframe src="https://www.youtube.com/embed/y5MWDzuD_AI" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
-<p></p>
-
-
-',
+'body' => '<p>omment se nourrir &agrave; l\'aide d\'un wind foil ... une le&ccedil;on de survie par notre fid&egrave;le contributeur : Herv&eacute;</p>
+<p><iframe src="https://www.youtube.com/embed/y5MWDzuD_AI" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>',
 'status' => 'Published',
-'views' => 76,
-'last_ip' => NULL,
+'views' => 78,
+'last_ip' => '88.163.167.153',
 'created_at' => '2020-03-07 16:42:57',
-'updated_at' => '2020-03-07 16:42:57',
+'updated_at' => '2022-04-11 00:11:11',
 ),
 58 => 
 array (
 'id' => 84,
 'user_id' => 1,
-'post_categories_id' => 4,
+'post_categories_id' => 6,
 'title' => 'Tutos L\'assemblage foil / flotteur',
 'description' => 'Comment monter votre foil sur le flotteur, sans risques',
-'body' => '<p>Avec la définition très approximative de la norme Deep Tuttle, vous avez probablement tous fait l\'expérience du bricolage lors de montage de votre aileron ou foil tout neuf. Pourtant, réaliser un montage correct est primmordial pour ne pas risquer d\'endommager votre foil, votre flotteur, ou d\'en perdre un bout.</p>
-<h2>Généralités</h2>
-<p><img src="/storage/photos/1/legacy/cales-rake.jpg" alt="trous non alignés " /></p>
-<p>L\'assemblage va consister à introduire 2 vis traversant le pont de la planche, et venant se visser dans les 2 inserts métalliques présents dans le talon du foil. Comme illustré sur le shéma, l\'utilisation du foil va provoquer une traction sur la vis arrière et une poussée sur la vis avant. Il faut donc faire attention à 2 points</p>
+'body' => '<p>Avec la d&eacute;finition tr&egrave;s approximative de la norme Deep Tuttle, vous avez probablement tous fait l\'exp&eacute;rience du bricolage lors de montage de votre aileron ou foil tout neuf. Pourtant, r&eacute;aliser un montage correct est primmordial pour ne pas risquer d\'endommager votre foil, votre flotteur, ou d\'en perdre un bout.</p>
+<h2>G&eacute;n&eacute;ralit&eacute;s</h2>
+<p><img src="/storage/photos/1/legacy/cales-rake.jpg" alt="trous non align&eacute;s "></p>
+<p>L\'assemblage va consister &agrave; introduire 2 vis traversant le pont de la planche, et venant se visser dans les 2 inserts m&eacute;talliques pr&eacute;sents dans le talon du foil. Comme illustr&eacute; sur le sh&eacute;ma, l\'utilisation du foil va provoquer une traction sur la vis arri&egrave;re et une pouss&eacute;e sur la vis avant. Il faut donc faire attention &agrave; 2 points</p>
 <ul>
-<li>la vis arrière doit traverser intégralement l\'insert pour ne pas en arracher les filets. Cela suppose qu\'ellle soit de longueur adéquat</li>
-<li>une rondelle de bonne qualité doit être utilisée sous la vis arrière ou éviter la déteriotation de l\'appiu sur le flotteur</li>
+<li>la vis arri&egrave;re doit traverser int&eacute;gralement l\'insert pour ne pas en arracher les filets. Cela suppose qu\'ellle soit de longueur ad&eacute;quat</li>
+<li>une rondelle de bonne qualit&eacute; doit &ecirc;tre utilis&eacute;e sous la vis arri&egrave;re ou &eacute;viter la d&eacute;teriotation de l\'appiu sur le flotteur</li>
 </ul>
-<p>Pour introduire le foil dans le boitier, il se peut qu\'il faille forcer car le concept du boitier deep tuttle repose sur 2 faces parallèle. En fonction des tolérences de fabrication, l\'ajustement peut être très serré. Dans tous les cas, ce n\'est pas en serrant les 2 vis que l\'on doit faire rentrer le talon dans le boitier, sous peine d\'endomager les inserts. Au contraire, il faut utiliser le technique du levier : on vis alternativement un vis après l\'autre, en rattrapant à chaque fois le jeu créé par le basculement du mat en avant ou en arrière. C\'est le même principe que le serrage mat sur fuselage :</p>
-<p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
+<p>Pour introduire le foil dans le boitier, il se peut qu\'il faille forcer car le concept du boitier deep tuttle repose sur 2 faces parall&egrave;le. En fonction des tol&eacute;rences de fabrication, l\'ajustement peut &ecirc;tre tr&egrave;s serr&eacute;. Dans tous les cas, ce n\'est pas en serrant les 2 vis que l\'on doit faire rentrer le talon dans le boitier, sous peine d\'endomager les inserts. Au contraire, il faut utiliser le technique du levier : on vis alternativement un vis apr&egrave;s l\'autre, en rattrapant &agrave; chaque fois le jeu cr&eacute;&eacute; par le basculement du mat en avant ou en arri&egrave;re. C\'est le m&ecirc;me principe que le serrage mat sur fuselage :</p>
+<p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <h2>Visserie</h2>
-<p>Pour tous les assemblages foil / flotteur, on vous conseillle l\'utilisation de vis à tête dite CHC, que l\'on visse avec une clé allen. Cela vous garantira un serrage de qualité. Vous retrouvrez ces vis en vente sur notre site, dans la section Windfoil / Visserie et outillage.</p>
-<h2>Trous désaxés</h2>
-<p>Au chapitre des situations particulièrement agaçantes, on vous présente le cas trop courant où les inserts du talon ne sont pas alignés aves les trous du boitier. Concrêtement, cela ressemble à ceci</p>
-<p><img src="/storage/photos/1/legacy/image2.jpg" alt="trous non alignés " /></p>
-<p>Dans cette situation, 80% d\'entre vous vont forcer pour faire rentrer la vis coute que coute, quitte à sortir un peu le talon, mettre les vis, puis serrer le tout jusqu\'à ce que ça passe en force.</p>
-<p>Dans le meilleur des cas, vous avez ses inserts en laiton (un métal assez tendre), et l\'insertion des vis de travers va provoquer un \'re-filetage\' de l\'insert ... avec un couinement caractéristique que l\'on connait bien, et un affaiblissement de la robustesse de votre insert.</p>
-<p>Dans un cas moins "joyeux", vous avez des inserts en inox, et votre vis va définitivement abîmer le filetage. Dans le pire des cas, elle va se bloquer dedans puis casser lorsque vous allez essayer de l\'extraire en dévissant. </p>
-<p>Bref, il faut à tout prix éviter ceci et il existe une solution ultra simple : ovaliser les trous du boitier à l\'aide d\'une lime "queue de rat".</p>
-<p><img src="/storage/photos/1/legacy/IMG_5037.jpg" alt="trou ovalisé" /></p>
-<p><img src="/storage/photos/1/legacy/IMG_5038.jpg" alt="trou ovalisé" /></p>
-<p>Avec cette astuce, vous devriez pouvoir visser vos boulons à 2 doigts !</p>
+<p>Pour tous les assemblages foil / flotteur, on vous conseillle l\'utilisation de vis &agrave; t&ecirc;te dite CHC, que l\'on visse avec une cl&eacute; allen. Cela vous garantira un serrage de qualit&eacute;. Vous retrouvrez ces vis en vente sur notre site, dans la section Windfoil / Visserie et outillage.</p>
+<h2>Trous d&eacute;sax&eacute;s</h2>
+<p>Au chapitre des situations particuli&egrave;rement aga&ccedil;antes, on vous pr&eacute;sente le cas trop courant o&ugrave; les inserts du talon ne sont pas align&eacute;s aves les trous du boitier. Concr&ecirc;tement, cela ressemble &agrave; ceci</p>
+<p><img src="/storage/photos/1/legacy/image2.jpg" alt="trous non align&eacute;s "></p>
+<p>Dans cette situation, 80% d\'entre vous vont forcer pour faire rentrer la vis coute que coute, quitte &agrave; sortir un peu le talon, mettre les vis, puis serrer le tout jusqu\'&agrave; ce que &ccedil;a passe en force.</p>
+<p>Dans le meilleur des cas, vous avez ses inserts en laiton (un m&eacute;tal assez tendre), et l\'insertion des vis de travers va provoquer un \'re-filetage\' de l\'insert ... avec un couinement caract&eacute;ristique que l\'on connait bien, et un affaiblissement de la robustesse de votre insert.</p>
+<p>Dans un cas moins "joyeux", vous avez des inserts en inox, et votre vis va d&eacute;finitivement ab&icirc;mer le filetage. Dans le pire des cas, elle va se bloquer dedans puis casser lorsque vous allez essayer de l\'extraire en d&eacute;vissant.&nbsp;</p>
+<p>Bref, il faut &agrave; tout prix &eacute;viter ceci et il existe une solution ultra simple : ovaliser les trous du boitier &agrave; l\'aide d\'une lime "queue de rat".</p>
+<p><img src="/storage/photos/1/legacy/IMG_5037.jpg" alt="trou ovalis&eacute;"></p>
+<p><img src="/storage/photos/1/legacy/IMG_5038.jpg" alt="trou ovalis&eacute;"></p>
+<p>Avec cette astuce, vous devriez pouvoir visser vos boulons &agrave; 2 doigts !</p>
 <h3>Nota</h3>
-<p>Dès que vous achetez un pack board + foil chez GlissAttitude, nous réalisons pour vous tous les ajustements (ponçage du talon, ovalisation des trous, mise en place de vis CHC à la bonne taille, et éventuellement réglage du rake) .. pour que ce soit plug and play de vôtre côté.</p>',
+<p>D&egrave;s que vous achetez un pack board + foil chez GlissAttitude, nous r&eacute;alisons pour vous tous les ajustements (pon&ccedil;age du talon, ovalisation des trous, mise en place de vis CHC &agrave; la bonne taille, et &eacute;ventuellement r&eacute;glage du rake) .. pour que ce soit plug and play de v&ocirc;tre c&ocirc;t&eacute;.</p>',
 'status' => 'Published',
-'views' => 3421,
-'last_ip' => NULL,
+'views' => 3423,
+'last_ip' => '88.163.167.153',
 'created_at' => '2022-02-17 08:19:02',
-'updated_at' => '2022-02-17 08:19:02',
+'updated_at' => '2022-04-11 00:09:10',
 ),
 59 => 
 array (
 'id' => 85,
 'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Tuto Assemblage du foil et serrages  ',
+'post_categories_id' => 6,
+'title' => 'Tuto Assemblage du foil et serrages',
 'description' => 'Commen assembler votre foil sans l\'abîmer',
-'body' => '<p>L\'assemblage de votre foil est une opération à réaliser avec soin à chaque sortie pour ne pas risquer la casse, ou des sensations anormales.</p>
+'body' => '<p>L\'assemblage de votre foil est une op&eacute;ration &agrave; r&eacute;aliser avec soin &agrave; chaque sortie pour ne pas risquer la casse, ou des sensations anormales.</p>
 <h2>Montage</h2>
-<p>L\'essentiel du montage consiste à assembler le mat, le fuselage, le stabilisateur et l\'aile. L\'objectif est d\'avoir in fine un assemblage robuste, rigide, et qui ne se déserre pas sur l\'eau ... sans pour autant casser la visserie à cause d\'un serrage trop puissant.</p>
-<p><strong>Une règle de base à retenir : ne jamais forcer sur la visserie !</strong></p>
-<p>La plupart du temps, un assemblage sans jeu suppose des ajustements plutôt serrés. Que ce soit entre le mat et le fuselage, ou entre le mat et le boitier d\'aileron, il faut souvent forcer pour garantir une navigation sans flou. Même si ça rentre un peu en force, il ne faut jamais serrer comme un mulet pour faire rentrer \'papa dans maman\'. Au contraire, on utilise la technique du levier.</p>
-<p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
+<p>L\'essentiel du montage consiste &agrave; assembler le mat, le fuselage, le stabilisateur et l\'aile. L\'objectif est d\'avoir in fine un assemblage robuste, rigide, et qui ne se d&eacute;serre pas sur l\'eau ... sans pour autant casser la visserie &agrave; cause d\'un serrage trop puissant.</p>
+<p><strong>Une r&egrave;gle de base &agrave; retenir : ne jamais forcer sur la visserie !</strong></p>
+<p>La plupart du temps, un assemblage sans jeu suppose des ajustements plut&ocirc;t serr&eacute;s. Que ce soit entre le mat et le fuselage, ou entre le mat et le boitier d\'aileron, il faut souvent forcer pour garantir une navigation sans flou. M&ecirc;me si &ccedil;a rentre un peu en force, il ne faut jamais serrer comme un mulet pour faire rentrer \'papa dans maman\'. Au contraire, on utilise la technique du levier.</p>
+<p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <h2>Visserie et outils</h2>
-<p>Pour garantir des montages réguliers sans anicroche, on vous suggère d\'équiper votre foil de visserie inox à tête TORX. C\'est le type d\'empreinte la plus robuste à la longue.</p>
-<p>Pour manipuler les vis Torx, munissez vous de clés de bonne qualité, comme celles-ci</p>
-<a href="https://marseille.glissattitude.com/windfoil/u38521s1-gliss-attitude-cle-torx-facom-t30-gliss-attitude.html">
-<img src="/storage/photos/1/legacy/u38521s1.jpg" alt="Clé torx facom T30" /></a>
+<p>Pour garantir des montages r&eacute;guliers sans anicroche, on vous sugg&egrave;re d\'&eacute;quiper votre foil de visserie inox &agrave; t&ecirc;te TORX. C\'est le type d\'empreinte la plus robuste &agrave; la longue.</p>
+<p>Pour manipuler les vis Torx, munissez vous de cl&eacute;s de bonne qualit&eacute;, comme celles-ci</p>
+<p><a href="https://marseille.glissattitude.com/windfoil/u38521s1-gliss-attitude-cle-torx-facom-t30-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u38521s1.jpg" alt="Cl&eacute; torx facom T30"></a></p>
 <h2>Couples de serrages</h2>
-<p>Si vous avez des doutes sur le serrage que vous devez appliquer, vous pouvez invesrtir dans une clé dynamométrique. Pour tout ce qui est assemblages intenes du foil (mat sur fuselage, ailes et stab), vous pouvez appliquer un serrage de l\'ordre de 5 à 8 NM.</p>
+<p>Si vous avez des doutes sur le serrage que vous devez appliquer, vous pouvez invesrtir dans une cl&eacute; dynamom&eacute;trique. Pour tout ce qui est assemblages intenes du foil (mat sur fuselage, ailes et stab), vous pouvez appliquer un serrage de l\'ordre de 5 &agrave; 8 NM.</p>
 <h2>Entretien</h2>
-<p>Même si il est souvent tentant de tranporter votre foil assemblé pour gagner du temps, nous conseillons tout de même de démonter et rincer votre foil à chaque utilisation. Si vous omettez cette précaution, vous ne pourrez pas en vouloir à quiconque si votre foil présente des traces de corrosion.</p>
+<p>M&ecirc;me si il est souvent tentant de tranporter votre foil assembl&eacute; pour gagner du temps, nous conseillons tout de m&ecirc;me de d&eacute;monter et rincer votre foil &agrave; chaque utilisation. Si vous omettez cette pr&eacute;caution, vous ne pourrez pas en vouloir &agrave; quiconque si votre foil pr&eacute;sente des traces de corrosion.</p>
 <p>Par ailleurs, nous vous conseillons d\'enduire la visserie de graisse isolant galvanique type tef-gel tous les 3 ou 4 montages.</p>
-<a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html">
-<img src="/storage/photos/1/legacy/u32582.jpg" alt="Tefgel GlissAttitude" /></a>
-<p></p>
+<p><a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u32582.jpg" alt="Tefgel GlissAttitude"></a></p>
+<p>&nbsp;</p>
 <h2>Montage sur le flotteur</h2>
-<p><iframe src="https://www.youtube.com/embed/yWkmnQbtOf4" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
-',
+<p><iframe src="https://www.youtube.com/embed/yWkmnQbtOf4" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'status' => 'Published',
-'views' => 3214,
-'last_ip' => NULL,
+'views' => 3216,
+'last_ip' => '88.163.167.153',
 'created_at' => '2022-02-18 08:19:02',
-'updated_at' => '2022-02-18 08:19:02',
+'updated_at' => '2022-04-11 00:08:44',
 ),
 60 => 
 array (
@@ -2468,10 +2475,10 @@ array (
 
 ',
 'status' => 'Published',
-'views' => 4122,
-'last_ip' => '::1',
+'views' => 4124,
+'last_ip' => '54.36.148.76',
 'created_at' => '2022-02-20 08:19:02',
-'updated_at' => '2022-03-23 23:45:56',
+'updated_at' => '2022-04-09 07:32:46',
 ),
 62 => 
 array (
@@ -2501,10 +2508,10 @@ array (
 <p></p>
 <p>Si vous voulez en savoir plus sur les diverses solutions de protection de nez de flotteur, c\'est par <a href = "/blog/protection-nez-windfoil.html">ici</a></p>',
 'status' => 'Published',
-'views' => 353,
-'last_ip' => '::1',
+'views' => 354,
+'last_ip' => '54.36.149.1',
 'created_at' => '2022-02-19 08:19:02',
-'updated_at' => '2022-03-23 23:46:01',
+'updated_at' => '2022-04-09 07:35:25',
 ),
 63 => 
 array (
@@ -2654,10 +2661,10 @@ array (
 </table>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
 'status' => 'Published',
-'views' => 6121,
-'last_ip' => '::1',
+'views' => 6122,
+'last_ip' => '54.36.148.231',
 'created_at' => '2020-10-01 22:19:52',
-'updated_at' => '2022-04-08 16:03:48',
+'updated_at' => '2022-04-09 06:16:23',
 ),
 64 => 
 array (
@@ -2781,10 +2788,10 @@ array (
 </table>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
 'status' => 'Published',
-'views' => 8291,
-'last_ip' => '::1',
+'views' => 8293,
+'last_ip' => '114.119.134.89',
 'created_at' => '2021-02-18 15:49:20',
-'updated_at' => '2022-03-23 23:13:00',
+'updated_at' => '2022-04-10 20:42:46',
 ),
 65 => 
 array (
@@ -2826,20 +2833,20 @@ array (
 array (
 'id' => 92,
 'user_id' => 1,
-'post_categories_id' => 10,
+'post_categories_id' => 1,
 'title' => 'Le choix d\'un 2e ou 3e foil ... parlons de sensations',
 'description' => 'Dans cet article, je n’essaye surtout pas de vous dire quel modèle ou marque est meilleur ou moins bonne, mais plutôt de vous donner des pistes pour comprendre ce qui va vous plaire. Et bien entendu, on parle de vous : pas de votre voisin, votre pote',
-'body' => '<p><img src="/storage/photos/1/legacy/choix_1.jpg" alt="" /></p>
+'body' => '<p><img src="/storage/photos/1/legacy/choix_1.jpg" alt=""></p>
 <h3>Contexte</h3>
 <div style="column-width: 30rem;">
-<p>Le windfoil est d&eacute;sormais compl&egrave;tement install&eacute; dans le paysage de la glisse, et la premi&egrave;re PWA mixte vient de montrer qu&rsquo;il a m&ecirc;me sa place &agrave; tr&egrave;s haut niveau. Tous ceux qui pensaient que ce serait un &eacute;pi-ph&eacute;nom&egrave;ne ou une mode ravalent leur salive. <br />Au contraire, le foil a beaucoup chang&eacute; pour devenir une &eacute;volution naturelle du windsurf, et non plus une discipline &agrave; part. <br />Au d&eacute;but, on pratiquait l&rsquo;aileron ou le foil. D&eacute;sormais, de nombreux pratiquants sont en train de passer au 100% foil , mais avec la m&ecirc;me diversit&eacute; de discipline qu&rsquo;ils avaient en aileron : Race , Slalom, Freeride, Surf.&nbsp;Ceci est en particulier rendu possible par la diversification des types de mat&eacute;riels (foils, planches, voiles), et leurs &eacute;normes progr&egrave;s sur tous les axes.</p>
-<p>Avec cette pratique qui devient pour certains quasi exclusive, les progr&egrave;s en navigation vont bon train, et nombreux d&rsquo;entre nous en sont &agrave; leur 2e voir 3e foil. Le choix du mod&egrave;le qui va le mieux nous convenir devient alors une vraie question. <br />Si on peut d&eacute;buter avec un peu n&rsquo;importe quoi, avouons qu\'il est judicieux de se poser la question de ses gouts si on veut &eacute;voluer. Quand on d&eacute;bute, on se sait pas trop ce que l&rsquo;on aime ou pas, on veut juste voler. Quand on sait foiler, on a logiquement des attentes plus pr&eacute;cises.</p>
+<p>Le windfoil est d&eacute;sormais compl&egrave;tement install&eacute; dans le paysage de la glisse, et la premi&egrave;re PWA mixte vient de montrer qu&rsquo;il a m&ecirc;me sa place &agrave; tr&egrave;s haut niveau. Tous ceux qui pensaient que ce serait un &eacute;pi-ph&eacute;nom&egrave;ne ou une mode ravalent leur salive. <br>Au contraire, le foil a beaucoup chang&eacute; pour devenir une &eacute;volution naturelle du windsurf, et non plus une discipline &agrave; part. <br>Au d&eacute;but, on pratiquait l&rsquo;aileron ou le foil. D&eacute;sormais, de nombreux pratiquants sont en train de passer au 100% foil , mais avec la m&ecirc;me diversit&eacute; de discipline qu&rsquo;ils avaient en aileron : Race , Slalom, Freeride, Surf.&nbsp;Ceci est en particulier rendu possible par la diversification des types de mat&eacute;riels (foils, planches, voiles), et leurs &eacute;normes progr&egrave;s sur tous les axes.</p>
+<p>Avec cette pratique qui devient pour certains quasi exclusive, les progr&egrave;s en navigation vont bon train, et nombreux d&rsquo;entre nous en sont &agrave; leur 2e voir 3e foil. Le choix du mod&egrave;le qui va le mieux nous convenir devient alors une vraie question. <br>Si on peut d&eacute;buter avec un peu n&rsquo;importe quoi, avouons qu\'il est judicieux de se poser la question de ses gouts si on veut &eacute;voluer. Quand on d&eacute;bute, on se sait pas trop ce que l&rsquo;on aime ou pas, on veut juste voler. Quand on sait foiler, on a logiquement des attentes plus pr&eacute;cises.</p>
 <p>Dans cet article, je n&rsquo;essaye surtout pas de vous dire quel mod&egrave;le ou marque est meilleure ou moins bonne, mais plut&ocirc;t de vous donner des pistes pour comprendre ce qui va vous plaire. Et bien entendu, on parle de vous : pas de votre voisin, votre pote de navigation, ou le mec sur le forum qui vous dit que c&rsquo;est bien sans vous connaitre. Au magasin, j\'ai de nombreuses demandes avec des pratiquants perdus qui veulent changer, mais ne savent pas pourquoi. Ils nous appellent souvent pour nous demander ce que l\'on pense de tel ou tel mod&egrave;le, de telle ou telle marque ... mais ne se sont jamais pos&eacute; la question de ce qu\'ils cherchaient en terme de ressenti, et de navigation. C\'est pourtant la base, changer pour changer n\'a pas d\'int&eacute;r&ecirc;t. Cet article a donc pour objectif de <strong>vous permettre de mettre des mots sur ce que vous ressentez, et ce que vous voudriez ressentir</strong>.</p>
 </div>
 <div style="column-width: 30rem;">
 <p>On a d&eacute;j&agrave; &eacute;crit des pages sur les perfs de tel foil, la stabilit&eacute;, le d&eacute;collage etc. Ici, on va surtout parler de sensations, de plaisir &hellip; au risque d\'enfoncer une porte ouverte, je consid&egrave;re personnellement que quand je vais naviguer, je vais avant tout me faire plaisir. Comme ce n&rsquo;est pas mon m&eacute;tier, que ma place &agrave; la bou&eacute;e de conditionne pas si je vais manger du boeuf ou des p&acirc;tes, je n&rsquo;ai pas les m&ecirc;me attentes qu&rsquo;un Nicolas Goyard ou autre Antoine Albeau (pour ne citer que les t&eacute;nors de notre sport).&nbsp;</p>
 <p>Donc si vous souhaitez pulv&eacute;riser les grands champions en PWA, pas la peine de lire cet article, il n&rsquo;est pas pour vous ;) Pas plus si vous choisissez votre premier foil !</p>
-<p>Le mat&eacute;riel ayant bien &eacute;volu&eacute;, et surtout la compr&eacute;hension des ph&eacute;nom&egrave;nes physiques &eacute;tant bien meilleure aujourd&rsquo;hui, la conception d&rsquo;un foil devient de plus en plus une histoire de compromis. D&egrave;s lors, le choix d&rsquo;une marque dans ses design, ou de vous en tant que consommateur va &ecirc;tre tr&egrave;s li&eacute; &agrave; l&rsquo;importance que vous apportez &agrave; chaque param&egrave;tre. &hellip;. je vous vois venir et je le dit cash : non , il n&rsquo;y a aucun produit qui soit au top partout car de nombreux param&egrave;tres sont contradictoires ! <br />Pour &ecirc;tre trivial, vous ne trouverez pas un foil qui ne va pas vite car vous avez la trouille quand &ccedil;a acc&eacute;l&egrave;re, mais qui en m&ecirc;me temps vous permettra de d&eacute;passer tous vos potes sur le plan d&rsquo;eau !! Il y a un moment ou il fait savoir ce que l&rsquo;on veut :)</p>
+<p>Le mat&eacute;riel ayant bien &eacute;volu&eacute;, et surtout la compr&eacute;hension des ph&eacute;nom&egrave;nes physiques &eacute;tant bien meilleure aujourd&rsquo;hui, la conception d&rsquo;un foil devient de plus en plus une histoire de compromis. D&egrave;s lors, le choix d&rsquo;une marque dans ses design, ou de vous en tant que consommateur va &ecirc;tre tr&egrave;s li&eacute; &agrave; l&rsquo;importance que vous apportez &agrave; chaque param&egrave;tre. &hellip;. je vous vois venir et je le dit cash : non , il n&rsquo;y a aucun produit qui soit au top partout car de nombreux param&egrave;tres sont contradictoires ! <br>Pour &ecirc;tre trivial, vous ne trouverez pas un foil qui ne va pas vite car vous avez la trouille quand &ccedil;a acc&eacute;l&egrave;re, mais qui en m&ecirc;me temps vous permettra de d&eacute;passer tous vos potes sur le plan d&rsquo;eau !! Il y a un moment ou il fait savoir ce que l&rsquo;on veut :)</p>
 </div>
 <h3>Glisse ou contr&ocirc;le</h3>
 <div style="column-width: 30rem;">
@@ -2935,10 +2942,10 @@ array (
 <h3>Bilan</h3>
 <p>Comme je l&rsquo;avais annonc&eacute;, ce long post ne vas pas vous dire quel mod&egrave;le choisir, mais j&rsquo;esp&egrave;re qu&rsquo;il pourra vous permettre de r&eacute;fl&eacute;chir &agrave; vos envies, et &agrave; conforter les sensations que vous avez ressenti pour mieux exprimer votre besoin lors d&rsquo;un changement. A partir de l&agrave;, un professionnel comp&eacute;tent et honn&ecirc;te saura vous orienter vers le choix le plus pertinent pour vous.</p>',
 'status' => 'Published',
-'views' => 2568,
-'last_ip' => '::1',
+'views' => 2571,
+'last_ip' => '88.163.167.153',
 'created_at' => '2021-06-24 15:47:06',
-'updated_at' => '2022-03-23 23:32:08',
+'updated_at' => '2022-04-11 00:13:14',
 ),
 67 => 
 array (
@@ -2991,6 +2998,43 @@ array (
 'last_ip' => '::1',
 'created_at' => '2021-10-11 18:49:30',
 'updated_at' => '2022-03-23 23:33:20',
+),
+68 => 
+array (
+'id' => 94,
+'user_id' => 1,
+'post_categories_id' => 5,
+'title' => 'Accès professionnel',
+'description' => 'Windfoilfan pour les professionnels',
+'body' => '<p>Avec Windfoilfan, nous avons une double volont&eacute; : donner aux pratiquants un maximum d\'informations leur permettant de choisir leur mat&eacute;riel en conscience, et aider les marques &agrave; &eacute;valuer leur mat&eacute;riel par rapport au march&eacute; et le faire &eacute;voluer pour toujours plus de satisfaction des clients.</p>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<p>En tant que professionel, nous sommes ravis de travailler avec vous main dans la main pour faire coller votre mat&eacute;riel aux &eacute;volutions du march&eacute;. Nous proposer en test vos prototypes de vos mod&egrave;les d&eacute;finitifs. Echanger sur vos projets (nous savons garder confidentiel ce qui doit l\'&ecirc;tre). Pour l\'avoir fait et le faire encore avec plusieures marques, cette collaboration est gagnante pour tous. Non seulement le mat&eacute;riel &eacute;volue plus vite, mais en plus nous le faisons savoir aux pratiquants et je vous garantie qu\'ils y sont tr&egrave;s r&eacute;ceptifs.</p>
+</div>
+<div class="col-lg-6">
+<p>Vous pouvez aussi refuser de communiquer sur vos produits, nous demander de ne pas en parler de peur de voir diffuser des points &agrave; am&eacute;liorer (c\'est arriv&eacute; &agrave; plusieurs reprises 😡), cacher les d&eacute;fauts &eacute;ventuels en esp&eacute;rant que cela &eacute;chappe aux clients potentiels, consid&eacute;rer que nos avis n\'ont pas de fondement, etc. Sachez que se voiler la face ou refuser la critique constructive est le meilleur moyen de rester &agrave; la traine ... et l&agrave; aussi, nous avons de nombreux exemples 😉</p>
+</div>
+</div>
+</div>
+<p>A vous de choisir votre camp, mais nous sommes &eacute;videmment toujours int&eacute;ress&eacute; de collaborer.&nbsp;</p>
+<p>&nbsp;</p>
+<p>Avec un acc&egrave;s professionnel, vous aurez acc&egrave;s</p>
+<ul>
+<li>A toutes les donn&eacute;es techniques (mesures structurelles et &eacute;valuations) des foils de votre marque&nbsp;</li>
+<li>Aux diagrammes de comparaison des donn&eacute;es techniques</li>
+<li>A la fiche de pr&eacute;sentation de votre marque, pr&eacute;sent&eacute;e aux utilisateurs</li>
+<li>Aux statistiques de visite de vos produits</li>
+</ul>
+<h4>Donn&eacute;es techniques</h4>
+<h4>Diagramme de comparaison</h4>
+<h4>Fiche de pr&eacute;sentation</h4>
+<h4>Statistiques</h4>',
+'status' => 'Published',
+'views' => 1,
+'last_ip' => '88.163.167.153',
+'created_at' => '2022-04-10 21:34:10',
+'updated_at' => '2022-04-10 22:41:54',
 ),
 ));
         

@@ -32,6 +32,8 @@
                             <br>@endif
                             @if(session('success'))<div class="alert alert-success">{{ session('success') }}</div>
                             <br>@endif
+                            @if(session('status'))<div class="alert alert-success">{{ session('status') }}</div>
+                            <br>@endif
 
                             @if (sizeof($errors) > 0)
                             <ul>

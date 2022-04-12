@@ -22,38 +22,38 @@ class PostCategoriesTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'name' => 'Nos sélections produit',
+                'name' => 'Choisir',
                 'order' => 1,
             ),
             1 => 
             array (
                 'id' => 2,
-                'name' => 'Tutos navigation',
-                'order' => 2,
+                'name' => 'Naviguer',
+                'order' => 4,
             ),
             2 => 
             array (
                 'id' => 3,
-                'name' => 'Visites fabriquants',
+                'name' => 'Visites & Videos',
                 'order' => 7,
             ),
             3 => 
             array (
                 'id' => 4,
-                'name' => 'Mise en oeuvre & bricolage',
+                'name' => 'Entretenir & réparer',
                 'order' => 3,
             ),
             4 => 
             array (
                 'id' => 5,
                 'name' => 'Technologie',
-                'order' => 4,
+                'order' => 5,
             ),
             5 => 
             array (
                 'id' => 6,
-                'name' => 'Réglages',
-                'order' => 5,
+                'name' => 'Monter & Régler',
+                'order' => 2,
             ),
             6 => 
             array (
@@ -66,18 +66,6 @@ class PostCategoriesTableSeeder extends Seeder
                 'id' => 8,
                 'name' => 'Spots',
                 'order' => 8,
-            ),
-            8 => 
-            array (
-                'id' => 9,
-                'name' => 'Videos',
-                'order' => 9,
-            ),
-            9 => 
-            array (
-                'id' => 10,
-                'name' => 'Choix du matériel ',
-                'order' => 2,
             ),
         ));
         

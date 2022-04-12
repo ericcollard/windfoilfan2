@@ -352,21 +352,23 @@ class AttributesTableSeeder extends Seeder
                 'slug' => 'flex_module',
                 'body' => '<h3>La rigidit&eacute; en flexion</h3>
 <div class="row">
-<div class="col-lg-6">
-<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt="" /></p>
+<div class="col-lg-4">
+<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres flexion.png" alt=""></p>
 </div>
-<div class="col-lg-6">
+<div class="col-lg-8">
 <p>La rigidit&eacute; en flexion est &eacute;valu&eacute;e &agrave; partir des mesures de flexion du mat sur un banc. Le mat est soumis &agrave; un charge de 10kg positionn&eacute;e &agrave; 70cm de l\'encastrement.</p>
 <p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en flexion EIx &agrave; partir de la fl&ecirc;che mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux.&nbsp;La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 100 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s par nos soins.</p>
 <p>Pour une question de confidentialit&eacute; industrielle, la visualisation des donn&eacute;es de ce sh&eacute;ma est r&eacute;serv&eacute;e aux administrateurs, et aux marques.</p>
 <p>&nbsp;</p>
-<p>Avec l\'experience, nous avons constat&eacute; qu\'un mat tr&egrave;s souple en flexion avait une influence sur la stabilit&eacute; lat&eacute;rale, et sur la sensation de contr&ocirc;le.</p>
+<h4>Que signifie cette mesure ?</h4>
+<p>Avec l\'experience, nous avons constat&eacute; que les caract&eacute;ristiques m&eacute;caniques du mat &eacute;taient souvent finement li&eacute;es au comportement dynamique du foil. Sous l\'effet du clapot, des rafales et des autres diverses perturbations, le foil se d&eacute;forme, et le pilote ressent un certain niveau d\'&eacute;lasticit&eacute; qui peut potentiellement compromettre le contr&ocirc;le du flotteur en vol.&nbsp;</p>
+<p>M&ecirc;me si il n\'y a pas de lien direct &eacute;tabli (des exceptions existent), un mat tr&egrave;s souple en flexion a souvent une influence n&eacute;gative sur la stabilit&eacute; lat&eacute;rale du foil. Compte tenu des exceptions existantes, cette mesure ne suffit pas &agrave; caract&eacute;riser un foil. Cependant, elle peut expliquer des comportements ressentis.</p>
 </div>
 </div>
 <div class="alert alert-warning mt-4" role="alert">
 <h4 class="alert-heading">Important !</h4>
 <p>Ce diagramme est &eacute;tabli sur la base de mesures objectives. Il ne s\'agit pas d\'un jugement, et doit rester un indicateur pouvant expliquer certains comportements.</p>
-<hr />
+<hr>
 <p class="mb-0">Il est important de consid&eacute;rer tous les param&egrave;tres pour &eacute;valuer un produit car le r&eacute;sultat final est un tout.</p>
 </div>',
                 'unit' => 'N.m2',
@@ -385,19 +387,22 @@ class AttributesTableSeeder extends Seeder
                 'body' => '<h3>Rigidit&eacute; en torsion</h3>
 <div class="row">
 <div class="col-lg-6">
-<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres torsion.png" alt="Rigidit&eacute; en torsion foil" /></p>
+<p><img class="img-fluid" src="/storage/photos/5/attributes/poutres torsion.png" alt="Rigidit&eacute; en torsion foil"></p>
 </div>
 <div class="col-lg-6">
 <p>La rigidit&eacute; en torsion est &eacute;valu&eacute;e &agrave; partir des mesures du mat sur un banc. Le mat est fix&eacute; &agrave; sa base et pos&eacute; en son extr&ecirc;mit&eacute; sur un couteau afin de g&eacute;n&eacute;rer de la torsion pure. Le fuselage est soumis &agrave; un charge de 6,25kg positionn&eacute;e &agrave; 35cm de l\'axe de torsion. La mesure est r&eacute;alis&eacute;e &agrave; 25cm de l\'axe de torsion.&nbsp;</p>
 <p>La th&eacute;orie des poutres, utilis&eacute;e dans l\'hypoth&egrave;se des petites d&eacute;formations, nous permet d\'en d&eacute;duire un coefficient de rigidit&eacute; en torsion GIg &agrave; partir de la d&eacute;formation mesur&eacute;e. Cette valeur ne nous int&eacute;resse pas dans sa valeur absolue, mais permet de comparer de fa&ccedil;on assez pertinante les diff&eacute;rents foils entre eux. La valeur de 0 correspond au foil le plus souple parmi&nbsp;les mod&egrave;les mesur&eacute;s. La valeur de 100 correspond au foil le plus raide parmi les mod&egrave;les mesur&eacute;s.</p>
-<p><img class="img-fluid" src="/storage/photos/5/attributes/banc-mesure-structure-foil.jpg" alt="Banc de mesure" /></p>
+<p><img class="img-fluid" src="/storage/photos/5/attributes/banc-mesure-structure-foil.jpg" alt="Banc de mesure"></p>
 <p>Pour une question de confidentialit&eacute; industrielle, la visualisation des donn&eacute;es de ce sh&eacute;ma est r&eacute;serv&eacute;e aux administrateurs et aux marques.</p>
+<h4>Que signifie cette mesure ?</h4>
+<p>Avec l\'experience, nous avons constat&eacute; que les caract&eacute;ristiques m&eacute;caniques du mat &eacute;taient souvent finement li&eacute;es au comportement dynamique du foil. Sous l\'effet du clapot, des rafales et des autres diverses perturbations, le foil se d&eacute;forme, et le pilote ressent un certain niveau d\'&eacute;lasticit&eacute; qui peut potentiellement compromettre le contr&ocirc;le du flotteur en vol.&nbsp;</p>
+<p>M&ecirc;me si il n\'y a pas de lien direct &eacute;tabli (des exceptions existent), un mat tr&egrave;s souple en torsion a souvent une influence n&eacute;gative sur la stabilit&eacute; en lacet du foil. Compte tenu des exceptions existantes, cette mesure ne suffit pas &agrave; caract&eacute;riser un foil. Cependant, elle peut expliquer des comportements ressentis.</p>
 </div>
 </div>
 <div class="alert alert-warning mt-4" role="alert">
 <h4 class="alert-heading">Important !</h4>
 <p>Ce diagramme est &eacute;tabli sur la base de mesures objectives. Il ne s\'agit pas d\'un jugement, et doit rester un indicateur pouvant expliquer certains comportements.</p>
-<hr />
+<hr>
 <p class="mb-0">Il est important de consid&eacute;rer tous les param&egrave;tres pour &eacute;valuer un produit car le r&eacute;sultat final est un tout.</p>
 </div>',
                 'unit' => 'N.m2/Rad',

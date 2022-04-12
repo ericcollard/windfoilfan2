@@ -4000,7 +4000,7 @@ array (
 'title' => 'Moderne sur toute la ligne !',
 'body' => '<p>Nous avions eu un premier aper&ccedil;u rapide des capacit&eacute;s de ce flotteur lors des tests de labellisation FFV de Martigues. A l\'&eacute;poque, c\'&eacute;tait encore un prototype, &nbsp;qui manquait de volume sur la partie avant.&nbsp;Le mod&egrave;le de s&eacute;rie &agrave; corrig&eacute; ce d&eacute;tail, et le flotteur gagne &agrave; la fois en capacit&eacute; &agrave; porter des surfaces de voile plus importantes (jusqu\'&agrave; 8m), et en r&eacute;action sur les touchettes.</p>
 <p>Avec cette compact 83 de s&eacute;rie, AHD propose un flotteur de foil parfaitement dans le vent, et qui marque une &eacute;norme &eacute;volution par rapport &agrave; la s&eacute;rie Thunderbold. Si ces derniers offraient aux d&eacute;butants l\'avantage d\'un d&eacute;collage tr&egrave;s progressif, et d\'une certaine inertie qui tent &agrave; gommer les erreurs de conduite, la compact s\'adresse aux foileurs plus exp&eacute;riment&eacute;s. Exit le c&ocirc;t&eacute; poussif, lourd et encombrant, et place &agrave; un flottteur r&eacute;actif, l&eacute;ger sous les pieds avec lequel on fait corps.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1227.jpeg" alt="Test AHD Compact foil 83 2021" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1227.jpeg" alt="Test AHD Compact foil 83 2021"></p>
 <h3>Construction</h3>
 <p>Il me parait important de pr&eacute;ciser dans ce test que les flotteurs ADH ont une vraie sp&eacute;cificit&eacute; dans le monde du Windsurf. Si l\'on met &agrave; part des micro marques comme FMX, Future Fly, Carbon Art, Horue, Tiaki ou Elix ... AHD est l\'une des 2 seules marques (avec Patrick Diethelm) &agrave; avoir choisi une production industrielle hors de Cobra (Thailande). Chacun aura son avis, et en parcourant les forums, on lira des avis tr&egrave;s tranch&eacute;s et totalement oppos&eacute;s.</p>
 <p>Pour notre part, h&eacute;bergeant un atelier de r&eacute;paration, nous notons que les choix de construction sont clairement diff&eacute;rents et que ceci a une cons&eacute;quence sur la r&eacute;action de la structure aux chocs. On pourrait faire un dossier complet (et long) &agrave; ce sujet, mais de fa&ccedil;on tr&egrave;s g&eacute;n&eacute;rale, on constate au vu des nombreuses r&eacute;parations entreprises 3 types de comportement struturels</p>
@@ -4022,18 +4022,18 @@ array (
 <p>En terme de contr&ocirc;le, le plan de pont assez plat mais surtout peu &eacute;pais sous le pied arri&egrave;re apporte beaucoup de confiance et de facilit&eacute;. Ce type de flotteur offrant beaucoup de contr&ocirc;le aura tendance &agrave; assagir les r&eacute;actions des foils un peu trop souples. Perso, j\'aurai aim&eacute; une courbe encore moins marqu&eacute;e sous le talon (&agrave; l\'image de la Tabou ou de la Phantom), mais on a d&eacute;j&agrave; franchi un cap, et ces formes plus bomb&eacute;es ont &eacute;galement leurs afficionados. De le m&ecirc;me fa&ccedil;on, le pont tr&egrave;s simple facilit&eacute; la prise en main pour les manoeuvres et il n\'y a aucune g&ecirc;ne lors du jibe. L&agrave; aussi, tout est assez intuitif. L\'angle des straps avant facilite la sortie et l\'entr&eacute;e du pied lors de la manoeuvre.</p>
 <h3>Equilibre longitudinal</h3>
 <p>Concernant l\'&eacute;quilibre longitudinal, la compact 83 se marie facilement avec des foils &agrave; aile avanc&eacute;e. J\'ai fait le test avec le F4 race sans aucune g&ecirc;ne. C\'est assez coh&eacute;rent avec l\'&eacute;volution g&eacute;n&eacute;rale des foils, et en particulier avec derni&egrave;res g&eacute;n&eacute;rations d\'AFS &agrave; fuselage rallong&eacute;. Par extension, il faudra probalement faire attention aux foils plut&ocirc;t pied arri&egrave;re d\'ancienne g&eacute;n&eacute;ration (NP Flight et NP F4, Zeeko amplifier v1, Starboard GT, Noe en 75cm). En terme de stabilit&eacute; longitudinale, la faible inertie du flotteur permet de r&eacute;agir sans d&eacute;lais. M&ecirc;me dans des conditions mouvement&eacute;es, un pilote aguerris pourra repousser assez loin les limites. Au contraire, un d&eacute;bautant sera certainement plus &agrave; l\'aise avec une planche moins vive. Dans le vent soutenu, le faible volume de l\'avant offre peu de prise en vent, et ainsi pas de d&eacute;gradation de la stabilit&eacute;. Par contre, on a moins d\'effet de stabilisation a&eacute;rodynamique que ce que nous avons ressenti sur l\'exocet V2 et surtout la Phantom.&nbsp;</p>
-<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1228.jpeg" alt="Test AHD Compact foil 83 2021" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1228.jpeg" alt="Test AHD Compact foil 83 2021"></p>
 <h3>Touchettes</h3>
 <p>C&ocirc;t&eacute; touchettes, on est sur un bon niveau dans la lign&eacute;e des mod&egrave;les de derni&egrave;re g&eacute;n&eacute;ration. Les contacts l&eacute;gers sont absorb&eacute;s sans aucune g&egrave;ne. Lors des contacts plus appuy&eacute;s, que ce soit sur le rail ou sur la car&egrave;ne, le ralentissement est plus sensible que sur la Phantom ou l\'Exocet, notamment en raison d\'un volume plus faible, mais moindre que sur la Starboard 150 ou la Patrick Diethelm. Plus la voile sera petite, moins cette diff&eacute;rence sera sensible.</p>
 <h3>Bilan</h3>
 <p>Cette compact 83 est objectivement une excellente surprise, et une &eacute;norme &eacute;volution apr&egrave;s la s&eacute;rie Thunderbold. Grace &agrave; ses qualit&eacute;s et sa polyvalence, elle se fait une place au sein des meilleurs mod&egrave;les freerace du moment. Dans cette cat&eacute;gorie, elle offre une option de compacit&eacute; et de r&eacute;activit&eacute; dans un volume contenu, en mettant plus l\'accent sur le contr&ocirc;le et l\'accessibilit&eacute; que sur la puissance. Avec sa production en Tunisie, elle propose un rapport solidit&eacute; / prix excellent. Le tableau serait parfait si AHD parvenait &agrave; modernier son design , et &agrave; monter en gamme concernant l\'&eacute;quipement de ses flotteurs.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1274.jpeg" alt="Test AHD Compact foil 83 2021" /></p>',
+<p><img class="img-fluid" src="/storage/photos/1/2021-02/IMG_1274.jpeg" alt="Test AHD Compact foil 83 2021"></p>',
 'test_equipment' => 'Foil F4 Race, IRIS X MKII 8M',
 'test_duration' => 2,
 'test_conditions' => 'Est plat 10-20 knt',
 'test_place' => 'Almanarre',
-'created_at' => '2021-02-06 20:02:50',
-'updated_at' => '2021-02-08 14:40:53',
+'created_at' => '2021-03-10 22:49:07',
+'updated_at' => '2022-04-08 22:52:04',
 ),
 104 => 
 array (
@@ -4859,14 +4859,14 @@ array (
 'device_id' => 16,
 'user_id' => 1,
 'title' => 'Présentation',
-'body' => '<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-apBl2gZO8s.jpg" alt="" /></p>
+'body' => '<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-apBl2gZO8s.jpg" alt=""></p>
 <p>La finition des pi&egrave;ces carbone est superbe. Aucune bavure, les talons sont ponc&eacute;s pour que les ajustement se fassent sans forcer. J\'ai re&ccedil;u 2 ailes avec une finition mat magnifique, et une aile brillante. Visiblement, les 2 ailes mattes et le mat ne sont plus en prepreg, contrairement &agrave; l\'aile brillante.</p>
-<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-OsvKvQRoh2.jpg" alt="" /></p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-OsvKvQRoh2.jpg" alt=""></p>
 <p>Les fuselages sont lourds mais respirent &agrave; rigidit&eacute;. Ils sont tr&egrave;s g&eacute;n&eacute;reusement dimensionn&eacute;s . Ils sont anodis&eacute;s noir mat ... mais cette anodisation parait l&eacute;g&egrave;re.</p>
-<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-c38IhSDHXZ.jpg" alt="" /></p>
-<p>Le berceau de l\'aile est usin&eacute; dans la masse, tandis que celui du stab passe par une cale visiblement r&eacute;alis&eacute;e en impression 3D. <img src="/storage/photos/1/2018-12/f4-race-foil-2019-YP0BlxNrQV.jpg" alt="" /></p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-c38IhSDHXZ.jpg" alt=""></p>
+<p>Le berceau de l\'aile est usin&eacute; dans la masse, tandis que celui du stab passe par une cale visiblement r&eacute;alis&eacute;e en impression 3D. <img src="/storage/photos/1/2018-12/f4-race-foil-2019-YP0BlxNrQV.jpg" alt=""></p>
 <p>Cela va permettre de r&eacute;aliser &eacute;ventuellement d\'autres cales pour modifier l\'angle du stab.</p>
-<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-WmuipFXhjF.jpg" alt="" /></p>
+<p><img src="/storage/photos/1/2018-12/f4-race-foil-2019-WmuipFXhjF.jpg" alt=""></p>
 <p>L\'assemblage se fait sans probl&egrave;me, mais on regr&ecirc;te juste que F4 ai d&eacute;cid&eacute; de rester sur une visserie M5 6 pans. Grace &agrave; Starboard, nous avons pris l\'habitude d\'utilser du Torx dans ces diam&egrave;tres, beaucoup plus r&eacute;sistant dans le temps, et permettant un meilleur couple de serrage. L\'autre solution consiste &agrave; passer &agrave; du M6 comme Taaroa ... bref, apr&egrave;s un serrage o&ugrave; d&eacute;j&agrave; une t&ecirc;te de vis &agrave; montr&eacute; des signes de faiblesse, je me suis empress&eacute; de remplacer les vis fournies par du Torx.</p>
 <h3>Mesures</h3>
 <p>Je n\'ai pas pu m\'emp&ecirc;cher de mesurer la rigidit&eacute; en flexion et en torsion du mat pour en savoir plus sur cette nouvelle version. Disons le tout de suite, ce n\'est pas le mat le plus raide du march&eacute; en flexion, mais il est dans les 4 premiers. Par contre, avec une &eacute;paisseur moyenne de 14,5 mm, c\'est l\'un des plus fins. De fa&ccedil;on &eacute;vidente, il explose les scores sur le module de rigidit&eacute; en flexion (rigidit&eacute; rapport&eacute;e &agrave; l\'&eacute;paisseur) avec une valeur 50% plus &eacute;lev&eacute;e que le 2e, 75% plus &eacute;lev&eacute;e que le NP F4, et 3600% plus elev&eacute;e que le foil le plus souple que l\'on ait mesur&eacute; !! &nbsp;&nbsp;</p>
@@ -4876,8 +4876,8 @@ array (
 'test_duration' => NULL,
 'test_conditions' => NULL,
 'test_place' => NULL,
-'created_at' => '2022-03-10 20:48:06',
-'updated_at' => '2022-03-10 20:49:10',
+'created_at' => '2019-03-10 20:48:06',
+'updated_at' => '2022-04-08 23:28:58',
 ),
 123 => 
 array (
@@ -4896,35 +4896,35 @@ array (
 <li>une aile de vent soutenu de 64cm d\'envergure et 14,5 cm de corde</li>
 </ul>
 <p>D&egrave;s le d&eacute;ballage, la qualit&eacute; de fabrication saute aux yeux. Fid&egrave;le &agrave; son habitude, Alpine propose des produits ultra bien finis, dont toutes les pi&egrave;ces m&eacute;talliques re&ccedil;oivent une anodisation orange du plus bel effet. De ce c&ocirc;t&eacute;, Alpine a positionn&eacute; la barre tr&egrave;s haut !</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-1.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-1.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Les 2 mats font pratiquement la m&ecirc;me taille. Suite aux premiers essai de l\'an pass&eacute;, le mod&egrave;le aluminium a &eacute;t&eacute; enti&egrave;rement repens&eacute;, et le mat semble cette fois ultra rigide ... un excellent point que nous v&eacute;rifieront sur l\'eau tr&egrave;s vite.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-2.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-2.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Ils viennent s\'emboiter dans le fuselage au moyen d\'un boitier cylindrique, le tout &eacute;tant bloqu&eacute; par des vis transversales et lat&eacute;rales (comme chez Starboard). A l\'usage, nous savons d&eacute;sormais que cela assure une liaison fiable et rigide.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-3.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-3.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Le fuselage est &eacute;quip&eacute; d\'une anode qui limite la corrosion des autres pi&egrave;ces. Nous l\'avons test&eacute; : associ&eacute;e &agrave; des vis enduites de Tef Gel, cela permet de laisser le foil mont&eacute; plusieurs jours sans g&eacute;n&eacute;rer d\'oxydation visible. Nous vous incitons tout de m&ecirc;me &agrave; d&eacute;monter r&eacute;guli&egrave;rement vos foils alu.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-4.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-4.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Le talon du mat alu re&ccedil;oit une mini platine, largement suffisante &agrave; nos yeux ... qui peut &ecirc;tre &eacute;largie &agrave; l\'aide d\'une platine carbone (fournie), et peut &ecirc;tre remplac&eacute; par une version PowerBox.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-5.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-5.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Un tr&egrave;s (tr&egrave;s tr&egrave;s) bon point : comme chez Starboard, les inserts sont pivotants, et offrent un d&eacute;battement suffisant pour que l\'on puisse monter le foil sans bricolage sur les diff&eacute;rents flotteurs dont les per&ccedil;ages ne sont jamais au m&ecirc;me endroit (merci Cobra).</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-6.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-6.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>C&ocirc;t&eacute; ailes, nous avons re&ccedil;u 2 ailes en Carbone, tr&egrave;s l&eacute;g&egrave;res, et recevant une finition mate tr&egrave;s propre sans masquage ni peinture ... certainement ce qui se fait de mieux &agrave; l\'heure actuelle. Les ailes sont aussi disponibles dans d\'autres finitions plus haut de gamme pour ceux qui veulent les utiliser comme miroirs pour se raser le matin :)</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-7.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-7.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>La 84cm light wind utilise un profil plut&ocirc;t fin.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-8.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-8.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Le 64 a une forme tr&egrave;s diff&eacute;rente, avec un profil plus &eacute;pais</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-9.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-9.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>L\'ensemble est mont&eacute; sur le fuselage avec des entretoises en plastiques. Ces pi&egrave;ces servent &eacute;galement de r&eacute;glage d\'angle puisque Alpine livre le foil avec plusieurs cales &agrave; la fois pour l\'aile et pour le stab. Les cales poss&egrave;dent des petits t&eacute;tons de centrage qui sont bien pratiques &agrave; l\'usage. Le tout est assembl&eacute; avec des Torx T30, la cl&eacute; &eacute;tant fournie.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-10.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-10.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>&nbsp;</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-11.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-11.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>
 <p>Le stab, quant &agrave; lui, est un mod&egrave;le ultra fin, qui va certainement occasionner bine peu de train&eacute;e. Il faudra cependant en prendre soin vu sa finesse, mais c\'est aussi une tr&egrave;s jolie pi&egrave;ce.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-12.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621" /></p>',
+<p><img class="img-fluid" src="/storage/photos/1/2018-04/alpinefoil-a1-alu-2018-12.jpg" alt="AlpineFoil A1 Aluminium" width="900" height="621"></p>',
 'test_equipment' => NULL,
 'test_duration' => NULL,
 'test_conditions' => NULL,
 'test_place' => NULL,
-'created_at' => '2022-03-10 20:56:04',
-'updated_at' => '2022-03-10 20:56:04',
+'created_at' => '2018-03-10 20:56:04',
+'updated_at' => '2022-04-08 23:28:25',
 ),
 124 => 
 array (
@@ -4933,29 +4933,29 @@ array (
 'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<p>Pour 2020, AlpineFoil nous propose 2 nouvelles d&eacute;clinaisons de son windfoil carbone A1 : le "Sport" et le "Race". Ces 2 nouveaux mod&egrave;les sont bas&eacute;s sur un mat de 97cm, notablement optimis&eacute; pour la glisse avec avec un profil plus fin (13.9mm en t&ecirc;te contre 16mm) que sur le A1 original.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-1.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-1.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>Sur ces 2 mod&egrave;les, l\'&eacute;chantillonnage a &eacute;t&eacute; revu par rapport au A1 avec, notemment, des quantit&eacute;s de carbone haut module (M40J et autres) bien plus importantes. Ceci a pour objectif de compenser la plus faible &eacute;paisseur, et la plus grande longueur de mat, pour conserver une raideur optimale.&nbsp;</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-2.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-2.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>Le mod&egrave;le Sport est destin&eacute;s aux amateurs sportifs, qui veulent d&eacute;couvrir des sensations de glisse sup&eacute;rieures au A1. La mod&egrave;le Race, destin&eacute; aux experts, est g&eacute;om&eacute;triquement identique, mais profite d\'un mat beaoucoup plus raide pour plus de contr&ocirc;le dans le vent, y compris avec les planches larges et les plus grands fuselages.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-9.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-9.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>Sur ce nouvel A1 Sport, le fuselage a &eacute;t&eacute; &eacute;galement revu par rapport au A1 \'standard\'. La longueur totale est identique, mais l\'aile a &eacute;t&eacute; recul&eacute;e de 10mm par rapport au mod&egrave;le 2019. C\'est assez visible sur la photo ci -dessus.</p>
 <p>Le fuselage a &eacute;t&eacute; &eacute;galement &eacute;paissi pour ajouter de la raideur. C\'est en particulier tr&egrave;s visible autour de la jonction mat / fuselage (cf. photo ci dessous)</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>En regardant de pr&egrave;s, on remarquera aussi que la queue du Sport a &eacute;t&eacute; revue pour affiner les sorties d\'eau.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-13.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-13.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>Pour finir avec le jeux des 7 diff&eacute;rences, les plus attentifs remarqueront que l\'assise du talon a une nouvelle forme avec un &eacute;paississement plus marqu&eacute;, pour am&eacute;liorer le blocage de la platine carbone propos&eacute;e en option.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>De fa&ccedil;on tout &agrave; fait logique, la platine est &eacute;galement revue pour matcher avec ce nouveau talon:</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740"></p>
 <p>Vous remarquez &eacute;galement que cette derni&egrave;re est dissym&eacute;trique avec un c&ocirc;t&eacute; plus &eacute;pais que l\'autre. En fonction de son montage cela veut dire qu\'on va ajouter ou retirer 1&deg; environ d\'angle de rake. Je pr&eacute;cise qu\'il existe &eacute;galement une 2e platine en option avec un angle de 0.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870"></p>
 <p>Je ne pourrai pas terminer cette pr&eacute;sentation sans mettre en lumi&egrave;re l\'exceptionelle finition du A1 Sport ... dans la pure tradition AlpineFoil, et bien s&ucirc;r un point important &agrave; nos yeux : il est con&ccedil;u ET fabriqu&eacute; en France. A l\'instar des produits Lokefoil et AHD, choisir un foil AlpineFoil, c\'est &eacute;videmment soutenir nos artisans et industriels fran&ccedil;ais, qui font d\'&eacute;normes efforts pour propoer des produits ultra qualitatifs &agrave; des prix identiques aux productions asiatiques !</p>',
 'test_equipment' => NULL,
 'test_duration' => NULL,
 'test_conditions' => NULL,
 'test_place' => NULL,
-'created_at' => '2022-03-10 20:57:27',
-'updated_at' => '2022-03-10 20:57:27',
+'created_at' => '2020-03-10 20:57:27',
+'updated_at' => '2022-04-08 23:27:58',
 ),
 125 => 
 array (
@@ -4964,19 +4964,19 @@ array (
 'user_id' => 1,
 'title' => 'Présentation',
 'body' => '<div class="multi-col-2">
-<div><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_5063.jpg" alt="Alpinefoil A1 race" /></div>
+<div><img class="img-fluid" src="/storage/photos/1/2020-06/IMG_5063.jpg" alt="Alpinefoil A1 race"></div>
 <div>
 <p>Pour 2020, AlpineFoil nous propose 2 nouvelles d&eacute;clinaisons de son windfoil carbone A1 : le "Sport" et le "Race". Ces 2 nouveaux mod&egrave;les sont bas&eacute;s sur un mat de 97cm, notablement optimis&eacute; pour la glisse avec avec un profil plus fin (13.9mm en t&ecirc;te contre 16mm) que sur le A1 original.</p>
 <p>Sur ces 2 mod&egrave;les, l\'&eacute;chantillonnage a &eacute;t&eacute; revu par rapport au A1 avec, notemment, des quantit&eacute;s de carbone haut module (M40J et autres) bien plus importantes. Ceci a pour objectif de compenser la plus faible &eacute;paisseur, et la plus grande longueur de mat, pour conserver une raideur optimale. Les 2 mod&egrave;les sont d&eacute;sormais livr&eacute;s en standard avec l\'aile Regata 850.</p>
 <p>Le mod&egrave;le Race, destin&eacute; aux experts, est g&eacute;om&eacute;triquement identique, mais profite d\'un mat beaoucoup plus raide pour plus de contr&ocirc;le dans le vent, y compris avec les planches larges et les plus grands fuselages.</p>
 <p>Sur ce nouvel A1 Race, le fuselage a &eacute;t&eacute; &eacute;galement revu par rapport au A1 \'standard\'. La longueur totale passe &agrave; 125cm, ave une aile tr&egrave;s avanc&eacute;e pour un maxiumum de puissance.&nbsp;Le fuselage a &eacute;t&eacute; &eacute;galement &eacute;paissi pour ajouter de la raideur. C\'est en particulier tr&egrave;s visible autour de la jonction mat / fuselage (cf. photo ci dessous)</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-10.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>Pour finir avec le jeux des 7 diff&eacute;rences, les plus attentifs remarqueront que l\'assise du talon a une nouvelle forme avec un &eacute;paississement plus marqu&eacute;, pour am&eacute;liorer le blocage de la platine carbone propos&eacute;e en option.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-5.jpg" alt="Alpinefoil A1 Sport Carbone 2020"></p>
 <p>De fa&ccedil;on tout &agrave; fait logique, la platine est &eacute;galement revue pour matcher avec ce nouveau talon:</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-7.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="740"></p>
 <p>Vous remarquez &eacute;galement que cette derni&egrave;re est dissym&eacute;trique avec un c&ocirc;t&eacute; plus &eacute;pais que l\'autre. En fonction de son montage cela veut dire qu\'on va ajouter ou retirer 1&deg; environ d\'angle de rake. Je pr&eacute;cise qu\'il existe &eacute;galement une 2e platine en option avec un angle de 0.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-05/alpine_a1_sport_carbone_2020-6.jpg" alt="Alpinefoil A1 Sport Carbone 2020" width="1500" height="870"></p>
 <p>Je ne pourrai pas terminer cette pr&eacute;sentation sans mettre en lumi&egrave;re l\'exceptionelle finition du A1 Race ... dans la pure tradition AlpineFoil, et bien s&ucirc;r un point important &agrave; nos yeux : il est con&ccedil;u ET fabriqu&eacute; en France. A l\'instar des produits Lokefoil et AHD, choisir un foil AlpineFoil, c\'est &eacute;videmment soutenir nos artisans et industriels fran&ccedil;ais, qui font d\'&eacute;normes efforts pour propoer des produits ultra qualitatifs &agrave; des prix identiques aux productions asiatiques !</p>
 </div>
 </div>',
@@ -4984,8 +4984,8 @@ array (
 'test_duration' => NULL,
 'test_conditions' => NULL,
 'test_place' => NULL,
-'created_at' => '2022-03-10 20:58:14',
-'updated_at' => '2022-03-10 20:58:14',
+'created_at' => '2021-03-10 20:58:14',
+'updated_at' => '2022-04-08 23:18:15',
 ),
 126 => 
 array (
@@ -5019,7 +5019,7 @@ array (
 'title' => 'GEN2 : Le diable se cache dans les détails',
 'body' => '<div class="row">
 <div class="col-4">
-<p><img class="img-fluid" src="/storage/photos/5/2022-03/cwc.jpg" alt="" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-03/cwc.jpg" alt=""></p>
 </div>
 <div class="col-8">
 <h3>Contexte</h3>
@@ -5041,7 +5041,7 @@ array (
 <p>Sur le deuxi&egrave;me point (mat&eacute;riaux et structure), les plus observateurs remarqueront que les mats de IRIS X dit GEN2 n\'ont pas le m&ecirc;me aspect que les mats premi&egrave;re g&eacute;n&eacute;ration ... et ce n\'est pas un hazard : on ne voit plus les petits carr&eacute;s caract&eacute;ristiques d\'un tissus carbone en surface. Sans d&eacute;voiler les &eacute;volutions internes majeures de cette nouvelle construction, nous verrons que Phantom a r&eacute;ussi a offrir un ratio rigidit&eacute; &nbsp;/ &eacute;paisseur des profils en tr&egrave;s nette hausse par rapport &agrave; la version pr&eacute;c&eacute;dente.</p>
 </div>
 <div class="col-4">
-<p><img class="img-fluid" src="/storage/photos/5/2022-03/IMG_7972.jpeg" alt="" width="1200" height="707" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2022-03/IMG_7972.jpeg" alt="" width="1200" height="707"></p>
 </div>
 </div>
 <h3>Et sur l\'eau, quelle diff&eacute;rence ?</h3>
@@ -5057,13 +5057,13 @@ array (
 <h3>Bilan</h3>
 <p>Le tour de force de Phantom est donc d\'avoir r&eacute;ussi &agrave; augmenter sensiblement la rigidit&eacute;, tout en r&eacute;duisant notablement l\'&eacute;paisseur du profil. Sur les mod&egrave;les de s&eacute;rie, on est ainsi pass&eacute; de 14.3 &agrave; 13.5mm d\'&eacute;paisseur maxi sur la base du mat !! Autant vous dire que le gain de glisse n\'est pas juste un hazard.&nbsp;</p>
 <p>Le r&eacute;sultat de tout ceci, c\'est un foil encore plus agr&eacute;able &agrave; naviguer, sur lequel on est plus serain. Par rapport &agrave; la version pr&eacute;c&eacute;dente, j\'ai notablement am&eacute;lior&eacute; mes vitesses moyennes de navigation en s&eacute;curit&eacute; (plus de 2 knt), avec r&eacute;guli&egrave;rement des V10s au dessus des 28 knt au travers (je sais, c\'est pas &eacute;norme pour certains 😂, mais pour moi qui ne suis pas comp&eacute;titeur, c\'est d&eacute;j&agrave; pas mal .. et surtout, je ne me mets pas plein largue en limite de contr&ocirc;le pour le faire 🙃).&nbsp;</p>
-<p><img class="img-fluid" src="/storage/photos/5/2022-03/IMG_7973.jpeg" alt="" width="1200" height="707" /></p>',
+<p><img class="img-fluid" src="/storage/photos/1/2022-03/IMG_7973.jpeg" alt="" width="1200" height="707"></p>',
 'test_equipment' => 'IRIS X MKII 85, et voiles HG4 et IRIS X MKII',
 'test_duration' => 20,
 'test_conditions' => 'Un peu de tout',
 'test_place' => 'Almanarre',
 'created_at' => '2022-03-20 08:54:37',
-'updated_at' => '2022-03-22 09:21:54',
+'updated_at' => '2022-04-08 23:26:00',
 ),
 128 => 
 array (
@@ -5093,6 +5093,79 @@ array (
 'test_place' => 'Glissattitude',
 'created_at' => '2022-04-02 13:23:31',
 'updated_at' => '2022-04-07 19:26:16',
+),
+129 => 
+array (
+'id' => 137,
+'device_id' => 161,
+'user_id' => 1,
+'title' => 'Photos',
+'body' => '<p>Photos du mod&egrave;le de s&eacute;rie</p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0339.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0338.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0337.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0340.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0341.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0342.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0343.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0344.jpg" alt="AHD Combat foil 83"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0345.jpg" alt="AHD Combat foil 83"></p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2021-03-08 22:49:07',
+'updated_at' => '2022-04-08 22:51:46',
+),
+130 => 
+array (
+'id' => 138,
+'device_id' => 125,
+'user_id' => 1,
+'title' => 'Présentation',
+'body' => '<p>Conform&eacute;ment au cahier des charges intial, la IRIS X board est un flotteur compact (2m10), con&ccedil;u et adapt&eacute; &agrave; des tailles de voiles entre 5 et 8m2.</p>
+<p><img src="/storage/photos/1/2020-02/IMG_3097.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<p>Sa largeur hors tout est de 83cm, pour un OFO &agrave; 75cm (compatible avec la jaune racing jeune france).</p>
+<p><img src="/storage/photos/1/2020-02/IMG_3096.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<p>En terme de shape, on est sur une nouvelle g&eacute;n&eacute;ration de flotteurs qui int&egrave;grent des concepts 100% d&eacute;di&eacute;s au windfoil. Comme avec la voie trac&eacute;e par Exocet avec ses premi&egrave;res RF, on n\'est plus du tout sur des shapes de windsurf adapt&eacute;s au foil, mais bien sur des produits d&eacute;velopp&eacute;s &agrave; part enti&egrave;re autour de concepts sp&eacute;cifiques &agrave; notre pratique.&nbsp;</p>
+<p>Sur cette IRIS X, on va trouver</p>
+<ul>
+<ul>
+<li>un avant ovoide destin&eacute; &agrave; offrir une stabilisation a&eacute;rodynamique du flotteur</li>
+</ul>
+</ul>
+<p><img src="/storage/photos/1/2020-02/IMG_3094.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<ul>
+<ul>
+<li>des rails carr&eacute;s tr&egrave;s longs destin&eacute;s &agrave; limiter au maximum les coups de frein lors des touchettes de rail</li>
+</ul>
+</ul>
+<p><img src="/storage/photos/1/2020-02/IMG_3098.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<ul>
+<ul>
+<li>une forte &eacute;paisseur &agrave; l\'avant desin&eacute;e &agrave; porter les grandes voiles &agrave; l\'arr&ecirc;t, limiter l\'enfournement, participer &agrave; l\'effet a&eacute;rodynamique</li>
+<li>un pont \'progressif\' (plat l&eacute;g&egrave;rement galb&eacute;) destin&eacute; &agrave; maximiser le contr&ocirc;le et la puissance de conduite</li>
+</ul>
+</ul>
+<p><img src="/storage/photos/1/2020-02/IMG_3095.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<ul>
+<ul>
+<li>des straps arri&egrave;res assez rentr&eacute;s pour offrir un max de confort et de s&eacute;curit&eacute; aux allures portantes</li>
+<li>des cuts de taille mod&eacute;r&eacute;e (en particulier en profondeur) destin&eacute;s &agrave; garder de la glisse lors des touchettes, mais sans compromettre l\'appui et la stabilit&eacute; lors du pumping</li>
+</ul>
+</ul>
+<p><img src="/storage/photos/1/2020-02/IMG_3093.jpg" alt="Phantom IRIS X flotteur freerace 83 2020"></p>
+<ul>
+<li>un arri&egrave;re pas trop &eacute;pais pour garder du contr&ocirc;le dans le vent</li>
+<li>un rails de pied de mat abaiss&eacute; pour &eacute;viter les effets de roulis malgr&eacute; la porte &eacute;paisseur du flotteur</li>
+</ul>
+<p>Bref, pour ceux qui suivent le d&eacute;veloppement de la discipline, vous retrouverez ici l\'ensembles des ingr&eacute;dients qui constituent aujourd\'hui les solutions connues pour faire un flotteur d&eacute;di&eacute; performant et agr&eacute;able. Reste &agrave; valider ceci sur l\'eau pour v&eacute;rifier si tous ces &eacute;l&eacute;ments s\'associent de fa&ccedil;on homog&egrave;ne.&nbsp;</p>',
+'test_equipment' => NULL,
+'test_duration' => NULL,
+'test_conditions' => NULL,
+'test_place' => NULL,
+'created_at' => '2020-05-04 17:27:15',
+'updated_at' => '2022-04-08 23:05:55',
 ),
 ));
         

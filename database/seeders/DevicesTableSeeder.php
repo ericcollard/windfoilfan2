@@ -38,7 +38,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => NULL,
-                'programme_start' => 1.0,
+                'programme_start' => 3.0,
                 'programme_end' => 6.0,
                 'views' => 778,
                 'last_ip' => NULL,
@@ -63,8 +63,8 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => NULL,
-                'programme_start' => 4.0,
-                'programme_end' => 6.0,
+                'programme_start' => 2.0,
+                'programme_end' => 4.0,
                 'views' => 947,
                 'last_ip' => NULL,
                 'created_at' => '2019-09-15 18:57:16',
@@ -91,7 +91,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u39163s1-loke-foil-windfoil-lk-race-loke-foil-2020.html',
-                'programme_start' => 8.0,
+                'programme_start' => 6.0,
                 'programme_end' => 10.0,
                 'views' => 1724,
                 'last_ip' => NULL,
@@ -115,7 +115,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u39055s1-starboard-supercruiser-alu-starboard-2020.html',
-                'programme_start' => 2.0,
+                'programme_start' => 1.0,
                 'programme_end' => 4.0,
                 'views' => 1367,
                 'last_ip' => NULL,
@@ -137,7 +137,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => NULL,
-                'programme_start' => 5.0,
+                'programme_start' => 4.0,
                 'programme_end' => 7.0,
                 'views' => 1,
                 'last_ip' => NULL,
@@ -165,12 +165,12 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u38754s1-gaastra-mach-1-gaastra-2019.html',
-                'programme_start' => 1.0,
-                'programme_end' => 5.0,
-                'views' => 1581,
-                'last_ip' => NULL,
+                'programme_start' => 0.0,
+                'programme_end' => 4.0,
+                'views' => 1582,
+                'last_ip' => '207.46.13.71',
                 'created_at' => '2019-07-03 18:57:17',
-                'updated_at' => '2022-03-20 20:52:40',
+                'updated_at' => '2022-04-09 08:26:18',
             ),
             6 => 
             array (
@@ -227,12 +227,12 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u40938s1-phantom-iris-x-sport-set-phantom-2020.html',
-                'programme_start' => 6.0,
-                'programme_end' => 9.0,
-                'views' => 4587,
-                'last_ip' => '::1',
+                'programme_start' => 4.0,
+                'programme_end' => 10.0,
+                'views' => 4589,
+                'last_ip' => '66.249.70.42',
                 'created_at' => '2020-06-05 18:57:17',
-                'updated_at' => '2022-03-23 22:34:40',
+                'updated_at' => '2022-04-09 12:25:21',
             ),
             8 => 
             array (
@@ -249,8 +249,8 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-iris-f-foil.html',
                 'link_product' => NULL,
-                'programme_start' => 6.0,
-                'programme_end' => 9.0,
+                'programme_start' => 4.0,
+                'programme_end' => 7.0,
                 'views' => 1180,
                 'last_ip' => NULL,
                 'created_at' => '2019-04-15 18:57:17',
@@ -300,7 +300,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u32580s1-zeeko-amplifier-deep-tuttle-zeeko-2019.html',
-                'programme_start' => 4.0,
+                'programme_start' => 3.0,
                 'programme_end' => 6.0,
                 'views' => 1265,
                 'last_ip' => NULL,
@@ -336,8 +336,8 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-foil-a1-2019.html',
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u35849s1-alpinefoil-a1-carbon-alpinefoil-2019.html',
-                'programme_start' => 6.0,
-                'programme_end' => 8.0,
+                'programme_start' => 4.0,
+                'programme_end' => 7.0,
                 'views' => 830,
                 'last_ip' => NULL,
                 'created_at' => '2019-03-04 19:57:17',
@@ -366,12 +366,12 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-presentation-test-f-4-2019.html',
                 'link_product' => NULL,
-                'programme_start' => 7.0,
+                'programme_start' => 6.0,
                 'programme_end' => 10.0,
-                'views' => 1598,
-                'last_ip' => '::1',
+                'views' => 1599,
+                'last_ip' => '88.163.167.153',
                 'created_at' => '2018-12-03 19:57:17',
-                'updated_at' => '2022-03-24 21:24:05',
+                'updated_at' => '2022-04-08 23:28:59',
             ),
             13 => 
             array (
@@ -388,7 +388,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-sword-taaroa-2019.html',
-                'programme_start' => 5.0,
+                'programme_start' => 4.0,
                 'programme_end' => 7.0,
                 'views' => 0,
                 'last_ip' => NULL,
@@ -410,7 +410,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-sword-taaroa-2019.html',
-                'programme_start' => 5.0,
+                'programme_start' => 4.0,
                 'programme_end' => 7.0,
                 'views' => 0,
                 'last_ip' => NULL,
@@ -457,7 +457,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37181s1-taaroa-noe-97-uhm-taaroa-2020.html',
-                'programme_start' => 5.0,
+                'programme_start' => 4.0,
                 'programme_end' => 7.0,
                 'views' => 3322,
                 'last_ip' => NULL,
@@ -481,7 +481,7 @@ class DevicesTableSeeder extends Seeder
                 'link_test' => NULL,
                 'link_presentation' => NULL,
                 'link_product' => NULL,
-                'programme_start' => 5.0,
+                'programme_start' => 4.0,
                 'programme_end' => 7.0,
                 'views' => 5,
                 'last_ip' => NULL,
@@ -504,7 +504,7 @@ class DevicesTableSeeder extends Seeder
                 'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-sword-wf.html',
                 'link_product' => 'https://marseille.glissattitude.com/windfoil/u37960s1-taaroa-evo-97-freerace-taaroa-2019.html',
                 'programme_start' => 4.0,
-                'programme_end' => 6.0,
+                'programme_end' => 7.0,
                 'views' => 0,
                 'last_ip' => NULL,
                 'created_at' => '2018-11-01 19:57:17',
@@ -547,7 +547,7 @@ class DevicesTableSeeder extends Seeder
             'link_test' => NULL,
             'link_presentation' => NULL,
             'link_product' => 'https://marseille.glissattitude.com/windfoil/u36486s1-taaroa-noe-97-freeride-taaroa-2020.html',
-            'programme_start' => 3.0,
+            'programme_start' => 2.0,
             'programme_end' => 5.0,
             'views' => 779,
             'last_ip' => NULL,
@@ -590,7 +590,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36239s1-taaroa-noe-80-taaroa-2020.html',
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 5.0,
         'views' => 954,
         'last_ip' => NULL,
@@ -623,12 +623,12 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-np-rsflight-et-glide.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37855s1-divers-affuteuse-razor-tune-2-meules-divers.html',
-        'programme_start' => 2.0,
-        'programme_end' => 4.0,
-        'views' => 1095,
-        'last_ip' => NULL,
+        'programme_start' => 0.0,
+        'programme_end' => 3.0,
+        'views' => 1096,
+        'last_ip' => '66.249.70.42',
         'created_at' => '2018-08-24 18:57:17',
-        'updated_at' => '2022-03-20 20:52:41',
+        'updated_at' => '2022-04-09 12:33:31',
     ),
     21 => 
     array (
@@ -654,8 +654,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-np-rsflight-et-glide.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u37196s1-neil-pryde-rsflight-alu-evo-neil-pryde-2019.html',
-        'programme_start' => 3.0,
-        'programme_end' => 5.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 2,
         'last_ip' => NULL,
         'created_at' => '2018-12-24 19:57:17',
@@ -706,8 +706,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34767s1-afs-afs-wind-105-afs-2019.html',
-        'programme_start' => 7.0,
-        'programme_end' => 9.0,
+        'programme_start' => 4.5,
+        'programme_end' => 8.0,
         'views' => 543,
         'last_ip' => NULL,
         'created_at' => '2018-06-02 18:57:17',
@@ -737,12 +737,12 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-presentation-a1-2018-alu-et-carbone.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u35941s1-alpinefoil-a1-aluminium-alpinefoil-2019.html',
-        'programme_start' => 4.0,
+        'programme_start' => 2.0,
         'programme_end' => 6.0,
-        'views' => 627,
-        'last_ip' => NULL,
+        'views' => 628,
+        'last_ip' => '88.163.167.153',
         'created_at' => '2018-05-30 18:57:17',
-        'updated_at' => '2022-03-20 20:52:41',
+        'updated_at' => '2022-04-08 23:28:26',
     ),
     25 => 
     array (
@@ -768,8 +768,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-presentation-du-loke-lk1.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34705s1-loke-foil-windfoil-lk1-loke-foil-2019.html',
-        'programme_start' => 3.0,
-        'programme_end' => 6.0,
+        'programme_start' => 0.0,
+        'programme_end' => 4.0,
         'views' => 1895,
         'last_ip' => NULL,
         'created_at' => '2018-04-25 18:57:17',
@@ -790,8 +790,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34769s1-afs-afs-wind-85-afs-2019.html',
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 0,
         'last_ip' => NULL,
         'created_at' => '2018-04-28 18:57:17',
@@ -821,8 +821,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-des-af-85-et-af-95.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u34769s1-afs-afs-wind-85-afs-2019.html',
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 1158,
         'last_ip' => NULL,
         'created_at' => '2019-09-15 18:57:17',
@@ -900,7 +900,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33415s1-starboard-gt-alu-starboard-2019.html',
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 5.0,
         'views' => 717,
         'last_ip' => NULL,
@@ -922,7 +922,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33415s1-starboard-gt-alu-starboard-2019.html',
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 5.0,
         'views' => 0,
         'last_ip' => NULL,
@@ -1061,7 +1061,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-h10-evo-presentation.html',
         'link_product' => NULL,
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 4.0,
         'views' => 432,
         'last_ip' => NULL,
@@ -1105,8 +1105,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/deballage-windfoil-envol-de-loke.html',
         'link_product' => NULL,
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 479,
         'last_ip' => NULL,
         'created_at' => '2017-10-18 18:57:17',
@@ -1127,8 +1127,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/deballage-windfoil-envol-de-loke.html',
         'link_product' => NULL,
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 0,
         'last_ip' => NULL,
         'created_at' => '2017-10-18 18:57:17',
@@ -1149,8 +1149,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 5.0,
-        'programme_end' => 7.0,
+        'programme_start' => 2.0,
+        'programme_end' => 6.0,
         'views' => 0,
         'last_ip' => NULL,
         'created_at' => '2017-08-22 18:57:17',
@@ -1171,12 +1171,12 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u35048s1-starboard-gts-carbon-foil-starboard-2019.html',
-        'programme_start' => 5.0,
-        'programme_end' => 7.0,
-        'views' => 538,
-        'last_ip' => NULL,
+        'programme_start' => 4.0,
+        'programme_end' => 6.0,
+        'views' => 539,
+        'last_ip' => '157.55.39.13',
         'created_at' => '2017-07-26 18:57:17',
-        'updated_at' => '2022-03-20 20:52:41',
+        'updated_at' => '2022-04-09 04:09:39',
     ),
     43 => 
     array (
@@ -1193,7 +1193,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-profoil-f1.html',
         'link_product' => NULL,
-        'programme_start' => 5.0,
+        'programme_start' => 4.0,
         'programme_end' => 7.0,
         'views' => 808,
         'last_ip' => NULL,
@@ -1215,7 +1215,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-du-stb-slalom.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u32570s1-starboard-race-carbon-foil-starboard-2019.html',
-        'programme_start' => 7.0,
+        'programme_start' => 4.0,
         'programme_end' => 10.0,
         'views' => 1059,
         'last_ip' => NULL,
@@ -1259,8 +1259,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-et-montage-bp-rsflight-al.html',
         'link_product' => NULL,
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 4.0,
         'views' => 543,
         'last_ip' => NULL,
         'created_at' => '2017-05-03 18:57:17',
@@ -1281,12 +1281,12 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 5.0,
+        'programme_start' => 4.0,
         'programme_end' => 7.0,
-        'views' => 383,
-        'last_ip' => NULL,
+        'views' => 384,
+        'last_ip' => '40.77.167.51',
         'created_at' => '2017-05-10 18:57:17',
-        'updated_at' => '2022-03-20 20:52:41',
+        'updated_at' => '2022-04-09 08:10:00',
     ),
     48 => 
     array (
@@ -1303,8 +1303,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 4.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 5.0,
         'views' => 0,
         'last_ip' => NULL,
         'created_at' => '2017-04-24 18:57:17',
@@ -1325,8 +1325,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-rsflight-f4-infographie.html',
         'link_product' => NULL,
-        'programme_start' => 5.0,
-        'programme_end' => 6.0,
+        'programme_start' => 4.0,
+        'programme_end' => 8.0,
         'views' => 649,
         'last_ip' => '::1',
         'created_at' => '2017-04-10 18:57:17',
@@ -1480,7 +1480,7 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-vini-2017.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u28106s1-horue-vini-pro-horue-2019.html',
         'programme_start' => 0.0,
-        'programme_end' => 4.0,
+        'programme_end' => 3.0,
         'views' => 665,
         'last_ip' => NULL,
         'created_at' => '2016-05-15 18:57:17',
@@ -1619,8 +1619,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 2.0,
-        'programme_end' => 4.0,
+        'programme_start' => 0.0,
+        'programme_end' => 3.0,
         'views' => 301,
         'last_ip' => NULL,
         'created_at' => '2018-09-25 18:57:17',
@@ -1642,11 +1642,11 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/flotteur/u28111s1-horue-tiny-carbon-horue-2019.html',
         'programme_start' => 0.0,
-        'programme_end' => 4.0,
-        'views' => 705,
-        'last_ip' => NULL,
+        'programme_end' => 3.0,
+        'views' => 706,
+        'last_ip' => '86.194.105.233',
         'created_at' => '2016-05-15 18:57:17',
-        'updated_at' => '2022-03-20 20:52:41',
+        'updated_at' => '2022-04-09 10:44:59',
     ),
     64 => 
     array (
@@ -1663,8 +1663,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38483s1-exocet-freefoil-ast-exocet-2019.html',
-        'programme_start' => 2.0,
-        'programme_end' => 5.0,
+        'programme_start' => 1.0,
+        'programme_end' => 4.0,
         'views' => 1441,
         'last_ip' => NULL,
         'created_at' => '2019-06-21 18:57:17',
@@ -1685,8 +1685,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38796s1-tabou-airide-ltd-tabou-2020.html',
-        'programme_start' => 5.0,
-        'programme_end' => 8.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 1604,
         'last_ip' => NULL,
         'created_at' => '2019-04-23 18:57:17',
@@ -1707,8 +1707,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 2.0,
-        'programme_end' => 4.0,
+        'programme_start' => 0.0,
+        'programme_end' => 3.0,
         'views' => 419,
         'last_ip' => NULL,
         'created_at' => '2017-08-21 18:57:17',
@@ -1729,8 +1729,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38430s1-exocet-freefoil-carbone-exocet-2019.html',
-        'programme_start' => 3.0,
-        'programme_end' => 6.0,
+        'programme_start' => 1.0,
+        'programme_end' => 4.0,
         'views' => 1404,
         'last_ip' => NULL,
         'created_at' => '2019-05-06 18:57:17',
@@ -1751,7 +1751,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31525s1-jp-australia-hydrofoil-board-pro-edition-jp-australia-2019.html',
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 6.0,
         'views' => 1464,
         'last_ip' => NULL,
@@ -1773,8 +1773,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33670s1-starboard-foil-board-flex-balsa-starboard-2019.html',
-        'programme_start' => 3.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 5.0,
         'views' => 1140,
         'last_ip' => NULL,
         'created_at' => '2018-03-28 18:57:17',
@@ -1795,8 +1795,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36311s1-horue-airtime-verre-carbone-horue-2019.html',
-        'programme_start' => 5.0,
-        'programme_end' => 8.0,
+        'programme_start' => 3.0,
+        'programme_end' => 6.0,
         'views' => 903,
         'last_ip' => NULL,
         'created_at' => '2018-08-17 18:57:17',
@@ -1817,7 +1817,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31525s1-jp-australia-hydrofoil-board-pro-edition-jp-australia-2019.html',
-        'programme_start' => 3.0,
+        'programme_start' => 2.0,
         'programme_end' => 6.0,
         'views' => 582,
         'last_ip' => NULL,
@@ -1839,8 +1839,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 6.0,
-        'programme_end' => 8.0,
+        'programme_start' => 3.0,
+        'programme_end' => 5.0,
         'views' => 391,
         'last_ip' => NULL,
         'created_at' => '2016-12-12 19:57:17',
@@ -1861,7 +1861,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 5.0,
+        'programme_start' => 4.0,
         'programme_end' => 8.0,
         'views' => 608,
         'last_ip' => NULL,
@@ -1883,8 +1883,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u32524s1-elix-f1x-elix-2018.html',
-        'programme_start' => 5.0,
-        'programme_end' => 8.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 458,
         'last_ip' => NULL,
         'created_at' => '2017-06-26 18:57:17',
@@ -1905,8 +1905,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u33670s1-starboard-foil-board-flex-balsa-starboard-2019.html',
-        'programme_start' => 6.0,
-        'programme_end' => 9.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 838,
         'last_ip' => NULL,
         'created_at' => '2018-07-28 18:57:17',
@@ -1927,8 +1927,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u31526s1-jp-australia-hydrofoil-board-fws-jp-australia-2019.html',
-        'programme_start' => 8.0,
-        'programme_end' => 10.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 445,
         'last_ip' => NULL,
         'created_at' => '2019-03-02 19:57:17',
@@ -1949,7 +1949,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 5.0,
+        'programme_start' => 4.0,
         'programme_end' => 7.0,
         'views' => 174,
         'last_ip' => NULL,
@@ -1971,7 +1971,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 9.0,
+        'programme_start' => 8.0,
         'programme_end' => 10.0,
         'views' => 259,
         'last_ip' => NULL,
@@ -2081,8 +2081,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 7.0,
-        'programme_end' => 9.0,
+        'programme_start' => 8.0,
+        'programme_end' => 10.0,
         'views' => 548,
         'last_ip' => NULL,
         'created_at' => '2018-03-28 18:57:17',
@@ -2237,10 +2237,10 @@ class DevicesTableSeeder extends Seeder
         'link_product' => NULL,
         'programme_start' => 2.0,
         'programme_end' => 4.0,
-        'views' => 132,
-        'last_ip' => NULL,
+        'views' => 133,
+        'last_ip' => '157.55.39.13',
         'created_at' => '2018-09-25 18:57:17',
-        'updated_at' => '2022-03-20 20:52:42',
+        'updated_at' => '2022-04-09 03:43:26',
     ),
     91 => 
     array (
@@ -2312,7 +2312,7 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38907s1-starboard-foil-x-board-starlite-starboard-2020.html',
         'programme_start' => 2.0,
-        'programme_end' => 5.0,
+        'programme_end' => 4.0,
         'views' => 2158,
         'last_ip' => NULL,
         'created_at' => '2020-03-22 22:53:39',
@@ -2344,12 +2344,12 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-deballage-bullet-1.html',
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u40089s1-zeeko-bullet-v1-zeeko-2020.html',
-        'programme_start' => 5.0,
+        'programme_start' => 4.0,
         'programme_end' => 8.0,
-        'views' => 3966,
-        'last_ip' => NULL,
+        'views' => 3968,
+        'last_ip' => '81.66.94.96',
         'created_at' => '2020-03-30 16:14:00',
-        'updated_at' => '2022-03-20 20:52:42',
+        'updated_at' => '2022-04-09 01:47:14',
     ),
     95 => 
     array (
@@ -2368,8 +2368,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 1.0,
-        'programme_end' => 4.0,
+        'programme_start' => 0.0,
+        'programme_end' => 3.0,
         'views' => 428,
         'last_ip' => NULL,
         'created_at' => '2017-04-06 12:06:44',
@@ -2392,8 +2392,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 3.0,
-        'programme_end' => 7.0,
+        'programme_start' => 2.0,
+        'programme_end' => 6.0,
         'views' => 447,
         'last_ip' => NULL,
         'created_at' => '2017-08-06 12:12:13',
@@ -2427,8 +2427,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => NULL,
-        'programme_start' => 5.0,
-        'programme_end' => 8.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 271,
         'last_ip' => NULL,
         'created_at' => '2017-08-06 12:17:42',
@@ -2455,8 +2455,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windsurf/u40382s1-xo-sail-vega-xo-sail-2020.html',
-        'programme_start' => 3.0,
-        'programme_end' => 6.0,
+        'programme_start' => 2.0,
+        'programme_end' => 5.0,
         'views' => 1232,
         'last_ip' => NULL,
         'created_at' => '2019-11-06 13:41:14',
@@ -2501,8 +2501,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => 'https://marseille.glissattitude.com/blog/windfoil-test-rig.html',
         'link_product' => NULL,
-        'programme_start' => 6.0,
-        'programme_end' => 9.0,
+        'programme_start' => 4.0,
+        'programme_end' => 7.0,
         'views' => 476,
         'last_ip' => NULL,
         'created_at' => '2018-06-21 12:54:14',
@@ -2534,7 +2534,7 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => NULL,
         'link_product' => NULL,
         'programme_start' => 1.0,
-        'programme_end' => 5.0,
+        'programme_end' => 4.0,
         'views' => 739,
         'last_ip' => NULL,
         'created_at' => '2018-07-27 13:12:56',
@@ -2563,7 +2563,7 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => NULL,
         'link_product' => NULL,
         'programme_start' => 1.0,
-        'programme_end' => 5.0,
+        'programme_end' => 4.0,
         'views' => 664,
         'last_ip' => NULL,
         'created_at' => '2018-09-04 13:18:33',
@@ -2619,7 +2619,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38332s1-severn-hyperglide-2-severn-2019.html',
-        'programme_start' => 7.0,
+        'programme_start' => 8.0,
         'programme_end' => 10.0,
         'views' => 690,
         'last_ip' => NULL,
@@ -2649,7 +2649,7 @@ class DevicesTableSeeder extends Seeder
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u36492s1-duotone-f-type-duotone-2020.html',
         'programme_start' => 1.0,
-        'programme_end' => 5.0,
+        'programme_end' => 4.0,
         'views' => 707,
         'last_ip' => NULL,
         'created_at' => '2018-09-21 22:00:00',
@@ -2678,8 +2678,8 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38991s1-gaastra-airride-gaastra-2020.html',
-        'programme_start' => 3.0,
-        'programme_end' => 6.0,
+        'programme_start' => 1.0,
+        'programme_end' => 4.0,
         'views' => 1028,
         'last_ip' => NULL,
         'created_at' => '2019-09-30 22:00:00',
@@ -2708,7 +2708,7 @@ class DevicesTableSeeder extends Seeder
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u38893s1-loft-skyblade-loft-2020.html',
-        'programme_start' => 6.0,
+        'programme_start' => 7.0,
         'programme_end' => 10.0,
         'views' => 902,
         'last_ip' => NULL,
@@ -2724,7 +2724,11 @@ class DevicesTableSeeder extends Seeder
         'category_id' => 2,
         'brand_id' => 78,
         'status' => 'Published',
-        'body' => '<p>Apr&egrave;s les foils puis les voiles, la marque Phantom continue &agrave; travailler sur l\'&eacute;volution du mat&eacute;riel de windfoil. Malgr&eacute; la petite taille de cette soci&eacute;t&eacute;, et un certain nombre d\'h&eacute;sitations sur le c&ocirc;t&eacute; commercial, ces passionn&eacute;s ne l&egrave;vent pas le pied sur le d&eacute;veloppement.</p>
+        'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/phantom_iris_x_83_pro_2021.png" alt="IRIS X 83" width="500" height="500"></div>
+<div class="col-9">
+<p>Apr&egrave;s les foils puis les voiles, la marque Phantom continue &agrave; travailler sur l\'&eacute;volution du mat&eacute;riel de windfoil. Malgr&eacute; la petite taille de cette soci&eacute;t&eacute;, et un certain nombre d\'h&eacute;sitations sur le c&ocirc;t&eacute; commercial, ces passionn&eacute;s ne l&egrave;vent pas le pied sur le d&eacute;veloppement.</p>
 <p>On passe donc aujourd\'hui aux flotteurs, et c\'est Nicolas GOYARD qui s\'est, cette fois, mis &agrave; la planche &agrave; dessin (ou plut&ocirc;t &agrave; l\'ordinateur). Cela fait un bon moment que l\'on &eacute;voquait un certain nombre de concepts avec ce passion&eacute; de d&eacute;veloppement, et ils s\'est donc finalement fait plaisir en cr&eacute;ant son propre shape afin de mettre en oeuvre ses id&eacute;es.</p>
 <p>4 flotteurs sont au programme :</p>
 <ul>
@@ -2733,55 +2737,20 @@ class DevicesTableSeeder extends Seeder
 <li>une IRIS X, d&eacute;di&eacute;e au programme foil FreeRace</li>
 <li>une IRIS Z&nbsp;, d&eacute;di&eacute;e au programme foil freeride</li>
 </ul>
-<h2>Pr&eacute;sentation</h2>
-<p>Conform&eacute;ment au cahier des charges intial, la IRIS X board est un flotteur compact (2m10), con&ccedil;u et adapt&eacute; &agrave; des tailles de voiles entre 5 et 8m2.</p>
-<p><img src="/storage/photos/1/2020-02/IMG_3097.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<p>Sa largeur hors tout est de 83cm, pour un OFO &agrave; 75cm (compatible avec la jaune racing jeune france).</p>
-<p><img src="/storage/photos/1/2020-02/IMG_3096.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<p>En terme de shape, on est sur une nouvelle g&eacute;n&eacute;ration de flotteurs qui int&egrave;grent des concepts 100% d&eacute;di&eacute;s au windfoil. Comme avec la voie trac&eacute;e par Exocet avec ses premi&egrave;res RF, on n\'est plus du tout sur des shapes de windsurf adapt&eacute;s au foil, mais bien sur des produits d&eacute;velopp&eacute;s &agrave; part enti&egrave;re autour de concepts sp&eacute;cifiques &agrave; notre pratique.&nbsp;</p>
-<p>Sur cette IRIS X, on va trouver</p>
-<ul>
-<ul>
-<li>un avant ovoide destin&eacute; &agrave; offrir une stabilisation a&eacute;rodynamique du flotteur</li>
-</ul>
-</ul>
-<p><img src="/storage/photos/1/2020-02/IMG_3094.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<ul>
-<ul>
-<li>des rails carr&eacute;s tr&egrave;s longs destin&eacute;s &agrave; limiter au maximum les coups de frein lors des touchettes de rail</li>
-</ul>
-</ul>
-<p><img src="/storage/photos/1/2020-02/IMG_3098.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<ul>
-<ul>
-<li>une forte &eacute;paisseur &agrave; l\'avant desin&eacute;e &agrave; porter les grandes voiles &agrave; l\'arr&ecirc;t, limiter l\'enfournement, participer &agrave; l\'effet a&eacute;rodynamique</li>
-<li>un pont \'progressif\' (plat l&eacute;g&egrave;rement galb&eacute;) destin&eacute; &agrave; maximiser le contr&ocirc;le et la puissance de conduite</li>
-</ul>
-</ul>
-<p><img src="/storage/photos/1/2020-02/IMG_3095.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<ul>
-<ul>
-<li>des straps arri&egrave;res assez rentr&eacute;s pour offrir un max de confort et de s&eacute;curit&eacute; aux allures portantes</li>
-<li>des cuts de taille mod&eacute;r&eacute;e (en particulier en profondeur) destin&eacute;s &agrave; garder de la glisse lors des touchettes, mais sans compromettre l\'appui et la stabilit&eacute; lors du pumping</li>
-</ul>
-</ul>
-<p><img src="/storage/photos/1/2020-02/IMG_3093.jpg" alt="Phantom IRIS X flotteur freerace 83 2020" /></p>
-<ul>
-<li>un arri&egrave;re pas trop &eacute;pais pour garder du contr&ocirc;le dans le vent</li>
-<li>un rails de pied de mat abaiss&eacute; pour &eacute;viter les effets de roulis malgr&eacute; la porte &eacute;paisseur du flotteur</li>
-</ul>
-<p>Bref, pour ceux qui suivent le d&eacute;veloppement de la discipline, vous retrouverez ici l\'ensembles des ingr&eacute;dients qui constituent aujourd\'hui les solutions connues pour faire un flotteur d&eacute;di&eacute; performant et agr&eacute;able. Reste &agrave; valider ceci sur l\'eau pour v&eacute;rifier si tous ces &eacute;l&eacute;ments s\'associent de fa&ccedil;on homog&egrave;ne.&nbsp;</p>',
+</div>
+</div>
+</div>',
         'year' => 2020,
         'price' => NULL,
         'link_test' => NULL,
         'link_presentation' => NULL,
         'link_product' => 'https://marseille.glissattitude.com/windfoil/u40559s1-phantom-iris-x-board-phantom-2021.html',
-        'programme_start' => 6.0,
-        'programme_end' => 9.0,
-        'views' => 4511,
-        'last_ip' => NULL,
+        'programme_start' => 5.0,
+        'programme_end' => 8.0,
+        'views' => 4512,
+        'last_ip' => '88.163.167.153',
         'created_at' => '2020-06-03 17:24:58',
-        'updated_at' => '2022-03-20 20:52:42',
+        'updated_at' => '2022-04-08 23:04:33',
     ),
     109 => 
     array (
@@ -2895,8 +2864,8 @@ class DevicesTableSeeder extends Seeder
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u36356s1-jp-australia-hydrofoil-board-es-jp-australia-2020.html',
-    'programme_start' => 4.0,
-    'programme_end' => 7.0,
+    'programme_start' => 2.0,
+    'programme_end' => 5.0,
     'views' => 1298,
     'last_ip' => NULL,
     'created_at' => '2020-04-06 18:40:30',
@@ -2925,8 +2894,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40386s1-phantom-iris-z-phantom-2020.html',
-    'programme_start' => 3.0,
-    'programme_end' => 6.0,
+    'programme_start' => 2.0,
+    'programme_end' => 4.0,
     'views' => 3335,
     'last_ip' => NULL,
     'created_at' => '2020-04-06 18:46:04',
@@ -2980,8 +2949,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => 3.0,
-    'programme_end' => 6.0,
+    'programme_start' => 2.0,
+    'programme_end' => 4.0,
     'views' => 4,
     'last_ip' => '::1',
     'created_at' => '2020-04-06 20:15:55',
@@ -3028,11 +2997,11 @@ array (
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34454s1-exocet-rf-foil-board-carbon-exocet-2020.html',
     'programme_start' => 4.0,
-    'programme_end' => 8.0,
-    'views' => 6400,
-    'last_ip' => NULL,
+    'programme_end' => 7.0,
+    'views' => 6404,
+    'last_ip' => '176.180.88.235',
     'created_at' => '2020-04-08 14:16:00',
-    'updated_at' => '2022-03-20 20:52:42',
+    'updated_at' => '2022-04-10 15:44:45',
 ),
 115 => 
 array (
@@ -3063,8 +3032,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => NULL,
-    'programme_end' => 4.0,
+    'programme_start' => 0.0,
+    'programme_end' => 3.0,
     'views' => 2514,
     'last_ip' => NULL,
     'created_at' => '2020-04-09 07:20:17',
@@ -3173,7 +3142,7 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => NULL,
+    'programme_start' => 0.0,
     'programme_end' => 3.0,
     'views' => 1936,
     'last_ip' => NULL,
@@ -3197,10 +3166,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40223s1-alpinefoil-a1-sport-carbone-alpinefoil-2020.html',
     'programme_start' => 4.0,
     'programme_end' => 7.0,
-    'views' => 2336,
-    'last_ip' => NULL,
+    'views' => 2337,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2020-04-25 06:19:35',
-    'updated_at' => '2022-03-20 20:52:42',
+    'updated_at' => '2022-04-08 23:27:38',
 ),
 121 => 
 array (
@@ -3390,8 +3359,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34454s1-exocet-rf-foil-board-carbon-exocet-2020.html',
-    'programme_start' => 6.0,
-    'programme_end' => 9.0,
+    'programme_start' => 5.0,
+    'programme_end' => 8.0,
     'views' => 7805,
     'last_ip' => '::1',
     'created_at' => '2020-05-03 11:09:02',
@@ -3531,8 +3500,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41093s1-tabou-magic-carpet-tabou-2020.html',
-    'programme_start' => NULL,
-    'programme_end' => 1.0,
+    'programme_start' => 0.0,
+    'programme_end' => 3.0,
     'views' => 4671,
     'last_ip' => NULL,
     'created_at' => '2020-06-23 20:14:49',
@@ -3559,12 +3528,12 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40224s1-alpinefoil-a1-race-carbone-alpinefoil-2020.html',
-    'programme_start' => 7.0,
-    'programme_end' => 9.0,
-    'views' => 3322,
-    'last_ip' => NULL,
+    'programme_start' => 8.0,
+    'programme_end' => 10.0,
+    'views' => 3323,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2020-06-25 09:57:32',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 23:17:57',
 ),
 128 => 
 array (
@@ -3575,18 +3544,25 @@ array (
     'category_id' => 2,
     'brand_id' => 56,
     'status' => 'Published',
-    'body' => '<p>Apr&egrave;s le coup de ma&icirc;tre d\'Exocet avec ses Freefoil 112 et 135, c\'est au tour de JP de propsoer 2 flotteurs de foil freeride. Pour leur donner un nom, JP a fait dans l\'originalit&eacute; &nbsp;: Freefoil !!&nbsp;</p>',
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/jp-freefoil.png" alt="JP freefoil LXT" width="549" height="549"></div>
+<div class="col-9">
+<p>Apr&egrave;s le coup de ma&icirc;tre d\'Exocet avec ses Freefoil 112 et 135, c\'est au tour de JP de propsoer 2 flotteurs de foil freeride. Pour leur donner un nom, JP a fait dans l\'originalit&eacute; &nbsp;: Freefoil !!&nbsp;</p>
+</div>
+</div>
+</div>',
     'year' => 2020,
     'price' => '2199.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u40581s1-jp-australia-freefoil-pro-edition-jp-australia-2020.html',
-    'programme_start' => 1.0,
-    'programme_end' => 4.0,
-    'views' => 2249,
-    'last_ip' => NULL,
+    'programme_start' => 0.0,
+    'programme_end' => 3.0,
+    'views' => 2250,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2020-07-16 20:03:06',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 23:00:05',
 ),
 129 => 
 array (
@@ -3599,8 +3575,8 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2020-07/patrick-foil-comp-ai.jpg" alt="Foil Comp Airinside" /></div>
-<div class="col-lg">
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2020-07/patrick-foil-comp-ai.jpg" alt="Foil Comp Airinside"></div>
+<div class="col-lg-8">
 <p>Patrick Diethelm propose une particularit&eacute; unique dans le monde du Windsurf avec sa gamme de flotteur en construction AirInside. Dit autremement, les flotteurs ne sont pas construits autour d\'un pain de polystyr&egrave;ne, mais d\'une structure creuse en sandwich Nid d\'Abeille. La mise au point et la fiabilisation de ce proc&eacute;d&eacute; a pris plus de 4 ans, mais la marque est d&eacute;sormais en mesure de proposer un produit fiable et extr&ecirc;mement &eacute;volu&eacute;. Son pluys : une rigidit&eacute; et des r&eacute;partitions de poids qui offre un confort et une pr&eacute;cision de conduire in&eacute;gal&eacute;es.</p>
 <p>La FoilComp AI est le flotteur de foil course de la gamme Patrick construit en technologie AirInside.</p>
 </div>
@@ -3611,12 +3587,12 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => 10.0,
+    'programme_start' => 9.0,
     'programme_end' => 10.0,
-    'views' => 2519,
-    'last_ip' => NULL,
+    'views' => 2520,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2020-08-01 08:25:08',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 22:56:17',
 ),
 130 => 
 array (
@@ -3627,35 +3603,25 @@ array (
     'category_id' => 2,
     'brand_id' => 77,
     'status' => 'Published',
-    'body' => '<p>Avec cette Foil Ride 145, Patrick signe son premier flotteur foil hors programme Race PWA ou Formula. Comme on ne se refait pas, l\'ADN du comp&eacute;titeur transpire quand m&ecirc;me nettement sur ce shape tr&egrave;s orient&eacute; performance.&nbsp;</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6487.jpg" alt="Patrick Foil Ride 145" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6486.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Dans la lign&eacute;e des flotteurs derni&egrave;re g&eacute;n&eacute;ration du moment (Exocet RF 81 v2, Phantom IRIS X), le FOIL RIDE est tr&egrave;s compacte (2m10 de long).</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6477.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Les positions de strap sont tr&egrave;s nombreuses, et devraient couvrir l\'essentiel des besoins pour s\'adapter &agrave; la plupart des foils du march&eacute; : des NeilPryde plut&ocirc;t pied arri&egrave;re, &agrave; des foils comme les Starboard ou Alpine Race plut&ocirc;t pied avant, en passant par toutes les autres situations.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6478.jpg" alt="Patrick Foil Ride 145" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6479.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Le boitier est un FoilBox standard Cobra, avec d&eacute;sormais syst&eacute;matiquement des chemin&eacute;es ovales (avec lesquelles nous conseillons d\'utiliser des <a href="https://marseille.glissattitude.com/windfoil/u40159s1-gliss-attitude-rondelle-inox-ovale-arriere-gliss-attitude-2020.html">rondelles renforc&eacute;es ovales</a>). Comme cela n\'est pas fait d\'origine comme sur les planches Starboard et Exocet, il faudra <a href="https://marseille.glissattitude.com/blog/windfoil-assemblage.html">allonger les trous</a> pour garantir une insertion sans parallaxe de la visserie.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6480.jpg" alt="Patrick Foil Ride 145" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6482.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Les cuts sont assez larges, mais peu profonds. Cela devrait lib&eacute;rer un peu de glisse, sans provoquer trop d\'instabilit&eacute; au pumping. Pour autant, avec ses presque 80cm &agrave; l\'OFO, cette FOIL RIDE n&eacute;cessitera tout de m&ecirc;me des voiles assez grosses dans le light, et ne rentre pas dans la jauge racing jeune de la FFV.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6481.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Pour finir avec le shape, la FOIL RIDE reprend une forme de rail d&eacute;sormais commune sur de nombreuses planches de foil modernes : tr&egrave;s carr&eacute;e et boxy, avec beaucoup de volume pour favoriser un rebond sur le rail plut&ocirc;t qu\'un ralentissement brutal. Rappelons toutefois que ce type de shape fonctionne &agrave; condition de <a href="https://marseille.glissattitude.com/blog/reglages-windfoil-le-rake.html">caler le foil avec un rake</a> assez prononc&eacute; (entre 2 et 3&deg;).</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6483.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>L\'avant du shape h&eacute;rite de gros biseaux, tr&egrave;s semblables &agrave; ceux des flotteurs Tiaki</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-08/IMG_6485.jpg" alt="Patrick Foil Ride 145" /></p>
-<p>Je finirai cette pr&eacute;sentation en pr&eacute;cisant que le poids reste contenu pour ce type de volume (8.6kg nu sur notre planche de test), et le prix &eacute;galement pour une construction Cobra Full Carbone pont et car&egrave;ne ... on se languis maintenant d\'aller &agrave; l\'eau avec la b&ecirc;te pour la confronter &agrave; nos r&eacute;f&eacute;rences free-race du moment (Starboard F150, Tiaki Compact Race Light, Phantom Iris x Pro, Exocet RF V2).</p>',
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/u41361s1.png" alt="Patrik Foilride 2021" width="512" height="512"></div>
+<div class="col-9">
+<p>Avec cette Foil Ride 145, Patrick signe son premier flotteur foil hors programme Race PWA ou Formula. Comme on ne se refait pas, l\'ADN du comp&eacute;titeur transpire quand m&ecirc;me nettement sur ce shape tr&egrave;s orient&eacute; performance.&nbsp;</p>
+</div>
+</div>
+</div>',
     'year' => 2021,
     'price' => '2099.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41361s1-patrick-foil-ride-patrick-2021.html',
-    'programme_start' => 7.0,
-    'programme_end' => 9.0,
-    'views' => 5740,
-    'last_ip' => NULL,
+    'programme_start' => 5.0,
+    'programme_end' => 8.0,
+    'views' => 5742,
+    'last_ip' => '83.197.163.54',
     'created_at' => '2020-08-14 12:24:48',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-09 09:14:09',
 ),
 131 => 
 array (
@@ -3747,8 +3713,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38908s1-starboard-foil-slalom-carbon-reflex-starboard-2021.html',
-    'programme_start' => NULL,
-    'programme_end' => NULL,
+    'programme_start' => 9.0,
+    'programme_end' => 10.0,
     'views' => 3258,
     'last_ip' => NULL,
     'created_at' => '2020-09-24 12:27:12',
@@ -3770,12 +3736,12 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u41361s1-patrick-foil-ride-patrick-2021.html',
-    'programme_start' => 3.0,
-    'programme_end' => 7.0,
-    'views' => 2688,
-    'last_ip' => NULL,
+    'programme_start' => 2.0,
+    'programme_end' => 6.0,
+    'views' => 2689,
+    'last_ip' => '62.195.144.105',
     'created_at' => '2020-10-15 11:35:08',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-10 17:03:23',
 ),
 136 => 
 array (
@@ -3806,8 +3772,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => NULL,
-    'programme_end' => NULL,
+    'programme_start' => 1.0,
+    'programme_end' => 3.0,
     'views' => 2297,
     'last_ip' => NULL,
     'created_at' => '2020-11-11 19:26:42',
@@ -3824,36 +3790,25 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2020-09/ahd-compact-foil.jpg" alt="AHD Compact foil" /></div>
-<div class="col-lg">Le flotteur AHD COMPACT FOIL est d&eacute;di&eacute; &agrave; la pratique du&nbsp;Windfoil. Il permet un &eacute;ventail tr&egrave;s large de pratiques :&nbsp; Freeride, Slalom ou Race.
-<p>Construction</p>
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2020-09/ahd-compact-foil.jpg" alt="AHD Compact foil"></div>
+<div class="col-lg-8">Le flotteur AHD COMPACT FOIL est d&eacute;di&eacute; &agrave; la pratique du&nbsp;Windfoil. Il permet un &eacute;ventail tr&egrave;s large de pratiques :&nbsp; Freeride, Slalom ou Race.
 <p>Notre processus de fabrication est unique ! Toutes les couches de tissu, renforts et boitiers sont appliqu&eacute;s et cuits dans un moule ferm&eacute; (pont/car&egrave;ne). Cette technique garantit une reproduction parfaite du prototype valid&eacute; lors des tests et un rapport poids/flexcontrol/solidit&eacute; optimal. Les r&eacute;sines epoxy utilis&eacute;es pour la construction de nos planches de windsurf sont bio-sourc&eacute;es SR GreenPoxy.</p>
 <p>La&nbsp; AHD COMPACT FOIL utilise une construction sandwich PVC/Carbon.</p>
-<p>#1 | OUTLINE COMPACT EQUILIBR&Eacute;<br />Encombrement minimal en vol, regroupement des forces vers le foil. <br />#2 | R&Eacute;PARTITION HOMOG&Egrave;NE DU VOLUME <br />#3 | RAILS DROITS L&Eacute;G&Egrave;REMENT RENTRANTS <br />Rebond instantan&eacute; du flotteur au contact de l&rsquo;eau. <br />#4 | WIDE RACE DECK<br />Plan de pont &eacute;largi pour excentrer les appuis et augmenter le couple de rappel du rider. <br />#5 | RAIL DE PDM LONG<br />R&eacute;glages de positions multiples pour s&rsquo;adapter &agrave; toutes les disciplines et toutes les surfaces de voiles. <br />#6 | POSITIONS MULTIPLES DE FOOTSTRAPS <br />S&rsquo;adapte &agrave; tous les styles et gabarits de riders.</p>
+<p>#1 | OUTLINE COMPACT EQUILIBR&Eacute;<br>Encombrement minimal en vol, regroupement des forces vers le foil. <br>#2 | R&Eacute;PARTITION HOMOG&Egrave;NE DU VOLUME <br>#3 | RAILS DROITS L&Eacute;G&Egrave;REMENT RENTRANTS <br>Rebond instantan&eacute; du flotteur au contact de l&rsquo;eau. <br>#4 | WIDE RACE DECK<br>Plan de pont &eacute;largi pour excentrer les appuis et augmenter le couple de rappel du rider. <br>#5 | RAIL DE PDM LONG<br>R&eacute;glages de positions multiples pour s&rsquo;adapter &agrave; toutes les disciplines et toutes les surfaces de voiles. <br>#6 | POSITIONS MULTIPLES DE FOOTSTRAPS <br>S&rsquo;adapte &agrave; tous les styles et gabarits de riders.</p>
 </div>
 </div>
-</div>
-<p>Photos du mod&egrave;le de s&eacute;rie</p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0339.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0338.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0337.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0340.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0341.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0342.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0343.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0344.jpg" alt="AHD Combat foil 83" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2020-11/IMG_0345.jpg" alt="AHD Combat foil 83" /></p>',
+</div>',
     'year' => 2021,
     'price' => '1490.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => 7.0,
-    'programme_end' => 9.0,
-    'views' => 6282,
-    'last_ip' => '::1',
+    'programme_start' => 5.0,
+    'programme_end' => 7.0,
+    'views' => 6284,
+    'last_ip' => '66.249.70.42',
     'created_at' => '2020-11-21 20:24:50',
-    'updated_at' => '2022-03-24 21:56:45',
+    'updated_at' => '2022-04-09 13:46:31',
 ),
 138 => 
 array (
@@ -3866,13 +3821,13 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-mk2.jpg" alt="iris x mkII" /></div>
-<div class="col-lg">
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-mk2.jpg" alt="iris x mkII"></div>
+<div class="col-lg-8">
 <p>Entre les gammes IRIS Z (d&eacute;di&eacute;e foil freeride) et IRIS RF (foil course), la gamme IRIS X propose une approche dite free-race qui correspond &agrave; la pratique du plus grand nombre. Au programme de la facilit&eacute; d\'acc&egrave;s mais pour autant des performances au puming, en vitesse et en puissance assez proche du mod&egrave;le de course. Cette version MKII remplace la V1 avec une refonte des surfaces (5,6,7, et 8m2), et une nette am&eacute;lioration du ratio l&eacute;g&egrave;ret&eacute; / puissance</p>
 <p>Avec son design 6 lettes / 3 cam / 2 lattes carbone, le profil est suffisament tenu pour permettre profiter d\'une plage d\'utilisation aswsez large, tout en apportant tout ce que l\'on attend d\'une voile d&eacute;di&eacute;e au foil : une stabilisation du foil et du flotteur en vol.&nbsp;</p>
 <p>Ces voiles sont con&ccedil;ues pour &ecirc;tre utilis&eacute;es sur des mats constant flex. Nos tests ont montr&eacute;s une parfaite compatibilit&eacute; avec les mats Duotone.</p>
-<p><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-range.jpg" alt="iris x mkII" /></p>
-<p><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-spec.jpg" alt="iris x mkII" /></p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-range.jpg" alt="iris x mkII"></p>
+<p><img class="img-fluid" src="/storage/photos/1/2021-02/iris-x-spec.jpg" alt="iris x mkII"></p>
 </div>
 </div>
 </div>',
@@ -3883,10 +3838,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 8.0,
-    'views' => 4067,
-    'last_ip' => NULL,
+    'views' => 4068,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2020-12-13 11:23:37',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 23:30:13',
 ),
 139 => 
 array (
@@ -3904,7 +3859,7 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => 5.0,
+    'programme_start' => 6.0,
     'programme_end' => 10.0,
     'views' => 3359,
     'last_ip' => NULL,
@@ -3922,15 +3877,16 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2020-12/afs95.jpg" alt="AFS WIND 95" width="1000" height="1152" /></div>
-<div class="col-lg">La nouvelle version de l\'AFS 95 marque une vraie &eacute;volution de ce mod&egrave;le phare chez AFS. Au programme&nbsp;
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2020-12/afs95.jpg" alt="AFS WIND 95" width="1000" height="1152"></div>
+<div class="col-lg-8">La nouvelle version de l\'AFS 95 marque une vraie &eacute;volution de ce mod&egrave;le phare chez AFS. Au programme&nbsp;
 <ul>
-<li class="col-lg">Un nouvau mat plus fin et plus &eacute;troit en corde</li>
-<li class="col-lg">un nouveau fuselage plus long et plus raide</li>
-<li class="col-lg">des nouveaux inserts pour les fixations ailes et stab</li>
+<li>Un nouvau mat plus fin et plus &eacute;troit en corde</li>
+<li>un nouveau fuselage plus long et plus raide</li>
+<li>des nouveaux inserts pour les fixations ailes et stab</li>
 </ul>
 <p>Le d&eacute;veloppement de cette nouvelle version a &eacute;t&eacute; boost&eacute; par la demande propre de la FFV concernant la labellisation des foils U15 / U17. L\'objectif &eacute;tait de proposer un foil &agrave; la fois performant sur des allures vari&eacute;es, facile &agrave; contr&ocirc;ler dans toutes les conditions, et robuste pour offrir un investissement p&eacute;renne aux clubs et aux jeunes coureurs.&nbsp;</p>
 <p>Le mat &agrave; corde &eacute;troite doit apporter plus de glisse, il est &eacute;galement plus fin mais presque aussi raide que les versions pr&eacute;c&eacute;dentes afin de garantir un contr&ocirc;le optimal dans le vent et la mer. Le nouveau fuselage doit permettre de meilleures aptitudes au cap. La nouvelle construction et les nouveaux inserts doivent permettre d\'utiliser sans risque de casse les nouvelles ailes &agrave; grand allongement.&nbsp;</p>
+<p>Pour 2022, le fuslage devient d&eacute;montable, et 2 nouvelles ailes orient&eacute;es glisse voient le jour.</p>
 </div>
 </div>
 </div>',
@@ -3941,10 +3897,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34768s1-afs-afs-wind-95-afs-2021.html',
     'programme_start' => 5.0,
     'programme_end' => 8.0,
-    'views' => 4255,
-    'last_ip' => '::1',
+    'views' => 4257,
+    'last_ip' => '86.215.170.49',
     'created_at' => '2020-12-18 17:43:00',
-    'updated_at' => '2022-04-07 19:31:40',
+    'updated_at' => '2022-04-10 19:31:09',
 ),
 141 => 
 array (
@@ -3957,28 +3913,28 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-3"><img class="img-fluid" src="/storage/photos/1/2021-01/race_foil_115.jpg" alt="" /></div>
+<div class="col-3"><img class="img-fluid" src="/storage/photos/1/2021-01/race_foil_115.jpg" alt=""></div>
 <div class="col-9">Pour 2021, F4 propose une nouvelle gamme avec des changements subtentiels. Ces changements sont li&eacute;s &agrave; 2 &eacute;l&eacute;ments :
 <ul>
 <li class="col-lg">un d&eacute;placement de la production en Asie, pour pouvoir passer &agrave; une production industrielle et permettre un d&eacute;veloppement du volume de ventes</li>
 <li class="col-lg">une volont&eacute; d\'offrir &agrave; la fois plus de polyvalence multi-segment (Wing &amp; Winf) et plus de fiabilit&eacute; (fixation des ailes, jonction mat / fuselage, assise stab).</li>
 </ul>
-<p>Cette &eacute;volution des gammes est la face cach&eacute;e de l\'iceberg. En effet, pour accompagner un d&eacute;veloppement international, la soci&eacute;t&eacute; F4 vient d\'op&eacute;rer une grosse lev&eacute;e de fond, et met en place une vraie structure de distribution, &agrave; la fois aux USA et en Europe. Le team de d&eacute;veloppement se structure &eacute;galement autour de plusieurs pilliers du foil en France (Julien Bontemps, Basile Jacquin).&nbsp;</p>
+<p>Cette &eacute;volution des gammes est la face cach&eacute;e de l\'iceberg. En effet, pour accompagner un d&eacute;veloppement international, la soci&eacute;t&eacute; F4 vient d\'op&eacute;rer une grosse lev&eacute;e de fond, et met en place une vraie structure de distribution, &agrave; la fois aux USA et en Europe. Le team de d&eacute;veloppement se structure &eacute;galement autour de plusieurs pilliers du foil en France.&nbsp;</p>
 <p>Tout ceci constitue un vrai tournant dans l\'histroire de cette marque qui &eacute;tait jusqu\'ici artisanale. De notre c&ocirc;t&eacute;, nous connaissions le c&ocirc;t&eacute; assez exceptionnel du design des foils F4 (notre r&eacute;f&eacute;rence de test depuis 2 ans), mais des produits &eacute;taient difficiles &agrave; vendre &agrave; cause d\'une administration commerciale inadapt&eacute;e. Cette nouvelle structure change la donne, et nous allons d&eacute;sormais int&eacute;grer la marque dans notre s&eacute;lection. On nous annonce enfin une probable relocalisation de la production en Europe &agrave; moyen terme, et c\'est aussi une excellente nouvelle.</p>
 </div>
 </div>
 </div>',
-    'year' => 2021,
-    'price' => '2500.00',
+    'year' => 2022,
+    'price' => '3050.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 10.0,
-    'views' => 6948,
-    'last_ip' => '::1',
+    'views' => 6949,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-01-10 15:05:27',
-    'updated_at' => '2022-03-20 21:36:37',
+    'updated_at' => '2022-04-08 22:39:03',
 ),
 142 => 
 array (
@@ -3991,10 +3947,10 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-01/starboard-foil-slalom.jpg" alt="Starboard Foil Slalom" width="1000" height="750" /></div>
-<div class="col-lg">
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2021-01/starboard-foil-slalom.jpg" alt="Starboard Foil Slalom"></div>
+<div class="col-lg-8">
 <p>Je ne trahirai pas un grand secret en vous disant que le foil fait d&eacute;sormais partie du programme PWA, non plus en tant que discipline &agrave; part, mais en tant qu\'option lorsque chaque participant consid&egrave;re que ce mode de navigation lui correspond mieux compte tenu des conditions. La cons&eacute;quence, c\'est que le foil sera d&eacute;sormais utilis&eacute; exclusivement sur des parcours de slalom, donc sur des allures travers. En perdant la n&eacute;cessit&eacute; de g&eacute;n&eacute;rer un maximum de puissance pour remonter au vent, le design des flotteurs &eacute;volue naturellement, et chaque marque va donc propose des flotteurs adapt&eacute;s.</p>
-<p>Le flotteur Starboard Slalom Foil 81 est donc un mod&egrave;le d&eacute;di&eacute; au foil slalom. Sa particularit&eacute;, c\'est une car&egrave;ne pinc&eacute;e, alors que l\'outline c&ocirc;t&eacute; pont est pratiquement carr&eacute; &agrave; l\'arri&egrave;re. Pour cette gamme, on a &eacute;videmment une constuction Reflex Carbone ... &nbsp;la plus haut de gamme (florreur de course oblige).</p>
+<p>Le flotteur Starboard Slalom Foil 81 est donc un mod&egrave;le d&eacute;di&eacute; au foil slalom. Sa particularit&eacute;, c\'est une car&egrave;ne pinc&eacute;e, alors que l\'outline c&ocirc;t&eacute; pont est pratiquement carr&eacute; &agrave; l\'arri&egrave;re. Pour cette gamme, on a &eacute;videmment une constuction Reflex Carbone ... &nbsp;la plus haut de gamme (flotteur de course oblige).</p>
 </div>
 </div>
 </div>',
@@ -4005,10 +3961,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 6.0,
     'programme_end' => 8.0,
-    'views' => 2432,
-    'last_ip' => NULL,
+    'views' => 2434,
+    'last_ip' => '83.197.129.8',
     'created_at' => '2021-02-07 22:14:37',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-09 08:40:13',
 ),
 143 => 
 array (
@@ -4019,21 +3975,28 @@ array (
     'category_id' => 1,
     'brand_id' => 60,
     'status' => 'Published',
-    'body' => '<p>Le LK1 2020 a &eacute;t&eacute; con&ccedil;u pour &ecirc;tre tr&egrave;s accessible &agrave; tout niveaux mais aussi performant dans toutes les conditions.</p>
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/lk1.png" alt="LK1" width="500" height="500"></div>
+<div class="col-9">
+<p>Le LK1 2020 a &eacute;t&eacute; con&ccedil;u pour &ecirc;tre tr&egrave;s accessible &agrave; tout niveaux mais aussi performant dans toutes les conditions.</p>
 <p>Toujours fabriqu&eacute; exclusivement en France dans nos ateliers, &agrave; Saint-Malo.</p>
 <p>Le jeu d&rsquo;ailes complet s&rsquo;adapte &agrave; toutes les conditions, tous les programmes (freeride, up-wind/down-wind, slalom&hellip;) et tous les gabarits.</p>
-<p>Le mod&egrave;le pr&eacute;sent&eacute; ici comporte un mat UHM, et une aile performance.&nbsp;</p>',
+<p>Le mod&egrave;le pr&eacute;sent&eacute; ici comporte un mat UHM, et une aile performance.&nbsp;</p>
+</div>
+</div>
+</div>',
     'year' => 2021,
     'price' => '2200.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u34705s1-loke-foil-windfoil-lk1-loke-foil-2019.html',
-    'programme_start' => 3.0,
-    'programme_end' => 7.0,
-    'views' => 2588,
-    'last_ip' => NULL,
+    'programme_start' => 0.0,
+    'programme_end' => 4.0,
+    'views' => 2589,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-03-07 20:09:52',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 22:36:48',
 ),
 144 => 
 array (
@@ -4046,8 +4009,8 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-02/JP_Australia-HydroFoil_SL_PRO-2021-deck.png" alt="JP Foil Slalom" width="858" height="2000" /></div>
-<div class="col-lg">
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2021-02/JP_Australia-HydroFoil_SL_PRO-2021-deck.png" alt="JP Foil Slalom"></div>
+<div class="col-lg-8">
 <p>Pour 2020, la PWA a fusionn&eacute; le slalom et le foil en un seul et m&ecirc;me format de course. Quels que soient les vents faibles, nous allons assister &agrave; encore plus de courses et de sensations fortes &agrave; chaque &eacute;v&eacute;nement ! Fini le temps o&ugrave; les coureurs &eacute;taient assis sur la plage &agrave; cause des manches annul&eacute;es. Vent insuffisant ? Oubliez cela : La nouvelle limite de vent PWA pour le slalom sera de 5 n&oelig;uds ! Ainsi, l\'action sera garantie !</p>
 <p>Pour cette nouvelle discipline de slalom, JP a d&eacute;velopp&eacute; une planche sp&eacute;cialis&eacute;e et en plus, une planche de foil de course d&eacute;di&eacute;e.</p>
 <h3>Caract&eacute;ristiques g&eacute;n&eacute;rales</h3>
@@ -4076,10 +4039,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u42641s1-jp-australia-hydrofoil-racing-slalom-jp-australia-2021.html',
     'programme_start' => 7.0,
     'programme_end' => 9.0,
-    'views' => 2345,
-    'last_ip' => NULL,
+    'views' => 2346,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-03-11 12:44:25',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 22:46:02',
 ),
 145 => 
 array (
@@ -4090,13 +4053,17 @@ array (
     'category_id' => 1,
     'brand_id' => 69,
     'status' => 'Published',
-    'body' => '<p>Le Flight FR est la derni&egrave;re &eacute;volution de notre gamme de voiles de freeride accessibles et performantes pour les marins du monde r&eacute;el. Il est moins intimidant que les foils en carbone et offre toujours une vitesse exceptionnelle dans une large plage de vent.</p>
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/foil-neilpryde-flight-fr-2021.png" alt="" width="500" height="500"></div>
+<div class="col-9">
+<p>Le Flight FR est la derni&egrave;re &eacute;volution de la gamme de foil de freeride accessible et performante. Il est moins intimidant que les foils en carbone et offre toujours une vitesse exceptionnelle dans une large plage de vent.</p>
 <p>Compatible avec les planches de freeride haute performance et les planches de foil sp&eacute;cialis&eacute;es, le FLIGHT FR offre non seulement une grande portance, stabilit&eacute; et contr&ocirc;le, mais il est aussi plus rapide que beaucoup d\'autres foils full carbon du march&eacute;.</p>
-<p>Nos riders ont d&eacute;clar&eacute; qu\'il s\'agissait du foil de windsurf le plus amusant de la gamme et nos freestylers l\'ont m&ecirc;me pr&eacute;f&eacute;r&eacute; &agrave; tout autre foil pour le freestyle. C\'est vraiment un foil polyvalent pour tout le monde.</p>
 <p>Longueur du fuselage : 90cm</p>
-<p>Ailes :</p>
-<p>&gt; envergure 80cm - 815cm2</p>
-<p>&gt; envergure 90cm = 1000cm2</p>',
+<p>Ailes : envergure 80cm - 815cm2 /&nbsp;&nbsp;envergure 90cm = 1000cm2</p>
+</div>
+</div>
+</div>',
     'year' => 2021,
     'price' => '1199.00',
     'link_test' => NULL,
@@ -4104,10 +4071,10 @@ array (
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u42637s1-neil-pryde-flight-fr-sans-tete-neil-pryde-2021.html',
     'programme_start' => 4.0,
     'programme_end' => 7.0,
-    'views' => 2876,
-    'last_ip' => '::1',
+    'views' => 2877,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-05-15 12:38:14',
-    'updated_at' => '2022-03-20 21:31:22',
+    'updated_at' => '2022-04-08 22:27:55',
 ),
 146 => 
 array (
@@ -4140,7 +4107,7 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u38332s1-severn-hyperglide-4-severn-2021.html',
-    'programme_start' => 8.0,
+    'programme_start' => 7.0,
     'programme_end' => 10.0,
     'views' => 1510,
     'last_ip' => NULL,
@@ -4156,18 +4123,25 @@ array (
     'category_id' => 1,
     'brand_id' => 8,
     'status' => 'Published',
-    'body' => '<p>L\'alpine Race SL est un foil compos&eacute; du mat Alpine A1 Race, avec une nouveau fuselage de 105, et les ailes de la s&eacute;rie regatta</p>',
-    'year' => 2021,
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/windfoil-a1-sport-sl-850.png" alt="" width="600" height="600"></div>
+<div class="col-9">
+<p>L\'alpine Race SL est un foil compos&eacute; du mat Alpine A1 Race, avec une nouveau fuselage de 105, et les ailes de la s&eacute;rie regatta</p>
+</div>
+</div>
+</div>',
+    'year' => 2022,
     'price' => '2499.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
     'programme_start' => 5.0,
     'programme_end' => 7.0,
-    'views' => 1503,
-    'last_ip' => '::1',
+    'views' => 1504,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-06-14 14:07:32',
-    'updated_at' => '2022-03-23 21:58:08',
+    'updated_at' => '2022-04-08 22:22:29',
 ),
 148 => 
 array (
@@ -4180,24 +4154,24 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-06/bullet-windfoil-v1.jpg" alt="JP Foil Slalom" width="480" height="596" /></div>
-<div class="col-lg">
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2021-06/bullet-windfoil-v1.jpg" alt="Patrik UHM Foil"></div>
+<div class="col-lg-8">
 <p>Je vous laisse vour reporter &agrave; la description du <a href="/devices/foil/zeeko-bullet-v1-2020">Zeeko Bullet</a> pour les &eacute;l&eacute;ments g&eacute;n&eacute;raux. Nous pr&eacute;sentons ici la version dite M40J de ce mod&egrave;le ... du nom du type de fibres de carbone utilis&eacute;es dans la construction du mat.&nbsp;</p>
 <p>L\'utilisation du carbone dit M40J en remplacement du carbone dit T700 conf&egrave;re une rigidit&eacute; en flexion et torsion sup&eacute;rieure de l\'ordre de 25%. En terme d\'utilisation, cela modifie profond&eacute;ment le comportement ressenti du foil, pour une glisse plus pr&eacute;cise et plus fluide. L\'influance sur les performances n\'est pas directe puisque le g&eacute;om&eacute;trie est indentique. Par contre, la raideur inlue directement sur le contr&ocirc;le du foil, et par cons&eacute;quent sur la notion de confiance que le pilote va avoir. Bien &eacute;videmment, en se sentant plus en ma&icirc;trise, on pre,d plus de plaisir, et on va g&eacute;n&eacute;ralement plus vite.</p>
 </div>
 </div>
 </div>',
-    'year' => 2021,
+    'year' => 2022,
     'price' => '2499.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => NULL,
-    'programme_end' => NULL,
-    'views' => 1433,
-    'last_ip' => '::1',
+    'programme_start' => 5.0,
+    'programme_end' => 8.0,
+    'views' => 1435,
+    'last_ip' => '66.249.70.46',
     'created_at' => '2021-06-15 10:13:12',
-    'updated_at' => '2022-03-23 20:43:12',
+    'updated_at' => '2022-04-09 06:14:42',
 ),
 149 => 
 array (
@@ -4230,26 +4204,33 @@ array (
     'category_id' => 1,
     'brand_id' => 35,
     'status' => 'Published',
-    'body' => '<p>Le F4 freeride, c\'est le foil de tous les jours. Optimis&eacute; pour le windfoil, ce foil d&eacute;colle t&ocirc;t et est incroyablement stable. &nbsp;Contraitrement &agrave; de nombreux autre foils de cette cat&eacute;gorie, il est assez rapide.</p>
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="cms-img-fluid" src="http://windfoilfan.glissattitude.com/storage/photos/1/2022-04/F4_windsurf_1400_carbon_tuttle_freeride_1-595x595.png" alt="" width="595" height="595"></div>
+<div class="col-9">
+<p>Le F4 freeride, c\'est le foil de tous les jours. Optimis&eacute; pour le windfoil, ce foil d&eacute;colle t&ocirc;t et est incroyablement stable. &nbsp;Contraitrement &agrave; de nombreux autre foils de cette cat&eacute;gorie, il est assez rapide.</p>
 <p>Con&ccedil;u pour les petites voiles et planches de freeride, il est &agrave; l\'aise &agrave; toutes les allures, au pr&egrave;s comme au portant. Le foil freeride windsurf est une plateforme stable et pr&eacute;visible con&ccedil;ue pour des balades agr&eacute;ables en contr&ocirc;le. Il est parfait pour l\'apprentissage et les foilers avanc&eacute;s. Cette configuration a d\'excellentes performances sur toute la plage de vent.</p>
 <p>&laquo; C\'est l\'&eacute;quilibre parfait pour un d&eacute;collage facile et une grande stabilit&eacute;. Le meilleur combo pour le foiling d&eacute;contract&eacute;.&ldquo;</p>
-<p>&ndash; Fernando Martinez</p>',
-    'year' => 2021,
+<p>&ndash; Fernando Martinez</p>
+</div>
+</div>
+</div>',
+    'year' => 2022,
     'price' => '2115.00',
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
     'programme_start' => 1.0,
     'programme_end' => 4.0,
-    'views' => 2007,
-    'last_ip' => '::1',
-    'created_at' => '2021-08-01 08:30:21',
-    'updated_at' => '2022-03-20 20:52:43',
+    'views' => 2008,
+    'last_ip' => '88.163.167.153',
+    'created_at' => '2021-08-01 00:00:00',
+    'updated_at' => '2022-04-08 22:23:01',
 ),
 151 => 
 array (
     'id' => 189,
-    'name' => 'FLY',
+    'name' => 'FLY V2',
     'slug' => 'xo-sail-fly-2022',
     'user_id' => 1,
     'category_id' => 3,
@@ -4270,8 +4251,8 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => 'https://marseille.glissattitude.com/windfoil/u44815s1-xo-sail-fly-xo-sail-2022.html',
-    'programme_start' => 5.0,
-    'programme_end' => 8.0,
+    'programme_start' => 3.0,
+    'programme_end' => 7.0,
     'views' => 2005,
     'last_ip' => NULL,
     'created_at' => '2021-10-14 11:10:48',
@@ -4288,9 +4269,9 @@ array (
     'status' => 'Published',
     'body' => '<div class="container">
 <div class="row">
-<div class="col-lg"><img class="img-fluid" src="/storage/photos/1/2021-10/iris-r-mk2.jpg" alt="IRIS R MKII" /></div>
-<div class="col-lg">
-<p>Les IRIS R mk2 (91 &amp; 85 &amp; 78) con&ccedil;us pour le format PWA Slalom foil et le speed.</p>
+<div class="col-lg-4"><img class="img-fluid" src="/storage/photos/1/2021-10/iris-r-mk2.jpg" alt="IRIS R MKII"></div>
+<div class="col-lg-6">
+<p>Les IRIS R mk2 (91 &amp; 85 &amp; 78) sont con&ccedil;ues pour le format PWA Slalom foil et le speed.</p>
 <p>La car&egrave;ne b&eacute;n&eacute;ficie de nouveaux cut-out qui am&eacute;liorent le d&eacute;marrage.</p>
 <p>L\'a&eacute;ro a encore &eacute;t&eacute; optimis&eacute; pour r&eacute;duire le fardage et augmenter la stabilit&eacute; en vol.</p>
 <p>Les planches sont un peu plus &eacute;paisses et le rail de pied de mat a &eacute;t&eacute; rabaiss&eacute; ce qui permet de retransmettre plus de puissance. La 85 r&eacute;pond &agrave; la nouvelle jauge U19 pour les jeunes.</p>
@@ -4304,10 +4285,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 8.0,
     'programme_end' => 10.0,
-    'views' => 1780,
-    'last_ip' => NULL,
+    'views' => 1781,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-11-05 15:30:12',
-    'updated_at' => '2022-03-20 20:52:43',
+    'updated_at' => '2022-04-08 22:45:17',
 ),
 153 => 
 array (
@@ -4340,11 +4321,13 @@ array (
     'category_id' => 2,
     'brand_id' => 36,
     'status' => 'Published',
-    'body' => '<div class="multi-col-2">
-<div><img class="img-fluid" src="/storage/photos/1/2021-10/IMG_E6210.jpg" alt="Fanatic Stingray 130 LTD" width="570" height="1000" /></div>
-<div>
+    'body' => '<div class="container">
+<div class="row">
+<div class="col-3"><img class="img-fluid" src="/storage/photos/1/2021-10/IMG_E6210.jpg" alt="Fanatic Stingray 130 LTD"></div>
+<div class="col-9">
 <p>La nouvelle Stingray LTD est disponible en deux tailles compactes de 115 et 130 litres et, pour la premi&egrave;re fois chez Fanatic, elle comble le foss&eacute; entre le wind foil et le wing foil. Vous r&ecirc;vez de naviguer en wing dans du vent l&eacute;ger et de basculer en windsurf si les conditions s&rsquo;am&eacute;liorent ou vice-versa en fonction de vos pr&eacute;f&eacute;rences : pas de probl&egrave;me, la Stingray Foil LTD est faite pour cela !</p>
 <p>Compar&eacute;e &agrave; la Stingray HRS, le shape est encore plus compact et d&eacute;jauge encore plus t&ocirc;t et sans forcer. Gr&acirc;ce &agrave; son shape optimis&eacute; pour le foil, elle offre de grandes performances en freeride dans les deux disciplines. Elle se montre tr&egrave;s s&eacute;curisante, surtout pour les d&eacute;butants gr&acirc;ce &agrave; son large pads qui couvre toute la surface du pont. Gr&acirc;ce &agrave; ses nombreuses options de montage, la Stingray Foil LTD s&rsquo;adaptable &agrave; diff&eacute;rents types de foils, diff&eacute;rentes tailles de voiles ou niveaux d&rsquo;expertise. Il n\'a jamais &eacute;t&eacute; aussi facile et pratique d\'entrer dans l&rsquo;univers du foil.</p>
+</div>
 </div>
 </div>',
     'year' => 2022,
@@ -4354,10 +4337,10 @@ array (
     'link_product' => NULL,
     'programme_start' => 2.0,
     'programme_end' => 4.0,
-    'views' => 1007,
-    'last_ip' => '::1',
+    'views' => 1008,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2021-11-09 20:58:14',
-    'updated_at' => '2022-04-07 20:50:01',
+    'updated_at' => '2022-04-08 22:44:24',
 ),
 155 => 
 array (
@@ -4437,12 +4420,12 @@ array (
     'link_test' => NULL,
     'link_presentation' => NULL,
     'link_product' => NULL,
-    'programme_start' => NULL,
-    'programme_end' => NULL,
-    'views' => 6,
-    'last_ip' => '::1',
+    'programme_start' => 5.0,
+    'programme_end' => 8.0,
+    'views' => 7,
+    'last_ip' => '88.163.167.153',
     'created_at' => '2022-03-21 08:49:15',
-    'updated_at' => '2022-03-24 21:51:04',
+    'updated_at' => '2022-04-10 23:46:09',
 ),
 ));
         
