@@ -398,5 +398,7 @@
     "warning" : "Attention",
     "Professional access demand" : "Demande d'accès professionel",
     "Send your demand" : "Envoyer votre demande",
-    "pagination sentence 1" : "Affichage des messages :first à :last sur :count au total"
+    "pagination sentence 1" : "Affichage des messages :first à :last sur :count au total",
+    "Most recent first" : "Classés du plus recent au plus ancien",
+    "Most recent message" : "Dernier message"
 }

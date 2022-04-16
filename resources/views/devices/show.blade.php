@@ -398,7 +398,7 @@
                         @else
                             <a class="btn btn-success rounded-pill" href="{{ route('login') }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }} : {{ __('please connect') }}</a>
                         @endcan
-                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
+                        <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages - {{ __('Most recent first') }}]</span>
                     </div>
                     <div class="col-5">
                         <div style="float: right">
@@ -408,7 +408,7 @@
                 </div>
 
                 @if ($reviews->count() > 0)
-                    @foreach($reviews as $review)
+                    @foreach($reviews as $index => $review)
                         <div class="card d-block ">
                             <div class="card-header">
                                 <div class="row">
@@ -417,6 +417,9 @@
                                     </div>
                                     <div class="col-6 col-md-5">
                                         <i class="mdi mdi-message-text"></i><b> {{ __('Posted on') }}</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }}
+                                        @if ($index == 0)
+                                            <span class="alert-warning px-2" >({{ __('Most recent message') }})</span>
+                                        @endif
                                     </div>
                                     <div class="col-12 col-md-5 text-end">
                                         <b>{{ __('Title') }}</b> : {{ is_null($review->title) ? 'nc' :  $review->title }}
