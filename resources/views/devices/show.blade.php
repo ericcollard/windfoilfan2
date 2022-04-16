@@ -234,7 +234,7 @@
                             <div class="col-4 col-md-3">
                                 {{ $device->reviews->count() }}
                                 @if ($device->reviews->count() > 0)
-                                    ( {{ __('Last') }} {{ $reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $reviews->first()->owner->name }})
+                                    ( {{ __('Last') }} {{ $device->reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $device->reviews->first()->owner->name }})
                                 @endif
                             </div>
                             <div class="col-2 col-md-2 text-end">

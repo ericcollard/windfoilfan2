@@ -214,7 +214,7 @@
                                 <div class="timeline-item">
                                     <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
                                     <div class="timeline-item-info mb-2">
-                                        <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }} <small class="text-muted float-end">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small></a>
+                                        <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }} <small class="text-muted float-end">{{ __('The') }} {{ $review->created_at->format('d-m-Y h:m') }}</small></a>
                                         <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
                                     </div>
                                 </div>
