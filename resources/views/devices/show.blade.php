@@ -407,7 +407,7 @@
                     </div>
                 </div>
 
-                @if ($device->reviews->count() > 0)
+                @if ($reviews->count() > 0)
                     @foreach($reviews as $review)
                         <div class="card d-block ">
                             <div class="card-header">
