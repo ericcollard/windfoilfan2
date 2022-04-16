@@ -35,7 +35,7 @@
     <!-- end page title -->
 
 
-    <!-- start 1ere ligne -->
+    <!-- start Device -->
     <div class="row">
         <div class="col-xl-4 col-lg-3">
 
@@ -175,41 +175,49 @@
             </div> <!-- end card-->
         </div> <!-- end col -->
     </div>
-    <!-- end 1ere ligne -->
+    <!-- end Device -->
 
+    <!-- start Messages -->
     <div class="row">
-        <div class="col-xl-7 col-lg-6">
-            <div class="card card-h-100">
+        <div class="col-lg-7">
+            <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-3">Messages</h4>
 
+                    <h4 class="header-title mb-3">Discussions</h4>
                     <div dir="ltr">
                         <div id="messages-chart" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
                     </div>
 
-                </div> <!-- end card-body-->
-            </div> <!-- end card-->
-        </div>
-        <div class="col-xl-5 col-lg-6">
-
+                </div>
+            </div>
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title mb-2">{{ __('Last messages') }}</h4>
 
-                    <div data-simplebar style="max-height: 419px;">
+                    <h4 class="header-title mb-0">{{ __('Views') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
+                    <div dir="ltr">
+                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card card-h-100">
+                <div class="card-body">
+                    <h4 class="header-title mb-2">{{ __('Last discussion messages') }}</h4>
+
+                    <div data-simplebar style="max-height: 650px;">
                         <div class="timeline-alt pb-0">
 
                             @foreach($dashboard['lastReviews'] as $review)
-                            <div class="timeline-item">
-                                <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
-                                <div class="timeline-item-info">
-                                    <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }}</a>
-                                    <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
-                                    <p class="mb-0 pb-2">
-                                        <small class="text-muted">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small>
-                                    </p>
+                                <div class="timeline-item">
+                                    <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                    <div class="timeline-item-info mb-2">
+                                        <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }} <small class="text-muted float-end">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small></a>
+                                        <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
+                                    </div>
                                 </div>
-                            </div>
                             @endforeach
 
 
@@ -219,43 +227,15 @@
                 </div>
                 <!-- end card-body -->
             </div>
-
-
         </div>
-    </div>
 
+    </div>
+    <!-- end Messages -->
+
+    <!-- start Posts -->
     <div class="row">
         <div class="col-lg-4">
             <div class="card card-h-100">
-                <div class="card-body">
-                    <h4 class="header-title mb-0">{{ __('Views') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
-
-                    <div dir="ltr">
-                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
-                    </div>
-
-                </div> <!-- end card-body-->
-            </div> <!-- end card-->
-        </div>
-        <div class="col-lg-4 card-h-100">
-
-            <div class="card">
-                <div class="card-body">
-                    <h4 class="header-title mb-0">{{ __('Users creation') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
-
-                    <div dir="ltr">
-                        <div id="views-chart-2" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
-                    </div>
-
-                </div> <!-- end card-body-->
-                <!-- end card-body -->
-            </div>
-
-
-        </div>
-        <div class="col-lg-4 card-h-100">
-
-            <div class="card">
                 <div class="card-body">
                     <h4 class="header-title mb-2">{{ __('Last posts') }}</h4>
                     <div class="table-responsive">
@@ -280,11 +260,25 @@
                 </div> <!-- end card-body-->
                 <!-- end card-body -->
             </div>
+        </div>
 
+
+        <div class="col-lg-8">
+
+            <div class="card card-h-100">
+                <div class="card-body">
+                    <h4 class="header-title mb-0">{{ __('Users creation') }}</h4><p class="mb-2 text-muted">{{ __('last 36 months') }}</p>
+
+                    <div dir="ltr">
+                        <div id="views-chart-2" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+                </div> <!-- end card-body-->
+                <!-- end card-body -->
+            </div>
 
         </div>
     </div>
-
+    <!-- end Posts -->
 
 
 </div>

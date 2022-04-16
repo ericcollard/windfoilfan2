@@ -132,7 +132,7 @@ class MainController extends Controller
                 ->whereRaw('devices.id = reviews.device_id')
                 ->where('status','Published');
         });
-        $dashboard['lastReviews'] =  $reviews->take(3)->get();
+        $dashboard['lastReviews'] =  $reviews->take(10)->get();
 
         // derniers posts
         $posts = Post::latest()
