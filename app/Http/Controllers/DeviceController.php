@@ -11,7 +11,10 @@ use App\Models\Category;
 use App\Models\Device;
 use Butschster\Head\Facades\Meta;
 use Butschster\Head\Packages\Entities\OpenGraphPackage;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\URL;
 
 class DeviceController extends Controller
@@ -109,7 +112,27 @@ class DeviceController extends Controller
         );
 
 
-        $reviews = $device->reviews()->latest()->paginate(5);
+        // pagination avec dernière page part défaut
+        //$reviews = $device->reviews()->latest()->paginate(5);
+        $reviewsCollection = $device->reviews()->orderBy('created_at')->get();//->paginate(5);
+
+        $perPage = 4;
+        if (request()->page == '')
+            $page = intdiv($reviewsCollection->count() ,  $perPage) + 1;
+        else
+            $page = request()->page;
+
+        $reviews = new \Illuminate\Pagination\LengthAwarePaginator(
+            $reviewsCollection->slice(($page - 1) * $perPage, $perPage),
+            $reviewsCollection->count(),
+            $perPage,
+            $page,
+            [
+                'path' => \Illuminate\Pagination\Paginator::resolveCurrentPath()
+            ]
+        );
+
+
 
         // calcul des données techniques moyennes
         $attributes = Attribute::where('category_id',$device->category->id)->get()->groupBy([

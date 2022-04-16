@@ -313,7 +313,7 @@
                             </div>
 
 
-
+                            @can('viewAny', App\Models\Technicaldata::class)
                             <div class="table-responsive">
                                 <table class="table dt-responsive nowrap w-100 dataTable no-footer dtr-inline" id="yajra-datatable">
                                     <thead>
@@ -327,6 +327,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            @endcan
 
                             <div class="row">
                                 <div class="col-12">
@@ -390,7 +391,6 @@
                     </div>
                 </div>
 
-
                 <div class="row">
                     <div class="col-8 mb-2">
                         @can ('answer', $device)
@@ -400,8 +400,10 @@
                         @endcan
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
-                    <div class="col-4 text-end">
+                    <div class="col-4">
+                        <div style="float: right">
                             {!! $reviews->links() !!}
+                        </div>
                     </div>
                 </div>
 
