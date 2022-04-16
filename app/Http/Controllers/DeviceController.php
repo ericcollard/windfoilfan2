@@ -113,7 +113,9 @@ class DeviceController extends Controller
 
 
         // pagination avec dernière page part défaut
-        //$reviews = $device->reviews()->latest()->paginate(5);
+        $reviews = $device->reviews()->latest()->paginate(4);
+
+        /*
         $reviewsCollection = $device->reviews()->orderBy('created_at')->get();//->paginate(5);
 
         $perPage = 4;
@@ -131,6 +133,7 @@ class DeviceController extends Controller
                 'path' => \Illuminate\Pagination\Paginator::resolveCurrentPath()
             ]
         );
+        */
 
 
 
