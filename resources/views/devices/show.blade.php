@@ -392,7 +392,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-8 mb-2">
+                    <div class="col-7 mb-2">
                         @can ('answer', $device)
                             <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }}</a>
                         @else
@@ -400,7 +400,7 @@
                         @endcan
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <div style="float: right">
                             {!! $reviews->links() !!}
                         </div>
@@ -504,7 +504,7 @@
                 @endif
 
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-7">
                         @can ('answer', $device)
                             <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }}</a>
                         @else
@@ -512,7 +512,7 @@
                         @endcan
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages ]</span>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <div style="float: right">
                             {!! $reviews->links() !!}
                         </div>

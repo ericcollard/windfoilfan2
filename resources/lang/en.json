@@ -2,5 +2,6 @@
   "and currently has :count report": "and currently has :count report|and currently has :count reports",
   ":count report": "{0} no report|{1}:count report|[2,*]:count reports",
     "Brand title" : "The :NAME brand on Windfoilfan",
-    "Please connect" : "If you want read this message, <br><a href=':LINK'>please connect</a> it's free !"
+    "Please connect" : "If you want read this message, <br><a href=':LINK'>please connect</a> it's free !",
+    "pagination sentence 1" : "Showing :first to :last of :count results"
 }

@@ -397,5 +397,6 @@
     "danger" : "Danger",
     "warning" : "Attention",
     "Professional access demand" : "Demande d'accès professionel",
-    "Send your demand" : "Envoyer votre demande"
+    "Send your demand" : "Envoyer votre demande",
+    "pagination sentence 1" : "Affichage des messages :first à :last sur :count au total"
 }
