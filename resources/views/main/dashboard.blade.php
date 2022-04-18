@@ -44,7 +44,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-account-multiple widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-foil.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Number of Customers">{{ __('Foils') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['foilCnt'] }}</h3>
@@ -59,7 +59,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-cart-plus widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-board.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Number of Orders">{{ __('Boards') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['boardCnt'] }}</h3>
@@ -76,7 +76,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-currency-usd widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-sail.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Average Revenue">{{ __('Sails') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['sailCnt'] }}</h3>
@@ -91,7 +91,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-pulse widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-brand.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Growth">{{ __('Brands') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['brandCnt'] }}</h3>
