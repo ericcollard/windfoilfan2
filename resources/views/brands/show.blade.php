@@ -21,6 +21,7 @@
     </div>
     <!-- end page title -->
 
+    <!-- start présentation -->
     <div class="row mb-2">
         <div class="col-9">
             {!! $brand->body !!}
@@ -43,8 +44,9 @@
 
         </div> <!-- end col -->
     </div>
+    <!-- end présentation -->
 
-    <!-- start 2ere ligne -->
+    <!-- start liens -->
     <div class="row">
 
 
@@ -55,7 +57,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-account-multiple widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-foil.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Number of Customers">{{ __('Foils') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['foilCnt'] }}</h3>
@@ -70,7 +72,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-cart-plus widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-board.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Number of Orders">{{ __('Boards') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['boardCnt'] }}</h3>
@@ -87,7 +89,7 @@
                     <div class="card widget-flat">
                         <div class="card-body">
                             <div class="float-end">
-                                <i class="mdi mdi-currency-usd widget-icon"></i>
+                                <img src="{{asset('assets/images/icon-sail.png')}}" alt="" class="img-fluid" />
                             </div>
                             <h5 class="text-muted fw-normal mt-0" title="Average Revenue">{{ __('Sails') }}</h5>
                             <h3 class="mt-3 mb-3">{{ $dashboard['sailCnt'] }}</h3>
@@ -156,28 +158,39 @@
 
 
     </div>
-    <!-- end 2ere ligne -->
+    <!-- end liens -->
 
     <div class="row">
         <div class="col-xl-7 col-lg-6">
-            <div class="card card-h-100">
+
+            <div class="card">
                 <div class="card-body">
                     <h4 class="header-title mb-3">Messages</h4>
 
                     <div dir="ltr">
                         <div id="messages-chart" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
                     </div>
-
                 </div> <!-- end card-body-->
             </div> <!-- end card-->
-        </div>
-        <div class="col-xl-5 col-lg-6">
 
             <div class="card">
                 <div class="card-body">
+                    <h4 class="header-title mb-3">{{__('Views')}}</h4>
+
+                    <div dir="ltr">
+                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
+                    </div>
+
+                </div> <!-- end card-body-->
+            </div> <!-- end card-->
+
+        </div>
+        <div class="col-xl-5 col-lg-6">
+            <div class="card card-h-100">
+                <div class="card-body">
                     <h4 class="header-title mb-2">{{ __('Last messages') }}s</h4>
 
-                    <div data-simplebar style="max-height: 419px;">
+                    <div data-simplebar style="max-height: 650px;">
                         <div class="timeline-alt pb-0">
                             @foreach($dashboard['lastReviews'] as $review)
                                 <div class="timeline-item">
@@ -197,32 +210,8 @@
                 </div>
                 <!-- end card-body -->
             </div>
-
-
         </div>
     </div>
-
-
-
-    <div class="row">
-        <div class="col-xl-7 col-lg-6">
-            <div class="card card-h-100">
-                <div class="card-body">
-                    <h4 class="header-title mb-3">{{__('Views')}}</h4>
-
-                    <div dir="ltr">
-                        <div id="views-chart-1" class="apex-charts" data-colors="#727cf5,#e3eaef"></div>
-                    </div>
-
-                </div> <!-- end card-body-->
-            </div> <!-- end card-->
-        </div>
-        <div class="col-xl-5 col-lg-6">
-
-        </div>
-    </div>
-
-
 
 
 
