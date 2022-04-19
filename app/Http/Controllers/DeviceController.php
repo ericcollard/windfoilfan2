@@ -13,6 +13,7 @@ use Butschster\Head\Facades\Meta;
 use Butschster\Head\Packages\Entities\OpenGraphPackage;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Pagination\Paginator;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\URL;
@@ -101,6 +102,7 @@ class DeviceController extends Controller
      */
     public function show(Category $category, Device $device)
     {
+
         // enregistre les stats de visite
         $device->recordDisplay();
 

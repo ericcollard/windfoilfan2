@@ -199,7 +199,7 @@
                                         <a href="#" class="text-info fw-bold mb-1 d-block">{{ $review->owner->name }}</a>
                                         <small>{{ __('About') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a></small>
                                         <p class="mb-0 pb-2">
-                                            <small class="text-muted">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}</small>
+                                            <small class="text-muted">{{ __('The') }} {{ $review->created_at->formatLocalized('%d %B %Y') }}, {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }}</small>
                                         </p>
                                     </div>
                                 </div>

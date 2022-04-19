@@ -416,7 +416,9 @@
                                         <b>{{ $review->owner->name }}</b>
                                     </div>
                                     <div class="col-6 col-md-5">
-                                        <i class="mdi mdi-message-text"></i><b> {{ __('Posted on') }}</b> {{ $review->created_at->formatLocalized('%d %B %Y, %R') }} / {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }} / {{ $review->created_at->format('d M Y h:i a') }}
+                                        <i class="mdi mdi-message-text"></i><b> {{ __('Posted on') }}</b> {{ $review->created_at->formatLocalized('%d %B %Y') }}, {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }}
+
+
                                         @if ($index == 0)
                                             <span class="alert-warning px-2" >({{ __('Most recent message') }})</span>
                                         @endif
