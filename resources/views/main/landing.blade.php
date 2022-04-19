@@ -248,7 +248,7 @@
                         <p class="text-muted"><i class="mdi mdi-circle-medium text-primary"></i> Articles didactiques</p>
                     </div>
 
-                    <a href="/home" class="btn btn-primary btn-rounded mt-3">En savoir plus <i class="mdi mdi-arrow-right ms-1"></i></a>
+                    <a href="/posts/5/97" class="btn btn-primary btn-rounded mt-3">En savoir plus <i class="mdi mdi-arrow-right ms-1"></i></a>
 
                 </div>
             </div>
