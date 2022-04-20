@@ -176,9 +176,9 @@
                 <i class="mdi mdi-close"></i>
             </a>
             <img src="{{asset('assets/images/help-icon.svg')}}" height="90" alt="Helper Icon Image" />
-            <h5 class="mt-3">Participer</h5>
-            <p class="mb-3">Postez vos propres compte-rendus et analysez vos sessions</p>
-            <a href="{{ route('landing') }}" class="btn btn-outline-light btn-sm">Participer</a>
+            <h5 class="mt-3">Soutenir</h5>
+            <p class="mb-3">En soutenant nos actions, vous favorisez l'existance d'une source de donnée indépendante</p>
+            <a href="/posts/5/98" class="btn btn-outline-light btn-sm">Participer</a>
         </div>
         <!-- end Help Box -->
         <!-- End Sidebar -->
