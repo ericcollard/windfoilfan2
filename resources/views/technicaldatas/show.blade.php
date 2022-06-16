@@ -48,22 +48,22 @@
                 <div class="card d-block">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-sm-4">
                                 {{ __('Serial number') }} : {{  $technicaldata->serial }}
                             </div>
-                            <div class="col-4">
+                            <div class="col-sm-4">
                                 {{ $technicaldata->device->category->name }} <a href="{{ $technicaldata->device->path() }}">{{ $technicaldata->device->brand->name }} {{ $technicaldata->device->name }} {{ $technicaldata->device->year }}</a>
                             </div>
-                            <div class="col-4  text-end">
+                            <div class="col-sm-4  text-end">
                                 {{ __('Technical data') }} enregistrées le  {{$technicaldata->created_at->formatLocalized('%d %B %Y %H:%M' ) }} par {{$technicaldata->author->name }}
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-sm-8">
                                 Commentaire :
                                 {!! $technicaldata->body !!}
                             </div>
-                            <div class="col-4 text-end">
+                            <div class="col-sm-4 text-end">
 
                                 <ul class="social-list list-inline mt-3">
                                     @can ('update', $technicaldata)

@@ -233,7 +233,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-6 mt-2">
+                            <div class="col-sm-6 mt-2">
                                 <p>Programme : La zone verte situe le programme d'utilisation dans la fourchette FREESTYLE / FREERIDE / FREERACE / RACE</p>
                                 <?php
                                 $fs = $device->programme_start;
@@ -245,7 +245,7 @@
                                 echo "<div class='bar'><div class='barcontent left' style='width:".$lpc."%'></div><div class='barcontent center' style='width:".$cpc."%;'> </div><div class='barcontent right' style='width:".$rpc."%;'> </div></div>";
                                 ?>
                             </div>
-                            <div class="col-6 text-end mt-2">
+                            <div class="col-sm-6 text-end mt-2">
                                 <p>{{ __('Price') }} : {{ $device->price }} €</p>
                                 <ul class="social-list list-inline mt-3">
 
@@ -454,10 +454,10 @@
 
 
                                         <div class="row userEquipment mt-4">
-                                            <div class="col-8">
+                                            <div class="col-sm-8 mb-2">
                                                 {!! $review->owner->personal_equipment !!}
                                             </div>
-                                            <div class="col-4  text-end">
+                                            <div class="col-sm-4 mb-2 text-end">
 
                                                 @can ('answer',$device)
                                                     <li class="list-inline-item text-center">
