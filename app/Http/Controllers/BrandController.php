@@ -119,7 +119,7 @@ class BrandController extends Controller
                 ->where('brand_id',$brand->id);
         });
 
-        $dashboard['lastReviews'] =  $reviews->take(7)->get();
+        $dashboard['lastReviews'] =  $reviews->take(12)->get();
 
         // review posting chart
         $chartDatas = Review::select([

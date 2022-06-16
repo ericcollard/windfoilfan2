@@ -186,6 +186,40 @@
 
         </div>
         <div class="col-xl-5 col-lg-6">
+
+            <div class="card card-h-100">
+                <div class="card-body">
+                    <h4 class="header-title mb-2">{{ __('Last discussion messages') }}</h4>
+
+                    <div data-simplebar style="max-height: 1070px;">
+                        <div class="timeline-alt pb-0">
+
+                            @foreach($dashboard['lastReviews'] as $review)
+                                <div class="timeline-item">
+                                    <i class="mdi mdi-upload bg-info-lighten text-info timeline-icon"></i>
+                                    <div class="timeline-item-info mb-1">
+                                        <a href="{{ $review->owner->path() }}" class="text-info fw-bold d-block">{{ $review->owner->name }} <small class="text-muted float-end">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}, {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }}</small></a>
+                                        <small>
+                                            {{ __('On') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a>
+                                            @if ($review->title)
+                                                <cite class=" float-end">{{ substr($review->title,0,20) }}</cite>
+                                            @endif
+
+                                        </small>
+
+                                    </div>
+                                </div>
+                            @endforeach
+
+
+                        </div>
+                        <!-- end timeline -->
+                    </div> <!-- end slimscroll -->
+                </div>
+                <!-- end card-body -->
+            </div>
+
+        <!--
             <div class="card card-h-100">
                 <div class="card-body">
                     <h4 class="header-title mb-2">{{ __('Last messages') }}s</h4>
@@ -205,10 +239,9 @@
                                 </div>
                             @endforeach
                         </div>
-                        <!-- end timeline -->
-                    </div> <!-- end slimscroll -->
+                    </div>
                 </div>
-                <!-- end card-body -->
+                 end card-body -->
             </div>
         </div>
     </div>
