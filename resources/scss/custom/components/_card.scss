@@ -1,4 +1,4 @@
-// 
+//
 // card.scss
 //
 
@@ -46,6 +46,16 @@
     margin-top: 0;
 }
 
+// Card card-header
+.card-header {
+    padding: 0.75rem 0.7rem;
+}
+
+// Card body
+.card-body {
+    padding: 1.0rem 0.7rem;
+}
+
 
 //Card disable loading (Custom Cards)
 .card-disabled {
@@ -87,7 +97,7 @@
 
 .card-pricing {
     position: relative;
-    
+
     .card-pricing-plan-name {
         padding-bottom: 20px;
     }

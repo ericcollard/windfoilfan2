@@ -210,35 +210,25 @@
 
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-3  col-md-4">
+                            <div class="col-sm-3  col-md-4">
                                 <h5>{{ __('Creation date') }}</h5>
+                                <p>{{ $device->created_at->formatLocalized('%d %B %Y ') }} {{ __('by') }} {{ $device->creator->name }}</p>
                             </div>
-                            <div class="col-3 col-md-3">
+                            <div class="col-sm-3 col-md-3">
                                 <h5><i class="mdi mdi-eye-check-outline"></i> {{ __('Views') }}</h5>
+                                <p>{{ $device->views }} {{ __('Views') }}</p>
                             </div>
-                            <div class="col-4 col-md-3">
+                            <div class="col-sm-4 col-md-3">
                                 <h5><i class="mdi mdi-message-text-outline"></i> {{ __('Messages') }}</h5>
+                                <p>{{ $device->reviews->count() }}
+                                    @if ($device->reviews->count() > 0)
+                                        ( {{ __('Last') }} {{ $device->reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $device->reviews->first()->owner->name }})
+                                    @endif
+                                </p>
                             </div>
-                            <div class="col-2 col-md-2 text-end">
+                            <div class="col-sm-2 col-md-2 text-end">
                                     <div class="badge bg-dark" style="margin : 0 0.4rem">{{ $device->category->name }}</div>
                                     <div class="badge {{ $device->statusClass() }}">{{ __($device->status) }}</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-3  col-md-4">
-                                {{ $device->created_at->formatLocalized('%d %B %Y ') }} {{ __('by') }} {{ $device->creator->name }}
-                            </div>
-                            <div class="col-3 col-md-3">
-                                {{ $device->views }} {{ __('Views') }}
-                            </div>
-                            <div class="col-4 col-md-3">
-                                {{ $device->reviews->count() }}
-                                @if ($device->reviews->count() > 0)
-                                    ( {{ __('Last') }} {{ $device->reviews->first()->created_at->formatLocalized('%d %B %Y') }} {{ __('by') }} {{ $device->reviews->first()->owner->name }})
-                                @endif
-                            </div>
-                            <div class="col-2 col-md-2 text-end">
-
                             </div>
                         </div>
 
@@ -392,7 +382,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-7 mb-2">
+                    <div class="col-sm-7 mb-2">
                         @can ('answer', $device)
                             <a class="btn btn-success rounded-pill" href="{{ route('review.create',[ 'device'=>$device]) }}" role="button"> <i class="mdi mdi-square-edit-outline"></i>  {{ __('Answer') }}</a>
                         @else
@@ -400,7 +390,7 @@
                         @endcan
                         <span class="m-3"><b>Page {{ $reviews->currentPage() }} {{ __('on') }} {{ $reviews->lastPage() }}</b> [ {{ $reviews->total() }} Messages - {{ __('Most recent first') }}]</span>
                     </div>
-                    <div class="col-5">
+                    <div class="col-sm-5">
                         <div style="float: right">
                             {!! $reviews->links() !!}
                         </div>
@@ -412,10 +402,10 @@
                         <div class="card d-block ">
                             <div class="card-header">
                                 <div class="row">
-                                    <div class="col-6 col-md-2">
+                                    <div class="col-sm-2">
                                         <b>{{ $review->owner->name }}</b>
                                     </div>
-                                    <div class="col-6 col-md-5">
+                                    <div class="col-sm-5">
                                         <i class="mdi mdi-message-text"></i><b> {{ __('Posted on') }}</b> {{ $review->created_at->formatLocalized('%d %B %Y') }}, {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }}
 
 
@@ -423,7 +413,7 @@
                                             <span class="alert-warning px-2" >({{ __('Most recent message') }})</span>
                                         @endif
                                     </div>
-                                    <div class="col-12 col-md-5 text-end">
+                                    <div class="col-sm-5 text-end">
                                         <b>{{ __('Title') }}</b> : {{ is_null($review->title) ? 'nc' :  $review->title }}
                                     </div>
                                 </div>

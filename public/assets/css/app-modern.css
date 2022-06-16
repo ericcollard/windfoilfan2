@@ -13559,6 +13559,14 @@ body[data-layout=topnav] .container-fluid, body[data-layout=topnav] .container-s
   margin-top: 0;
 }
 
+.card-header {
+  padding: 0.75rem 0.7rem;
+}
+
+.card-body {
+  padding: 1rem 0.7rem;
+}
+
 .card-disabled {
   position: absolute;
   left: 0;
