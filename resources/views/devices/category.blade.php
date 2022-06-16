@@ -107,18 +107,11 @@
             </div>
         </div>
 
-
         <div class="row">
             <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-
-                        {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
-
-                    </div>
-                </div>
-            </div><!-- end col-12-->
-        </div><!-- end row-->
+                {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
+            </div>
+        </div>
 
 
     </div>
