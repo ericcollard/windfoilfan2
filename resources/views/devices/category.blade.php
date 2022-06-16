@@ -108,7 +108,7 @@
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-3">
                 {{$dataTable->table(['class' => 'table dt-responsive nowrap w-100'])}}
             </div>
         </div>
