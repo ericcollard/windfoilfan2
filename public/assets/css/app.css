@@ -12119,7 +12119,7 @@ body[data-leftbar-compact-mode=condensed]:not(.authentication-bg) .logo span.log
 
   .content-page {
     margin-left: 0 !important;
-    padding: 65px 10px 65px;
+    padding: 65px 0px 65px;
   }
 
   body[data-leftbar-compact-mode=condensed] .leftside-menu {
