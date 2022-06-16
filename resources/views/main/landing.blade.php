@@ -86,9 +86,9 @@
                             les mesures, les caractéristiques, les compte rendu de test, les performances de
                             plus de 200 produits dédiés au windfoil.</p>
 
-                        <a href="{{ route('login') }}" class="btn btn-success" style="margin-right: 1em">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
-                        <a href="{{ route('register') }}" class="btn btn-info" style="margin-right: 1em">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
-                        <a href="{{ route('home') }}" class="btn btn-light">Juste visiter <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('login') }}" class="btn btn-success mt-2" style="margin-right: 1em">Se connecter <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('register') }}" class="btn btn-info mt-2" style="margin-right: 1em">Créer un compte <i class="mdi mdi-arrow-right ms-1"></i></a>
+                        <a href="{{ route('home') }}" class="btn btn-light mt-2">Juste visiter <i class="mdi mdi-arrow-right ms-1"></i></a>
 
                         <p class="mt-4 font-16 text-white"><em>Info. En tant que simple visiteur, les fonctionnalités et données visibles seront fortement
                                 réduites. En vous connectant, vous aurez accès à l'essentiel des éléments. Créez gratuitement votre compte !</em></p>
@@ -321,7 +321,7 @@
                                 {!!  htmlFormSnippet() !!}
                             </div>
                             <div class="col-lg-6 text-end">
-                                <button id="btn_submit"  type="submit" class="btn btn-primary">Envoyez votre message <i class="mdi mdi-telegram ms-1"></i> </button>
+                                <button id="btn_submit"  type="submit" class="btn btn-primary mt-2">Envoyez votre message <i class="mdi mdi-telegram ms-1"></i> </button>
                             </div>
                         </div>
 
