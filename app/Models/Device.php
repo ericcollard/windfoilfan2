@@ -57,6 +57,11 @@ class Device extends Model
         return $this->hasMany(Review::class);
     }
 
+    public function latestReview()
+    {
+        return $this->hasOne(Review::class)->latest();
+    }
+
     public function statistics()
     {
         return $this->morphMany(Statistic::class, 'statisticable');

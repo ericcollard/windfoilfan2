@@ -123,6 +123,7 @@ class MainController extends Controller
             ->take(5)->get();
 
         // Derniers messages
+        /*
         $reviews = Review::latest();
         // only those with device visible
         $reviews->whereExists(function($query)
@@ -133,8 +134,32 @@ class MainController extends Controller
                 ->where('status','Published');
         });
         $dashboard['lastReviews'] =  $reviews->take(20)->get();
+*/
 
-        // derniers posts
+        $data  = DB::select("Select t1.id from reviews as t1
+LEFT JOIN reviews as t2 on
+(t2.DEVICE_ID = t1.DEVICE_ID
+and
+t2.created_at > t1.created_at
+)
+LEFT JOIN devices on devices.id = t1.device_id
+
+WHERE
+    t2.DEVICE_ID IS NULL
+    and devices.status = 'Published'
+    order by t1.created_at desc
+    limit 20");
+
+        $arr = [];
+        foreach($data as $row)
+        {
+            $arr[] = $row->id;
+        }
+
+        $dashboard['lastReviews'] =  Review::whereIn('id', $arr)->latest()->get();
+
+
+            // derniers posts
         $posts = Post::latest()
             ->where('status','Published');
         $dashboard['posts'] =  $posts->take(6)->get();
