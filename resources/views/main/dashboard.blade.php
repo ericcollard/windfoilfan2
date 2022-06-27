@@ -106,7 +106,7 @@
                                     <div class="timeline-item-info mb-1">
                                         <a href="{{ $review->owner->path() }}" class="text-info fw-bold d-block">{{ $review->owner->name }} <small class="text-muted float-end">{{ __('The') }} {{ $review->created_at->format('d-m-Y') }}, {{ $review->created_at->timezone('Europe/Paris')->format('H:i') }}</small></a>
                                         <small>
-                                            {{ __('On') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }}</a>
+                                            {{ __('On') }} <a href='{{ $review->device->path() }}'>{{ $review->device->name }} {{ $review->device->brand->name }} {{ $review->device->year }} ({{ $review->device->reviewsCount() }} {{ __('messages') }})</a>
                                             @if ($review->title)
                                                 <cite class=" float-end">{{ substr($review->title,0,20) }}</cite>
                                             @endif

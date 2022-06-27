@@ -219,5 +219,8 @@ class Device extends Model
         return $imagePath;
     }
 
-
+    public function reviewsCount()
+    {
+        return $this->reviews()->count();
+    }
 }
