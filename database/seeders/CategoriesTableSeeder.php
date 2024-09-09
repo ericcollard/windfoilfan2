@@ -21,19 +21,19 @@ class CategoriesTableSeeder extends Seeder
         \DB::table('categories')->insert(array (
             0 => 
             array (
-                'id' => 1,
+                'id' => '1',
                 'name' => 'Foil',
                 'slug' => 'foil',
             ),
             1 => 
             array (
-                'id' => 2,
+                'id' => '2',
                 'name' => 'Flotteur',
                 'slug' => 'board',
             ),
             2 => 
             array (
-                'id' => 3,
+                'id' => '3',
                 'name' => 'Voile',
                 'slug' => 'sail',
             ),

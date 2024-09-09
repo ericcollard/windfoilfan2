@@ -50,7 +50,7 @@
         <div class="row">
             <div class="col-12">
 
-                <div id="chartcomponent" style="height: 1500px"></div>
+                <div id="chartcomponent" style="height: 1800px"></div>
                 <div id="drag"></div>
                 <div id="drop"></div>
                 <div id="json"></div>
@@ -96,7 +96,9 @@
         var chart = new Highcharts.Chart({
             chart: {
                 renderTo: 'chartcomponent',
-                animation: false
+                animation: false,
+                width: null,
+                height: 1800
             },
 
             title: false,
@@ -114,7 +116,10 @@
                         }
 
                     },
-                    useHTML: true
+                    useHTML: true,
+                    style: {
+                        fontSize: "8px"
+                    }
                 }
             },
 
@@ -122,6 +127,7 @@
                 title: {
                     text: '{{ $legende }}'
                 },
+                tickInterval: 1,
                 min: {{ $chartMin }},
                 max: {{ ($chartMax == 10.0 ? 10.1 : $chartMax) }},
             }, ],

@@ -21,11 +21,6 @@ class PostsTableSeeder extends Seeder
         \DB::table('posts')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'user_id' => 1,
-                'post_categories_id' => 1,
-                'title' => 'Notre sélection Foil 2022',
-                'description' => 'Petite sélection de nos foils référence à la date de Janvier 2022',
                 'body' => '<div class="container">
 <div class="row">
 <div class="col">
@@ -54,7 +49,7 @@ class PostsTableSeeder extends Seeder
 <li>Vos contraintes de transport et de stockage</li>
 </ul>
 <p>En secouant le tout, on a des chances de faire un choix qui va permettre d\'optimiser le plaisir que vous allez prendre sur l\'eau, tout en respectant vos contraintes. Evidemment, compte tenu du nombre de param&egrave;tres, ce choix doit &ecirc;tre tr&egrave;s individualis&eacute;. Qui plus est, le conseil que nous pourrons donner &eacute;volue en fonction des nouveaux mod&egrave;les (ou nouvelles configurations) qui sortent r&eacute;guli&egrave;ment et viennent bouleverser (ou pas) la donne.</p>
-<p>Pour faire ce choix, notre base de donn&eacute;e de test (<a href="https://windfoilfan.glissattitude.com">https://windfoilfan.glissattitude.com</a>) est un outil pr&eacute;cieux mais je me suis tout de m&ecirc;me essay&eacute; &agrave; l\'exercice de faire une proposition de mod&egrave;le pr&eacute;f&eacute;rentiel pour chaque case d\'une matrice PROGRAMME / GABARIT. Lorsqu\'il y a plusieurs choix, j\'ai indiqu&eacute; en <span style="color: #800080;"><strong>VIOLET</strong></span>, le param&egrave;tre essentiel qui oriente vers le choix de ce mod&egrave;le.</p>
+<p>Pour faire ce choix, notre base de donn&eacute;e de test (<a>https://windfoilfan.glissattitude.com</a>) est un outil pr&eacute;cieux mais je me suis tout de m&ecirc;me essay&eacute; &agrave; l\'exercice de faire une proposition de mod&egrave;le pr&eacute;f&eacute;rentiel pour chaque case d\'une matrice PROGRAMME / GABARIT. Lorsqu\'il y a plusieurs choix, j\'ai indiqu&eacute; en <span style="color: #800080;"><strong>VIOLET</strong></span>, le param&egrave;tre essentiel qui oriente vers le choix de ce mod&egrave;le.</p>
 <h2>S&eacute;lection DEBUTANT (au 10/01/2022)</h2>
 <table>
 <tbody>
@@ -70,12 +65,12 @@ class PostsTableSeeder extends Seeder
 </td>
 <td style="background-color: powderblue;" colspan="2">
 <p><span style="color: #800080;"><strong>RASSURANT</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/starboard-supercruiser-2019">Starboard Supercruiser</a> : pour ceux qui favorisent le c&ocirc;t&eacute; ultra rassurant en acceptant une vitesse r&eacute;duite, et une &eacute;volutivit&eacute; moindre</p>
+<p><a href="/devices/foil/starboard-supercruiser-2019">Starboard Supercruiser</a> : pour ceux qui favorisent le c&ocirc;t&eacute; ultra rassurant en acceptant une vitesse r&eacute;duite, et une &eacute;volutivit&eacute; moindre</p>
 <p><span style="color: #800080;"><strong>EVOLUTIF</strong></span></p>
 <p>Alpinefoil Revo : pour ceux qui favorisent l\'&eacute;volutivit&eacute; (compatible avec toute la gamme d\'aile Alpine), avec une glisse sup&eacute;rieure au Supercruiser</p>
 </td>
 <td style="background-color: powderblue;">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/fanatic-flow-900-2019">Fanatic Flow 1200</a> : pour ceux qui privil&eacute;gient le contr&ocirc;le et la polyvalence</p>
+<p><a href="/devices/foil/fanatic-flow-900-2019">Fanatic Flow 1200</a> : pour ceux qui privil&eacute;gient le contr&ocirc;le et la polyvalence</p>
 <p>&nbsp;</p>
 </td>
 </tr>
@@ -96,17 +91,17 @@ class PostsTableSeeder extends Seeder
 </td>
 <td style="background-color: powderblue;">
 <p><span style="color: #800080;"><strong>ECONOMIQUE</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/taaroa-noe-80-freeride-2018">Taaroa Noe 80</a> : Pour ceux qui veulent accompagner un flotteur plut&ocirc;t &eacute;troit, et des voiles inf&eacute;rieures &agrave; 7.5m2</p>
+<p><a href="/devices/foil/taaroa-noe-80-freeride-2018">Taaroa Noe 80</a> : Pour ceux qui veulent accompagner un flotteur plut&ocirc;t &eacute;troit, et des voiles inf&eacute;rieures &agrave; 7.5m2</p>
 </td>
 <td style="background-color: powderblue;">
 <p><span style="color: #800080;"><strong>MANIABLE &amp; PLAGE D\'UTILISATION (light &gt; strong wind)</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/ga-mach-1-2019">Moses Vento 85 Freeride</a>&nbsp;Pour ceux qui privil&eacute;gient un foil vivant, peu rapide, mais qui d&eacute;colle t&ocirc;t et offre des belles sensations de glisse. Excellent &eacute;galement en mode FREEWAVE dans le vent soutenu</p>
+<p><a href="/devices/foil/ga-mach-1-2019">Moses Vento 85 Freeride</a>&nbsp;Pour ceux qui privil&eacute;gient un foil vivant, peu rapide, mais qui d&eacute;colle t&ocirc;t et offre des belles sensations de glisse. Excellent &eacute;galement en mode FREEWAVE dans le vent soutenu</p>
 <p><span style="color: #800080;"><strong>NAV CALEE &amp; VENT MEDIUM &agrave; FORT</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/afs-wind-85-2019">AFS Wind 85</a> (F770 ou F1080 au dessus de 85kg) : Pour ceux qui pr&eacute;f&egrave;rent une attitude cal&eacute;e, plut&ocirc;t rapide, et acceptent un d&eacute;collage un peu plus tardif que la moyenne</p>
+<p><a href="/devices/foil/afs-wind-85-2019">AFS Wind 85</a> (F770 ou F1080 au dessus de 85kg) : Pour ceux qui pr&eacute;f&egrave;rent une attitude cal&eacute;e, plut&ocirc;t rapide, et acceptent un d&eacute;collage un peu plus tardif que la moyenne</p>
 </td>
 <td style="background-color: powderblue;">
 <p><span style="color: #800080;"><strong>PUISSANT &amp; NERVEUX</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/lokefoil-lk1-performance-2021">Lokefoil Lk1</a>&nbsp;: Pour ceux qui aiment naviguer en finesse sur un foil vivant sans surtoiler</p>
+<p><a href="/devices/foil/lokefoil-lk1-performance-2021">Lokefoil Lk1</a>&nbsp;: Pour ceux qui aiment naviguer en finesse sur un foil vivant sans surtoiler</p>
 </td>
 </tr>
 </tbody>
@@ -127,22 +122,22 @@ class PostsTableSeeder extends Seeder
 </td>
 <td style="background-color: powderblue;">
 <p><span style="color: #800080;"><strong>100% PERF</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/phantom-iris-x-proto-2-2019">Phantom IRIS X</a>&nbsp;et R, Pour ceux qui privil&eacute;gient une navigation en finesse et aiment un foil vif mais avec une glisse incroyable. &nbsp;</p>
+<p><a href="/devices/foil/phantom-iris-x-proto-2-2019">Phantom IRIS X</a>&nbsp;et R, Pour ceux qui privil&eacute;gient une navigation en finesse et aiment un foil vif mais avec une glisse incroyable. &nbsp;</p>
 <p>Le R est LE FOIL le plus rapide actuellement, mais l\'exploiter r&eacute;cessite un vrai &nbsp;bon niveau technique (plus vif que la moyenne)</p>
 </td>
 <td style="background-color: powderblue;" colspan="2">
 <p><span style="color: #800080;"><strong>TOP CONTROLE</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/taaroa-noe-97-uhm-2020">Taaroa Noe 97 Freerace</a>&nbsp;: Pour ceux qui cherchent un maximum de contr&ocirc;le dans toutes les conditions (m&ecirc;me form&eacute;es)</p>
+<p><a href="/devices/foil/taaroa-noe-97-uhm-2020">Taaroa Noe 97 Freerace</a>&nbsp;: Pour ceux qui cherchent un maximum de contr&ocirc;le dans toutes les conditions (m&ecirc;me form&eacute;es)</p>
 <p><span style="color: #800080;"><strong>RAPIDE AU TRAVERS</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/afs-wind-95-v2-2021">AFS Wind 95</a>&nbsp;: Pour ceux qui aiment une conduite assez cal&eacute;e, o&ugrave; on peut passer de la puissance pour faire parler le GPS</p>
+<p><a href="/devices/foil/afs-wind-95-v2-2021">AFS Wind 95</a>&nbsp;: Pour ceux qui aiment une conduite assez cal&eacute;e, o&ugrave; on peut passer de la puissance pour faire parler le GPS</p>
 <p><span style="color: #800080;"><strong>FACILE &amp; EFFICACE LIGHT WIND &amp; BON CAP</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/zeeko-bullet-v1-2020">Zeeko Bullet</a>&nbsp;ou <a href="https://windfoilfan.glissattitude.com/devices/foil/zeeko-bullet-uhm-2021">Patrik HM</a> : Pour ceux qui veulent un foil tr&egrave;s facile d\'acc&egrave;s mais efficace et extr&ecirc;mement polyvalent, que ce soit au cap ou dans le light</p>
+<p><a href="/devices/foil/zeeko-bullet-v1-2020">Zeeko Bullet</a>&nbsp;ou <a href="/devices/foil/zeeko-bullet-uhm-2021">Patrik HM</a> : Pour ceux qui veulent un foil tr&egrave;s facile d\'acc&egrave;s mais efficace et extr&ecirc;mement polyvalent, que ce soit au cap ou dans le light</p>
 </td>
 </tr>
 <tr>
 <td style="background-color: powderblue;" colspan="3">
 <p><span style="color: #800080;"><strong>COMPLET</strong></span></p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/f4-race-2021">F4</a>&nbsp;: Pour ceux qui cherchent un ensemble contr&ocirc;le / vitesse / polyvalence quasi imbattable, mais acceptent une qualit&eacute; de fabrication des fuselages et une finition standard en retrait.</p>
+<p><a href="/devices/foil/f4-race-2021">F4</a>&nbsp;: Pour ceux qui cherchent un ensemble contr&ocirc;le / vitesse / polyvalence quasi imbattable, mais acceptent une qualit&eacute; de fabrication des fuselages et une finition standard en retrait.</p>
 <p>Il vient &eacute;galement couvrir la case \'accessibilit&eacute;\' grace &agrave; son contr&ocirc;le facile, mais &agrave; condition de l\'&eacute;quiper en option d\'une des ailes de race (850 ou 950) car la 620 fournie en standard dans le set Slalom peut se r&eacute;v&egrave;ler trop juste dans le light pour les utilisateurs moins aguerris.</p>
 </td>
 </tr>
@@ -152,31 +147,31 @@ class PostsTableSeeder extends Seeder
 <p>Objectif : Up&amp;Down</p>
 </td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/phantom-iris-x-proto-2-2019">Phantom&nbsp;IRIS X VMG</a> : Pour ceux qui privil&eacute;gient la sensation de glisse, et acceptant un pilotage plus technique.</p>
+<p><a href="/devices/foil/phantom-iris-x-proto-2-2019">Phantom&nbsp;IRIS X VMG</a> : Pour ceux qui privil&eacute;gient la sensation de glisse, et acceptant un pilotage plus technique.</p>
 </td>
 <td style="background-color: powderblue;">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/alpinefoil-a1-race-2020">Alpine A1 Race</a> : Pour ceux qui privil&eacute;gient le rapport Efficacit&eacute; / Prix ... sur des plan d\'eau calmes. Impressionnant dans le tr&egrave;s light.&nbsp;</p>
+<p><a href="/devices/foil/alpinefoil-a1-race-2020">Alpine A1 Race</a> : Pour ceux qui privil&eacute;gient le rapport Efficacit&eacute; / Prix ... sur des plan d\'eau calmes. Impressionnant dans le tr&egrave;s light.&nbsp;</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><img src="/storage/photos/1/selection.jpg" alt="" /></p>
+<p><img src="/storage/photos/1/selection.jpg" alt=""></p>
 </div>
 </div>
 </div>',
-                'status' => 'Published',
-                'views' => 1253,
-                'last_ip' => '88.163.167.153',
                 'created_at' => '2022-03-01 00:00:00',
-                'updated_at' => '2022-04-10 23:38:41',
+                'description' => 'Petite sélection de nos foils référence à la date de Janvier 2022. Comme régulièrement, nous proposons un arrêt sur image pour mettre en exergue les produits qui nous semble faire référence à cet instant.',
+                'id' => '1',
+                'last_ip' => '148.64.100.94',
+                'post_categories_id' => '1',
+                'status' => 'Published',
+                'title' => 'Notre sélection Foil 2022',
+                'updated_at' => '2024-09-09 01:45:24',
+                'user_id' => '1',
+                'views' => '2334',
             ),
             1 => 
             array (
-                'id' => 4,
-                'user_id' => 1,
-                'post_categories_id' => 1,
-                'title' => 'Notre sélection Foil 2018',
-                'description' => 'Petite sélection de nos foils référence en 2018',
                 'body' => '<p class="notice-msg"><a href="https://www.glissattitude.com/foil/index.php">VERSION OPTIMISEE POUR LES MOBILES <span class="icon mpx-apple"> </span> </a></p>
 
 <p>Remarque importante : cette année (2018), les différents foils du marché ont évolués, et deviennent de plus en plus proche en terme de performance. Il est donc difficile de comparer raisonnablement la vitesse car les performances pures dépendent plus du pilote que du matériel (dans certaines limites tout de même). Par contre, les sensations sont très différentes et nous essayons au maximum de les faire ressortir.</p>
@@ -194,19 +189,19 @@ class PostsTableSeeder extends Seeder
 <p><iframe title="Foil selector" src="https://www.glissattitude.com/foil/se.php" width="100%" height="1300" frameborder="0" marginwidth="0" marginheight="0"></iframe></p>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>
 ',
-                'status' => 'Published',
-                'views' => 62282,
-                'last_ip' => '54.36.148.111',
                 'created_at' => '2016-04-03 21:55:41',
-                'updated_at' => '2022-04-09 06:13:41',
+                'description' => 'Petite sélection de nos foils référence en 2018',
+                'id' => '4',
+                'last_ip' => '185.191.171.17',
+                'post_categories_id' => '1',
+                'status' => 'Published',
+                'title' => 'Notre sélection Foil 2018',
+                'updated_at' => '2024-09-09 04:45:47',
+                'user_id' => '1',
+                'views' => '62820',
             ),
             2 => 
             array (
-                'id' => 6,
-                'user_id' => 1,
-                'post_categories_id' => 2,
-                'title' => 'Etre accompagné ?',
-                'description' => 'Le windfoil vous intéresse ? Vous n\'osez pas acheter avant d\'avoir testé ? Voici où vous pouvez tester',
                 'body' => '<p>Le windfoil vous int&eacute;resse ? Vous n\'osez pas acheter avant d\'avoir test&eacute; ? Vous voulez de l\'aide pour apprendre ? Vous voulez en avoir plus ?</p>
 <h2>Essayer accompagn&eacute; ... pourquoi ?</h2>
 <p>On insiste sur l\'int&eacute;r&ecirc;t de d&eacute;buter ... au moins la premi&egrave;re heure .. avec un professionnel qui vous accompagne sur l\'eau car cela permet de prendre du plaisir tr&egrave;s rapidement et de ne pas faire toutes les erreurs qui ralentissent beaucoup l\'acc&egrave;s aux premiers vols stabilis&eacute;s. Pour faire plus \'cru\', on ne veux pas pr&ecirc;ter un foil &agrave; un d&eacute;butant pour le voir gal&egrave;rer 2 heures et nous le ramener en nous distant : c\'est nul et trop dur ! ..... car ne c\'est pas vrai quand on est bien accompagn&eacute;.</p>
@@ -237,36 +232,36 @@ class PostsTableSeeder extends Seeder
 <p>Formule : Coaching individuel accompagn&eacute; sur l\'eau par un BE et son bateau , sur RV, reportable en fonction de la m&eacute;t&eacute;o</p>
 <p>Mat&eacute;riel : Starbaord et NeilPryde</p>
 <p>Renseignements et r&eacute;servations : 04 94 46 63 18 / contact@yctoulon.fr</p>',
-                'status' => 'Published',
-                'views' => 5182,
-                'last_ip' => '54.36.148.89',
                 'created_at' => '2022-01-02 01:00:38',
-                'updated_at' => '2022-04-09 07:53:46',
+                'description' => 'Le windfoil vous intéresse ? Vous n\'osez pas acheter avant d\'avoir testé ? Voici où vous pouvez tester',
+                'id' => '6',
+                'last_ip' => '185.191.171.12',
+                'post_categories_id' => '2',
+                'status' => 'Published',
+                'title' => 'Etre accompagné ?',
+                'updated_at' => '2024-09-09 06:26:17',
+                'user_id' => '1',
+                'views' => '5729',
             ),
             3 => 
             array (
-                'id' => 7,
-                'user_id' => 1,
-                'post_categories_id' => 2,
-                'title' => 'Après une heure de Vol',
-                'description' => 'Combien faut il de temps pour appréhender le windfoil ? l\'exemple de nos athlètes',
             'body' => '<p>Ce WE, &agrave; l\'occasion d\'une journ&eacute;e test Windfoil &agrave; Serre Pon&ccedil;on, nous avons eu l\'occasion de mettre le pied &agrave; l\'&eacute;trier pour B&eacute;r&eacute;nice et Jeanne, 2 athl&egrave;tes du p&ocirc;le France de Marseille. Cela a permi de mesurer la vitesse de prise en main pour des windsurfers tr&egrave;s aguerris, mais qui n\'avaient jamais mis un pied sur une planche de windfoil (plus habitu&eacute;es &agrave; la RSX). On constate assez rapidement que les nouveaux foils comme le Horue permettent une prise en main ultra-rapide ... ceci tranche avec ce que nous avons connus ne serait-ce qu\'il y a un an.</p>
 <p>On vous laisse juger le r&eacute;sultat de cette premi&egrave;re heure de pratique sur notre Foil Horue, mont&eacute; pour l\'une sur notre proto windfoil, et pour l\'autre sur une Exocet RS3.</p>
 <p>&nbsp;</p>
 <p><iframe src="https://www.youtube.com/embed/uO0d735po20" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-                'status' => 'Published',
-                'views' => 724,
-                'last_ip' => '54.36.148.135',
                 'created_at' => '2016-08-02 01:00:38',
-                'updated_at' => '2022-04-09 07:57:01',
+                'description' => 'Combien faut il de temps pour appréhender le windfoil ? l\'exemple de nos athlètes',
+                'id' => '7',
+                'last_ip' => '185.191.171.18',
+                'post_categories_id' => '2',
+                'status' => 'Published',
+                'title' => 'Après une heure de Vol',
+                'updated_at' => '2024-09-09 09:02:05',
+                'user_id' => '1',
+                'views' => '1250',
             ),
             4 => 
             array (
-                'id' => 8,
-                'user_id' => 1,
-                'post_categories_id' => 8,
-                'title' => 'Spot de Serre-Ponçon',
-                'description' => 'nc',
                 'body' => '<h2>Le Spot de Serre-Ponçon</h2><p>A 2h de Marseille, découvrez un spot où il est pratiquemnt possible de naviguer tous les jours entre Juin et Octobre grâce à un thermique qui se lève tous les après-midi entre 10 et 20 knt. Bien sûr, à 10-12knt, le Foil est l\'outil idéal pour exploiter les conditions, avec des voiles entre 5 et 7m2.
 </p><p>Le spot est situé entre Savine et Embrun (Les eaux douces). Vous pouvez y gréer sur l\'herbe.
 </p><p>Pour vous restaurer, louer une planche à voile, et même louer un foil (Horue , AHD, Loke) ... rendez vous chez Titi au bus anglais (sur la gauche du Spot) ? L\'accueil y est top !<br>
@@ -307,19 +302,19 @@ class PostsTableSeeder extends Seeder
 </iframe>
 
 ',
-                'status' => 'Published',
-                'views' => 6638,
-                'last_ip' => '54.36.148.246',
                 'created_at' => '2016-08-04 17:28:01',
-                'updated_at' => '2022-04-09 05:56:10',
+                'description' => 'nc',
+                'id' => '8',
+                'last_ip' => '185.191.171.8',
+                'post_categories_id' => '8',
+                'status' => 'Published',
+                'title' => 'Spot de Serre-Ponçon',
+                'updated_at' => '2024-09-09 05:28:24',
+                'user_id' => '1',
+                'views' => '7193',
             ),
             5 => 
             array (
-                'id' => 10,
-                'user_id' => 1,
-                'post_categories_id' => 1,
-                'title' => 'FAQ Windfoil',
-                'description' => 'Qu’est ce que le foil ? Pourquoi le windfoil ? Une nouvelle mode ou un évolution irrémédiable ? ... abordons de nombreux sujets',
                 'body' => '<p>Nous abordons ici les id&eacute;e re&ccedil;ue et r&eacute;pondons aux questions que l\'on nous pose tr&egrave;s fr&eacute;quemment au sujet du winfoil</p>
 <p><a href="#p1">Qu&rsquo;est ce que le foil ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p2">Pourquoi le windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p3">Une nouvelle mode ou un &eacute;volution irr&eacute;m&eacute;diable ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p4">Pourquoi maintenant et pas avant ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p5">Pourquoi c&rsquo;est plus simple &agrave; petite vitesse et dans le petit temps ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="/posts/10/10/p6">Quel flotteur pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p6a">Id&eacute;e re&ccedil;ue : le flotteur n&rsquo;a pas d&rsquo;importance car il ne touche pas l&rsquo;eau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p7">Id&eacute;e re&ccedil;ue : il faut renforcer le boitier</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p8">Quelle voile pour faire du windfoil ?</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p9">Id&eacute;e re&ccedil;ue : C\'est trop technique, je n\'ai pas le niveau</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p10">Id&eacute;e re&ccedil;ue : Je suis trop vieux, je n\'y arriverai jamais</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p11">Id&eacute;e re&ccedil;ue : J\'ai pas envie de r&eacute;apprendre autre chose</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p12">Id&eacute;e re&ccedil;ue : C\'est pas l\'avenir car &ccedil;a ne marche pas dans les vagues et dans le vent fort</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p13">Id&eacute;e re&ccedil;ue : Ca n&rsquo;a pas d&rsquo;avenir car c&rsquo;est moins performant que le slalom</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p14">Id&eacute;e re&ccedil;ue : C\'est dangereux</a></span> <br><a href="#p22">Id&eacute;e re&ccedil;ue : C\'est du carbone, donc fragile. Peux on prot&eacute;ger ?</a><br><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p15">Id&eacute;e re&ccedil;ue : Le windfoil c&rsquo;est cher</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p16">Id&eacute;e re&ccedil;ue : Il y a trop de mod&egrave;les et on s&rsquo;y perd</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p17">Id&eacute;e re&ccedil;ue : Il faut que je teste pour voir si &ccedil;a me plait</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p18">Id&eacute;e re&ccedil;ue : Ca va &eacute;voluer tellement vite qu\'il vaut mieux attendre</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p19">Id&eacute;e re&ccedil;ue : Il va y avoir de la concurrence et les prix vont s\'&eacute;crouler</a><br></span><span style="font-family: Arial, Helvetica, Verdana, Tahoma, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><a href="#p20">Id&eacute;e re&ccedil;ue : D&egrave;s que &ccedil;a va &ecirc;tre fait en chine, il y aura des copies pas cher</a></span></p>
 <p>&nbsp;</p>
@@ -448,51 +443,51 @@ class PostsTableSeeder extends Seeder
 <p>Comme d&rsquo;habitude, l&rsquo;Asie sait profiter tr&egrave;s vite des opportunit&eacute;s commerciales, surtout lorsque les march&eacute;s ne sont pas structur&eacute;s. Comme dans tous les domaines que nous avons connus (windsurf, SUP, kite etc.), les arnaques font la comp&eacute;tition avec les faux bons plans. Au final, que ce soit en europe, en chine ou au fin fond de l&rsquo;Afrique, le P&egrave;re No&euml;l n&rsquo;est qu&rsquo;un mythe et les vrais bons produits ont des co&ucirc;ts similaires.</p>
 <p>Il y a effectivement d&eacute;j&agrave; des offres tr&egrave;s all&eacute;chantes sur ebay (foil carbone &agrave; 250&euro; par lot de 50) et nous encourageons ceux qui veulent jeter de l&rsquo;argent par les fen&ecirc;tres &agrave; y souscrire au plus vite. Nous savons que ce sont des arnaques, alors nous pr&eacute;f&eacute;rons que ce soit les autres qui fassent les cobayes :)</p>
 <p>&nbsp;</p>',
-            'status' => 'Published',
-            'views' => 10586,
-            'last_ip' => '88.163.167.153',
             'created_at' => '2017-02-27 16:31:02',
-            'updated_at' => '2022-04-11 00:14:41',
+            'description' => 'Qu’est ce que le foil ? Pourquoi le windfoil ? Une nouvelle mode ou un évolution irrémédiable ? ... abordons de nombreux sujets',
+            'id' => '10',
+            'last_ip' => '54.36.148.10',
+            'post_categories_id' => '1',
+            'status' => 'Published',
+            'title' => 'FAQ Windfoil',
+            'updated_at' => '2024-09-09 07:55:38',
+            'user_id' => '1',
+            'views' => '11104',
         ),
         6 => 
         array (
-            'id' => 12,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Je débute, acte 1',
-            'description' => 'Témoignage d\'un débutant en Acte 1',
         'body' => '<p>Témoignage d\'un débutant en Acte 1</p><p>"</p><p>Salut à la petite équipe !</p><p>Enfin des nouvelles du foil. Non, je ne suis pas mort séché par une chute bestiale ou noyé ! C\'est fait ; après une première séance de "prise en mains" j\'ai envoyé une deuxième session dans des conditions intéressantes de vent autour d\'une quinzaine de noeuds et plan d\'eau très lisse.</p><p>Le vol est bien là et naturellement, je me cherche un peu. Mon cap n\'est pas complètement stable et je "pompe" un peu en hauteur avec parfois des petites touchettes du flotteur sur l\'eau ; c\'est très net à la vidéo où le son traduit parfaitement ce phénomène. Silence absolu lors des phases de vol et léger bruissement du flotteur lors des retours en douceur...</p><p>Je ne passe pas sous silence mes premières fautes avec position de rappel et crash immédiat avec rotation par l\'avant ; mais cela est presque du passé. En me décrochant du harnais ceinture (impératif ceinture) je me retrouve extra libre pour piloter en me redressant bien sur le flotteur. Le contrôle du vol une fois déclenché passe essentiellement par le dosage de la puissance dans la voile qui est minime ; c\'est même un jeu d\'enfant que de travailler ainsi. J\'ai même eu la surprise ultime dans une survente de devoir lâcher complètement la main AR et de maintenir le wish juste avec la main AV, donc très légèrement bordé avec une remarquable stabilisation du vol... Je suis bluffé et hyper séduit !!</p><p>Le feeling est effectivement bluffant même si les vitesses sont modestes. J\'enregistre des décollages dès 9 kts mais la montée pérenne s\'établit plus précisément autour de 11-12 kts pour mon poids de 73 kg et une voile de vague Loft 6.2. Le vol, quand je réussis à bien le maintenir (c\'est ma deuxième sortie) se poursuit dans une progression douce vers 14 à 15 kts.</p><p>Je tiens à vous dire que je suis à la fois admirateur de cette technologie, je vous remercie pour avoir publié des essais qui reflètent donc bien la vérité.</p><p>En effet, à condition de revoir ses vieux réflexes de planchiste (je n\'ai pas dit de vieux planchiste !), il est possible d\'entrer assez naturellement dans ce monde merveilleux... Ce jour là, un collègue "classique" tournait au planning en 8.5 de race... Eh oui, je fourre la monture complète dans mon véhicule et vole bibi !!!!! Au niveau des straps AR, j\'ai bien envie de tester leur retrait pur et simple ; je suis persuadé que c\'est une voie intéressante au moins pour progresser; j\'ai également testé dans une phase de survente de chausser le strap AR opposé (donc sous le vent) et ça a immédiatement stabilisé mon vol avec toutefois un cap de facto légèrement au-delà du vent travers vers le petit largue mais très stable... A creuser !</p><p>C\'est SUPER SUPER SUPER !!!!!!!!!!!!!!!!!!!!!!!</p><p>Suite de mes aventures dans quelques semaines.</p><p>Je vous souhaite bonne réception et bonne continuation et je retourne à l\'eau dès que la météo me sourit !!!!<br></p><p>Sportivement.</p><p>Hervé</p><p>"</p>
 
 ',
-            'status' => 'Published',
-            'views' => 1517,
-            'last_ip' => '54.36.148.232',
             'created_at' => '2017-03-03 10:15:06',
-            'updated_at' => '2022-04-09 07:38:03',
+            'description' => 'Témoignage d\'un débutant en Acte 1',
+            'id' => '12',
+            'last_ip' => '54.36.148.82',
+            'post_categories_id' => '2',
+            'status' => 'Published',
+            'title' => 'Je débute, acte 1',
+            'updated_at' => '2024-09-08 17:05:46',
+            'user_id' => '1',
+            'views' => '2068',
         ),
         7 => 
         array (
-            'id' => 13,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Je débute, acte 2',
-            'description' => 'Voici la suite des aventures de Hervé sur son Windfoil',
         'body' => '<p>Voici la suite des aventures de Hervé sur son Windfoil</p><p>"</p><p>Encore merci pour les retours par mail de conseils précis ! Voyant que vous avez relayé mon témoignage sur mes premiers runs sous la forme d\'un épisode sur le blog, je tiens à faire un nouveau point au fil de ma cinquième session.</p><p>Les conditions météo instables de ce mois de mars sont délicates à exploiter, mais dans le doute j\'ai conservé tous mes éléments constants ; à savoir une voile Loft PureLip de 6.2 m² et mon aile Horue Light Wind montée sur le Tiny 110 litres. Au passage (pour rappel) je pèse 72 kg.</p><p>Je confirme des décollages progressifs et très propres aux alentours de 10 à 11 kts de vitesse de navigation, vitesse que l\'on peut obtenir dans un régime de vents faibles (autour de 10 à 12 kts de vent) avec ma 6.2 en pompant quelques coups. Les vidéos en témoignent avec grand réalisme.</p><p>Le vol peut alors être entretenu sans effort sur le gréement (harnais au rôle du coup secondaire) et le jeu consiste à moduler légèrement et en douceur l\'ouverture du gréement pour se maintenir dans la bande passante qu\'autorise la hauteur du mât. j\'ai d\'ailleurs de plus en plus tendance à laisser se produire à intervalles réguliers des petites touchettes du flotteur avec la surface de l\'eau ; cela ne pose aucun problème pour la poursuite du vol et constitue en quelque sorte un contrôle et une sécurisation du vol. Il suffit de choisir un plan d\'eau relativement calme !</p><p>C\'est ainsi qu\'à ma quatrième session, le plus long vol a passé le kilomètre avec quelques touchettes comme décrit précédemment ; quel pied !</p><p>Enfin, et c\'est un point auquel je tiens beaucoup, j\'ai fini par démonter les deux straps AR. Cela fait deux sessions que je vole sans strap à l\'arrière et c\'est vraiment super, mais pourquoi ? J\'ai noté pouvoir bien contôler un vol en ayant le pied AR calé juste devant le strap, sans avoir besoin d\'engager ce pied mais aussi avec le sentiment "désagréable" qu\'il aurait suffi de le décaler très légèrement pour que tout soit parfait... Mais le dit strap était là et m\'imposait alors de le chausser ; une sorte de contrainte de variation assez conséquente... Sans strap AR, je trouve "naturellement" la position de mon pied et j\'ai remarqué de surcroît que dans la phase où je suis dans ma progresssion, ne traçant pratiquement que des "vent travers", la position de ce fameux pied AR avait tendance à être centrale... Cela milite naturellement pour un pad AR dégagé ; il pourrait même comme en Snowboard être muni sur la partie arrière extrême d\'une rampe relevée qui donne le bon feeling et le "calage" éventuellement nécessaire...</p><p>Voilà pour mes réflexions et mes réalisations du moment ! A suivre</p><p>"</p>
 
 ',
-            'status' => 'Published',
-            'views' => 1654,
-            'last_ip' => '54.36.149.75',
             'created_at' => '2017-03-07 16:19:46',
-            'updated_at' => '2022-04-09 07:39:13',
+            'description' => 'Voici la suite des aventures de Hervé sur son Windfoil',
+            'id' => '13',
+            'last_ip' => '173.252.70.3',
+            'post_categories_id' => '2',
+            'status' => 'Published',
+            'title' => 'Je débute, acte 2',
+            'updated_at' => '2024-09-09 02:26:49',
+            'user_id' => '1',
+            'views' => '2167',
         ),
         8 => 
         array (
-            'id' => 14,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Je débute, acte 3',
-            'description' => 'Petite Video de notre Hervé préféré : on suit ses aventures nautico-aériennes',
             'body' => '<p>Episodes précédents :
 </p><p><a href="/blog/windfoil-temoignages-2.html">Je débute en foil - Acte 1</a>
 </p><p><a href="/blog/windfoil-temoignages-2.html">Je débute en foil - Acte 2</a>
@@ -507,35 +502,35 @@ class PostsTableSeeder extends Seeder
 </iframe>
 
 ',
-            'status' => 'Published',
-            'views' => 2531,
-            'last_ip' => '54.36.149.6',
             'created_at' => '2017-03-07 17:06:09',
-            'updated_at' => '2022-04-09 07:40:38',
+            'description' => 'Petite Video de notre Hervé préféré : on suit ses aventures nautico-aériennes',
+            'id' => '14',
+            'last_ip' => '85.208.96.207',
+            'post_categories_id' => '2',
+            'status' => 'Published',
+            'title' => 'Je débute, acte 3',
+            'updated_at' => '2024-09-09 03:44:52',
+            'user_id' => '1',
+            'views' => '3040',
         ),
         9 => 
         array (
-            'id' => 16,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Témoignages',
-            'description' => 'Voici quelques témoignages de windfoileurs en herbe',
         'body' => '<p>Voici quelques témoignages de windfoileurs en herbe</p><h2>Fabrice</h2><p>"Salut Éric,</p><p>Aujourd\'hui ma première session foil, dans des conditions pas idéales pour une première: 4°C dans l\'air, 6°C dans l\'eau, de la glace sur le bord, mais la motivation a été plus forte que le froid.<br></p><p>15-18nds avec gros clapot, en 5.2 (avec ma Tabou Manta 135 FR), j\'ai réussi à voler rapidement et j\'ai pu tenir les vols sur 50-100 mètres, un pieds dans le strap avant. Donc pour une premières dans ces conditions je suis vraiment satisfait. "</p><p>et après quelques nav de plus</p><p>"En tout cas maintenant que je commence à maîtriser la navigation foil je regrette pas du tout mon achat Vini et la XLW c\'est vraiment énorme la portance dans les conditions light. Je me suis vraiment fait plaisir le WE dernier :-)</p><p>Les gars sur le spot ont vraiment hallucinés sur le fait que je naviguais en 5.2 à l\'aise, alors qu\'en 7.5/8.0 ils ont pas fait plus de 300m au planning (il leur manquait 1 ou 2 nds). Ils m\'ont clairement dis que jusqu\'à ce qu\'ils le voient, ils pensaient pas que ça pouvais faire une telle différence. "<span></span></p><h2>Hervé</h2><p>"Je profite bien de mon Foil, 4 sorties déjà et sur la dernière des vols de plus de 500m stabilisés sans touchette. Le contrôle du vol une fois déclenché passe essentiellement par le dosage de la puissance dans la voile qui est minime ; c\'est même un jeu d\'enfant que de travailler ainsi. J\'ai même eu la surprise ultime dans une survente de devoir lâcher complètemet la main AR et de maintenir le wish juste avec la main AV, donc très légèrement bordé avec une remarquable stabilisation du vol... Je suis bluffé et hyper séduit !!</p><p>Je tiens à vous dire que je suis à la fois admirateur de cette technologie, je vous remercie pour avoir publié des essais qui reflètent donc bien la vérité.</p><p>C\'est SUPER SUPER SUPER !!!!!!!!!!!!!!!!!!!!!!!"</p><h2>Etienne</h2><p>"Après 35 ans de windsurf, j\'avoue que j\'étais un peu rentré dans la routine sans vraiment m\'en rendre compte. J\'ai découvert de nouvelles sensations auxquelles je ne m\'attendais pas ! Vous le dites tous mais je  ne m\'en suis vraiment rendu compte qu\'après mes premiers vols. La sensation de glisse est juste incroyable ... même pas besoin d\'aller très vite.</p><p>Je suis chaud comme un gamin : je guette la météo."</p><h2>Yves</h2><p>"Le foil me convient bien. 4 sessions en Corse : les 3 1ères où j\'ai pu foiler assez vite mais j\'étais toujours super tendu ! Sans oser le strap arrière. Puis le déclic à la 4ème ou j\'ai raccourci les bouts de harnais ce qui m\'a fait naviguer plus debout sur la planche et mieux contrôler le flotteur. Strap ok dès ce moment là </p><p>La 5ème de retour en Bretagne où la nav était super agréable et stable. </p><p>Çà avance. Çà avance ! J\'aimerais pouvoir en faire plus mais je manque de temps. </p><p>Ici tout le monde sauf 1 ou 2 a des Loké ! On les dit plus stable et plus facile à la contre gite pour le cap. Perso je trouve le Horue facile d\'accès et je ne suis pas encore apte à juger !"</p><h2>Stéphane</h2><p>"Ca y est, j\'en suis à 2 sessions et je commence à me détendre sur le foil (un peu, ... entre 2 boites lol). La sensation est top !!!! Je ne pensais pas que ce soit aussi facile finalement. Enfin, il reste un peu de boulot quand je vous ai vu naviguer tous, mais déjà c\'est le pied total.  Merci de m\'avoir motivé, vous aviez trop raison. Allez, j\'y retourne !"</p><p><br></p>
 
 ',
-            'status' => 'Published',
-            'views' => 858,
-            'last_ip' => '54.36.148.22',
             'created_at' => '2021-12-02 01:00:38',
-            'updated_at' => '2022-04-09 07:42:07',
+            'description' => 'Voici quelques témoignages de windfoileurs en herbe',
+            'id' => '16',
+            'last_ip' => '54.36.148.136',
+            'post_categories_id' => '2',
+            'status' => 'Published',
+            'title' => 'Témoignages',
+            'updated_at' => '2024-09-08 12:28:16',
+            'user_id' => '1',
+            'views' => '1390',
         ),
         10 => 
         array (
-            'id' => 17,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Je débute, acte 4 ',
-            'description' => 'Voilà « déjà » la dixième sortie foil dans la poche !',
             'body' => '<p>On retrouve Hervé que l\'on avait laissé à ses premiers vols sans straps arrière. Entre temps, le bougre a un peu progressé et nous livre ses nouvelles sensations. Encore une fois, remercions le de livrer en direct son ressenti pour le partager avec vous tous
 </p><p>"
 </p><p>Voilà « déjà » la dixième sortie foil dans la poche ! C\'est presque géant et rien du tout à la fois.
@@ -560,19 +555,19 @@ class PostsTableSeeder extends Seeder
 </p><h3>La video</h3><iframe width="853" height="480" src="https://www.youtube.com/embed/O2z4crtdUpg" frameborder="0" allowfullscreen=""></iframe>
 
 ',
-            'status' => 'Published',
-            'views' => 1405,
-            'last_ip' => '54.36.148.83',
             'created_at' => '2017-03-30 18:37:07',
-            'updated_at' => '2022-04-09 07:43:28',
+            'description' => 'Voilà « déjà » la dixième sortie foil dans la poche !',
+            'id' => '17',
+            'last_ip' => '54.36.148.163',
+            'post_categories_id' => '2',
+            'status' => 'Published',
+            'title' => 'Je débute, acte 4 ',
+            'updated_at' => '2024-09-08 17:46:21',
+            'user_id' => '1',
+            'views' => '1914',
         ),
         11 => 
         array (
-            'id' => 18,
-            'user_id' => 1,
-            'post_categories_id' => 2,
-            'title' => 'Je débute, acte 5 : voler sans vent !',
-            'description' => 'On continue avec les aventures de notre Hervé préféré ',
         'body' => '<p>On continue avec les aventures de notre Hervé préféré :) Encore une fois, il nous envoie un compte rendu très détaillé de ses sensations pour les partager avec vous tous.</p><p>"</p><p>Ce lundi 27 mars 2017 est une véritable journée d\'été ; les cigales ne chantent pas encore certes, mais malgré l\'absence de vent, je tente ma chance depuis le spot de St. Georges de Didonne en Charente Maritime. C\'est une conche d\'un nautique de large qui jouxte celle plus connue de Royan et qui ouvre sur l\'estuaire de la Gironde.
 </p><p>Donc, coup de sueur pour le départ. Devant jouer avec la marée particulièrement puissante (coefficient de 96), il me faut porter le matériel sur une bonne distance pour pouvoir prétendre à déborder un plateau rocheux qui borde la zone de start en toute sécurité.
 </p><p>Le Tiny 110 litres est sympa car même dans un micro souffle asthmatique, je parviens à virer de bord sans chuter avec ma 7.3 de race. L\'importance du flotteur saute donc aux yeux ! Mais c\'est toutefois une véritable torture ; la « vitesse » scotche à 3-4 kts... Désespoir ?
@@ -583,53 +578,53 @@ class PostsTableSeeder extends Seeder
 </p><p>"</p><iframe width="853" height="480" src="https://www.youtube.com/embed/gZCe62K3egg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
 
 ',
-        'status' => 'Published',
-        'views' => 873,
-        'last_ip' => '54.36.148.205',
         'created_at' => '2017-04-03 12:40:49',
-        'updated_at' => '2022-04-09 07:44:52',
+        'description' => 'On continue avec les aventures de notre Hervé préféré ',
+        'id' => '18',
+        'last_ip' => '185.191.171.17',
+        'post_categories_id' => '2',
+        'status' => 'Published',
+        'title' => 'Je débute, acte 5 : voler sans vent !',
+        'updated_at' => '2024-09-09 03:25:13',
+        'user_id' => '1',
+        'views' => '1390',
     ),
     12 => 
     array (
-        'id' => 21,
-        'user_id' => 1,
-        'post_categories_id' => 2,
-        'title' => 'Je débute, acte 6 : pomper en 8m2',
-        'description' => 'Notre cher hervé revient... et bien non, il n\'a pas fini découpé par son foil',
     'body' => '<p>Cela faisait un moment que nous n\'avions pas de nouvelle de notre cher hervé ... et bien non, il n\'a pas fini découpé par son foil, le revoilà</p><p>"</p><h2>La métamorphose du cloporte !</h2><p>Eh oui, je reviens sur les ondes (marines bien entendu) juste pour vous faire un peu rêver de vol dans l\'ultra light ! La scène se déroule le weekend du 8 mai (régate régionale de catmarans) sur St. Georges de Didonne près de Royan.</p><p>Le petit air de secteur SW souffle autour de la dizaine de noeuds ; deux planchistes se trainassent lamentablement... </p><p>C\'est l\'occasion rêvée de tester un tandem inédit, l\'aile HORUE XLW avec une voile que je n\'avais jamais sortie en foil ; une 8.0 m² de race quatre cambers (une GPS de chez Hot Sails Maui). C\'est une voile qui présente la particularité de disposer d\'un creux sous le wish particulièrement formé et d\'un twist très marqué mais surtout très progressif ; un shape 3D. Gréée sur mât RDM, elle est à priori parfaite pour le vol !...</p><p>Alors ne croyez pas que tout est gratuit ; il faut "arracher" le décollage car la position passive d\'attente de la risée risque sinon d\'être éternelle et ce pour une bonne raison, il n\'y pas de risée ! La solution réside donc dans l\'exploitation de cette caractéristique unique au foil, celle qui consiste à réagir à une sollicitation du gréement à condition que la puissance générée soit suffisante... D\'où le recours à cette fameuse 8.0 !</p><h2>Le déclenchement du décollage</h2><p>C\'est un engagement total sur quelques secondes. Le pied AV est engagé dans le strap, on est décroché du harnais et on lance la machine à la force d\'un pumping énergique tout en abattant d\'une trentaine de degrés (vous pouvez contrôler sur le compas de la vidéo). L\'abattée est fondamentale et incontournable ; c\'est elle qui permet de gagner en vitesse car la puissance est optimale grâce à l\'angle favorable par rapport au vent. Au bout de quelques secondes, le foil grogne et la vitesse passe de 4 noeuds à la dizaine ; il faut alors progressivement reculer le pied AR jusqu\'à l\'engager dans le strap quand le vitesse est suffisante (au-delà des dix noeuds). Le pumping se poursuit en baissant dans la fréquence pour s\'harmoniser avec le tempo. Le sifflement du foil devient perceptible, il est déjà possible de revenir un peu plus près du vent (resserrer son cap) et alors que la phase de pumping commence à s\'alléger, il est possible de s\'accrocher... Le décollage se produit alors que l\'on a dépassé la dizaine de noeuds ; la montée sur le foil peut alors être pilotée en douceur en ajustant l\'appui AR. Un simple basculement du buste vers l\'AV en appliquant un rappel engagé sur les lignes de harnais suffit à stabiliser cette montée. Vous êtes en vol à une quinzaine de noeuds sous le nez des collègues scotchés et médusés...</p><h2>Et oui :  "une furie de bonheur"</h2><p>On vient vous voir après la session ; pour scruter le foil et vous questionner dans tous les sens...</p><p>Je vous souhaite vraiment de découvrir cette furie de bonheur qui vous envahit quand vous décollez dans même pas dix noeuds de vent pour votre vingtcinquième session ! Ce jour là, j\'enverrai 3 heures de vol, le foil sifflant comme un malade sur une eau lisse.</p><p>C\'est ainsi que l\'on découvre que le cloporte n\'est pas un insecte, qu\'il ne pique pas et que c\'est en fait un crustacé ! Comme quoi !</p><p>Bon vent et bons vols à tous !</p><p>"</p><p><br></p><p><iframe width="1280" height="720" src="https://www.youtube.com/embed/poHekd4qqQ4?rel=0" frameborder="0" allowfullscreen=""></iframe><br></p>
 
 ',
-        'status' => 'Published',
-        'views' => 1638,
-        'last_ip' => '54.36.148.74',
         'created_at' => '2017-05-09 12:21:32',
-        'updated_at' => '2022-04-09 07:46:22',
+        'description' => 'Notre cher hervé revient... et bien non, il n\'a pas fini découpé par son foil',
+        'id' => '21',
+        'last_ip' => '54.36.148.88',
+        'post_categories_id' => '2',
+        'status' => 'Published',
+        'title' => 'Je débute, acte 6 : pomper en 8m2',
+        'updated_at' => '2024-09-08 21:40:35',
+        'user_id' => '1',
+        'views' => '2217',
     ),
     13 => 
     array (
-        'id' => 27,
-        'user_id' => 1,
-        'post_categories_id' => 6,
-        'title' => 'Recommandations de serrage visserie',
-        'description' => 'Voici nos recommandation pour réaliser des serrages sans risque',
         'body' => '<p>Lorsque vous montez votre foil, il faut &agrave; la fois serrer la visserie suffisament pour &eacute;viter de perdre une aile en route, et &agrave; la fois ne pas bourriner au risque de d&eacute;truire les filetages.&nbsp;</p>
 <p>Pour les serrages M6 qui sont viss&eacute;s directement dans l\'aluminium , on vous conseille d\'adopter un couple de serrage de 6 netwton m&egrave;tres</p>
 <p>Pour les serrages M6 qui sont viss&eacute;s dans l\'aluminium &eacute;quip&eacute; d\'h&eacute;licoils inox , on vous conseille d\'adopter un couple de serrage de 8 netwton m&egrave;tres</p>
 <p>Pour les serrages M6 qui sont viss&eacute;s dans des inserts inox M6 , on vous conseille d\'adopter un couple de serrage de 8 netwton m&egrave;tres</p>
 <p>&nbsp;</p>',
-        'status' => 'Published',
-        'views' => 2303,
-        'last_ip' => '88.163.167.153',
         'created_at' => '2017-07-28 12:58:47',
-        'updated_at' => '2022-04-11 00:10:18',
+        'description' => 'Voici nos recommandations pour réaliser des serrages sans risque dans les fuselages en aluminium, en fonction de leur fabrication et des diamètres de vis.',
+        'id' => '27',
+        'last_ip' => '185.191.171.10',
+        'post_categories_id' => '6',
+        'status' => 'Published',
+        'title' => 'Recommandations de serrage visserie',
+        'updated_at' => '2024-09-08 21:38:37',
+        'user_id' => '1',
+        'views' => '2919',
     ),
     14 => 
     array (
-        'id' => 31,
-        'user_id' => 1,
-        'post_categories_id' => 3,
-        'title' => 'Visite de la société Foil&Co',
-        'description' => 'Visite de la société Foil&amp;Co, l’un des acteurs français qui va compter dans le monde du Windfoil',
         'body' => '<p>Aujourd&rsquo;hui, j&rsquo;ai eu le privil&egrave;ge de visiter la soci&eacute;t&eacute; Foil&amp;Co, l&rsquo;un des acteurs fran&ccedil;ais qui va compter dans le monde du Windfoil, en compagnie de Tanguy LE BIHAN. Je vous emm&egrave;ne donc dans mes bagages jusqu\'&agrave; Brest, une fois n\'est pas coutume, d&eacute;couvrir en d&eacute;tails les sp&eacute;cifi&eacute;s de cette soci&eacute;t&eacute;.</p>
 <h2>Gen&egrave;se</h2>
 <p>Tanguy LE BIHAN est un nom reconnu de l&rsquo;architecture navale. Avec des dessins de bateaux tr&egrave;s connus &agrave; son actif, il n&rsquo;avait plus grand chose &agrave; prouver dans son m&eacute;tier d&rsquo;origine. Il est par contre r&eacute;guli&egrave;rement sollicit&eacute; sur des projets tr&egrave;s divers qui vont de la plasiance aux sports de glisse, en passant par la voile sportive (catamarans, moths etc.).</p>
@@ -727,60 +722,59 @@ class PostsTableSeeder extends Seeder
 <p>La volont&eacute; est clairement affich&eacute;e de produire des mod&egrave;les haut de gamme et de s&rsquo;appuyer sur un petit r&eacute;seau de revendeurs impliqu&eacute;s dans le foil, et ayant la volont&eacute; d&rsquo;apporter tout le service n&eacute;cessaire (conseil, essais, mise en oeuvre, SAV) autour du produit.</p>
 <h2>Le boss au micro</h2>
 <p><iframe src="https://www.youtube.com/embed/3zXBm6jyrQ4?rel=0" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-'status' => 'Published',
-'views' => 4430,
-'last_ip' => '54.36.148.30',
 'created_at' => '2017-10-02 12:27:59',
-'updated_at' => '2022-04-09 05:57:10',
+'description' => 'Visite de la société Foil&amp;Co, l’un des acteurs français qui va compter dans le monde du Windfoil',
+'id' => '31',
+'last_ip' => '85.208.96.212',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Visite de la société Foil&Co',
+'updated_at' => '2024-09-09 04:35:38',
+'user_id' => '1',
+'views' => '4975',
 ),
 15 => 
 array (
-'id' => 32,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Réaliser un palan d\'amure',
-'description' => 'A force de naviguer aussi avec des fins techniciens, j\'ai fini par adopter leur outil magique : le palan d\'amure',
 'body' => '<h2>Pourquoi ?</h2>
-<p>A force de naviguer en foil, je prends gout à un truc qui nous change la vie : avoir moins de matos !</p>
-<div>Pour plein de raisons (coût, encombrement, transport, prise de tête), qu\'est ce que c\'est bien de tout faire avec 1 flotteur et 2 voiles ! .. et le foil permet ça alors que c\'était difficile en windsurf classique.</div>
-<div></div>
-<div>Et à naviguer avec les fins techniciens du pôle France (qui sont en train de nous dépasser à 100 000 en foil), j\'ai fini par adopter leur outil magique : le palan d\'amure.</div>
-<div>Avec ce petit accessoire, on module complètement la puissance de la voile, sans même être obligé de revenir au bord. Et comme on commence à se promener loin sur le plan d\'eau (grâce aux capacités de dingue du foil au près), ça devient vite l\'accessoire indispensable.</div>
-<div>Ca permet aussi d\'exploiter une unique voile dans une plage beaucoup plus importante. Désormais, je n\'ai plus de trou entre la 7,8 et la 5,2 ..</div>
+<p>A force de naviguer en foil, je prends gout &agrave; un truc qui nous change la vie : avoir moins de matos !</p>
+<div>Pour plein de raisons (co&ucirc;t, encombrement, transport, prise de t&ecirc;te), qu\'est ce que c\'est bien de tout faire avec 1 flotteur et 2 voiles ! .. et le foil permet &ccedil;a alors que c\'&eacute;tait difficile en windsurf classique.</div>
+<div>&nbsp;</div>
+<div>Et &agrave; naviguer avec les fins techniciens du p&ocirc;le France (qui sont en train de nous d&eacute;passer &agrave; 100 000 en foil), j\'ai fini par adopter leur outil magique : le palan d\'amure.</div>
+<div>Avec ce petit accessoire, on module compl&egrave;tement la puissance de la voile, sans m&ecirc;me &ecirc;tre oblig&eacute; de revenir au bord. Et comme on commence &agrave; se promener loin sur le plan d\'eau (gr&acirc;ce aux capacit&eacute;s de dingue du foil au pr&egrave;s), &ccedil;a devient vite l\'accessoire indispensable.</div>
+<div>Ca permet aussi d\'exploiter une unique voile dans une plage beaucoup plus importante. D&eacute;sormais, je n\'ai plus de trou entre la 7,8 et la 5,2 ..</div>
 <h2>Comment ?</h2>
-<div>Au départ, j\'ai commencé avec un double palan de RSX, mais c\'était lourd, et ça tapait contre le mat ... et comme je ne règle qu\'à l\'arrêt (lors des virements), peu d\'intérêt d\'avoir une telle usine à gaz. Grâce à Nicolas Huguet, on a fait un palan idéal pour le windfoil, qui fait moins de 160g. Il est conçu autour de 3 poulies</div>
+<div>Au d&eacute;part, j\'ai commenc&eacute; avec un double palan de RSX, mais c\'&eacute;tait lourd, et &ccedil;a tapait contre le mat ... et comme je ne r&egrave;gle qu\'&agrave; l\'arr&ecirc;t (lors des virements), peu d\'int&eacute;r&ecirc;t d\'avoir une telle usine &agrave; gaz. Gr&acirc;ce &agrave; Nicolas Huguet, on a fait un palan id&eacute;al pour le windfoil, qui fait moins de 160g. Il est con&ccedil;u autour de 3 poulies</div>
 <ul>
 <li>le <a href="/windfoil/u33937s1-harken-taquet-micro-block-violon-harken.html">taquet violon micro block Harken</a></li>
-<li>une <a href="/windfoil/u33938s1-harken-poulie-carbo-t2-29mm-harken.html">poulie carbo bloc Harken</a> (ultra légère, ne peux pas abîmer le mat ou la voile)</li>
-<li>une <a href="/windfoil/u33931s1-selden-poulie-forte-charge-selden.html">poulie forte charge selden</a> (capable de travailler sans risque à 400kg, en gardant toujours aussi peu de friction)</li>
+<li>une <a href="/windfoil/u33938s1-harken-poulie-carbo-t2-29mm-harken.html">poulie carbo bloc Harken</a> (ultra l&eacute;g&egrave;re, ne peux pas ab&icirc;mer le mat ou la voile)</li>
+<li>une <a href="/windfoil/u33931s1-selden-poulie-forte-charge-selden.html">poulie forte charge selden</a> (capable de travailler sans risque &agrave; 400kg, en gardant toujours aussi peu de friction)</li>
 </ul>
-<p></p>
-<p><img src="/storage/photos/1/legacy/b4f7957169487d40e26ebfd65df577d5.jpg" /><img src="/storage/photos/1/legacy/6c4bc7762247230fd252a61f18d88a11.jpg" /><img src="/storage/photos/1/legacy/3b17930ec455b511af372dfbb3f4aaaf.jpg" /></p>
-<p>D\'un côté, il se fixe sur le mat avec un noeud de cabestan (juste en dessous du wishbone). De l\'autre côté, on retrouve le bout de la rallonge</p>
-<p><img src="/storage/photos/1/legacy/8d5a3950260946fd7e53630c0a575eb3.jpg" /></p>
-<p><img src="/storage/photos/1/legacy/75dcc13d10bbfc19f2dc6e07e7049a1d.jpg" /></p>
-<p>Pour fabriquer le palan vous même, il suffit de savoir réaliser une manille textile, un noeud de chaise et une épissure. Tout ceci est expliqué en détail sur le net, avec forces vidéos à l\'appui. Avec le shéma ci dessus, vous trouverez où réaliser ces différents noeuds dans le montage. Si vous commandez un <a href="/windfoil/u33941s1-harken-kit-palan-guindant-pro-harken.html">kit</a>, vous recevrez tous les élements pour le réaliser (différents bouts prédécoupés aux bonnes longueurs, et poulies). Il vous suffira donc de réaliser les noeuds pour avoir votre palan. Il faut compter entre 1h et 2h de travail pour faire ceci sans être un expert des noeuds.</p>
-<div>Pour gréer, on fait comme d\'habitude avec le bout de rallonge. En étarquant, la poulie forte charge vient s\'appuyer contre la dernière poulie de la rallonge. Ensuite, on passe le palan par d\'ouverture de la protection de pied de mat (la même où on passe le tire veille), et on vient fixer le haut de palan sous le wishbone avec un joli noeud de cabestan (celui-là, je ne l\'avais plus fait depuis un bail). Après ça, on peut étarquer la voile avec 2 doigts !</div>
-<h2>Se procurer les pièces</h2>
-<p>En voulant fabriquer ce palan, je me suis rendu compte qu\'il est difficile de trouver tous les éléments au même endroit ... et certaines pièces sont rarement disponibles. J\'ai donc décidé de les proposer à la vente sur notre site.</p>
-<p>Vous pouvez les acheter au détail (<a href="/windfoil/u33931s1-selden-poulie-forte-charge-selden.html">Poulie forte charge</a>, <a href="/harken-poulie-carbo-t2-29mm.html">Poulie carbo T2</a>, <a href="/harken-taquet-micro-block-violon.html">Taquet Harken</a>, <a href="/side-on-bout-spectra-formuline.html">Formuline</a>, <a href="/side-on-tresse-dynema-pro-pur.html">Ligne spectra</a>, <a href="/side-on-bout-polyester-4mm-350kg.html">bout polyseter</a>), ou en kit tout fait (<a href="/windfoil/u33941s1-harken-kit-palan-guindant-pro-harken.html">version pro</a>, <a href="/windfoil/u33940s1-harken-kit-palan-guindant-basic-harken.html">version eco</a>), ou encore<a href="/windfoil/u33942s1-harken-palan-guindant-pro-harken.html"> tout monté</a> (je vous fabrique le palan avec la manille textile, les épissures etc. ... prêt à l\'emploi)</p>
-<p>Ah oui, un autre détail : dans l\'idéal pour que ça fonctionne bien, il faut une rallonge à 3 poulies (et non 2 seulement). Pour ceci, il existe la rallonge RSX, mais aussi la <a href="/windsurf/u35178s1-xo-sail-rallonge-u-pin-sdm-xo-sail-2019.html">rallonge Exocet U-PIN</a> qui offre un super rapport qualité prix (bloc poulie inox, bague articulée, tube épais, tout métallique, bouton affleurant pour 85€)</p>
+<p>&nbsp;</p>
+<p><img src="/storage/photos/1/legacy/b4f7957169487d40e26ebfd65df577d5.jpg"><img src="/storage/photos/1/legacy/6c4bc7762247230fd252a61f18d88a11.jpg"><img src="/storage/photos/1/legacy/3b17930ec455b511af372dfbb3f4aaaf.jpg"></p>
+<p>D\'un c&ocirc;t&eacute;, il se fixe sur le mat avec un noeud de cabestan (juste en dessous du wishbone). De l\'autre c&ocirc;t&eacute;, on retrouve le bout de la rallonge</p>
+<p><img src="/storage/photos/1/legacy/8d5a3950260946fd7e53630c0a575eb3.jpg"></p>
+<p><img src="/storage/photos/1/legacy/75dcc13d10bbfc19f2dc6e07e7049a1d.jpg"></p>
+<p>Pour fabriquer le palan vous m&ecirc;me, il suffit de savoir r&eacute;aliser une manille textile, un noeud de chaise et une &eacute;pissure. Tout ceci est expliqu&eacute; en d&eacute;tail sur le net, avec forces vid&eacute;os &agrave; l\'appui. Avec le sh&eacute;ma ci dessus, vous trouverez o&ugrave; r&eacute;aliser ces diff&eacute;rents noeuds dans le montage. Si vous commandez un <a href="/windfoil/u33941s1-harken-kit-palan-guindant-pro-harken.html">kit</a>, vous recevrez tous les &eacute;lements pour le r&eacute;aliser (diff&eacute;rents bouts pr&eacute;d&eacute;coup&eacute;s aux bonnes longueurs, et poulies). Il vous suffira donc de r&eacute;aliser les noeuds pour avoir votre palan. Il faut compter entre 1h et 2h de travail pour faire ceci sans &ecirc;tre un expert des noeuds.</p>
+<div>Pour gr&eacute;er, on fait comme d\'habitude avec le bout de rallonge. En &eacute;tarquant, la poulie forte charge vient s\'appuyer contre la derni&egrave;re poulie de la rallonge. Ensuite, on passe le palan par d\'ouverture de la protection de pied de mat (la m&ecirc;me o&ugrave; on passe le tire veille), et on vient fixer le haut de palan sous le wishbone avec un joli noeud de cabestan (celui-l&agrave;, je ne l\'avais plus fait depuis un bail). Apr&egrave;s &ccedil;a, on peut &eacute;tarquer la voile avec 2 doigts !</div>
+<h2>Se procurer les pi&egrave;ces</h2>
+<p>En voulant fabriquer ce palan, je me suis rendu compte qu\'il est difficile de trouver tous les &eacute;l&eacute;ments au m&ecirc;me endroit ... et certaines pi&egrave;ces sont rarement disponibles. J\'ai donc d&eacute;cid&eacute; de les proposer &agrave; la vente sur notre site.</p>
+<p>Vous pouvez les acheter au d&eacute;tail (<a href="/windfoil/u33931s1-selden-poulie-forte-charge-selden.html">Poulie forte charge</a>, <a href="/harken-poulie-carbo-t2-29mm.html">Poulie carbo T2</a>, <a href="/harken-taquet-micro-block-violon.html">Taquet Harken</a>, <a href="/side-on-bout-spectra-formuline.html">Formuline</a>, <a href="/side-on-tresse-dynema-pro-pur.html">Ligne spectra</a>, <a href="/side-on-bout-polyester-4mm-350kg.html">bout polyseter</a>), ou en kit tout fait (<a href="/windfoil/u33941s1-harken-kit-palan-guindant-pro-harken.html">version pro</a>, <a href="/windfoil/u33940s1-harken-kit-palan-guindant-basic-harken.html">version eco</a>), ou encore<a href="/windfoil/u33942s1-harken-palan-guindant-pro-harken.html"> tout mont&eacute;</a> (je vous fabrique le palan avec la manille textile, les &eacute;pissures etc. ... pr&ecirc;t &agrave; l\'emploi)</p>
+<p>Ah oui, un autre d&eacute;tail : dans l\'id&eacute;al pour que &ccedil;a fonctionne bien, il faut une rallonge &agrave; 3 poulies (et non 2 seulement). Pour ceci, il existe la rallonge RSX, mais aussi la <a href="/windsurf/u35178s1-xo-sail-rallonge-u-pin-sdm-xo-sail-2019.html">rallonge Exocet U-PIN</a> qui offre un super rapport qualit&eacute; prix (bloc poulie inox, bague articul&eacute;e, tube &eacute;pais, tout m&eacute;tallique, bouton affleurant pour 85&euro;)</p>
 <h2>En video</h2>
-<p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA?rel=0&amp;showinfo=0" width="853" height="480" frameborder="0" allowfullscreen=""></iframe></p>
-',
-'status' => 'Published',
-'views' => 3279,
-'last_ip' => '54.36.148.133',
+<p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA?rel=0&amp;showinfo=0" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
 'created_at' => '2022-02-13 08:19:02',
-'updated_at' => '2022-04-09 06:19:29',
+'description' => 'A force de naviguer aussi avec des fins techniciens, j\'ai fini par adopter leur outil magique : le palan d\'amure',
+'id' => '32',
+'last_ip' => '54.36.148.232',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Réaliser un palan d\'amure',
+'updated_at' => '2024-09-09 08:28:08',
+'user_id' => '1',
+'views' => '3999',
 ),
 16 => 
 array (
-'id' => 33,
-'user_id' => 1,
-'post_categories_id' => 2,
-'title' => 'Je débute, acte 7',
-'description' => 'Nous suivons depuis des mois notre super débutant Hervé, qui n\'est plus débutant du tout ! ',
 'body' => '<p>Nous suivons depuis des mois notre super débutant Hervé, qui n\'est plus débutant du tout ! Voici son dernier message, qui montre les progrès en windfoil en moins d\'une année de pratique  :
 </p><p>"
 </p><p>A toute l\'équipe, bonjour !
@@ -816,35 +810,35 @@ array (
 </p><iframe width="640" height="360" src="https://www.youtube.com/embed/vMdi5lhoK3o?rel=0" frameborder="0" allowfullscreen=""></iframe>
 
 ',
-'status' => 'Published',
-'views' => 2252,
-'last_ip' => '54.36.148.212',
 'created_at' => '2017-10-18 18:05:14',
-'updated_at' => '2022-04-09 07:47:42',
+'description' => 'Nous suivons depuis des mois notre super débutant Hervé, qui n\'est plus débutant du tout ! ',
+'id' => '33',
+'last_ip' => '54.36.148.67',
+'post_categories_id' => '2',
+'status' => 'Published',
+'title' => 'Je débute, acte 7',
+'updated_at' => '2024-09-08 17:01:22',
+'user_id' => '1',
+'views' => '2798',
 ),
 17 => 
 array (
-'id' => 34,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Avril - ​Inauguration de la base de vitesse AGASC',
-'description' => 'Inauguration de la base de vitesse de la côte d’azur, gérée par l’AGASC à St Laurent du var. ',
 'body' => '<p>Ce samedi 14 avait lieu l’inauguration de la base de vitesse de la côte d’azur. Cette dernière est gérée par l’AGASC à St Laurent du var. A la barre de tout ceci, Steve Laubaney, avec le financement des sociétés Marbre &amp; Déco (Benoit Marginac) et GlissAttitude (Eric Collard).<br></p><p><img src="/storage/photos/1/legacy/b05edea3b6ca226109e0388197ab2ed0.jpg"></p><p>Le principe de cette base de vitesse est le même qu’à Brest : après avoir payé 15€ pour la saison (paiement par paypal sur le site de la base de vitesse), vous pouvez uploader vos traces GPS (format GPX) afin que le logiciel calcul votre meilleur run sur 500M et établisse un classement par catégorie. A l’issue de la saison, une remise des prix aura lieu.</p><p>Pour qu’ils soient validés, les runs doivent être réalisé entre Monaco et le cap d’Antibes, en excluant les zones interdites (proximité immédiate de la piste de l’aéroport de Nice, Zone des 300m etc.)</p><p><img src="/storage/photos/1/legacy/9c5c87977310e1a0894d7d5a61c9130b.jpg"></p><p>Cette inauguration a été jointe à une journée porte ouverte / test windfoil que nous avons animé avec l’AGASC. Avec plus de 5 flotteurs dédiés et 10 foils , il y en avait pour tous les gouts. Les conditions de navigation étaient intéressantes mais exigentes avec entre 7 et 11 knt de vent, et 4 knt de courant latéral . Effectivement, le Var qui avait grossi avec les pluies des derniers jours déversait des flots d’eau terreuse à quelques degrés, le tout accompagné de bois et autres gros branchage.</p><p>Dans ces conditions, nous avons pu tirer notre épingle du jeu avec les foils, grâce à leur superbe aptitude au près.</p><p><img src="/storage/photos/1/legacy/76e86680f4bcd2b5f61a12bf865eaedc.jpg"></p><p>C\'était aussi l\'occasion de naviguer avec une figure du windfoil en terme de perf : Nicolas Goyard. Très impressionnant et accessible !</p><p><img src="/storage/photos/1/legacy/95440d04b180c1fe069c6e8920552b03.jpg"></p><p>Cette journée a été également l’occasion pour nous de tester quelques nouveautés sur lesquelles nous reviendrons très vite : la voile Phantom IRIS et le foil Loke LK1</p><p><img src="/storage/photos/1/legacy/d4e5596498dcd400ed7036ec899dba5f.jpg"></p><p><img src="/storage/photos/1/legacy/d5ba1b60f097434c8238742d8e36ba4e.jpg"><br></p><p>Nous avons même pu tester une nouvelle expérience : les risées version A380 ... puissant !</p><p><img src="/storage/photos/1/legacy/ab50f69a4fc2d445c7b2fbdd77bf5e01.jpg"></p><p>Avec une 15aine de pratiquants, dont certains étaient venus de Marseille, et un accueil de premier choix à l\'AGASC, la journée a été un joli moment de partage à la fois sur l’eau et sur terre. Compte tenu du potentiel du spot (très plat par vent d’est), nous avons promis de revenir …</p><p>Un grand merci au club pour l\'accueil, et à Christian pour les photos :)</p>
 
 ',
-'status' => 'Published',
-'views' => 722,
-'last_ip' => NULL,
 'created_at' => '2018-04-16 00:34:29',
-'updated_at' => '2018-04-16 00:34:29',
+'description' => 'Inauguration de la base de vitesse de la côte d’azur, gérée par l’AGASC à St Laurent du var. ',
+'id' => '34',
+'last_ip' => '54.36.148.54',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Avril - ​Inauguration de la base de vitesse AGASC',
+'updated_at' => '2024-09-09 00:29:54',
+'user_id' => '1',
+'views' => '1238',
 ),
 18 => 
 array (
-'id' => 35,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Mars - ​Première manche du championnat régional à Toulon',
-'description' => 'Cette première régate régionale de Windfoil avait valeur de test. ',
 'body' => '<p>Cette première régate régionale de Windfoil avait valeur de test. La FFV étant en train de structurer cette nouvelle pratique, les premières régates sont très importantes pour envisager la suite.<br></p><p>Nous étions 23 sur la ligne de départ, avec une navigation en flotte. Malgré un vent capricieux (athmatique au début, puis musclé sur la fin), nous avons pu boucler 6 manches. Nous avions apporté pas mal de matériel, ce qui a permis à certains de tester en situation ;)</p><p><img src="/storage/photos/1/legacy/db7e2ddda792ee64ff14757e9e28fbd9.jpg"></p><p>On peut dire que tout cela a animé les discussions en attendant le vent</p><p><img src="/storage/photos/1/legacy/eded78c41ad8852525d847f26daf47fd.jpg"></p><p><img src="/storage/photos/1/legacy/c1e22cd048ae46cc84ff81139d5f1572.jpg"></p><p>Le YCT avait aligné toute son équipe de jeunes foileurs, grâce au 5 ou 6 packs acquis par le club</p><p><img src="/storage/photos/1/legacy/94ea91d6fbb46abe56669593441cb46d.jpg"></p><p>Le comité de course nous a proposé 3 parcours originaux, et seuls deux ont été mis en oeuvre au cours de l’après midi. Pour des non initiés comme nous, la multiplicité des parcours et la procédure de départ n\'étaient pas partis pour simplifier les choses. Heureusement, Renaud affiche à chaque fois la forme du parcours actif sur la grande ardoise du bateau comité. Cette excellente initiative a permis à tout le monde, quelque soit son niveau et son habitude, de réaliser le parcours sans erreur.</p><p><img src="/storage/photos/1/legacy/fd1b44dc9e06134fa478dceb798d3e90.jpg"></p><p>Le premier parcours, réalisé dans un vent très faible, était travers et down-wind. C’était assez adapté aux conditions très légères.</p><p>Le 2eme parcours comportait 2 bords travers, 2 remontées au vent accessibles sans matos ou compétence spécifique, et un bord down-wind. Ce 2e parcours était intéressant car ludique et accessible. En tant que pratiquant non compétiteur et peu entrainé, j’aurai juste vu des bords plus longs pour pouvoir se reposer plus longtemps entre 2 jibes (+ pumping pour re-décoller).</p><p><img src="/storage/photos/1/legacy/e0e35ac6c4da3e2379956467cfd287a4.jpg"></p><p>Dans les 2 parcours, le premier jibe se faisait autour de 2 bouées espacées de 50m dans l’axe du vent. Cette solution apportait un vrai plus en terme de sécurité car cela évitait un aglutinement à la bouée. Sur la dernière manche, courue dans une bonne 20aine de knt, on a vu les limites lors des boites au jibe … et nous aurions peut être pu écarter encore plus ces 2 bouées. </p><p><img src="/storage/photos/1/legacy/232050e821d1e5fadb54b16f92e55dc2.jpg"></p><p>Pour cette première régate, nous avions une 10aine de jeunes de moins de 21 ans, et une 10aine d’adultes, avec 5 filles. Cette mixité d’âge et de niveau au sein de la même flotte apportait une vraie convivialité. En dehors des 3 coureurs semi-pro, complètement intouchables (Nicolas Goyard, Nicolas Huguet, Mathieu Bonnot), il y a eu une relative homogénéité de niveau sur les 2 catégories d’âges. Cela donnait encore plus d’intérêt à ce moment de partage car le classement évoluait à chaque manche en fonction des gamelles ou des choix de chacun. Au sein de cette flotte, vos 2 représentants de GlissAttitude non entrainés (Bastien et moi même, respectivement 6e et 5e au général)  ont pris un vrai plaisir mais si nous avons bien subit physiquement. Ceci dit, le test était intéressant pour apporter une vision de pur amateur sur des régates régionales qui ont justement vocation a accueillir des novices.</p><p><img src="/storage/photos/1/legacy/33adf149900378c377e4c847cbcefb60.jpg"></p><p> Le plus dur a été d’enchainer les manches sans repos à terre, avec à chaque fois des attentes de l’ordre de 20 mn … ou il faut rester sur l’eau en attendant la procédure de départ. Heureusement, nous avions un super bateau-bar-à-eau avec nos 2 barmans de choc en les personnes de troll et Thaïs !</p><p>Dans la catégorie -21, on retrouvait exclusivement des jeunes compétiteurs de club (dont 7 du YCT), qui nous ont bluffé par leur résistance physique ... preuve qu\'un entrainement régulier fait ses preuves.</p><p><img src="/storage/photos/1/legacy/6893ce1a2e4040c126ef3c4a7bc916a3.jpg"></p><p>En ce qui concerne la catégorie +21, le plateau était constitué de 3 semi-pro, de quelques compétiteurs réguliers (Franck, Florent , Jerôme et Olivia) et de 5 purs amateurs. Cette mixité est la vraie force de ces régates. L\'enjeu est de la préserver en attirant toujours plus de passionnés pour qui naviguer ensemble passe avant la course au classement ... en tout cas à ce niveau régional.</p><p><img src="/storage/photos/1/legacy/6d7ecad259688ba0799f392e6c1db437.jpg"></p><p>La journée s\'est terminée par un apéro réparateur, et une remise des prix au cours de laquelle  tous les -21 ont été récompensés.</p><p><img src="/storage/photos/1/legacy/70c78013a01dd4cbfa4aa5b04cfc66ef.jpg"></p><p><img src="/storage/photos/1/legacy/1ef1d6e090184a459e3d562340c875f5.jpg"></p><p><img src="/storage/photos/1/legacy/ff4597d09ecb7d2e16d24446666bf878.jpg"></p><p>Nous ne pouvons que motiver d’autres pratiquants amateurs à venir jouer avec nous la prochaine fois (ce sera à La Ciotat le 27 mai) car l’ambiance est réellement bon-enfant malgré le côté régate … et il faut que cela reste ainsi !</p><p>Si je devais faire un bilan constructif de cette régate, je donnerai 2 ou 3 pistes d’évolutions qui me paraissent aller dans le sens de l’ouverture à tous, sans que ce soit une critique d’aucune sorte car l\'organisation était au top :</p><ul>
 <li>des bords plus longs pour espacer les manoeuvres et permettre aux non spécialistes de se reposer entre 2 jibes.</li>
 <li>une ligne de départ plus oblique pour mieux étaler les pratiquants et permettre à tous d’avoir du vent frais (important dans le light)</li>
@@ -852,60 +846,60 @@ array (
 <li>une remise des prix séparant les coureurs aguerris des vrais amateurs afin que personne ne soit frustré</li></ul><p>Enfin, je ne pouvais pas terminer ce petit compte rendu sans remercier le YCT pour leur accueil 3 étoiles, Renaud pour la direction de course au top, et tous les participants pour leur présence souriante.</p>
 
 ',
-'status' => 'Published',
-'views' => 931,
-'last_ip' => NULL,
 'created_at' => '2018-04-16 00:52:55',
-'updated_at' => '2018-04-16 00:52:55',
+'description' => 'Cette première régate régionale de Windfoil avait valeur de test. ',
+'id' => '35',
+'last_ip' => '54.36.149.61',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Mars - ​Première manche du championnat régional à Toulon',
+'updated_at' => '2024-09-09 00:30:28',
+'user_id' => '1',
+'views' => '1428',
 ),
 19 => 
 array (
-'id' => 36,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Expulser une vis cassée dans un insert',
-'description' => 'on vous montre comment réparer une vis cassée dans un insert de foil ou d\'aileron',
 'body' => '<p>Aujourd\'hui, on vous montre comment réparer une vis cassée dans un insert de foil ou d\'aileron. C\'est malheureusement quelque chose qui nous est arrivé au cours de nos journées de test, à force de monter et démonter des foils pour tester diverses combinaisons. Pour éviter ceci, bien s\'assurer que vos vis sont en bon état, et qu\'il n\'y a pas de désarmement entre les perçages de la planche et les trous du talon deep tuttle.</p><p>Sur cette première photo, on voit bien la vis cassée au raz du boitier</p><p><img src="/storage/photos/1/legacy/8161f688181dd5914831a024315bbdb9.jpg"><br></p><p>Bien caler le talon sur un plan de travail plat</p><p><img src="/storage/photos/1/legacy/9ef466760de5c4d17e91fc4df428532f.jpg"></p><p>Avec un forêt bien affûté, on va percer l\'insert</p><p><img src="/storage/photos/1/legacy/35b250eefc60b4021ac3e815c898cfed.jpg"><br></p><p>Pensez à refroidir régulièrement le forêt pour ne pas le détramper</p><p><img src="/storage/photos/1/legacy/a2e0ba29ea2c97f53658983b5d9bdc09.jpg"></p><p><img src="/storage/photos/1/legacy/35498ee9b916c4c7007c1210ae467769.jpg"></p><p>On enlève régulièrement la limaille d\'inox pour ne pas bloquer le foret</p><p><img src="/storage/photos/1/legacy/56699202441fa01a91f76af49f4de0db.jpg"></p><p>A la fin, le trou va sectionner la vis et permettre de retirer le tout</p><p><img src="/storage/photos/1/legacy/b5d02f1d3f16ead3f6f59b8c5f00b464.jpg"></p><p><br></p>
 
 ',
-'status' => 'Published',
-'views' => 1597,
-'last_ip' => '54.36.148.11',
 'created_at' => '2022-02-16 08:19:02',
-'updated_at' => '2022-04-09 07:18:10',
+'description' => 'on vous montre comment réparer une vis cassée dans un insert de foil ou d\'aileron',
+'id' => '36',
+'last_ip' => '185.191.171.19',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Expulser une vis cassée dans un insert',
+'updated_at' => '2024-09-09 06:54:46',
+'user_id' => '1',
+'views' => '2153',
 ),
 20 => 
 array (
-'id' => 37,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Mai - Championnat régional manche 2',
-'description' => 'Pour cette 2e étape, même objectif : que tout le monde puisse se faire plaisir quelque soit son niveau',
 'body' => '<h2>Petit compte rendu de cette 2e étape du championnat régional à La Ciotat</h2><p>Pour cette 2e étape, nous avons capitalisé sur les enseignements de la première épreuve avec le même objectif : que tout le monde puisse se faire plaisir quelque soit son niveau. C\'était d\'autant plus compliqué vu les conditions météo, mais finalement très bien réussi ... on est tous quand même rentrés à la maison bien vidé :)</p><p>Le très bonne nouvelle, c\'est que nous avions presque 40 inscrits, dont une bonne moitié de très jeunes coureurs !!! Très impressionnant pour une régate régionale. C\'est le signe que le foil est en plein essor , et qu\'il motive un paquet de monde. On a rarement voir jamais autant de participants sur une ligue en funboard ... C\'est aussi la preuve que l\'esprit de ces régates conviviales correspond parfaitement à ce que recherchent les pratiquants</p><p>Le vent à joué avec nos nerfs toute la journée, et au final on a eu toutes les conditions possibles : du 0 knt, du 25 knt houle de face, du 15 knt houle de travers, du super irrégulier ... bref pas facile à gérer avec beaucoup de changement de matériel pour tout le monde. Ce qui est sûr, c\'est que tout le monde a beaucoup appris, et nombreux ont repoussé leur limites, en particulier en terme de vent fort et de navigation dans la houle.</p><p>Au final, on a pu boucler 3 manches toutes très différentes. Il n\'y a quasiment eu aucun abandon, et le comité de course a tout fait pour que cela reste convivial autant dans les échanges entre participants, que dans le format de course. Certes ce sont toujours les mêmes qui sont devant, grace à leur talent, mais ce n\'est certainement pas le matos qui a fait la différence.</p><p>Le résultat est anecdotique car ce n\'est pas l\'enjeu principal de ce type d\'épreuve. Remercions juste les top coureurs qui sont venus nous faire rêver, tout en restant toujours ultra accessible et en jouant le jeux à 1000%. Mention spéciale à Nicolas Goyard qui se paye le luxe de remporter l\'épreuve avec un wagon d\'avance à chaque manche sur du matos 100% prêté (voiles gaastra phantom par Olivia, Foil AFS par moi même, flotteur RRD en pièce détachée) ... 1/3 du plateau était équipé plus pointu que lui, comme quoi ;).</p><p>Merci à tous les organisateurs, et rendez vous à tous pour la prochaine étape le 24 Juin à Embrun. Comme ce WE, on fera une journée test / entraînement le samedi, et la régate le dimanche.</p><p><img src="/storage/photos/1/legacy/85af62c5a796eea5739c79bdf7238157.jpg"></p><p><img src="/storage/photos/1/legacy/aa44e517010d5d500d14afdb4b8686bd.jpg"></p><p><img src="/storage/photos/1/legacy/2859b02cf27bdf3b241824e0001cc49a.jpg"></p><p><img src="/storage/photos/1/legacy/a800e89c9fa67aa0da8156ae2c1328d9.jpg"></p><p><img src="/storage/photos/1/legacy/f774bbd45410c0475a691cc314de1d25.jpg"><br></p><p><br></p><p><img src="/storage/photos/1/legacy/fadb727711de6930a26241eb776f5a7f.jpg"></p><p><img src="/storage/photos/1/legacy/4926680da5c25d0f923362891195220d.jpg"></p><p><img src="/storage/photos/1/legacy/d9fa3a7f0d5391c847882f4cd8c83f68.jpg"></p><p><img src="/storage/photos/1/legacy/3ab7fa747b0b7eedd0525b08749daa05.jpg"></p><p><img src="/storage/photos/1/legacy/b67ac5d574b9426c997078460670f63d.jpg"></p><p><img src="/storage/photos/1/legacy/1aafd057918984418b1274c0190b8946.jpg"></p><p><img src="/storage/photos/1/legacy/1e7c1be9e8af3f612e81110a00bba9fd.jpg"></p><p>Avis de course</p><p>*****************</p><p>Le 27 Mai aura lieu la 2e manche du championnat régional Windfoil au Neptune Club de La Ciotat. Après la grande réussite de l\'édition de Toulon, on espère d\'aussi belle conditions pour que la fête soit là :)</p><p>Pour rappel, le principe est une régate ouverte à tous, avec un format qui permet à tout le monde de se faire plaisir. La notion de performance passe en second plan : l\'objectif est avant tout de partager un bon moment tous ensemble sur l\'eau. Volontairement, les parcours sont adaptés pour donner très peu (voir pas) d\'avantage à ceux qui voudraient venir équipé de matos de pointe ultra puissant.</p><p>Seule contrainte, liée à la sécurité : license, casque et gilet obligatoires. Possibilité de prendre une licence journalière sur place (14€ + certificat médical).</p><p>Le tarif de l\'inscription est de 10€ à régler sur place (chèque ou espèces)</p><p>La veille, on organise une après midi navigation / test / entraînement pour tous, et un apéro / pizza en fin d\'après midi. On vous attend tous à La Ciotat.</p><p>De façon pratique, on s\'organise pour que vous puissiez descendre en voiture dans le club pour décharger le matériel.</p><p><img src="/storage/photos/1/legacy/a82ec3fff8188386c097962a6cfd9eef.png"></p><p><br></p>
 
 ',
-'status' => 'Published',
-'views' => 1021,
-'last_ip' => NULL,
 'created_at' => '2018-05-18 11:26:43',
-'updated_at' => '2018-05-18 11:26:43',
+'description' => 'Pour cette 2e étape, même objectif : que tout le monde puisse se faire plaisir quelque soit son niveau',
+'id' => '37',
+'last_ip' => '185.191.171.5',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Mai - Championnat régional manche 2',
+'updated_at' => '2024-09-09 09:50:10',
+'user_id' => '1',
+'views' => '1519',
 ),
 21 => 
 array (
-'id' => 38,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Le calage du stab',
-'description' => 'Comment le réglage du stabilisateur influe sur la puissance du foil et son complément en général',
 'body' => '<p>Aujourd\'hui, on &eacute;tudie la m&eacute;canique du fonctionnement d\'un foil, et comment le r&eacute;glage du stabilisateur influe sur la puissance du foil et son compl&eacute;ment en g&eacute;n&eacute;ral</p>
 <p><em><strong>IMPORTANT : si vous d&eacute;butez en foil, ne vous emb&ecirc;tez pas avec ces r&eacute;glages !! Naviguez jusqu\'&agrave; avoir suffisamment de sensations pour vous int&eacute;resser &agrave; ces subtilit&eacute;s.</strong></em></p>
 <p>&nbsp;</p>
 <p>Avant de parler de calage de stab, il est n&eacute;cessaire de comprendre la m&eacute;canique de base du foil.</p>
 <h2>Portance d\'un profil</h2>
 <p>On rappelle qu\'un profil d\'aile se d&eacute;pla&ccedil;ant dans un fluide g&eacute;n&egrave;re une d&eacute;pression sur son extrados, et cr&eacute;e une force vers le haut que l\'on appelle "portance" (l\'aile est aspir&eacute;e par la d&eacute;pression)</p>
-<p><img src="/storage/photos/1/legacy/8e7b6edf53f5887802dd67e89436a59d.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/8e7b6edf53f5887802dd67e89436a59d.jpg"></p>
 <p>Plus l\'aile est cabr&eacute;e par rapport &agrave; l\'&eacute;coulement (on parle d\'incidence qui augmente), plus la portance devient forte ... jusqu\'au d&eacute;crochage. Ci dessous, le graphique montre l\'&eacute;volution de la portance (Cl = coefficient de portance) par rapport &agrave; l\'angle d\'incidence. La portance augmente aussi avec la vitesse de l\'&eacute;coulement.</p>
-<p><img src="/storage/photos/1/legacy/959fce787cda9dffd7e7284755a8d389.png" /></p>
+<p><img src="/storage/photos/1/legacy/959fce787cda9dffd7e7284755a8d389.png"></p>
 <h2>M&eacute;canique du foil</h2>
 <p>Lorsque l\'on navigue avec un Windfoil conventionnel (1 aile avant et 1 stab), l\'ensemble rider, gr&eacute;ement, board est maintenu en l\'air, en &eacute;quilibre sur le foil. Si on fait une analyse simple des forces sur le plan longitudinal, on va trouver</p>
 <ul>
@@ -915,23 +909,23 @@ array (
 <li>la pouss&eacute;e de la voile</li>
 <li>les train&eacute;es a&eacute;rodynamique et hydrodynamique</li>
 </ul>
-<p><img src="/storage/photos/1/legacy/a306a3e8daf530fa8e028ee2366866af.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/a306a3e8daf530fa8e028ee2366866af.jpg"></p>
 <p>Si on s\'int&eacute;resse &agrave; la composante de ces forces sur l\'axe vertical, on comprend vite que l\'&eacute;quilibre de l\'ensemble repose principalement sur l\'&eacute;quilibre du poids et de la pouss&eacute;e verticale du foil.</p>
 <p>Compte tenu du point d\'application de ces 2 forces, on remarque imm&eacute;diatement que si elles &eacute;taient seules, la planche piquerait du nez. On a donc besoin d\'une 3eme force qui compense le moment de rotation induit par le poids et la portance de l\'aile. C\'est justement le premier r&ocirc;le du stab : assurer l\'&eacute;quilibre de l\'ensemble.</p>
-<p><img src="/storage/photos/1/legacy/3c3ae661266a22fff39a2569bc21417c.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/3c3ae661266a22fff39a2569bc21417c.jpg"></p>
 <p>Si on regarde le foil de plus pr&egrave;s, on constate effectivement que l\'aile principale (front wing) a un profil porteur (extrados situ&eacute; vers le haut) avec une incidence nulle ou positive, alors que le stabilisateur (rear wing) a un profil d&eacute;porteur (extrados situ&eacute; vers le bas), avec une incidence n&eacute;gative. Ce dernier ne participe donc absolument pas &agrave; la portance du foil, mais uniquement &agrave; l\'&eacute;quilibre de l\'ensemble !</p>
-<p><img src="/storage/photos/1/legacy/f1d1b33bde7fbd188d63b38aca30a306.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/f1d1b33bde7fbd188d63b38aca30a306.jpg"></p>
 <p>La figure ci dessus utilise des angles volontairement exag&eacute;r&eacute;s pour faciliter la compr&eacute;hension. Dans les faits, l\'angle d\'incidence de l\'aile principale est en g&eacute;n&eacute;ral nul, et celui de stab de l\'ordre de -4&deg;.</p>
 <h2>Stabilit&eacute; de l\'&eacute;quilibre</h2>
 <p>Un syst&egrave;me m&eacute;canique est dit "stable" si, lorsque l\'on s\'&eacute;carte de la position d\'&eacute;quilibre, le syst&egrave;me tend &agrave; revenir &agrave; sa position d\'&eacute;quilibre. Imaginons le test avec un foil conventionnel.</p>
-<p><img src="/storage/photos/1/legacy/301d9729bafd72b2b3eb5ed2d31f720e.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/301d9729bafd72b2b3eb5ed2d31f720e.jpg"></p>
 <p>Si on pousse le stab vers la haut (figure 2) &gt; son incidence n&eacute;gative augmente &gt; sa pouss&eacute;e vers le bas augmente &gt; cela a tendance &agrave; le ramener vers sa position initiale (figure 1)</p>
 <p>Si on pousse le stab vers la bas (figure 3) &gt; son incidence n&eacute;gative diminue &gt; sa pouss&eacute;e vers le bas diminue &gt; le moment induit par le poids qui s\'applique en avant de la pouss&eacute;e de l\'aile tend &agrave; faire piquer le foil, donc &agrave; faire remonter le stab vers sa position initiale (figure 1)</p>
 <p>L\'&eacute;quilibre est donc bien stable ... et tant mieux car sans cela ce serait in-navigable !</p>
 <h2>R&eacute;gler l\'incidence du stab</h2>
 <p>Maintenant que vous avez compris comment fonctionne votre foil, voyons comment r&eacute;gler son stab.</p>
 <p>Si on part du principe que l\'ensemble est con&ccedil;u pour un &eacute;quilibre stable (figure 1 ci dessous), analysons ce qui se passe si on modifie le r&eacute;glage du stab, en conservant tous les autres param&egrave;tres fixes (m&ecirc;me vitesse, m&ecirc;me incidence de l\'aile avant).</p>
-<p><img src="/storage/photos/1/legacy/dc08163b89e3c094daa0623aa043b19a.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/dc08163b89e3c094daa0623aa043b19a.jpg"></p>
 <h4>Augmenter la portance</h4>
 <p>Augmentons l\'incidence n&eacute;gative du stab en relevant le bord de fuite (figure 2) : on rend le tab encore plus piqueur. Dans ce cas, la force exerc&eacute;e par le foil vers le bas va augmenter. En cons&eacute;quence, l\'&eacute;quilibre va &ecirc;tre l&eacute;g&egrave;rement perturb&eacute;, et le fuselage va se cabrer l&eacute;g&egrave;rement. Ce faisant, on va augmenter l\'incidence positive de l\'aile avant, donc sa portance.</p>
 <p><strong><span style="color: #c0504d;">En rendant le stab plus piqueur, on augmente la portance du foil</span></strong>. C\'est un r&eacute;glage qui peut &ecirc;tre int&eacute;ressant dans des conditions de vent tr&egrave;s l&eacute;ger, o&ugrave; on a du mal &agrave; rester en l\'air ... ou pour am&eacute;liorer les performances au pr&egrave;s.</p>
@@ -941,13 +935,13 @@ array (
 <h4>M&eacute;thode de r&eacute;glage</h4>
 <p>Vous avez donc compris qu\'en modifiant l\'incidence du stab sur le fuselage, on rend le foil plus ou moins puissant. Suivant les foils, ce r&eacute;glage peut se faire</p>
 <p>- avec une vis de r&eacute;glage comme sur le NeilPryde RS:Flight F4</p>
-<p><img src="/storage/photos/1/legacy/2a4ef7d81f098b6ce4111188cb427370.png" /></p>
+<p><img src="/storage/photos/1/legacy/2a4ef7d81f098b6ce4111188cb427370.png"></p>
 <p>- avec des cales de r&eacute;glage que l\'on interpose entre le stab et le fuselage, comme chez Alpinefoil</p>
-<p><img src="/storage/photos/1/legacy/2fc8850de772068c02485e0657353825.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/2fc8850de772068c02485e0657353825.jpg"></p>
 <p>- avec des rondelles, comme sur le Neilpryde RS:Flight AL</p>
-<p><img src="/storage/photos/1/legacy/26e2a2bf927787e8f57bb73b7ad35f5e.png" /></p>
+<p><img src="/storage/photos/1/legacy/26e2a2bf927787e8f57bb73b7ad35f5e.png"></p>
 <p>- en d&eacute;pla&ccedil;ant le stab sur un berceau arrondi, guid&eacute; par des trous oblongs, comme chez Horue et Taaroa</p>
-<p><img src="/storage/photos/1/legacy/8f16619ce5c167af958ecdc1014d8f79.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/8f16619ce5c167af958ecdc1014d8f79.jpg"></p>
 <p><strong><span style="color: #c0504d;">Attention : ne retenez pas b&ecirc;tement qu\'il faut mettre une rondelle &agrave; l\'avant pour augmenter la portance et vis versa. Cela est vrai si le stab est fix&eacute; sous le fuselage, mais c\'est le contraire si il est fix&eacute; au dessus. Il est donc beaucoup plus pertinent de comprendre comment cela fonctionne pour ne pas se tromper. Ce post est fait pour cela.</span></strong></p>
 <h2>Int&eacute;r&ecirc;t du r&eacute;glage de stab</h2>
 <p>Je ne rentrerai pas ici en d&eacute;tail su toutes les cons&eacute;quences du r&eacute;glage de stab. Retenez simplement que le r&eacute;glage de stab permet d\'agir sur l\'incidence de l\'aile avant et donc</p>
@@ -957,35 +951,35 @@ array (
 <li>modifie les capacit&eacute;s au cap (plus de foil est puissant, plus il remonte au vent)</li>
 <li>modifie la vivacit&eacute; du foil</li>
 </ul>',
-'status' => 'Published',
-'views' => 17476,
-'last_ip' => '54.36.148.255',
 'created_at' => '2018-06-04 10:45:15',
-'updated_at' => '2022-04-09 06:00:20',
+'description' => 'Comment le réglage du stabilisateur influe sur la puissance du foil et son complément en général ? Aujourd\'hui, on étudie la mécanique du fonctionnement d\'un foil pour savoir comment le régler',
+'id' => '38',
+'last_ip' => '54.36.148.121',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Calage du stab',
+'updated_at' => '2024-09-08 18:29:31',
+'user_id' => '1',
+'views' => '18205',
 ),
 22 => 
 array (
-'id' => 39,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Semaine affoilante Frejus',
-'description' => 'Pour la première fois, la semaine affoilante a posé ses bagages dans le Sud de la France à Port Frejus.',
 'body' => '<p>Pour la première fois cette année, la semaine affoilante a posé ses bagages dans le Sud de la France à Port Frejus. Nous y étions pour les 2 premiers jours de cette manifestation internationale de foil multi-support.</p><p><img src="/storage/photos/1/legacy/e0a79b2e0a56e5c359da4f1d30d5fd71.jpg"></p><p>Le concept consiste à réunir les marques et les compétiteurs autour de la passion commune du foil dans toutes ses diversités (bateaux, kite, windsurf, etc.). En dehors des stands de marques, des échanges autour du foil, et des tests de matos, la semaine affoilante est aussi l\'occasion de se mesurer au chrono sur l\'eau, sur un run de 500M à 120° du vent, avec un chronométrage officiel à base de trackers GPS.</p><p><img src="/storage/photos/1/legacy/c8eeaa5592e8f23590c9ddd9edc9f7a1.jpg"></p><p><br></p><h2>Georacing</h2><p>Cette semaine affoilante était pour nous l\'occasion de découvrir le système georacing, qui permet de suivre en temps réel en en replay les courses sur l\'eau. Le système est ultra efficace et très visuel. Il est à retenir pour l\'organisation de course car il permet de suivre précisément à terre ce qu\'il se passe sur l\'eau</p><p><img src="/storage/photos/1/legacy/9613bad6d20ad26fb151c49d6390fafc.jpg"></p><p>Il vous est d\'ailleurs possible de suivre en replay tous les run sur <a href="http://www.georacing.fr/evenements/?SEMAINE+AFFOILANTE+2018/id/101730">http://www.georacing.fr/evenements/?SEMAINE+AFFOIL...</a></p><p><img src="/storage/photos/1/legacy/503109f3bc8a4a3cb85c636ea99b0abd.jpg"></p><h2>Les exposants</h2><p>Les 2 plus beaux stands étaient sans doute ceux de Horue et AlpineFoil</p><p><img src="/storage/photos/1/legacy/305431cf232e656769b7560019612e06.jpg"></p><p><img src="/storage/photos/1/legacy/6670a784b4617536a6f3e053e1cfba33.jpg"></p><p><img src="/storage/photos/1/legacy/f54e53a3950dd2aa82e85af1f5c6c78f.jpg"></p><p><img src="/storage/photos/1/legacy/c4b9d8dad63d7c392412a314ff1e65b6.jpg"></p><p><img src="/storage/photos/1/legacy/3f28b1eac01dcb99adedfa072ae8d37b.jpg"></p><p><img src="/storage/photos/1/legacy/83fa6f9d8ab6560a810e891802191c6a.jpg"><br></p><h2>La course jour 1</h2><p>La première journée a vu s\'installer toutes les marques présentes (Alpinefoil, Storm, Horue, AFS, Ketos, France catamaran, Tarroa, Extrem foil). Après le briefing, tous les coureurs sont partis sur l\'eau pour une séance de chronos dans un vent oscillant entre 6 et 8 knt.</p><p><img src="/storage/photos/1/legacy/76b6dc8d5e5391b163ee08398cecae01.jpg"></p><p><br></p><p>Dans ces conditions marginales, les kitefoil ont littéralement écrasé les autres supports avec des vitesses incroyables de plus de 30knt pour les meilleurs (Axel Mazella en tête).</p><p>Côte windfoil, le plus dur était de décoller sur un plan d\'eau déjà très clapoteux. Nous étions tous en 7.8m2. Nous utilisions le venturi créé par la proue d\'un navire de croisière pour décoller. Il fallait ensuite pomper jusqu\'à la porte d\'entrée du run, puis tenir en l\'air sur 500M dans un run très abattu où on déventait rapidement la voile. A ce jeu là, nous avons plafonné autour des 18-19knt, ce qui correspondait à un run de 55s environ. Votre serviteur n\'ayant pas compris qu\'il fallait passer au dessus de la bouée d\'entrée du run (probablement un peu tête en l\'air lors du briefing) , j\'ai hérité d\'un magnifique temps de 7mn :)))</p><p><img src="/storage/photos/1/legacy/2354bb47d2210590c4918212589f9565.jpg"></p><p>Le vent étant assez vite tombé, on a rapidement troqué le foil contre la bière et la soupe de champagne (merci port frejus).</p><p><img src="/storage/photos/1/legacy/01fc2d92b2e2d3a11f64500c1f4f9c47.jpg"></p><h2>La course jour 2</h2><p>Cette fois, le vent étant annoncé plus fort que la veille, nous étions tous sur-motivés. Malheureusement, eole a décidé de jouer avec nos nerfs, et nous n\'avons que pu observer les kites découper le spot dans 5 à 6 knt de vent une bonne partie de la journée. </p><p>A 16h, le vent est monté à 8-9 knt secteur surd avec probablement un instant autour de 10knt sur le parcours. Tout le monde en a profité pour faire quelques runs dans un plan d\'eau déjà bien défoncé ... qu\'est ce que ce doit être avec 12-15 knt !!!!</p><p>Les kites ont assez peu améliorés les temps de la veille (1s sur 500m), et on retrouve aux 2 premières places Axel Mazella et Martin Turbin (Taaroa).</p><p><img src="/storage/photos/1/legacy/145f9949c056a5cf14ab3e46dd9b203a.jpg"></p><p>Côté windfoil, Nicolas Huguet est arrivé avec sa formula et sa 9m pour nous donner une leçon.  Dans ces conditions, et sur un bord très abattu, le gros matériel de PWA fait clairement la différence avec un run de 42 secondes contre 49" pour Benoit et 50" pour votre serviteur (nous étions tous les autres en 7.8). </p><p><img src="/storage/photos/1/legacy/4e11fcac693033e531bf1664dcde4763.jpg"></p><p>La manifestation va se prolonger encore sur 2 jours, en espérant des conditions de vent un peu plus soutenues.</p>
 
 ',
-'status' => 'Published',
-'views' => 360,
-'last_ip' => NULL,
 'created_at' => '2018-06-15 22:22:24',
-'updated_at' => '2018-06-15 22:22:24',
+'description' => 'Pour la première fois, la semaine affoilante a posé ses bagages dans le Sud de la France à Port Frejus.',
+'id' => '39',
+'last_ip' => '54.36.148.208',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Semaine affoilante Frejus',
+'updated_at' => '2024-09-08 12:46:00',
+'user_id' => '1',
+'views' => '852',
 ),
 23 => 
 array (
-'id' => 40,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Juin - Championnat régional manche 3',
-'description' => 'Ce week-end du 23/24 Juin a eu lieu la 3e et dernière manche sur championnat régional de windfoil au CNA',
 'body' => '<p>Ce week-end du 23/24 Juin a eu lieu la 3e et dernière manche sur championnat régional de windfoil pour la saison 2017-2018.
 </p><p>Elle s\'est déroulée sur la magnifique spot d\'Embrun sur le lac de Serre-Ponçon, au sein du site du Club Nautique Alpin. La très bonne nouvelle, c\'est que le lac est à -1m sous la côte maxi ... autant dire qu\'il est plein à raz bord. Incroyable pour ceux qui l\'ont vu il y a encore 2 mois ! Et du coup, avec l\'aménagement de la grande plage du CNA, aucun risque d\'avoir les pieds dans la boue. Au contraire, ces aménagements ont permis de faire très facilement une pause entre les manches. Qui plus est, la relative petite taille du plan d\'eau permettait aux spectateurs de suivre facilement les courses, tranquillement installé à l\'ombre des arbres.
 </p><p><img src="/storage/photos/1/legacy/ac815cff4320107cd0b376d0726b3793.jpg">
@@ -1033,36 +1027,36 @@ array (
 </p>
 
 ',
-'status' => 'Published',
-'views' => 1470,
-'last_ip' => NULL,
 'created_at' => '2018-06-19 12:45:03',
-'updated_at' => '2018-06-19 12:45:03',
+'description' => 'Ce week-end du 23/24 Juin a eu lieu la 3e et dernière manche sur championnat régional de windfoil au CNA',
+'id' => '40',
+'last_ip' => '54.36.148.148',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Juin - Championnat régional manche 3',
+'updated_at' => '2024-09-09 01:54:07',
+'user_id' => '1',
+'views' => '1984',
 ),
 24 => 
 array (
-'id' => 41,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Réglez votre rake',
-'description' => 'Le rake concerne la pente entre le plat de la carène, et le plan de référence du fuselage du foil.',
 'body' => '<p>La plupart d\'entre nous vissons notre foil sous la planche sans trop se poser de question, et quand tout &agrave; &eacute;t&eacute; correctement choisi, la magie op&egrave;re. Pourtant, de nombreux r&eacute;glages peuvent modifier plus ou moins profond&eacute;ment le comportement du foil. En comprenant leur utilit&eacute; et leur influence, cela explique souvent des g&egrave;nes que l\'on ressent en navigant.</p>
 <p>Aujourd\'hui, on s\'int&eacute;resse &agrave; un r&eacute;glage qui a des cons&eacute;quences assez importantes : le RAKE</p>
 <h4>IMPORTANT : si vous d&eacute;butez en foil, ne vous emb&ecirc;tez pas avec ces r&eacute;glages !! Naviguez jusqu\'&agrave; avoir suffisamment de sensations pour vous int&eacute;resser &agrave; ces subtilit&eacute;s.</h4>
 <h2>D&eacute;finition</h2>
 <p>Si on regarde la traduction de ce mot anglais, on tombe d\'abord sur "rateau" ... pas beaucoup de points communs avec le windfoil. En y regardant de plus pr&egrave;s, Rake se traduit aussi par "pente", et l&agrave;, on touche de plus pr&egrave;s notre domaine.</p>
-<p>Effectivement, le rake concerne l\'angle entre la verticale (si on consid&egrave;re que le plat de car&egrave;ne est &agrave; l\'horizontale) et le mat. Dans les faits, on donnerai l\'angle moyen entre le bord d\'attaque et le bord de fuite si ceux ci ne sont pas parall&egrave;les. <img src="/storage/photos/1/legacy/3d437ad9d78a0f599d8c59c9e5e4562e.jpg" /></p>
+<p>Effectivement, le rake concerne l\'angle entre la verticale (si on consid&egrave;re que le plat de car&egrave;ne est &agrave; l\'horizontale) et le mat. Dans les faits, on donnerai l\'angle moyen entre le bord d\'attaque et le bord de fuite si ceux ci ne sont pas parall&egrave;les. <img src="/storage/photos/1/legacy/3d437ad9d78a0f599d8c59c9e5e4562e.jpg"></p>
 <h2>Influence du rake</h2>
-<p>Modifier cet angle a 2 cons&eacute;quences importantes :</p>
+<p>Modifier cet angle a 2 cons&eacute;quences :</p>
 <ul>
 <li>On d&eacute;place l&eacute;g&egrave;rement la pouss&eacute;e du foil vers l\'arri&egrave;re ou l\'avant</li>
 <li>On modifie l\'incidence du fuselage, donc du profil porteur de l\'aile et du stab</li>
 </ul>
-<p><img src="/storage/photos/1/legacy/7d413d705c6ef4d969e8036793ff3af0.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/7d413d705c6ef4d969e8036793ff3af0.jpg"></p>
 <p>Sur le dessin ci dessus, les angles sont &eacute;videmment exag&eacute;r&eacute;s, mais vous verrez plus loin que l\'on joue souvent autour de 2&deg;.</p>
-<p>Concernant le d&eacute;calage de centre de pouss&eacute;e pour un mat de 1m, cela correspond quand m&ecirc;me &agrave; 3,5cm ... soit bien plus qu\'un d&eacute;calage d\'insert de strap.</p>
+<p>Concernant le d&eacute;calage de centre de pouss&eacute;e pour un mat de 1m, cela correspond &agrave; 3,5cm ... soit le d&eacute;calage d\'un insert de strap .. pas &eacute;norme.</p>
 <p>Concernant l\'angle d\'incidence, les choses sont un peu diff&eacute;rentes : Dans la conception d\'un foil, l\'angle d\'incidence de l\'aile est en g&eacute;n&eacute;rale choisie &agrave; 0, et c\'est le braquage du stab (effet d&eacute;porteur) qui permet au foil de compenser tout le poids situ&eacute; en avant (pouss&eacute;e v&eacute;lique, poids du gr&eacute;ement et du flotteur). In fine, le foil navigue en g&eacute;n&eacute;ral avec le fuselage tr&egrave;s proche de l\'horizontale ... surtout &agrave; vitesse soutenue. Si on reprend le sh&eacute;ma suivant en partant de ce principe, voici ce que &ccedil;a donne.</p>
-<p><img src="/storage/photos/1/legacy/effd5daf0fff81bb128e83567029dfd9.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/effd5daf0fff81bb128e83567029dfd9.jpg"></p>
 <p>Modifier le rake revient donc</p>
 <ul>
 <li>&agrave; modifier l\'angle d\'incidence du fuselage lorsque la planche est &agrave; l\'arr&ecirc;t (sh&eacute;ma n&deg;2),&nbsp;</li>
@@ -1071,9 +1065,9 @@ array (
 <h2>Quel int&eacute;r&ecirc;t ?</h2>
 <p>Si on r&eacute;glait les foils avec un Rake &agrave; 0 (ce qui arrive encore un peu trop souvent sur certains mat&eacute;riels que l\'on a l\'occasion de tester), on aurait les cons&eacute;quences suivantes</p>
 <ol>
-<li>Lorsque l\'on veut partir au planning, on se recule sur la planche pour pomper et cela a pour cons&eacute;quence de l&eacute;g&egrave;rement enfoncer le cul de la planche dans l\'eau. Si la planche est cabr&eacute;e de 3&deg;, on a aussi cabr&eacute; l\'aile du foil de 3&deg; ... ce qui augmente de fa&ccedil;on substantielle sa train&eacute;e, mais aussi sa portance. On va donc d&eacute;coller avec moins de vitesse, mais il va falloir forcer plus pour vaincre cette train&eacute;e (plus de vent ou plus grande voile)</li>
-<li>Une fois en l\'air, si on prend beaucoup de vitesse, on va devoir appuyer plus fort sur le pied avant pour donner une incidence l&eacute;g&egrave;rement n&eacute;gative &agrave; l\'aile ... ceci afin de limiter sa puissance et ne pas sortir de l\'eau. Automatiquement, on se retrouve avec une car&egrave;ne qui pique du nez. Je suis s&ucirc;r que vous l\'avez d&eacute;j&agrave; observ&eacute; sur les spots chez certains de vos coll&egrave;gues foileurs</li>
-<li>Lorsque l\'on fait une touchette, plus ou moins brutale, la car&egrave;ne vient toucher l\'eau d\'un seul coup sur une grand partie de sa surface. Cela freine d\'un coup, on il faut s\'accrocher pour ne pas &ecirc;tre projet&eacute; en avant ... sans compter que l\'on s\'est arr&ecirc;t&eacute;, et qu\'il faut donc repartir sans vitesse</li>
+<li>Lorsque l\'on veut partir au planning, on se recule sur la planche pour pomper et cela a pour cons&eacute;quence de l&eacute;g&egrave;rement enfoncer le cul de la planche dans l\'eau. Si la planche est cabr&eacute;e de 3&deg;, on a aussi cabr&eacute; l\'aile du foil de 3&deg; ... ce qui augmente de fa&ccedil;on substantielle sa train&eacute;e. On va donc d&eacute;coller avec un peu moins de vitesse de d&eacute;placement, mais il va falloir forcer plus pour vaincre cette train&eacute;e (plus de vent ou plus grande voile)</li>
+<li>Une fois en l\'air, si on prend beaucoup de vitesse, on se retrouve avec une car&egrave;ne qui pique du nez. Je suis s&ucirc;r que vous l\'avez d&eacute;j&agrave; observ&eacute; sur les spots chez certains de vos coll&egrave;gues foileurs</li>
+<li>Lorsque l\'on fait une touchette, la car&egrave;ne vient toucher l\'eau d\'un seul coup sur une grand partie de sa surface. Cela donne un gros coup de frein, et il faut s\'accrocher pour ne pas &ecirc;tre projet&eacute; en avant ... sans compter que l\'on s\'est arr&ecirc;t&eacute;, et qu\'il faut donc repartir sans vitesse</li>
 </ol>
 <p>Mettre un Rake positif permet donc</p>
 <ol>
@@ -1081,16 +1075,17 @@ array (
 <li>D\'&eacute;viter d\'avoir un flotteur qui pique du nez quand on prend de la vitesse</li>
 <li>De limiter les coups de frein lors des touchettes, et am&eacute;liorer la relance au jibe si on vient &agrave; toucher</li>
 </ol>
+<p>Je sais que je me r&eacute;p&egrave;te une ni&egrave;me fois, mais le r&eacute;gage du Rake n\'est pas fait pour ajouter ou enlever de la pluissance &agrave; un foil, ci d&eacute;placer un appui trop pied avant ou pied arri&egrave;re. Pour ceci, se r&eacute;f&eacute;rer au <a href="/posts/6/38">r&eacute;glage de l\'angle de stab</a>.&nbsp;</p>
 <h2>Quelle valeur utiliser</h2>
-<p>Sur les foils modernes et bien con&ccedil;us, on s\'accorde &agrave; dire que l\'optimum se situe sur des valeurs autour de 1,5 &agrave; 2,5&deg;. Il est int&eacute;ressant de faire des essais pour trouver l\'angle qui correspond le mieux votre combo foil + board.</p>
+<p>Sur les foils modernes et bien con&ccedil;us, on s\'accorde &agrave; dire que l\'optimum se situe sur des valeurs autour de 3 &agrave; 3,5&deg;. Il est int&eacute;ressant de faire des essais pour trouver l\'angle qui correspond le mieux votre combo foil + board.</p>
 <p>Nota. Dans ce post, je donne des valeurs positives pour simplifier, mais certains parleront avec des valeurs n&eacute;gatives. Pas de stress : ce n\'est qu\'une question de r&eacute;f&eacute;rentiel. Ce qui est important, c\'est que si le fuselage est &agrave; l\'horizontal , la car&egrave;ne est l&eacute;g&egrave;rement cabr&eacute;e ... c\'est &agrave; retenir.</p>
 <h2>Comment &ccedil;a se mesure ?</h2>
-<p>Mesurer des angles de 1 ou 2&deg; n\'est pas &eacute;vident, mais la technologie peut venir &agrave; votre secours. Voici la m&eacute;thode que nous utilisons.</p>
+<p>Mesurer des angles de 2 ou 3&deg; n\'est pas &eacute;vident, mais la technologie peut venir &agrave; votre secours. Voici la m&eacute;thode que nous utilisons.</p>
 <p>Tout d\'abord, il est convient de rep&eacute;rer sur le fuselage du foil une zone plate qui semble align&eacute;e avec l\'intrados de l\'aile. Ce sera notre zone de mesure</p>
-<p><img src="/storage/photos/1/legacy/e75573a36a94ea85075a3f1ce53cbe5e.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/e75573a36a94ea85075a3f1ce53cbe5e.jpg"></p>
 <p>Sur les foils comme le starboard, l\'alpine ou le zeeko, il suffit de prendre la portion inf&eacute;rieure de fuselage situ&eacute;e juste derri&egrave;re l\'aile avant</p>
 <p>Sur votre smartphone, installez et lancez une application de niveau &eacute;lectronique gratuit comme "Niveau iHandy" ou encore "Bubble level"</p>
-<p><img src="/storage/photos/1/legacy/812696c4deb4c82d95a2851bbaecdf0a.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/812696c4deb4c82d95a2851bbaecdf0a.jpg"></p>
 <p>Une fois votre foil ins&eacute;r&eacute; dans le boitier, foil en l\'air et planche pos&eacute;e &agrave; peu pr&egrave;s &agrave; l\'horizontal sur ses straps, posez votre t&eacute;l&eacute;phone &agrave; plat contre la car&egrave;ne juste devant le boitier d\'aileron. Cliquez alors sur le bouton de remise &agrave; zero de la mesure (le rond avec la petite croix &agrave; gauche de l\'angle sur la photo ci dessus).</p>
 <p>Ensuite, posez votre t&eacute;l&eacute;phone sur la zone de mesure du foil, et vous lirez automatiquement l\'angle qu\'il y a entre le plan de r&eacute;f&eacute;rence de votre fuselage et la car&egrave;ne .... tout simplement.</p>
 <p>Nota : Les puristes de le m&eacute;canique des fluide feront tr&egrave;s justement remarquer que prendre le plat du fuselage (ou le plat de l\'intrados de l\'aile) comme r&eacute;f&eacute;rence de mesure est un peu rapide et pas tr&egrave;s juste. Cela ne correspond en effet &agrave; la r&eacute;elle incidence nulle du profil. Je suis d\'accord, mais c\'est beaucoup plus comode comme ceci. L\'important est de faire votre r&eacute;glage en prenant toujours le m&ecirc;me r&eacute;f&eacute;rentiel pour retrouver vos r&eacute;glages pr&eacute;f&eacute;r&eacute;es d\'une nav\' &agrave; l\'autre.</p>
@@ -1100,7 +1095,7 @@ array (
 <p>Dans ce cas, il suffit de serrer plus ou moins la vis arri&egrave;re ou avant du talon pour incliner diff&eacute;remment le foil. Dans cette situation, il faut mesurer &agrave; chaque montage pour avoir un r&eacute;glage constant d\'une session &agrave; l\'autre.</p>
 <h4>Cas d\'un foil avec platine</h4>
 <p>La solution la plus courante consiste &agrave; confectionner des cales biseaut&eacute;es qui permettront de relever l\'avant (le plus souvent) ou l\'arri&egrave;re de la platine pour arriver &agrave; la valeur voulue.</p>
-<p><img src="/storage/photos/1/legacy/4792dc2f2630a234f2497e8584ed9e62.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/4792dc2f2630a234f2497e8584ed9e62.jpg"></p>
 <p>Pour ceux qui ont un foil &agrave; platine, mais qui pr&eacute;f&egrave;rent supprimer l\'appui sous la car&egrave;ne (eh oui, j\'en connais !), passer au cas num&eacute;ro 3</p>
 <h4>Cas de foil sans platine et qui s\'appuie en fond de boitier</h4>
 <p>C\'est une situation de plus en plus courante pour 2 raisons</p>
@@ -1109,11 +1104,11 @@ array (
 <li>Depuis que Cobra a cr&eacute;&eacute; ses boitiers "Foil Ready", ils sont pass&eacute;s &agrave; un boitier moins profond, et certaines marques de foil (dont Starboard) ont cr&eacute;&eacute; des talons qui viennent s\'appuyer en fond de boitier ... ou presque.Par ailleurs, ces boitiers sont structurellement con&ccedil;us pour accepter un appui en fond de boitier.</li>
 </ul>
 <p>Dans cette situation, il faudra utiliser des cales &agrave; ins&eacute;rer entre le fond de boitier et le talon.</p>
-<p><img title="cale de rake" src="/storage/photos/1/legacy/cales-rake.jpg" alt="cale de rake" /></p>
+<p><img title="cale de rake" src="/storage/photos/1/legacy/cales-rake.jpg" alt="cale de rake"></p>
 <p>Vous pouvez cr&eacute;er des cales en coulant de la r&eacute;sine ou en prenant une empreinte avec de la pate &agrave; modeler en fond de boitier, mais le plus simple reste l\'utilisation de cales empilables. Ces derni&egrave;res permettront de modifier facilement l\'angle de rake en fonction de l\'&eacute;paisseur ou du nombre de cales utilis&eacute;e. Elles permettent surtout d\'avoir un r&eacute;glage parfaitement reproductible d\'une session &agrave; l\'autre.</p>
 <p><strong>Dans tous les cas, l\'utilisation des cales n\'est n&eacute;cessaire que sous la vis avant</strong>. La vis arri&egrave;re &eacute;tant en traction, le seul serrage de cette derni&egrave;re suffit.</p>
 <p>Ceci est encore plus vrai depuis que les boitiers foilBox sont pour la plupart des boitiers rectangulaires. En effet, tr&egrave;s peu de chances que le talon de votre foil ne vienne s\'appuyer sur le fond en arri&egrave;re.</p>
-<p><img src="/storage/photos/1/legacy/boitier_rectangulaire.jpg" alt="boitier foil box" /></p>
+<p><img src="/storage/photos/1/legacy/boitier_rectangulaire.jpg" alt="boitier foil box"></p>
 <p>Nota. Nous conseillons cette solution de calage sans r&eacute;serve sur les flotteurs d&eacute;di&eacute;s au foil, et qui sont &eacute;quip&eacute;s de boitiers renforc&eacute;s. Que ce soit du Flika ou du Cobra, nous avons &eacute;prouv&eacute; cette solution depuis des mois dans aucun probl&egrave;me structurel. Par contre, nous n\'avons pas de recul concernant l\'utilisation d\'un appui en fond de boitier sur des anciens boitiers de flotteur de slalom.</p>
 <h2>Des cales toutes faites</h2>
 <p>Nous proposons d&eacute;sormais, avec l\'aide de Nicolas Goyard qui les a mis au point, un <a href="/windfoil/u37872s1-divers-cales-de-reglage-rake-divers-2019.html">jeu de cales de rake fournies dans une boite</a>.</p>
@@ -1130,25 +1125,25 @@ array (
 </ul>
 <p>Les cales sont perc&eacute;es pour laisser le passage de la vis de talon. Elle sont produites dans un mat&eacute;riau tr&egrave;s dur charg&eacute; carbone pour &eacute;viter tout &eacute;crasement ou usure.</p>
 <p>Les cales sont rang&eacute;es dans une boite avec un emplacement d&eacute;di&eacute; pour chacune d\'elles ... Tout est pens&eacute; pour &eacute;viter d\'en perdre et surtout avoir un r&eacute;glage reproductible et rapide &agrave; mettre en place. Avec ce produit, on peut faireface &agrave; la plupart des situations.</p>
-<p><img src="/storage/photos/1/legacy/IMG_0118.jpg" alt="R&eacute;glage du rame" /></p>
-<p><img src="/storage/photos/1/legacy/IMG_0119.jpg" alt="R&eacute;glage du rame" /></p>
+<p><img src="/storage/photos/1/legacy/IMG_0118.jpg" alt="R&eacute;glage du rame"></p>
+<p><img src="/storage/photos/1/legacy/IMG_0119.jpg" alt="R&eacute;glage du rame"></p>
 <h2>Consid&eacute;rations structurelles</h2>
 <p>D&egrave;s que l\'on parle ou &eacute;crit au sujet du fonctionnement du boitier Tuttle, cela emm&egrave;ne &agrave; de nombreuses prises de positions concernant la qualit&eacute; de l\'assemblage.</p>
 <p>Les scientifiques dans l\'&acirc;me vous expliqueront que l\'assemblage conique est le meilleur. D\'autres qu\'il devrait &ecirc;tre doublement conique pour &ecirc;tre de qualit&eacute; (cas du boitier probox). On pourrait aussi ajouter qu\'un appui en fond de boitier est une h&eacute;r&eacute;sie concernant le talon Tuttle puisque le boitier n\'est pas fait pour cela (syst&egrave;me hyperstatique ...) etc. etc.</p>
 <p>Toutes ces remarques sont pertinentes, et th&eacute;oriquement justes. Dans les faits, le syst&egrave;me d\'assemblage Tuttle n\'est pas parfait, mais il est l&agrave; et on fait avec. Les solutions que nous pr&eacute;sentons ici fonctionnent parfaitement, y compris l\'appui en fond de boitier. Nous avons test&eacute; ces solutions depuis des mois et &ccedil;a marche sans risque pour la structure des planches ni du foil, donc pourquoi s\'en priver ?</p>',
-'status' => 'Published',
-'views' => 4425,
-'last_ip' => '54.36.148.115',
 'created_at' => '2018-06-25 14:37:02',
-'updated_at' => '2022-04-09 06:01:03',
+'description' => 'Le rake concerne la pente entre le plat de la carène, et le plan de référence du fuselage du foil. La plupart d\'entre nous vissons notre foil sous la planche sans trop se poser de question,',
+'id' => '41',
+'last_ip' => '185.191.171.17',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Réglez votre rake',
+'updated_at' => '2024-09-09 09:31:49',
+'user_id' => '1',
+'views' => '5302',
 ),
 25 => 
 array (
-'id' => 42,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Comparatif foil aluminium 2018',
-'description' => 'Petite comparaison des foils aluminium en date de Juin 2018',
 'body' => '<p>En ce mois de Juin 2018, faisons le point au sujet des foils en aluminium, avec une comparaison entre les 5 foils les plus vendus sur notre territoire national, à savoir
 </p><ul>
 <li>le Starboard GT alu</li>
@@ -1190,19 +1185,19 @@ array (
 </p>
 <p><img src="/storage/photos/1/selection.jpg" alt="" /></p>
 ',
-'status' => 'Published',
-'views' => 1044,
-'last_ip' => '114.119.134.231',
 'created_at' => '2018-06-27 22:44:18',
-'updated_at' => '2022-04-10 12:23:10',
+'description' => 'Petite comparaison des foils aluminium en date de Juin 2018',
+'id' => '42',
+'last_ip' => '54.36.149.50',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Comparatif foil aluminium 2018',
+'updated_at' => '2024-09-09 03:26:15',
+'user_id' => '1',
+'views' => '1592',
 ),
 26 => 
 array (
-'id' => 43,
-'user_id' => 1,
-'post_categories_id' => 5,
-'title' => 'Les mesures structurelles',
-'description' => 'Nous explorons les corrélations entre conception et sensations sur l\'eau',
 'body' => '<div class="container">
 <div class="row">
 <div class="col-md-6">
@@ -1219,12 +1214,12 @@ array (
 <div class="col-md-12">
 <h2>Banc de mesure du mat de foil</h2>
 <p>Le banc de mesure est un chassis m&eacute;cano-soud&eacute; tr&egrave;s rigide permettant de bloquer le foil, et de mesurer ses d&eacute;formations sous l\'effet d\'une charge m&eacute;canique. Voici une vue d\'ensemble du dispositif.</p>
-<p><img src="/storage/photos/1/legacy/5fdbed226fdc81dc3858fce62f04fe07.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/5fdbed226fdc81dc3858fce62f04fe07.jpg"></p>
 <p>Le bridage du foil par son talon</p>
-<p><img src="/storage/photos/1/legacy/6ca5a281e85deccac0d1233703219922.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/6ca5a281e85deccac0d1233703219922.jpg"></p>
 <p>Le dispositif de mesure des d&eacute;formations, &agrave; l\'aide d\'un comparateur</p>
-<p><img src="/storage/photos/1/legacy/893eef149902c30dedfdb362d2df87eb.jpg" /></p>
-<p><img src="/storage/photos/1/legacy/600cf4a4be8c2ba734f2f5b4118db168.jpg" /></p>
+<p><img src="/storage/photos/1/legacy/893eef149902c30dedfdb362d2df87eb.jpg"></p>
+<p><img src="/storage/photos/1/legacy/600cf4a4be8c2ba734f2f5b4118db168.jpg"></p>
 </div>
 </div>
 <div class="row">
@@ -1242,8 +1237,8 @@ array (
 </div>
 </div>
 <div class="row">
-<div class="col-md-6"><img src="/storage/photos/1/legacy/foil-rigidite-flexion.jpg" alt="rigidite en flexion" /></div>
-<div class="col-md-6"><img src="/storage/photos/1/legacy/foil-rigidite-torsion.jpg" alt="rigidite en torsion" /></div>
+<div class="col-md-6"><img src="/storage/photos/1/legacy/foil-rigidite-flexion.jpg" alt="rigidite en flexion"></div>
+<div class="col-md-6"><img src="/storage/photos/1/legacy/foil-rigidite-torsion.jpg" alt="rigidite en torsion"></div>
 </div>
 <div class="row">
 <div class="col-md-6">
@@ -1261,7 +1256,7 @@ array (
 </div>
 </div>
 <div class="row">
-<div class="col-md-6"><img src="/storage/photos/1/legacy/banc-mesure-jonctions.jpg" alt="Banc de mesure des rigidites de jonction" /></div>
+<div class="col-md-6"><img src="/storage/photos/1/legacy/banc-mesure-jonctions.jpg" alt="Banc de mesure des rigidites de jonction"></div>
 <div class="col-md-6">
 <p>Ce banc de mesure est cage permettant de brider le foil par ses ailes et son stab, et d\'appliquer une traction lat&eacute;ral sur le mat. On mesure alors la d&eacute;formations lat&eacute;rale de ce dernier au niveau du talon. La force lat&eacute;rale appliqu&eacute;e est de 6,25kg</p>
 <p>Nous avons aussi effectu&eacute; des mesures avec d\'autres forces lat&eacute;rales (1kg, 5kg, 10 kg) pour v&eacute;rifier si on restait dans un comportement lin&eacute;aire (d&eacute;formation &eacute;lastique). C\'est bien le cas.</p>
@@ -1290,19 +1285,19 @@ array (
 </div>
 </div>
 </div>',
-'status' => 'Published',
-'views' => 2894,
-'last_ip' => '54.36.149.59',
 'created_at' => '2018-07-10 14:13:39',
-'updated_at' => '2022-04-09 05:53:25',
+'description' => 'Nous explorons les corrélations entre conception, construction et sensations sur l\'eau. Ceci passe par une série de mesures structurelles qui nous éclairent sur le comportement dynamique des foils',
+'id' => '43',
+'last_ip' => '85.208.96.209',
+'post_categories_id' => '5',
+'status' => 'Published',
+'title' => 'Les mesures structurelles',
+'updated_at' => '2024-09-09 06:44:14',
+'user_id' => '1',
+'views' => '3551',
 ),
 27 => 
 array (
-'id' => 44,
-'user_id' => 1,
-'post_categories_id' => 2,
-'title' => 'Comment voler dans moins de 10knt ?',
-'description' => 'Cela nécessite à la fois un matériel bien choisie, et une technique aboutie. Voici nos conseils',
 'body' => '<p>Voler dans moins de 10 knt est le graal de tout windfoileur. Cela n&eacute;cessite &agrave; la fois un mat&eacute;riel bien choisi, et une technique aboutie. Voici nos conseils</p>
 <h3>Dans l\'ordre d\'importance</h3>
 <ol>
@@ -1330,51 +1325,51 @@ array (
 <div>Ce test montre que le d&eacute;collage n\'est clairement pas proportionnel &agrave; la surface de l\'aile contrairement aux id&eacute;es re&ccedil;ues. Tous les foils test&eacute;s ici sont &eacute;quip&eacute;s avec des ailes assez grosses mais le Supercruiser avec son aile de 1700cm2 ne sort pas en t&ecirc;te, loin de l&agrave;.</div>
 <div>Je pr&eacute;cise que dans le vent tr&egrave;s faible du jour, une fois en l\'air, les vitesses des foils &eacute;taient tr&egrave;s diff&eacute;rentes, et cot&eacute; d&eacute;collage, il a des groupes qui se d&eacute;tachent car certains sont assez proches (l\'alpine et le loke, ensuite les F4, phantom, Starboard, puis le gaastra et le Taaroa)</div>
 <div>&nbsp;</div>',
-'status' => 'Published',
-'views' => 1562,
-'last_ip' => '54.36.148.44',
 'created_at' => '2021-11-02 01:00:38',
-'updated_at' => '2022-04-09 07:49:46',
+'description' => 'Cela nécessite à la fois un matériel bien choisie, et une technique aboutie. Voici nos conseils',
+'id' => '44',
+'last_ip' => '185.191.171.13',
+'post_categories_id' => '2',
+'status' => 'Published',
+'title' => 'Comment voler dans moins de 10knt ?',
+'updated_at' => '2024-09-09 06:28:06',
+'user_id' => '1',
+'views' => '2228',
 ),
 28 => 
 array (
-'id' => 45,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2018 - Aout - Conviviale Serre Ponçon',
-'description' => 'Conditions météo un peu moins favorables qu\'à l\'habitude pour cette 2e conviviale de l\'été à Serre Ponçon (vent un peu capricieux). ',
 'body' => '<p>Conditions météo un peu moins favorables qu\'à l\'habitude pour cette 2e conviviale de l\'été à Serre Ponçon (vent un peu capricieux). Malgré tout, la magie du foil a opérée et tout le monde a pu profiter de cette occasion pour se faire plaisir. Des experts aux débutants, tous on volé et on particulièrement apprécié l\'endroit. Profitez encore plus de la video en la visionnant en HD (petite coche dans les paramètres vidéo)</p><p>Encore un immense merci à Titi et <a class="profileLink" href="https://www.facebook.com/momo.lefevre?fref=mentions" data-hovercard="/ajax/hovercard/user.php?id=1523673242&amp;extragetparams=%7B%22fref%22%3A%22mentions%22%2C%22directed_target_id%22%3A1954474477924786%7D" data-hovercard-prefer-more-content-show="1">MoMo Lefevre</a> pour leur accueil exceptionnel comme d\'habitude ! Si vous montez naviguer au lac, ne ratez surtout pas la charlotte aux pêches du <a class="profileLink" href="https://www.facebook.com/Restaurant-Le-Bus-Ecole-de-voile-Serre-Pon%C3%A7on-Windsurf-129352457204/?fref=mentions" data-hovercard="/ajax/hovercard/page.php?id=129352457204&amp;extragetparams=%7B%22fref%22%3A%22mentions%22%2C%22directed_target_id%22%3A1954474477924786%7D" data-hovercard-prefer-more-content-show="1">Restaurant Le Bus &amp; Ecole de voile Serre Ponçon Windsurf</a></p><iframe width="560" height="315" src="https://www.youtube.com/embed/Q1Q5KeOtEKU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
 ',
-'status' => 'Published',
-'views' => 240,
-'last_ip' => NULL,
 'created_at' => '2018-08-14 23:27:01',
-'updated_at' => '2018-08-14 23:27:01',
+'description' => 'Conditions météo un peu moins favorables qu\'à l\'habitude pour cette 2e conviviale de l\'été à Serre Ponçon (vent un peu capricieux). ',
+'id' => '45',
+'last_ip' => '54.36.148.223',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2018 - Aout - Conviviale Serre Ponçon',
+'updated_at' => '2024-09-08 20:04:20',
+'user_id' => '1',
+'views' => '804',
 ),
 29 => 
 array (
-'id' => 46,
-'user_id' => 1,
-'post_categories_id' => 8,
-'title' => 'Plan d\'eau de Pierrlatte',
-'description' => 'nc',
 'body' => '<p><img src="/storage/photos/1/legacy/b2c349f28c0b3c46321fa32e37a8dc62.jpg"></p><p><img src="/storage/photos/1/legacy/de53f502899ae81a8aa0260850e64077.jpg"></p><p><img src="/storage/photos/1/legacy/aa36a7bb29daacd16d1197974f2b86ee.jpg"></p><p><img src="/storage/photos/1/legacy/974977ef04ca1c0d818db4d3e79b5479.jpg"></p><p><br></p>
 
 ',
-'status' => 'Published',
-'views' => 454,
-'last_ip' => '54.36.148.225',
 'created_at' => '2018-08-20 23:55:41',
-'updated_at' => '2022-04-09 05:55:15',
+'description' => 'nc',
+'id' => '46',
+'last_ip' => '54.36.149.3',
+'post_categories_id' => '8',
+'status' => 'Published',
+'title' => 'Plan d\'eau de Pierrlatte',
+'updated_at' => '2024-09-08 21:25:24',
+'user_id' => '1',
+'views' => '1007',
 ),
 30 => 
 array (
-'id' => 47,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Voile spécifique ? Comparaison Volt & F-Type',
-'description' => 'Comparons F Type de Volt pour comprendre l\'intérêt d\'une voile dédiée au Windfoil',
 'body' => '<p><img src="/storage/photos/1/legacy/IMG_7710.jpg" alt=""></p>
 <p>La question de la voile d&eacute;di&eacute;e en Foil se pose de plus en plus. Est ce r&eacute;ellement utile , et si oui en quoi ?</p>
 <p>Pour r&eacute;pondre &agrave; cette question, nous avons compar&eacute; sur le m&ecirc;me mat&eacute;riel (flotteur / foil) et dans les m&ecirc;me conditions de vent un peu soutenu, une voile North VOLT , et la Duotone F-TYpe. Les 2 &eacute;taient gr&eacute;&eacute;e sur le m&ecirc;me mat RDM en 4,00m</p>
@@ -1383,19 +1378,19 @@ array (
 <p>Le d&eacute;collage est un peu plus rapide avec la Volt qui a plus de puissance statique. Au pumping, la F-Type reprend le devant. Une fois en vol stabilis&eacute;, la F-Type acc&eacute;l&egrave;re beaucoup plus vite, g&egrave;re mieux les surventes, permet de mieux se caler, stabilise le foil, offre une vitesse de pointe plus &eacute;lev&eacute;e. Au cap &eacute;galement, aucune mesure enter les 2 voile, notamment gr&acirc;ce &agrave; l\'appui main arri&egrave;re un peu plus marqu&eacute; sur la F-Type. Certes les 2 voiles sont ax&eacute;es freeride et donc peu rapides dans l\'absolu, mais la diff&eacute;rence entre les 2 est tout de m&ecirc;me flagrante.</p>
 <p>Sur le foil le plus en glisse (qui n&eacute;cessite le moins de puissance) , les diff&eacute;rences de performances au portant sont un peu plus liss&eacute;es. Au pr&egrave;s t sur le foil n&eacute;cessitant le plus de puissance, l\'&eacute;cart est plus important.</p>
 <p>Au final, en utilisation foill, la F-Type &eacute;crase litt&eacute;ralement la Volt. Que ce soit en terme de performances et que d\'agr&eacute;ment, il n\'y a pas photo !</p>',
-'status' => 'Published',
-'views' => 878,
-'last_ip' => '88.163.167.153',
 'created_at' => '2018-09-04 21:21:02',
-'updated_at' => '2022-04-11 00:14:17',
+'description' => 'Comparons F Type de Volt pour comprendre l\'intérêt d\'une voile dédiée au Windfoil',
+'id' => '47',
+'last_ip' => '54.36.148.86',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Voile spécifique ? Comparaison Volt & F-Type',
+'updated_at' => '2024-09-09 04:11:54',
+'user_id' => '1',
+'views' => '1381',
 ),
 31 => 
 array (
-'id' => 48,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Selection flotteur en 2018',
-'description' => 'Les flotteurs windfoil : aperçu du marché en 2018',
 'body' => '<p>Après avoir été considéré par certains comme une mode, le windfoil est devenu comme nous l\'avions prévu un mouvement de fond, dont on sait tous désormais qu\'il va profondément modifier la pratique du Windsurf, de façon durable. Nombreux sont ceux qui ont découvert cette nouvelle pratique et se posent la question du matériel, en particulier du flotteur.</p>
 <p><img src="/storage/photos/1/legacy/7079889ae9333dae3ed195ef4d83f5e8.jpg" /></p>
 <h2>Liste des foils testés et compte-rendus</h2>
@@ -1478,19 +1473,19 @@ array (
 <h3>Comparatif flotteurs race</h3>
 <div>N\'ayant absolument aucune envie d\'aller me frotter à des voiles de 9m2 et plus, je serai très intéressé si quelqu\'un se dévouait pour réaliser un comparatif objectif après avoir testé tous ces flotteurs. Avis aux amateurs :)</div>
 ',
-'status' => 'Published',
-'views' => 3619,
-'last_ip' => '54.36.148.56',
 'created_at' => '2018-10-02 00:14:00',
-'updated_at' => '2022-04-09 06:15:27',
+'description' => 'Les flotteurs windfoil : aperçu du marché en 2018',
+'id' => '48',
+'last_ip' => '54.36.149.3',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Selection flotteur en 2018',
+'updated_at' => '2024-09-09 08:12:33',
+'user_id' => '1',
+'views' => '4143',
 ),
 32 => 
 array (
-'id' => 49,
-'user_id' => 1,
-'post_categories_id' => 2,
-'title' => 'Les clés pour débuter en foil',
-'description' => 'Voici les clés pour un apprentissage zen et efficace du windfoil',
 'body' => '<h2>SOMMAIRE</h2>
 <p>Voici les cl&eacute;s pour un apprentissage zen et efficace du windfoil :</p>
 <ul>
@@ -1595,19 +1590,19 @@ array (
 </div>
 </div>
 </div>',
-'status' => 'Published',
-'views' => 4324,
-'last_ip' => '54.36.148.157',
 'created_at' => '2022-02-02 01:00:38',
-'updated_at' => '2022-04-09 07:51:04',
+'description' => 'Voici les clés pour un apprentissage zen et efficace du windfoil',
+'id' => '49',
+'last_ip' => '54.36.148.137',
+'post_categories_id' => '2',
+'status' => 'Published',
+'title' => 'Les clés pour débuter en foil',
+'updated_at' => '2024-09-08 12:27:59',
+'user_id' => '1',
+'views' => '4924',
 ),
 33 => 
 array (
-'id' => 50,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Voile et Flotteur : la bonne taille',
-'description' => 'En foil, le choix de la taille de la voile et de celle du flotteur sont très liées.',
 'body' => '<p><img src="/storage/photos/1/legacy/c7ab117940c0c9b25ec382fb4bc79b50.jpg" alt=""></p>
 <p>En foil, le choix de la taille de la voile et de celle du flotteur sont tr&egrave;s li&eacute;es. C\'est tr&egrave;s important de bien comprendre ce point lorsque l\'on choisi son mat&eacute;riel.</p>
 <p>C\'est le domaine le plus complexe &agrave; appr&eacute;hender tant les id&eacute;es re&ccedil;ues sont encr&eacute;es. On le sait : le foil attire avant tout les d&eacute;butants pour son c&ocirc;t&eacute; light wind. Ils ne passent &agrave; une navigation foil tout temps qu\'apr&egrave;s plusieurs mois ou saisons de pratique.</p>
@@ -1635,58 +1630,44 @@ array (
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>',
-'status' => 'Published',
-'views' => 1546,
-'last_ip' => '88.163.167.153',
 'created_at' => '2018-10-02 01:02:45',
-'updated_at' => '2022-04-11 00:13:59',
+'description' => 'En foil, le choix de la taille de la voile et de celle du flotteur sont très liées.',
+'id' => '50',
+'last_ip' => '148.64.100.94',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Voile et Flotteur : la bonne taille',
+'updated_at' => '2024-09-09 04:29:34',
+'user_id' => '1',
+'views' => '2141',
 ),
 34 => 
 array (
-'id' => 52,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Renforcer votre boitier',
-'description' => 'Comment et pourquoi renforcer votre boitier ?',
 'body' => '<p>On nous pose r&eacute;guli&egrave;rement des questions autour du renforcement du boitier d\'aileron pour utiliser un foil. Faisons le point sur la question.</p>
 <h2>Dans le cas d\'une planche de foil d&eacute;di&eacute;e</h2>
 <p>Depuis l\'arriv&eacute;e des flotteurs d&eacute;di&eacute;s au foil, les principaux fabriquants (et Cobra en t&ecirc;te), ont adapt&eacute; la m&eacute;thodologie de construction de leurs boitiers pour les rendre compatibles avec les efforts engendr&eacute;s par le foil.&nbsp;</p>
 <p>En cons&eacute;quence, il n\'est pas n&eacute;cessaire de s\'aventurer dans le renforcement de votre boitier.</p>
-<p>Cette remarque est &eacute;galement valable pour un certian nombre de flotteurs convertibles, qui ont &eacute;t&eacute; con&ccedil;us pour revevoir alternativement aileron ou foil.</p>
+<p>Cette remarque est &eacute;galement valable pour un certain nombre de flotteurs convertibles, qui ont &eacute;t&eacute; con&ccedil;us pour recevoir alternativement aileron ou foil.</p>
 <h2>Dans le cas d\'une planche non initialement pr&eacute;vue pour le foil</h2>
-<p>Si votre flotteur a &eacute;t&eacute; con&ccedil;u pour la navigation en aileron, vous pouvez malgr&eacute; tout l\'utiliser pour d&eacute;couvrir le foil. En d&eacute;butant dans cette nouvelle discipline, vous allez remplacer l\'aileron par un foil, sans quasi aucun risque pour votre flotteur. Pourquoi ? Lors de vos d&eacute;buts, vous allez naviguer tr&egrave;s droit sur votre planche, et cela n\'engendra dobnc pas d\'effort dangereux pour votre boitier.</p>
-<p>Lorque vous allez progresser dans la prartique, vous allez tr&egrave;s vite ressentir l\'int&eacute;r&ecirc;t d\'un flotteur d&eacute;di&eacute;. Vous d&eacute;couvrirez une position beaucoup plus &eacute;quilibr&eacute;e et plus naturelle. Cela va beaucoup vous faciliter la t&acirc;che ... et vous vous d&eacute;b&eacute;rasserez donc assez vite de votre ancien flotteur ... probablement bien avant de risquer d\'en ab&icirc;mer le boitier.</p>
+<p>Si votre flotteur, plus ancien, a &eacute;t&eacute; con&ccedil;u pour la navigation en aileron, vous pouvez malgr&eacute; tout l\'utiliser pour d&eacute;couvrir le foil. En d&eacute;butant dans cette nouvelle discipline, vous allez remplacer l\'aileron par un foil, sans quasi aucun risque pour votre flotteur. Pourquoi ? Lors de vos d&eacute;buts, vous allez naviguer tr&egrave;s droit sur votre planche, et cela n\'engendra pas d\'effort dangereux pour votre boitier.</p>
+<p>Lorque vous allez progresser dans la pratique, vous allez tr&egrave;s vite ressentir l\'int&eacute;r&ecirc;t d\'un flotteur d&eacute;di&eacute;. Vous d&eacute;couvrirez alors une position beaucoup plus &eacute;quilibr&eacute;e et plus naturelle. Cela va beaucoup vous faciliter la t&acirc;che ... et vous vous d&eacute;b&eacute;rasserez donc assez vite de votre ancien flotteur ... probablement bien avant de risquer d\'en ab&icirc;mer le boitier.</p>
 <h2>Et si je veux malgr&eacute; tout renforcer mon boitier ?</h2>
 <p>La plupart des shapeurs sont capables de travailler sur le boitier de votre flotteur. Si vous les interrogez, vous verrez que la seule solution r&eacute;ellement valable techniquement consiste &agrave; remplacer le boitier d\'origine par un boitier plus solide. Le co&ucirc;t de cette op&eacute;ration est assez &eacute;lev&eacute; (entre 250 et 350eur). Par ailleurs cette op&eacute;ration est indentique qu\'elle soit r&eacute;alis&eacute;e sur un boitier cass&eacute; que sur un boitier en bon &eacute;tat.&nbsp;</p>
-<p>Notre conseil est donc simple : d&eacute;butez avec votre ancien boitier .. et si vous observez des fissures, faites le remplacer. Si il ne se passe rien avat que nous ne passiez &agrave; un flotteur d&eacute;di&eacute;, vous aurez &eacute;conomis&eacute; 350eur !</p>
+<p>Notre conseil est donc simple : d&eacute;butez avec votre ancien boitier .. et si vous observez des fissures, faites le remplacer. Si il ne se passe rien avant que nous ne passiez &agrave; un flotteur d&eacute;di&eacute;, vous aurez &eacute;conomis&eacute; 350eur !</p>
 <p>&nbsp;</p>',
-'status' => 'Published',
-'views' => 766,
-'last_ip' => '54.36.149.94',
 'created_at' => '2022-02-10 08:19:02',
-'updated_at' => '2022-04-09 07:20:33',
+'description' => 'Comment et pourquoi renforcer votre boitier ? Depuis l\'arrivée des flotteurs dédiés au foil, les principaux fabriquants (et Cobra en tête), ont adapté la méthodologie de construction',
+'id' => '52',
+'last_ip' => '85.208.96.200',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Renforcer votre boitier',
+'updated_at' => '2024-09-09 08:26:12',
+'user_id' => '1',
+'views' => '1374',
 ),
 35 => 
 array (
-'id' => 53,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Le réglage du pied de mat',
-'description' => 'Comment le réglage de pied de mat influe sur le comportement en vol',
-'body' => '<p>A venir</p>',
-'status' => 'Published',
-'views' => 61,
-'last_ip' => '54.36.148.54',
-'created_at' => '2018-10-02 01:07:32',
-'updated_at' => '2022-04-09 06:02:04',
-),
-36 => 
-array (
-'id' => 54,
-'user_id' => 1,
-'post_categories_id' => 5,
-'title' => 'la stabilité',
-'description' => 'Quand nous parlons de stabilité du foil, nous évoquons en réalité 3 composantes de cette stabilité : longitudinale, latérale et en lacet',
 'body' => '<p>Quand nous parlons de stabilit&eacute; du foil, nous &eacute;voquons en r&eacute;alit&eacute; 3 composantes de cette stabilit&eacute; :</p>
 <ul>
 <li>La stabilit&eacute; longitudinale ... on s\'int&eacute;resse au mouvement du foil dans l\'axe longitudinal. Un foil insufisament stable sur cet axe va monter et descendre sans arr&ecirc;t. On aura surtout beaucoup de difficult&eacute; &agrave; maintenir une altitude constante.</li>
@@ -1708,19 +1689,19 @@ array (
 <p>La cons&eacute;quence de cette stabilit&eacute; lat&eacute;rale tr&egrave;s neutre est une certaine facilit&eacute; &agrave; le mettre &agrave; la contre g&icirc;te, m&ecirc;me si la faible longueur du mat (et le vent trop faible aujourd\'hui) limite forc&eacute;ment les choses. En tout cas, ce comportement a l\'air parfaitement adapt&eacute; aux flotteurs pas trop large, comme nous avons d&eacute;j&agrave; pu le constater avec les RS:Flight AL et Zeeko</p>
 <h2>Stabilit&eacute; en lacet</h2>
 <p>Un foil tr&egrave;s stable en lacet donne l\'impression que tout est bien dans l\'axe. C\'est une sensation tr&egrave;s agr&eacute;able, gage d\'une glisse tr&egrave;s pure.</p>',
-'status' => 'Published',
-'views' => 2342,
-'last_ip' => '54.36.149.102',
 'created_at' => '2018-10-02 01:09:46',
-'updated_at' => '2022-04-09 05:54:17',
+'description' => 'Quand nous parlons de stabilité du foil, nous évoquons en réalité 3 composantes de cette stabilité : longitudinale, latérale et en lacet',
+'id' => '54',
+'last_ip' => '54.36.149.52',
+'post_categories_id' => '5',
+'status' => 'Published',
+'title' => 'la stabilité',
+'updated_at' => '2024-09-09 01:15:49',
+'user_id' => '1',
+'views' => '2951',
 ),
-37 => 
+36 => 
 array (
-'id' => 56,
-'user_id' => 1,
-'post_categories_id' => 2,
-'title' => 'Le surf sinusoidal',
-'description' => 'Le surf, en windfoil ?',
 'body' => '<p>Hervé nous présente Le surf sinusoidal :</p>
 <p><strong>Le surf</strong></p>
 <p></p>
@@ -1746,19 +1727,19 @@ array (
 <p>Hervé</p>
 <p></p>
 <p><img src="/storage/photos/1/legacy/cale_stab_noire_1.5_93_.jpg" alt="Herve en plein surf" /></p>',
-'status' => 'Published',
-'views' => 244,
-'last_ip' => '54.36.148.7',
 'created_at' => '2019-01-13 19:15:53',
-'updated_at' => '2022-04-09 07:52:20',
+'description' => 'Le surf, en windfoil ?',
+'id' => '56',
+'last_ip' => '54.36.149.61',
+'post_categories_id' => '2',
+'status' => 'Published',
+'title' => 'Le surf sinusoidal',
+'updated_at' => '2024-09-08 18:43:09',
+'user_id' => '1',
+'views' => '803',
 ),
-38 => 
+37 => 
 array (
-'id' => 61,
-'user_id' => 1,
-'post_categories_id' => 2,
-'title' => 'Voler avec un gréement gonflable',
-'description' => 'On vous prouve que c\'est possible',
 'body' => '<div class="container">
 <div class="row">
 <div class="col"><img src="/storage/photos/1/legacy/irig.jpg" alt="" /></div>
@@ -1769,140 +1750,126 @@ array (
 </div>
 <div class="row"><iframe id="ytplayer" src="https://www.youtube.com/embed/X3NONBxHGMg?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 </div>',
-'status' => 'Published',
-'views' => 675,
-'last_ip' => '54.36.148.111',
 'created_at' => '2019-01-22 00:25:26',
-'updated_at' => '2022-04-09 07:55:38',
+'description' => 'On vous prouve que c\'est possible',
+'id' => '61',
+'last_ip' => '85.208.96.198',
+'post_categories_id' => '2',
+'status' => 'Published',
+'title' => 'Voler avec un gréement gonflable',
+'updated_at' => '2024-09-09 08:09:20',
+'user_id' => '1',
+'views' => '1281',
+),
+38 => 
+array (
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/a92iMXUiO00?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
+'created_at' => '2019-01-22 00:28:31',
+'description' => 'nc',
+'id' => '62',
+'last_ip' => '54.36.148.129',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Foil in SantaManza',
+'updated_at' => '2024-09-08 08:39:38',
+'user_id' => '1',
+'views' => '789',
 ),
 39 => 
 array (
-'id' => 62,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Foil in SantaManza',
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/aNBteEUL4zE?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
+'created_at' => '2019-01-22 00:37:13',
 'description' => 'nc',
-'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/a92iMXUiO00?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
+'id' => '63',
+'last_ip' => '185.191.171.8',
+'post_categories_id' => '3',
 'status' => 'Published',
-'views' => 256,
-'last_ip' => '88.163.167.153',
-'created_at' => '2019-01-22 00:28:31',
-'updated_at' => '2022-04-11 00:12:38',
+'title' => 'Video test RF81',
+'updated_at' => '2024-09-08 20:55:23',
+'user_id' => '1',
+'views' => '620',
 ),
 40 => 
 array (
-'id' => 63,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Video test RF81',
-'description' => 'nc',
-'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/aNBteEUL4zE?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-'status' => 'Published',
-'views' => 89,
-'last_ip' => '88.163.167.153',
-'created_at' => '2019-01-22 00:37:13',
-'updated_at' => '2022-04-11 00:12:01',
-),
-41 => 
-array (
-'id' => 65,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Le palan d\'amure en action',
-'description' => 'Vidéo expliquant le fonctionnement du palan d\'amure',
-'body' => '<p><iframe src="https://www.youtube.com/embed/d9A0ismLTdA" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-'status' => 'Published',
-'views' => 533,
-'last_ip' => '54.36.148.177',
-'created_at' => '2022-02-14 08:19:02',
-'updated_at' => '2022-04-09 07:22:55',
-),
-42 => 
-array (
-'id' => 66,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2017 - Aout - conviviale Savine',
-'description' => 'nc',
 'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
 src="https://www.youtube.com/embed/wPb1TQTSpxE?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
-'status' => 'Published',
-'views' => 432,
-'last_ip' => NULL,
 'created_at' => '2019-01-22 00:41:52',
-'updated_at' => '2019-01-22 00:41:52',
-),
-43 => 
-array (
-'id' => 67,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2017 - Conviviale La Ciotat',
 'description' => 'nc',
+'id' => '66',
+'last_ip' => '85.208.96.206',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2017 - Aout - conviviale Savine',
+'updated_at' => '2024-09-09 03:11:18',
+'user_id' => '1',
+'views' => '948',
+),
+41 => 
+array (
 'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
 src="https://www.youtube.com/embed/XS2s1CqZfq8?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
-'status' => 'Published',
-'views' => 132,
-'last_ip' => NULL,
 'created_at' => '2019-01-22 00:43:06',
-'updated_at' => '2019-01-22 00:43:06',
-),
-44 => 
-array (
-'id' => 68,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Vidéo test Slingshot',
 'description' => 'nc',
-'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/sapOJ1xN2Gc?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
+'id' => '67',
+'last_ip' => '54.36.149.105',
+'post_categories_id' => '7',
 'status' => 'Published',
-'views' => 45,
-'last_ip' => '88.163.167.153',
-'created_at' => '2019-01-22 00:44:08',
-'updated_at' => '2022-04-11 00:11:36',
+'title' => '2017 - Conviviale La Ciotat',
+'updated_at' => '2024-09-08 23:47:38',
+'user_id' => '1',
+'views' => '685',
 ),
-45 => 
+42 => 
 array (
-'id' => 69,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2017 - Printemps du foil',
+'body' => '<p><iframe id="ytplayer" src="https://www.youtube.com/embed/sapOJ1xN2Gc?autoplay=1&amp;loop=1" width="1104" height="621" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
+'created_at' => '2019-01-22 00:44:08',
 'description' => 'nc',
+'id' => '68',
+'last_ip' => '85.208.96.198',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Vidéo test Slingshot',
+'updated_at' => '2024-09-08 18:48:54',
+'user_id' => '1',
+'views' => '568',
+),
+43 => 
+array (
 'body' => '<iframe id="ytplayer" type="text/html" width="1104" height="621"
 src="https://www.youtube.com/embed/uIoVgQyYIDw?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
-'status' => 'Published',
-'views' => 86,
-'last_ip' => NULL,
 'created_at' => '2017-04-22 00:45:09',
-'updated_at' => '2017-04-22 00:45:09',
-),
-46 => 
-array (
-'id' => 70,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2017 - National windfoil à Martigues',
 'description' => 'nc',
+'id' => '69',
+'last_ip' => '54.36.148.85',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2017 - Printemps du foil',
+'updated_at' => '2024-09-09 02:05:29',
+'user_id' => '1',
+'views' => '587',
+),
+44 => 
+array (
 'body' => '
 <iframe id="ytplayer" type="text/html" width="1104" height="621"
 src="https://www.youtube.com/embed/vDuLzwIsi2E?autoplay=1&loop=1"
 frameborder="0" allowfullscreen></iframe>',
-'status' => 'Published',
-'views' => 234,
-'last_ip' => NULL,
 'created_at' => '2017-05-22 00:46:13',
-'updated_at' => '2017-05-22 00:46:13',
+'description' => 'nc',
+'id' => '70',
+'last_ip' => '54.36.148.71',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2017 - National windfoil à Martigues',
+'updated_at' => '2024-09-08 23:47:11',
+'user_id' => '1',
+'views' => '742',
 ),
-47 => 
+45 => 
 array (
-'id' => 72,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2019 - Mars - Gliss Test Session PWA Marignane',
-'description' => 'À l’occasion de la coupe du monde PWA de Marignane, nous avons organisé trois jours de tests géants en collaboration avec les magasins HotMer et Le Marin. ',
 'body' => '<p>À l’occasion de la coupe du monde PWA de Marignane, nous avons organisé trois jours de tests géants en collaboration avec les magasins HotMer et Le Marin. Nous avons réuni plus de 50 flotteurs, 20 foils et 30 gréements : événement exceptionnel donc par la diversité du matériel présent.</p>
 <h2>Jour un</h2>
 <p>Ce premier jour a été marquée par un soleil radieux, et un vent régulièrement présent. De secteur sud-est, ce dernier a permis à la plupart d’aller sur l’eau dans des conditions idéales : vent léger à médium, plan d\'eau parfaitement plat et températures printanières. Ceux qui ont participé à cette journée ne se sont pas trompés !</p>
@@ -1992,37 +1959,37 @@ array (
 </ul>
 <p><img src="/storage/photos/1/legacy/IMG_0031.jpg" alt="Gliss Test Session Pocket Rocket" /></p>
 <p><img title="Gliss Test Session" src="YYYYYYGTS.jpg" alt="Gliss Test Session" /></p>',
-'status' => 'Published',
-'views' => 345,
-'last_ip' => NULL,
 'created_at' => '2019-03-07 17:35:16',
-'updated_at' => '2019-03-07 17:35:16',
+'description' => 'À l’occasion de la coupe du monde PWA de Marignane, nous avons organisé trois jours de tests géants en collaboration avec les magasins HotMer et Le Marin. ',
+'id' => '72',
+'last_ip' => '54.36.148.225',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2019 - Mars - Gliss Test Session PWA Marignane',
+'updated_at' => '2024-09-09 08:17:23',
+'user_id' => '1',
+'views' => '846',
 ),
-48 => 
+46 => 
 array (
-'id' => 73,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Visite de l\'usine Alpine Foil',
-'description' => 'Video visite de l\'usine',
 'body' => '<p><img src="/storage/photos/1/legacy/alpine.jpg"></p>
 <p><iframe src="https://www.youtube.com/embed/AXe7bT3haKo?autoplay=true&rel=0&vq=hd720" width="1120" height="630" frameborder="0" allowfullscreen="" loop=1 autoplay=1></iframe></p>
 
 
 ',
-'status' => 'Published',
-'views' => 1342,
-'last_ip' => '54.36.148.180',
 'created_at' => '2019-03-28 20:52:18',
-'updated_at' => '2022-04-09 05:58:10',
+'description' => 'Video visite de l\'usine',
+'id' => '73',
+'last_ip' => '54.36.148.207',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Visite de l\'usine Alpine Foil',
+'updated_at' => '2024-09-09 01:27:39',
+'user_id' => '1',
+'views' => '1868',
 ),
-49 => 
+47 => 
 array (
-'id' => 75,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Flotteurs AST ou Carbone ?',
-'description' => 'Voici un guide pour aider à faire le bon investissement en ce qui concerne le flotteur.',
 'body' => '<p>Avec l\'explosion de la pratique du foil, vous &ecirc;tes de plus en plus nombreux &agrave; vouloir gouter &agrave; cette nouvelle discipline. On ne risque pas de vous en bl&acirc;mer ... !</p>
 <p>Un sujet &nbsp;revient &agrave; longueur de journ&eacute;e au shop : "comment acheter du mat&eacute;riel au tarif le plus bas possible ?". En cette p&eacute;riode o&ugrave; le pouvoir d\'achat est devenu LE graal de tout consommateur, nous faisons tous pour nous adapter. Voici un guide pour aider &agrave; faire le bon investissement en ce qui concerne le flotteur.</p>
 <h2>1 - Flotteur convertible ou d&eacute;di&eacute; ?</h2>
@@ -2083,21 +2050,21 @@ array (
 <div>Foil Freeride : Exocet Freefoil 112, 132 et&nbsp;JP Hydrofoil 120</div>
 <div>&nbsp;</div>
 <div><img src="/storage/photos/1/legacy/u38483s1.jpg" alt="Exocet FReefoil AST">&nbsp;<img src="/storage/photos/1/legacy/u38235s1.jpg" alt="Tabou Airride 81 AST"></div>',
-'status' => 'Published',
-'views' => 4323,
-'last_ip' => '88.163.167.153',
 'created_at' => '2019-05-23 13:36:09',
-'updated_at' => '2022-04-11 00:13:38',
+'description' => 'Voici un guide pour aider à faire le bon investissement en ce qui concerne le flotteur.',
+'id' => '75',
+'last_ip' => '54.36.148.120',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Flotteurs AST ou Carbone ?',
+'updated_at' => '2024-09-09 08:37:17',
+'user_id' => '1',
+'views' => '4877',
 ),
-50 => 
+48 => 
 array (
-'id' => 76,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Eviter la salade d\'inserts',
-'description' => 'Comment éviter de détruire les inserts du talon Deep Tuttle de votre foil',
 'body' => '<p>Depuis la g&eacute;n&eacute;ralisation du DeepTuttle en tant que standard de fixation Foil / Flotteurs, nous avons r&eacute;guli&egrave;rement des remont&eacute;s client concernant les inserts de talon. Plus pr&eacute;cis&eacute;ment, de nombreux clients se plaignent d\'inserts neufs mal taraud&eacute;s.&nbsp;</p>
-<p>Devant un nombre cons&eacute;quent de remont&eacute;s, communes &agrave; toutes les marques (alors que les inserts sont tous diff&eacute;rents), nous nous sommes interrog&eacute;s sur le ph&eacute;nom&egrave;ne et avons cherch&eacute; une parade.</p>
+<p>Devant un nombre cons&eacute;quent de remont&eacute;es, communes &agrave; toutes les marques (alors que les inserts sont tous diff&eacute;rents), nous nous sommes interrog&eacute;s sur le ph&eacute;nom&egrave;ne et avons cherch&eacute; une parade.</p>
 <h2>La raison</h2>
 <p>Apr&egrave;s avoir longuement analys&eacute; le probl&egrave;me, et v&eacute;rifi&eacute; les inserts fournis neufs par les fabriquants, nous sommes en mesure de vous confirmer que les inserts ne pr&eacute;sentent pas de d&eacute;faut d\'origine .. et pas plus chez AFS que RRD, TAAROA, STARBOARD ou LOKE. A la limite, cela pourrait arriver exceptionnement (bien que nous n\'en ayons pas trouv&eacute;), mais jamais sur les 2 vis du m&ecirc;me foil.</p>
 <p>Le probl&egrave;me que nombreux pratiquants rencontrent est le r&eacute;sultat du cumul de 2 choses</p>
@@ -2136,19 +2103,19 @@ array (
 <p>Au passage, signalons la tr&egrave;s bonne initiative de Starboard qui livre toutes ses planches depuis plusieurs saisons avec des trous d&eacute;j&agrave; ovalis&eacute;s. Je ne comprends toujours pas pourquoi les autres marques n\'aient pas impos&eacute; cette solution aupr&egrave;s de Cobra !</p>
 <h2>Bilan</h2>
 <p>Voil&agrave;, une fois de plus, j\'esp&egrave;re que cette petute exlication vous fera gagner du temps, et vous &eacute;vitera de pr&eacute;parer une vinaigrette &agrave; base d\'inserts. Je vous conseille donc de toujours ovaliser vos trous de vis de boitier ... cela vous permet de lmonter n\'importe quel foil sans risque.</p>',
-'status' => 'Published',
-'views' => 4324,
-'last_ip' => '88.163.167.153',
 'created_at' => '2022-02-16 08:19:02',
-'updated_at' => '2022-04-11 00:09:49',
+'description' => 'Comment éviter de détruire les inserts du talon Deep Tuttle de votre foil ? Devant un nombre conséquent de remontées, communes à toutes les marques , nous avons enquêté.',
+'id' => '76',
+'last_ip' => '54.36.148.248',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Eviter la salade d\'inserts',
+'updated_at' => '2024-09-09 03:15:25',
+'user_id' => '1',
+'views' => '4970',
 ),
-51 => 
+49 => 
 array (
-'id' => 77,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2019 - Juin - La Ganguise',
-'description' => 'Pour la 2e édition de la conviviale Glissalafac, le plateau d\'exposant promettait d\'être fourni. ',
 'body' => '<p>Pour la 2e édition de la conviviale Glissalafac, le plateau d\'exposant promettait d\'être fourni. Avec les shops Glissattitude, Chinook et Surfone, la quantité et la qualité étaient au rendez vous !</p>
 <p>Pour notre part, nous avions rempli le camion avec pas moins de 7 flotteurs , 7 gréements et 10 foils !</p>
 <p><img src="/storage/photos/1/legacy/guanguise1.jpg" alt="conviviale" /></p>
@@ -2172,19 +2139,19 @@ Entre le FAST Hotel et la base nautique, votre GPS préféré aura aussi peut ê
 <p><iframe src="https://www.youtube.com/embed/TyiP2NJ_c_U" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
 
 ',
-'status' => 'Published',
-'views' => 234,
-'last_ip' => NULL,
 'created_at' => '2019-06-14 22:30:16',
-'updated_at' => '2019-06-14 22:30:16',
+'description' => 'Pour la 2e édition de la conviviale Glissalafac, le plateau d\'exposant promettait d\'être fourni. ',
+'id' => '77',
+'last_ip' => '54.36.148.181',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2019 - Juin - La Ganguise',
+'updated_at' => '2024-09-08 18:19:39',
+'user_id' => '1',
+'views' => '733',
 ),
-52 => 
+50 => 
 array (
-'id' => 78,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2019 - Juin - Conviviale de Serre Ponçon',
-'description' => 'nc',
 'body' => '<p><img src="/storage/photos/1/legacy/s1.jpg" alt="conviviale savines juin 2019" /></p>
 <p><img src="/storage/photos/1/legacy/s5.jpg" alt="conviviale savines juin 2019" /></p>
 <p><img src="/storage/photos/1/legacy/s2.jpg" alt="conviviale savines juin 2019" /></p>
@@ -2198,19 +2165,19 @@ array (
 <p><img src="/storage/photos/1/legacy/s14.jpg" alt="conviviale savines juin 2019" /></p>
 <p><img src="/storage/photos/1/legacy/s10.jpg" alt="conviviale savines juin 2019" /></p>
 <p><img src="/storage/photos/1/legacy/s8.jpg" alt="conviviale savines juin 2019" /></p>',
-'status' => 'Published',
-'views' => 214,
-'last_ip' => NULL,
 'created_at' => '2019-07-03 12:29:21',
-'updated_at' => '2019-07-03 12:29:21',
-),
-53 => 
-array (
-'id' => 79,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Visite de l\'usine Lokefoil à St Malo',
 'description' => 'nc',
+'id' => '78',
+'last_ip' => '85.208.96.210',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2019 - Juin - Conviviale de Serre Ponçon',
+'updated_at' => '2024-09-09 04:00:51',
+'user_id' => '1',
+'views' => '721',
+),
+51 => 
+array (
 'body' => '<p>Aujourd\'hui, on vous embarque avec nous pour visiter l\'atelier de fabrication de foil de la marque Lokefoil. Contrairement à nos vidéos précédentes, Loke montre un autre concept de fabrication basé sur la technologie RTM et non prepreg comme les autres que nous avons visité jusqu\'alors (AFS, Alpine). C\'est aussi une autre dimension et vision de l\'entreprise.</p>
 <p>La visite est assurée par Kevin et Loin, les deux co-gérant de cette entreprise française basée à St Malo.</p>
 <p><iframe src="https://www.youtube.com/embed/haKrNy4xjxQ" width="1120" height="630" frameborder="0" allowfullscreen=""></iframe></p>
@@ -2219,19 +2186,19 @@ array (
 <p><img src="/storage/photos/1/legacy/visite-loke.jpg" alt="Visite lokefoil" /></p>
 
 ',
-'status' => 'Published',
-'views' => 1435,
-'last_ip' => '54.36.148.165',
 'created_at' => '2019-08-07 14:53:59',
-'updated_at' => '2022-04-09 05:59:17',
-),
-54 => 
-array (
-'id' => 80,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2019 - Challenge Chapelle St Michel',
 'description' => 'nc',
+'id' => '79',
+'last_ip' => '54.36.148.141',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Visite de l\'usine Lokefoil à St Malo',
+'updated_at' => '2024-09-09 01:29:51',
+'user_id' => '1',
+'views' => '1955',
+),
+52 => 
+array (
 'body' => '<p>Petit challenge GPS pour les adeptes de la balade en Windfoil </p>
 <h2>Description</h2>
 <p>Spot : Lac de Serre Ponçon</p>
@@ -2269,35 +2236,35 @@ array (
 <h2>La marque de parours</h2>
 <p>Il faut faire le tour de la chapelle</p>
 <p><img src="/storage/photos/1/legacy/chapelle-saint-michel.jpg" alt="Raid St Michel GPS" /></p>',
-'status' => 'Published',
-'views' => 123,
-'last_ip' => NULL,
 'created_at' => '2019-08-19 19:04:21',
-'updated_at' => '2019-08-19 19:04:21',
+'description' => 'nc',
+'id' => '80',
+'last_ip' => '54.36.149.67',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2019 - Challenge Chapelle St Michel',
+'updated_at' => '2024-09-08 12:29:47',
+'user_id' => '1',
+'views' => '626',
 ),
-55 => 
+53 => 
 array (
-'id' => 81,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2019 - SailGP Finale à Marseille',
-'description' => 'Une fois n\'est pas coutume, on vous montre cette fois des voiliers : les F50 du circuit SailGP !',
 'body' => '<p><img class="cms-img-fluid" src="/storage/photos/1/legacy/sailJP.jpg" alt="" /></p>
 <p>Une fois n\'est pas coutume, on vous montre cette fois des voiliers, mais pas n\'importe lesquels puisqu\'il s\'agit de v&eacute;ritables F1 des mers : les F50 du circuit SailGP !</p>
 <p><iframe src="https://www.youtube.com/embed/PfWiSezhjAM" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-'status' => 'Published',
-'views' => 97,
-'last_ip' => NULL,
 'created_at' => '2019-09-21 23:57:09',
-'updated_at' => '2019-09-21 23:57:09',
+'description' => 'Une fois n\'est pas coutume, on vous montre cette fois des voiliers : les F50 du circuit SailGP !',
+'id' => '81',
+'last_ip' => '185.191.171.3',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2019 - SailGP Finale à Marseille',
+'updated_at' => '2024-09-08 15:16:17',
+'user_id' => '1',
+'views' => '612',
 ),
-56 => 
+54 => 
 array (
-'id' => 82,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2020 - Avrill - Journée initiation VIP La Ciotat',
-'description' => 'nc',
 'body' => '<p>Save the date ! Les 25 et 26 Avril 2020, nous organisons un WE initiation / test / démonstration VIP autour du Windfoil à La Ciotat.</p>
 <h2>Où ?</h2>
 <p>Au sein de la plus belle baie du monde (dixit les journalistes !!), nous aurons l\'occasion de vous faire gouter à des nouvelles sensations incroyables, grâce à ce qui va être l\'évolution de la voile dans les 20 ans à venir.</p>
@@ -2323,73 +2290,75 @@ array (
 <p>Confirmez dors et déjà votre présence auprès de Gilles, afin que nous puissions organiser au mieux le Week End. </p>
 <h2>Plan d\'accès</h2>
 <p><img src="http://www.afwf.fr/wp-content/uploads/2019/05/la-ciotat-detail-1-1024x663.jpg" width="1024" height="663" /></p>',
-'status' => 'Published',
-'views' => 125,
-'last_ip' => NULL,
 'created_at' => '2020-04-09 13:16:53',
-'updated_at' => '2020-04-09 13:16:53',
-),
-57 => 
-array (
-'id' => 83,
-'user_id' => 1,
-'post_categories_id' => 3,
-'title' => 'Pêche au sabre',
 'description' => 'nc',
+'id' => '82',
+'last_ip' => '85.208.96.197',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2020 - Avrill - Journée initiation VIP La Ciotat',
+'updated_at' => '2024-09-09 05:53:54',
+'user_id' => '1',
+'views' => '643',
+),
+55 => 
+array (
 'body' => '<p>omment se nourrir &agrave; l\'aide d\'un wind foil ... une le&ccedil;on de survie par notre fid&egrave;le contributeur : Herv&eacute;</p>
 <p><iframe src="https://www.youtube.com/embed/y5MWDzuD_AI" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <p>&nbsp;</p>',
-'status' => 'Published',
-'views' => 78,
-'last_ip' => '88.163.167.153',
 'created_at' => '2020-03-07 16:42:57',
-'updated_at' => '2022-04-11 00:11:11',
+'description' => 'nc',
+'id' => '83',
+'last_ip' => '54.36.148.45',
+'post_categories_id' => '3',
+'status' => 'Published',
+'title' => 'Pêche au sabre',
+'updated_at' => '2024-09-08 08:39:23',
+'user_id' => '1',
+'views' => '681',
 ),
-58 => 
+56 => 
 array (
-'id' => 84,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Tutos L\'assemblage foil / flotteur',
-'description' => 'Comment monter votre foil sur le flotteur, sans risques',
-'body' => '<p>Avec la d&eacute;finition tr&egrave;s approximative de la norme Deep Tuttle, vous avez probablement tous fait l\'exp&eacute;rience du bricolage lors de montage de votre aileron ou foil tout neuf. Pourtant, r&eacute;aliser un montage correct est primmordial pour ne pas risquer d\'endommager votre foil, votre flotteur, ou d\'en perdre un bout.</p>
+'body' => '<p>Avec la d&eacute;finition tr&egrave;s approximative de la norme Deep Tuttle, vous avez probablement tous fait l\'exp&eacute;rience de montage d&eacute;licat de votre aileron ou foil tout neuf. Pourtant, r&eacute;aliser un montage correct est primmordial pour ne pas risquer d\'endommager votre foil, votre flotteur, ou d\'en perdre un bout.</p>
 <h2>G&eacute;n&eacute;ralit&eacute;s</h2>
 <p><img src="/storage/photos/1/legacy/cales-rake.jpg" alt="trous non align&eacute;s "></p>
 <p>L\'assemblage va consister &agrave; introduire 2 vis traversant le pont de la planche, et venant se visser dans les 2 inserts m&eacute;talliques pr&eacute;sents dans le talon du foil. Comme illustr&eacute; sur le sh&eacute;ma, l\'utilisation du foil va provoquer une traction sur la vis arri&egrave;re et une pouss&eacute;e sur la vis avant. Il faut donc faire attention &agrave; 2 points</p>
 <ul>
-<li>la vis arri&egrave;re doit traverser int&eacute;gralement l\'insert pour ne pas en arracher les filets. Cela suppose qu\'ellle soit de longueur ad&eacute;quat</li>
-<li>une rondelle de bonne qualit&eacute; doit &ecirc;tre utilis&eacute;e sous la vis arri&egrave;re ou &eacute;viter la d&eacute;teriotation de l\'appiu sur le flotteur</li>
+<li>la vis arri&egrave;re doit traverser <strong>int&eacute;gralement</strong> l\'insert pour ne pas en arracher les filets. Cela suppose qu\'elle soit de longueur ad&eacute;quate</li>
+<li>une rondelle de bonne qualit&eacute; doit &ecirc;tre utilis&eacute;e sous la vis arri&egrave;re ou &eacute;viter la d&eacute;teriotation de l\'appui sur le flotteur</li>
 </ul>
-<p>Pour introduire le foil dans le boitier, il se peut qu\'il faille forcer car le concept du boitier deep tuttle repose sur 2 faces parall&egrave;le. En fonction des tol&eacute;rences de fabrication, l\'ajustement peut &ecirc;tre tr&egrave;s serr&eacute;. Dans tous les cas, ce n\'est pas en serrant les 2 vis que l\'on doit faire rentrer le talon dans le boitier, sous peine d\'endomager les inserts. Au contraire, il faut utiliser le technique du levier : on vis alternativement un vis apr&egrave;s l\'autre, en rattrapant &agrave; chaque fois le jeu cr&eacute;&eacute; par le basculement du mat en avant ou en arri&egrave;re. C\'est le m&ecirc;me principe que le serrage mat sur fuselage :</p>
-<p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Pour introduire le foil dans le boitier, il se peut qu\'il faille forcer car le concept du boitier deep tuttle repose sur 2 faces parall&egrave;les. En fonction des tol&eacute;rences de fabrication, l\'ajustement peut &ecirc;tre tr&egrave;s serr&eacute;. Dans tous les cas, ce n\'est pas en serrant les 2 vis que l\'on doit faire rentrer le talon dans le boitier, sous peine d\'endomager les inserts. Au contraire, il faut utiliser le technique du levier : on visse alternativement une vis apr&egrave;s l\'autre, en rattrapant &agrave; chaque fois le jeu cr&eacute;&eacute; par le basculement du mat en avant ou en arri&egrave;re. C\'est le m&ecirc;me principe que le serrage mat sur fuselage</p>
+<p><iframe src="https://www.youtube.com/embed/yWkmnQbtOf4" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <h2>Visserie</h2>
-<p>Pour tous les assemblages foil / flotteur, on vous conseillle l\'utilisation de vis &agrave; t&ecirc;te dite CHC, que l\'on visse avec une cl&eacute; allen. Cela vous garantira un serrage de qualit&eacute;. Vous retrouvrez ces vis en vente sur notre site, dans la section Windfoil / Visserie et outillage.</p>
+<p>Pour tous les assemblages foil / flotteur, on vous conseillle l\'utilisation de <a href="https://marseille.glissattitude.com/windfoil/u40111s1-gliss-attitude-vis-chc-m6-pas-metrique-rondelle-gliss-attitude.html">vis &agrave; t&ecirc;te dite CHC</a>, que l\'on visse avec une cl&eacute; allen (ou une cl&eacute; Torx T30 qui fonctionne &eacute;galement dans une empreinte CHC). Cela vous garantira un serrage de qualit&eacute;. Vous retrouvrez <a href="https://marseille.glissattitude.com/windfoil/u40111s1-gliss-attitude-vis-chc-m6-pas-metrique-rondelle-gliss-attitude.html">ces vis en vente sur notre site</a>, dans la section Windfoil / Visserie et outillage.</p>
+<h2>Contr&ocirc;le avant montage</h2>
+<p>Dans tous les cas, avant de serrer quoi que ce soit, il est imp&eacute;atif d\'effectuer un contr&ocirc;le ultra simple mais primmordial : introduisez manuellement vos 2 vis dans les trous du flotteur de fa&ccedil;on &agrave; ce qu\'elles viennent au contact des inserts. Vissez les &agrave; la main &agrave; 2 doigts (ou en tenant la tige de votre cl&eacute; torx &agrave; 2 doigts) jusqu\'&agrave; ce que les t&ecirc;te de vis viennent en contact avec la planche. Si lors de cette op&eacute;ration vous &ecirc;tes oblig&eacute; de forcer, m&ecirc;me un peu, c\'est qu\'il y a un probl&egrave;me &agrave; r&eacute;soudre (trous d&eacute;sax&eacute;s, vis endommag&eacute;e, insert endommag&eacute; etc.). Donc on d&eacute;monte tout et on cherche la source du probl&egrave;me avant d\'aller plus loin !</p>
 <h2>Trous d&eacute;sax&eacute;s</h2>
-<p>Au chapitre des situations particuli&egrave;rement aga&ccedil;antes, on vous pr&eacute;sente le cas trop courant o&ugrave; les inserts du talon ne sont pas align&eacute;s aves les trous du boitier. Concr&ecirc;tement, cela ressemble &agrave; ceci</p>
+<p>Au chapitre des situations particuli&egrave;rement aga&ccedil;antes, on vous pr&eacute;sente le cas trop courant o&ugrave; les inserts du talon ne sont pas align&eacute;s avec les trous du boitier. Concr&ecirc;tement, cela ressemble &agrave; ceci</p>
 <p><img src="/storage/photos/1/legacy/image2.jpg" alt="trous non align&eacute;s "></p>
 <p>Dans cette situation, 80% d\'entre vous vont forcer pour faire rentrer la vis coute que coute, quitte &agrave; sortir un peu le talon, mettre les vis, puis serrer le tout jusqu\'&agrave; ce que &ccedil;a passe en force.</p>
-<p>Dans le meilleur des cas, vous avez ses inserts en laiton (un m&eacute;tal assez tendre), et l\'insertion des vis de travers va provoquer un \'re-filetage\' de l\'insert ... avec un couinement caract&eacute;ristique que l\'on connait bien, et un affaiblissement de la robustesse de votre insert.</p>
-<p>Dans un cas moins "joyeux", vous avez des inserts en inox, et votre vis va d&eacute;finitivement ab&icirc;mer le filetage. Dans le pire des cas, elle va se bloquer dedans puis casser lorsque vous allez essayer de l\'extraire en d&eacute;vissant.&nbsp;</p>
+<p>Dans le meilleur des cas, vous avez des inserts en laiton (un m&eacute;tal assez tendre), et l\'insertion des vis de travers va provoquer un \'re-filetage\' de l\'insert ... avec un couinement caract&eacute;ristique que l\'on connait bien, et un affaiblissement de la robustesse de votre insert.</p>
+<p>Dans un cas moins "joyeux", vous avez des inserts en inox (de plus en plus courant dans le monde du foil), et votre vis va d&eacute;finitivement ab&icirc;mer le filetage. Dans le pire des cas, elle va se bloquer dedans puis casser lorsque vous allez essayer de l\'extraire en d&eacute;vissant.&nbsp;</p>
 <p>Bref, il faut &agrave; tout prix &eacute;viter ceci et il existe une solution ultra simple : ovaliser les trous du boitier &agrave; l\'aide d\'une lime "queue de rat".</p>
 <p><img src="/storage/photos/1/legacy/IMG_5037.jpg" alt="trou ovalis&eacute;"></p>
 <p><img src="/storage/photos/1/legacy/IMG_5038.jpg" alt="trou ovalis&eacute;"></p>
 <p>Avec cette astuce, vous devriez pouvoir visser vos boulons &agrave; 2 doigts !</p>
 <h3>Nota</h3>
 <p>D&egrave;s que vous achetez un pack board + foil chez GlissAttitude, nous r&eacute;alisons pour vous tous les ajustements (pon&ccedil;age du talon, ovalisation des trous, mise en place de vis CHC &agrave; la bonne taille, et &eacute;ventuellement r&eacute;glage du rake) .. pour que ce soit plug and play de v&ocirc;tre c&ocirc;t&eacute;.</p>',
-'status' => 'Published',
-'views' => 3423,
-'last_ip' => '88.163.167.153',
 'created_at' => '2022-02-17 08:19:02',
-'updated_at' => '2022-04-11 00:09:10',
+'description' => 'Pour introduire le foil dans le boitier, il se peut qu\'il faille forcer car le concept du boitier deep tuttle repose sur 2 faces parallèles. Voici comment faire ceci sans rien n\'abîmer.',
+'id' => '84',
+'last_ip' => '54.36.148.242',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Assemblage foil / flotteur',
+'updated_at' => '2024-09-08 20:47:17',
+'user_id' => '1',
+'views' => '4191',
 ),
-59 => 
+57 => 
 array (
-'id' => 85,
-'user_id' => 1,
-'post_categories_id' => 6,
-'title' => 'Tuto Assemblage du foil et serrages',
-'description' => 'Commen assembler votre foil sans l\'abîmer',
-'body' => '<p>L\'assemblage de votre foil est une op&eacute;ration &agrave; r&eacute;aliser avec soin &agrave; chaque sortie pour ne pas risquer la casse, ou des sensations anormales.</p>
+'body' => '<p>L\'assemblage de votre foil est une op&eacute;ration &agrave; r&eacute;aliser avec soin &agrave; chaque sortie pour ne pas risquer la casse, une usure pr&eacute;matur&eacute;e, ou des sensations anormales.</p>
 <h2>Montage</h2>
 <p>L\'essentiel du montage consiste &agrave; assembler le mat, le fuselage, le stabilisateur et l\'aile. L\'objectif est d\'avoir in fine un assemblage robuste, rigide, et qui ne se d&eacute;serre pas sur l\'eau ... sans pour autant casser la visserie &agrave; cause d\'un serrage trop puissant.</p>
 <p><strong>Une r&egrave;gle de base &agrave; retenir : ne jamais forcer sur la visserie !</strong></p>
@@ -2397,46 +2366,43 @@ array (
 <p><iframe src="https://www.youtube.com/embed/m6MWuC1nI8A" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
 <h2>Visserie et outils</h2>
 <p>Pour garantir des montages r&eacute;guliers sans anicroche, on vous sugg&egrave;re d\'&eacute;quiper votre foil de visserie inox &agrave; t&ecirc;te TORX. C\'est le type d\'empreinte la plus robuste &agrave; la longue.</p>
-<p>Pour manipuler les vis Torx, munissez vous de cl&eacute;s de bonne qualit&eacute;, comme celles-ci</p>
+<p>Pour manipuler les vis Torx, munissez vous de cl&eacute;s de bonne qualit&eacute;, comme celles-ci. Vous retrouvrez <a href="https://marseille.glissattitude.com/windfoil/foil/vis.html">une s&eacute;lection de visserie et d\'outillage</a> s&eacute;lectionn&eacute;s &agrave; l\'usage pour leur solidit&eacute; sur le site GlissAttitude.</p>
 <p><a href="https://marseille.glissattitude.com/windfoil/u38521s1-gliss-attitude-cle-torx-facom-t30-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u38521s1.jpg" alt="Cl&eacute; torx facom T30"></a></p>
 <h2>Couples de serrages</h2>
-<p>Si vous avez des doutes sur le serrage que vous devez appliquer, vous pouvez invesrtir dans une cl&eacute; dynamom&eacute;trique. Pour tout ce qui est assemblages intenes du foil (mat sur fuselage, ailes et stab), vous pouvez appliquer un serrage de l\'ordre de 5 &agrave; 8 NM.</p>
+<p>Si vous avez des doutes sur le serrage que vous devez appliquer, vous pouvez investir dans une cl&eacute; dynamom&eacute;trique. Pour tout ce qui est assemblages internes du foil (mat sur fuselage, ailes et stab), vous pouvez appliquer un serrage de l\'ordre de 5 &agrave; 8 NM sans risquer d\'endommager les filetages dans l\'aluminium.</p>
 <h2>Entretien</h2>
-<p>M&ecirc;me si il est souvent tentant de tranporter votre foil assembl&eacute; pour gagner du temps, nous conseillons tout de m&ecirc;me de d&eacute;monter et rincer votre foil &agrave; chaque utilisation. Si vous omettez cette pr&eacute;caution, vous ne pourrez pas en vouloir &agrave; quiconque si votre foil pr&eacute;sente des traces de corrosion.</p>
+<p>M&ecirc;me si il est souvent tentant de transporter votre foil assembl&eacute; pour gagner du temps, nous conseillons tout de m&ecirc;me de d&eacute;monter et rincer votre foil &agrave; chaque utilisation. Si vous omettez cette pr&eacute;caution, vous ne pourrez pas en vouloir &agrave; quiconque si votre foil pr&eacute;sente des traces de corrosion.</p>
 <p>Par ailleurs, nous vous conseillons d\'enduire la visserie de graisse isolant galvanique type tef-gel tous les 3 ou 4 montages.</p>
-<p><a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u32582.jpg" alt="Tefgel GlissAttitude"></a></p>
-<p>&nbsp;</p>
-<h2>Montage sur le flotteur</h2>
-<p><iframe src="https://www.youtube.com/embed/yWkmnQbtOf4" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>',
-'status' => 'Published',
-'views' => 3216,
-'last_ip' => '88.163.167.153',
+<p><a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u32582.jpg" alt="Tefgel GlissAttitude"></a></p>',
 'created_at' => '2022-02-18 08:19:02',
-'updated_at' => '2022-04-11 00:08:44',
+'description' => 'L\'assemblage de votre foil est une opération à réaliser avec soin à chaque sortie pour ne pas risquer la casse, une usure prématurée, ou des sensations anormales.',
+'id' => '85',
+'last_ip' => '54.36.148.72',
+'post_categories_id' => '6',
+'status' => 'Published',
+'title' => 'Assemblage du foil et serrages',
+'updated_at' => '2024-09-07 20:50:15',
+'user_id' => '1',
+'views' => '3987',
 ),
-60 => 
+58 => 
 array (
-'id' => 86,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2020 - Journée test Exocet Serre Ponçon',
-'description' => 'nc',
 'body' => '<p><img src="/storage/photos/1/legacy/test-day-exocet-fb_copy.jpg" alt="test day exocet 2020" /></p>
 <p></p>
 <p><img src="/storage/photos/1/legacy/test-day-exocet.jpg" alt="test exocet GlissAttitude" /></p>',
-'status' => 'Published',
-'views' => 54,
-'last_ip' => NULL,
 'created_at' => '2020-07-03 22:56:32',
-'updated_at' => '2020-07-03 22:56:32',
+'description' => 'nc',
+'id' => '86',
+'last_ip' => '54.36.148.65',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2020 - Journée test Exocet Serre Ponçon',
+'updated_at' => '2024-09-08 12:30:18',
+'user_id' => '1',
+'views' => '577',
 ),
-61 => 
+59 => 
 array (
-'id' => 87,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Protéger le nez d\'une planche de wind foil',
-'description' => 'On ne va pas se mentir, la casse du nez du flotteur est l\'accident numéro 1 en windfoil.',
 'body' => '<p>On ne va pas se mentir, la casse du nez du flotteur est l\'accident numéro 1 en windfoil. En cas de catapulte vers l\'avant (assez fréquente quand on débute), le mat a la facheuse tendance à vouloir embrasser le joli nez tout neuf de votre flotteur afin d\'y laisser une trace assez tenace ;)</p>
 <p>Partant de ce constat, tout le monde y va de sa solution pour éviter de passer trop souvent par la case atelier, avec immobilisatioh du flotteur pour au moins une semaine. Après plus de 5 ans de pratique, et plus d\'une centaine de réparation de nez effectuées à l\'atelier GlissAttitude, faisons le point sur les solutions qui fonctionnent et ne fonctionnent pas.</p>
 <p>Globalement, on classera les solutions dans 2 catégories</p>
@@ -2474,19 +2440,19 @@ array (
 <p>Il existe de nombreux <a href = "https://www.youtube.com/watch?v=kw-iTg1_PX4">tuto</a> sur le net concernant la réalisation de ces protections de nez, alors si vous êtes bricoleur, lancez vous !</p>
 
 ',
-'status' => 'Published',
-'views' => 4124,
-'last_ip' => '54.36.148.76',
 'created_at' => '2022-02-20 08:19:02',
-'updated_at' => '2022-04-09 07:32:46',
+'description' => 'On ne va pas se mentir, la casse du nez du flotteur est l\'accident numéro 1 en windfoil.',
+'id' => '87',
+'last_ip' => '54.36.148.68',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Protéger le nez d\'une planche de wind foil',
+'updated_at' => '2024-09-09 08:11:52',
+'user_id' => '1',
+'views' => '4940',
 ),
-62 => 
+60 => 
 array (
-'id' => 88,
-'user_id' => 1,
-'post_categories_id' => 4,
-'title' => 'Tuto protection nez Patrick Air Inside',
-'description' => 'Comment construire une portection de nez rigide',
 'body' => '<p>Notre fidèle contributeur, Hervé, vous fait cadeau aujourd\'hui d\'un très bon tuto sur la réalisation d\'une protection de nez sur mesure pour votre flotteur ... très utile pour protéger des catapultes en windfoil. Merci à lui une fois de plus !</p>
 <p>Je précise que la version réalisée ici par Hervé est conçue dans un objectif très light ... ce qui est cohérent avec le fait que le monsieur a un excellent niveau de pratique et ne masacre donc pas régulièrement sa planche. Pour les débutants ou les pratiquants moins aguerris, ne lésinez pas sur la stratification et les épaisseurs : il faut que la coque soit la plus rigide et solide possible. Vous pouvez donc voir un peu plus large. Je vous conseille au minimum 4 couches de carbone ou 5 couches de fibre de verre en 200g/m2, mais vous pouvrez allez bien au delà.</p>
 <h3>Préambule</h3>
@@ -2507,53 +2473,53 @@ array (
 <p>Sans renfort de verre, notre pièce purement carbone une fois profilée pèse 145 g pour une épaisseur de 2 à 2.5 mm.<br />N\'ayez donc aucune crainte de dégrader la remarquable vivacité en vol de cette board magique qui gagne encore en caractère sur le plan esthétique grâce à cette pièce carbone.</p>
 <p></p>
 <p>Si vous voulez en savoir plus sur les diverses solutions de protection de nez de flotteur, c\'est par <a href = "/blog/protection-nez-windfoil.html">ici</a></p>',
-'status' => 'Published',
-'views' => 354,
-'last_ip' => '54.36.149.1',
 'created_at' => '2022-02-19 08:19:02',
-'updated_at' => '2022-04-09 07:35:25',
+'description' => 'Comment construire une portection de nez rigide',
+'id' => '88',
+'last_ip' => '54.36.148.42',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Tuto protection nez Patrick Air Inside',
+'updated_at' => '2024-09-09 08:27:56',
+'user_id' => '1',
+'views' => '1023',
 ),
-63 => 
+61 => 
 array (
-'id' => 89,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Notre sélection foils 2021',
-'description' => 'Petite sélection de nos foils référence en 2021',
 'body' => '<div class="container">
 <div class="row">
 <div class="col">
-<p>Avec l\'explosion de la pratique du foil en quelques années, la plupart des marques propopsent désormais leur modèle, et ceci vient s\'ajouter aux foils proposés par les fabriquants spécifiques.</p>
-<p>La conséquence est<span style="color: #ff0000;"><strong> un choix exceptionnellement vaste</strong></span> pour un sport qui n\'a que 5 ans d\'existance ... et cela devient logiquement un véritable casse tête pour celui qui désire investir. Bien évidemment, plus on cherche des avis pour fonder son choix, plus on est inondé de conseils contradictoires.</p>
-<p>Pour autant, nos nombreux tests montrent que les modèles sont très différents entre eux, et logiquement certains conviendront mieux que d\'autres à votre pratique personnelle. On essaye donc ici de faire un point à un instant T avec notre point de vue.</p>
+<p>Avec l\'explosion de la pratique du foil en quelques ann&eacute;es, la plupart des marques propopsent d&eacute;sormais leur mod&egrave;le, et ceci vient s\'ajouter aux foils propos&eacute;s par les fabriquants sp&eacute;cifiques.</p>
+<p>La cons&eacute;quence est<span style="color: #ff0000;"><strong> un choix exceptionnellement vaste</strong></span> pour un sport qui n\'a que 5 ans d\'existance ... et cela devient logiquement un v&eacute;ritable casse t&ecirc;te pour celui qui d&eacute;sire investir. Bien &eacute;videmment, plus on cherche des avis pour fonder son choix, plus on est inond&eacute; de conseils contradictoires.</p>
+<p>Pour autant, nos nombreux tests montrent que les mod&egrave;les sont tr&egrave;s diff&eacute;rents entre eux, et logiquement certains conviendront mieux que d\'autres &agrave; votre pratique personnelle. On essaye donc ici de faire un point &agrave; un instant T avec notre point de vue.</p>
 </div>
 <div class="col">
-<div style="background-color: powderblue; padding: 10px; margin-bottom: 10px;">Non, il n\'y a pas 1 foil meilleur que les autres. Ce n\'est pas parceque vous me voyez souvent naviguer avec du F4, Phantom et Moses que se sont les meilleurs foils, mais simplement que ce sont des références intéressantes qui me servent comme base de comparaison pour leurs qualités respectives.</div>
-<div style="background-color: powderblue; padding: 10px;">Ce n\'est pas parceque vous avez fait un choix différent du nôtre que nous pensons que vous avez tort. D\'abord car nous testons avec nos ressentis, et ensuite car nos choix s\'appuient sur des comparaisons : quand on conseille un modèle en notre âme et conscience, c\'est qu\'on le considère comme le meilleur choix, mais cela ne veut pas dire que ce soit le seul.</div>
+<div style="background-color: powderblue; padding: 10px; margin-bottom: 10px;">Non, il n\'y a pas 1 foil meilleur que les autres. Ce n\'est pas parceque vous me voyez souvent naviguer avec du F4, Phantom et Moses que se sont les meilleurs foils, mais simplement que ce sont des r&eacute;f&eacute;rences int&eacute;ressantes qui me servent comme base de comparaison pour leurs qualit&eacute;s respectives.</div>
+<div style="background-color: powderblue; padding: 10px;">Ce n\'est pas parceque vous avez fait un choix diff&eacute;rent du n&ocirc;tre que nous pensons que vous avez tort. D\'abord car nous testons avec nos ressentis, et ensuite car nos choix s\'appuient sur des comparaisons : quand on conseille un mod&egrave;le en notre &acirc;me et conscience, c\'est qu\'on le consid&egrave;re comme le meilleur choix, mais cela ne veut pas dire que ce soit le seul.</div>
 </div>
 </div>
 </div>
-<h2>Les paramètres du choix</h2>
-<p>Les choses étant posées, on nous interroge quotidiennement sur le choix d\'un foil et, comme je réponds systématiquement, faire un choix à un instant T dans un panel si large nécessite idéalement de prendre en compte de tous les éléments suivants</p>
+<h2>Les param&egrave;tres du choix</h2>
+<p>Les choses &eacute;tant pos&eacute;es, on nous interroge quotidiennement sur le choix d\'un foil et, comme je r&eacute;ponds syst&eacute;matiquement, faire un choix &agrave; un instant T dans un panel si large n&eacute;cessite id&eacute;alement de prendre en compte de tous les &eacute;l&eacute;ments suivants</p>
 <ul>
 <li>Votre niveau technique en foil</li>
 <li>Votre gabarit</li>
-<li>Vos attirances (vitesse, facilité, maniabilité, etyc.)</li>
+<li>Vos attirances (vitesse, facilit&eacute;, maniabilit&eacute;, etyc.)</li>
 <li>Vos conditions de navigation principales (plan d\'eau, plage de vent)</li>
 <li>Votre flotteur</li>
-<li>Vos voiles (modèles et tailles)</li>
+<li>Vos voiles (mod&egrave;les et tailles)</li>
 <li>Votre budget</li>
-<li>Votre envie d\'évolution</li>
+<li>Votre envie d\'&eacute;volution</li>
 <li>Vos contraintes de transport et de stockage</li>
 </ul>
-<p>En secouant le tout, on a des chances de faire un choix qui va permettre d\'optimiser le plaisir que vous allez prendre sur l\'eau, tout en respectant vos contraintes. Evidemment, compte tenu du nombre de paramètres, ce choix doit être très individualisé. Qui plus est, le conseil que nous pourrons donner évolue en fonction des nouveaux modèles (ou nouvelles configurations) qui sortent régulièment et viennent bouleverser (ou pas) la donne.</p>
-<p>Pour faire ce choix, notre base de donnée de test (<a href="https://windfoilfan.glissattitude.com">https://windfoilfan.glissattitude.com</a>) est un outil précieux mais je me suis tout de même essayé à l\'exercice de faire une proposition de modèle préférentiel pour chaque case d\'une matrice PROGRAMME / GABARIT</p>
-<h2>Sélection rapide (au 01/11/2020)</h2>
-<p>En sélectionnant 2 paramètres uniquement, que sont le gabarit et le programme de navigation, voici une petite sélection. Pour adapter le résultat au cas de chacun, il faudra bien entendu prendre en compte tous les autres paramètres.</p>
+<p>En secouant le tout, on a des chances de faire un choix qui va permettre d\'optimiser le plaisir que vous allez prendre sur l\'eau, tout en respectant vos contraintes. Evidemment, compte tenu du nombre de param&egrave;tres, ce choix doit &ecirc;tre tr&egrave;s individualis&eacute;. Qui plus est, le conseil que nous pourrons donner &eacute;volue en fonction des nouveaux mod&egrave;les (ou nouvelles configurations) qui sortent r&eacute;guli&egrave;ment et viennent bouleverser (ou pas) la donne.</p>
+<p>Pour faire ce choix, notre base de donn&eacute;e de test (<a>https://windfoilfan.glissattitude.com</a>) est un outil pr&eacute;cieux mais je me suis tout de m&ecirc;me essay&eacute; &agrave; l\'exercice de faire une proposition de mod&egrave;le pr&eacute;f&eacute;rentiel pour chaque case d\'une matrice PROGRAMME / GABARIT</p>
+<h2>S&eacute;lection rapide (au 01/11/2020)</h2>
+<p>En s&eacute;lectionnant 2 param&egrave;tres uniquement, que sont le gabarit et le programme de navigation, voici une petite s&eacute;lection. Pour adapter le r&eacute;sultat au cas de chacun, il faudra bien entendu prendre en compte tous les autres param&egrave;tres.</p>
 <table style="border-spacing: 10px; border-collapse: separate;">
 <tbody>
 <tr>
-<td style="width: 10%;"></td>
+<td style="width: 10%;">&nbsp;</td>
 <td style="width: 30%;">Petit gabarit</td>
 <td style="width: 30%;">Gabarit moyen</td>
 <td style="width: 30%;">Gros gabarit</td>
@@ -2564,42 +2530,42 @@ array (
 <p>Objectif : voler avec un investissement minimum</p>
 </td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/starboard-supercruiser-2019"><strong>Starboard Supercruiser</strong></a> : pour ceux qui favorisent le côté rassurant en acceptant une vitesse réduite, et une évolutivité moindre</p>
-<p><strong>Alpinefoil Revo</strong> : pour ceux qui favorisent l\'évolutivité (compatible avec toute la gamme d\'aile Alpine)</p>
+<p><a href="/devices/foil/starboard-supercruiser-2019"><strong>Starboard Supercruiser</strong></a> : pour ceux qui favorisent le c&ocirc;t&eacute; rassurant en acceptant une vitesse r&eacute;duite, et une &eacute;volutivit&eacute; moindre</p>
+<p><strong>Alpinefoil Revo</strong> : pour ceux qui favorisent l\'&eacute;volutivit&eacute; (compatible avec toute la gamme d\'aile Alpine)</p>
 </td>
 <td style="background-color: powderblue;">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/fanatic-flow-900-2019"><strong>Fanatic Flow 1200</strong></a> : pour ceux qui privilégient le contrôle et la polyvalence</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/horue-vini-pro-v2-2020"><strong>Horue Vini V2</strong></a> : pour les conditions de vent très faible si on ne veut pas toiler gros, au prix d\'un contrôle plus complexe</p>
+<p><a href="/devices/foil/fanatic-flow-900-2019"><strong>Fanatic Flow 1200</strong></a> : pour ceux qui privil&eacute;gient le contr&ocirc;le et la polyvalence</p>
+<p><a href="/devices/foil/horue-vini-pro-v2-2020"><strong>Horue Vini V2</strong></a> : pour les conditions de vent tr&egrave;s faible si on ne veut pas toiler gros, au prix d\'un contr&ocirc;le plus complexe</p>
 </td>
 </tr>
 <tr>
 <td>
 <p>FREERIDE</p>
-<p>Objectif : balade avec une vitesse linéaire</p>
+<p>Objectif : balade avec une vitesse lin&eacute;aire</p>
 </td>
-<td style="background-color: powderblue;"><a href="https://windfoilfan.glissattitude.com/devices/foil/taaroa-noe-80-freeride-2018"><strong>Taaroa Noe 80</strong></a> : Pour ceux qui veulent accompagner un flotteur plutôy étroit, et des voiles inférieures à 7.5m2</td>
+<td style="background-color: powderblue;"><a href="/devices/foil/taaroa-noe-80-freeride-2018"><strong>Taaroa Noe 80</strong></a> : Pour ceux qui veulent accompagner un flotteur plut&ocirc;y &eacute;troit, et des voiles inf&eacute;rieures &agrave; 7.5m2</td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/ga-mach-1-2019"><strong>Moses Vento Freeride</strong></a> (ou GA Mach 1 2020) : à choisir en mat de 85 ou 95 en fonction de la largeur du flotteur. Pour ceux qui privilégient un foil vivant, peu rapide, mais qui décolle tôt et offre des belles sensations de glisse. Excellent également en mode FREEWAVE dans le vent soutenu</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/afs-wind-85-2019"><strong>AFS Wind 85</strong></a> (F770 ou F1080 au dessus de 85kg) : Pour ceux qui préfèrent une attitude calée, plutôt rapide, et acceptent un décollage un peu plus tardif que la moyenne</p>
+<p><a href="/devices/foil/ga-mach-1-2019"><strong>Moses Vento Freeride</strong></a> (ou GA Mach 1 2020) : &agrave; choisir en mat de 85 ou 95 en fonction de la largeur du flotteur. Pour ceux qui privil&eacute;gient un foil vivant, peu rapide, mais qui d&eacute;colle t&ocirc;t et offre des belles sensations de glisse. Excellent &eacute;galement en mode FREEWAVE dans le vent soutenu</p>
+<p><a href="/devices/foil/afs-wind-85-2019"><strong>AFS Wind 85</strong></a> (F770 ou F1080 au dessus de 85kg) : Pour ceux qui pr&eacute;f&egrave;rent une attitude cal&eacute;e, plut&ocirc;t rapide, et acceptent un d&eacute;collage un peu plus tardif que la moyenne</p>
 </td>
 </tr>
 <tr>
 <td>
 <p>SLALOM</p>
-<p>Objectif : évolution (très) rapide majoritairement travers</p>
+<p>Objectif : &eacute;volution (tr&egrave;s) rapide majoritairement travers</p>
 </td>
 <td style="padding: 0; background-color: white;" colspan="3">
 <table style="margin-bottom: 0;">
 <tbody>
 <tr>
-<td style="background-color: powderblue;" colspan="2"><a href="https://windfoilfan.glissattitude.com/devices/foil/lokefoil-lk1-850-2018"><strong>Lokefoil Lk1</strong></a> : Pour ceux qui aiment naviguer en finesse sur un foil vivant sans surtoiler</td>
-<td style="width: 33%; background-color: white;"></td>
+<td style="background-color: powderblue;" colspan="2"><a href="/devices/foil/lokefoil-lk1-850-2018"><strong>Lokefoil Lk1</strong></a> : Pour ceux qui aiment naviguer en finesse sur un foil vivant sans surtoiler</td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 </tr>
 <tr style="width: 33%;">
-<td style="width: 33%; background-color: white;"></td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/taaroa-noe-97-uhm-2020"><strong>Taaroa Noe 97 Freerace</strong></a> : Pour ceux qui cherchent un maximum de contrôle dans toutes les conditions (même formées)</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/afs-wind-95-f700-2019"><strong>AFS Wind 95</strong></a> : Pour ceux qui aiment une conduite calée, où on peut passer de la puissance pour faire parler le GPS</p>
+<p><a href="/devices/foil/taaroa-noe-97-uhm-2020"><strong>Taaroa Noe 97 Freerace</strong></a> : Pour ceux qui cherchent un maximum de contr&ocirc;le dans toutes les conditions (m&ecirc;me form&eacute;es)</p>
+<p><a href="/devices/foil/afs-wind-95-f700-2019"><strong>AFS Wind 95</strong></a> : Pour ceux qui aiment une conduite cal&eacute;e, o&ugrave; on peut passer de la puissance pour faire parler le GPS</p>
 </td>
 </tr>
 </tbody>
@@ -2609,23 +2575,23 @@ array (
 <tr>
 <td>
 <p>FREERACE</p>
-<p>Objectif : évolution rapide avec un mix Travers et Up&amp;Down</p>
+<p>Objectif : &eacute;volution rapide avec un mix Travers et Up&amp;Down</p>
 </td>
 <td style="padding: 0; background-color: white;" colspan="3">
 <table style="margin-bottom: 0;">
 <tbody>
 <tr>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/phantom-iris-x-proto-2-2019"><strong>Phantom IRIS X</strong></a> : Pour ceux qui privilégient une navigation en finesse et aiment un foil vif mais avec une glisse incroyable</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/zeeko-bullet-v1-2020"><strong>Zeeko Bullet</strong></a> : Pour ceux qui veulent un foil sage mais efficace et extrêmement polyvalent sans changer de fuselage</p>
+<p><a href="/devices/foil/phantom-iris-x-proto-2-2019"><strong>Phantom IRIS X</strong></a> : Pour ceux qui privil&eacute;gient une navigation en finesse et aiment un foil vif mais avec une glisse incroyable</p>
+<p><a href="/devices/foil/zeeko-bullet-v1-2020"><strong>Zeeko Bullet</strong></a> : Pour ceux qui veulent un foil sage mais efficace et extr&ecirc;mement polyvalent sans changer de fuselage</p>
 </td>
-<td style="width: 33%; background-color: white;"></td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 </tr>
 <tr style="width: 33%;">
-<td style="width: 33%; background-color: white;"></td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/starboard-carbon-95-2017"><strong>Starboard 95</strong></a> : Pour ceux qui privilégient liberté, polyvalence et efficacité, et acceptent une moindre raideur transversale (très bonne en torsion)</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/f4-race-foil-2019"><strong>F4</strong></a> : Pour ceux qui cherchent un ensemble contrôle / vitesse / polyvalence quasi imbattable, mais acceptent une qualité de fabrication des fuselages et une finition standard en retrait.</p>
+<p><a href="/devices/foil/starboard-carbon-95-2017"><strong>Starboard 95</strong></a> : Pour ceux qui privil&eacute;gient libert&eacute;, polyvalence et efficacit&eacute;, et acceptent une moindre raideur transversale (tr&egrave;s bonne en torsion)</p>
+<p><a href="/devices/foil/f4-race-foil-2019"><strong>F4</strong></a> : Pour ceux qui cherchent un ensemble contr&ocirc;le / vitesse / polyvalence quasi imbattable, mais acceptent une qualit&eacute; de fabrication des fuselages et une finition standard en retrait.</p>
 </td>
 </tr>
 </tbody>
@@ -2642,15 +2608,15 @@ array (
 <tbody>
 <tr>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/phantom-iris-x-proto-2-2019"><strong>Phantom IRIS X VMG</strong></a> : Pour ceux qui privilégient la sensation de glisse, et acceptant un pilotage plus technique.</p>
+<p><a href="/devices/foil/phantom-iris-x-proto-2-2019"><strong>Phantom&nbsp;IRIS X VMG</strong></a> : Pour ceux qui privil&eacute;gient la sensation de glisse, et acceptant un pilotage plus technique.</p>
 </td>
-<td style="width: 33%; background-color: white;"></td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 </tr>
 <tr style="width: 33%;">
-<td style="width: 33%; background-color: white;"></td>
+<td style="width: 33%; background-color: white;">&nbsp;</td>
 <td style="background-color: powderblue;" colspan="2">
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/alpinefoil-a1-race-2020"><strong>Alpine A1 Race</strong></a> : Pour ceux qui privilégient le rapport Efficacité / Prix ... impressionnant dans le très light</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/lokefoil-lk-race-2019"><strong>Lokefoil LK Race</strong></a> : Pour ceux qui veulent voler coute que coute, mais qui sauront gérer la puissance d\'un pur sang</p>
+<p><a href="/devices/foil/alpinefoil-a1-race-2020"><strong>Alpine A1 Race</strong></a> : Pour ceux qui privil&eacute;gient le rapport Efficacit&eacute; / Prix ... impressionnant dans le tr&egrave;s light</p>
+<p><a href="/devices/foil/lokefoil-lk-race-2019"><strong>Lokefoil LK Race</strong></a> : Pour ceux qui veulent voler coute que coute, mais qui sauront g&eacute;rer la puissance d\'un pur sang</p>
 </td>
 </tr>
 </tbody>
@@ -2659,59 +2625,56 @@ array (
 </tr>
 </tbody>
 </table>
-<p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
-'status' => 'Published',
-'views' => 6122,
-'last_ip' => '54.36.148.231',
+<p><img src="/storage/photos/1/selection.jpg" alt=""></p>',
 'created_at' => '2020-10-01 22:19:52',
-'updated_at' => '2022-04-09 06:16:23',
+'description' => 'Petite sélection de nos foils référence en Janvier 2021. Comme régulièrement, nous proposons un arrêt sur image pour mettre en exergue les produits qui nous semble faire référence à cet instant.',
+'id' => '89',
+'last_ip' => '216.244.66.196',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Notre sélection foils 2021',
+'updated_at' => '2024-09-09 09:14:09',
+'user_id' => '1',
+'views' => '6728',
 ),
-64 => 
+62 => 
 array (
-'id' => 90,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Notre sélection flotteur 2021',
-'description' => 'Petite sélection de nos flotteurs référence en 2021',
 'body' => '<div class="container">
 <div class="row">
 <div class="col">
-<p>Avec l\'explosion de la pratique du foil en quelques années, la plupart des marques proposent désormais leur modèle de flotteur dédié.</p>
-<p>La conséquence est<span style="color: #ff0000;"><strong> un choix exceptionnellement vaste</strong></span> pour un sport qui n\'a que 5 ans d\'existance ... et cela devient logiquement un véritable casse tête pour celui qui désire investir. Bien évidemment, plus on cherche des avis pour fonder son choix, plus on est inondé de conseils contradictoires.</p>
-<p>Pour autant, nos nombreux tests montrent que les modèles sont très différents entre eux, et logiquement certains conviendront mieux que d\'autres à votre pratique personnelle. On essaye donc ici de faire un point à un instant T avec notre point de vue.</p>
+<p>Avec l\'explosion de la pratique du foil en quelques ann&eacute;es, la plupart des marques proposent d&eacute;sormais leur mod&egrave;le de flotteur d&eacute;di&eacute;.</p>
+<p>La cons&eacute;quence est<span style="color: #ff0000;"><strong> un choix exceptionnellement vaste</strong></span> pour un sport qui n\'a que 5 ans d\'existance ... et cela devient logiquement un v&eacute;ritable casse t&ecirc;te pour celui qui d&eacute;sire investir. Bien &eacute;videmment, plus on cherche des avis pour fonder son choix, plus on est inond&eacute; de conseils contradictoires.</p>
+<p>Pour autant, nos nombreux tests montrent que les mod&egrave;les sont tr&egrave;s diff&eacute;rents entre eux, et logiquement certains conviendront mieux que d\'autres &agrave; votre pratique personnelle. On essaye donc ici de faire un point &agrave; un instant T avec notre point de vue.</p>
 </div>
 <div class="col">
-<div style="background-color: powderblue; padding: 10px; margin-bottom: 10px;">Non, il n\'y a pas 1 flotteur meilleur que tous les autres. Ce n\'est pas parceque vous me voyez souvent naviguer avec du Phantom, JP et Starboard que se sont les meilleurs flotteurs, mais simplement que ce sont des références intéressantes qui me servent comme base de comparaison pour leurs qualités respectives.</div>
-<div style="background-color: powderblue; padding: 10px;">Ce n\'est pas parceque vous avez fait un choix différent du nôtre que nous pensons que vous avez tort. D\'abord car nous testons avec nos ressentis, et ensuite car nos choix s\'appuient sur des comparaisons : quand on conseille un modèle en notre âme et conscience, c\'est qu\'on le considère comme le meilleur choix, mais cela ne veut pas dire que ce soit le seul.</div>
+<div style="background-color: powderblue; padding: 10px; margin-bottom: 10px;">Non, il n\'y a pas 1 flotteur meilleur que tous les autres. Ce n\'est pas parceque vous me voyez souvent naviguer avec du Phantom, JP et Starboard que se sont les meilleurs flotteurs, mais simplement que ce sont des r&eacute;f&eacute;rences int&eacute;ressantes qui me servent comme base de comparaison pour leurs qualit&eacute;s respectives.</div>
+<div style="background-color: powderblue; padding: 10px;">Ce n\'est pas parceque vous avez fait un choix diff&eacute;rent du n&ocirc;tre que nous pensons que vous avez tort. D\'abord car nous testons avec nos ressentis, et ensuite car nos choix s\'appuient sur des comparaisons : quand on conseille un mod&egrave;le en notre &acirc;me et conscience, c\'est qu\'on le consid&egrave;re comme le meilleur choix, mais cela ne veut pas dire que ce soit le seul.</div>
 </div>
 </div>
 </div>
-<h2>Les paramètres du choix</h2>
-<p>Les choses étant posées, on nous interroge quotidiennement sur le choix d\'un flotteur et, comme je réponds systématiquement, faire un choix à un instant T dans un panel si large nécessite idéalement de prendre en compte de tous les éléments suivants</p>
+<h2>Les param&egrave;tres du choix</h2>
+<p>Les choses &eacute;tant pos&eacute;es, on nous interroge quotidiennement sur le choix d\'un flotteur et, comme je r&eacute;ponds syst&eacute;matiquement, faire un choix &agrave; un instant T dans un panel si large n&eacute;cessite id&eacute;alement de prendre en compte de tous les &eacute;l&eacute;ments suivants</p>
 <ul>
 <li>Votre niveau technique en foil</li>
 <li>Votre gabarit</li>
-<li>Vos attirances (vitesse, facilité, maniabilité, etc.)</li>
+<li>Vos attirances (vitesse, facilit&eacute;, maniabilit&eacute;, etc.)</li>
 <li>Vos conditions de navigation principales (plan d\'eau, plage de vent)</li>
 <li>Votre foil</li>
-<li>Vos voiles (modèles et tailles) ... la toile max a en particulier une  grosse influance</li>
+<li>Vos voiles (mod&egrave;les et tailles) ... la toile max a en particulier une &nbsp;grosse influance</li>
 <li>Votre budget</li>
-<li>Votre envie d\'évolution</li>
+<li>Votre envie d\'&eacute;volution</li>
 </ul>
-<p>En secouant le tout, on a des chances de faire un choix qui va permettre d\'optimiser le plaisir que vous allez prendre sur l\'eau, tout en respectant vos contraintes. Evidemment, compte tenu du nombre de paramètres, ce choix doit être très individualisé. Qui plus est, le conseil que nous pourrons donner évolue en fonction des nouveaux modèles (ou nouvelles configurations) qui sortent régulièment et viennent bouleverser (ou pas) la donne.</p>
-<p>Pour faire ce choix, notre base de donnée de test (<a href="https://windfoilfan.glissattitude.com">https://windfoilfan.glissattitude.com</a>) est un outil précieux mais je me suis tout de même essayé à l\'exercice de faire une proposition de modèle préférentiel pour chaque case d\'une matrice PROGRAMME / GABARIT</p>
+<p>En secouant le tout, on a des chances de faire un choix qui va permettre d\'optimiser le plaisir que vous allez prendre sur l\'eau, tout en respectant vos contraintes. Evidemment, compte tenu du nombre de param&egrave;tres, ce choix doit &ecirc;tre tr&egrave;s individualis&eacute;. Qui plus est, le conseil que nous pourrons donner &eacute;volue en fonction des nouveaux mod&egrave;les (ou nouvelles configurations) qui sortent r&eacute;guli&egrave;ment et viennent bouleverser (ou pas) la donne.</p>
+<p>Pour faire ce choix, notre base de donn&eacute;e de test (<a>https://windfoilfan.glissattitude.com</a>) est un outil pr&eacute;cieux mais je me suis tout de m&ecirc;me essay&eacute; &agrave; l\'exercice de faire une proposition de mod&egrave;le pr&eacute;f&eacute;rentiel pour chaque case d\'une matrice PROGRAMME / GABARIT</p>
 <h2>Les associations</h2>
-<p>A chacun de mes articles, je rappelle l\'importance que j\'accorde à la cohérence des associations flotteur / foil / gréement. A chaque fois, j\'ai des remarques concernant des assemblages anachroniques qui fonctionnent également. Alors oui, mes recommandations concernent le cas général et ont pour objectif de vous retrouver dans une situation où les réglages seront aisés, les équilibres simples à trouver, et la plage d\'utilisation la plus large possible. </p>
-<p>Il existe donc plein d\'autre solutions moins évidentes, et qui fonctionnent certainement dans des cas particuliers. Je me méfie toutefois car pour avoir testé parfois des assocations atypiques que l\'on m\'avait vendu comme parfaites, je me suis demandé comment les propriétaire faisaient pour naviguer ainsi. Ils avaient développé des habitudes incroyables pour compenser des équilibres précaires à mon gout. Quand on n\'a testé que des solutions inconfortables, on ne s\'imagine pas ce que peut être une solution bien pensée. </p>
-<h2>Sélection rapide (au 18/02/2021)</h2>
-<p>En sélectionnant 2 paramètres uniquement, que sont le gabarit et le programme de navigation, voici une petite sélection. Pour adapter le résultat au cas de chacun, il faudra bien entendu prendre en compte tous les autres paramètres.</p>
-<p>&lt;tr &gt; &lt;td &gt;</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/starboard-carbon-95-2017"><strong>Starboard 95</strong></a> : Pour ceux qui privilégient liberté, polyvalence et efficacité, et acceptent une moindre raideur transversale (très bonne en torsion)</p>
-<p><a href="https://windfoilfan.glissattitude.com/devices/foil/f4-race-foil-2019"><strong>F4</strong></a> : Pour ceux qui cherchent un ensemble contrôle / vitesse / polyvalence quasi imbattable, mais acceptent une qualité de fabrication des fuselages et une finition standard en retrait.</p>
+<p>A chacun de mes articles, je rappelle l\'importance que j\'accorde &agrave; la coh&eacute;rence des associations flotteur / foil / gr&eacute;ement. A chaque fois, j\'ai des remarques concernant des assemblages anachroniques qui fonctionnent &eacute;galement. Alors oui, mes recommandations concernent le cas g&eacute;n&eacute;ral et ont pour objectif de vous retrouver dans une situation o&ugrave; les r&eacute;glages seront ais&eacute;s, les &eacute;quilibres simples &agrave; trouver, et la plage d\'utilisation la plus large possible.&nbsp;</p>
+<p>Il existe donc plein d\'autre solutions moins &eacute;videntes, et qui fonctionnent certainement dans des cas particuliers. Je me m&eacute;fie toutefois car pour avoir test&eacute; parfois des assocations atypiques que l\'on m\'avait vendu comme parfaites, je me suis demand&eacute; comment les propri&eacute;taire faisaient pour naviguer ainsi. Ils avaient d&eacute;velopp&eacute; des habitudes incroyables pour compenser des &eacute;quilibres pr&eacute;caires &agrave; mon gout. Quand on n\'a test&eacute; que des solutions inconfortables, on ne s\'imagine pas ce que peut &ecirc;tre une solution bien pens&eacute;e.&nbsp;</p>
+<h2>S&eacute;lection rapide (au 01/07/2022)</h2>
+<p>En s&eacute;lectionnant 2 param&egrave;tres uniquement, que sont le gabarit et le programme de navigation, voici une petite s&eacute;lection. Pour adapter le r&eacute;sultat au cas de chacun, il faudra bien entendu prendre en compte tous les autres param&egrave;tres.</p>
 <table style="border-spacing: 10px; border-collapse: separate;">
 <tbody>
 <tr>
-<td style="width: 10%;"></td>
+<td style="width: 10%;">&nbsp;</td>
 <td style="width: 30%;">Petit gabarit</td>
 <td style="width: 30%;">Gabarit moyen</td>
 <td style="width: 30%;">Gros gabarit</td>
@@ -2719,87 +2682,99 @@ array (
 <tr>
 <td>
 <p>FREERIDE &amp; DEBUTANT</p>
-<p>Objectif : voler avec un maximum de stabilité </p>
+<p>Objectif : voler avec un maximum de stabilit&eacute;, toiler peu, rider pas vite&nbsp;</p>
 </td>
 <td style="background-color: powderblue;">
-<p>Exocet Freefoil 112</p>
+<p><a href="/devices/board/exocet-freefoil-112-ast-2019">Exocet Freefoil 112</a></p>
 </td>
 <td style="background-color: powderblue;">
-<p><span>JP Hydrofoil 120</span></p>
-<p><span></span></p>
-<p><span></span></p>
-<p><span></span></p>
-<p><span></span></p>
+<p><a href="/devices/board/jp-australia-hydrofoil-lxt-2022">JP Hydrofoil hydrofoil 133 2022</a> (new)</p>
 </td>
 <td style="background-color: powderblue;">
-<p><span>Exocet Freefoil 132</span></p>
+<p><a href="/devices/board/exocet-freefoil-132-carbone-2019">Exocet Freefoil 132</a></p>
 </td>
 </tr>
 <tr>
 <td>
-<p>FREERIDE &amp; FREEMOVE</p>
-<p>Objectif : de la maniabilité pour caerver </p>
+<p>FREE-MOVE</p>
+<p>Objectif : de la maniabilit&eacute; pour carver&nbsp;</p>
 </td>
-<td style="background-color: powderblue;">Zeeko Airwave</td>
+<td style="background-color: powderblue;"><a href="/devices/board/severne-predator-95-2022">Severne Predator</a> (new)</td>
 <td style="background-color: powderblue;">
-<p><b>JP Freefoil 115</b></p>
+<p>JP Freefoil 115</p>
 </td>
 <td style="background-color: powderblue;">
-<p><b>tabou Magic Carpet</b></p>
+<p>tabou Magic Carpet</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SLALOM</p>
+<p>FREE-SLALOM</p>
+<p>Objectif : commencer &agrave; performer, niveau interm&eacute;diaire</p>
 </td>
-<td style="background-color: powderblue;">Patrick Foil 125</td>
+<td style="background-color: powderblue;"><a href="/devices/board/patrick-foilride-105-125-2021">Patrick Foil FREERIDE 125</a></td>
 <td style="background-color: powderblue;">
-<p><b>IRIS X 83</b></p>
+<p><a href="/devices/board/ahd-compact-foil-83-2021">AHD Compact 83 </a>ou Tabou AIRIDE 81 2022 (new)</p>
 </td>
 <td style="background-color: powderblue;">
-<p><b>Starboard FOil SL 81</b></p>
+<p><a href="/devices/board/jp-australia-hydrofoil-lxt-2022">JP Hydrofoil hydrofoil 133 2022</a> (new) ou Starboard Freeride Foil 150</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SLALOM</p>
+<p>SLALOM LW</p>
+<p>Objectif : Se tirer la bourre avec les potes au travers, 10-20 knt</p>
 </td>
-<td style="background-color: powderblue;">Patrick Foil 125</td>
+<td style="background-color: powderblue;">Tabou AIRIDE 81 2022 (new)</td>
 <td style="background-color: powderblue;">
-<p><b>IRIS X 83</b></p>
+<p><a href="/devices/board/phantom-iris-r-85-2022">Phantom IRIS X/R MKII 85</a> (new)</p>
 </td>
 <td style="background-color: powderblue;">
-<p><b>Starboard FOil SL 81</b></p>
+<p>Fanatic Falcon Foil TE 91 (new)</p>
 </td>
 </tr>
 <tr>
 <td>
-<p>SLALOM</p>
+<p>SLALOM HW&nbsp;</p>
+<p>Objectif : Se tirer la bourre avec les potes au travers, 18-30 knt</p>
 </td>
-<td style="background-color: powderblue;">Patrick Foil 125</td>
+<td style="background-color: powderblue;">AHD Compact 71</td>
 <td style="background-color: powderblue;">
-<p><b>IRIS X 83</b></p>
+<p><a href="/devices/board/phantom-iris-r-mkii-78-2022">Phantom IRIS X/R MKII 78</a> (new)</p>
 </td>
 <td style="background-color: powderblue;">
-<p><b>Starboard FOil SL 81</b></p>
+<p>Fanatic Falcon Foil TE 81 (new)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>RACE&nbsp;</p>
+<p>Objectif : Up&amp;Down et grandes voiles</p>
+</td>
+<td style="background-color: powderblue;">Exocet RF 91</td>
+<td style="background-color: powderblue;">
+<p>Phantom IRIS X/R MKII 100 (new)</p>
+</td>
+<td style="background-color: powderblue;">
+<p>Fanatic Falcon Foil TE 100 (new)</p>
 </td>
 </tr>
 </tbody>
 </table>
-<p><img src="/storage/photos/1/selection.jpg" alt="" /></p>',
+<p><img src="/storage/photos/1/selection.jpg" alt=""></p>',
+'created_at' => '2022-06-18 15:49:20',
+'description' => 'Petite sélection de nos flotteurs référence en 2022. Comme régulièrement, nous proposons un arrêt sur image pour mettre en exergue les produits qui nous semble faire référence à cet instant.',
+'id' => '90',
+'last_ip' => '148.64.100.94',
+'post_categories_id' => '1',
 'status' => 'Published',
-'views' => 8293,
-'last_ip' => '114.119.134.89',
-'created_at' => '2021-02-18 15:49:20',
-'updated_at' => '2022-04-10 20:42:46',
+'title' => 'Notre sélection flotteur 2022',
+'updated_at' => '2024-09-09 04:26:22',
+'user_id' => '1',
+'views' => '9373',
 ),
-65 => 
+63 => 
 array (
-'id' => 91,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2021 - La Foilie au Lac',
-'description' => 'Le WE du 12 et 13 Juin 2021 avait lieu la première édition de LA FOILIE DU LAC.',
 'body' => '<p><img src="/storage/photos/1/legacy/foilie.png" /></p>
 <p><img src="/storage/photos/1/legacy/IMG_20210613_120803.jpg" /></p>
 <p>Le WE du 12 et 13 Juin 2021 avait lieu la premi&egrave;re &eacute;dition de LA FOILIE DU LAC. Petit retour sur ce tr&egrave;s bel &eacute;v&egrave;nement.</p>
@@ -2823,19 +2798,19 @@ array (
 <p>Les choses seront certainement plus &eacute;quilibr&eacute;es dans une ou 2 saisons, quand il y aura plus de pratiquants aguerris en wingfoil. Ce qui est certain, c\'est que cette manifestation a bien montr&eacute; que l\'apparente facilit&eacute; d\'acc&egrave;s du wing fait un carton aupr&egrave;s du grand public non connaisseur. Pour beaucoup, c\'est l\'extension naturelle du paddle gonflable que l\'on apporte &agrave; la plage.</p>
 <p>Pour ma part, je suis mont&eacute; de Marseille sur la journ&eacute;e de Dimanche. J\'ai mis 3h15 en passant par le col de la croix haute, et j\'avoue que les couleurs et le paysage grandiose &agrave; cette p&eacute;riode (vert de la nature et cimes enneig&eacute;es) m\'a compl&egrave;tement fait oublier la route. Sur place, j\'en ai profit&eacute; pour tester quelques mod&egrave;les qui m\'avaient &eacute;chap&eacute;s jusqu\'alors : Foil Alpine Race SL, Foil Patrick Slalom, Voile Patrik Foil+, Foil Loke Race / Slalom 2021. Vous retrouverez tr&egrave;s vite les CR de test sur <a href="https://windfoilfan.glissattitude.com">Windfoilfan</a></p>
 <p>Pour finir, je soulignerai la gentillesse et l\'accueil tr&egrave;s chalereux des organisateurs (R&eacute;gis en t&ecirc;te). On reviendra l\'an prochain, promis !</p>',
-'status' => 'Published',
-'views' => 265,
-'last_ip' => NULL,
 'created_at' => '2021-06-16 18:49:57',
-'updated_at' => '2021-06-16 18:49:57',
+'description' => 'Le WE du 12 et 13 Juin 2021 avait lieu la première édition de LA FOILIE DU LAC.',
+'id' => '91',
+'last_ip' => '185.191.171.4',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2021 - La Foilie au Lac',
+'updated_at' => '2024-09-09 06:59:48',
+'user_id' => '1',
+'views' => '790',
 ),
-66 => 
+64 => 
 array (
-'id' => 92,
-'user_id' => 1,
-'post_categories_id' => 1,
-'title' => 'Le choix d\'un 2e ou 3e foil ... parlons de sensations',
-'description' => 'Dans cet article, je n’essaye surtout pas de vous dire quel modèle ou marque est meilleur ou moins bonne, mais plutôt de vous donner des pistes pour comprendre ce qui va vous plaire. Et bien entendu, on parle de vous : pas de votre voisin, votre pote',
 'body' => '<p><img src="/storage/photos/1/legacy/choix_1.jpg" alt=""></p>
 <h3>Contexte</h3>
 <div style="column-width: 30rem;">
@@ -2941,19 +2916,19 @@ array (
 </div>
 <h3>Bilan</h3>
 <p>Comme je l&rsquo;avais annonc&eacute;, ce long post ne vas pas vous dire quel mod&egrave;le choisir, mais j&rsquo;esp&egrave;re qu&rsquo;il pourra vous permettre de r&eacute;fl&eacute;chir &agrave; vos envies, et &agrave; conforter les sensations que vous avez ressenti pour mieux exprimer votre besoin lors d&rsquo;un changement. A partir de l&agrave;, un professionnel comp&eacute;tent et honn&ecirc;te saura vous orienter vers le choix le plus pertinent pour vous.</p>',
-'status' => 'Published',
-'views' => 2571,
-'last_ip' => '88.163.167.153',
 'created_at' => '2021-06-24 15:47:06',
-'updated_at' => '2022-04-11 00:13:14',
+'description' => 'Dans cet article, je n’essaye surtout pas de vous dire quel modèle ou marque est meilleur ou moins bonne, mais plutôt de vous donner des pistes pour comprendre ce qui va vous plaire. Et bien entendu, on parle',
+'id' => '92',
+'last_ip' => '148.64.100.94',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Le choix d\'un 2e ou 3e foil',
+'updated_at' => '2024-09-09 04:37:41',
+'user_id' => '1',
+'views' => '3153',
 ),
-67 => 
+65 => 
 array (
-'id' => 93,
-'user_id' => 1,
-'post_categories_id' => 7,
-'title' => '2022 - Defi windfoil Corsica',
-'description' => 'Pour fin sept 2022, on vous concocte un évènement assez exceptionnel : un DEFI WIND WINDFOIL autour de Bonifacio en Corse ! ',
 'body' => '<p>Une fois n\'est pas coutume, arr&ecirc;tons de parler de matos, et passons &agrave; des exp&eacute;riences grandeur nature.</p>
 <p>Pour fin sept 2022, on vous concocte un &eacute;v&egrave;nement assez exceptionnel : un DEFI WIND WINDFOIL autour de Bonifacio en Corse !&nbsp;&nbsp;</p>
 <p>Ca faisait un moment que l\'id&eacute;e d\'aller jouer autour des iles Lavezzi au sud de la Corse me trottait dans la t&ecirc;te. Fin 2020, on a travaill&eacute; un peu plus le sujet avec les potes de l\'Association Fran&ccedil;aise de Windfoil et en Mars, j\'ai contact&eacute; Philippe Bru (le d&eacute;fi) pour lui proposer le projet. Banco, il a adh&eacute;r&eacute; imm&eacute;diatement, et il y a quelques semaines, on s\'est retrouv&eacute; &agrave; une 12aine pour pr&eacute;parer tout ceci in situ : test des parcours, recherche des partenaires (s&eacute;cu, encadrement, parking, assistance), rep&eacute;rage des cailloux (ceux qui font mal aux foils), vid&eacute;o promo ...&nbsp;</p>
@@ -2993,48 +2968,499 @@ array (
 <p><img src="/storage/photos/1/legacy/i15.jpeg" /></p>
 <p><img src="/storage/photos/1/legacy/i16.jpeg" /></p>
 <p><img src="/storage/photos/1/legacy/i17.jpeg" /></p>',
-'status' => 'Published',
-'views' => 130,
-'last_ip' => '::1',
 'created_at' => '2021-10-11 18:49:30',
-'updated_at' => '2022-03-23 23:33:20',
+'description' => 'Pour fin sept 2022, on vous concocte un évènement assez exceptionnel : un DEFI WIND WINDFOIL autour de Bonifacio en Corse ! ',
+'id' => '93',
+'last_ip' => '85.208.96.200',
+'post_categories_id' => '7',
+'status' => 'Published',
+'title' => '2022 - Defi windfoil Corsica',
+'updated_at' => '2024-09-09 04:11:20',
+'user_id' => '1',
+'views' => '1043',
 ),
-68 => 
+66 => 
 array (
-'id' => 94,
-'user_id' => 1,
-'post_categories_id' => 5,
-'title' => 'Accès professionnel',
-'description' => 'Windfoilfan pour les professionnels',
-'body' => '<p>Avec Windfoilfan, nous avons une double volont&eacute; : donner aux pratiquants un maximum d\'informations leur permettant de choisir leur mat&eacute;riel en conscience, et aider les marques &agrave; &eacute;valuer leur mat&eacute;riel par rapport au march&eacute; et le faire &eacute;voluer pour toujours plus de satisfaction des clients.</p>
+'body' => '<h3>Windfoilfan pour les pros</h3>
 <div class="container">
 <div class="row">
 <div class="col-lg-6">
-<p>En tant que professionel, nous sommes ravis de travailler avec vous main dans la main pour faire coller votre mat&eacute;riel aux &eacute;volutions du march&eacute;. Nous proposer en test vos prototypes de vos mod&egrave;les d&eacute;finitifs. Echanger sur vos projets (nous savons garder confidentiel ce qui doit l\'&ecirc;tre). Pour l\'avoir fait et le faire encore avec plusieures marques, cette collaboration est gagnante pour tous. Non seulement le mat&eacute;riel &eacute;volue plus vite, mais en plus nous le faisons savoir aux pratiquants et je vous garantie qu\'ils y sont tr&egrave;s r&eacute;ceptifs.</p>
+<p>Avec Windfoilfan, nous avons une double volont&eacute; :</p>
+<ul>
+<li>donner aux pratiquants un maximum d\'informations leur permettant de choisir leur mat&eacute;riel en conscience</li>
+<li>aider les marques &agrave; &eacute;valuer leur mat&eacute;riel par rapport &agrave; la concurrence et le faire &eacute;voluer pour toujours plus de satisfaction des clients.</li>
+</ul>
+<p>Avec notre casquette de commer&ccedil;ant, nous avons par ailleurs &eacute;galement tout int&eacute;r&ecirc;t &agrave; ce que le mat&eacute;riel continue &agrave; progresser en privil&eacute;gant un double objectif : prendre plus de plaisir dans un maximum de conditions (sensation de glisse, contr&ocirc;le, plage d\'utilisation, facilit&eacute; d\'utilisation) et offrir le meilleur rapport robustesse performance (au sens large) / prix possible.</p>
 </div>
 <div class="col-lg-6">
-<p>Vous pouvez aussi refuser de communiquer sur vos produits, nous demander de ne pas en parler de peur de voir diffuser des points &agrave; am&eacute;liorer (c\'est arriv&eacute; &agrave; plusieurs reprises 😡), cacher les d&eacute;fauts &eacute;ventuels en esp&eacute;rant que cela &eacute;chappe aux clients potentiels, consid&eacute;rer que nos avis n\'ont pas de fondement, etc. Sachez que se voiler la face ou refuser la critique constructive est le meilleur moyen de rester &agrave; la traine ... et l&agrave; aussi, nous avons de nombreux exemples 😉</p>
+<p>Nous pouvons para&icirc;tre, au choix, impliqu&eacute;s, passionn&eacute;s, ou exigeants, pointilleux, p&eacute;nibles, voir casse c.. si vous voulez..., mais sachez que nous&nbsp;agissons toujours avec une attitude constructive et honn&egrave;te.</p>
+<p>Nous concevons que notre franc parler peut parfais agacer et nous assumons ... , en partant du principe que la langue de bois n\'a jamais fait avancer les choses. Donc si cela peut inciter &agrave; aller de l\'avant, nous sommes persuad&eacute; que &ccedil;a ne peut &ecirc;tre que gagnant pour tous in fine.</p>
+<p>Notre plus grande chance est de tester en permanence de nouveaux produits provenant de divers horizons. Ceci nous permet de ne jamais juger dans l\'absolu, mais au contraire de confronter chaque produit &agrave; l\'ensemble du march&eacute;.&nbsp;</p>
 </div>
 </div>
 </div>
-<p>A vous de choisir votre camp, mais nous sommes &eacute;videmment toujours int&eacute;ress&eacute; de collaborer.&nbsp;</p>
+<p>&nbsp;</p>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<p>Vous &ecirc;tes professionel, et nous sommes ravis de travailler avec vous main dans la main pour faire coller votre mat&eacute;riel aux &eacute;volutions du march&eacute;, et aux attente des clients que nous cotoyons tous les jours. Nous proposer en test vos prototypes et vos mod&egrave;les d&eacute;finitifs. Echanger sur vos projets (nous savons garder confidentiel ce qui doit l\'&ecirc;tre). Pour l\'avoir fait et le faire encore avec plusieures marques, cette collaboration est gagnante pour tous. Non seulement le mat&eacute;riel &eacute;volue plus vite, mais en plus nous le faisons savoir aux pratiquants et je vous garantie qu\'ils y sont tr&egrave;s r&eacute;ceptifs.</p>
+</div>
+<div class="col-lg-6">
+<p>Vous pouvez aussi refuser de communiquer sur vos produits de peur de ne pas avoir des avis 100% positifs, nous demander de ne pas rentre public nos tests (c\'est arriv&eacute; &agrave; plusieurs reprises 😡), consid&eacute;rer que nos avis sont discutables parceque tel courreur ou tel leader d\'opinion n\'a pas le m&ecirc;me avis, ou encore refuser d\'entendre les points que nous avons trouv&eacute; moins favorables (je vous rassure, les points positifs, vous aimez bien), etc. Aucun soucis, nous ne for&ccedil;ons personne ... mais vous savez aussi parfaitement que la critique constructive est de ce qui fait avancer. A vous de voir 😉.</p>
+</div>
+</div>
+</div>
+<p>Jouez le jeux, vous n\'en serez que gagnants &agrave; la fin &nbsp;</p>
 <p>&nbsp;</p>
 <p>Avec un acc&egrave;s professionnel, vous aurez acc&egrave;s</p>
 <ul>
 <li>A toutes les donn&eacute;es techniques (mesures structurelles et &eacute;valuations) des foils de votre marque&nbsp;</li>
 <li>Aux diagrammes de comparaison des donn&eacute;es techniques</li>
-<li>A la fiche de pr&eacute;sentation de votre marque, pr&eacute;sent&eacute;e aux utilisateurs</li>
+<li>A la fiche de pr&eacute;sentation de votre marque, pr&eacute;sent&eacute;e aux utilisateurs (modifiable par vos soins)</li>
 <li>Aux statistiques de visite de vos produits</li>
 </ul>
 <h4>Donn&eacute;es techniques</h4>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<p>Les donn&eacute;es techniques sont constitu&eacute;es de diverses mesures (g&eacute;om&eacute;triques, structurelles), et de positionnement comparatif des produits sur des crit&egrave;res pr&eacute;cis. Les jeux de crit&egrave;res sont &eacute;videmment propres &agrave; chaque type de produit (foil, flotteur, voile).</p>
+<p>Pour chaque crit&egrave;re, vous lirez: &nbsp;la valeur du mod&egrave;le consid&eacute;r&eacute; (en bleu), la valeur minimale observ&eacute;e sur l\'ensemble des produits pr&eacute;sents dans notre base de donn&eacute;e (en jaune), et la valeur maximale observ&eacute;e sur l\'ensemble des produits pr&eacute;sents dans notre base de donn&eacute;e (en vert).</p>
+<p>Vous aurez acc&egrave;s en lecture &agrave; chacune des donn&eacute;es, et cela peut nous permettre d\'&eacute;changer autour d\'elles. Nous gardons la main sur les possibilit&eacute; de modifiaction de ces donn&eacute;es, afin de garantir l\'ind&eacute;pendance du jugement, et le respect des protocoles de mesures afin que les comparaisons aient un sens.&nbsp;</p>
+</div>
+<div class="col-lg-6"><img src="/storage/photos/1/2022-04/diag-data.jpg" alt=""></div>
+</div>
+</div>
 <h4>Diagramme de comparaison</h4>
+<p>Avec un acc&egrave;s pro, vous aures acc&egrave;s, pour chaque crit&egrave;re technique (objectif ou subjectif), au positionnement de vos produit par rapport au reste du march&eacute;.</p>
+<p>Volontairement, et pour pr&eacute;server la confidentialit&eacute; industrielle de vos concurrents, vous n\'aurez pas acc&egrave;s aux nom des mod&egrave;les concurrents, mais vous &nbsp;situerez ais&eacute;ment votre produit par rapport aux autres. Pour &eacute;viter des discussions st&eacute;riles sur les unit&eacute;s de mesures ou autre, l\'essentiel des diagrammes sont bas&eacute;s sur un classement o&ugrave; 0 est attribu&eacute; au produit ayant la valeur la plus faible sur le crit&egrave;re consid&eacute;r&eacute;, et 100 &agrave; celui ayant la valeur la plus &eacute;lev&eacute;e sur le crit&egrave;re consid&eacute;r&eacute;. Comme chaque nouveau mod&egrave;le est en mesure de bousculer les r&eacute;f&eacute;rences &eacute;tablies, notre classement est r&eacute;guli&egrave;rement revu &agrave; la lumi&egrave;re des nouveaut&eacute;s.&nbsp;</p>
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<p><img class="cms-img-fluid" src="/storage/photos/1/2022-04/diag-brand.jpg" alt=""></p>
+</div>
+<div class="col-lg-6">Lorsque vous affichez l\'un des diagrammes de classement &agrave; partir du menu lat&eacute;ral, les produits de votre marque seront automatiquement mis en valeur (en jaune) pour les situer ais&eacute;ment par rapport aux autres mod&egrave;les du march&eacute; pour le crit&egrave;re consid&eacute;r&eacute;.&nbsp;</div>
+</div>
+<div class="row">
+<div class="col-lg-6">Lorsque vous affichez l\'un des diagrammes de classement &agrave; partir de l\'un des jeux de donn&eacute;es, vous pourrez visualiser : la position du jeux de don&eacute;es consid&eacute;r&eacute; (en vert), les autres jeux de donn&eacute;es du m&ecirc;me mod&egrave;le (en rouge) issus d\'autre mesures, les jeux de donn&eacute;es des autres mod&egrave;les de votre marque (en jaune). Pour obtenir ce diagramme, cliquez sur la valeur associ&eacute;e au crit&egrave;re consid&eacute;r&eacute;, sur la fiche du jeu de donn&eacute;es (voir ci-apr&egrave;s).</div>
+<div class="col-lg-6">
+<p><img class="cms-img-fluid" src="/storage/photos/1/2022-04/diag-device.jpg" alt=""></p>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">Pour visualiser les donn&eacute;es associ&eacute;es &agrave; un num&eacute;ro de s&eacute;rie donn&eacute;, en comparaison aux autres du m&ecirc;me mod&egrave;le ou de la m&ecirc;me marque, cliquez sur la valeur consid&eacute;r&eacute;e.&nbsp;</div>
+<div class="col-lg-6">
+<p><img class="cms-img-fluid" src="/storage/photos/1/2022-04/diag-results.jpg" alt=""></p>
+</div>
+</div>
+</div>
 <h4>Fiche de pr&eacute;sentation</h4>
-<h4>Statistiques</h4>',
+<p>Chaque marque poss&egrave;de une page sp&eacute;cifique, donnant acc&egrave;s aux derniers produits, aux statistiques de visite, aux derni&egrave;res donn&eacute;es techniques et &agrave; une pr&eacute;sentation de la marque. Avec votre acc&egrave;s professionel, vous aurez acc&egrave;s en modification &agrave; cette partie</p>
+<h4>Statistiques</h4>
+<p>Sur la page d&eacute;di&eacute;e &agrave; votre marque, vous retrouverez les produits les plus consult&eacute;s sur les 365 derniers jours, l\'&eacute;volution des vues concernant votre marque depuis la cr&eacute;ation de windfoilfan et l\'&eacute;volution de la publication de message concernant vos produits.</p>
+<p>&nbsp;</p>
+<p>TEst&eacute; par la m&ecirc;me personne</p>',
+'created_at' => '2017-04-10 21:34:10',
+'description' => 'Windfoilfan pour les professionnels : en quoi nous pouvons vous aider à faire progresser le produits, et comment nous concevons une collaboration constructive ? Débattons, et progressons tous ensemble.',
+'id' => '94',
+'last_ip' => '54.36.148.186',
+'post_categories_id' => '5',
 'status' => 'Published',
-'views' => 1,
-'last_ip' => '88.163.167.153',
-'created_at' => '2022-04-10 21:34:10',
-'updated_at' => '2022-04-10 22:41:54',
+'title' => 'Accès professionnel',
+'updated_at' => '2024-09-09 02:06:25',
+'user_id' => '1',
+'views' => '536',
+),
+67 => 
+array (
+'body' => '<p>Avec 6 ans de recul, nous avons pu comprendre quelles sont les bonnes pratiques pour optimiser la dur&eacute;e de vie de votre foil. Contrairement au reste du mat&eacute;riel de windsurf, une attention particuli&egrave;re est requise pour ne pas l&rsquo;endommager rapidement</p>
+<p><img class="cms-img-fluid" src="/storage/photos/1/2022-04/fuselage.jpg" alt=""></p>
+<h2>Rincage</h2>
+<p>Le premier conseil que l\'on va vous donner est de rincer votre foil apr&egrave;s chaque sortie. Cela peut sembler fastidieux, mais ne vous plaignez pas de constater de la corrosion si vous n&eacute;gligez cette op&eacute;ration.</p>
+<p>La corrosion provient de la stagnation d\'eau sal&eacute;e au contact avec les parties m&eacute;talliques du foil (fuselages, inserts etc.). Les zones les plus expos&eacute;es sont donc les filetages recevant la visserie, les assises d\'aile et de stab, et le boitier de connection mat / fuselage.&nbsp;</p>
+<p>Pour &eacute;liminer les sources de corrosion, il faut donc</p>
+<ul>
+<li>rincer votre foil apr&egrave;s d&eacute;montage pour &eacute;lilminer l\'eau sal&eacute;e des filetages</li>
+<li>laisser s&ecirc;cher les &eacute;l&eacute;ments avant de les ranger dans votre sac</li>
+<li>ne pas remettre les vis dans le filetages avant la saison suivante</li>
+</ul>
+<p>Petite apart&eacute; concernant les foils monobloc carbone : ces mod&egrave;les sont moins sensibles &agrave; la corrosion. D&rsquo;une part l&rsquo;absence de pi&egrave;ce en aluminium &eacute;limine la corrosion li&eacute;e &agrave; une &eacute;lectrolyse. D&rsquo;autre part, moins de pi&egrave;ces pr&eacute;sentent un risque d&rsquo;oxydation. Malgr&eacute; tout, notre exp&eacute;rience prouve qu&rsquo;en absence de d&eacute;montage, les inserts inoxydables finissent malgr&eacute; tout par rouiller. Nous conseillons donc &eacute;galement un entretien r&eacute;gulier sur ces produits.</p>
+<h2>Graissage</h2>
+<p>Pour garantir un montage efficace, un serrage de bonne qualit&eacute;, et une usure moindre des filetages, il est conseill&eacute; de graisser la visserie.&nbsp;</p>
+<p>Id&eacute;alement, vous pouvez utiliser pour ceci une graisse un peu sp&eacute;ciale nomm&eacute;e "<a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html">Tef Gel</a>". Il s\'agit d\'une graisse tr&egrave;s visqueuse (qui tient donc tr&egrave;s bien en milieu mouill&eacute;), et charg&eacute;e de t&eacute;flon. Ce Tef-gel offre une isolation &eacute;lectrique entre la vis et le filetage. Elle r&eacute;duit donc fortement l\'action d\'&eacute;lectrolyse qui corrode l\'aluminium.</p>
+<p><a href="https://marseille.glissattitude.com/windfoil/u32582s1-gliss-attitude-tef-gel-gliss-attitude.html"> <img src="/storage/photos/1/legacy/u32582.jpg" alt="Tefgel GlissAttitude"></a></p>
+<p>L&rsquo;utilisation de tefGel est tr&egrave;s commun et de nature &agrave; retarder fortement l&rsquo;apparition d&rsquo;oxydation grace &agrave; son pouvoir isolant galvanique. Toutefois, l&rsquo;utilisation de ce produit ne dispense absolument pas de l&rsquo;entretien d&eacute;crit ci-dessous &hellip; bien au contraire ! Tous les corps gras (tef, graisse marine etc.) utilis&eacute;s ont le pouvoir d&rsquo;agglom&eacute;rer tous les r&eacute;sidus de sable de de limaille. Si on ne prend pas soin de retirer r&eacute;guli&egrave;rement la p&acirc;te grasse ainsi g&eacute;n&eacute;r&eacute;e, on va tr&egrave;s rapidement se retrouver avec un v&eacute;ritable mastic qui va bloquer les vis, faire ressortir les h&eacute;licoils ou abraser les filetages.</p>
+<h2>Nettoyage</h2>
+<p>Ce point est fondamental pour prolonger la dur&eacute;e de vie de vos fuselages en aluminium. C\'est encore plus vrai dans le cas de fuselages contenant des helicoils.</p>
+<p>Voici le processus que je vous conseille d\'adopter pour chaque filetage :&nbsp;</p>
+<ul>
+<li>Verser du solvant dans le trou de vis. Personnellement, j\'utilise de l\'essence (vous pouvez aussi utiliser des d&eacute;capants pour le WD40).</li>
+<li>A l\'aile d\'une micro-brosse comme celle fournie avec les tubes de tef-gel (vous pouvez aussi utiliser uen brossette inter-dentaire que l\'on trouve eh pharmacie), effectuer des mouvements de rotation pour d&eacute;coller les impuret&eacute;s log&eacute;es dans les filetages. L\'objectif est de dissoudre les r&eacute;sidus de graisse, et de d&eacute;coller les traces de pailettes m&eacute;talliques ou encore les r&eacute;sidus de sable broy&eacute; qui auraient pu s\'acumuler dans le trou.</li>
+<li>Vider l\'essence souill&eacute;e avec les impuret&eacute;s sur un chiffon ou essui-tout pour constater la densit&eacute; des r&eacute;sidus</li>
+<li>Id&eacute;alement, utiliser une souflette et un compresseur pour &eacute;liminer les restes d\'essence et de r&eacute;sidus (vous pouvez aussi utiliser une bombe d\'air comprim&eacute; vendue pour le nettoyage des composants informatiques)</li>
+<li>R&eacute;it&eacute;rer l&rsquo;op&eacute;ration 2 ou 3 fois pour chaque trou jusqu&rsquo;&agrave; ce que chacun soit parfaitement propre sans trace d&rsquo;oxydation, de limaille m&eacute;tallique, de r&eacute;sidus de sable ou de graisse.</li>
+</ul>
+<p><img src="/storage/photos/1/2022-04/brosse.jpg" alt=""></p>
+<p>Une fois ces op&eacute;rations effectu&eacute;es, v&eacute;rifiez la qualit&eacute; de vos filetages en vissant &agrave; 2 doigts une vis neuve. Si il vous faut forcer, c\'est que votre filetage ou votre h&eacute;licoil est endommag&eacute;. Dans ce cas, ne l\'utilisez pas en r&eacute;parez le (ou faites le r&eacute;parer par votre shop local) imm&eacute;diatement. &nbsp;Une fois ces v&eacute;rifications effectu&eacute;es, vous pouvez remettre de la graisse (ou pas).</p>
+<p>Cette op&eacute;ration de nettoyage est &agrave; r&eacute;aliser environ toutes les 5 &agrave; 10 navigations en fonction du milieu (plage de sable, eau douce ou sal&eacute;e etc.).</p>
+<h2>Helicoil ou pas ?</h2>
+<p>Vous n&rsquo;aurez pas le choix, mais vous pourrez constater que les fuselages aluminium sont livr&eacute;s, suivant les marques et les mod&egrave;les, avec ou sans h&eacute;licoils. Ces filets rapport&eacute;s en Inox sont pos&eacute;s dans le fuselage pour renforcer le solidit&eacute; des filetages impliqu&eacute;s dans la fixation des ailes et stabilisateurs.</p>
+<p><img src="/storage/photos/1/2022-04/Helicoil.jpg" alt="" width="570" height="377"></p>
+<p>L&rsquo;avantage de l&rsquo;h&eacute;licoil est sa plus grande r&eacute;sistance au serrage. Les inconv&eacute;nients sont de 2 sortes<br>- Si ils sont mal entretenus, ils peuvent sortir l&eacute;g&egrave;rement et s&rsquo;ab&icirc;mer imm&eacute;diatement, rendant les serrages impossibles<br>- Leur pr&eacute;sence continue au contact de l&rsquo;aluminium favorise l&rsquo;apparition de corrosion en cas de rin&ccedil;age d&eacute;ficient</p>
+<p>Les fuselages sans h&eacute;licoil sont moins sensibles &agrave; un entretien d&eacute;ficient, mais n&eacute;cessitent beaucoup plus d&rsquo;attention lors des serrages (respecter un couple de serrage maxi de 6 &agrave; 8nm et une profondeur de p&eacute;n&eacute;tration minimale de la vis de 1.5 fois le diam&egrave;tre, soit 9mm pour du M6)</p>
+<p>Pr&eacute;cisons qu&rsquo;un fuselage sans h&eacute;licoil peut &ecirc;tre converti vers une solution avec helicoil en cas de filetage ab&icirc;m&eacute;. L&rsquo;autre sens est impossible.</p>
+<p>Dans tous les cas, avec un entretien de qualit&eacute; et une utilisation consciencieuse, les solutions avec et sans h&eacute;licoil fonctionnent parfaitement.</p>
+<h2>Contr&ocirc;le</h2>
+<h4>Le premier contr&ocirc;le doit &ecirc;tre visuel.</h4>
+<p>Les t&ecirc;te de vis doivent &ecirc;tre en parfait &eacute;tat et sans jeux avec votre outil de serrage. Si la t&ecirc;te est ab&icirc;m&eacute;e, boursoufl&eacute;e voir &eacute;dent&eacute;es, la vis doit &ecirc;tre remplac&eacute;e imm&eacute;diatement par une neuve.&nbsp;</p>
+<p>Le corps de la vis doit &ecirc;tre propre et r&eacute;gulier. Toute anomalie visible ou irr&eacute;gularit&eacute; sur le filetage doit conduire &agrave; son remplacement imm&eacute;diat. Idem en cas d&rsquo;apparition d&rsquo;un d&eacute;p&ocirc;t blanc sur le corps de la vis (corrosion provenant du fuselage).</p>
+<p>Concernant les h&eacute;licoil, le contr&ocirc;le visuel portera sur le sommet de l&rsquo;h&eacute;licoil qui ne doit absolument pas d&eacute;passer du per&ccedil;age, et offrir une attaque quasi invisible. Si l&rsquo;attaque d&eacute;passe, voir semble recourb&eacute;e, on ne visse surtout rien dedans et on le remplace imm&eacute;diatement.</p>
+<h4>Le 2e contr&ocirc;le concerne l&rsquo;&eacute;tat du filtage.</h4>
+<p>Cette op&eacute;ration est ultra simple mais primordiale : vous aller pour chaque vis, effectuer un montage &agrave; blanc (sans l&rsquo;aile ou le stab) &agrave; la main (sans outil) jusqu&rsquo;au fond du filetage. Chaque vis doit pouvoir &ecirc;tre viss&eacute;e &agrave; fond &agrave; deux doigts et sans forcer.</p>
+<p>Si vous devez forcer pour effectuer ce vissage, c&rsquo;est que la vis est ab&icirc;m&eacute;e ou le filetage d&eacute;t&eacute;rior&eacute;. Dans ce cas, refaire le test avec une vis neuve.</p>
+<ul>
+<li>Si le vissage s&rsquo;effectue cette fois facilement, jetez imm&eacute;diatement l&rsquo;ancienne vis.</li>
+<li>Si le vissage reste compliqu&eacute;, faite r&eacute;viser votre fuselage sans attendre par un professionnel. Ne JAMAIS forcer avec un outil.</li>
+</ul>
+<p>Si vous d&eacute;tectez une anomalie lors des ces contr&ocirc;les, nous vous d&eacute;conseillons ABSOLUEMENT de naviguer tel quel. Vous risquez, en for&ccedil;ant avec vos outils, de provoquer un blocage de votre vis dans le filetage, une casse de la vis, et &eacute;ventuellement une perte du foil ou de l&rsquo;aile au fond du plan d&rsquo;eau. Dans tous les cas, attendez vous alors &agrave; des couts de r&eacute;paration et/ou de remplacement sans commune mesure avec le remplacement d&rsquo;une vis.</p>
+<p>Ces contr&ocirc;les sont valables &agrave; la fois pour les vis de montage du foil en lui m&ecirc;me, que pour les vis utilis&eacute;e pour l&rsquo;assemblage foil / flotteur</p>
+<h2>Remplacement des vis</h2>
+<p>Les contr&ocirc;les d&eacute;crits ci dessus doivent permettre d&rsquo;&eacute;liminer syst&eacute;matiquement les vis ab&icirc;m&eacute;es au niveau de la t&ecirc;te ou des filetages.</p>
+<p><strong>En cas d&rsquo;utilisation intensive</strong>, les vis peuvent aussi se fragiliser structurellement dans le temps. Nous avons conseillons donc de les renouveler syst&eacute;matiquement &agrave; intervalle r&eacute;gulier. Il serait dommage de perdre un foil &agrave; plusieurs milliers d&rsquo;euros au fond de l&rsquo;eau (les exemples sont fr&eacute;quents) ou de perdre une r&eacute;gate pour &eacute;conomiser 10eur de visserie.</p>
+<p>Ce message s&rsquo;adresse en particulier aux comp&eacute;titeurs IQFOIL (jeunes ou pas) qui s&rsquo;entrainent entre 2 et 5 fois par semaine. Nous leur conseillons un remplacement int&eacute;grale de la visserie et des inserts au minimum tous les 4 mois &hellip; en plus des contr&ocirc;les r&eacute;gulier d&eacute;crits ci dessus.</p>
+<h2>Inserts inox ou laiton</h2>
+<p>En dehors des filetages utilis&eacute;s pour fixer les ailes et stabilisateurs, le foil comporte &eacute;galement des inserts dans lesquels viennent se loger les vis de fixation Fuselage / Mat et Foil / Flotteur. Ils doivent &ecirc;tre contr&ocirc;l&eacute;s et remplac&eacute;s r&eacute;guli&egrave;rement de fa&ccedil;on analogue. Nous avons d&eacute;j&agrave; abord&eacute; ce sujet pr&eacute;c&eacute;demment, et je vous invite donc &agrave; relire le <a href="/posts/6/84">post consacr&eacute; &agrave; ce point</a>.</p>',
+'created_at' => '2022-04-18 23:20:32',
+'description' => 'Avec 6 ans de recul, nous avons pu comprendre quelles sont les bonnes pratiques pour optimiser la durée de vie de votre foil. Voici nos conseils pour naviguer sereinement.',
+'id' => '95',
+'last_ip' => '54.36.148.0',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Entretenir votre foil',
+'updated_at' => '2024-09-08 20:51:20',
+'user_id' => '1',
+'views' => '1088',
+),
+68 => 
+array (
+'body' => '<p>C\'est le printemps : c\'est parti pour une r&eacute;vision annuelle de tous les &eacute;l&eacute;ments d\'usure de votre &eacute;quipement !</p>
+<p><iframe src="https://www.youtube.com/embed/lLS6OX45hsI" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p><iframe src="https://www.youtube.com/embed/Onsc8mlsDrc" width="1120" height="630" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+<p>&nbsp;</p>
+<p><img src="/storage/photos/1/2022-04/entretien.jpg" alt="" width="600" height="553"></p>',
+'created_at' => '2022-04-19 15:14:49',
+'description' => 'Toute ce qu\'il faut faire en début de saison pour partir sur une nouvelle saison sans arrière pensée ni galères à venir. On s\'attaque, video à l\'appui, au remplacement de votre tendon de pied de mat, et l\'entretien de votre rallonge.',
+'id' => '96',
+'last_ip' => '85.208.96.193',
+'post_categories_id' => '4',
+'status' => 'Published',
+'title' => 'Entretien de printemps',
+'updated_at' => '2024-09-09 04:17:07',
+'user_id' => '1',
+'views' => '859',
+),
+69 => 
+array (
+'body' => '<h2>Ce que l\'on garde</h2>
+<p>Avec cette nouvelle version de Windfoilfan, nous gardons les bases qui font le fondement de notre application. Si vous ne devons en citer que 2, ce sont</p>
+<ol>
+<li><strong>L\'ind&eacute;pendance</strong> : nous d&eacute;fendons avec ferveur notre libert&eacute; de parole. Malgr&eacute; diverses pressions, nous &eacute;crivons avec sinc&eacute;rit&eacute;, et cherchons en permanence &agrave; traduire le plus fid&egrave;lement possible les sensations que nous &eacute;prouvons en testant le mat&eacute;riel. Nous sommes &eacute;galement tr&egrave;s attentifs aux conditions dans lesquelles sont effectuons des tests pour qu\'elles correspondent de fa&ccedil;on la plus fid&egrave;le possible &agrave; celles auxquelles nos clients feront face. Par ailleurs, nous offrons la possibilit&eacute; &agrave; tout un chacun de poster ses impressions pour garantire une neutralit&eacute; des avis.&nbsp;</li>
+<li><strong>L\'&eacute;quit&eacute;e</strong> : tous nos tests sont bas&eacute;s sur des comparaisons de produits de m&ecirc;me programme entre eux, crit&egrave;res par crit&egrave;res, men&eacute;s par un groupe de testeur immuable. R&eacute;guli&egrave;rement, les marques nous opposent des soit-disant performances hors du commun de leur produit dans les mains de tel ou tel pratiquants (le plus souvent des coureurs ou leader d\'opinion dont on a du mal &agrave; &eacute;valuer l\'ind&eacute;pendance). Pour nous, le sujet n\'est pas de savoir si tel foil ou telle voile a &eacute;t&eacute; &agrave; 38.7 knt avant hier, ou encore ce qu\'en a pens&eacute; le gar qui n\'a rien trest&eacute; d\'autre. &nbsp;Notre travail consiste &agrave; demander au m&ecirc;me testeur de comparer 2 produits sur un crit&egrave;re sp&eacute;cifique donn&eacute;. Pour nous, cette m&eacute;thode est nettement plus &eacute;quitable et pertinante. En outre, elle a le m&eacute;rite de laisser le client final choisir en fonction de ses propres priorit&eacute;s, qui peuvent diff&eacute;rer des n&ocirc;tres ou de celles de votre meilleur ami.</li>
+</ol>
+<h2>Alors quoi de neuf dans la V2 ?</h2>
+<ul>
+<li>Nouvelle fonctionnalit&eacute; de forum centr&eacute; produit</li>
+<li>Page de marque, avec statistiques associ&eacute;es&nbsp;</li>
+<li>Fonction de filtrage des produits par marques et par programme</li>
+<li>Fonction de recherche plein texte parmi les produits</li>
+<li>Base de donn&eacute;es des articles techniques</li>
+<li>Identification du produit vis&eacute; dans les diagrammes</li>
+</ul>
+<h2>Forum centr&eacute; produit</h2>
+<div class="container">
+<div class="row">
+<div class="col-lg-6"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/discussion.jpg" alt=""></div>
+<div class="col-lg-6">
+<p>Windfoilfan v2 se comporte en partie comme un forum.</p>
+<p>La principale diff&eacute;rence avec un forum traditionnel, est li&eacute;e au fait que chaque fil de discussion est n&eacute;cessairement attach&eacute; &agrave; un produit.</p>
+<p>D\'un c&ocirc;t&eacute;, ceci limite les sujets, puisqu\'il sont ainsi forc&eacute;ment li&eacute;s &agrave; un produit pr&eacute;cis. D\'un autre c&ocirc;t&eacute;, cette particularit&eacute; permet de regrouper en un seul lieu toutes les donn&eacute;es li&eacute;es &agrave; un produit donn&eacute;. En plus de ces fils de discussion, la fiche produit donne &eacute;galement acc&egrave;s &agrave; la description du produit, &agrave; sa classification, aux donn&eacute;es techniques mesur&eacute;es, et aux &eacute;valuations crit&egrave;re par crit&egrave;re.&nbsp;</p>
+<p>Nous verrons plus loin que cfe regroupement des informations autour d\'un produit permet des recherches bien plus simples et efficaces &agrave; posteriori.</p>
+<p>Pour le reste, vous retrouvez toutes les fonctionnalit&eacute;s standard d\'un forum, avec des fonctions d\'&eacute;dition assez pouss&eacute;es des messages (images, emoticon, citation des messages pr&eacute;c&eacute;dents, mise en forme et typographie.</p>
+<p>Pour pouvoir contribuer aux discussions, vous devrez &ecirc;trre connect&eacute; avec un compte valide.</p>
+<p>Autre sp&eacute;cificit&eacute;, le forum de Windfoilfan est 100% adapt&eacute; &agrave; l\'utilisation sur tablette ou smartphone.</p>
+</div>
+</div>
+</div>
+<h2>Page de marque</h2>
+<div class="container">
+<div class="row">
+<div class="col-lg-6"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/marque.jpg" alt="" width="1000" height="751"></div>
+<div class="col-lg-6">
+<p>Pour chaque marque, une page regroupe :</p>
+<ul>
+<li>un lien vers les produits de chaque cat&eacute;gorie (Foils, Boards, Voiles)</li>
+<li>la liste des produits de la marque qui ont g&eacute;n&eacute;r&eacute;s le plus de vues sur la derni&egrave;re ann&eacute;e</li>
+<li>une liste des derni&egrave;res discussions ayant pour sujet des produits de la marque</li>
+<li>un graphique pr&eacute;sentant l\'&eacute;volution des vues portant sur les produits de la marque</li>
+<li>un graphique pr&eacute;sentant l\'&eacute;volution des discussions portant sur les produits de la marque</li>
+</ul>
+
+<p>La page de marque traduit assez fid&egrave;lement l\'int&eacute;r&ecirc;t de la communaut&eacute; sur la marque et ses produits. C\'est un tr&egrave;s bon marqueur des produits ayant le vent en poupe.</p>
+</div>
+</div>
+</div>
+<h2>Fonction de filtrage et recherche des produits</h2>
+<div class="container">
+<div class="row">
+<div class="col-lg-6"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/filtre.jpg" alt="" width="1000" height="744"></div>
+<div class="col-lg-6">
+<p>La liste des produits de chaque cat&eacute;gorie est filtrable avec 2 crit&egrave;res principaux : la marque et la programme.</p>
+<p>Le filtre par programme permet de se faire tr&egrave;s rapidement une id&eacute;e des produits en concurrence sur un programme donn&eacute; (freestyle / freeride / freerace / course slalom / course race)</p>
+<p>Pour plus d\'efficacit&eacute; dans vos recherches, la liste peut &ecirc;tre tri&eacute;e sur chaque colonne, y compris lorsque des filtres y sont appliqu&eacute;s</p>
+<p>La fonction de recherche permet d\'effectuer une recherche en temps r&eacute;el et &agrave; la vol&eacute;e sur toutes les colonnes de la liste. Vous pouvez ainsi recherche en tapant les premi&egrave;res lettres d\'un marque, d\'un mod&egrave;le, d\'un mill&eacute;sime ou autre. C\'est un outil tr&egrave;s puissant pour trouver tr&egrave;s rapidement un produits qui vous int&eacute;resse.</p>
+</div>
+</div>
+</div>
+<h2>Base de donn&eacute;es des articles techniques</h2>
+<div class="container">
+<div class="row">
+<div class="col-lg-6"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/posts.jpg" alt="" width="1000" height="626"></div>
+<div class="col-lg-6">
+<p>Avec cette V2, Windfoilfan regroupe d&eacute;sormais l\'ensembles des articles, tutoriels et fiches conseil que nous avions publi&eacute; sur notre blog en quelques ann&eacute;es. Le temps passant, il devenait difficile de retrouver les articles plus anciens.</p>
+<p>D&eacute;sormais, tout est classif&eacute; 8 cat&eacute;gories, et les articles sont adapt&eacute;s et lisible sur tout type de terminal (PC, smartphone, tablette).</p>
+</div>
+</div>
+</div>
+<h2>Identification du produit vis&eacute; dans les diagrammes</h2>
+<div class="container">
+<div class="row">
+<div class="col-lg-6"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/diagram.jpg" alt="" width="1000" height="877"></div>
+<div class="col-lg-6">
+<p>A partir du tableau de bord produit, vous aurez acc&egrave;s au graphique radar synth&eacute;tisant le comportement du produit sur diff&eacute;rents crit&egrave;res. 3 secteurs angulaires t&eacute;moignent aussi du niveau de rigidit&eacute; en torsion et flexion du mat.</p>
+<p>En cliquant sur l\'un des crit&egrave;res, vous acc&egrave;derez au diagramme de classement de tous les produits sur ce crit&egrave;re.&nbsp;</p>
+<p>Sur ce diagramme de comparaison, le produit qui nous int&eacute;resse sera mis en valeur avec un barreau de couleur verte.</p>
+</div>
+</div>
+</div>',
+'created_at' => '2017-01-19 19:33:50',
+'description' => 'Présentation des nouvelles fonctionnalités de la V2 de windfoilfan, et mode d\'emploi. Forum, Marque, Recherche, Articles, Diagramme.',
+'id' => '97',
+'last_ip' => '149.56.160.221',
+'post_categories_id' => '5',
+'status' => 'Published',
+'title' => 'Mode d\'emploi',
+'updated_at' => '2024-09-09 03:02:06',
+'user_id' => '1',
+'views' => '1818',
+),
+70 => 
+array (
+'body' => '<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3>POURQUOI NOUS AIDER ?</h3>
+<p>Avec l\'arriv&eacute;e du Windfoil il y a 7 ans, nous avons d&eacute;couvert</p>
+<ul>
+<li>des nouvelles sensations nouvelles, extraordinaires et addictives</li>
+<li>un &eacute;norme champ d\'investigations techniques qui est transforme profond&eacute;ment le windsurf</li>
+<li>une activit&eacute; que personne ne connaissait, et o&ugrave; il y a donc un gros travail d\'explication, de conseil et de p&eacute;dagogie</li>
+<li>une opportunit&eacute; de faire &eacute;voluer le mod&egrave;le &eacute;conomique du windsurf et aller vers des m&eacute;thodes plus adapt&eacute;es au 21e si&egrave;cle</li>
+<li>une opportunit&eacute; in&eacute;dite pour moderniser le visage du windsurf aupr&egrave;s du grand public</li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<p>Que ce soit donc du point de vue sportif, plaisir, attractif ou &eacute;conomique, il nous paraissait inconcevable de ne pas nous investir dans le windfoil. Nous avons juste &eacute;t&eacute; surpris de voir autant de timidit&eacute; des autres acteurs (medias, marques, f&eacute;d&eacute;rations, distributeurs, magasins etc.). La plupart ont visiblement mis du temps &agrave; r&eacute;aliser que ce n\'&eacute;tait pas juste une mode.</p>
+</div>
+<div class="col-md-6">
+<p style="margin-bottom: 40px;">Cet investissement se traduit concr&egrave;tement par des 100aines d\'heures sur le terrain, que ce soit sur l\'eau ou en r&eacute;union avec les instances f&eacute;d&eacute;rales, les clubs, les distributeurs, les marques etc. Pour que nous puissions continuer &agrave; faire ce travail, nous avons besoin de votre soutien. Les enjeux :</p>
+</div>
+</div>
+<div class="row">
+<div class="col-4 ">
+<div class="card alert-success">
+<div class="card-body">
+<h5 class="card-title text-center">Libert&eacute; de parole</h5>
+<p class="card-text text-center">Pas de financement par des pages de pub, ou des bandeaux publicitaires</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card alert-success">
+<div class="card-body">
+<h5 class="card-title text-center">Faire &eacute;voluer</h5>
+<p class="card-text text-center">D&eacute;veloppement technique (marques) et structuration (clubs, ligue et f&eacute;d&eacute;ration)</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card alert-success">
+<div class="card-body">
+<h5 class="card-title text-center">Vision long terme</h5>
+<p class="card-text text-center">Inventer et mettre en place un nouveau mod&egrave;le &eacute;conomique p&eacute;renne</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<h3>NOS ACTIONS</h3>
+<div class="row">
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary ">
+<div class="card-body ">
+<h4 class="card-title">Tests et conseils</h4>
+<p>Vous aider &agrave; avoir un &eacute;tat pr&eacute;cis du march&eacute; au jour le jour, malgr&eacute; une &eacute;volution tr&egrave;s rapide. Notre base de donn&eacute;e de test, la plus compl&egrave;te du march&eacute;, vous permettra de d&eacute;grossir vos choix</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary">
+<div class="card-body">
+<h4 class="card-title">D&eacute;veloppement</h4>
+<p>Aider un certain nombre de marques &agrave; progresser techniquement, &agrave; construire des gammes et des produits qui correspondent &agrave; vos demandes. Notre force : &ecirc;tre tous les jours au contact des acheteurs</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary">
+<div class="card-body">
+<h4 class="card-title">Communication</h4>
+<p>Faire conna&icirc;tre le windfoil au sein de la communaut&eacute; windsurf, et au del&agrave;. Nous participons activement &agrave; la communaut&eacute; (forums, groupes facebook), et travaillons pour motiver de nouveaux pratiquants</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary">
+<div class="card-body">
+<h4 class="card-title">Structuration</h4>
+<p>Participer aux r&eacute;flexions et d&eacute;cisions qui sont prises par les instances et f&eacute;d&eacute;ration, afin d\'assurer un avenir p&eacute;renne au windfoil, en &eacute;vitant si possible une partie des erreurs du pass&eacute;</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary">
+<div class="card-body">
+<h4 class="card-title">Evolution commerciale</h4>
+<p>Saisir l\'opportunit&eacute; du windfoil pour faire &eacute;voluer le mod&egrave;le &eacute;conomique du windsurf. Un enjeu cl&eacute; pour que notre sport pr&eacute;f&eacute;r&eacute; puisse continuer &agrave; exister, et que nos marques puissent continuer &agrave; investir en R&amp;D</p>
+</div>
+</div>
+</div>
+<div class="col-4 ">
+<div class="card text-white card-h-100 bg-primary">
+<div class="card-body">
+<h4 class="card-title">P&eacute;dagogie</h4>
+<p>Vous permettre de tester, d\'apprendre et de progresser. Accompagner les clubs dans la mise en place de m&eacute;thodes p&eacute;dagogiques, et d\'un environnement accueillant pour les pratiquants</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3>EN DETAIL</h3>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<h3>Tests et conseils</h3>
+<p>En 7 ans, nous avons test&eacute; une grande partie des produits qui existent, et nous continuons &agrave; ausculter en d&eacute;tail tout ce qui sort. Nous ne pr&eacute;tendons pas en savoir plus que les autres, mais ces nombreux tests nous ont donn&eacute; une facult&eacute; &agrave; comparer avec acuit&eacute;, et &agrave; ressentir tr&egrave;s vite les principales caract&eacute;ristiques des &eacute;quipements.</p>
+<p>Bien s&ucirc;r, nous avis restent subjectifs car ils sont bas&eacute;s sur nos sensations. Par contre, nous faisons un gros effort pour &ecirc;tre le plus honn&ecirc;te possible, m&ecirc;me si trouver les mots justes pour exprimer des sensations est souvent compliqu&eacute;.</p>
+<p>Dans nos tests, nous int&eacute;grons souvent les avis de testeurs externes que nous connaissons pour leur finesse d\'analyse.</p>
+</div>
+<div class="col-md-4">
+<h3>D&eacute;veloppement</h3>
+<p>Depuis le d&eacute;but, nous avons collabor&eacute; avec certaines marques pour leur donner notre avis sur les prototypes qu\'ils nous confiait.</p>
+<p>Contrairement aux coureurs avec lesquels les marques d&eacute;veloppent en g&eacute;n&eacute;ral leurs produits, notre oeil leur donne des retours beaucoup plus proches du pratiquant standard. C\'est un &eacute;l&eacute;ment primordial pour commercialiser un produit. Nous constatons tous les jours que ce type de collaboration conduit souvent &agrave; des succ&egrave;s commerciaux.</p>
+<p>En dehors des nombreux tests de prototypes, l\'un des travaux concrets a &eacute;t&eacute; de r&eacute;aliser <a href="/posts/5/43">une campagne de mesure des rigidit&eacute;s en flexion et torsion des mats de foil</a> et des connexions mat / fuselage / aile sur 80% des foils du march&eacute;. Nous avons &agrave; ce titre investi dans 2 bancs de mesure r&eacute;alis&eacute;s sur mesure.</p>
+</div>
+<div class="col-md-4">
+<h3>Structuration</h3>
+<p>Pendant 2 ans, nous avons particip&eacute; &agrave; 2 groupes de travail au sein de la FFV, qui visent pour l\'un &agrave; structurer la pratique du windfoil en France, et pour l\'autre &agrave; d&eacute;velopper l\'attractivit&eacute; des clubs vis &agrave; vis du windsurfer.</p>
+<p>Comme toujours avec les instances f&eacute;d&eacute;rales, l\'&eacute;volution des choses prend du temps, mais nous ne l&acirc;chons rien. Je suis en effet persuad&eacute; que la FFV a un vrai r&ocirc;le &agrave; jouer pour &eacute;viter que le Windfoil ne retombe dans les m&ecirc;me &eacute;cueils que le Windsurf</p>
+<p>Au sein de ces groupes de travail, je repr&eacute;sente le secteur professionel de la glisse. Ma vision est &eacute;loign&eacute;e des acteurs traditionnels de la FFV (cadres, &eacute;lus, entraineurs), mais j\'esp&egrave;re pouvoir les amener &agrave; comprendre qu\'une collaboration intelligente entre les clubs, ligues et le r&eacute;seau de professionnels qui maillent le territoire, est la meilleure solution pour dynamiser nos sports.</p>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12"><img class="cms-img-fluid" src="/storage/photos/1/2022-04/banner-crowdfunding.jpg" width="3837" height="1081"></div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<h3>COMMENT NOUS AIDER ?</h3>
+<p>Comme en t&eacute;moignent nos statistiques, vous &ecirc;tes tr&egrave;s nombreux &agrave; lire nos compte rendus de tests. Avec plus de 300 000 vues cumul&eacute;es sur les posts li&eacute;s au windfoil, et plus de 1500 lecteurs identifi&eacute;s, on peut raisonnablement penser que leur contenu int&eacute;resse du monde.</p>
+<p>Nous tenons &agrave; laisser cette base de donn&eacute;e accessible gratuitement &agrave; tous, avec l\'objectif avou&eacute; de profiter &agrave; toute la communaut&eacute;. Par contre, si vous avez appr&eacute;ci&eacute; nos commentaires et si vous jugez que nos actions pour le Windfoil vous apportent un service, nous serions honor&eacute;s d\'avoir votre soutien.</p>
+<p>Nous pourrions financer nos actions par de la publicit&eacute; sous forme de bandeau, ou en demandant une contribution pour acc&eacute;der &agrave; la base de test. Nous pr&eacute;f&eacute;rons &eacute;viter ceci pour rester ind&eacute;pendant et pouvoir continuer &agrave; avoir une parole libre.</p>
+<p>Pour ne pas vous contenter de profiter, mais pour soutenir nos actions, vous pouvez, par ordre de priorit&eacute; :</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<h3>Nous aider financi&egrave;rement</h3>
+<p>Pour nous permettre de continuer &agrave; passer du temps sur le d&eacute;veloppement, &agrave; organiser des rassemblements, &agrave; acheter des dispositifs de mesure, &agrave; financer une partie du mat&eacute;riel de test, toute contribution, m&ecirc;me minime, sera la bienvenue.</p>
+<p>Vous &ecirc;tes libre de la somme : m&ecirc;me quelques euros nous aiderons ! Vous pourriez penser que c\'est d&eacute;risoire, mais ne vous y trompez pas, c\'est d\'une grosse aide pour nous car nous n\'avons pas d\'autres moyens de financement.</p>
+<p><a href="https://marseille.glissattitude.com/divers/u37625s1-gliss-attitude-don-windfoil-gliss-attitude.html">Faire un don pour nous aider &gt;</a></p>
+</div>
+<div class="col-md-6">
+<h3>Nous donner du poids</h3>
+<p>En likant notre <a href="https://www.facebook.com/glissattitude" target="_blank" rel="noopener">page facebook</a>, en partageant nos publications sur les forums (<a href="https://www.windsurfing33.com/forum/viewforum.php?f=42" target="_blank" rel="noopener">W33</a>) ou <a href="https://www.facebook.com/glissattitude" target="_blank" rel="noopener">facebook</a>, en mettant un commentaire notre notre <a href="http://www.google.fr/search?q=glissattitude" target="_blank" rel="noopener">page google</a>, vous nous aidez &agrave; avoir plus de poids dans les discussions avec les marques, les instances f&eacute;d&eacute;rales, les distributeurs etc.</p>
+<p>Et surtout, nous vous invitons &agrave; <span style="color: rgb(224, 62, 45);"><strong>interragir sur le forurm Windfoilfan</strong></span> afin d\'enrichir le contenu de d\'offrir toujours plus d\'inforamtions aux autres pratiquants !</p>
+<h3>Acheter sur notre boutique en ligne</h3>
+<p>En achetant vos foils sur notre <a href="https://marseille.glissattitude.com/windfoil.html">boutique en ligne</a>, nous nous aidez bien s&ucirc;r, de fa&ccedil;on indirecte, &agrave; financer nos actions en faveur du d&eacute;veloppement du windfoil.</p>
+</div>
+</div>
+</div>',
+'created_at' => '2017-04-20 20:54:40',
+'description' => 'Comment et pourquoi nous soutenir',
+'id' => '98',
+'last_ip' => '40.77.167.235',
+'post_categories_id' => '5',
+'status' => 'Published',
+'title' => 'Soutenir Windfoilfan',
+'updated_at' => '2024-09-09 08:50:57',
+'user_id' => '1',
+'views' => '1098',
+),
+71 => 
+array (
+'body' => '<p>Apr&egrave;s son arriv&eacute;e sur le march&eacute; en 2017, le Windfoil a connu un ressort assez incroyable les quelques ann&eacute;es qui ont suivi. Je consid&egrave;re que le taux de p&eacute;n&eacute;tration du march&eacute; avoisine les 80% si l&rsquo;on s&rsquo;int&eacute;resse aux pratiquants r&eacute;guliers de windsurf. J&rsquo;entends par-l&agrave; ceux qui font en moyenne entre 15 et 30 sorties par an. Il est &eacute;vident que dans la cat&eacute;gorie des pratiquants tr&egrave;s occasionnels (moins de 5 sorties par an), la p&eacute;n&eacute;tration est plus faible et bien plus d&eacute;pendante des spots et des r&eacute;gions. Enfin, quand je parle de p&eacute;n&eacute;tration du march&eacute;, j&rsquo;entends toutes les personnes qui ont test&eacute; le support et l&rsquo;on pratiqu&eacute; r&eacute;ellement pendant une certaine p&eacute;riode.</p>
+<p>&nbsp;</p>
+<p>Parmi cette population de navigateurs volants, on distingue trois cat&eacute;gories :</p>
+<ul>
+<li>La premi&egrave;re cat&eacute;gorie a essay&eacute; mais n&rsquo;a pas du tout poursuivi en revenant assez rapidement &agrave; l&rsquo;aileron. C&rsquo;est une cat&eacute;gorie tr&egrave;s minoritaire.</li>
+<li>La deuxi&egrave;me cat&eacute;gorie repr&eacute;sente les pratiquants qui ont ma&icirc;tris&eacute; le support de fa&ccedil;on correcte, en mode freeride et balade. Ce sont des pratiquants qui ont appr&eacute;ci&eacute; la glisse en vol, mais pour la plupart n&rsquo;ont pas franchi le cap d&rsquo;&ecirc;tre parfaitement d&eacute;tendu, et d&rsquo;accepter les conditions de vent un peu soutenues.</li>
+<li>La troisi&egrave;me cat&eacute;gorie correspond aux pratiquants qui ont atteint un certain palier de technicit&eacute; en Windfoil, et qui sont pour la plupart pass&eacute;s sur les mod&egrave;les freerace voir course. Ce sont des souvent des riders qui pratiquent le foil a 100 % (ils pratiquent l&rsquo;aileron de fa&ccedil;on tr&egrave;s minoritaire).</li>
+</ul>
+<p>&nbsp;</p>
+<p>Le march&eacute; de le Wing, en plein essor, ces trois derni&egrave;res ann&eacute;es, avec un gros effet de mode, s&rsquo;est principalement nourri des pratiquants de la deuxi&egrave;me cat&eacute;gorie. Ils ont &eacute;t&eacute; attir&eacute;s par le c&ocirc;t&eacute; plus l&eacute;ger et contacts du mat&eacute;riel. Dans la Wing ils ont vu un produit plus tol&eacute;rant dans le vent fort et moins stressant, plus en rapport avec la recherche du c&ocirc;t&eacute; ludique.<span class="Apple-converted-space">&nbsp;</span></p>
+<p>Par contre, cette &eacute;volution a assez peu touch&eacute; la cat&eacute;gorie num&eacute;ro trois qui reste tr&egrave;s fid&egrave;le au support windfoil.</p>
+<p>Compte tenu de cette sectorisation du march&eacute;, on comprendra pourquoi le volume de vente s&rsquo;est fortement r&eacute;duit depuis l&rsquo;ann&eacute;e derni&egrave;re. D&rsquo;autre part, les marques ont sorti tr&egrave;s peu de nouveaux mod&egrave;les, car elle travaillent activement sur les &eacute;volutions destin&eacute;s &agrave; la course. En effet, suite &agrave; la prise de conscience de tous les coureurs PWA, que le foil &eacute;tait devenu plus performant que l&rsquo;aileron dans pratiquement toutes les conditions de vent, les marques ont investi de fa&ccedil;on importante dans le d&eacute;veloppement de mod&egrave;le ultra performants, mais il aura fallu pour la plupart au moins un an avant de pouvoir les proposer &agrave; la vente. Les premiers mod&egrave;les arrive &agrave; peine sur le march&eacute; aujourd&rsquo;hui.</p>
+<p>&nbsp;</p>
+<p>L&rsquo;ensemble des &eacute;l&eacute;ments pr&eacute;c&eacute;dents conduisent &agrave; comprendre que le march&eacute; actuel du neuf s&rsquo;oriente principalement vers les mod&egrave;les de course ultime&hellip; Bien entendu, de nombreux pratiquants, moins exigeants, se tournent vers de l&rsquo;occasion, ou conservent leurs mod&egrave;les actuels. Par contre, il est &eacute;vident que le potentiel de vente des mod&egrave;les freeride et Freerace entr&eacute;e de gamme est en chute libre, voir en passe de dispara&icirc;tre compl&egrave;tement. Il reste quelques niches, en particulier dans le cadre de la r&eacute;gate jeune o&ugrave; la jauge contraint les sportifs &agrave; utiliser des mod&egrave;les pr&eacute;d&eacute;termin&eacute;es un peu moins performants.</p>
+<p>&nbsp;</p>
+<p>Si on s&rsquo;int&eacute;resse maintenant &agrave; ce march&eacute; des foils de course, qui va repr&eacute;senter l&rsquo;essentiel des ventes en neuf, on voit appara&icirc;tre de nouveaux acteurs, et un m&eacute;nage assez important s&rsquo;est fait parmi les constructeurs traditionnels.</p>
+<p>La marque la plus embl&eacute;matique de ce secteur est &eacute;videmment Phantom foiling. Elle joui d&rsquo;une aura particuli&egrave;re gr&acirc;ce aux performances &eacute;poustouflante de Nicolas Goyard, qui truste les podiums de presque toutes les comp&eacute;titions depuis deux ans.&nbsp;</p>
+<p>Les marques Neilpryde et Starboard, qui ont certainement vendu le plus de foils sur les march&eacute;s, chacun &agrave; leur p&eacute;riode, ont objectivement perdu beaucoup de parts de march&eacute; depuis quelques mois. Il payent une relative discr&eacute;tion dans la production de nouveaux mod&egrave;les. Les deux propose cette ann&eacute;e, un nouveau mod&egrave;le orient&eacute; course, et nous esp&eacute;rons tr&egrave;s rapidement vous donner des nouvelles.</p>
+<p>Quelques marques jouent les outsiders, et continuent &agrave; proposer une offre pertinente et particuli&egrave;rement performante. M&ecirc;me si Patrick, Z FIN et F4 restent confidentiel entre terme de volume de ventes, ils jouissent tr&egrave;s bonne r&eacute;putation avec les produits ultra aboutis. Les performances de Nicolas Warembourg sur Patrick, et Johan SE sur F4 (deuxi&egrave;me ici Wind, 2023, derri&egrave;re Nicolas Goyard, excusez du peu) en t&eacute;moignent.</p>
+<p>Les marques plus confidentielles ou artisanales comme Lokefoil, Alpine Foil, Tarroa, Select, on pratiquement disparu des radars car ils se sont concentr&eacute;s sur le march&eacute; de la Wind, plus porteur commercialement.<span class="Apple-converted-space">&nbsp;</span></p>
+<p>Deux marques continuent &agrave; avoir un statut particulier en France : Zeeko et AFS, qui ont conserv&eacute; un certain volume de production gr&acirc;ce &agrave; leur labellisation pour la jauge jeune FFV.<span class="Apple-converted-space">&nbsp;&nbsp;</span>Enfin, tous ceux qui avaient eu du mal &agrave; rentrer sur le march&eacute;, ont totalement disparues de l&rsquo;offre, &agrave; l&rsquo;image de Fanatic et Loft</p>
+<h3>Conclusion</h3>
+<p>Pour r&eacute;sumer, je dirai que le march&eacute; du neuf en Windfoil s&rsquo;est sp&eacute;cialis&eacute; sur les produits ultra performants. Les petits march&eacute;s r&eacute;siduels du d&eacute;butant et de l&rsquo;interm&eacute;diaire est d&eacute;sormais enti&egrave;rement couvert par l&rsquo;offre d&rsquo;occasion. Le reste des pratiquant s&rsquo;est tourn&eacute; vers la Wing. Pour autant, il est difficile d\'imaginer une disparition de ce support &agrave; moyen et long terme dans la mesure o&ugrave; il est en train de d&eacute;tr&ocirc;ner enti&egrave;rement l\'aileron en comp&eacute;tition internationnale. Le challenge des ann&eacute;es &agrave; venir va &ecirc;tre de conserver un march&eacute; suffisament rentable malgr&eacute; le faible volume pour continuer &agrave; soutenir le d&eacute;veloppement du mat&eacute;riel qui s\'est impos&eacute; en course.&nbsp;</p>
+<p>&nbsp;</p>',
+'created_at' => '2023-06-29 14:47:02',
+'description' => 'Comme tous les ans, voici une petite analyse subjective du marché de Windfoil, pour faire le point sur l’offre, la demande, et notre vision à plus long terme.',
+'id' => '99',
+'last_ip' => '31.125.56.243',
+'post_categories_id' => '1',
+'status' => 'Published',
+'title' => 'Le marché du Windfoil en 2023',
+'updated_at' => '2024-09-09 08:35:28',
+'user_id' => '1',
+'views' => '628',
 ),
 ));
         

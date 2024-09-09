@@ -137,17 +137,9 @@
 
                     <div class="card-body ">
 
-                        @if ( auth()->guest() )
-                            <div id="post-overlay"><span class="badge badge-outline-dark">Pour lire cet article, <br><a href="{{ route('login') }}">connectez vous</a> c'est gratuit !</span></div>
-                            <div id="post-body" class="flou">
-                                {!! $post->body !!}
-                            </div>
-                        @else
                             <div id="post-body">
                                 {!! $post->body !!}
                             </div>
-                        @endif
-
                     </div>
                 </div>
 

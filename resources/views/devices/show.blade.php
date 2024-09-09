@@ -440,15 +440,7 @@
                                                 {!! $review->formatted_body() !!}
                                             </div>
                                             <div class="floue"></div>
-
-                                            @auth
-                                                <a role="button" class="switch collapsed" data-bs-toggle="collapse" href="#collapseReview{{ $review->id }}"  aria-controls="collapseReview{{ $review->id }}"></a>
-                                            @else
-                                                <div id="post-overlay"><span class="badge badge-outline-dark">{!!  __('Please connect', ['LINK' => route('login')]) !!}</div>
-
-
-
-                                            @endif
+                                            <a role="button" class="switch collapsed" data-bs-toggle="collapse" href="#collapseReview{{ $review->id }}"  aria-controls="collapseReview{{ $review->id }}"></a>
 
                                         </div>
 
