@@ -110,6 +110,7 @@ class MainController extends Controller
             ->groupBy('devices.id')
             ->orderBy('cnt', 'desc')
             ->take(5)->get();
+        $dashboard['deviceWithViewCount'] = null;
 
         //marques populaires (dernier 12 mois)
         $dashboard['brandsWithViewCount'] = Brand::select( DB::raw('sum(hits) as cnt'),
